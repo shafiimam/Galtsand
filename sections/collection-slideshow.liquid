@@ -1,0 +1,127 @@
+<div class="collection-slideshow">
+  <div class="slideshow-container">
+    <div class="slides">
+      {% for image in section.settings.collection.images %}
+        <div class="slide">
+          <img src="{{ image | img_url: 'master' }}" alt="{{ section.settings.collection.title }} - Imagen {{ forloop.index }}">
+        </div>
+      {% endfor %}
+      {% if section.settings.collection.images.size > 1 %}
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="product-grid">
+    {% for product in section.settings.collection.products limit: 4 %}
+      <div class="product-item">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.price | money }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  /* CSS para el slideshow y la grilla de productos */
+  .collection-slideshow {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para apilar slideshow y productos */
+    align-items: center; /* Centrar horizontalmente */
+  }
+  .slideshow-container {
+    width: 80%; /* Ajusta el ancho según necesites */
+    position: relative;
+    margin: auto;
+  }
+
+  .slide {
+    display: none;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas y grandes */
+    gap: 20px;
+    width: 80%;
+    margin-top: 20px; /* Espacio entre el slideshow y los productos */
+  }
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 768px){
+      .product-grid{
+        grid-template-columns: repeat(4, 1fr);
+      }
+  }
+</style>
+
+<script>
+  // JavaScript para el slideshow
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "Slideshow de Colección",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Colección"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slideshow de Colección",
+        "category": "Colección"
+      }
+    ]
+  }
+{% endschema %}

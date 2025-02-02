@@ -1,0 +1,151 @@
+{% schema %}
+{
+  "name": "Featured Products Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Long Title description goes here"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop All Women"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reverse Collection List",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="featured-products-section">
+  
+  <div class="products-container">
+    <div class="text-block">
+      <h2>{{ section.settings.title }}</h2>
+      <p>{{ section.settings.description }}</p>
+      <a href="{{ section.settings.button_link }}" class="shop-button">{{ section.settings.button_text }}</a>
+    </div>
+    {% for block in section.blocks %}
+      {% if block.type == 'product' and block.settings.product != blank %}
+        <div class="product-block">
+          <a href="{{ block.settings.product.url }}">
+            <img src="{{ block.settings.product.featured_image | img_url: '500x' }}" alt="{{ block.settings.product.title }}">
+            <h3>{{ block.settings.product.title }}</h3>
+            <p>{{ block.settings.product.price | money }}</p>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+.featured-products-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: #006A50;
+  color: #004f32;
+  padding: 40px;
+}
+
+.text-block {
+  flex: 1;
+  background: #f5eddc;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  max-width: 500px;
+  height: 100%;
+}
+
+.text-block h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-block p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.shop-button {
+  display: inline-block;
+  background: #004f32;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.products-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  align-items: stretch;
+}
+
+.product-block {
+  flex: 1;
+  background: #006A50;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 500px;
+  height: 100%;
+}
+
+.product-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-block h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.product-block p {
+  font-size: 16px;
+  color: #ffffff;
+}
+</style>

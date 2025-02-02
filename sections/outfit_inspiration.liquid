@@ -1,0 +1,165 @@
+{% schema %}
+{
+  "name": "Outfit Inspiration",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "OUTFIT INSPIRATION"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Outfit Inspiration",
+      "category": "Collection",
+      "blocks": [
+        { "type": "product" }, { "type": "product" },
+        { "type": "product" }, { "type": "product" },
+        { "type": "product" }, { "type": "product" },
+        { "type": "product" }, { "type": "product" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.outfit-inspiration {
+  background-color: #E6DBC4;
+  padding: 50px;
+  text-align: center;
+}
+
+.outfit-inspiration h2 {
+  font-family: "EngraversGothicBT-Heavy";
+  color: #0F5B3D;
+  font-size: 82px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: none;
+  letter-spacing: 2px;
+}
+
+.outfit-inspiration p {
+  font-family: "EngraversGothicBT-Heavy";
+  color: #0F5B3D;
+  font-size: 21px;
+  /* margin-bottom: 40px; */
+}
+
+.outfit-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: auto;
+}
+
+.outfit-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    border: 3.4px solid #006A50;
+}
+
+.outfit-card {
+  padding: 20px;
+  text-align: left;
+}
+
+.outfit-card img {
+  width: 100%;
+  height: 630px; /* Ensuring a fixed height for uniform images */
+  object-fit: cover; /* Crop images to fill without distortion */
+  aspect-ratio: 4/5; /* Maintain consistent aspect ratio */
+}
+
+.outfit-card h3 {
+  font-family: "EngraversGothicBT-Heavy";
+  font-size: 19px;
+  color: #102345;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.outfit-card p {
+  font-size: 17px;
+  color: #44505F;
+}
+  .o_ins {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+  .outfit-container {
+    flex-direction: column;
+    gap: 30px; /* Reduce gap between blocks on mobile */
+  }
+  
+  .outfit-block {
+    grid-template-columns: 1fr; /* One product per row on mobile */
+    gap: 10px;
+  }
+    .outfit-inspiration{
+      padding: 20px;
+    }
+    .outfit-inspiration h2{
+      font-size: 54px;
+    }
+}
+</style>
+
+<section class="outfit-inspiration">
+  <h2>{{ section.settings.title }}</h2>
+  <p class="o_ins">{{ section.settings.subtitle }}</p>
+
+  <div class="outfit-container">
+    <!-- First Block: 4 Products -->
+    <div class="outfit-block">
+      {% for block in section.blocks limit: 4 %}
+        {% if block.settings.product %}
+          <div class="outfit-card">
+            <a href="{{ block.settings.product.url }}">
+              <img src="{{ block.settings.product.featured_image | img_url: 'large' }}" alt="{{ block.settings.product.title }}">
+              <h3>{{ block.settings.product.title }}</h3>
+              <p>{{ block.settings.product.price | money }}</p>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Second Block: 4 Products -->
+    <div class="outfit-block">
+      {% for block in section.blocks offset: 4 limit: 4 %}
+        {% if block.settings.product %}
+          <div class="outfit-card">
+            <a href="{{ block.settings.product.url }}">
+              <img src="{{ block.settings.product.featured_image | img_url: 'large' }}" alt="{{ block.settings.product.title }}">
+              <h3>{{ block.settings.product.title }}</h3>
+              <p>{{ block.settings.product.price | money }}</p>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

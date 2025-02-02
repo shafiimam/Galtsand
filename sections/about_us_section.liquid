@@ -1,0 +1,355 @@
+<style>
+/* *{
+  height: 1152px;
+} */
+  @font-face {
+  font-family: "Gambarino-Regular";
+  src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Gambarino-Regular.woff?v=1736211777");
+}
+  @font-face {
+  font-family: "EngraversGothicBT-Heavy";
+  src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/EngraversGothicBT-Heavy.woff?v=1736209600");
+}
+  @font-face {
+  font-family: "Inter Tight";
+  src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/inter-tight-regular.woff?v=1736259895");
+}
+  .challenge-section {
+  background-color: #660f28; /* Burgundy background */
+  color: white;
+  text-align: center;
+  padding: 142px 20px;
+  font-family: Arial, sans-serif;
+  min-height: 1513px;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: -72px;
+}
+
+.title p {
+  font-size: 5.3rem;
+  margin: 5px 0;
+  font-family: "Gambarino-Regular";
+  color: #E6DBC4;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.image-grid {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.image-grid .image {
+  position: absolute;
+}
+
+.image-grid .top-left {
+  top: -215px;
+  left: -12px;
+  width: 334px;
+  height: 150px;
+}
+
+.image-grid .top-right {
+  top: -215px;
+  right: -100px;
+  width: 392px;
+  /* height: 150px; */
+}
+
+.image-grid .bottom-left {
+  bottom: -373px;
+  left: -100px;
+  width: 457px;
+  height: 240px;
+}
+
+.image-grid .bottom-right {
+  bottom: -331px;
+  right: 312px;
+  width: 510px;
+  height: 185px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-blocks {
+  margin-top: 812px;
+  display: flex;
+    text-align: left;
+  padding-left: 40px;
+    padding-right: 40px;
+    
+  
+}
+.text-item {
+  padding: 18px;
+}
+.text-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "EngraversGothicBT-Heavy";
+  color: #E6DBC4;
+}
+
+.text-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 100;
+  font-family: "Inter Tight";
+  color: #cec3ac;
+}
+    .img_centerized {
+    margin: auto;
+  }
+.stretch {
+    transform:scale(0.9,1); /* W3C */
+}
+  @media screen and (max-width: 767px) {
+    .challenge-section {
+          padding: 30px 20px;
+    }
+    .image-grid .image {
+      position: relative;
+    }
+    .image-grid .top-left {
+      top:auto;
+      right: auto;
+      left:auto;
+      width:auto;
+      height: auto;
+      bottom: auto;
+    }
+    .image-grid .top-right  {
+      top:auto;
+      left:auto;
+      right: auto;
+      width:auto;
+      height: auto;
+      bottom: auto;
+    }
+    .image-grid .bottom-left  {
+      top:auto;
+      left:auto;
+      right: auto;
+      width:auto;
+      height: auto;
+      bottom: auto;
+    }
+    .image-grid .bottom-right
+    {
+      top:auto;
+      left:auto;
+      right: auto;
+      width:auto;
+      height: auto;
+      bottom: auto;
+    }
+    .title p {
+      font-size: 2.3rem;
+      letter-spacing: 0px;
+    }
+    .image-grid {
+      display: flex;
+    flex-direction: column;
+      margin-top: 23%;
+    }
+    .image{
+      margin-top: 10%;
+    }
+    .text-blocks {
+      display: flex;
+      margin-top: auto;
+      flex-direction: column;
+          padding-left: 0px;
+    padding-right: 0px;
+    }
+  }
+  
+</style>
+<section class="challenge-section">
+  <div class="container">
+    <!-- Title with distributed lines -->
+    <div class="title">
+      <img class="img_centerized" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_2.png?v=1736280251" alt="logo" loading="lazy" width=100 height=100/>
+      <p class="stretch">Join us on our</p>
+      <p class="stretch">journey of</p>
+      <p class="stretch">challenges and</p>
+      <p class="stretch">triumphs.</p>
+    </div>
+
+    <!-- Images around the text -->
+    <div class="image-grid">
+      <div class="image top-left">
+        <img src="{{ section.settings.image_1 | image_url }}" alt="{{ section.settings.image_1_alt }}">
+      </div>
+      <div class="image top-right">
+        <img src="{{ section.settings.image_2 | image_url }}" alt="{{ section.settings.image_2_alt }}">
+      </div>
+      <div class="image bottom-left">
+        <img src="{{ section.settings.image_3 | image_url }}" alt="{{ section.settings.image_3_alt }}">
+      </div>
+      <div class="image bottom-right">
+        <img src="{{ section.settings.image_4 | image_url }}" alt="{{ section.settings.image_4_alt }}">
+      </div>
+    </div>
+
+    <!-- Text content below images -->
+    <div class="text-blocks">
+      <div class="text-block">
+      <div class="text-item">
+        <h2>{{ section.settings.subtitle_1 }}</h2>
+        <p>{{ section.settings.description_1 }}</p>
+      </div>
+      <div class="text-item">
+        <h2>{{ section.settings.subtitle_2 }}</h2>
+        <p>{{ section.settings.description_2 }}</p>
+      </div>
+      </div>
+     <div class="text-block">
+      <div class="text-item">
+        <h2>{{ section.settings.subtitle_3 }}</h2>
+        <p>{{ section.settings.description_3 }}</p>
+      </div>
+      <div class="text-item">
+        <h2>{{ section.settings.subtitle_4 }}</h2>
+        <p>{{ section.settings.description_4 }}</p>
+      </div>
+      </div>
+    </div>
+    <a class="standard__cta herp__btn btn btn--white btn--long aos-init aos-animate" href={{ section.settings.btn_link  }}>{{ section.settings.btn_name }}</a>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "challenge_section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Top Left Image"
+    },
+    {
+      "type": "text",
+      "id": "image_1_alt",
+      "label": "Top Left Image Alt Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Top Right Image"
+    },
+    {
+      "type": "text",
+      "id": "image_2_alt",
+      "label": "Top Right Image Alt Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Bottom Left Image"
+    },
+    {
+      "type": "text",
+      "id": "image_3_alt",
+      "label": "Bottom Left Image Alt Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Bottom Right Image"
+    },
+    {
+      "type": "text",
+      "id": "image_4_alt",
+      "label": "Bottom Right Image Alt Text"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_1",
+      "label": "First Subtitle",
+      "default": "Founded in 1986"
+    },
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "First Description",
+      "default": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam. Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.Eget sagittis lectus felis quis velit purus cras malesuada. Purus neque nisi ut tellus tellus posuere. Ac sagittis massa suspendisse mi nisi duis. Sed pretium pretium augue amet vel."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_2",
+      "label": "Second Subtitle",
+      "default": "Pioneers of the Round-Neck Sweatshirt"
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Second Description",
+      "default": "Dignissim eleifend amet sit ultrices tempor sollicitudin in sed. Elit elementum ante sit consectetur. Sed nisl arcu turpis massa sit neque phasellus ac pellentesque. Cras nunc non fermentum mi pellentesque. Consectetur ut ipsum at faucibus nisl est vehicula at blandit."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_3",
+      "label": "Third Subtitle",
+      "default": "In facilisis malesuada viverra massa augue urna."
+    },
+    {
+      "type": "textarea",
+      "id": "description_3",
+      "label": "Third Description",
+      "default": "Congue ipsum sit cursus sapien eu integer. Accumsan eu risus non tristique sit. Adipiscing tincidunt morbi erat sapien ultrices amet gravida tincidunt. Amet sem integer purus euismod amet. Tortor cum ultrices sodales condimentum eget aliquam. Ut dui lorem libero viverra."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_4",
+      "label": "Fourth Subtitle",
+      "default": "Quis Donec"
+    },
+    {
+      "type": "textarea",
+      "id": "description_4",
+      "label": "Fourth Description",
+      "default": "Etiam maecenas dignissim id fermentum in lacinia. Id massa commodo in faucibus. Aliquam id ut augue nulla ut. Massa semper mi et libero sagittis quisque velit molestie netus. Eget tortor lacus sit volutpat erat ornare turpis proin. Ac lobortis feugiat sed nisi gravida. Cursus turpis vulputate quis leo praesent venenatis posuere habitant. Urna sit sit nunc vulputate massa lacus porttitor quis est."
+    },
+    {
+      "type":"text",
+      "id": "btn_name",
+      "label": "Button Name",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Link to"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default Challenge Section",
+      "settings": {}
+    }
+  ]
+}
+
+{% endschema %}

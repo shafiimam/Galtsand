@@ -1,0 +1,175 @@
+<div class="social-media-feed">
+  <h2 class="feed-title">{{ section.settings.main_title }}</h2>
+  <p class="feed-subtitle">{{ section.settings.subtitle }}</p>
+
+  <div class="feed-grid">
+    {% for block in section.blocks %}
+      <div class="feed-item">
+        {% if block.settings.is_video %}
+          <a href="{{ block.settings.video_url }}" class="video-overlay">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="Video Thumbnail" class="feed-image">
+            <div class="play-button">▶</div>
+          </a>
+        {% else %}
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="Feed Image" class="feed-image">
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .social-media-feed {
+    background-color: #E6DBC4;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .feed-title {
+ font-family: "exmouth";
+    text-transform: none;
+    font-size: 138px;
+    font-weight: 100;
+    color: #660000;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+
+  .feed-subtitle {
+    font-family: "EngraversGothicBT-Heavy";
+    font-size: 23px;
+    color: #660000;
+    margin-bottom: 30px;
+  }
+
+  .feed-grid {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 100%;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .feed-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1.4; /* Ensures square blocks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feed-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the block without distortion */
+  }
+
+  .video-overlay {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .feed-grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .feed-title {
+      font-size: 77px;
+      text-align: left;
+      line-heightt: 1;
+    }
+    .feed-subtitle{
+      font-size: 19px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .feed-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .feed-title {
+    /* font-size: 57px; */
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Social Media Feed",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "Social Media Feed Integration"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "media",
+      "name": "Feed Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_video",
+          "label": "Is this a video?",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "Video URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Media Feed",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "media"
+        },
+        {
+          "type": "media"
+        },
+        {
+          "type": "media"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
