@@ -493,8 +493,8 @@
           "type": "collection",
           "settings": {
             "collection": "all-men",
-            "title": "",
-            "link_text": "",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
             "background_color": "#e6dbc4",
@@ -506,8 +506,8 @@
           "type": "collection",
           "settings": {
             "collection": "women",
-            "title": "",
-            "link_text": "",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
             "background_color": "#e6dbc4",
@@ -519,8 +519,8 @@
           "type": "collection",
           "settings": {
             "collection": "best-sellers",
-            "title": "",
-            "link_text": "",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
             "background_color": "#e6dbc4",

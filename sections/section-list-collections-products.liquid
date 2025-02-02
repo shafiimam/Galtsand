@@ -1,8 +1,7 @@
 <!-- /sections/section-list-collections-products.liquid -->
 <style>
-
-   .cl .kicker-flourished {
-font-family: "exmouth" !important;
+  .cl .kicker-flourished {
+    font-family: 'exmouth' !important;
     font-size: 8rem;
     /* color: #E6DBC4; */
     text-transform: none;
@@ -12,40 +11,36 @@ font-family: "exmouth" !important;
     text-align: left;
     letter-spacing: 1px;
   }
-      .js-grid[data-grid-large="4"] {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin-bottom: 44px;
-        padding-bottom: 40px;
-        border-bottom: 3px solid;
-    }
-  .collection-list-item .collection-list__heading__text{
+  .js-grid[data-grid-large='4'] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 44px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid;
+  }
+  .collection-list-item .collection-list__heading__text {
     display: none !important;
   }
   .kicker-flourished:after {
     display: none;
   }
-  .cl{
-    background-color: #006A50 !important;
+  .cl {
+    background-color: #006a50 !important;
   }
-  .cl .stain-button-canvas{
-    background-color: #006A50 !important;
-   
+  .cl .stain-button-canvas {
+    background-color: #006a50 !important;
   }
   .wrapper--full .kicker-flourished {
     /* font-family: "EngraversGothicBT-Heavy" !important; */
     text-align: center !important;
     /* font-size: 100px; */
-    
   }
   .collection-list-item .collection-list__heading__text {
-    
     display: block;
     text-align: center;
-    color: #E6DBC4 !important;
+    color: #e6dbc4 !important;
   }
   .collection-list-item .collection-list__heading__text a {
-    
-    font-family: "EngraversGothicBT-Heavy" !important;
+    font-family: 'EngraversGothicBT-Heavy' !important;
   }
 </style>
 {%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
@@ -63,10 +58,12 @@ font-family: "exmouth" !important;
   {%- endif -%}
 {%- endfor -%}
 
-<div class="cl section-list-collections-products section-padding list__collections {{ section.settings.bg }}"
+<div
+  class="cl section-list-collections-products section-padding list__collections {{ section.settings.bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="collection-row"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
       <h2 class="kicker-flourished mb-r11">{{ section.settings.title }}</h2>
@@ -105,16 +102,20 @@ font-family: "exmouth" !important;
             item_background: block_all.settings.background_color,
             item_text: block_all.settings.item_link_text,
             item_link_size: block_all.settings.link_size,
-            item_text_color: block_all.settings.text_color %}
+            item_text_color: block_all.settings.text_color
+          %}
         {% endunless %}
       {% endfor %}
     {% else %}
       {% for block in section.blocks %}
         {%- if block.type == 'collection' -%}
           {%- assign collection = collections[block.settings.collection] -%}
-          {%- assign link_text = block.settings.link_text | default: block_all.settings.link_text -%}
-          {%- assign text = block.settings.text | default: block_all.settings.text -%}
-
+          {% for block in section.blocks %}
+            {% capture block_card_position %}
+              {% cycle 'first', 'last' %}
+            {% endcapture %}
+          {% endfor %}
+          {% assign card_position = block_card_position | strip %}
           {% render 'collection-row',
             collection: collection,
             product_limit: product_limit,
@@ -122,12 +123,15 @@ font-family: "exmouth" !important;
             enable_scroll_mobile: section.settings.enable_scroll_mobile,
             grid_small: section.settings.grid_small,
             collection_title_override: block.settings.title,
-            link_text: link_text,
+            link_text: block.settings.link_text,
             enable_item: block.settings.enable_item,
             item_background: block.settings.background_color,
-            item_text: text,
+            item_text: block.settings.text,
             item_link_size: block.settings.link_size,
-            item_text_color: block.settings.text_color %}
+            item_text_color: block.settings.text_color,
+            block: block,
+            block_card_position: card_position
+          %}
         {%- endif -%}
       {% endfor %}
     {% endunless %}
@@ -154,12 +158,12 @@ font-family: "exmouth" !important;
       "label": "Background color",
       "default": "palette--light bg--neutral",
       "options": [
-        { "value": "palette--light bg--neutral", "label": "Default"},
-        { "value": "palette--light bg--accent", "label": "Light"},
-        { "value": "palette--dark bg--invert", "label": "Dark"},
-        { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
-        { "value": "palette--bright bg--bright", "label": "Bright"},
-        { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
+        { "value": "palette--light bg--neutral", "label": "Default" },
+        { "value": "palette--light bg--accent", "label": "Light" },
+        { "value": "palette--dark bg--invert", "label": "Dark" },
+        { "value": "palette--dark bg--invert--accent", "label": "Dark accent" },
+        { "value": "palette--bright bg--bright", "label": "Bright" },
+        { "value": "palette--bright bg--bright--accent", "label": "Bright accent" }
       ]
     },
     {
@@ -167,21 +171,21 @@ font-family: "exmouth" !important;
       "content": "Grid"
     },
     {
-      "type":    "range",
-      "id":      "grid",
-      "min":     1,
-      "max":     6,
-      "step":    1,
-      "label":   "Products per row",
+      "type": "range",
+      "id": "grid",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Products per row",
       "default": 4
     },
     {
-      "type":    "range",
-      "id":      "rows",
-      "min":     1,
-      "max":     8,
-      "step":    1,
-      "label":   "Number of rows",
+      "type": "range",
+      "id": "rows",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "label": "Number of rows",
       "default": 1
     },
     {
@@ -241,8 +245,8 @@ font-family: "exmouth" !important;
       "limit": 1,
       "settings": [
         {
-        "type": "paragraph",
-        "content": "Use [name] to display the collection name"
+          "type": "paragraph",
+          "content": "Use [name] to display the collection name"
         },
         {
           "type": "text",
@@ -314,7 +318,7 @@ font-family: "exmouth" !important;
         {
           "type": "paragraph",
           "content": "Use [name] to display the collection name"
-          },
+        },
         {
           "label": "Collection",
           "id": "collection",
@@ -323,7 +327,8 @@ font-family: "exmouth" !important;
         {
           "type": "text",
           "id": "title",
-          "label": "Override collection name"
+          "label": "Override collection name",
+          "default": "Long Title description goes here"
         },
         {
           "type": "text",
@@ -382,7 +387,6 @@ font-family: "exmouth" !important;
   "presets": [
     {
       "name": "Collection product grid",
-      "category": "Collection",
       "blocks": [
         {
           "type": "collection"
@@ -394,8 +398,7 @@ font-family: "exmouth" !important;
     }
   ],
   "disabled_on": {
-    "groups": ["header","footer","aside"]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}
-

@@ -29,6 +29,7 @@
     <!-- Preloading ================================================================== -->
 
     <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preload" href="{{ settings.font_body_family | font_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ settings.font_heading_family | font_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ settings.font_accent_family | font_url }}" as="font" type="font/woff2" crossorigin>
@@ -81,7 +82,10 @@
     {% endif %}
 
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    >
     <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
@@ -178,7 +182,7 @@
     <!-- Theme Javascript ============================================================== -->
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-
+    <script src="{{ 'swiper.js' | asset_url }}" defer></script>
     <script>
       (function () {
         function onPageShowEvents() {

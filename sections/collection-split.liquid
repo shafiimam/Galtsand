@@ -1,47 +1,22 @@
 <!-- /sections/collection-split.liquid -->
 <style>
-  .slider {
-    position: relative;
-    width: 100%;
-  }
-
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 100%; /* Start off-screen */
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s ease; /* Smooth transition */
-  }
-
-  .slides {
-    display: none;
-  }
-
-  .slides.displaySlide {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-
   h1 {
-    font-family: "EngraversGothicBT-Heavy" !important;
-    color: #8B1A3A;
+    font-family: 'EngraversGothicBT-Heavy' !important;
+    color: #8b1a3a;
   }
 
   h2 {
-    font-family: "EngraversGothicBT-Heavy" !important;
+    font-family: 'EngraversGothicBT-Heavy' !important;
     font-size: 3.4rem;
   }
 
   .box a {
-    font-family: "EngraversGothicBT-Heavy" !important;
+    font-family: 'EngraversGothicBT-Heavy' !important;
     font-size: 1rem;
   }
 
   .sub_text {
-    font-family: "Inter Tight";
+    font-family: 'Inter Tight';
     padding-bottom: 3rem;
     font-size: 14px;
     letter-spacing: 1px;
@@ -55,22 +30,26 @@
   }
 
   .hero__kicker {
-    font-family: "Gambarino-Regular" !important;
+    font-family: 'Gambarino-Regular' !important;
     font-weight: 100 !important;
     font-size: 28px !important;
     letter-spacing: 0px !important;
   }
 
-  .text-orgp, span, .grid__swatch__container, .product__grid__title {
-    font-family: "EngraversGothicBT-Heavy" !important;
+  .text-orgp,
+  span,
+  .grid__swatch__container,
+  .product__grid__title {
+    font-family: 'EngraversGothicBT-Heavy' !important;
   }
 
-  .product__grid__price span, .grid__swatch__placeholder {
-    color: #44505F !important;
+  .product__grid__price span,
+  .grid__swatch__placeholder {
+    color: #44505f !important;
   }
 
   .text-orgp {
-    color: #8B1A3A;
+    color: #8b1a3a;
     font-size: 1.4rem;
     padding-bottom: 36px;
     font-weight: bold;
@@ -92,13 +71,13 @@
   }
 
   .arrows {
-    width: 49%;
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: -5%;
-    position: absolute;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    bottom: 25px;
+    padding-inline: calc(var(--outer) * 2);
+    z-index: 2;
   }
 
   .arrows img {
@@ -122,6 +101,30 @@
   @media (max-width: 768px) {
     .text-org h1 {
       font-size: 3rem;
+    }
+  }
+
+  .swiper {
+    height: 100%;
+    width: calc(100% - var(--gutter) * 2);
+    min-height: 550px;
+  }
+  @media screen and (max-width: 768px) {
+    .swiper{
+      margin-right: var(--gutter);
+      margin-left: var(--gutter);
+    }
+    .hero__title {
+      color: #e6dbc4;
+      font-family: 'Engravers Gothic';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 22.4px */
+    }
+    .collection-split .hero__content__wrapper{
+      padding-inline: 12px;
+      padding-block-end: 95px;
     }
   }
 </style>
@@ -151,138 +154,145 @@
   %}
 {%- endcapture -%}
 
-<div class="collection-split {{ section.settings.bg }}"
+<div
+  class="collection-split {{ section.settings.bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="collection-row"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
   <div class="slider {{ section.settings.width }} section-padding text-org">
-     <h1>{{ section.settings.header_text }}</h1>
-     <p class="text-orgp">{{ section.settings.header_h3text }}</p>
-     
+    <h1>{{ section.settings.header_text }}</h1>
+    <p class="text-orgp">{{ section.settings.header_h3text }}</p>
+
     <div class="collection-split__grid">
-     <div class="slides">
-      <div class="slide collection-split__item {% if section.settings.swap %} collection-split__item--last{% endif %}">
-        
-        <div class="collection-split__block{% if section.settings.sticky_image_enable %} collection-split__block--sticky{% endif %} {{ section.settings.text_color }}">
-          
-          {%- if section.settings.link_text == blank and section.settings.link != blank -%}
-            <a href="{{ section.settings.link }}" class="link-over-image" aria-label="{{ section.settings.heading | default: section.settings.kicker }}">
-          {%- endif -%}
+      <div class="slides swiper">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            {% if block.type == 'slide' %}
+              <div class="swiper-slide">
+                <div
+                  class="collection-split__block{% if section.settings.sticky_image_enable %} collection-split__block--sticky{% endif %} {{ block.settings.text_color }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if block.settings.link_text == blank and block.settings.link != blank -%}
+                    <a
+                      href="{{ block.settings.link }}"
+                      class="link-over-image"
+                      aria-label="{{ block.settings.heading | default: block.settings.kicker }}"
+                    >
+                  {%- endif -%}
+                  <div class="hero__content__wrapper align--bottom-center">
+                    <div class="box">
+                      {%- if block.settings.kicker != blank -%}
+                        <p
+                          class="hero__kicker"
+                          data-aos="hero"
+                          data-aos-anchor="{{ animation_anchor }}"
+                          data-aos-order="1"
+                        >
+                          {{ block.settings.kicker }}
+                        </p>
+                      {%- endif -%}
 
-          <div class="hero__content__wrapper align--bottom-center">
-            <div class="box">
-              {%- if section.settings.kicker != blank -%}
-                <p class="hero__kicker"
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="1">{{ section.settings.kicker }}</p>
-              {%- endif -%}
+                      {%- if block.settings.heading != blank -%}
+                        <h2
+                          class="hero__title"
+                          data-aos="hero"
+                          data-aos-anchor="{{ animation_anchor }}"
+                          data-aos-order="2"
+                        >
+                          {{ block.settings.heading }}
+                        </h2>
+                      {%- endif -%}
+                      {%- if block.settings.sub_text != blank -%}
+                        <p
+                          data-aos="hero"
+                          data-aos-anchor="{{ animation_anchor }}"
+                          class="sub_text"
+                        >
+                          {{ block.settings.sub_text }}
+                        </p>
+                      {% endif %}
+                      {%- if block.settings.link_text != blank and block.settings.link != blank -%}
+                        <a
+                          class="hero__btn {{ block.settings.button_style }} {{ block.settings.button_color }}"
+                          href="{{ block.settings.link }}"
+                          data-aos="hero"
+                          data-aos-anchor="{{ animation_anchor }}"
+                          data-aos-order="3"
+                        >
+                          {{ block.settings.link_text | escape }}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  </div>
 
-              {%- if section.settings.heading != blank -%}
-                <h2 class="hero__title"
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="2">{{ section.settings.heading }}</h2>
-              {%- endif -%}
-            {%- if section.settings.sub_text != blank -%} 
-              <p data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                class="sub_text">{{ section.settings.sub_text }}</p>
-              {% endif %}
-              {%- if section.settings.link_text != blank and section.settings.link != blank -%}
-                <a class="hero__btn {{ section.settings.button_style }} {{ section.settings.button_color }}"
-                  href="{{ section.settings.link }}"
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="3">
-                  {{ section.settings.link_text | escape }}
-                </a>
-              {%- endif -%}
-            </div>
-             <div class=" arrows">
-               <img class="arrow-left" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9.png?v=1736800174" width="100" height="100"/>
-               <img class="arrow-right" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_8.png?v=1736800174" width="100" height="100"/>
-             </div>
-          </div>
+                  {%- if block.settings.link_text == blank and block.settings.link != blank -%}
+                    </a>
+                  {%- endif -%}
 
-          {%- if section.settings.link_text == blank and section.settings.link != blank -%}
-            </a>
-          {%- endif -%}
+                  <div
+                    class="image-overlay"
+                    style="--bg: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | times: 0.01 }};"
+                  ></div>
 
-          <div class="image-overlay" style="--bg: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | times: 0.01 }};"></div>
-
-          {%- if section.settings.video_bg != nil -%}
-            <div class="video-autoplay-wrapper">
-              {%- assign video_styles = section.settings.object_position | replace: '-', ' ' | prepend: 'object-position: ' -%}
-              {{ section.settings.video_bg | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, style: video_styles, data-video-autoplay: '' }}
-            </div>
-          {%- else -%}
-            {% assign alt = section.settings.image.alt | default: 'Collection Image' %}
-            {% render 'image-parallax', img_object: section.settings.image, img_object_mobile: section.settings.mobile_image, frame_height_class: 'none' %}
-          {% endif %}
+                  {%- if section.settings.video_bg != null -%}
+                    <div class="video-autoplay-wrapper">
+                      {%- assign video_styles = section.settings.object_position
+                        | replace: '-', ' '
+                        | prepend: 'object-position: '
+                      -%}
+                      {{
+                        section.settings.video_bg
+                        | video_tag:
+                          autoplay: true,
+                          loop: true,
+                          muted: true,
+                          controls: false,
+                          playsinline: true,
+                          style: video_styles,
+                          data-video-autoplay: ''
+                      }}
+                    </div>
+                  {%- else -%}
+                    {% assign alt = block.settings.image.alt | default: 'Collection Image' %}
+                    {% render 'image-parallax',
+                      img_object: block.settings.image,
+                      img_object_mobile: block.settings.mobile_image,
+                      frame_height_class: 'none'
+                    %}
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          <!-- If we need navigation buttons -->
         </div>
-      </div>
-      <div class="slide collection-split__item {% if section.settings.swap %} collection-split__item--last{% endif %}">
-      </div>
-        <div class="collection-split__block{% if section.settings.sticky_image_enable %} collection-split__block--sticky{% endif %} {{ section.settings.text_color }}">
-          
-          {%- if section.settings.link_text == blank and section.settings.link != blank -%}
-            <a href="{{ section.settings.link }}" class="link-over-image" aria-label="{{ section.settings.heading | default: section.settings.kicker }}">
-          {%- endif -%}
-
-          <div class="hero__content__wrapper align--bottom-center">
-            <div class="box">
-              {%- if section.settings.kicker != blank -%}
-                <p class="hero__kicker"
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="1">{{ section.settings.kicker }}</p>
-              {%- endif -%}
-
-              {%- if section.settings.heading != blank -%}
-                <h2 class="hero__title"
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="2">{{ section.settings.heading }}</h2>
-              {%- endif -%}
-            {%- if section.settings.sub_text != blank -%} 
-              <p data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                class="sub_text">{{ section.settings.sub_text }}</p>
-              {% endif %}
-              {%- if section.settings.link_text != blank and section.settings.link != blank -%}
-                <a class="hero__btn {{ section.settings.button_style }} {{ section.settings.button_color }}"
-                  href="{{ section.settings.link }}"
-                  data-aos="hero"
-                  data-aos-anchor="{{ animation_anchor }}"
-                  data-aos-order="3">
-                  {{ section.settings.link_text | escape }}
-                </a>
-              {%- endif -%}
-            </div>
-           
+        <div class="arrows">
+          <div class="prev-slide">
+            <img
+              class="prev"
+              onClick="prevSlide"
+              src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9.png?v=1736800174"
+              width="100"
+              height="100"
+            >
           </div>
-
-          {%- if section.settings.link_text == blank and section.settings.link != blank -%}
-            </a>
-          {%- endif -%}
-
-          <div class="image-overlay" style="--bg: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | times: 0.01 }};"></div>
-
-          {%- if section.settings.video_bg != nil -%}
-            <div class="video-autoplay-wrapper">
-              {%- assign video_styles = section.settings.object_position | replace: '-', ' ' | prepend: 'object-position: ' -%}
-              {{ section.settings.video_bg | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, style: video_styles, data-video-autoplay: '' }}
-            </div>
-          {%- else -%}
-            {% assign alt = section.settings.image.alt | default: 'Collection Image' %}
-            {% render 'image-parallax', img_object: section.settings.image, img_object_mobile: section.settings.mobile_image, frame_height_class: 'none' %}
-          {% endif %}
+          <div class="next-slide">
+            <img
+              class="next"
+              onClick="nextSlide"
+              src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_8.png?v=1736800174"
+              width="100"
+              height="100"
+            >
+          </div>
         </div>
       </div>
 
       <div class="collection-split__products">
-        <div class="float-grid grid--{{ section.settings.grid_large }}"
+        <div
+          class="float-grid grid--{{ section.settings.grid_large }}"
           data-grid
           data-grid-flex
           data-grid-large
@@ -292,7 +302,9 @@
           style="
             --grid-large-items: {{ section.settings.grid_large }};
             --grid-medium-items: {{ section.settings.grid_large | at_most: 2 }};
-            --grid-small-items: {{ section.settings.grid_small }};">
+            --grid-small-items: {{ section.settings.grid_small }};
+          "
+        >
           {%- assign wrap_class = 'collection-split__product grid__item' -%}
           {%- if products != blank -%}
             {%- for _product in products limit: section.settings.limit -%}
@@ -313,31 +325,31 @@
         </div>
       </div>
     </div>
-     <div class="arrows">
-               <img class="prev" onClick="prevSlide" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9.png?v=1736800174" width="100" height="100"/>
-               <img class="next" onClick="nextSlide" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_8.png?v=1736800174" width="100" height="100"/>
-             </div>
   </div>
 </div>
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.slides.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.next-slide',
+        prevEl: '.prev-slide',
+      },
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Products with image",
   "settings": [
     {
-      "type":"text",
+      "type": "text",
       "id": "header_text",
       "label": "Title",
       "default": "Curated Collections"
     },
     {
-      "type":"text",
-      "id": "sub_text",
-      "label": "Sub Text",
-      "default": "Cursus pellentesque turpis odio vel sodales urna vitae"
-    },
-    {
-      "type":"text",
+      "type": "text",
       "id": "header_h3text",
       "label": "Subtitle",
       "default": "Handcarfted by our expert designers"
@@ -358,20 +370,6 @@
     },
     {
       "type": "header",
-      "content": "Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobile_image",
-      "label": "Mobile image"
-    },
-    {
-      "type": "header",
       "content": "Layout"
     },
     {
@@ -389,13 +387,13 @@
       "default": false
     },
     {
-      "type":    "range",
-      "id":      "overlay_opacity",
-      "min":     0,
-      "max":     100,
-      "step":    5,
-      "label":   "Image overlay opacity",
-      "info":    "Increase contrast for legible text.",
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "Image overlay opacity",
+      "info": "Increase contrast for legible text.",
       "default": 15
     },
     {
@@ -403,80 +401,6 @@
       "id": "overlay_color",
       "label": "Overlay color",
       "default": "#000000"
-    },
-    {
-      "type": "header",
-      "content": "Text"
-    },
-    {
-      "type": "text",
-      "id": "kicker",
-      "label": "Kicker",
-      "default": "Introducing"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Title",
-      "default": "Featured products"
-    },
-    {
-      "type": "select",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "text--white",
-      "options": [
-        { "value": "text--neutral", "label": "Normal text"},
-        { "value": "text--white", "label": "White"},
-        { "value": "text--primary", "label": "Primary accent"},
-        { "value": "text--secondary", "label": "Secondary accent"},
-        { "value": "text--black", "label": "Black"},
-        { "value": "text--invert--primary", "label": "Primary dark accent"},
-        { "value": "text--invert--secondary", "label": "Secondary dark accent"},
-        { "value": "text--invert", "label": "Inverted text color"},
-        { "value": "text--bright--primary", "label": "Primary bright accent"},
-        { "value": "text--bright--secondary", "label": "Secondary bright accent"}
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Button"
-    },
-    {
-      "type": "text",
-      "id": "link_text",
-      "label": "Text",
-      "default": "View products",
-      "info": "Leave blank to link entire image"
-    },
-    {
-      "type": "url",
-      "id": "link",
-      "label": "Link"
-    },
-    {
-      "type": "select",
-      "id": "button_color",
-      "label": "Color",
-      "default": "btn--white",
-      "options": [
-        { "value": "btn--primary", "label": "Bright accent" },
-        { "value": "btn--secondary", "label": "Secondary accent" },
-        { "value": "btn--neutral", "label": "Text color" },
-        { "value": "btn--black", "label": "Black" },
-        { "value": "btn--white", "label": "White" }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "button_style",
-      "label": "Button style",
-      "default": "btn",
-      "options": [
-        { "value": "btn", "label": "Solid button"},
-        { "value": "btn--soft", "label": "Soft button"},
-        { "value": "btn--outline", "label": "Outlined button"}
-      ]
     },
     {
       "type": "header",
@@ -515,12 +439,12 @@
       "label": "Background color",
       "default": "palette--light bg--neutral",
       "options": [
-        { "value": "palette--light bg--neutral", "label": "Default"},
-        { "value": "palette--light bg--accent", "label": "Light"},
-        { "value": "palette--dark bg--invert", "label": "Dark"},
-        { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
-        { "value": "palette--bright bg--bright", "label": "Bright"},
-        { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
+        { "value": "palette--light bg--neutral", "label": "Default" },
+        { "value": "palette--light bg--accent", "label": "Light" },
+        { "value": "palette--dark bg--invert", "label": "Dark" },
+        { "value": "palette--dark bg--invert--accent", "label": "Dark accent" },
+        { "value": "palette--bright bg--bright", "label": "Bright" },
+        { "value": "palette--bright bg--bright--accent", "label": "Bright accent" }
       ]
     },
     {
@@ -581,48 +505,115 @@
       "default": 36
     }
   ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image"
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+        {
+          "type": "text",
+          "id": "kicker",
+          "label": "Kicker",
+          "default": "Introducing"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Title",
+          "default": "Featured products"
+        },
+        {
+          "type": "text",
+          "id": "sub_text",
+          "label": "Sub Text",
+          "default": "Cursus pellentesque turpis odio vel sodales urna vitae"
+        },
+        {
+          "type": "select",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "text--white",
+          "options": [
+            { "value": "text--neutral", "label": "Normal text" },
+            { "value": "text--white", "label": "White" },
+            { "value": "text--primary", "label": "Primary accent" },
+            { "value": "text--secondary", "label": "Secondary accent" },
+            { "value": "text--black", "label": "Black" },
+            { "value": "text--invert--primary", "label": "Primary dark accent" },
+            { "value": "text--invert--secondary", "label": "Secondary dark accent" },
+            { "value": "text--invert", "label": "Inverted text color" },
+            { "value": "text--bright--primary", "label": "Primary bright accent" },
+            { "value": "text--bright--secondary", "label": "Secondary bright accent" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Text",
+          "default": "View products",
+          "info": "Leave blank to link entire image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_color",
+          "label": "Color",
+          "default": "btn--white",
+          "options": [
+            { "value": "btn--primary", "label": "Bright accent" },
+            { "value": "btn--secondary", "label": "Secondary accent" },
+            { "value": "btn--neutral", "label": "Text color" },
+            { "value": "btn--black", "label": "Black" },
+            { "value": "btn--white", "label": "White" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "btn",
+          "options": [
+            { "value": "btn", "label": "Solid button" },
+            { "value": "btn--soft", "label": "Soft button" },
+            { "value": "btn--outline", "label": "Outlined button" }
+          ]
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Products with image",
-      "category": "Collection"
+      "name": "Products with image"
     }
   ],
   "disabled_on": {
-    "groups": ["header","footer","aside"]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".slides");
-  let slideIndex = 0;
-
-  if (slides.length > 0) {
-    slides[slideIndex].classList.add("displaySlide");
-    setInterval(() => {
-      nextSlide();
-    }, 5000);
-
-    document.querySelector(".prev")?.addEventListener("click", prevSlide);
-    document.querySelector(".next")?.addEventListener("click", nextSlide);
-  }
-
-  function showSlide(index) {
-    if (index >= slides.length) slideIndex = 0;
-    else if (index < 0) slideIndex = slides.length - 1;
-    else slideIndex = index;
-
-    slides.forEach(slide => slide.classList.remove("displaySlide"));
-    slides[slideIndex].classList.add("displaySlide");
-  }
-
-  function nextSlide() {
-    showSlide(slideIndex + 1);
-  }
-
-  function prevSlide() {
-    showSlide(slideIndex - 1);
-  }
-});
-</script>

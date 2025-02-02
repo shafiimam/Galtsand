@@ -1,38 +1,37 @@
 <!-- /snippets/collection-row.liquid -->
 <style>
- /* .product-grid-item .space{
+  /* .product-grid-item .space{
     height: 58vh !important;
   } */
-  .aligment{
-      align-items: flex-start;
+  .collection-block-card__content {
+    align-items: flex-start;
     /* justify-content: center; */
     text-align: left;
     flex-direction: column;
   }
-  .aligment h1{
-    font-family: "Gambarino-Regular";
-        text-transform: none;
+  .collection-block-card__content h1 {
+    font-family: 'Gambarino-Regular';
+    text-transform: none;
     font-size: 3rem;
     letter-spacing: 1px;
-    color: #006A50;
+    color: #006a50;
   }
-  .aligment p{
-    padding-bottom: 12rem;
-    font-family: "Inter Tight" !important;
-    color: #006A50;
+  .collection-block-card__content p {
+    font-family: 'Inter Tight' !important;
+    color: #006a50;
     font-size: 1.2rem;
   }
- .collection-list__product .quickview span{
-    color: #E6DBC4 ;
+  .collection-list__product .quickview span {
+    color: #e6dbc4;
   }
- .collection-list__product .product__grid__title{
-    color: #E6DBC4 ;
+  .collection-list__product .product__grid__title {
+    color: #e6dbc4;
   }
- .collection-list__product .product__grid__price{
-    color: #E6DBC4 ;
+  .collection-list__product .product__grid__price {
+    color: #e6dbc4;
   }
-  .aligment .standard__cta {
-   display: flex;
+  .collection-block-card__content .standard__cta {
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -40,60 +39,52 @@
     padding: 24px 24px; /* Ajusta el padding según sea necesario */
     font-weight: bold;
     font-size: 1rem;
-    background-color: #006A50 !important;
-    color: #E6DBC4 !important;
-    border: 2.5px solid #006A50;
+    background-color: #006a50 !important;
+    color: #e6dbc4 !important;
+    border: 2.5px solid #006a50;
   }
-  .aligment .standard__cta:hover{
-        background-color: #E6DBC4  !important;
-    color:  #006A50 !important;
-    border: 2.5px solid #006A50;
+  .collection-block-card__content .standard__cta:hover {
+    background-color: #e6dbc4 !important;
+    color: #006a50 !important;
+    border: 2.5px solid #006a50;
   }
-  @media (max-width: 2000px) {
-    .aligment p{
-    padding-bottom: 6em;
-      
-    }
 
+  .collection-block-card__content h1 {
+    font-size: clamp(24px, 3vw, 40px);
   }
-   @media (max-width: 1550px) {
-          .aligment h1{
-      font-size: 2rem
-    }
-      .aligment p{
-    padding-bottom: 3em;
-      
-    }
+  .collection-block-card__content p {
+    font-size: 14px;
+  }
 
-   }
-   @media (max-width: 1400px) {
-          .aligment h1{
-      font-size: 2rem;
+  @media (max-width: 1100px) {
+    .collection-block-card__content .standard__cta {
+      font-size: 11px !important;
+      margin-left: 0px;
+      padding: 19px 24px;
     }
-   }
-   @media (max-width: 1100px) {
-          .aligment h1{
-      font-size: 1.5rem;
-    }
-      .aligment p{
-    padding-bottom: 1rem;
-        font-size: 0.8rem;
-      
-    }
-      .aligment .standard__cta {
-        font-size: 11px !important;
-        margin-left: 0px;
-        padding: 19px 24px;
-      }
-     .space {
-       height: 293px !important;
-     }
-   }
+  }
   @media (max-width: 768px) {
-    .wrapper--full .kicker-flourished{
+    .wrapper--full .kicker-flourished {
       font-size: 39px;
     }
-   
+  }
+  .collection-block-card{
+    height: 100%;
+  }
+  .collection-block-card-link {
+    height: 100%;
+    background-color: {{ item_background | default: '#fcfaf7' }};
+    position: relative;
+    display: block;
+  }
+
+  .collection-block-card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    padding: 20px;
   }
 </style>
 {% comment %}
@@ -133,7 +124,6 @@
 
   {% comment %} Item Block HTML {% endcomment %}
   {%- capture item_html -%}
-    {%- assign image_ratio = settings.product_card_wh_ratio | times: 100 -%}
 
     {%- if item_text == blank -%}
       {%- capture item_text -%}{{ 'collections.general.shop_all' | t: name: collection_title }}{%- endcapture -%}
@@ -143,17 +133,19 @@
       <div class="collection-list__product">
     {%- endif -%}
 
-      <div class="product-grid-item section--image {{ item_text_color }}">
-        <a href="{{ collection.url }}" class="space product-grid-item__link" aria-label="{{ collection_title | strip_html | escape }}" style="padding-top:{{ image_ratio }}%; background-color: {{ item_background | default: '#fcfaf7' }};">
+      <div class="collection-block-card {{ item_text_color }}">
+        <a href="{{ collection.url }}" class="collection-block-card-link" aria-label="{{ collection_title | strip_html | escape }}">
           <div
-            class="hero__content__wrapper aligment"
+            class="collection-block-card__content"
             aria-label="{{ collection_title | escape }}">
             {% assign link_size_class = item_link_size | prepend: 'accent-size-' %}
-            <h1>Long Title description goes here</h1>
-            <p>Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.</p>
-            <div class="standard__cta hero__btn btn btn--primary btn--long aos-init aos-animate {{ link_size_class }}">
-              {{ item_text | replace: '[name]', collection_title }}
+            <div>
+              <h1>{{ collection_title_override }}</h1>
+              <p>{{ link_text }}</p>
             </div>
+            <div class="standard__cta hero__btn btn btn--primary btn--long aos-init aos-animate {{ link_size_class }}">
+              {{ item_text }}
+            </div>     
           </div>
         </a>
       </div>
@@ -170,21 +162,18 @@
 
 {%- if collection != blank -%}
   <div class="collection-list-item">
-    <div class="collection-list__heading__text">
-      <a href="{{ collection.url }}" class="hero__title heading-size-7" title="{{ 'collections.general.link_title' | t: title: collection_title }}">
-        {{ collection_title_override | replace: '[name]', collection_title | default: collection_title }}
-      </a>
-
-      {%- if link_text != '' and is_empty_collection == false -%}
-        {% assign link_size_class = item_link_size | prepend: 'accent-size-' %}
-        <a href="{{ collection.url }}" class="text-btn-arrow-right {{ link_size_class }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}">
-          {{ link_text }}
-        </a>
-      {%- endif -%}
-    </div>
-
     {%- unless is_empty_collection -%}
-      <div class="js-grid{% if enable_scroll_mobile %} collection-list__products{% endif %}" data-grid-large="{{ grid }}" data-grid-small="2" style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);">
+      <div
+        class="js-grid{% if enable_scroll_mobile %} collection-list__products{% endif %}"
+        data-grid-large="{{ grid }}"
+        data-grid-small="2"
+        style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);"
+        {{ block.shopify_attributes }}
+      >
+        {%- if enable_item == true and block_card_position == 'first' -%}
+          {{- item_html -}}
+        {%- endif -%}
+
         {% for product in collection.products limit: product_limit %}
           {%- capture placeholder -%}
             product-{%- cycle '1', '2', '3', '4', '5', '6' -%}
@@ -197,11 +186,12 @@
           {%- render 'product-grid-item', product: product, placeholder: placeholder -%}
 
           {%- if enable_scroll_mobile -%}
-            </div><!-- /.collection-list__product -->
+            </div>
+            <!-- /.collection-list__product -->
           {%- endif -%}
         {% endfor %}
 
-        {%- if enable_item -%}
+        {%- if enable_item == true and block_card_position == 'last' -%}
           {{- item_html -}}
         {%- endif -%}
       </div>
@@ -211,20 +201,12 @@
   </div>
 {%- else -%}
   <div class="collection-list-item">
-    <div class="collection-list__heading__text">
-      <a href="{{ routes.collections_url }}" class="hero__title heading-size-7" title="{{- 'collections.general.collection_grid_cta' | t -}}">
-        {{ collection_title_override | replace: '[name]', collection_title | default: collection_title }}
-      </a>
-
-      {%- if link_text != '' -%}
-        {% assign link_size_class = item_link_size | prepend: 'accent-size-' %}
-        <a href="{{ routes.collections_url }}" class="text-btn-arrow-right {{ link_size_class }}" title="{{- 'collections.general.collection_grid_cta' | t -}}">
-          {{ link_text }}
-        </a>
-      {%- endif -%}
-    </div>
-
-    <div class="js-grid{% if enable_scroll_mobile %} collection-list__products{% endif %}" data-grid-large="{{ grid }}" data-grid-small="2" style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);">
+    <div
+      class="js-grid{% if enable_scroll_mobile %} collection-list__products{% endif %}"
+      data-grid-large="{{ grid }}"
+      data-grid-small="2"
+      style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);"
+    >
       {%- assign wrap = 'collection-list__product-wrap' -%}
 
       {%- if enable_scroll_mobile -%}
@@ -239,20 +221,3 @@
     </div>
   </div>
 {%- endif -%}
-<script>
-  function matchHeights() {
-  let images = document.querySelectorAll('.product-grid-item__images');
-  let spaces = document.querySelectorAll('.product-grid-item .space');
-
-  images.forEach((image, index) => {
-    if (spaces[index]) {
-      let height = image.clientHeight;
-      spaces[index].style.height = height + "px";
-    }
-  });
-}
-
-// Run on page load & when resizing
-window.addEventListener("load", matchHeights);
-window.addEventListener("resize", matchHeights);
-</script>

@@ -134,6 +134,7 @@
       "settings": {
         "header_style": "logo_center",
         "logo": "shopify://shop_images/Frame_1.png",
+        "logo_v2": "shopify://shop_images/galtsand-blue-logo.png",
         "logo_max_limit": 135,
         "logo_padding": 26,
         "logo_text_size": 5,
