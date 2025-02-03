@@ -1,0 +1,177 @@
+<div class="brand-values-section">
+  <div class="brand-values-images">
+    <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="Left Image" class="brand-left-image">
+  </div>
+
+  <div class="brand-values-content">
+    <img src="{{ section.settings.logo | img_url  }}" alt="Logo" class="brand-logo">
+    <p class="firstP">{{ section.settings.title }}</p>
+    <p class="secondP">{{ section.settings.paragraph }}</p>
+    <a href="{{ section.settings.button_link }}" class="standard__cta herp__btn btn btn--white btn--long aos-init aos-animate">{{ section.settings.button_text }}</a>
+  </div>
+
+  <div class="brand-values-images">
+    {% if section.settings.right_image_type == 'image' %}
+      <img src="{{ section.settings.right_image | img_url: 'master' }}" alt="Right Image" class="brand-right-image">
+    {% elsif section.settings.right_image_type == 'video' %}
+      <video controls class="brand-right-video">
+        <source src="{{ section.settings.right_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .secondP{
+    color: #cec3ac;
+    
+  }
+  .firstP{
+    font-family: "Gambarino-Regular" !important;
+    font-size: 64px;
+    color: #E6DBC4;
+  }
+  .brand-values-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #1a2947;
+    color: white;
+    gap: 20px;
+  }
+
+  .brand-values-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-left-image, .brand-right-image {
+    width: 100%;
+  
+    height: auto;
+   
+  }
+
+  .brand-right-video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  .brand-values-content {
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 100px;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+  .brand-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    color: #1a2947;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .firstP{
+      font-size: 2.2rem;
+    }
+    .brand-values-content .standard__cta{
+      font-size: 16px !important;
+    }
+  }
+ @media (max-width: 768px) {
+    .brand-values-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+   .firstP {
+     font-size: 3rem;
+   }
+
+    .brand-values-images,
+    .brand-values-content {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Brand Values Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Brand Values Section"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+     
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "See How We Do It"
+    },
+    {
+      "type": "radio",
+      "id": "right_image_type",
+      "label": "Right Image Type",
+      "options": [
+        { "value": "image", "label": "Image" },
+        { "value": "video", "label": "Video" }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Image"
+    },
+    {
+      "type": "url",
+      "id": "right_video",
+      "label": "Right Video URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Values Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

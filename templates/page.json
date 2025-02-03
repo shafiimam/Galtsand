@@ -1,0 +1,302 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_map_xdJRJC": {
+      "type": "section-map",
+      "settings": {
+        "height": "use_screen_one_half",
+        "heading": "Our store",
+        "address": "<p>The Mall At Wellington Green<br/>Wellington, Florida</p><p>Mon - Sat, 11am - 8pm<br/>Sunday, 11am - 6pm</p>",
+        "button": "Get Directions",
+        "button_style": "btn",
+        "style": "default",
+        "zoom": 11,
+        "bg": "palette--light bg--neutral",
+        "api_key": "AIzaSyDXIiCh8gMaGpK32m5W0EgTdn4Y6Qzi4gE",
+        "map_address": "10300 Forest Hill Blvd Ste 211 Wellington, Florida 33414",
+        "enable_latlong": false,
+        "lat": "",
+        "long": "",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_richtext_qfxNbg": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_k4JfGm": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "Introducing",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "heading_3fRkeL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Community Events Images Gallery",
+            "text_size": 8
+          }
+        },
+        "text_3cfyKz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        },
+        "button_CNykbD": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "Shop all",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--medium",
+            "button_style_1": "btn-text-thick-line",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_k4JfGm",
+        "heading_3fRkeL",
+        "text_3cfyKz",
+        "button_CNykbD"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_yN3UFF": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_VJer4H": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event.jpg",
+            "link": ""
+          }
+        },
+        "image_TMXaNM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-9.jpg",
+            "link": ""
+          }
+        },
+        "image_zaPc8z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-17.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_VJer4H",
+        "image_TMXaNM",
+        "image_zaPc8z"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.3,
+        "width": "wrapper",
+        "padding_top": 18,
+        "padding_bottom": 18
+      }
+    },
+    "section_gallery_EbnXHd": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_zL3hJA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-40.jpg",
+            "link": ""
+          }
+        },
+        "image_kyH4Ln": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-49.jpg",
+            "link": ""
+          }
+        },
+        "image_KeeWk9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-52.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_zL3hJA",
+        "image_kyH4Ln",
+        "image_KeeWk9"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 18,
+        "padding_bottom": 18
+      }
+    },
+    "section_gallery_YijPUP": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_6QMwUd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-61.jpg",
+            "link": ""
+          }
+        },
+        "image_MPhVLi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-21.jpg",
+            "link": ""
+          }
+        },
+        "image_PyFMtt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-64.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_6QMwUd",
+        "image_MPhVLi",
+        "image_PyFMtt"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 18,
+        "padding_bottom": 18
+      }
+    },
+    "section_gallery_xbmpED": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_QtgTCk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-85.jpg",
+            "link": ""
+          }
+        },
+        "image_GA9zCg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-92.jpg",
+            "link": ""
+          }
+        },
+        "image_V9HzVK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Event-139.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_QtgTCk",
+        "image_GA9zCg",
+        "image_V9HzVK"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 1,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": true,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 18,
+        "padding_bottom": 18
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_map_xdJRJC",
+    "section_richtext_qfxNbg",
+    "section_gallery_yN3UFF",
+    "section_gallery_EbnXHd",
+    "section_gallery_YijPUP",
+    "section_gallery_xbmpED"
+  ]
+}

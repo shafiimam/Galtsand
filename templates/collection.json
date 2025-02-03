@@ -1,0 +1,128 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": false,
+        "show_title_below": false,
+        "show_description": false,
+        "show_description_below": false,
+        "color_bg": "palette--bright bg--bright--accent",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_third",
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "collections": {
+          "type": "collections",
+          "settings": {
+            "title": "All collections"
+          }
+        },
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "collections",
+        "filters"
+      ],
+      "settings": {
+        "title_collection": "Explore Products",
+        "p_collection": "Our t-shirts are more than just clothing—they're an expression of your personality. Here’s why they’re a must-have:",
+        "product_limit": 9,
+        "grid_large": 3,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": false,
+        "hide_sidebar": false,
+        "collapse_filters": false,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "fabric_choice_Th3iVf": {
+      "type": "fabric_choice",
+      "settings": {
+        "title": "Fabric Choices for Comfort and Durability",
+        "subtitle": "We believe fabric quality makes all the difference. That's why our t-shirts are crafted from the finest materials:",
+        "background_image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
+        "fabric_title_1": "Superior Fabric Quality",
+        "fabric_description_1": "Ideal for its breathability and natural softness, perfect for daily wear.",
+        "fabric_title_2": "Polyester",
+        "fabric_description_2": "A wrinkle-resistant and durable choice that maintains its shape over time.",
+        "fabric_title_3": "Blended Fabrics",
+        "fabric_description_3": "Combining the best of both worlds, offering stretch and durability for all-day comfort."
+      }
+    },
+    "why_use_our_pieces_GM7rgH": {
+      "type": "Why_Use_Our_Pieces",
+      "settings": {
+        "title": "Why Our T-Shirts Are a Wardrobe Essential",
+        "subtitle": "Our t-shirts are more than just clothing—they’re an expression of your personality. Here’s why they’re a must-have:",
+        "icon_1": "shopify://shop_images/Medal_1.png",
+        "title_1": "Superior Fabric Quality",
+        "description_1": "We use high-grade materials like soft cotton, durable polyester, and premium blends for unmatched comfort.",
+        "icon_2": "shopify://shop_images/HandHeart.png",
+        "title_2": "Wide Range of Styles",
+        "description_2": "From basic crew necks to statement prints, we offer a variety of options to suit any style.",
+        "icon_3": "shopify://shop_images/Confetti.png",
+        "title_3": "Versatility for Any Occasion",
+        "description_3": "Dress them up or down, our t-shirts are perfect for casual outings, gym sessions, or even semi-formal events."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "main",
+    "fabric_choice_Th3iVf",
+    "why_use_our_pieces_GM7rgH"
+  ]
+}

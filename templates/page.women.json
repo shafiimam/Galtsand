@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_hero_rMUqDq": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker_fThBiV": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Introducing",
+            "enable_line": false,
+            "text_size": 4
+          }
+        },
+        "heading_netpW8": {
+          "type": "heading",
+          "settings": {
+            "title": "From Yoga To Beyond",
+            "text_size": 10
+          }
+        },
+        "text_mNhtYM": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>We've got you covered.</p>",
+            "text_size": 6
+          }
+        },
+        "button_WqwhFp": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "View All",
+            "link_1": "shopify://collections/women",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_fThBiV",
+        "heading_netpW8",
+        "text_mNhtYM",
+        "button_WqwhFp"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/collage_women_08f8da0a-dfa1-4b97-b2da-6098c78ba088.jpg",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 15,
+        "overlay_color": "#000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_mosaic_wRGkaT": {
+      "type": "section-mosaic",
+      "blocks": {
+        "collection_f99Qe3": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-in",
+            "kicker": "",
+            "kicker_size": 3,
+            "show_title": true,
+            "text_align": "text-center",
+            "title": "",
+            "title_size": 8,
+            "link_text": "",
+            "link_size": 3,
+            "image": "shopify://shop_images/015A4919.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000"
+          }
+        },
+        "image_tYaGqV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/015A4451.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title_text": "Image",
+            "title_size": 8,
+            "text_align": "text-left tile--bottom",
+            "kicker_text": "",
+            "kicker_size": 3,
+            "link_text": "",
+            "link_url": "",
+            "link_size": 3
+          }
+        },
+        "image_FViURP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/015A5400.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title_text": "Matching Sets",
+            "title_size": 8,
+            "text_align": "text-center",
+            "kicker_text": "",
+            "kicker_size": 3,
+            "link_text": "",
+            "link_url": "",
+            "link_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "collection_f99Qe3",
+        "image_tYaGqV",
+        "image_FViURP"
+      ],
+      "settings": {
+        "first_block_height": "short",
+        "wh_ratio": 1.4,
+        "split": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_rJyt7p": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_9RqJwG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/020A5548-Edit-Edit.jpg",
+            "link": ""
+          }
+        },
+        "image_zzYVPd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/020A4540-Edit-Edit-2.jpg",
+            "link": ""
+          }
+        },
+        "image_9WqyTR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/020A5993-Edit.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_9RqJwG",
+        "image_zzYVPd",
+        "image_9WqyTR"
+      ],
+      "settings": {
+        "scale_image": true,
+        "wh_ratio": 0.7,
+        "bg": "palette--light bg--neutral",
+        "add_gutters": false,
+        "progress_bar": "mobile",
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_list_collections_products_wncVKz": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_er4rrU": {
+          "type": "collection",
+          "settings": {
+            "collection": "yoga",
+            "title": "",
+            "link_text": "",
+            "enable_item": false,
+            "text": "",
+            "background_color": "#f7f5f4",
+            "text_color": "text--neutral",
+            "link_size": 7
+          }
+        }
+      },
+      "block_order": [
+        "collection_er4rrU"
+      ],
+      "settings": {
+        "title": "Yoga Styles",
+        "bg": "palette--light bg--neutral",
+        "grid": 4,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_rMUqDq",
+    "section_mosaic_wRGkaT",
+    "section_gallery_rJyt7p",
+    "section_list_collections_products_wncVKz"
+  ]
+}

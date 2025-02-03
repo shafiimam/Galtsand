@@ -1,0 +1,456 @@
+<style>
+  .accordion {
+  display: block !important;
+        padding-left: 37px;
+    padding-right: 37px;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+  border-top: 3px solid #660F28;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e6dbc4;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  color: #102345;
+}
+
+.accordion-header-content {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-header-content img.accordion-icon-img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.accordion-header h3 {
+   font-family: "Gambarino-Regular";
+  margin: 0;
+  text-align: left; /* Ensure alignment of text next to the icon */
+  font-size: 40px;
+  flex-grow: 1;
+  line-height: 1.1;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.accordion-icon {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+  .div_p{
+    border: 3px solid #102345;
+    padding: 20px;
+  }
+.accordion-content p {
+  margin: 15px 0;
+  font-size: 0.9em;
+  color: #102345;
+  font-family: "Inter Tight";
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+      padding: 0 15px 35px 15px;
+    font-size: 1.3rem;
+  text-align: left;
+}
+
+.accordion-item.active .accordion-icon {
+      /* transform: scaleY(-1); */
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Evita que el contenido se desborde */
+  }
+  .accordion {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+   .accordion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 15px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  .accordion-item.active .accordion-content {
+    max-height: 600px; /* Ajusta la altura suficiente */
+    opacity: 1;
+    padding: 15px;
+  }
+
+  .div_p {
+    width: 100%; /* Asegura que los div_p ocupen todo el ancho disponible */
+  }
+}
+ .accordion-header h3 {
+    font-size: 1.7rem; /* Reduce el tamaño para evitar desbordes */
+    max-width: 85%; /* Ajusta para que no pase las flechas */
+    white-space: normal; /* Permite que se divida en varias líneas */
+    overflow-wrap: break-word; /* Asegura que se corte correctamente */
+    word-wrap: break-word; /* Compatible con navegadores más antiguos */
+    line-height: 1.2;
+  }
+
+  .accordion-header-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: calc(100% - 40px); /* Resta el espacio de las flechas */
+  }
+  .accordion-icon {
+    flex-shrink: 0; /* Evita que las flechas cambien de tamaño */
+    margin-left: 10px;
+  }
+  .subheading {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+</style>
+  <div class="accordion">
+      <div class="accordion-item active">
+        <button class="accordion-header">
+          <div class="accordion-header-content">
+            {% if section.settings.icon_1 != blank %}
+              <img src="{{ section.settings.icon_1 | img_url: '30x' }}" alt="Icon 1" class="accordion-icon-img">
+            {% endif %}
+            <h3>{{ section.settings.title_1 }}</h3>
+          </div>
+          <span class="accordion-icon">
+            <svg class="chevron-icon chevron-down" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.93881 17.4387C6.07816 17.2989 6.24375 17.1879 6.42608 17.1122C6.6084 17.0365 6.80389 16.9975 7.00131 16.9975C7.19873 16.9975 7.3942 17.0365 7.57653 17.1122C7.75886 17.1879 7.92445 17.2989 8.06381 17.4387L14.5001 23.8749L14.5001 5.49995C14.5001 5.10212 14.6581 4.7206 14.9394 4.43929C15.2207 4.15798 15.6022 3.99995 16.0001 3.99995C16.3979 3.99995 16.7794 4.15798 17.0607 4.43929C17.342 4.7206 17.5001 5.10212 17.5001 5.49995L17.5001 23.8749L23.9388 17.4387C24.2206 17.1569 24.6028 16.9986 25.0013 16.9986C25.3998 16.9986 25.782 17.1569 26.0638 17.4387C26.3456 17.7205 26.5039 18.1027 26.5039 18.5012C26.5039 18.8997 26.3456 19.2819 26.0638 19.5637L17.0638 28.5637C16.9244 28.7035 16.7589 28.8145 16.5765 28.8902C16.3942 28.9659 16.1987 29.0049 16.0013 29.0049C15.8039 29.0049 15.6084 28.9659 15.4261 28.8902C15.2437 28.8145 15.0782 28.7035 14.9388 28.5637L5.93881 19.5637C5.79897 19.4243 5.68801 19.2588 5.6123 19.0764C5.53659 18.8941 5.49762 18.6986 5.49762 18.5012C5.49762 18.3038 5.53659 18.1083 5.6123 17.926C5.68801 17.7436 5.79897 17.5781 5.93881 17.4387Z" fill="#102345"/>
+</svg>
+
+        <svg class="chevron-icon chevron-up" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.0612 15.5613C25.9218 15.7011 25.7563 15.8121 25.5739 15.8878C25.3916 15.9635 25.1961 16.0025 24.9987 16.0025C24.8013 16.0025 24.6058 15.9635 24.4235 15.8878C24.2411 15.8121 24.0756 15.7011 23.9362 15.5613L17.4999 9.12505V27.5C17.4999 27.8979 17.3419 28.2794 17.0606 28.5607C16.7793 28.842 16.3978 29 15.9999 29C15.6021 29 15.2206 28.842 14.9393 28.5607C14.658 28.2794 14.4999 27.8979 14.4999 27.5V9.12505L8.0612 15.5613C7.7794 15.8431 7.39721 16.0014 6.9987 16.0014C6.60018 16.0014 6.21799 15.8431 5.9362 15.5613C5.6544 15.2795 5.49609 14.8973 5.49609 14.4988C5.49609 14.1003 5.6544 13.7181 5.9362 13.4363L14.9362 4.4363C15.0756 4.29646 15.2411 4.1855 15.4235 4.1098C15.6058 4.03409 15.8013 3.99512 15.9987 3.99512C16.1961 3.99512 16.3916 4.03409 16.5739 4.1098C16.7563 4.1855 16.9218 4.29646 17.0612 4.4363L26.0612 13.4363C26.201 13.5757 26.312 13.7412 26.3877 13.9236C26.4634 14.1059 26.5024 14.3014 26.5024 14.4988C26.5024 14.6962 26.4634 14.8917 26.3877 15.074C26.312 15.2564 26.201 15.4219 26.0612 15.5613Z" fill="#102345"/>
+</svg>
+          </span>
+        </button>
+        <div class="accordion-content">
+          <div class="div_p">
+            <p>{{ section.settings.description_11 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_12 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_13 }}</p>
+          </div>
+          <!-- <a href="{{ section.settings.link_1 }}" class="learn-more">Learn More</a> -->
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div class="accordion-header-content">
+            {% if section.settings.icon_2 != blank %}
+              <img src="{{ section.settings.icon_2 | img_url: '30x' }}" alt="Icon 2" class="accordion-icon-img">
+            {% endif %}
+            <h3>{{ section.settings.title_2 }}</h3>
+          </div>
+          <span class="accordion-icon">
+            <svg class="chevron-icon chevron-down" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.93881 17.4387C6.07816 17.2989 6.24375 17.1879 6.42608 17.1122C6.6084 17.0365 6.80389 16.9975 7.00131 16.9975C7.19873 16.9975 7.3942 17.0365 7.57653 17.1122C7.75886 17.1879 7.92445 17.2989 8.06381 17.4387L14.5001 23.8749L14.5001 5.49995C14.5001 5.10212 14.6581 4.7206 14.9394 4.43929C15.2207 4.15798 15.6022 3.99995 16.0001 3.99995C16.3979 3.99995 16.7794 4.15798 17.0607 4.43929C17.342 4.7206 17.5001 5.10212 17.5001 5.49995L17.5001 23.8749L23.9388 17.4387C24.2206 17.1569 24.6028 16.9986 25.0013 16.9986C25.3998 16.9986 25.782 17.1569 26.0638 17.4387C26.3456 17.7205 26.5039 18.1027 26.5039 18.5012C26.5039 18.8997 26.3456 19.2819 26.0638 19.5637L17.0638 28.5637C16.9244 28.7035 16.7589 28.8145 16.5765 28.8902C16.3942 28.9659 16.1987 29.0049 16.0013 29.0049C15.8039 29.0049 15.6084 28.9659 15.4261 28.8902C15.2437 28.8145 15.0782 28.7035 14.9388 28.5637L5.93881 19.5637C5.79897 19.4243 5.68801 19.2588 5.6123 19.0764C5.53659 18.8941 5.49762 18.6986 5.49762 18.5012C5.49762 18.3038 5.53659 18.1083 5.6123 17.926C5.68801 17.7436 5.79897 17.5781 5.93881 17.4387Z" fill="#102345"/>
+</svg>
+
+        <svg class="chevron-icon chevron-up" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.0612 15.5613C25.9218 15.7011 25.7563 15.8121 25.5739 15.8878C25.3916 15.9635 25.1961 16.0025 24.9987 16.0025C24.8013 16.0025 24.6058 15.9635 24.4235 15.8878C24.2411 15.8121 24.0756 15.7011 23.9362 15.5613L17.4999 9.12505V27.5C17.4999 27.8979 17.3419 28.2794 17.0606 28.5607C16.7793 28.842 16.3978 29 15.9999 29C15.6021 29 15.2206 28.842 14.9393 28.5607C14.658 28.2794 14.4999 27.8979 14.4999 27.5V9.12505L8.0612 15.5613C7.7794 15.8431 7.39721 16.0014 6.9987 16.0014C6.60018 16.0014 6.21799 15.8431 5.9362 15.5613C5.6544 15.2795 5.49609 14.8973 5.49609 14.4988C5.49609 14.1003 5.6544 13.7181 5.9362 13.4363L14.9362 4.4363C15.0756 4.29646 15.2411 4.1855 15.4235 4.1098C15.6058 4.03409 15.8013 3.99512 15.9987 3.99512C16.1961 3.99512 16.3916 4.03409 16.5739 4.1098C16.7563 4.1855 16.9218 4.29646 17.0612 4.4363L26.0612 13.4363C26.201 13.5757 26.312 13.7412 26.3877 13.9236C26.4634 14.1059 26.5024 14.3014 26.5024 14.4988C26.5024 14.6962 26.4634 14.8917 26.3877 15.074C26.312 15.2564 26.201 15.4219 26.0612 15.5613Z" fill="#102345"/>
+</svg>
+          </span>
+        </button>
+        <div class="accordion-content">
+      <div class="div_p">
+            <p>{{ section.settings.description_21 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_22 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_23 }}</p>
+          </div>
+          <!-- <a href="{{ section.settings.link_2 }}" class="learn-more">Learn More</a> -->
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div class="accordion-header-content">
+            {% if section.settings.icon_3 != blank %}
+              <img src="{{ section.settings.icon_3 | img_url: '30x' }}" alt="Icon 3" class="accordion-icon-img">
+            {% endif %}
+            <h3>{{ section.settings.title_3 }}</h3>
+          </div>
+          <span class="accordion-icon">
+            <svg class="chevron-icon chevron-down" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.93881 17.4387C6.07816 17.2989 6.24375 17.1879 6.42608 17.1122C6.6084 17.0365 6.80389 16.9975 7.00131 16.9975C7.19873 16.9975 7.3942 17.0365 7.57653 17.1122C7.75886 17.1879 7.92445 17.2989 8.06381 17.4387L14.5001 23.8749L14.5001 5.49995C14.5001 5.10212 14.6581 4.7206 14.9394 4.43929C15.2207 4.15798 15.6022 3.99995 16.0001 3.99995C16.3979 3.99995 16.7794 4.15798 17.0607 4.43929C17.342 4.7206 17.5001 5.10212 17.5001 5.49995L17.5001 23.8749L23.9388 17.4387C24.2206 17.1569 24.6028 16.9986 25.0013 16.9986C25.3998 16.9986 25.782 17.1569 26.0638 17.4387C26.3456 17.7205 26.5039 18.1027 26.5039 18.5012C26.5039 18.8997 26.3456 19.2819 26.0638 19.5637L17.0638 28.5637C16.9244 28.7035 16.7589 28.8145 16.5765 28.8902C16.3942 28.9659 16.1987 29.0049 16.0013 29.0049C15.8039 29.0049 15.6084 28.9659 15.4261 28.8902C15.2437 28.8145 15.0782 28.7035 14.9388 28.5637L5.93881 19.5637C5.79897 19.4243 5.68801 19.2588 5.6123 19.0764C5.53659 18.8941 5.49762 18.6986 5.49762 18.5012C5.49762 18.3038 5.53659 18.1083 5.6123 17.926C5.68801 17.7436 5.79897 17.5781 5.93881 17.4387Z" fill="#102345"/>
+</svg>
+
+        <svg class="chevron-icon chevron-up" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.0612 15.5613C25.9218 15.7011 25.7563 15.8121 25.5739 15.8878C25.3916 15.9635 25.1961 16.0025 24.9987 16.0025C24.8013 16.0025 24.6058 15.9635 24.4235 15.8878C24.2411 15.8121 24.0756 15.7011 23.9362 15.5613L17.4999 9.12505V27.5C17.4999 27.8979 17.3419 28.2794 17.0606 28.5607C16.7793 28.842 16.3978 29 15.9999 29C15.6021 29 15.2206 28.842 14.9393 28.5607C14.658 28.2794 14.4999 27.8979 14.4999 27.5V9.12505L8.0612 15.5613C7.7794 15.8431 7.39721 16.0014 6.9987 16.0014C6.60018 16.0014 6.21799 15.8431 5.9362 15.5613C5.6544 15.2795 5.49609 14.8973 5.49609 14.4988C5.49609 14.1003 5.6544 13.7181 5.9362 13.4363L14.9362 4.4363C15.0756 4.29646 15.2411 4.1855 15.4235 4.1098C15.6058 4.03409 15.8013 3.99512 15.9987 3.99512C16.1961 3.99512 16.3916 4.03409 16.5739 4.1098C16.7563 4.1855 16.9218 4.29646 17.0612 4.4363L26.0612 13.4363C26.201 13.5757 26.312 13.7412 26.3877 13.9236C26.4634 14.1059 26.5024 14.3014 26.5024 14.4988C26.5024 14.6962 26.4634 14.8917 26.3877 15.074C26.312 15.2564 26.201 15.4219 26.0612 15.5613Z" fill="#102345"/>
+</svg>
+          </span>
+        </button>
+        <div class="accordion-content">
+          <div class="div_p">
+            <p>{{ section.settings.description_31 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_32 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_33 }}</p>
+          </div>
+          <!-- <a href="{{ section.settings.link_3 }}" class="learn-more">Learn More</a> -->
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div class="accordion-header-content">
+            {% if section.settings.icon_4 != blank %}
+              <img src="{{ section.settings.icon_4 | img_url: '30x' }}" alt="Icon 4" class="accordion-icon-img">
+            {% endif %}
+            <h3>{{ section.settings.title_4 }}</h3>
+          </div>
+         <span class="accordion-icon">
+            <svg class="chevron-icon chevron-down" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.93881 17.4387C6.07816 17.2989 6.24375 17.1879 6.42608 17.1122C6.6084 17.0365 6.80389 16.9975 7.00131 16.9975C7.19873 16.9975 7.3942 17.0365 7.57653 17.1122C7.75886 17.1879 7.92445 17.2989 8.06381 17.4387L14.5001 23.8749L14.5001 5.49995C14.5001 5.10212 14.6581 4.7206 14.9394 4.43929C15.2207 4.15798 15.6022 3.99995 16.0001 3.99995C16.3979 3.99995 16.7794 4.15798 17.0607 4.43929C17.342 4.7206 17.5001 5.10212 17.5001 5.49995L17.5001 23.8749L23.9388 17.4387C24.2206 17.1569 24.6028 16.9986 25.0013 16.9986C25.3998 16.9986 25.782 17.1569 26.0638 17.4387C26.3456 17.7205 26.5039 18.1027 26.5039 18.5012C26.5039 18.8997 26.3456 19.2819 26.0638 19.5637L17.0638 28.5637C16.9244 28.7035 16.7589 28.8145 16.5765 28.8902C16.3942 28.9659 16.1987 29.0049 16.0013 29.0049C15.8039 29.0049 15.6084 28.9659 15.4261 28.8902C15.2437 28.8145 15.0782 28.7035 14.9388 28.5637L5.93881 19.5637C5.79897 19.4243 5.68801 19.2588 5.6123 19.0764C5.53659 18.8941 5.49762 18.6986 5.49762 18.5012C5.49762 18.3038 5.53659 18.1083 5.6123 17.926C5.68801 17.7436 5.79897 17.5781 5.93881 17.4387Z" fill="#102345"/>
+</svg>
+
+        <svg class="chevron-icon chevron-up" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.0612 15.5613C25.9218 15.7011 25.7563 15.8121 25.5739 15.8878C25.3916 15.9635 25.1961 16.0025 24.9987 16.0025C24.8013 16.0025 24.6058 15.9635 24.4235 15.8878C24.2411 15.8121 24.0756 15.7011 23.9362 15.5613L17.4999 9.12505V27.5C17.4999 27.8979 17.3419 28.2794 17.0606 28.5607C16.7793 28.842 16.3978 29 15.9999 29C15.6021 29 15.2206 28.842 14.9393 28.5607C14.658 28.2794 14.4999 27.8979 14.4999 27.5V9.12505L8.0612 15.5613C7.7794 15.8431 7.39721 16.0014 6.9987 16.0014C6.60018 16.0014 6.21799 15.8431 5.9362 15.5613C5.6544 15.2795 5.49609 14.8973 5.49609 14.4988C5.49609 14.1003 5.6544 13.7181 5.9362 13.4363L14.9362 4.4363C15.0756 4.29646 15.2411 4.1855 15.4235 4.1098C15.6058 4.03409 15.8013 3.99512 15.9987 3.99512C16.1961 3.99512 16.3916 4.03409 16.5739 4.1098C16.7563 4.1855 16.9218 4.29646 17.0612 4.4363L26.0612 13.4363C26.201 13.5757 26.312 13.7412 26.3877 13.9236C26.4634 14.1059 26.5024 14.3014 26.5024 14.4988C26.5024 14.6962 26.4634 14.8917 26.3877 15.074C26.312 15.2564 26.201 15.4219 26.0612 15.5613Z" fill="#102345"/>
+</svg>
+          </span>
+        </button>
+        <div class="accordion-content">
+         <div class="div_p">
+            <p>{{ section.settings.description_41 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_42 }}</p>
+          </div>
+          <div class="div_p">
+            <p>{{ section.settings.description_43 }}</p>
+          </div>
+          <!-- <a href="{{ section.settings.link_4 }}" class="learn-more">Learn More</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Handle accordion icon toggling on initial page load
+  document.querySelectorAll('.accordion-item').forEach(accordionItem => {
+    const chevronUp = accordionItem.querySelector('.chevron-up');
+    const chevronDown = accordionItem.querySelector('.chevron-down');
+
+    // If the accordion item is active (open by default), show Chevron Up and hide Chevron Down
+    if (accordionItem.classList.contains('active')) {
+      chevronUp.style.display = 'block';
+      chevronDown.style.display = 'none';
+    } else {
+      chevronUp.style.display = 'none';
+      chevronDown.style.display = 'block';
+    }
+  });
+});
+
+document.querySelectorAll('.accordion-header').forEach(button => {
+  button.addEventListener('click', function () {
+    const accordionItem = button.parentElement;
+    const chevronUp = button.querySelector('.chevron-up');
+    const chevronDown = button.querySelector('.chevron-down');
+
+    // Toggle the current accordion item's active state
+    if (accordionItem.classList.contains('active')) {
+      accordionItem.classList.remove('active');
+      // Show Chevron Down (closed state), hide Chevron Up
+      chevronUp.style.display = 'none';
+      chevronDown.style.display = 'block';
+    } else {
+      // Close all other accordion items and reset icons
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+        item.querySelector('.chevron-up').style.display = 'none';
+        item.querySelector('.chevron-down').style.display = 'block';
+      });
+
+      // Open the clicked accordion item
+      accordionItem.classList.add('active');
+      // Show Chevron Up (open state), hide Chevron Down
+      chevronUp.style.display = 'block';
+      chevronDown.style.display = 'none';
+    }
+  });
+});
+  </script>
+  {% schema %}
+    {
+  "name": "Accordion Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Accordion Items"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_1",
+      "label": "Icon 1"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title 1",
+      "default": "Accordion Title 1"
+    },
+    {
+      "type": "textarea",
+      "id": "description_11",
+      "label": "Description 1",
+      "default": "This is the first accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_12",
+      "label": "Description 1",
+      "default": "This is the first accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_13",
+      "label": "Description 1",
+      "default": "This is the first accordion item description."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2",
+      "label": "Icon 2"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title 2",
+      "default": "Accordion Title 2"
+    },
+    {
+      "type": "textarea",
+      "id": "description_21",
+      "label": "Description 2",
+      "default": "This is the second accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_22",
+      "label": "Description 2",
+      "default": "This is the second accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_23",
+      "label": "Description 2",
+      "default": "This is the second accordion item description."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_3",
+      "label": "Icon 3"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Title 3",
+      "default": "Accordion Title 3"
+    },
+    {
+      "type": "textarea",
+      "id": "description_31",
+      "label": "Description 3",
+      "default": "This is the third accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_32",
+      "label": "Description 3",
+      "default": "This is the third accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_33",
+      "label": "Description 3",
+      "default": "This is the third accordion item description."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_4",
+      "label": "Icon 4"
+    },
+    {
+      "type": "text",
+      "id": "title_4",
+      "label": "Title 4",
+      "default": "Accordion Title 4"
+    },
+    {
+      "type": "textarea",
+      "id": "description_41",
+      "label": "Description 4",
+      "default": "This is the fourth accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_42",
+      "label": "Description 4",
+      "default": "This is the fourth accordion item description."
+    },
+    {
+      "type": "textarea",
+      "id": "description_43",
+      "label": "Description 4",
+      "default": "This is the fourth accordion item description."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accordion Section",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

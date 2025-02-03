@@ -1,0 +1,614 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": 9,
+            "product_show_cutline": true,
+            "show_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 20
+          }
+        },
+        "description_8fLKPi": {
+          "type": "description",
+          "settings": {
+            "style": "none",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Information",
+            "icon_name_1": "",
+            "raw_content_1": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "title_2": "Details",
+            "icon_name_2": "",
+            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.</p>",
+            "title_3": "",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "style": "tabs",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Information",
+            "icon_name_1": "",
+            "raw_content_1": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "title_2": "Details",
+            "icon_name_2": "",
+            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.</p>",
+            "title_3": "",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": 5,
+            "padding_bottom": 40
+          }
+        },
+        "variants": {
+          "type": "variant-selectors",
+          "settings": {
+            "option_size_swatch": 74,
+            "option_size_radio": 50,
+            "option_space": 0,
+            "padding_bottom": 16
+          }
+        },
+        "subscriptions": {
+          "type": "subscription",
+          "settings": {
+            "subscriptions_enable_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "show_quantity": true,
+            "padding_bottom": 20
+          }
+        },
+        "sizes-remaining": {
+          "type": "size-remaining",
+          "settings": {
+            "info_page": "",
+            "title": "",
+            "show_remaining": true,
+            "show_remaining_style": "low",
+            "countdown": 10,
+            "padding_bottom": 0
+          }
+        },
+        "buttons": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 20
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "title": "Buy it with",
+            "upsell_type": "product_single",
+            "product": "",
+            "upsell_product_list": [],
+            "upsell_list_limit": 1,
+            "padding_bottom": 20
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "target_device": "",
+            "padding_bottom": 20
+          }
+        },
+        "siblings_PXqenj": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "",
+            "cutline": "",
+            "option_size_sibling": 50,
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description_8fLKPi",
+        "description",
+        "price",
+        "variants",
+        "subscriptions",
+        "quantity",
+        "sizes-remaining",
+        "buttons",
+        "upsell",
+        "pickup",
+        "sharing",
+        "siblings_PXqenj"
+      ],
+      "custom_css": [
+        ".product-single .product__inner {max-width: none;}"
+      ],
+      "settings": {
+        "layout": "none@columns",
+        "image_width": "wide",
+        "image_spacing": 4,
+        "align": "left",
+        "bg": "palette--light bg--accent",
+        "mobile_layout": "slideshow",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "alt_text_enable": true,
+        "alt_text_icon": "icon-recycled",
+        "product_breadcrumbs_enable": true,
+        "product_breadcrumbs_list": [
+          "all"
+        ],
+        "width": "wrapper--none",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text": {
+      "type": "section-double",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "kicker": "Image with text",
+            "title": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "icons_rRVyrm": {
+      "type": "icons",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "icon_1": "shopify://shop_images/mdi_recycle_a4988a3f-6e1a-4e18-b042-1adf7c604290.png",
+        "title_1": "Recycled Materials",
+        "description_1": "Recycled materials drive our sustainability commitment by reducing carbon emissions, diverting waste from landfills and oceans, and advancing a circular economy while supporting innovation in eco-friendly materials.",
+        "link_1": "/",
+        "icon_2": "shopify://shop_images/mingcute_cube-3d-line.png",
+        "title_2": "3D Tailoring",
+        "description_2": "By employing precise digital measurements and strategic seam placement, 3D tailoring enhances your body’s natural contours, delivering a perfect fit and optimizing performance with every movement.",
+        "link_2": "/",
+        "icon_3": "shopify://shop_images/Vector.png",
+        "title_3": "4-Way Stretch",
+        "description_3": "Enjoy complete freedom of movement with our 4-way stretch fabric, designed to flex in all directions for seamless comfort and flexibility, enhancing your performance with every move.",
+        "link_3": "/",
+        "icon_4": "shopify://shop_images/material-symbols_water-drop.png",
+        "title_4": "Moisture-Wicking",
+        "description_4": "Crafted from high-performance materials that efficiently manage sweat and odor, ensuring you stay dry and fresh during even the most intense activities.",
+        "link_4": "/"
+      }
+    },
+    "image-with-text-2": {
+      "type": "section-double",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "kicker": "Image with text",
+            "title": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": ""
+          }
+        },
+        "image": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "image"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "product_features_NXUAkA": {
+      "type": "Product_features",
+      "settings": {
+        "icon_1": "shopify://shop_images/FlowerLotus.png",
+        "title_1": "Designed for Yoga",
+        "description_11": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam.",
+        "description_12": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "description_13": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "icon_2": "shopify://shop_images/FlowerLotus.png",
+        "title_2": "FeeIs Buttery-Soft and WeightIess, NuIu Fabric",
+        "description_21": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam.",
+        "description_22": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "description_23": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "icon_3": "shopify://shop_images/FlowerLotus.png",
+        "title_3": "Light Support, A-C Cups",
+        "description_31": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam.",
+        "description_32": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "description_33": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "icon_4": "shopify://shop_images/FlowerLotus.png",
+        "title_4": "Product Features",
+        "description_41": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam.",
+        "description_42": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.",
+        "description_43": "Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque."
+      }
+    },
+    "two_images_and_text_YiRxFY": {
+      "type": "two_images_and_text",
+      "settings": {
+        "heading": "Why we made this",
+        "paragraph": "What bra? We designed our classic racerback so you won’t feel anything but your practice.",
+        "image_1": "shopify://shop_images/GALTSANDEQUESTRIAN-130.jpg",
+        "image_2": "shopify://shop_images/GALTSANDEQUESTRIAN-95.jpg"
+      }
+    },
+    "outfit_inspiration_4KLhhU": {
+      "type": "outfit_inspiration",
+      "blocks": {
+        "product_wXdynF": {
+          "type": "product",
+          "settings": {
+            "product": "empower-bra"
+          }
+        },
+        "product_qkxE8G": {
+          "type": "product",
+          "settings": {
+            "product": "angelique-bra"
+          }
+        },
+        "product_RURPzM": {
+          "type": "product",
+          "settings": {
+            "product": "freedom-leggings"
+          }
+        },
+        "product_yDKFYL": {
+          "type": "product",
+          "settings": {
+            "product": "garment-washed-pullover-hoodie"
+          }
+        },
+        "product_qVxAQV": {
+          "type": "product",
+          "settings": {
+            "product": "airlite-leggings"
+          }
+        },
+        "product_HphJMg": {
+          "type": "product",
+          "settings": {
+            "product": "polo-knit-crop-top"
+          }
+        },
+        "product_KFb9Pj": {
+          "type": "product",
+          "settings": {
+            "product": "classic-short-with-cargo-pocket"
+          }
+        },
+        "product_9pqEgi": {
+          "type": "product",
+          "settings": {
+            "product": "classic-tote-bag"
+          }
+        }
+      },
+      "block_order": [
+        "product_wXdynF",
+        "product_qkxE8G",
+        "product_RURPzM",
+        "product_yDKFYL",
+        "product_qVxAQV",
+        "product_HphJMg",
+        "product_KFb9Pj",
+        "product_9pqEgi"
+      ],
+      "settings": {
+        "title": "Outfit Inspiration",
+        "subtitle": "Handcrafted by our expert designers."
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "heading": "You also may like",
+        "bg": "palette--light bg--neutral",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_small": 1.2,
+        "related_products_enable": true,
+        "limit": 6,
+        "product_recommendations_heading": "Related products",
+        "show_recently_viewed": false,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "product_recently_heading": "Recently viewed",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "reverse_collection_list_WiKHVp": {
+      "type": "reverse-collection-list",
+      "blocks": {
+        "product_eKFWVm": {
+          "type": "product",
+          "settings": {
+            "product": "classic-messenger-bag"
+          }
+        },
+        "product_6rpP4r": {
+          "type": "product",
+          "settings": {
+            "product": "airlite-leggings"
+          }
+        },
+        "product_XpcBUY": {
+          "type": "product",
+          "settings": {
+            "product": "classic-messenger-bag"
+          }
+        }
+      },
+      "block_order": [
+        "product_eKFWVm",
+        "product_6rpP4r",
+        "product_XpcBUY"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Long Title description goes here",
+        "description": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+        "button_text": "Shop All Women",
+        "button_link": ""
+      }
+    },
+    "section_list_collections_products_HtEhb6": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_Fhb6gK": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-men",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#e6dbc4",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        },
+        "collection_LRMzGK": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#e6dbc4",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        },
+        "collection_EnXkU4": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#e6dbc4",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "collection_Fhb6gK",
+        "collection_LRMzGK",
+        "collection_EnXkU4"
+      ],
+      "settings": {
+        "title": "Weekly Lookbook Updates and Campaigns",
+        "bg": "palette--light bg--neutral",
+        "grid": 4,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "customer_review_section_hR88zG": {
+      "type": "customer_review_section",
+      "blocks": {
+        "review_MXPind": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/DSC6046.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_RgCmFP": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_dt67Ti": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/Slub_Tee_Khaki_M-5.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_PkNFDp": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/GALTSANDEQUESTRIAN-130.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        }
+      },
+      "block_order": [
+        "review_MXPind",
+        "review_RgCmFP",
+        "review_dt67Ti",
+        "review_PkNFDp"
+      ],
+      "settings": {
+        "main_title": "Why Our Customers Love Galtsand",
+        "subtitle": "Handcrafted by our expert designers."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-with-text",
+    "icons_rRVyrm",
+    "image-with-text-2",
+    "product_features_NXUAkA",
+    "two_images_and_text_YiRxFY",
+    "outfit_inspiration_4KLhhU",
+    "related",
+    "reverse_collection_list_WiKHVp",
+    "section_list_collections_products_HtEhb6",
+    "customer_review_section_hR88zG"
+  ]
+}

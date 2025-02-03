@@ -1,0 +1,257 @@
+{% schema %}
+{
+  "name": "Fabric Choices Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Fabric Choices for Comfort and Durability"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "We believe fabric quality makes all the difference. That's why our t-shirts are crafted from the finest materials:"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Right Side Image"
+    },
+    {
+      "type": "header",
+      "content": "Fabric Option 1"
+    },
+    {
+      "type": "text",
+      "id": "fabric_title_1",
+      "label": "Fabric Title 1",
+      "default": "Superior Fabric Quality"
+    },
+    {
+      "type": "textarea",
+      "id": "fabric_description_1",
+      "label": "Fabric Description 1",
+      "default": "Ideal for its breathability and natural softness, perfect for daily wear."
+    },
+    {
+      "type": "header",
+      "content": "Fabric Option 2"
+    },
+    {
+      "type": "text",
+      "id": "fabric_title_2",
+      "label": "Fabric Title 2",
+      "default": "Polyester"
+    },
+    {
+      "type": "textarea",
+      "id": "fabric_description_2",
+      "label": "Fabric Description 2",
+      "default": "A wrinkle-resistant and durable choice that maintains its shape over time."
+    },
+    {
+      "type": "header",
+      "content": "Fabric Option 3"
+    },
+    {
+      "type": "text",
+      "id": "fabric_title_3",
+      "label": "Fabric Title 3",
+      "default": "Blended Fabrics"
+    },
+    {
+      "type": "textarea",
+      "id": "fabric_description_3",
+      "label": "Fabric Description 3",
+      "default": "Combining the best of both worlds, offering stretch and durability for all-day comfort."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fabric Choices Section"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .fabric-section {
+    display: flex;
+    background-color: #046A42;
+    color: #FFF;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .fabric-content {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .fabric-content h2 {
+    font-family: "EngraversGothicBT-Heavy";
+   text-transform: none;
+    font-size: 7.5em;
+    letter-spacing: 3px;
+    line-height: 81px;
+    color: #E6DBC4;
+        margin-bottom: 20px;
+  }
+  
+  .fabric-content p.subtitle {
+    font-family: "EngraversGothicBT-Heavy";
+    font-size: 1.4em;
+    /* font-weight: bold; */
+    text-transform: none;
+    margin-bottom: 60px;
+    color: #cec3ac;
+  }
+  
+  .fabric-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .fabric-box {
+    border: 2px solid #E6DBC4;
+    padding: 20px;
+    background: transparent;
+  }
+  
+  .fabric-box h3 {
+    text-transform: none;
+    font-family: "Gambarino-Regular";
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #E6DBC4;
+  }
+  
+  .fabric-box p {
+    font-family: "Inter Tight";
+    font-size: 1.2em;
+    color: #cec3ac;
+  }
+  
+  .fabric-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .fabric-image img {
+    width: 100%;
+    max-width: 900px;
+    object-fit: cover;
+  }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .fabric-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #046A42;
+    color: #FFF;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .fabric-image {
+    order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fabric-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .fabric-content h2 {
+    font-family: "EngraversGothicBT-Heavy";
+    text-transform: uppercase;
+    font-size: 3.2em;
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #E6DBC4;
+    margin-bottom: 15px;
+  }
+  
+  .fabric-content p.subtitle {
+    font-family: "Inter Tight";
+    font-size: 1em;
+    color: #cec3ac;
+    margin-bottom: 20px;
+  }
+  
+  .fabric-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .fabric-box {
+    border: 2px solid #E6DBC4;
+    padding: 15px;
+    background: transparent;
+    width: 100%;
+  }
+  
+  .fabric-box h3 {
+    text-transform: none;
+    font-family: "Gambarino-Regular";
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: #E6DBC4;
+    margin-bottom: 5px;
+  }
+  
+  .fabric-box p {
+    font-family: "Inter Tight";
+    font-size: 0.9em;
+    color: #cec3ac;
+  }
+  .fabric-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+</style>
+
+<section class="fabric-section">
+  <div class="fabric-content">
+    <h2>{{ section.settings.title }}</h2>
+    <p class="subtitle">{{ section.settings.subtitle }}</p>
+    
+    <div class="fabric-options">
+      <div class="fabric-box">
+        <h3>{{ section.settings.fabric_title_1 }}</h3>
+        <p>{{ section.settings.fabric_description_1 }}</p>
+      </div>
+      <div class="fabric-box">
+        <h3>{{ section.settings.fabric_title_2 }}</h3>
+        <p>{{ section.settings.fabric_description_2 }}</p>
+      </div>
+      <div class="fabric-box">
+        <h3>{{ section.settings.fabric_title_3 }}</h3>
+        <p>{{ section.settings.fabric_description_3 }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fabric-image">
+    {% if section.settings.background_image != blank %}
+      <img src="{{ section.settings.background_image | image_url }}" alt="Fabric Choices">
+    {% endif %}
+  </div>
+</section>

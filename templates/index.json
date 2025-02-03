@@ -1,0 +1,1211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "banner-kicker": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Vel sodales urna vitae",
+            "enable_line": false,
+            "text_size": 12
+          }
+        },
+        "banner-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Where Heritage Meets Innovation in Athleisure.",
+            "text_size": 11
+          }
+        },
+        "banner-text": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Galtsand has a legacy of quality and excellence. We ensure every product meets high standards, showcasing our passion for craftsmanship and innovation.</p>",
+            "text_size": 6
+          }
+        },
+        "banner-button": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "Discover the story",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "shop  now",
+            "link_2": "shopify://pages/contact",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn",
+            "button_color_2": "btn--primary",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "banner-kicker",
+        "banner-heading",
+        "banner-text",
+        "banner-button"
+      ],
+      "custom_css": [
+        ".section--image {background-color: #660f2b;}",
+        ".wrapper--none {margin: 9px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-WebVersion-Banner_v3.png",
+        "mobile_image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
+        "height": "use_image",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--primary",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_logos_E3KxjC": {
+      "type": "section-logos",
+      "blocks": {
+        "logo_image_Fntw8M": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Up_to_60_off1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 170,
+            "spacing": 50
+          }
+        },
+        "logo_image_HgbFJ3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Group_324535029.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_m8GpmR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Up_to_60_off1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 170,
+            "spacing": 50
+          }
+        },
+        "logo_image_BEdAk7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Group_324535029.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_dDCAph": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Up_to_60_off1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 170,
+            "spacing": 50
+          }
+        },
+        "logo_image_xHWzH8": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Group_324535029.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_Fntw8M",
+        "logo_image_HgbFJ3",
+        "logo_image_m8GpmR",
+        "logo_image_BEdAk7",
+        "logo_image_dDCAph",
+        "logo_image_xHWzH8"
+      ],
+      "custom_css": [
+        ".wrapper--none {border-bottom: 1px solid #e6dbc4; border-top: 1px solid #e6dbc4;}"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--accent",
+        "enable_marquee": true,
+        "marquee_speed": 30,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "about_us_section_xikFig": {
+      "type": "about_us_section",
+      "settings": {
+        "image_1": "shopify://shop_images/Untitled_design_17_6ed70243-93be-414e-8350-071b3c1a4aed.png",
+        "image_1_alt": "heritage",
+        "image_2": "shopify://shop_images/Heritage1-4Zip_AcademyGreen_M-6_bb51fe40-555c-4417-9f43-ae21fb73a653.jpg",
+        "image_2_alt": "heritage",
+        "image_3": "shopify://shop_images/Untitled_design_18_5ff9c8a3-d1cd-4c46-9ac8-68de198165b5.png",
+        "image_3_alt": "bra",
+        "image_4": "shopify://shop_images/754A551215_1.jpg",
+        "image_4_alt": "t-shirt",
+        "subtitle_1": "Founded in 1986",
+        "description_1": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam. Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.\nEget sagittis lectus felis quis velit purus cras malesuada. Purus neque nisi ut tellus tellus posuere. Ac sagittis massa suspendisse mi nisi duis. Sed pretium pretium augue amet vel.",
+        "subtitle_2": "Pioneers of the Round-Neck Sweatshirt",
+        "description_2": "Dignissim eleifend amet sit ultrices tempor sollicitudin in sed. Elit elementum ante sit consectetur. Sed nisl arcu turpis massa sit neque phasellus ac pellentesque. Cras nunc non fermentum mi pellentesque. Consectetur ut ipsum at faucibus nisl est vehicula at blandit.",
+        "subtitle_3": "In facilisis malesuada viverra massa augue urna.",
+        "description_3": "Congue ipsum sit cursus sapien eu integer. Accumsan eu risus non tristique sit. Adipiscing tincidunt morbi erat sapien ultrices amet gravida tincidunt. Amet sem integer purus euismod amet. Tortor cum ultrices sodales condimentum eget aliquam. Ut dui lorem libero viverra.",
+        "subtitle_4": "Quis Donec",
+        "description_4": "Etiam maecenas dignissim id fermentum in lacinia. Id massa commodo in faucibus. Aliquam id ut augue nulla ut. Massa semper mi et libero sagittis quisque velit molestie netus. Eget tortor lacus sit volutpat erat ornare turpis proin. Ac lobortis feugiat sed nisi gravida. Cursus turpis vulputate quis leo praesent venenatis posuere habitant. Urna sit sit nunc vulputate massa lacus porttitor quis est.",
+        "btn_name": "Learn More",
+        "btn_link": "shopify://pages/about-us1"
+      }
+    },
+    "tabs": {
+      "type": "section-collection-tabs",
+      "blocks": {
+        "tab-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shop-all",
+            "title": "Gentleman's Collection"
+          }
+        },
+        "tab-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "title": "Ladies Collection"
+          }
+        }
+      },
+      "block_order": [
+        "tab-0",
+        "tab-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Shop Our Top Collections",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "limit": 6,
+        "bg": "palette--dark bg--invert",
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 36
+      }
+    },
+    "double": {
+      "type": "section-double",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October-27.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "kicker": "Image with text",
+            "title": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "text_color": "text--neutral",
+            "bg_color": "#f7f7f7"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "use_screen_two_thirds",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "collection-split-section-1": {
+      "type": "collection-split",
+      "blocks": {
+        "slide_VcEiJa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DSC09539edited44.jpg",
+            "kicker": "30% Off Holiday Collection.",
+            "heading": "Limited Edition Vintage Re-releases",
+            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
+            "text_color": "text--invert--primary",
+            "link_text": "Shop the Deals",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        },
+        "slide_EzRiEK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Paris_-21.jpg",
+            "kicker": "30% Off Holiday Collection.",
+            "heading": "Limited Edition Vintage Re-releases",
+            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
+            "text_color": "text--invert--primary",
+            "link_text": "Shop the Deals",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        },
+        "slide_88XhrA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
+            "kicker": "30% Off Holiday Collection.",
+            "heading": "Limited Edition Vintage Re-releases",
+            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
+            "text_color": "text--invert--primary",
+            "link_text": "Shop the Deals",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VcEiJa",
+        "slide_EzRiEK",
+        "slide_88XhrA"
+      ],
+      "settings": {
+        "header_text": "Curated Collections",
+        "header_h3text": "Handcarfted by our expert designers",
+        "collection": "bras",
+        "product_list": [],
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--bright bg--bright",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection-split-section-2": {
+      "type": "collection-split",
+      "disabled": true,
+      "settings": {
+        "header_text": "Curated Collections",
+        "header_h3text": "Handcarfted by our expert designers",
+        "collection": "sweatshirts",
+        "product_list": [],
+        "sticky_image_enable": true,
+        "swap": true,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--light bg--accent",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 10,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "section-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Best Sellers",
+        "collection": "best-sellers",
+        "grid": 4,
+        "rows": 2,
+        "grid_mobile": "2",
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_look_bmmDrc": {
+      "type": "section-look",
+      "blocks": {
+        "product_BzFhDE": {
+          "type": "product",
+          "settings": {
+            "product": "quarter-zip",
+            "position_x": 51,
+            "position_y": 25,
+            "position_x_mobile": 50,
+            "position_y_mobile": 50
+          }
+        },
+        "product_nDUwkE": {
+          "type": "product",
+          "settings": {
+            "product": "heritage-jogger",
+            "position_x": 55,
+            "position_y": 55,
+            "position_x_mobile": 50,
+            "position_y_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "product_BzFhDE",
+        "product_nDUwkE"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Galtsand_Mary_Beliz_Photographer_Studio_West_Palm_Beach.jpg",
+        "wh_ratio": 1.7,
+        "default_open": true,
+        "dot_color": "palette--dark bg--invert",
+        "card_color": "palette--light bg--neutral",
+        "position": "look__products__holder--right",
+        "grid_small": 1.2,
+        "image_mobile_enable": false,
+        "wh_ratio_mobile": 1,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_69rmFg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October-7.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "Shop Now",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "video-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-best-sellers",
+            "kicker": "Shop the look",
+            "align_text": "text-center",
+            "text_color": "text--neutral",
+            "bg_color": "#f7f7f7",
+            "bg_accent": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_69rmFg",
+        "video-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "logos": {
+      "type": "section-logos",
+      "blocks": {
+        "logo-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/New_logo_3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/New_logo_3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/New_logo_3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/New_logo_33_1_c0dfbbe0-ca75-4dba-bf99-caedc31b41f3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        }
+      },
+      "block_order": [
+        "logo-0",
+        "logo-1",
+        "logo-2",
+        "logo-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "enable_marquee": true,
+        "marquee_speed": 30,
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_before_after_fCxeWU": {
+      "type": "section-before-after",
+      "disabled": true,
+      "settings": {
+        "before_image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October-335.jpg",
+        "after_image": "shopify://shop_images/Galtsand_Studio66_Gray_Background_October-40.jpg",
+        "orientation": "horizontal",
+        "handle_color": "#ffffff",
+        "start_position": 50,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_product_zBPAN6": {
+      "type": "section-product",
+      "blocks": {
+        "title_TPHzA7": {
+          "type": "title",
+          "settings": {
+            "text_size": 9,
+            "product_show_cutline": true,
+            "show_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 20
+          }
+        },
+        "price_RRnAxb": {
+          "type": "price",
+          "settings": {
+            "price_size": 5,
+            "padding_bottom": 40
+          }
+        },
+        "variant_selectors_T6KjKg": {
+          "type": "variant-selectors",
+          "settings": {
+            "option_size_swatch": 34,
+            "option_size_radio": 50,
+            "option_space": 30,
+            "padding_bottom": 20
+          }
+        },
+        "subscription_XjmHKc": {
+          "type": "subscription",
+          "settings": {
+            "subscriptions_enable_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "quantity_QADQfN": {
+          "type": "quantity",
+          "settings": {
+            "show_quantity": true,
+            "padding_bottom": 20
+          }
+        },
+        "size_remaining_m4bxKT": {
+          "type": "size-remaining",
+          "settings": {
+            "info_page": "",
+            "title": "",
+            "show_remaining": true,
+            "show_remaining_style": "low",
+            "countdown": 10,
+            "padding_bottom": 0
+          }
+        },
+        "add_buttons_DhjTjF": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 20
+          }
+        },
+        "description_A6Ykzi": {
+          "type": "description",
+          "settings": {
+            "style": "accordions",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Information",
+            "icon_name_1": "",
+            "raw_content_1": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "title_2": "Details",
+            "icon_name_2": "",
+            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.</p>",
+            "title_3": "",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title_TPHzA7",
+        "price_RRnAxb",
+        "variant_selectors_T6KjKg",
+        "subscription_XjmHKc",
+        "quantity_QADQfN",
+        "size_remaining_m4bxKT",
+        "add_buttons_DhjTjF",
+        "description_A6Ykzi"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Featured product",
+        "home_product": "pique-short-sleeve",
+        "layout": "none@mosaic",
+        "image_width": "wide",
+        "image_spacing": 10,
+        "align": "left",
+        "bg": "palette--light bg--neutral",
+        "mobile_layout": "carousel",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "alt_text_enable": false,
+        "alt_text_icon": "icon-chat",
+        "product_breadcrumbs_enable": false,
+        "product_breadcrumbs_list": [],
+        "width": "wrapper",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "collection_split_ekgGeV": {
+      "type": "collection-split",
+      "disabled": true,
+      "settings": {
+        "header_text": "Curated Collections",
+        "header_h3text": "Handcarfted by our expert designers",
+        "collection": "mens-best-sellers",
+        "product_list": [],
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 10,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "icons": {
+      "type": "section-icons",
+      "blocks": {
+        "icons-0": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-return",
+            "icon_color": "#aaaaaa",
+            "title": "Free returns",
+            "text": "<p>Returns within 30 days receive a full refund.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icons-1": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-shipment-world",
+            "icon_color": "#aaaaaa",
+            "title": "Worldwide shipping",
+            "text": "<p>Ship anywhere, rates available at checkout.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icons-2": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#aaaaaa",
+            "title": "24/7 support",
+            "text": "<p>Call us anytime at 1(800) 555-1234.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "icons-0",
+        "icons-1",
+        "icons-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "icons_size": 30,
+        "icon_alignment": "icon--top",
+        "layout": "grid--stacked",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slide_new_DmLEXL": {
+      "type": "slide_new",
+      "blocks": {
+        "slide_BcBEha": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/WashedPulloverHoodie-DenimBlue-PiqueShortPintuck-White33.jpg",
+            "location": "Default Location",
+            "headline": "Default Headline",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "slide_CRKkgE": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/PiqueShotSleeve-White-PiqueShortPintuck1.jpg",
+            "location": "Default Location",
+            "headline": "Default Headline",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "slide_XzfChz": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/WashedPulloverHoodie-Burgundy-PiqueShortPintuck-White1.jpg",
+            "location": "Default Location",
+            "headline": "Default Headline",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "slide_TrrJbG": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/WashedTee_WashedCream_M-1.jpg",
+            "location": "Default Location",
+            "headline": "Default Headline",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "slide_3RynaW": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/WashedPulloverHoodie-DenimBlue-Front22.jpg",
+            "location": "Default Location",
+            "headline": "Default Headline",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "slide_C3iEer": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_image": "shopify://shop_images/WashedPulloverHoodie-Burgundy-front1.jpg",
+            "location": "Default Location",
+            "headline": "Default Headline",
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_BcBEha",
+        "slide_CRKkgE",
+        "slide_XzfChz",
+        "slide_TrrJbG",
+        "slide_3RynaW",
+        "slide_C3iEer"
+      ],
+      "disabled": true,
+      "settings": {
+        "logo_text": "Logo",
+        "footer_link": "",
+        "footer_text": "View Original"
+      }
+    },
+    "section_list_collections_czR7hE": {
+      "type": "section-list-collections",
+      "blocks": {
+        "collection_PXxHma": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-men",
+            "image": "shopify://shop_images/Untitled_design_8_cc4c6dd2-37ca-4a54-804e-678c8cc15c9f.png",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Cursus pellensque pellensque turpis odio vel sodales urna vitae",
+            "top_text_disabled": false,
+            "title": "Menswear",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_bVzrVP": {
+          "type": "collection",
+          "settings": {
+            "collection": "heritage",
+            "image": "shopify://shop_images/GaltsandStudioGrayBackgroundOctober-3-converted_9df65259-6a26-4c0a-a30b-daa7ed0343f1.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Cursus pellensque pellensque turpis odio vel sodales urna vitae",
+            "top_text_disabled": false,
+            "title": "Heritage Collection",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_TJCfxp": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Cursus pellensque pellensque turpis odio vel sodales urna vitae",
+            "top_text_disabled": false,
+            "title": "Tennis Wear",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "collection_PXxHma",
+        "collection_bVzrVP",
+        "collection_TJCfxp"
+      ],
+      "settings": {
+        "title": "Featured Collections",
+        "small_text": "Handcrafted By Our Expert Designer",
+        "bg": "palette--light bg--neutral",
+        "carousel_enabled_on": "mobile",
+        "wh_ratio": 0.8,
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "font_family": "body",
+        "title_size": 8,
+        "accent_size": 3,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 34
+      }
+    },
+    "section_collection_slider_wryWc6": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "the-galtsand-holiday-shop",
+        "product_limit": 12,
+        "title": "Highlight top-selling products or new arrivals",
+        "align_text": "title-center",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "blue_brand_value_section_FNQX3i": {
+      "type": "blue_brand_value_section",
+      "settings": {
+        "left_image": "shopify://shop_images/WashedTee_WashedOpticWhite_M-5_a7275846-6718-4bec-a5e5-41cff6d91946.jpg",
+        "logo": "shopify://shop_images/Frame_3.png",
+        "title": "Brand Values Section",
+        "paragraph": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "button_link": "",
+        "button_text": "See How We Do It",
+        "right_image_type": "image",
+        "right_image": "shopify://shop_images/WashedTee_WashedKhaki_M-1_14d5dfc7-f209-4b36-aa3a-5f2e9a5197c1.jpg",
+        "right_video": ""
+      }
+    },
+    "icons_values_section_h9PbHK": {
+      "type": "icons_values_section",
+      "settings": {
+        "icon_1": "shopify://shop_images/mdi_recycle.png",
+        "title_1": "Sustainably Made",
+        "text_1": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
+        "title_2": "American Craftsmanship",
+        "text_2": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
+        "title_3": "Athletic Heritage",
+        "text_3": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio."
+      }
+    },
+    "section_list_collections_products_LNUUEA": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_JmNKzJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "equestrian",
+            "title": "Handcrafted by our expert designers.",
+            "link_text": "",
+            "enable_item": true,
+            "text": "EXPLORE COLLECTION",
+            "background_color": "#e6dbc4",
+            "text_color": "text--neutral",
+            "link_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "collection_JmNKzJ"
+      ],
+      "settings": {
+        "title": "Weekly Lookbook Updates and Campaigns",
+        "bg": "palette--light bg--neutral",
+        "grid": 4,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "customer_review_section_xAPmhf": {
+      "type": "customer_review_section",
+      "blocks": {
+        "review_VWKite": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+            "reviewer_image": "shopify://shop_images/Untitled_design_17_6ed70243-93be-414e-8350-071b3c1a4aed.png",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_XNNyXm": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+            "reviewer_image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October-201.webp",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_XKAr9a": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+            "reviewer_image": "shopify://shop_images/Untitled_design_19_d4d3b46a-3c48-44c1-a5e8-9b7f44b02b9a.png",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_Ka8GMA": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+            "reviewer_image": "shopify://shop_images/model39_2.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        }
+      },
+      "block_order": [
+        "review_VWKite",
+        "review_XNNyXm",
+        "review_XKAr9a",
+        "review_Ka8GMA"
+      ],
+      "settings": {
+        "main_title": "Why Our Customers Love Galtsand",
+        "subtitle": "Handcrafted by our expert designers."
+      }
+    },
+    "social_media_rWB4KY": {
+      "type": "social_media",
+      "blocks": {
+        "media_QA7xir": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/DSC6357.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_3pEdTD": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_1103.png",
+            "is_video": true,
+            "video_url": "https://www.instagram.com/p/DFAklL5S4n0/"
+          }
+        },
+        "media_wpUbU8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_zqK6ia": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Washed_Tee_Faded_Navy_M-1.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_gBWhJq": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/IMG_05891.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_LKY83m": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/IMG_051233.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_UBpEEX": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/DSC00002edited2.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_9VMPTJ": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Washed_Tee_Washed_Cream_M-1.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        },
+        "media_f9PLda": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/DSC6046.jpg",
+            "is_video": false,
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_QA7xir",
+        "media_3pEdTD",
+        "media_wpUbU8",
+        "media_zqK6ia",
+        "media_gBWhJq",
+        "media_LKY83m",
+        "media_UBpEEX",
+        "media_9VMPTJ",
+        "media_f9PLda"
+      ],
+      "settings": {
+        "main_title": "Social Media Feed Integration",
+        "subtitle": "Handcrafted by our expert designers."
+      }
+    },
+    "our_boutiques_mhwpF4": {
+      "type": "Our-boutiques",
+      "blocks": {
+        "boutique_XFTMAk": {
+          "type": "boutique",
+          "settings": {
+            "address_name": "The Mall At Wellington Green",
+            "address": "10300 Forest Hill Blvd, Wellington, FL 33414",
+            "phone": "877.756.7353"
+          }
+        },
+        "boutique_hmr6af": {
+          "type": "boutique",
+          "disabled": true,
+          "settings": {
+            "address_name": "Address Name",
+            "address": "6391 Elgin St. Celina, Delaware 10299",
+            "phone": "877.756.7353"
+          }
+        },
+        "boutique_44qdXc": {
+          "type": "boutique",
+          "disabled": true,
+          "settings": {
+            "address_name": "Address Name",
+            "address": "6391 Elgin St. Celina, Delaware 10299",
+            "phone": "877.756.7353"
+          }
+        },
+        "boutique_KQFeeM": {
+          "type": "boutique",
+          "disabled": true,
+          "settings": {
+            "address_name": "Address Name",
+            "address": "6391 Elgin St. Celina, Delaware 10299",
+            "phone": "877.756.7353"
+          }
+        }
+      },
+      "block_order": [
+        "boutique_XFTMAk",
+        "boutique_hmr6af",
+        "boutique_44qdXc",
+        "boutique_KQFeeM"
+      ],
+      "settings": {
+        "main_title": "Our Boutique",
+        "image": "shopify://shop_images/DSC6176.jpg"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "section_logos_E3KxjC",
+    "about_us_section_xikFig",
+    "tabs",
+    "double",
+    "collection-split-section-1",
+    "collection-split-section-2",
+    "product-grid",
+    "section_look_bmmDrc",
+    "custom",
+    "logos",
+    "section_before_after_fCxeWU",
+    "section_product_zBPAN6",
+    "collection_split_ekgGeV",
+    "icons",
+    "slide_new_DmLEXL",
+    "section_list_collections_czR7hE",
+    "section_collection_slider_wryWc6",
+    "blue_brand_value_section_FNQX3i",
+    "icons_values_section_h9PbHK",
+    "section_list_collections_products_LNUUEA",
+    "customer_review_section_xAPmhf",
+    "social_media_rWB4KY",
+    "our_boutiques_mhwpF4"
+  ]
+}

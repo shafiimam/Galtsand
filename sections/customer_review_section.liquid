@@ -1,0 +1,307 @@
+<div class="customer-reviews-section">
+  <h2 class="reviews-title">{{ section.settings.main_title }}</h2>
+  <p class="reviews-subtitle">{{ section.settings.subtitle }}</p>
+  
+  <div class="reviews-slider">
+    <button id="leftArrow" class="slider-arrow left-arrow" onclick="prevSlide()">
+      <img src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_3.png?v=1737052415" alt="Left Arrow">
+    </button>
+    <div class="reviews-container">
+      <div class="reviews-wrapper">
+        {% for block in section.blocks %}
+        <div class="review-card">
+          <p class="review-text">{{ block.settings.review_text }}</p>
+          <div class="reviewer-info">
+            <img src="{{ block.settings.reviewer_image | img_url }}" alt="Reviewer Image" class="reviewer-image">
+            <div>
+              <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
+              <p class="reviewer-role">{{ block.settings.reviewer_role }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <button id="rightArrow" class="slider-arrow right-arrow" onclick="nextSlide()">
+      <img width="50" height="50" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_4.png?v=1737052383" alt="Right Arrow">
+    </button> 
+  </div>
+</div>
+
+<style>
+  .customer-reviews-section {
+    background-color: #E6DBC4;
+    padding: 73px 18px 18px 18px;
+    text-align: center;
+  }
+
+  .reviews-title {
+    font-family: "Gambarino-Regular" !important;
+    font-size: 36px;
+    font-weight: 100;
+    color: #12224f;
+    text-transform: none;
+    font-size: 100px;
+    letter-spacing: 2px;
+    /* width: 68%; */
+    text-align: left;
+    margin-bottom: 14px;
+    line-height: 0.8;
+        padding-left: 4rem;
+  }
+
+  .reviews-subtitle {
+    font-family: "EngraversGothicBT-Heavy" !important;
+    font-size: 20px;
+    color: #12224f;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 4rem;
+  }
+
+  .reviews-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .reviews-container {
+    overflow: hidden;
+    width: 100%;
+    
+    
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    margin-right: -6px;
+  }
+
+  .review-card {
+    min-width: 49%;
+    padding: 31px;
+    background-color: #E6DBC4;
+    border: 3px solid #660000;
+    text-align: left;
+  }
+
+  .review-text {
+    font-family: "Inter Tight" !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: #660000;
+  }
+
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .reviewer-image {
+    width: 50px;
+    /* height: 50px; */
+    /* border-radius: 50%; */
+    margin-right: 10px;
+  }
+
+  .reviewer-name {
+    font-family: "Gambarino-Regular";
+    font-size: 27px;
+    font-weight: bold;
+    color: #660000;
+  }
+
+  .reviewer-role {
+    font-family: "Inter Tight";
+    font-size: 14px;
+    color: #660000;
+  }
+
+  .slider-arrow {
+    background: #E6DBC4;
+    border: 3px solid #660000;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+  }
+  .slider-arrow img{
+    width: 56px;
+    height: 56px;
+    padding: 10px;
+  }
+  .left-arrow{
+    position: relative;
+    left: 30px;
+  }
+  .right-arrow{
+    position: relative;
+    right: 30px;
+    
+  }
+  .slider-arrow.disabled {
+    opacity: 1;
+    pointer-events: none;
+  }
+  @media (max-width: 768px) {
+    .review-text{
+      font-size: 18px;
+    }
+    .reviews-title{
+      font-size: 42px;
+    }
+    .review-card{
+      min-width:95%;
+    }
+    .slider-arrow{
+      width: 65px;
+      height: auto;
+      display: none;
+    }
+    .slide-arrow img{
+      width: 56px !important;
+      height: 48px !important;
+    }
+
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const reviewWrapper = document.querySelector('.reviews-wrapper');
+  const reviewCards = document.querySelectorAll('.review-card');
+  const leftArrow = document.getElementById("leftArrow");
+  const rightArrow = document.getElementById("rightArrow");
+  let startX = 0;
+  let isDragging = false;
+
+  function getSlidesPerView() {
+    return window.innerWidth < 768 ? 1 : 2;
+  }
+
+  function updateSlider() {
+    const slidesPerView = getSlidesPerView();
+    const totalSlides = Math.ceil(reviewCards.length / slidesPerView);
+    reviewWrapper.style.transition = 'transform 0.5s ease-in-out';
+    const slideWidth = slidesPerView === 1 ? 100 : 50;
+reviewWrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+    if (window.innerWidth < 768) {
+      leftArrow.style.display = "none";
+      rightArrow.style.display = "none";
+    } else {
+      leftArrow.style.display = "block";
+      rightArrow.style.display = "block";
+    }
+  }
+
+  function nextSlide() {
+    const slidesPerView = getSlidesPerView();
+    const totalSlides = reviewCards.length - slidesPerView + 1;
+    if (currentIndex < totalSlides - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  }
+
+  function prevSlide() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  }
+
+  function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+    isDragging = true;
+  }
+
+  function handleTouchMove(event) {
+    if (!isDragging) return;
+    const moveX = event.touches[0].clientX - startX;
+    if (moveX > 50) {
+      prevSlide();
+      isDragging = false;
+    } else if (moveX < -50) {
+      nextSlide();
+      isDragging = false;
+    }
+  }
+
+  function handleTouchEnd() {
+    isDragging = false;
+  }
+
+  reviewWrapper.addEventListener("touchstart", handleTouchStart);
+  reviewWrapper.addEventListener("touchmove", handleTouchMove);
+  reviewWrapper.addEventListener("touchend", handleTouchEnd);
+
+  window.addEventListener("resize", updateSlider);
+  updateSlider();
+</script>
+
+
+
+
+{% schema %}
+{
+  "name": "Customer Reviews Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "Why Our Customers Love Galtsand"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Customer Review",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+        },
+        {
+          "type": "image_picker",
+          "id": "reviewer_image",
+          "label": "Reviewer Image"
+        },
+        {
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer Name",
+          "default": "Name Surname"
+        },
+        {
+          "type": "text",
+          "id": "reviewer_role",
+          "label": "Reviewer Role",
+          "default": "Athlete"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Reviews Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

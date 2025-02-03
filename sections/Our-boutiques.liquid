@@ -1,0 +1,169 @@
+<div class="boutique-section">
+  <div class="boutique-container">
+    <div class="boutique-image">
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="Boutique Image">
+    </div>
+    <div class="boutique-info">
+      <h2 class="boutique-title">{{ section.settings.main_title }}</h2>
+      <div class="boutique-list">
+        {% for block in section.blocks %}
+        <div class="boutique-item">
+          <h3 class="boutique-address-name">{{ block.settings.address_name }}</h3>
+          <p class="boutique-address">{{ block.settings.address }}</p>
+          <p class="boutique-phone">{{ block.settings.phone }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .boutique-section {
+    background-color: #E6DBC4;
+    padding: 50px;
+  }
+
+  .boutique-container {
+    display: flex;
+    /* max-width: 1200px; */
+    margin: auto;
+    align-items: stretch;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .boutique-image {
+    flex: 1;
+    display: flex;
+  }
+
+  .boutique-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .boutique-info {
+    flex: 1;
+    border: 4px solid #006A50;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .boutique-title {
+    font-family: "Gambarino-Regular";
+    font-size: 60px;
+    font-weight: bold;
+    color: #006A50;
+    margin-bottom: 55px;
+  }
+
+  .boutique-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .boutique-item {
+    font-family: "Inter Tight";
+  }
+
+  .boutique-address-name {
+ font-family: "EngraversGothicBT-Heavy" !important;
+    font-size: 32px;
+    font-weight: bold;
+    color: #102345;
+    text-transform: none;
+    letter-spacing: 1px;
+    margin: 0px;
+  }
+
+  .boutique-address,
+  .boutique-phone {
+    font-family: "EngraversGothicBT-Heavy" !important;
+    font-size: 16px;
+    color: #44505F;
+    text-transform: none;
+  }
+
+  @media (max-width: 768px) {
+    .boutique-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .boutique-image {
+      height: auto;
+    }
+    .boutique-image img {
+      width: 100%;
+      height: auto;
+    }
+    .boutique-title{
+      font-size: 44px;
+    }
+    .boutique-section{
+      padding: 10px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Our Boutiques",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "Our Boutiques"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "boutique",
+      "name": "Boutique Location",
+      "settings": [
+        {
+          "type": "text",
+          "id": "address_name",
+          "label": "Address Name",
+          "default": "Address Name"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "label": "Address",
+          "default": "6391 Elgin St. Celina, Delaware 10299"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone Number",
+          "default": "877.756.7353"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Boutiques",
+      "category": "Custom",
+      "blocks": [
+        { "type": "boutique" },
+        { "type": "boutique" },
+        { "type": "boutique" },
+        { "type": "boutique" }
+      ]
+    }
+  ]
+}
+{% endschema %}

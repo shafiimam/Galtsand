@@ -1,0 +1,142 @@
+<div class="icon-values-section">
+  <div class="icon-value">
+    <img src="{{ section.settings.icon_1 | img_url: 'master' }}" alt="Icon 1" class="icon">
+    <h2>{{ section.settings.title_1 }}</h2>
+    <p>{{ section.settings.text_1 }}</p>
+  </div>
+  
+  <div class="icon-value">
+    <img src="{{ section.settings.icon_2 | img_url: 'master' }}" alt="Icon 2" class="icon">
+    <h2>{{ section.settings.title_2 }}</h2>
+    <p>{{ section.settings.text_2 }}</p>
+  </div>
+
+  <div class="icon-value">
+    <img src="{{ section.settings.icon_3 | img_url: 'master' }}" alt="Icon 3" class="icon">
+    <h2>{{ section.settings.title_3 }}</h2>
+    <p>{{ section.settings.text_3 }}</p>
+  </div>
+</div>
+
+<style>
+  .icon-values-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: left;
+    justify-content: center;
+    padding: 40px 25px 65px 25px;
+    background-color: #1a2947;
+    color: white;
+    gap: 227px;
+    text-align: left;
+  }
+
+  .icon-value {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+.icon-value h2{
+  font-family: "EngraversGothicBT-Heavy";
+  text-transform: none;
+    font-size: 51px;
+    line-height: 48px;
+    letter-spacing: 3px;
+  color: #E6DBC4;
+  margin: 0px 0px 15px 0px;
+}
+  .icon-value p{
+    color: #cec3ac;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 37px;
+  }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .icon-value h2{
+    font-size: 2.2rem;
+    margin: 0px;
+  }
+}
+  
+  @media (max-width: 768px) {
+    .icon-values-section {
+      grid-template-columns: 1fr;
+      gap: 60px;
+      padding-top: 60px;
+      
+    }
+      .icon-value h2{
+    font-size: 2.5rem;
+     letter-spacing: 2px;   
+        margin: 0px;
+  }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Icon Values Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "icon_1",
+      "label": "First Icon"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "First Title",
+      "default": "Sustainably Made"
+    },
+    {
+      "type": "textarea",
+      "id": "text_1",
+      "label": "First Text",
+      "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2",
+      "label": "Second Icon"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Second Title",
+      "default": "American Craftsmanship"
+    },
+    {
+      "type": "textarea",
+      "id": "text_2",
+      "label": "Second Text",
+      "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_3",
+      "label": "Third Icon"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Third Title",
+      "default": "Athletic Heritage"
+    },
+    {
+      "type": "textarea",
+      "id": "text_3",
+      "label": "Third Text",
+      "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Values Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
