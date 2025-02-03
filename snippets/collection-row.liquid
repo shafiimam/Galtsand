@@ -1,92 +1,3 @@
-<!-- /snippets/collection-row.liquid -->
-<style>
-  /* .product-grid-item .space{
-    height: 58vh !important;
-  } */
-  .collection-block-card__content {
-    align-items: flex-start;
-    /* justify-content: center; */
-    text-align: left;
-    flex-direction: column;
-  }
-  .collection-block-card__content h1 {
-    font-family: 'Gambarino-Regular';
-    text-transform: none;
-    font-size: 3rem;
-    letter-spacing: 1px;
-    color: #006a50;
-  }
-  .collection-block-card__content p {
-    font-family: 'Inter Tight' !important;
-    color: #006a50;
-    font-size: 1.2rem;
-  }
-  .collection-list__product .quickview span {
-    color: #e6dbc4;
-  }
-  .collection-list__product .product__grid__title {
-    color: #e6dbc4;
-  }
-  .collection-list__product .product__grid__price {
-    color: #e6dbc4;
-  }
-  .collection-block-card__content .standard__cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: max-content; /* Ajusta al tamaño del texto */
-    padding: 24px 24px; /* Ajusta el padding según sea necesario */
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #006a50 !important;
-    color: #e6dbc4 !important;
-    border: 2.5px solid #006a50;
-  }
-  .collection-block-card__content .standard__cta:hover {
-    background-color: #e6dbc4 !important;
-    color: #006a50 !important;
-    border: 2.5px solid #006a50;
-  }
-
-  .collection-block-card__content h1 {
-    font-size: clamp(24px, 3vw, 40px);
-  }
-  .collection-block-card__content p {
-    font-size: 14px;
-  }
-
-  @media (max-width: 1100px) {
-    .collection-block-card__content .standard__cta {
-      font-size: 11px !important;
-      margin-left: 0px;
-      padding: 19px 24px;
-    }
-  }
-  @media (max-width: 768px) {
-    .wrapper--full .kicker-flourished {
-      font-size: 39px;
-    }
-  }
-  .collection-block-card{
-    height: 100%;
-  }
-  .collection-block-card-link {
-    height: 100%;
-    background-color: {{ item_background | default: '#fcfaf7' }};
-    position: relative;
-    display: block;
-  }
-
-  .collection-block-card__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    height: 100%;
-    padding: 20px;
-  }
-</style>
 {% comment %}
   Required params:
     product_limit {int} Upper limit for num of products
@@ -107,6 +18,7 @@
       item_text_size: block.settings.item_link_size,
       item_text_color: block.settings.item_link_color %}
 {% endcomment %}
+
 {%- assign enable_item = enable_item | default: false -%}
 {%- assign product_limit = product_limit | default: 3 -%}
 {%- assign grid = grid | default: 3 -%}
@@ -221,3 +133,85 @@
     </div>
   </div>
 {%- endif -%}
+
+<style>
+  /* .product-grid-item .space{
+    height: 58vh !important;
+  } */
+  .collection-block-card__content {
+    align-items: flex-start;
+    /* justify-content: center; */
+    text-align: left;
+    flex-direction: column;
+  }
+  .collection-block-card__content h1 {
+    font-family: 'Gambarino-Regular';
+    text-transform: none;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: #006a50;
+  }
+  .collection-block-card__content p {
+    font-family: 'Inter Tight' !important;
+    color: #006a50;
+    font-size: 1.2rem;
+  }
+  .collection-list__product .quickview span {
+    color: #e6dbc4;
+  }
+  .collection-list__product .product__grid__title {
+    color: #e6dbc4;
+  }
+  .collection-list__product .product__grid__price {
+    color: #e6dbc4;
+  }
+  .collection-block-card__content .standard__cta {
+    color: #E6DBC4;
+    background: #006A50;
+    font-family: "Engravers Gothic";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    border: 2.5px solid #006A50;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .collection-block-card__content .standard__cta:hover {
+    background-color: #e6dbc4 !important;
+    color: #006a50 !important;
+    border: 2.5px solid #006a50;
+  }
+
+  .collection-block-card__content h1 {
+    font-size: 40px;
+  }
+  .collection-block-card__content p {
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    .wrapper--full .kicker-flourished {
+      font-size: 39px;
+    }
+  }
+  .collection-block-card{
+    height: 100%;
+  }
+  .collection-block-card-link {
+    height: 100%;
+    background-color: {{ item_background | default: '#fcfaf7' }};
+    position: relative;
+    display: block;
+  }
+
+  .collection-block-card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    padding: 20px;
+  }
+</style>

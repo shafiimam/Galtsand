@@ -112,7 +112,7 @@
           {%- assign collection = collections[block.settings.collection] -%}
           {% for block in section.blocks %}
             {% capture block_card_position %}
-              {% cycle 'first', 'last' %}
+              {% cycle 'last', 'first' %}
             {% endcapture %}
           {% endfor %}
           {% assign card_position = block_card_position | strip %}

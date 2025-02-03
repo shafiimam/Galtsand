@@ -1,0 +1,125 @@
+{% if section.settings.blog != blank %}
+  {%- assign articles = section.settings.blog.articles -%}
+
+  <div class="blog-articles-grid">
+    {% for block in section.blocks %}
+      {% assign article = block.settings.article %}
+        <div class="blog-article article-{{ forloop.index }}">
+          <a href="{{ article.url }}">
+            <picture>
+              <source
+                media="(max-width: 699px)"
+                srcset="{{ article.image | image_url: width: '400x' }} 400w, {{ article.image | image_url: width: '600x' }} 600w, {{ article.image | image_url: width: '800x' }} 800w, {{ article.image | image_url: width: '1000x' }} 1000w"
+                width="{{ article.image.width }}"
+                height="{{ article.image.height }}"
+              >
+
+              {{-
+                article.image
+                | image_url: width: article.image.width
+                | image_tag:
+                  loading: 'lazy',
+                  fetchpriority: 'high',
+                  sizes: '100vw',
+                  widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200'
+              -}}
+            </picture>
+          </a>
+          <div class="blog-card__content">
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.excerpt | strip_html | truncate: 100 }}</p>
+            <button>Read more</button>
+          </div>
+        </div>
+
+    {% endfor %}
+  </div>
+{% else %}
+  <p>Please select a blog in the section settings.</p>
+{% endif %}
+
+<style>
+  .blog-articles-grid {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  .blog-article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .blog-card__content{
+      position: absolute;
+   }
+  .blog-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  .blog-article h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .blog-article a {
+    text-decoration: none;
+    color: #333;
+  }
+  .blog-article p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Layout for 1-2-3 structure */
+  .blog-articles-grid .article-1 {
+    grid-column: span 3;
+  }
+  .blog-articles-grid .article-2 {
+   grid-column: span 2;
+  }
+  .blog-articles-grid .article-3 {
+    width: calc(33.33% - 10px);
+  }
+
+  @media (max-width: 768px) {
+    .blog-articles-grid .article-2,
+    .blog-articles-grid .article-3 {
+      width: 100%;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Blog Articles Grid",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+         "type": "article",
+         "name": "article",
+         "settings": [
+           {
+            "type": "article",
+            "id": "article",
+            "label": "Article"
+           },
+         ]
+      }
+  ],
+  "presets": [
+    {
+      "name": "Blog Articles Grid"
+    }
+  ]
+}
+{% endschema %}

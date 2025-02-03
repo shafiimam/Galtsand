@@ -184,16 +184,16 @@
         </div>
       {% endif %}
       {% if has_transparent_logo %}
-        {%- assign alt = section.settings.transparent_logo.alt | default: shop.name | strip_html | escape %}
+        {%- assign alt = section.settings.logo_v2.alt | default: shop.name | strip_html | escape %}
         {%- assign transparent_logo_width = logo_width | at_most: section.settings.logo_max_limit %}
         {%- assign transparent_logo_width_2x = transparent_logo_width | times: 2 %}
 
         {% capture srcset %}
-          {{ section.settings.transparent_logo | image_url: width: transparent_logo_width_2x }} 2x,
-          {{ section.settings.transparent_logo | image_url: width: transparent_logo_width }}
+          {{ section.settings.logo_v2 | image_url: width: transparent_logo_width_2x }} 2x,
+          {{ section.settings.logo_v2 | image_url: width: transparent_logo_width }}
         {% endcapture %}
 
-        {{ section.settings.transparent_logo | image_url: width: transparent_logo_width | image_tag:
+        {{ section.settings.logo_v2 | image_url: width: transparent_logo_width | image_tag:
           class: "logo__img logo__img--transparent",
           srcset: srcset,
           alt: alt,
