@@ -397,11 +397,7 @@
         {{ hamburger_icon }}
       </button>
     </div>
-    {% if template.name == 'index' or template.name == 'blog' or template.name == 'article' %}
-      {{ logos }}
-    {% else %}
-      {{ logos_on_others_page }}
-    {% endif %}
+    {{ logos }}
     <div class="header__mobile__right">
       <a class="header__mobile__button"
        data-drawer-toggle="drawer-cart"
@@ -586,11 +582,7 @@
             {%- when 'logo_center' -%}
               <div data-takes-space class="header__desktop__bar__l">{{ menu }}</div>
               <div data-takes-space class="header__desktop__bar__c">
-                {% if template.name == 'index' or template.name == 'blog' or template.name == 'article' %}
-                  {{ logos }}
-                {% else %}
-                  {{ logos_on_others_page }}
-                {% endif %}
+                {{ logos }}
               </div>
               <div data-takes-space class="header__desktop__bar__r">{{ cart_content }}</div>
             {%- when 'menu_center' -%}

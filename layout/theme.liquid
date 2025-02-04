@@ -78,8 +78,6 @@
 
     {% render 'css-variables' %}
 
-    {% render 'header-conditional-styles' %}
-
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
 
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
