@@ -9,75 +9,6 @@
  */
 {
   "sections": {
-<<<<<<< HEAD
-    "blog-section-featured-article": {
-      "type": "section-featured-article",
-      "blocks": {
-        "blog-section-featured-article-block-0": {
-          "type": "kicker",
-          "settings": {}
-        },
-        "blog-section-featured-article-block-1": {
-          "type": "heading",
-          "settings": {}
-        },
-        "blog-section-featured-article-block-2": {
-          "type": "text",
-          "settings": {}
-        },
-        "blog-section-featured-article-block-3": {
-          "type": "button",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "blog-section-featured-article-block-0",
-        "blog-section-featured-article-block-1",
-        "blog-section-featured-article-block-2",
-        "blog-section-featured-article-block-3"
-      ],
-      "settings": {
-        "padding_top": 64,
-        "padding_bottom": 100
-      }
-    },
-    "custom-content-feature": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "overlay_opacity": 15,
-            "overlay_color": "#000",
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-center",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "",
-            "button_color": "btn--white",
-            "button_style": "btn"
-          }
-        },
-        "article": {
-          "type": "article",
-          "settings": {
-            "article": "",
-            "show_tag": true,
-            "show_date": true,
-            "font_size": 4,
-            "show_excerpt": true,
-            "align_text": "text-left",
-            "placement_text": "middle",
-            "show_author_name": true,
-            "show_author_image": true,
-            "button_text": "Read more",
-            "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
-            "text_color": "text--neutral",
-            "bg_color": "#f7f7f7"
-=======
     "blogs_masonry_NaB7eb": {
       "type": "blogs-masonry",
       "blocks": {
@@ -115,23 +46,10 @@
           "type": "article",
           "settings": {
             "article": "blogs/8-perfect-outfits-for-postcard-worthy-destinations"
->>>>>>> origin/main
           }
         }
       },
       "block_order": [
-<<<<<<< HEAD
-        "image",
-        "article"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "use_screen_one_half",
-        "borders": false,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-=======
         "article_rEKjkh",
         "article_wTaC9j",
         "article_G6PBCH",
@@ -141,19 +59,10 @@
       ],
       "settings": {
         "blog": ""
->>>>>>> origin/main
       }
     },
     "main-blog": {
       "type": "blog",
-<<<<<<< HEAD
-      "settings": {}
-    }
-  },
-  "order": [
-    "blog-section-featured-article",
-    "custom-content-feature",
-=======
       "settings": {
         "heading": "Explore all Blog",
         "show_heading": true,
@@ -181,7 +90,6 @@
   },
   "order": [
     "blogs_masonry_NaB7eb",
->>>>>>> origin/main
     "main-blog"
   ]
 }
