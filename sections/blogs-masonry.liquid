@@ -1,0 +1,260 @@
+{% if section.blocks.size > 0 %}
+  <div class="blog-articles-grid section-padding">
+    {% for block in section.blocks %}
+      {% assign article = block.settings.article %}
+      <div class="blog-article article-{{ forloop.index }}">
+        <a href="{{ article.url }}">
+          <picture>
+            <source
+              media="(max-width: 699px)"
+              srcset="{{ article.image | image_url: width: '400x' }} 400w, {{ article.image | image_url: width: '600x' }} 600w, {{ article.image | image_url: width: '800x' }} 800w, {{ article.image | image_url: width: '1000x' }} 1000w"
+              width="{{ article.image.width }}"
+              height="{{ article.image.height }}"
+            >
+
+            {{-
+              article.image
+              | image_url: width: article.image.width
+              | image_tag:
+                loading: 'lazy',
+                fetchpriority: 'high',
+                sizes: '100vw',
+                widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200'
+            -}}
+          </picture>
+        </a>
+        <div class="blog-card__content">
+          <h2 class="card-title">
+            {{ block.settings.card_title }}
+          </h2>
+          <h3 class="article-title truncated-text">{{ article.title }}</h3>
+          <p class="article-excerpt">{{ article.excerpt | strip_html | truncate: 100 }}</p>
+          <a href="{{ article.url }}" class="article-read">Read</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>Please select a blog in the section settings.</p>
+{% endif %}
+
+<style>
+  .truncated-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .blog-articles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .blog-article {
+    border: 8px solid #e6dbc4;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+  }
+
+  .blog-article > a {
+    height: 100%;
+  }
+
+  .blog-article img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .blog-card__content {
+    position: absolute;
+    width: 100%;
+    max-width: calc(100% - 96px);
+    padding: 32px;
+    z-index: 10;
+    border: 6px solid #e6dbc4;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
+  .blog-articles-grid :is(.article-4, .article-5, .article-6) .blog-card__content {
+    max-height: 400px;
+    margin: 48px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Layout styles */
+  .blog-articles-grid .article-1 {
+    flex: 1 1 100%;
+    min-height: 900px;
+  }
+
+  @media (min-width: 1000px) {
+    .blog-articles-grid .article-1 .blog-card__content {
+      width: 70%;
+    }
+  }
+
+  .blog-articles-grid :is(.article-2, .article-3, .article-4, .article-5, .article-6) {
+    flex: 1 1 50%;
+    align-items: flex-end;
+    min-height: 720px;
+    @media (max-width: 1000px) {
+      align-items: center;
+    }
+  }
+
+  .blog-articles-grid :is(.article-4, .article-5, .article-6) {
+    flex: 1 1 33.33%;
+    min-height: 600px;
+  }
+
+  /* Typography styles */
+  .blog-articles-grid :is(.article-1, .article-2, .article-3) .card-title {
+    font-size: clamp(16px, 2.5vw, 32px);
+  }
+
+  .blog-articles-grid .article-1 .article-title {
+    font-size: clamp(20px, 2.5vw, 76px);
+  }
+
+  .blog-articles-grid :is(.article-2, .article-3) .article-title {
+    font-size: clamp(20px, 2.5vw, 55px);
+  }
+
+  .blog-articles-grid :is(.article-1, .article-2, .article-3) .article-excerpt {
+    font-size: clamp(20px, 2.5vw, 24px);
+  }
+
+  .blog-articles-grid .article-read {
+    font-size: clamp(16px, 2.5vw, 18px);
+  }
+
+  .blog-articles-grid :is(.article-4, .article-5, .article-6) .card-title {
+    font-size: clamp(16px, 2.5vw, 18px);
+  }
+
+  .blog-articles-grid :is(.article-4, .article-5, .article-6) .article-title {
+    font-size: clamp(20px, 2.5vw, 36px);
+    font-family: 'EngraversGothicBT-Heavy';
+  }
+
+  .blog-articles-grid :is(.article-4, .article-5, .article-6) .article-excerpt {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-family: 'Inter Tight';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+  }
+
+  /* Responsive layout adjustments */
+  @media (max-width: 1000px) {
+    .blog-articles-grid .blog-article {
+      flex: 1 1 100% !important;
+      min-height: 600px;
+    }
+
+    .blog-articles-grid :is(.card-title, .article-excerpt) {
+      font-size: clamp(16px, 2.5vw, 32px);
+    }
+
+    .blog-articles-grid .article-title {
+      font-size: clamp(24px, 2.5vw, 76px);
+    }
+
+    .blog-articles-grid .article-read {
+      font-size: clamp(16px, 2.5vw, 18px);
+    }
+  }
+
+  /* Shared styles */
+  .card-title,
+  .article-read {
+    background: #e6dbc4;
+    font-family: 'EngraversGothicBT-Heavy';
+    font-weight: 700;
+  }
+
+  .card-title {
+    color: #102345;
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .article-title {
+    color: #e6dbc4;
+    font-family: 'Gambarino-Regular';
+    font-weight: 400;
+    letter-spacing: -2.28px;
+    margin-bottom: 4px;
+  }
+
+  .article-excerpt {
+    color: #e6dbc4;
+    font-family: 'EngraversGothicBT-Heavy';
+    line-height: 80%;
+    margin-block-end: 40px;
+  }
+
+  .article-read {
+    padding: 20px 24px;
+    color: #102345;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Blog Articles Grid",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "article",
+      "name": "article",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "Article"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Article Card Title",
+          "default": "Article"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Articles Grid"
+    }
+  ]
+}
+{% endschema %}
