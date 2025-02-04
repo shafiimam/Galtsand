@@ -1,0 +1,79 @@
+h4.blog__heading.text-left {
+  color: #660f28;
+  font-family: "EngraversGothicBT-Heavy";
+  font-size: clamp(36px, 4vw, 100px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70%;
+  letter-spacing: -2px;
+}
+.blog__tags-wrapper {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+a.blog__tag {
+  border: 2px solid #660f28;
+  color: #660f28;
+}
+a.blog__tag.blog__tag--active {
+  background-color: #660f28;
+  color: #fff;
+}
+a.blog__tag.blog__tag--active:hover {
+  background-color: #660f28;
+  color: #fff;
+}
+.article__item-content > *,
+.article__item-content p {
+  color: #102345;
+}
+.article__item {
+  display: flex;
+  gap: 52px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.article__item-image {
+  width: calc(40% - 26px);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.article__item-content {
+  width: calc(60% - 26px);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.article__item-author {
+  display: none;
+}
+
+h3.article__item-title {
+  color: #102345;
+  font-family: "Gambarino-Regular";
+  font-size: clamp(36px, 4vw, 100px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2.28px;
+  margin-bottom: 28px;
+}
+.article__item-content p {
+  color: #102345;
+  font-family: "EngraversGothicBT-Heavy";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+  padding-bottom: 40px;
+}
+.read-more-btn {
+  padding: 20px 24px;
+  border: 2px solid #102345;
+}
