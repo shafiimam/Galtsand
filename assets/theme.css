@@ -23,20 +23,6 @@
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/inter-tight-regular.woff?v=1736259895");
 }
 
-/* @font-face {
-  font-family: "Acumin Variable Concept";
-  src: url('{{ "Acumin Variable Concept.ttf" | asset_url }}') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "timr45w";
-  src: url('{{ "timr45w.ttf" | asset_url }}') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-} */
-
 @font-face {
   font-family: "exmouth";
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/exmouth.woff?v=1736211739");
