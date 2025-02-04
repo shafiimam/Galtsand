@@ -1,11 +1,7 @@
 <!-- /sections/blog.liquid -->
 {% case section.settings.post_grid %}
   {% when 1 %}
-<<<<<<< HEAD
-    {% assign blog_grid = 'medium-up--three-quarters medium-up--push-one-eighth' %}
-=======
     {% assign blog_grid = 'medium-up--one-whole' %}
->>>>>>> origin/main
   {% when 2 %}
     {% assign blog_grid = 'medium-up--one-half' %}
   {% when 3 %}
@@ -43,7 +39,7 @@
     </div>
   {% endif %}
 
-  <div class="blog section-padding">
+  <div class="blog section-padding palette--bright">
     <div class="{{ section.settings.width }}">
       {% if section.settings.show_heading %}
         <h4 class="blog__heading {{ section.settings.text_align }}">

@@ -69,11 +69,14 @@ h3.article__item-title {
   font-family: "EngraversGothicBT-Heavy";
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
   line-height: 80%;
   padding-bottom: 40px;
 }
 .read-more-btn {
   padding: 20px 24px;
   border: 2px solid #102345;
+}
+
+.blog__article__content p{
+  color: var(--text);
 }
