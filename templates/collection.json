@@ -104,7 +104,7 @@
     "why_use_our_pieces_GM7rgH": {
       "type": "Why_Use_Our_Pieces",
       "settings": {
-        "title": "Why Our T-Shirts Are a Wardrobe Essential",
+        "title": "Why Our Clothes Are a Wardrobe Essential",
         "subtitle": "Our t-shirts are more than just clothing—they’re an expression of your personality. Here’s why they’re a must-have:",
         "icon_1": "shopify://shop_images/Medal_1.png",
         "title_1": "Superior Fabric Quality",
@@ -116,6 +116,122 @@
         "title_3": "Versatility for Any Occasion",
         "description_3": "Dress them up or down, our t-shirts are perfect for casual outings, gym sessions, or even semi-formal events."
       }
+    },
+    "seasonal_trends_3AGAmP": {
+      "type": "seasonal_trends",
+      "blocks": {
+        "trend_block_MK8cfh": {
+          "type": "trend_block",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
+            "heading": "Trending Colors",
+            "description": "Explore vibrant hues for summer or earthy tones for fall",
+            "link": "/collections/trending-colors"
+          }
+        },
+        "trend_block_Jjh9CK": {
+          "type": "trend_block",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-145.jpg",
+            "heading": "Seasonal Design Inspirations",
+            "description": "Unique prints inspired by nature, art, and pop culture",
+            "link": "/collections/seasonal-designs"
+          }
+        }
+      },
+      "block_order": [
+        "trend_block_MK8cfh",
+        "trend_block_Jjh9CK"
+      ],
+      "settings": {
+        "title": "Seasonal Trends",
+        "subtitle": "Stay ahead of the curve with the latest t-shirt trends"
+      }
+    },
+    "every_ocasion_KaRhBj": {
+      "type": "every_ocasion",
+      "blocks": {
+        "casual_wear_rNitdD": {
+          "type": "casual_wear",
+          "settings": {
+            "image": "shopify://shop_images/DSC_5361.jpg",
+            "heading": "Casual Everyday Wear",
+            "description": "Soft and breathable t-shirts perfect for lounging or running errands",
+            "link": ""
+          }
+        },
+        "workout_wear_CTncfz": {
+          "type": "workout_wear",
+          "settings": {
+            "image": "shopify://shop_images/DSC_54971.jpg",
+            "heading": "Workout and Athleisure",
+            "description": "Moisture-wicking fabrics that keep you cool during intense activities",
+            "link": ""
+          }
+        },
+        "smart_casual_YpNxpx": {
+          "type": "smart_casual",
+          "settings": {
+            "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
+            "heading": "Smart-Casual Events",
+            "description": "Pair with blazers for a polished yet relaxed look",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "casual_wear_rNitdD",
+        "workout_wear_CTncfz",
+        "smart_casual_YpNxpx"
+      ],
+      "settings": {
+        "title": "Styles for Every Occasion",
+        "subtitle": "Our collection is versatile enough to cater to every aspect of your lifestyle"
+      }
+    },
+    "how_to_style_p7gryg": {
+      "type": "how_to_style",
+      "blocks": {
+        "style_row_GCd6Gb": {
+          "type": "style_row",
+          "settings": {
+            "heading": "Pair with Jeans",
+            "description": "Achieve a timeless, effortless look",
+            "product_1": "airlite-leggings",
+            "product_2": "angelique-bra",
+            "product_3": "classic-messenger-bag"
+          }
+        },
+        "style_row_7RzC9N": {
+          "type": "style_row",
+          "settings": {
+            "heading": "Pair with Jeans",
+            "description": "Achieve a timeless, effortless look",
+            "product_1": "daisy-short",
+            "product_2": "empower-bra",
+            "product_3": "freedom-leggings"
+          }
+        },
+        "style_row_xPRQ9Q": {
+          "type": "style_row",
+          "settings": {
+            "heading": "Pair with Jeans",
+            "description": "Achieve a timeless, effortless look",
+            "product_1": "pullover-hoodie-with-printed-logo",
+            "product_2": "giselle-bra",
+            "product_3": "garment-washed-pullover-hoodie"
+          }
+        }
+      },
+      "block_order": [
+        "style_row_GCd6Gb",
+        "style_row_7RzC9N",
+        "style_row_xPRQ9Q"
+      ],
+      "settings": {
+        "title": "How to Style Your T-Shirts",
+        "subtitle": "Unlock the full potential of your T-shirt collection"
+      }
     }
   },
   "order": [
@@ -123,6 +239,9 @@
     "subcollections",
     "main",
     "fabric_choice_Th3iVf",
-    "why_use_our_pieces_GM7rgH"
+    "why_use_our_pieces_GM7rgH",
+    "seasonal_trends_3AGAmP",
+    "every_ocasion_KaRhBj",
+    "how_to_style_p7gryg"
   ]
 }
