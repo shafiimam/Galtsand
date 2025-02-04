@@ -2,7 +2,7 @@
   <div class="blog-articles-grid section-padding">
     {% for block in section.blocks %}
       {% assign article = block.settings.article %}
-      <div class="blog-article article-{{ forloop.index }}">
+      <div class="blog-article article-{{ forloop.index }}" {{ block.shopify_attributes }}>
         <a href="{{ article.url }}">
           <picture>
             <source
@@ -29,7 +29,9 @@
           </h2>
           <h3 class="article-title truncated-text">{{ article.title }}</h3>
           <p class="article-excerpt">{{ article.excerpt | strip_html | truncate: 100 }}</p>
-          <a href="{{ article.url }}" class="article-read">Read</a>
+          {% if block.settings.hide_btn != true %}
+            <a href="{{ article.url }}" class="article-read">Read</a>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
@@ -188,12 +190,14 @@
     background: #e6dbc4;
     font-family: 'EngraversGothicBT-Heavy';
     font-weight: 700;
+    text-transform: none;
   }
 
   .card-title {
     color: #102345;
     padding: 10px 20px;
     margin-bottom: 0;
+    text-transform: none;
   }
 
   .article-title {
@@ -202,6 +206,7 @@
     font-weight: 400;
     letter-spacing: -2.28px;
     margin-bottom: 4px;
+    text-transform: none;
   }
 
   .article-excerpt {
@@ -209,6 +214,7 @@
     font-family: 'EngraversGothicBT-Heavy';
     line-height: 80%;
     margin-block-end: 40px;
+    text-transform: none;
   }
 
   .article-read {
@@ -247,7 +253,13 @@
           "id": "card_title",
           "label": "Article Card Title",
           "default": "Article"
-        }
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_btn",
+          "label": "Hide Read More Button",
+          "default": false
+        },
       ]
     }
   ],

@@ -14877,9 +14877,7 @@ body:not(.theme-animate-hover)
   --text-dark: var(--text-transparent);
   --underline: var(--text-transparent);
 }
-[data-header-transparent="true"]:not(.meganav--visible) .theme__header {
-  background-color: rgba(255, 255, 255, 0);
-}
+
 [data-header-transparent="true"]:not(.meganav--visible)
   .header__logo--has-transparent
   .logo__img--color {
@@ -21635,8 +21633,8 @@ a.product__form__link:after {
   #Blogs and Comments
 ============================================================================== */
 .blog__article {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1); */
   border-radius: var(--radius-sm);
   padding: 50px;
   margin-bottom: 36px;
@@ -21919,6 +21917,7 @@ a.product__form__link:after {
 }
 .article__item-title a {
   text-decoration: none;
+  text-transform: none;
 }
 .article__item-avatar {
   display: inline-block;

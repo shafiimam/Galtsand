@@ -1,14 +1,13 @@
 <!-- /sections/404.liquid -->
-<div class="{{ section.settings.width }} section-padding"
+<div class="{{ section.settings.width }} section-padding palette--bright"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
   <div class="float-grid">
     <div class="grid__item medium-up--two-thirds medium-up--push-one-sixth">
-      <h1 class="title text-center">{{ 'general.404.title' | t }}</h1>
+      <h1 class="title text-center ">{{ 'general.404.title' | t }}</h1>
       <p class="text-center">{{ 'general.404.subtext_html' | t }}</p>
     </div>
   </div>
 </div>
-
 {% schema %}
 {
   "settings": [

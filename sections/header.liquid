@@ -397,7 +397,7 @@
         {{ hamburger_icon }}
       </button>
     </div>
-    {% if template.name == 'index' %}
+    {% if template.name == 'index' or template.name == 'blog' or template.name == 'article' %}
       {{ logos }}
     {% else %}
       {{ logos_on_others_page }}
@@ -586,7 +586,7 @@
             {%- when 'logo_center' -%}
               <div data-takes-space class="header__desktop__bar__l">{{ menu }}</div>
               <div data-takes-space class="header__desktop__bar__c">
-                {% if template.name == 'index' %}
+                {% if template.name == 'index' or template.name == 'blog' or template.name == 'article' %}
                   {{ logos }}
                 {% else %}
                   {{ logos_on_others_page }}
