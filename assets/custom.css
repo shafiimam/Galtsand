@@ -1,3 +1,34 @@
+:root {
+  --font-family-heading: "Gambarino-Regular";
+  --font-family-cursive: "exmouth";
+  --font-family-body: "EngraversGothicBT-Heavy";
+  --font-family-secondary: "Inter Tight";
+  --heading-size-xl: clamp(48px, 4vw, 120px);
+  --heading-size-lg: clamp(40px, 4vw, 71px);
+  --heading-size-cursive: clamp(72px, 4vw, 132px);
+}
+.heading {
+  font-family: var(--font-family-heading);
+}
+.heading-xl {
+  font-size: var(--heading-size-xl);
+}
+.heading-lg {
+  font-size: var(--heading-size-lg);
+}
+.font-heading {
+  font-family: var(--font-family-heading);
+}
+.font-cursive {
+  font-family: var(--font-family-cursive);
+}
+.font-body {
+  font-family: var(--font-family-body);
+}
+.font-secondary {
+  font-family: var(--font-family-secondary);
+}
+
 h4.blog__heading.text-left {
   color: #660f28;
   font-family: "EngraversGothicBT-Heavy";
@@ -77,6 +108,9 @@ h3.article__item-title {
   border: 2px solid #102345;
 }
 
-.blog__article__content p{
+.blog__article__content p {
   color: var(--text);
+}
+a.standard__cta.hero__btn.btn.btn--primary.btn--long {
+  border: 2px solid #e6dbc4;
 }
