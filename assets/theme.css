@@ -45,7 +45,7 @@
 /* Apply fonts to specific elements */
 .hero__title p {
   font-family: "Gambarino-Regular" !important;
-  font-size: 7.8rem !important;
+  font-size: clamp(40px, 9vw, 125px) !important;
   letter-spacing: -3px !important;
 }
 
@@ -12651,7 +12651,7 @@ svg.placeholder-svg {
 }
 /* Content */
 .hero__content {
-  --default-max-width: calc(66% - var(--outer));
+  --default-max-width: calc(100% - var(--outer));
   --content-width-fallback: var(--CONTENT-WIDTH, var(--default-max-width));
   max-width: min(var(--content-width-fallback), var(--default-max-width));
   width: 100%;
