@@ -1,7 +1,7 @@
 <!-- /sections/collection-split.liquid -->
 <style>
   h1 {
-    font-family: 'EngraversGothicBT-Heavy' !important;
+    font-family: 'Gambarino-Regular' !important;
     color: #8b1a3a;
   }
 
@@ -16,15 +16,12 @@
   }
 
   .sub_text {
-    font-family: 'Inter Tight';
     padding-bottom: 3rem;
-    font-size: 14px;
     letter-spacing: 1px;
   }
 
   .text-org h1 {
     text-align: center;
-    font-size: 6rem;
     text-transform: none;
     margin-bottom: 0px !important;
   }
@@ -47,7 +44,6 @@
     color: #8b1a3a;
     font-size: 1.4rem;
     padding-bottom: 36px;
-    font-weight: bold;
     text-align: center;
   }
 
@@ -111,8 +107,6 @@
     }
     .hero__title {
       color: #e6dbc4;
-      font-family: 'Engravers Gothic';
-      font-size: 32px;
       font-style: normal;
       font-weight: 700;
       line-height: 100%; /* 22.4px */
@@ -156,7 +150,7 @@
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
 >
   <div class="slider {{ section.settings.width }} section-padding text-org">
-    <h1>{{ section.settings.header_text }}</h1>
+    <h1 class="heading heading-lg">{{ section.settings.header_text }}</h1>
     <p class="text-orgp">{{ section.settings.header_h3text }}</p>
 
     <div class="collection-split__grid">
@@ -191,7 +185,7 @@
 
                       {%- if block.settings.heading != blank -%}
                         <h2
-                          class="hero__title"
+                          class="hero__title heading-base font-body"
                           data-aos="hero"
                           data-aos-anchor="{{ animation_anchor }}"
                           data-aos-order="2"
@@ -203,7 +197,7 @@
                         <p
                           data-aos="hero"
                           data-aos-anchor="{{ animation_anchor }}"
-                          class="sub_text"
+                          class="sub_text text-base font-base"
                         >
                           {{ block.settings.sub_text }}
                         </p>

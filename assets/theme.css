@@ -45,7 +45,7 @@
 /* Apply fonts to specific elements */
 .hero__title p {
   font-family: "Gambarino-Regular" !important;
-  font-size: 7.8rem !important;
+  font-size: clamp(40px, 9vw, 125px) !important;
   letter-spacing: -3px !important;
 }
 
@@ -11290,7 +11290,7 @@ a:focus,
 .text-btn-arrow-right:after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 43%;
   right: 1px;
   transform: translateY(-50%) rotate(45deg);
   width: 6px;
@@ -12651,7 +12651,7 @@ svg.placeholder-svg {
 }
 /* Content */
 .hero__content {
-  --default-max-width: calc(66% - var(--outer));
+  --default-max-width: calc(100% - var(--outer));
   --content-width-fallback: var(--CONTENT-WIDTH, var(--default-max-width));
   max-width: min(var(--content-width-fallback), var(--default-max-width));
   width: 100%;
@@ -14673,7 +14673,6 @@ body .shopify-email-marketing-confirmation__container {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  border-bottom: 1px solid #e6dbc4;
 }
 .header__desktop__bar__l,
 .header__desktop__bar__c,
@@ -19240,19 +19239,12 @@ body.focus-enabled .product-grid-item:focus-within {
 }
 /* ================ Collection ================ */
 .product__grid__title {
-  font-family: "EngraversGothicBT-Heavy";
-  font-style: var(--FONT-STYLE-BODY);
-  font-weight: var(--FONT-WEIGHT-BODY);
-  font-weight: var(--FONT-WEIGHT-BODY-BOLD);
-  letter-spacing: var(--FONT-BODY-LETTER-SPACING);
-  text-transform: var(--FONT-BODY-TRANSFORM);
-  /* font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY)); */
-  font-size: 1.2rem;
-  line-height: var(--leading-normal);
-  margin: 8px 0 2px 0;
-  word-break: break-word;
-  text-transform: none;
-  letter-spacing: 0;
+  color: #102345;
+  font-family: "Engravers Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 32px */
 }
 .product__grid__price {
   overflow: hidden;

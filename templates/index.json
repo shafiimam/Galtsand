@@ -917,6 +917,7 @@
         "collection": "the-galtsand-holiday-shop",
         "product_limit": 12,
         "title": "Highlight top-selling products or new arrivals",
+        "content": "",
         "align_text": "title-center",
         "progress_bar": "mobile",
         "grid_large": 4,
@@ -956,36 +957,28 @@
         "text_3": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio."
       }
     },
-    "section_list_collections_products_LNUUEA": {
-      "type": "section-list-collections-products",
+    "section_article_column_tHbWhz": {
+      "type": "section-article-column",
       "blocks": {
-        "collection_JmNKzJ": {
-          "type": "collection",
+        "article_row_fQDY3m": {
+          "type": "article-row",
           "settings": {
-            "collection": "equestrian",
-            "title": "Handcrafted by our expert designers.",
-            "link_text": "",
-            "enable_item": true,
-            "text": "EXPLORE COLLECTION",
-            "background_color": "#e6dbc4",
-            "text_color": "text--neutral",
-            "link_size": 3
+            "article_1": "news/tops-on-top-the-galtsand-top-edit",
+            "article_2": "news/stay-active",
+            "article_3": "blogs/thanksgiving",
+            "text": "Handcrafted by our expert designers.",
+            "button_link": "",
+            "button_label": "Explore Now",
+            "block-position": "last"
           }
         }
       },
       "block_order": [
-        "collection_JmNKzJ"
+        "article_row_fQDY3m"
       ],
       "settings": {
         "title": "Weekly Lookbook Updates and Campaigns",
-        "bg": "palette--light bg--neutral",
-        "grid": 4,
-        "rows": 1,
-        "enable_scroll_mobile": true,
-        "grid_small": 1.2,
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "content": "Handcrafted by our expert designers."
       }
     },
     "customer_review_section_xAPmhf": {
@@ -1203,7 +1196,7 @@
     "section_collection_slider_wryWc6",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
-    "section_list_collections_products_LNUUEA",
+    "section_article_column_tHbWhz",
     "customer_review_section_xAPmhf",
     "social_media_rWB4KY",
     "our_boutiques_mhwpF4"
