@@ -11290,7 +11290,7 @@ a:focus,
 .text-btn-arrow-right:after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 43%;
   right: 1px;
   transform: translateY(-50%) rotate(45deg);
   width: 6px;
@@ -19239,19 +19239,12 @@ body.focus-enabled .product-grid-item:focus-within {
 }
 /* ================ Collection ================ */
 .product__grid__title {
-  font-family: "EngraversGothicBT-Heavy";
-  font-style: var(--FONT-STYLE-BODY);
-  font-weight: var(--FONT-WEIGHT-BODY);
-  font-weight: var(--FONT-WEIGHT-BODY-BOLD);
-  letter-spacing: var(--FONT-BODY-LETTER-SPACING);
-  text-transform: var(--FONT-BODY-TRANSFORM);
-  /* font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY)); */
-  font-size: 1.2rem;
-  line-height: var(--leading-normal);
-  margin: 8px 0 2px 0;
-  word-break: break-word;
-  text-transform: none;
-  letter-spacing: 0;
+  color: #102345;
+  font-family: "Engravers Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 32px */
 }
 .product__grid__price {
   overflow: hidden;

@@ -1,0 +1,255 @@
+{% assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" %}
+<div class="wrapper--full">
+  <div class="section-blog-column-container">
+    <div class="section-header mb-r2">
+      {% if section.settings.title %}
+        <h1 class="heading heading-cursive heading-lg text-center" style="color:#E6DBC4">
+          {{ section.settings.title }}
+        </h1>
+      {% endif %}
+      {% if section.settings.content %}
+        <p class="font-body text-center small_text">
+          {{ section.settings.content }}
+        </p>
+      {% endif %}
+    </div>
+    <div class="section-blog-cards-row">
+      {% for block in section.blocks %}
+        {% assign blog_cta_position = block.settings.block_position %}
+        {% capture block_card_to_render %}
+          <div class="block-card">
+            <div class="blog-cta-content">
+              <div class="blog-cta-content-header">
+                <p
+                  class="font-heading heading-base mb-r6 card-title"
+                  style="color:#006A50"
+                  data-aos="fade-left"
+                  data-aos-anchor="{{ animation_anchor }}"
+                  data-aos-order="4"
+                >
+                  {{ block.settings.text }}
+                </p>
+                <p class="font-secondary" style="color:#006A50;">
+                  {{ block.settings.content }}
+                </p>
+              </div>
+              <a
+                href="{{ block.settings.button_url }}"
+                class="btn btn--primary btn--large aos-init"
+                data-aos="fade-up"
+                data-aos-anchor="{{ animation_anchor }}"
+                data-aos-order="5"
+              >
+                {{ block.settings.button_label }}
+              </a>
+            </div>
+          </div>
+        {% endcapture %}
+        <div class="section-blog-cards-row__inner" {{ block.shopify_attributes }}>
+          {% if blog_cta_position == 'first' %}
+            {{ block_card_to_render }}
+          {% endif %}
+          {% for index in (1..3) %}
+            {% assign article_id = 'article_' | append: index %}
+            {% assign article = block.settings[article_id] %}
+            <div
+              class="article-card aos-init"
+              data-aos="fade-up"
+              data-aos-anchor="{{ animation_anchor }}"
+              data-aos-order="{{ index }}"
+              data-aos-offset="5000"
+              onclick="location.href='{{ article.url }}'"
+            >
+              <div class="article-image-container">
+                <picture>
+                  <source srcset="{{ article.image | img_url: '300x' }}" media="(max-width: 600px)">
+                  <img
+                    src="{{ article.image | img_url: '600x' }}"
+                    alt="Employee Image"
+                    width="={{ article.image.width }}"
+                    height="{{ article.image.height }}"
+                  >
+                </picture>
+              </div>
+              <div class="article-content">
+                <p class="font-body text-body ellipsis article-title" style="color:#E6DBC4">{{ article.title }}</p>
+              </div>
+            </div>
+          {% endfor %}
+          {% if blog_cta_position == 'last' %}
+            {{ block_card_to_render }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .section-article-column {
+    background: #006a50;
+    padding-block: 60px;
+  }
+  .section-blog-cards-row__inner {
+    padding-block: 60px;
+    border-bottom: 1px solid #e6dbc4;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(calc(25% - 20px), 1fr));
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      grid-template-columns: repeat(2, minmax(calc(50% - 20px), 1fr));
+      row-gap: 30px;
+      column-gap: 20px;
+    }
+  }
+  .article-card,
+  .block-card {
+    margin-inline-end: 20px;
+    cursor: pointer;
+    @media screen and (max-width: 767px) {
+      margin-inline-end: 0px;
+    }
+  }
+  .article-card {
+    aspect-ratio: 1;
+  }
+  .article-image-container {
+    height: -webkit-fill-available;
+    overflow: hidden;
+  }
+  .article-title{
+    font-size: 18px;
+  }
+  .article-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 2s ease-in-out;
+    aspect-ratio: 1/1;
+  }
+  .article-card:hover img {
+    transform: scale(1.1);
+
+  }
+  .block-card {
+    background: #e6dbc4;
+    padding: 20px;
+  }
+  .blog-cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    height: 100%;
+    gap: 100px;
+  }
+  .blog-cta-content-header .card-title {
+    font-size: 2vw !important;
+  }
+  .blog-cta-content > p {
+    color: #006a50;
+  }
+  .blog-cta-content > .btn {
+    background: #006a50 !important;
+    color: #e6dbc4;
+    border: 2px solid #006a50 !important;
+    transition: all 0.5s ease-in;
+  }
+  .blog-cta-content > .btn:hover {
+    background: #e6dbc4 !important;
+    color: #006a50;
+    border: 1px solid #006a50 !important;
+  }
+</style>
+{% schema %}
+{
+  "name": "Article column",
+  "tag": "section",
+  "class": "section-article-column",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Weekly Lookbook Updates and Campaigns"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content",
+      "default": "Handcrafted by our expert designers."
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Article Row",
+      "type": "article-row",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article_1",
+          "label": "Article 1"
+        },
+        {
+          "type": "article",
+          "id": "article_2",
+          "label": "Article 2"
+        },
+        {
+          "type": "article",
+          "id": "article_3",
+          "label": "Article 3"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Handcrafted by our expert designers."
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content",
+          "default": "Default Content"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Url"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Explore Now"
+        },
+        {
+          "type": "select",
+          "id": "block_position",
+          "label": "CTA Block Position",
+          "options": [
+            {
+              "value": "first",
+              "label": "First"
+            },
+            {
+              "value": "last",
+              "label": "Last"
+            }
+          ],
+          "default": "last"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Article column"
+    }
+  ]
+}
+{% endschema %}

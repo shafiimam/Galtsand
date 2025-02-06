@@ -16,9 +16,7 @@
   }
 
   .sub_text {
-    font-family: 'Inter Tight';
     padding-bottom: 3rem;
-    font-size: 14px;
     letter-spacing: 1px;
   }
 
@@ -109,8 +107,6 @@
     }
     .hero__title {
       color: #e6dbc4;
-      font-family: 'Engravers Gothic';
-      font-size: 32px;
       font-style: normal;
       font-weight: 700;
       line-height: 100%; /* 22.4px */
@@ -189,7 +185,7 @@
 
                       {%- if block.settings.heading != blank -%}
                         <h2
-                          class="hero__title"
+                          class="hero__title heading-base font-body"
                           data-aos="hero"
                           data-aos-anchor="{{ animation_anchor }}"
                           data-aos-order="2"
@@ -201,7 +197,7 @@
                         <p
                           data-aos="hero"
                           data-aos-anchor="{{ animation_anchor }}"
-                          class="sub_text"
+                          class="sub_text text-base font-base"
                         >
                           {{ block.settings.sub_text }}
                         </p>
