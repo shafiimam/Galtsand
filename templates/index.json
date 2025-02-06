@@ -967,9 +967,10 @@
             "article_2": "news/stay-active",
             "article_3": "blogs/thanksgiving",
             "text": "Handcrafted by our expert designers.",
+            "content": "Default Content",
             "button_link": "",
             "button_label": "Explore Now",
-            "block-position": "last"
+            "block_position": "last"
           }
         }
       },
@@ -984,6 +985,14 @@
     "customer_review_section_xAPmhf": {
       "type": "customer_review_section",
       "blocks": {
+        "review_AAM6ci": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
         "review_VWKite": {
           "type": "review",
           "settings": {
@@ -1022,6 +1031,7 @@
         }
       },
       "block_order": [
+        "review_AAM6ci",
         "review_VWKite",
         "review_XNNyXm",
         "review_XKAr9a",
