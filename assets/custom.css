@@ -9,8 +9,8 @@
   --heading-size-cursive: clamp(72px, 4vw, 132px);
 }
 .heading {
-  font-family: var(--font-family-heading);
-  margin: 0;
+  font-family: var(--font-family-heading) !important;
+  margin-bottom: 14px;
 }
 .heading-base {
   font-size: var(--heading-size-md);
@@ -44,9 +44,14 @@
   letter-spacing: 1px;
   text-transform: none;
 }
-.font-body {
+.subheading{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.font-body, .font-subheading {
   font-family: var(--font-family-body);
 }
+
 .text-body {
   font-size: 18px;
 }

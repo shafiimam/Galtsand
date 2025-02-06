@@ -1,7 +1,7 @@
 <div class="customer-reviews-section">
-  <h2 class="reviews-title">{{ section.settings.main_title }}</h2>
-  <p class="reviews-subtitle">{{ section.settings.subtitle }}</p>
-  
+  <h2 class="reviews-title heading heading-lg">{{ section.settings.main_title }}</h2>
+  <p class="reviews-subtitle subheading font-subheading mb-r11">{{ section.settings.subtitle }}</p>
+
   <div class="reviews-slider">
     <button id="leftArrow" class="slider-arrow left-arrow" onclick="prevSlide()">
       <img src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_3.png?v=1737052415" alt="Left Arrow">
@@ -9,54 +9,45 @@
     <div class="reviews-container">
       <div class="reviews-wrapper">
         {% for block in section.blocks %}
-        <div class="review-card">
-          <p class="review-text">{{ block.settings.review_text }}</p>
-          <div class="reviewer-info">
-            <img src="{{ block.settings.reviewer_image | img_url }}" alt="Reviewer Image" class="reviewer-image">
-            <div>
-              <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
-              <p class="reviewer-role">{{ block.settings.reviewer_role }}</p>
+          <div class="review-card">
+            <p class="review-text">{{ block.settings.review_text }}</p>
+            <div class="reviewer-info">
+              <img src="{{ block.settings.reviewer_image | img_url }}" alt="Reviewer Image" class="reviewer-image">
+              <div>
+                <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
+                <p class="reviewer-role">{{ block.settings.reviewer_role }}</p>
+              </div>
             </div>
           </div>
-        </div>
         {% endfor %}
       </div>
     </div>
     <button id="rightArrow" class="slider-arrow right-arrow" onclick="nextSlide()">
-      <img width="50" height="50" src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_4.png?v=1737052383" alt="Right Arrow">
-    </button> 
+      <img
+        width="50"
+        height="50"
+        src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_4.png?v=1737052383"
+        alt="Right Arrow"
+      >
+    </button>
   </div>
 </div>
 
 <style>
   .customer-reviews-section {
-    background-color: #E6DBC4;
+    background-color: #e6dbc4;
     padding: 73px 18px 18px 18px;
     text-align: center;
   }
 
   .reviews-title {
-    font-family: "Gambarino-Regular" !important;
-    font-size: 36px;
     font-weight: 100;
     color: #12224f;
-    text-transform: none;
-    font-size: 100px;
-    letter-spacing: 2px;
-    /* width: 68%; */
-    text-align: left;
-    margin-bottom: 14px;
-    line-height: 0.8;
-        padding-left: 4rem;
+
   }
 
   .reviews-subtitle {
-    font-family: "EngraversGothicBT-Heavy" !important;
-    font-size: 20px;
     color: #12224f;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 4rem;
   }
 
   .reviews-slider {
@@ -71,8 +62,6 @@
   .reviews-container {
     overflow: hidden;
     width: 100%;
-    
-    
   }
 
   .reviews-wrapper {
@@ -85,13 +74,13 @@
   .review-card {
     min-width: 49%;
     padding: 31px;
-    background-color: #E6DBC4;
+    background-color: #e6dbc4;
     border: 3px solid #660000;
     text-align: left;
   }
 
   .review-text {
-    font-family: "Inter Tight" !important;
+    font-family: 'Inter Tight' !important;
     font-size: 25px;
     font-weight: bold;
     color: #660000;
@@ -111,20 +100,20 @@
   }
 
   .reviewer-name {
-    font-family: "Gambarino-Regular";
+    font-family: 'Gambarino-Regular';
     font-size: 27px;
     font-weight: bold;
     color: #660000;
   }
 
   .reviewer-role {
-    font-family: "Inter Tight";
+    font-family: 'Inter Tight';
     font-size: 14px;
     color: #660000;
   }
 
   .slider-arrow {
-    background: #E6DBC4;
+    background: #e6dbc4;
     border: 3px solid #660000;
     border-radius: 50%;
     z-index: 1;
@@ -132,44 +121,42 @@
     height: 65px;
     width: 65px;
   }
-  .slider-arrow img{
+  .slider-arrow img {
     width: 56px;
     height: 56px;
     padding: 10px;
   }
-  .left-arrow{
+  .left-arrow {
     position: relative;
     left: 30px;
   }
-  .right-arrow{
+  .right-arrow {
     position: relative;
     right: 30px;
-    
   }
   .slider-arrow.disabled {
     opacity: 1;
     pointer-events: none;
   }
   @media (max-width: 768px) {
-    .review-text{
+    .review-text {
       font-size: 18px;
     }
-    .reviews-title{
+    .reviews-title {
       font-size: 42px;
     }
-    .review-card{
-      min-width:95%;
+    .review-card {
+      min-width: 95%;
     }
-    .slider-arrow{
+    .slider-arrow {
       width: 65px;
       height: auto;
       display: none;
     }
-    .slide-arrow img{
+    .slide-arrow img {
       width: 56px !important;
       height: 48px !important;
     }
-
   }
 </style>
 
@@ -177,8 +164,8 @@
   let currentIndex = 0;
   const reviewWrapper = document.querySelector('.reviews-wrapper');
   const reviewCards = document.querySelectorAll('.review-card');
-  const leftArrow = document.getElementById("leftArrow");
-  const rightArrow = document.getElementById("rightArrow");
+  const leftArrow = document.getElementById('leftArrow');
+  const rightArrow = document.getElementById('rightArrow');
   let startX = 0;
   let isDragging = false;
 
@@ -191,13 +178,13 @@
     const totalSlides = Math.ceil(reviewCards.length / slidesPerView);
     reviewWrapper.style.transition = 'transform 0.5s ease-in-out';
     const slideWidth = slidesPerView === 1 ? 100 : 50;
-reviewWrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+    reviewWrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
     if (window.innerWidth < 768) {
-      leftArrow.style.display = "none";
-      rightArrow.style.display = "none";
+      leftArrow.style.display = 'none';
+      rightArrow.style.display = 'none';
     } else {
-      leftArrow.style.display = "block";
-      rightArrow.style.display = "block";
+      leftArrow.style.display = 'block';
+      rightArrow.style.display = 'block';
     }
   }
 
@@ -238,16 +225,13 @@ reviewWrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
     isDragging = false;
   }
 
-  reviewWrapper.addEventListener("touchstart", handleTouchStart);
-  reviewWrapper.addEventListener("touchmove", handleTouchMove);
-  reviewWrapper.addEventListener("touchend", handleTouchEnd);
+  reviewWrapper.addEventListener('touchstart', handleTouchStart);
+  reviewWrapper.addEventListener('touchmove', handleTouchMove);
+  reviewWrapper.addEventListener('touchend', handleTouchEnd);
 
-  window.addEventListener("resize", updateSlider);
+  window.addEventListener('resize', updateSlider);
   updateSlider();
 </script>
-
-
-
 
 {% schema %}
 {
