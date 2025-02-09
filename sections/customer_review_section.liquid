@@ -9,7 +9,7 @@
     <div class="reviews-container">
       <div class="reviews-wrapper">
         {% for block in section.blocks %}
-          <div class="review-card">
+          <div class="review-card" {{ block.shopify_attributes }}>
             <p class="review-text">{{ block.settings.review_text }}</p>
             <div class="reviewer-info">
               <img src="{{ block.settings.reviewer_image | img_url }}" alt="Reviewer Image" class="reviewer-image">
