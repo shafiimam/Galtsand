@@ -4,11 +4,11 @@
   data-section-id="{{ section.id }}"
   data-section-type="page-faq"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
-  <div class="{{ section.settings.width }} section-padding">
-    <div class="text__standard" data-accordion-group>
+  <div class="{{ section.settings.text_color }}  {{ section.settings.width }} section-padding">
+    <div class="" data-accordion-group>
       {% if section.settings.title != blank %}
         {% assign title_size_class = section.settings.title_size | prepend: 'accent-size-' %}
-        <p class="standard__kicker {{ section.settings.title_align }} {{ title_size_class }}">
+        <p class=" { section.settings.title_align }} {{ title_size_class }}">
           {{ section.settings.title }}
         </p>
       {% endif %}

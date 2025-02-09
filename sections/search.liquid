@@ -22,7 +22,7 @@
   endif
 -%}
 
-<section class="page-search {{ section.settings.width }} section-padding"
+<section class="page-search {{ section.settings.width }} section-padding palette--bright"
   data-section-type="search-page"
   data-section-id="{{ section.id }}"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
@@ -34,7 +34,7 @@
         <p>
           {%- if search.results_count > 0 -%}
             {{ 'general.search.results_for' | t }} <span class="strong">{{ search.terms | escape }}</span>
-          {%- else -%}
+          {%- else -%}ll
             {{ 'general.search.no_results_for' | t }} <span class="strong">{{ search.terms | escape }}</span>
           {%- endif -%}
         </p>

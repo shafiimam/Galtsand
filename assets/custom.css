@@ -44,14 +44,17 @@
   letter-spacing: 1px;
   text-transform: none;
 }
-.subheading{
+.subheading {
   font-size: 20px;
   letter-spacing: 1px;
 }
-.font-body, .font-subheading {
+.font-body,
+.font-subheading {
   font-family: var(--font-family-body);
 }
-
+.footer__column p {
+  color: var(--text-dark);
+}
 .text-body {
   font-size: 18px;
 }
@@ -65,10 +68,10 @@
   line-height: 140%; /* 22.4px */
 }
 .ellipsis {
-  white-space: nowrap;      
-  overflow: hidden;         
-  text-overflow: ellipsis;   
-  width: 100%;            
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 h4.blog__heading.text-left {
   color: #660f28;
