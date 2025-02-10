@@ -22,7 +22,7 @@
   endif
 -%}
 
-<section class="page-search {{ section.settings.width }} section-padding palette--bright"
+<section class="page-search {{ section.settings.width }} section-padding {{ section.settings.bg }}"
   data-section-type="search-page"
   data-section-id="{{ section.id }}"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
@@ -259,6 +259,20 @@
 {
   "name": "Search",
   "settings": [
+    {
+      "type": "select",
+      "id": "bg",
+      "label": "Background color",
+      "default": "palette--light bg--neutral",
+      "options": [
+        { "value": "palette--light bg--neutral", "label": "Default"},
+        { "value": "palette--light bg--accent", "label": "Light"},
+        { "value": "palette--dark bg--invert", "label": "Dark"},
+        { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
+        { "value": "palette--bright bg--bright", "label": "Bright"},
+        { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
+      ]
+    },
     {
       "type": "header",
       "content": "Search"

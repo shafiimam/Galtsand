@@ -133,7 +133,7 @@
       ],
       "settings": {
         "header_style": "logo_center",
-        "logo": "shopify://shop_images/Frame_1.png",
+        "logo": "shopify://shop_images/logo-yellow.png",
         "logo_v2": "shopify://shop_images/galtsand-blue-logo.png",
         "logo_max_limit": 135,
         "logo_padding": 26,
@@ -154,7 +154,7 @@
         "transparent_article": true,
         "transparent_page": true,
         "transparent_text_color": "#e6dbc4",
-        "transparent_logo": "shopify://shop_images/Frame_1.png",
+        "transparent_logo": "shopify://shop_images/logo-yellow.png",
         "show_collection_images": false,
         "collection_wh_ratio": 2.5
       }

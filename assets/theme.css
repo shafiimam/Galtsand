@@ -18535,7 +18535,6 @@ Collection grid item
   );
   position: relative;
   background-color: var(--bg);
-  color: var(--text);
   text-align: left;
   margin-top: auto;
 }
