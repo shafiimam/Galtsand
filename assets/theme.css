@@ -13966,7 +13966,7 @@ body.default--bright {
 .palette--light,
 .palette--bright,
 .main-content {
-  color: var(--text);
+  color: var(--text--dark);
   background-color: var(--bg);
 }
 body.default--accent {
@@ -18535,7 +18535,6 @@ Collection grid item
   );
   position: relative;
   background-color: var(--bg);
-  color: var(--text);
   text-align: left;
   margin-top: auto;
 }
@@ -18621,9 +18620,6 @@ Collection grid item
 p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   font-size: 1.3em !important;
   color: #cec3ac !important;
-}
-.rte p {
-  color: #cec3ac;
 }
 /* .footer__title:first-child {
   font-size: 1em;

@@ -14,7 +14,7 @@
     data-section-type="page"
     style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
     <div class="{{ section.settings.width }}">
-      <div class="text__standard {{ section.settings.align_text }}">
+      <div class=" {{ section.settings.align_text }}">
         {% if section.settings.kicker != blank %}
           {% assign accent_size_class = section.settings.kicker_size | prepend: 'accent-size-' %}
           <p class="standard__kicker {{ kicker_line_class }} {{ accent_size_class }}"

@@ -1,6 +1,6 @@
 <div class="social-media-feed">
-  <h2 class="feed-title">{{ section.settings.main_title }}</h2>
-  <p class="feed-subtitle">{{ section.settings.subtitle }}</p>
+  <h2 class="feed-title heading heading-lg mb-r5">{{ section.settings.main_title }}</h2>
+  <p class="feed-subtitle subheading font-subheading mb-r11">{{ section.settings.subtitle }}</p>
 
   <div class="feed-grid">
     {% for block in section.blocks %}
@@ -26,20 +26,11 @@
   }
 
   .feed-title {
- font-family: "exmouth";
-    text-transform: none;
-    font-size: 138px;
-    font-weight: 100;
     color: #660000;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
   }
 
   .feed-subtitle {
-    font-family: "EngraversGothicBT-Heavy";
-    font-size: 23px;
     color: #660000;
-    margin-bottom: 30px;
   }
 
   .feed-grid {
@@ -93,14 +84,6 @@
       padding-left: 0px;
       padding-right: 0px;
     }
-    .feed-title {
-      font-size: 77px;
-      text-align: left;
-      line-heightt: 1;
-    }
-    .feed-subtitle{
-      font-size: 19px;
-    }
   }
 
   @media (max-width: 480px) {
@@ -108,9 +91,7 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  .feed-title {
-    /* font-size: 57px; */
-  }
+
 </style>
 
 {% schema %}

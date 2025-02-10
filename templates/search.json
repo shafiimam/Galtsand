@@ -11,7 +11,16 @@
   "sections": {
     "main": {
       "type": "search",
-      "settings": {}
+      "settings": {
+        "bg": "palette--bright bg--bright",
+        "show_filters": true,
+        "collapse_filters": false,
+        "show_products_count": true,
+        "pagination_count": 24,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [

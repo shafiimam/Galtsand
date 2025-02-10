@@ -27,7 +27,6 @@
     text-align: left;
     text-transform: none;
     font-size: 4rem;
-    padding-left: 281px;
     color: #660F28;
     font-family: "EngraversGothicBT-Heavy" !important;
     margin: 0px;
@@ -36,7 +35,6 @@
        text-align: left;
     text-transform: none;
     font-size: 1.3rem;
-    padding-left: 281px;
     padding-right: 338px;
     color: #660F28;
     font-family: "EngraversGothicBT-Heavy" !important;
@@ -120,7 +118,7 @@
   data-section-type="collection"
   data-sort="{{ section.settings.collection_sorting }}"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
-<div>
+<div class="wrapper section-padding">
   <h1 class="title_for_collection">{{ section.settings.title_collection }}</h1>
   <p class="p_for_collection">{{ section.settings.p_collection }}</p>
 </div>
