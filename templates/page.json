@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "kicker": "",
         "kicker_size": 5,
@@ -19,15 +20,49 @@
         "show_content": true,
         "content_size": 5,
         "align_text": "text-center",
-        "text_color": "text--neutral",
+        "text_color": "text--black",
         "bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 50,
         "padding_bottom": 12
       }
+    },
+    "section_richtext_z49gFw": {
+      "type": "section-richtext",
+      "blocks": {
+        "heading_4HAKnN": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "text_size": 8
+          }
+        },
+        "text_FHgeB6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.content }}</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "heading_4HAKnN",
+        "text_FHgeB6"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "content_width": 800,
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_richtext_z49gFw"
   ]
 }

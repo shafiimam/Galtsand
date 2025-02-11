@@ -184,7 +184,7 @@
         "image_width": "wide",
         "image_spacing": 4,
         "align": "left",
-        "bg": "palette--light bg--accent",
+        "bg": "palette--bright bg--bright",
         "mobile_layout": "slideshow",
         "enable_video_looping": true,
         "zoom_enable": true,
@@ -333,6 +333,7 @@
     "product_features_NXUAkA": {
       "type": "Product_features",
       "settings": {
+        "bg": "palette--light bg--neutral",
         "icon_1": "shopify://shop_images/FlowerLotus.png",
         "title_1": "Designed for Yoga",
         "description_11": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam.",

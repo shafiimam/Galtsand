@@ -12,6 +12,14 @@
     "hero": {
       "type": "section-hero",
       "blocks": {
+        "image_wKWh6B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/galtsand.png",
+            "image_max_limit": 60,
+            "image_link": ""
+          }
+        },
         "banner-kicker": {
           "type": "kicker",
           "settings": {
@@ -40,8 +48,8 @@
             "link_text_1": "Discover the story",
             "link_1": "shopify://collections/all",
             "button_size_1": "btn--long",
-            "button_style_1": "btn",
-            "button_color_1": "btn--white",
+            "button_style_1": "btn--soft",
+            "button_color_1": "btn--neutral",
             "link_text_2": "shop  now",
             "link_2": "shopify://pages/contact",
             "button_size_2": "btn--long",
@@ -56,15 +64,13 @@
         }
       },
       "block_order": [
+        "image_wKWh6B",
         "banner-kicker",
         "banner-heading",
         "banner-text",
         "banner-button"
       ],
-      "custom_css": [
-        ".section--image {background-color: #660f2b;}",
-        ".wrapper--none {margin: 9px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-WebVersion-Banner_v3.png",
         "mobile_image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
@@ -75,7 +81,7 @@
         "preload_image": true,
         "content_width": 2000,
         "text_align": "align--middle-center",
-        "text_color": "text--primary",
+        "text_color": "text--neutral",
         "color_bg": "hero__content--transparent",
         "width": "wrapper--none",
         "padding_top": 0,
@@ -159,7 +165,7 @@
       ],
       "settings": {
         "title": "",
-        "bg": "palette--light bg--accent",
+        "bg": "palette--dark bg--invert",
         "enable_marquee": true,
         "marquee_speed": 30,
         "width": "wrapper--none",
