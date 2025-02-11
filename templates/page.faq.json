@@ -17,9 +17,9 @@
         "show_title": false,
         "title_size": 8,
         "show_content": true,
-        "content_size": 5,
-        "align_text": "text-left",
-        "text_color": "text--neutral",
+        "content_size": 7,
+        "align_text": "text-center",
+        "text_color": "text--bright--secondary",
         "bg": "palette--light bg--neutral",
         "width": "wrapper--narrow",
         "padding_top": 50,
@@ -70,8 +70,8 @@
         "title_size": 6,
         "heading_size": 5,
         "text_size": 4,
-        "text_color": "text--neutral",
-        "bg": "palette--light bg--neutral",
+        "text_color": "text--bright--secondary",
+        "bg": "palette--bright bg--bright--accent",
         "width": "wrapper--narrow",
         "padding_top": 64,
         "padding_bottom": 64
@@ -129,7 +129,7 @@
         "title_size": 6,
         "heading_size": 5,
         "text_size": 4,
-        "text_color": "text--neutral",
+        "text_color": "text--bright--secondary",
         "bg": "palette--light bg--neutral",
         "width": "wrapper--narrow",
         "padding_top": 64,
@@ -245,7 +245,7 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-basket-return",
-            "icon_color": "#aaaaaa",
+            "icon_color": "#e6dbc4",
             "title": "Free returns",
             "text": "<p>Returns within 30 days receive a full refund.</p>",
             "link_text": "",
@@ -256,7 +256,7 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-shipment-world",
-            "icon_color": "#aaaaaa",
+            "icon_color": "#e6dbc4",
             "title": "Worldwide shipping",
             "text": "<p>Ship anywhere, rates available at checkout.</p>",
             "link_text": "",
@@ -267,7 +267,7 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-phone",
-            "icon_color": "#aaaaaa",
+            "icon_color": "#e6dbc4",
             "title": "24/7 support",
             "text": "<p>Call us anytime at 1(800) 555-1234.</p>",
             "link_text": "",
@@ -279,6 +279,9 @@
         "icons-0",
         "icons-1",
         "icons-2"
+      ],
+      "custom_css": [
+        "p {color: #e6dbc4;}"
       ],
       "settings": {
         "title": "",
