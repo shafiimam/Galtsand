@@ -158,3 +158,22 @@ h3.article__item-title {
 a.standard__cta.hero__btn.btn.btn--primary.btn--long {
   border: 2px solid #e6dbc4;
 }
+
+.section--image .hero__kicker p,
+.section--image .hero__title p,
+.hero__cta__wrapper .standard__cta.btn--soft,
+.section--image .hero__description p {
+  color: #e6dbc4;
+}
+
+a.standard__cta.hero__btn.btn.btn--primary.btn--long:hover {
+  background: transparent !important;
+  color: #e6dbc4 !important;
+}
+a.standard__cta.hero__btn.btn--soft.btn--neutral:hover {
+  background: #e6dbc4 !important;
+  color: #000 !important;
+}
+p.grid__swatch__placeholder {
+  color: #102345;
+}
