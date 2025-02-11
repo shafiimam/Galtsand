@@ -20368,9 +20368,6 @@ input[type="number"].filter__price__input {
 /* ============================================================================
   #Collection Split
 ============================================================================== */
-.collection-split .hero__content__wrapper {
-  padding: calc(var(--outer) * 2);
-}
 .collection-split .image__hero__frame {
   height: 100%;
 }
