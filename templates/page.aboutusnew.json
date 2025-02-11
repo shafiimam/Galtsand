@@ -93,7 +93,7 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--bright--secondary",
+        "text_color": "text--black",
         "bg": "palette--bright bg--bright",
         "content_width": 1000,
         "width": "wrapper--narrow",
@@ -146,7 +146,7 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--bright--secondary",
+        "text_color": "text--black",
         "bg": "palette--bright bg--bright",
         "content_width": 1000,
         "width": "wrapper--narrow",
@@ -199,7 +199,7 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--bright--secondary",
+        "text_color": "text--black",
         "bg": "palette--bright bg--bright",
         "content_width": 1000,
         "width": "wrapper",
@@ -252,7 +252,7 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--bright--secondary",
+        "text_color": "text--black",
         "bg": "palette--bright bg--bright",
         "content_width": 1000,
         "width": "wrapper",
@@ -276,7 +276,7 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--bright--secondary",
+        "text_color": "text--black",
         "bg": "palette--bright bg--bright",
         "content_width": 1000,
         "width": "wrapper",
