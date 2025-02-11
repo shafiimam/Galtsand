@@ -10893,7 +10893,7 @@ table[border] td:last-child {
 .shopify-challenge__button {
   --btn-bg: var(--COLOR-PRIMARY);
   --btn-text: var(--COLOR-PRIMARY-OPPOSITE);
-  --btn-bg-hover: #ffe9b7;
+  --btn-bg-hover: var(--COLOR-PRIMARY-HOVER);
   --btn-text-hover: var(--COLOR-PRIMARY-OPPOSITE);
 }
 .btn--secondary.btn,
@@ -13907,8 +13907,8 @@ html:not(.no-js) body:not(.focus-enabled) *:focus {
   --rgb-content-contrast: var(--rgb-canvas);
   --rgb-button-main: var(--rgb-content);
   --rgb-button-contrast: var(--rgb-content-contrast);
-  --color-error: #d02e2e;
-  --color-success: #56ad6a;
+  --color-error: #D02E2E;
+  --color-success: #56AD6A;
 }
 .palette--dark,
 body.default--dark {
@@ -14629,7 +14629,6 @@ body .shopify-email-marketing-confirmation__container {
 .header__mobile {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  border-bottom: 1px solid;
 }
 .theme__header__toolbar.header__mobile {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -18619,7 +18618,7 @@ Collection grid item
 }
 p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   font-size: 1.3em !important;
-  color: #cec3ac !important;
+  color: var(--text-dark);
 }
 /* .footer__title:first-child {
   font-size: 1em;
@@ -18881,7 +18880,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   max-width: 18px;
 }
 .footer__icon--social path {
-  fill: var(--text);
+  fill:var(--text-dark);
 }
 .footer__icon--social:hover path {
   fill: var(--text-dark);
