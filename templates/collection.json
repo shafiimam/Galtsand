@@ -78,7 +78,7 @@
         "grid_mobile": "2",
         "enable_layout_toggle": true,
         "color_bg": "palette--light bg--neutral",
-        "collection_sorting": false,
+        "collection_sorting": true,
         "hide_sidebar": false,
         "collapse_filters": false,
         "show_products_count": true,
