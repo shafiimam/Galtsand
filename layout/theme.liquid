@@ -119,6 +119,7 @@
         smoothscroll: '{{ "smoothscroll.js" | asset_url }}',
         swatches: '{{ "swatches.json" | asset_url }}',
         noImage: '{{ "nil" | img_url: "master" }}',
+        base: '{{ "khaki.png" | asset_url | split: "khaki.png" | first }}'
       },
       strings: {
         swatchesKey: {{ 'general.swatches.color' | t | json }},

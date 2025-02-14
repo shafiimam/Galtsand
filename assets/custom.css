@@ -177,3 +177,14 @@ a.standard__cta.hero__btn.btn--soft.btn--neutral:hover {
 p.grid__swatch__placeholder {
   color: #102345;
 }
+
+.btn--add-to-cart {
+  border: 2px solid #102345;
+  color: #102345;
+}
+
+.btn--add-to-cart:hover {
+  border: 2px solid #102345;
+  background: #102345 !important;
+  color: #fff !important;
+}

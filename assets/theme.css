@@ -13907,8 +13907,8 @@ html:not(.no-js) body:not(.focus-enabled) *:focus {
   --rgb-content-contrast: var(--rgb-canvas);
   --rgb-button-main: var(--rgb-content);
   --rgb-button-contrast: var(--rgb-content-contrast);
-  --color-error: #D02E2E;
-  --color-success: #56AD6A;
+  --color-error: #d02e2e;
+  --color-success: #56ad6a;
 }
 .palette--dark,
 body.default--dark {
@@ -16985,7 +16985,8 @@ html.js
   height: 0;
 }
 .product-tabs .tab-link {
-  font-family: var(--FONT-STACK-ACCENT);
+  font-family: "EngraversGothicBT-Heavy";
+  font-size: 18px !important;
   font-style: var(--FONT-STYLE-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
@@ -16994,14 +16995,15 @@ html.js
   font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-normal);
   padding-bottom: 0;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   white-space: normal;
+  color: #102345;
 }
 .product-tabs .tab-link:last-child {
   margin-right: 0;
 }
 .product-tabs .tab-link.current {
-  border-bottom-color: currentcolor;
+  border-bottom-color: #660f28;
 }
 .product-tabs .tabs__arrow {
   overflow: hidden;
@@ -18880,7 +18882,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   max-width: 18px;
 }
 .footer__icon--social path {
-  fill:var(--text-dark);
+  fill: var(--text-dark);
 }
 .footer__icon--social:hover path {
   fill: var(--text-dark);
@@ -20636,6 +20638,7 @@ body.focus-enabled .subcollection__link:focus {
 @media only screen and (max-width: 767px) {
   .breadcrumb {
     padding-bottom: calc(var(--PT) * 0.6);
+    padding-left: 16px;
   }
 }
 .product__inner .breadcrumb {

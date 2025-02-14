@@ -48,6 +48,44 @@
             "padding_bottom": 20
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": 7,
+            "padding_bottom": 10
+          }
+        },
+        "variants": {
+          "type": "variant-selectors",
+          "settings": {
+            "option_size_swatch": 30,
+            "option_size_radio": 30,
+            "option_space": 10,
+            "padding_bottom": 10
+          }
+        },
+        "subscriptions": {
+          "type": "subscription",
+          "settings": {
+            "subscriptions_enable_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "show_quantity": true,
+            "padding_bottom": 20
+          }
+        },
+        "buttons": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 20
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -71,55 +109,6 @@
             "title_5": "",
             "icon_name_5": "",
             "raw_content_5": "",
-            "padding_bottom": 20
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "price_size": 5,
-            "padding_bottom": 40
-          }
-        },
-        "variants": {
-          "type": "variant-selectors",
-          "settings": {
-            "option_size_swatch": 74,
-            "option_size_radio": 50,
-            "option_space": 0,
-            "padding_bottom": 16
-          }
-        },
-        "subscriptions": {
-          "type": "subscription",
-          "settings": {
-            "subscriptions_enable_selectors": true,
-            "padding_bottom": 20
-          }
-        },
-        "quantity": {
-          "type": "quantity",
-          "settings": {
-            "show_quantity": true,
-            "padding_bottom": 20
-          }
-        },
-        "sizes-remaining": {
-          "type": "size-remaining",
-          "settings": {
-            "info_page": "",
-            "title": "",
-            "show_remaining": true,
-            "show_remaining_style": "low",
-            "countdown": 10,
-            "padding_bottom": 0
-          }
-        },
-        "buttons": {
-          "type": "add-buttons",
-          "settings": {
-            "enable_payment_button": true,
-            "enable_gift_card_recipient": true,
             "padding_bottom": 20
           }
         },
@@ -164,13 +153,12 @@
       "block_order": [
         "title",
         "description_8fLKPi",
-        "description",
         "price",
         "variants",
         "subscriptions",
         "quantity",
-        "sizes-remaining",
         "buttons",
+        "description",
         "upsell",
         "pickup",
         "sharing",
