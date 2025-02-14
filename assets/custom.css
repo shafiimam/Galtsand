@@ -188,3 +188,7 @@ p.grid__swatch__placeholder {
   background: #102345 !important;
   color: #fff !important;
 }
+
+.product__main__content {
+  color: #102345;
+}
