@@ -15,79 +15,27 @@
         "title": {
           "type": "title",
           "settings": {
-            "text_size": 9,
+            "text_size": 11,
             "product_show_cutline": true,
             "show_rating": true,
             "show_rating_count": false,
-            "padding_bottom": 20
-          }
-        },
-        "description_8fLKPi": {
-          "type": "description",
-          "settings": {
-            "style": "none",
-            "enable_description": true,
-            "read_more": true,
-            "icon_description": "",
-            "description_expanded": true,
-            "title_1": "Information",
-            "icon_name_1": "",
-            "raw_content_1": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
-            "title_2": "Details",
-            "icon_name_2": "",
-            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.</p>",
-            "title_3": "",
-            "icon_name_3": "",
-            "raw_content_3": "",
-            "title_4": "",
-            "icon_name_4": "",
-            "raw_content_4": "",
-            "title_5": "",
-            "icon_name_5": "",
-            "raw_content_5": "",
-            "padding_bottom": 20
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "style": "tabs",
-            "enable_description": true,
-            "read_more": true,
-            "icon_description": "",
-            "description_expanded": true,
-            "title_1": "Information",
-            "icon_name_1": "",
-            "raw_content_1": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
-            "title_2": "Details",
-            "icon_name_2": "",
-            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.</p>",
-            "title_3": "",
-            "icon_name_3": "",
-            "raw_content_3": "",
-            "title_4": "",
-            "icon_name_4": "",
-            "raw_content_4": "",
-            "title_5": "",
-            "icon_name_5": "",
-            "raw_content_5": "",
-            "padding_bottom": 20
+            "padding_bottom": 0
           }
         },
         "price": {
           "type": "price",
           "settings": {
-            "price_size": 5,
-            "padding_bottom": 40
+            "price_size": 7,
+            "padding_bottom": 10
           }
         },
         "variants": {
           "type": "variant-selectors",
           "settings": {
-            "option_size_swatch": 74,
-            "option_size_radio": 50,
-            "option_space": 0,
-            "padding_bottom": 16
+            "option_size_swatch": 30,
+            "option_size_radio": 30,
+            "option_space": 10,
+            "padding_bottom": 20
           }
         },
         "subscriptions": {
@@ -104,17 +52,6 @@
             "padding_bottom": 20
           }
         },
-        "sizes-remaining": {
-          "type": "size-remaining",
-          "settings": {
-            "info_page": "",
-            "title": "",
-            "show_remaining": true,
-            "show_remaining_style": "low",
-            "countdown": 10,
-            "padding_bottom": 0
-          }
-        },
         "buttons": {
           "type": "add-buttons",
           "settings": {
@@ -123,31 +60,29 @@
             "padding_bottom": 20
           }
         },
-        "upsell": {
-          "type": "upsell",
-          "disabled": true,
+        "description": {
+          "type": "description",
           "settings": {
-            "title": "Buy it with",
-            "upsell_type": "product_single",
-            "product": "",
-            "upsell_product_list": [],
-            "upsell_list_limit": 1,
-            "padding_bottom": 20
-          }
-        },
-        "pickup": {
-          "type": "pickup",
-          "disabled": true,
-          "settings": {
-            "padding_bottom": 20
-          }
-        },
-        "sharing": {
-          "type": "sharing",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share",
-            "target_device": "",
+            "style": "tabs",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Details",
+            "icon_name_1": "",
+            "raw_content_1": "<p>{{ product.metafields.custom.title | metafield_tag }}</p>",
+            "title_2": "Features",
+            "icon_name_2": "",
+            "raw_content_2": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}</p>",
+            "title_3": "Composition & Care",
+            "icon_name_3": "",
+            "raw_content_3": "<p>{{ product.metafields.import_information.trade_item_description | metafield_tag }}</p>",
+            "title_4": "Galtsand Promise",
+            "icon_name_4": "",
+            "raw_content_4": "<p>At Galtsand, our promise is to create good for the earth and its people. From responsibly-sourced materials to eco-friendly manufacturing processes, we are committed to making the world better through sustainable practices. Through thoughtful design, we aim to redefine fashion's impact on our planet, as we forge a path forward, towards a brighter future.</p>",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
             "padding_bottom": 20
           }
         },
@@ -163,17 +98,12 @@
       },
       "block_order": [
         "title",
-        "description_8fLKPi",
-        "description",
         "price",
         "variants",
         "subscriptions",
         "quantity",
-        "sizes-remaining",
         "buttons",
-        "upsell",
-        "pickup",
-        "sharing",
+        "description",
         "siblings_PXqenj"
       ],
       "custom_css": [
@@ -184,7 +114,7 @@
         "image_width": "wide",
         "image_spacing": 4,
         "align": "left",
-        "bg": "palette--bright bg--bright",
+        "bg": "palette--light bg--neutral",
         "mobile_layout": "slideshow",
         "enable_video_looping": true,
         "zoom_enable": true,

@@ -50,7 +50,7 @@
 
     {%- assign _content = 'raw_content_' | append: forloop.index -%}
     {%- assign _content = block.settings[_content] -%}
-    {%- assign _content_stripped = _content | strip_html | strip -%}
+    {%- assign _content_stripped = _content -%}
 
     {%- if _title != '' and _content_stripped != '' -%}
       {%- capture tab_links_html -%}
