@@ -20605,7 +20605,7 @@ body.focus-enabled .subcollection__link:focus {
   #Breadcrumbs
 ============================================================================== */
 .breadcrumb {
-  font-family: var(--FONT-STACK-ACCENT);
+  font-family: 'EngraversGothicBT-Heavy';
   font-style: var(--FONT-STYLE-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
