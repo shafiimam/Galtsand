@@ -192,3 +192,34 @@ p.grid__swatch__placeholder {
 .product__main__content {
   color: #102345;
 }
+
+.quickview__form  .radio__button label{
+  color: #E6DBC4;
+  border-color: #E6DBC4;
+}
+
+.quickview__form .radio__fieldset .radio__button input:checked ~ label {
+  color: #102345;
+  background-color: #E6DBC4;
+  border:2px solid #E6DBC4;
+}
+
+.quickview__form .radio__fieldset .radio__button label:hover {
+  color: #102345;
+  background-color: var(--hairline);
+  border-color: #102345;
+}
+.quickview__form .btn--add-to-cart {
+  border: 2px solid #E6DBC4;
+  color: #E6DBC4;
+}
+
+.quickview__form .btn--add-to-cart:hover {
+  border: 2px solid #E6DBC4;
+  background: #E6DBC4 !important;
+  color: #102345 !important;
+}
+
+.quickview__form .radio__legend span:not(.radio__legend__label) {
+  border-left: 2px solid #e6dbc4;
+}
