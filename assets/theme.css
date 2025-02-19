@@ -20818,7 +20818,7 @@ a.product__form__link:after {
   color: var(--text);
   display: inline-block;
   padding: 8px 0 6px 0;
-  font-size: 40px;
+  font-size: 30px;
 }
 .product__price--unit {
   font-family: var(--FONT-STACK-ACCENT);
@@ -20869,6 +20869,7 @@ a.product__form__link:after {
 .product__title {
   margin: 0;
   word-break: break-word;
+  text-transform: none;
 }
 .product__price {
   line-height: 1em;
@@ -21340,6 +21341,7 @@ a.product__form__link:after {
   max-width: 450px;
   width: 100%;
   background: #660f28;
+  color: #E6DBC4;
   border-right: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 3px 12px rgba(0, 0, 0, 0.02);
   transform: translate3d(-100%, 0, 0);
@@ -23222,7 +23224,7 @@ countdown-timer {
 .quantity__button:hover,
 .quantity__button:focus,
 .quantity__button:active {
-  color: var(--primary);
+  color: #660F28;
   outline: none;
 }
 .quantity__button:active {
@@ -25103,6 +25105,10 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
 .quickview__modal .product__title {
   font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING));
   line-height: var(--leading-snug);
+  color: #E6DBC4;
+}
+.quickview__modal .product__price {
+  color: #E6DBC4;
 }
 .quickview__modal .product__price {
   font-size: calc(16px * var(--FONT-ADJUST-BODY));

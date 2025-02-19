@@ -192,3 +192,57 @@ p.grid__swatch__placeholder {
 .product__main__content {
   color: #102345;
 }
+
+.quickview__form .radio__button label {
+  color: #e6dbc4;
+  border-color: #e6dbc4;
+}
+
+.quickview__form .radio__fieldset .radio__button input:checked ~ label {
+  color: #102345;
+  background-color: #e6dbc4;
+  border: 2px solid #e6dbc4;
+}
+
+.quickview__form .radio__fieldset .radio__button label:hover {
+  color: #102345;
+  background-color: var(--hairline);
+  border-color: #102345;
+}
+.quickview__form .btn--add-to-cart {
+  border: 2px solid #e6dbc4;
+  color: #e6dbc4;
+}
+
+.quickview__form .btn--add-to-cart:hover {
+  border: 2px solid #e6dbc4;
+  background: #e6dbc4 !important;
+  color: #102345 !important;
+}
+
+.quickview__form .radio__legend span:not(.radio__legend__label) {
+  border-left: 2px solid #e6dbc4;
+}
+
+/* cart drawer */
+.cart__drawer .cart__items__title,
+.cart__drawer .cart__items__meta,
+.cart__drawer .line__price {
+  color: #e6dbc4 !important;
+}
+.cart__drawer .quantity__input {
+  color: #e6dbc4 !important;
+  border-color: #e6dbc4;
+}
+.cart__drawer .quantity__button:hover, 
+.cart__drawer .quantity__button:focus, 
+.cart__drawer .quantity__button:active{
+  color: #e6dbc4 !important;
+}
+.cart__drawer p.cart__drawer__title {
+  color: #660f28;
+}
+
+.cart__drawer svg.icon-core-x {
+  stroke: #660f28;
+}

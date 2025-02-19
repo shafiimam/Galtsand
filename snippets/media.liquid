@@ -39,8 +39,8 @@
   {{ data_player }}>
   {% case media.media_type %}
     {% when 'image' %}
-      <div>
-        <div class="product-image-wrapper">
+      <div style="height: 100%;">
+        <div class="product-image-wrapper" style="height: 100%;">
           {% liquid
             assign alt = alt_text_parts | first | escape
             assign preload = false
