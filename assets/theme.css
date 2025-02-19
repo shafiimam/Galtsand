@@ -20818,7 +20818,7 @@ a.product__form__link:after {
   color: var(--text);
   display: inline-block;
   padding: 8px 0 6px 0;
-  font-size: 40px;
+  font-size: 30px;
 }
 .product__price--unit {
   font-family: var(--FONT-STACK-ACCENT);
@@ -23224,7 +23224,7 @@ countdown-timer {
 .quantity__button:hover,
 .quantity__button:focus,
 .quantity__button:active {
-  color: var(--primary);
+  color: #660F28;
   outline: none;
 }
 .quantity__button:active {

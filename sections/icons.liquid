@@ -1,104 +1,109 @@
 <style>
+  .eco-conscious-section {
+    background-color: #e6dbc4;
+    padding: 93px 18px;
+    text-align: center;
+    display: flex; /* Ensure section is visible */
+    flex-direction: column;
+    @media only screen and (max-width: 767px) {
+      padding-top: 20px;
+    }
+  }
 
-.eco-conscious-section {
-  background-color: #E6DBC4;
-  padding: 93px 18px;
-  text-align: center;
-  display: flex; /* Ensure section is visible */
-  flex-direction: column;
-}
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: 90px;
+  }
 
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-  height: 90px;
-}
+  .container {
+    max-width: 2018px !important;
+  }
 
-.container {
-  max-width: 2018px !important;
-}
+  .eco-conscious-section .container {
+    margin: 0 auto;
+  }
 
-.eco-conscious-section .container {
-  margin: 0 auto;
-}
+  .eco-conscious-section h2 {
+    font-family: 'Gambarino-Regular';
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
 
-.eco-conscious-section h2 {
-  font-family: "Gambarino-Regular";
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
+  .eco-conscious-section p {
+    font-family: 'Inter Tight';
+    font-size: 1.2em;
+    color: #102345;
+    margin-bottom: 40px;
+  }
 
-.eco-conscious-section p {
-  font-family: "Inter Tight";
-  font-size: 1.2em;
-  color: #102345;
-  margin-bottom: 40px;
-}
-
-.eco-features {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
   .eco-features {
-    flex-direction: column; /* Switch to column layout */
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .eco-features {
+      flex-direction: column; /* Switch to column layout */
+      align-items: center;
+    }
+
+    .eco-feature {
+      width: 100%; /* Full width on mobile */
+    }
   }
 
   .eco-feature {
-    width: 100%; /* Full width on mobile */
+    background: #e6dbc4;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    border: 3px solid #006a50;
   }
-}
 
-.eco-feature {
-  background: #E6DBC4;
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  border: 3px solid #006A50;
-}
+  .eco-feature img {
+    max-width: 69px;
+  }
 
-.eco-feature img {
-  max-width: 69px;
-}
+  .eco-feature h3 {
+    font-family: 'Gambarino-Regular';
+    color: #102345;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: left;
+  }
 
-.eco-feature h3 {
-  font-family: "Gambarino-Regular";
-  color: #102345;
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  line-height: 1.2;
-  text-align: left;
-}
+  .eco-feature p {
+    font-size: 1em;
+    /* color: #555; */
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
 
-.eco-feature p {
-  font-size: 1em;
-  /* color: #555; */
-  flex-grow: 1;
-  margin-bottom: 20px;
-}
-
-.learn-more {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: auto;
-}
-
+  .learn-more {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+  }
 </style>
 
 <section class="eco-conscious-section">
   <div class="container">
-    <h2>{{ section.settings.heading }}</h2>
-    <p class="subheading">{{ section.settings.subheading }}</p>
+    {% if section.settings.heading != blank %}
+      <h2>{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.subheading != blank %}
+      <p class="subheading">{{ section.settings.subheading }}</p>
+    {% endif %}
 
     <!-- Desktop View (Grid of Features) -->
     <div class="eco-features">
@@ -107,7 +112,6 @@
           <div class="icon">
             <img src="{{ section.settings.icon_1 | img_url: '120x' }}" alt="Icon 1">
           </div>
-          
         {% endif %}
         <h3>{{ section.settings.title_1 }}</h3>
         <p>{{ section.settings.description_1 }}</p>
@@ -118,7 +122,6 @@
           <div class="icon">
             <img src="{{ section.settings.icon_2 | img_url: '120x' }}" alt="Icon 2">
           </div>
-          
         {% endif %}
         <h3>{{ section.settings.title_2 }}</h3>
         <p>{{ section.settings.description_2 }}</p>
@@ -129,7 +132,6 @@
           <div class="icon">
             <img src="{{ section.settings.icon_3 | img_url: '120x' }}" alt="Icon 3">
           </div>
-          
         {% endif %}
         <h3>{{ section.settings.title_3 }}</h3>
         <p>{{ section.settings.description_3 }}</p>
@@ -140,18 +142,14 @@
           <div class="icon">
             <img src="{{ section.settings.icon_4 | img_url: '120x' }}" alt="Icon 4">
           </div>
-          
         {% endif %}
         <h3>{{ section.settings.title_4 }}</h3>
         <p>{{ section.settings.description_4 }}</p>
         <!-- <a href="{{ section.settings.link_4 }}" class="learn-more">Learn More</a> -->
       </div>
     </div>
-   
-    
   </div>
 </section>
-
 
 {% schema %}
 {
@@ -268,7 +266,4 @@
     }
   ]
 }
-
-
-
 {% endschema %}
