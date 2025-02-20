@@ -1,0 +1,251 @@
+{% assign image_position = section.settings.image_position %}
+{% assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" %}
+{% capture image_markup %}
+   <div class="image-with-text-section__image-container">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="{{ section.settings.image | img_url: '600X' }} 1x, {{ section.settings.image | img_url: '1000X' }} 1x"
+        >
+        <img
+          src="{{ section.settings.image | img_url: '800X' }}"
+          alt="Image"
+          class="image-with-text-section__image"
+          height="auto"
+          width="auto"
+          data-aos="hero"
+          data-aos-anchor="{{ animation_anchor }}"
+          data-aos-order="1"
+          data-aos-delay="3000"
+        >
+      </picture>
+    </div>
+{% endcapture %}
+<div class="image-with-text-section" data-section-id="{{ section.id }}">
+  <div class="image-with-text-section__main-{{ section.id }} {{ section.settings.image_position }}">
+    {% if image_position == 'left' %}
+      {{ image_markup }}
+    {% endif %}
+    <div class="image-with-text-section__text-container">
+      <div class="image-with-text-section__blocks">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'text' %}
+              <p
+                class="image-with-text-block-text"
+                {{ block.shopify_attributes }}
+                style="padding-{{ section.settings.image_position }}: 48px;"
+              >
+                {{ block.settings.text }}
+              </p>
+            {% when 'heading' %}
+              <h2
+                class="image-with-text-block-title"
+                data-aos="hero"
+                data-aos-anchor="{{ animation_anchor }}"
+                data-aos-order="2"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.text }}
+              </h2>
+            {% when 'image_pair' %}
+              <div
+                class="block-image-pair"
+
+                {{ block.shopify_attributes }}
+              >
+                <picture>
+                  <source
+                    media="(min-width: 375px)"
+                    srcset="{{ block.settings.image_1 | img_url: '700X' }} 1x"
+                  >
+                  <img
+                    src="{{ block.settings.image_1 | img_url: '800X' }}"
+                    alt="Image"
+                    class="image-with-text-block-image"
+                    height="{{ block.settings.image_1.height }}"
+                    width="{{ block.settings.image_1.width }}"
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="3"
+                  >
+                </picture>
+                <picture>
+                  <source
+                    media="(min-width: 375px)"
+                    srcset="{{ block.settings.image_2 | img_url: '700X' }} 1x"
+                  >
+                  <img
+                    src="{{ block.settings.image_2 | img_url: '800X' }}"
+                    alt="Image"
+                    class="image-with-text-block-image"
+                    height="{{ block.settings.image_2.height }}"
+                    width="{{ block.settings.image_2.width }}"
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="4"
+                  >
+                </picture>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+    {% if image_position == 'right' %}
+      {{ image_markup }}
+    {% endif %}
+  </div>
+</div>
+<style>
+  .image-with-text-section__main-{{ section.id }} {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 48px;
+    {% if section.settings.remove_top_padding %}
+      padding-top: 0 !important;
+    {% endif %}
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 48px 24px;
+      padding-top: 0;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Image With Text Custom",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Section Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_top_padding",
+      "label": "Remove top padding",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text Content",
+          "default": "Default Text Content"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Text Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text Content",
+          "default": "Default Text Content"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Text Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    },
+    {
+      "type": "image_pair",
+      "name": "Image Pair",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text Custom",
+      "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "text": "Default Text Content"
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "text": "Default Heading Content"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

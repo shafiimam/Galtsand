@@ -12106,7 +12106,8 @@
     // Animate on scroll
     if (window.theme.settings.animate_scroll) {
         AOS.init({
-            once: true
+            once: true,
+            startEvent: 'load'
         });
     }
     document.addEventListener('DOMContentLoaded', function() {

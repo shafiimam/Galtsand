@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "kicker": "",
         "kicker_size": 5,
@@ -48,434 +49,310 @@
         "padding_bottom": 0
       }
     },
-    "section_gallery_dRkdAR": {
-      "type": "section-gallery",
-      "blocks": {
-        "image_zDFj6a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-103.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_zDFj6a"
-      ],
+    "about_us_header_MVVPBR": {
+      "type": "about-us-header",
       "settings": {
-        "scale_image": true,
-        "wh_ratio": 2.4,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 1,
-        "grid_medium": 1,
-        "grid_mobile": 1,
-        "width": "wrapper--narrow",
-        "padding_top": 18,
-        "padding_bottom": 18
+        "paragraph": "About Us",
+        "heading": "Honoring History through Heritage and Sport",
+        "image_2": "shopify://shop_images/shortnew10_f24a4c6e-c439-44a7-af41-fff1ddbe22a7.jpg",
+        "image_1": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
+        "image_3": "shopify://shop_images/shortnew10_f24a4c6e-c439-44a7-af41-fff1ddbe22a7.jpg"
       }
     },
-    "section_richtext_kVWXat": {
-      "type": "section-richtext",
+    "image_with_text_custom_NJXcdy": {
+      "type": "image-with-text-custom",
       "blocks": {
-        "text_dmJdPG": {
+        "text_NLfjhk": {
           "type": "text",
           "settings": {
-            "text": "<p>In 1986, Galtsand was born in Cedar Rapids, Iowa, with a vision to redefine the boundaries of sport and style with authenticity and purpose. From the start, we’ve seen sport as more than action. Sport is a force that transcends time and place, weaving connections across generations and cultures.</p>",
-            "text_size": 6,
-            "text_columns": 1
-          }
-        }
-      },
-      "block_order": [
-        "text_dmJdPG"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "text_color": "text--black",
-        "bg": "palette--bright bg--bright",
-        "content_width": 1000,
-        "width": "wrapper--narrow",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_gallery_mN8rRt": {
-      "type": "section-gallery",
-      "blocks": {
-        "image_Y8iNfR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October2-33.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_Y8iNfR"
-      ],
-      "settings": {
-        "scale_image": true,
-        "wh_ratio": 2,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 1,
-        "grid_medium": 1,
-        "grid_mobile": 1,
-        "width": "wrapper--narrow",
-        "padding_top": 18,
-        "padding_bottom": 18
-      }
-    },
-    "section_richtext_QmJ3ig": {
-      "type": "section-richtext",
-      "blocks": {
-        "text_zrRYCC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our story began with an iconic round-neck sweatshirt, celebrated for its heritage, comfort, and timeless appeal. Collaborating with the NCAA, NFL, and wildlife organizations, we’ve built a legacy rooted in creating garments that tell stories, capture moments in history, and connect generations through shared experiences.</p>",
-            "text_size": 6,
-            "text_columns": 1
-          }
-        }
-      },
-      "block_order": [
-        "text_zrRYCC"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "text_color": "text--black",
-        "bg": "palette--bright bg--bright",
-        "content_width": 1000,
-        "width": "wrapper--narrow",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_gallery_8aVn4U": {
-      "type": "section-gallery",
-      "blocks": {
-        "image_ctPRxw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/11111111.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_ctPRxw"
-      ],
-      "settings": {
-        "scale_image": true,
-        "wh_ratio": 2,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 1,
-        "grid_medium": 1,
-        "grid_mobile": 1,
-        "width": "wrapper--narrow",
-        "padding_top": 18,
-        "padding_bottom": 18
-      }
-    },
-    "section_richtext_ib8RJ7": {
-      "type": "section-richtext",
-      "blocks": {
-        "text_NMC6yU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As we reimagine these classic designs for today’s world, we are committed to preserving the legacy of the past while upholding the honor, integrity, and dignity that have defined us since 1986. These core values remain at the heart of everything we do, guiding us as we carry forward a tradition built on pride and purpose.</p>",
-            "text_size": 6,
-            "text_columns": 1
-          }
-        }
-      },
-      "block_order": [
-        "text_NMC6yU"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "text_color": "text--black",
-        "bg": "palette--bright bg--bright",
-        "content_width": 1000,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_gallery_WAy8RG": {
-      "type": "section-gallery",
-      "blocks": {
-        "image_LfCrQm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/020A9002-Edit-Edit_1_cf58a6b3-aa14-4be7-b820-7fe2b691f135.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_LfCrQm"
-      ],
-      "settings": {
-        "scale_image": true,
-        "wh_ratio": 2,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 1,
-        "grid_medium": 1,
-        "grid_mobile": 1,
-        "width": "wrapper--narrow",
-        "padding_top": 18,
-        "padding_bottom": 18
-      }
-    },
-    "section_richtext_bMetD8": {
-      "type": "section-richtext",
-      "blocks": {
-        "text_Rh8htC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The stories, traditions, and garments we pass down connect us across generations, making what we wear a reflection of our journey, a testament to the strength and resilience that shape who we are. True freedom is unlocked when we define ourselves through personal growth, achievement, and positive impact on the world around us. Thank you for being part of our journey toward a brighter future. Together, we’ll build something greater than ourselves—a legacy of purpose, strength, and success that belongs to all of us.</p>",
-            "text_size": 6,
-            "text_columns": 1
-          }
-        }
-      },
-      "block_order": [
-        "text_Rh8htC"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "text_color": "text--black",
-        "bg": "palette--bright bg--bright",
-        "content_width": 1000,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_richtext_7y8KBp": {
-      "type": "section-richtext",
-      "blocks": {
-        "heading_gwWVPj": {
-          "type": "heading",
-          "settings": {
-            "heading": "Latest Event Drops",
-            "text_size": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading_gwWVPj"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "text_color": "text--black",
-        "bg": "palette--bright bg--bright",
-        "content_width": 1000,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_gallery_EbnXHd": {
-      "type": "section-gallery",
-      "blocks": {
-        "image_zL3hJA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-40.jpg",
-            "link": ""
+            "text": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand began with a mission to unite the world through sport. From the beginning, we’ve believed that sport is more than movement, it’s a universal language that bridges generations, backgrounds, and cultures, bringing people together in a shared experience.",
+            "text_align": "left"
           }
         },
-        "image_kyH4Ln": {
-          "type": "image",
+        "image_pair_YKxNzX": {
+          "type": "image_pair",
           "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-49.jpg",
-            "link": ""
-          }
-        },
-        "image_KeeWk9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-52.jpg",
-            "link": ""
+            "image_1": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
+            "image_2": "shopify://shop_images/DSC_541822_ef278a81-c905-4676-a599-2a4c46705f93.jpg"
           }
         }
       },
       "block_order": [
-        "image_zL3hJA",
-        "image_kyH4Ln",
-        "image_KeeWk9"
+        "text_NLfjhk",
+        "image_pair_YKxNzX"
       ],
       "settings": {
+        "image": "shopify://shop_images/StandardCalssicPolo_DarkestNavy_Medium-1_90c3649d-e0a9-4ba1-99da-068c239fe286.jpg",
+        "remove_top_padding": false,
+        "image_position": "right"
+      }
+    },
+    "image_with_text_custom_JNzaej": {
+      "type": "image-with-text-custom",
+      "blocks": {
+        "text_wCmUiB": {
+          "type": "text",
+          "settings": {
+            "text": "Our journey started with a simple, iconic sweatshirt. Loved across generations, it symbolizes comfort and heritage. Collaborations with the NCAA, NFL, and Wildlife Organizations reflect our shared values. Each garment we create carries stories and fosters connections among wearers.",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "text_wCmUiB"
+      ],
+      "custom_css": [
+        ".image-with-text-section__blocks {justify-content: center;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/DSC59704.jpg",
+        "remove_top_padding": true,
+        "image_position": "left"
+      }
+    },
+    "section_image_4qDMtM": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/Pullover_Hoodie_White_Medium-12.jpg",
+        "max_width": 100,
+        "x_align": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "section_columns_7mrmNg": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_nYUmpF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "shape_class": "",
+            "title": "",
+            "text": "<p>We owe our continued success to the thousands who have persevered to keep our legacy alive — those who care for our pieces as heirlooms because they recognize something enduring in them. </p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_JxRjxJ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "shape_class": "",
+            "title": "",
+            "text": "<p>We are grateful to everyone who shares our vision of creating timeless pieces that stand as symbols of what is possible when individuals pursue their best.<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_nYUmpF",
+        "text_block_JxRjxJ"
+      ],
+      "custom_css": [
+        "p {font-size: 32px; @media only screen and (max-width: 768px) {font-size: 20px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-left",
         "scale_image": true,
         "wh_ratio": 1,
+        "grid_large": 2,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_columns_ttBhdk": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_YTpCXc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "shape_class": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_BAxDHq": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "shape_class": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_CcMq3j": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "shape_class": "",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_YTpCXc",
+        "text_block_BAxDHq",
+        "text_block_CcMq3j"
+      ],
+      "settings": {
+        "title": "",
         "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
+        "align_text": "text-left",
+        "scale_image": true,
+        "wh_ratio": 1,
         "grid_large": 3,
         "grid_medium": 3,
         "grid_mobile": 1.2,
-        "width": "wrapper",
-        "padding_top": 18,
-        "padding_bottom": 18
+        "progress_bar_mobile": false,
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
-    "section_gallery_YijPUP": {
-      "type": "section-gallery",
+    "section_richtext_UfgiKk": {
+      "type": "section-richtext",
       "blocks": {
-        "image_6QMwUd": {
-          "type": "image",
+        "text_HM3Vb7": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-61.jpg",
-            "link": ""
-          }
-        },
-        "image_MPhVLi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-21.jpg",
-            "link": ""
-          }
-        },
-        "image_PyFMtt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-64.jpg",
-            "link": ""
+            "text": "<p>We owe our continued success to the thousands who have persevered to keep our legacy alive — those who care for our pieces as heirlooms because they recognize something enduring in them. We are grateful to everyone who shares our vision of creating timeless pieces that stand as symbols of what is possible when individuals pursue their best.<br/></p>",
+            "text_size": 8,
+            "text_columns": 1
           }
         }
       },
       "block_order": [
-        "image_6QMwUd",
-        "image_MPhVLi",
-        "image_PyFMtt"
+        "text_HM3Vb7"
+      ],
+      "custom_css": [
+        "p {font-size: 32px; color: #660f28; @media only screen and (max-width: 768px) {font-size: 20px; }}"
       ],
       "settings": {
-        "scale_image": true,
-        "wh_ratio": 1,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 3,
-        "grid_medium": 3,
-        "grid_mobile": 1.2,
-        "width": "wrapper",
-        "padding_top": 18,
-        "padding_bottom": 18
+        "content_width": 2000,
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 50
       }
     },
-    "section_gallery_yN3UFF": {
-      "type": "section-gallery",
+    "image_with_text_custom_XnTjJM": {
+      "type": "image-with-text-custom",
       "blocks": {
-        "image_VJer4H": {
-          "type": "image",
+        "text_7ghW8z": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Galtsand_Event.jpg",
-            "link": ""
-          }
-        },
-        "image_TMXaNM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-9.jpg",
-            "link": ""
-          }
-        },
-        "image_zaPc8z": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-17.jpg",
-            "link": ""
+            "text": "Today, with over five decades of textile mastery and technical expertise behind us, we remain steadfast in our commitment to creating apparel, activewear, and accessories that honor the legacy of craftsmanship, resilience, and stories carried by our community.",
+            "text_align": "left"
           }
         }
       },
       "block_order": [
-        "image_VJer4H",
-        "image_TMXaNM",
-        "image_zaPc8z"
+        "text_7ghW8z"
       ],
       "settings": {
-        "scale_image": true,
-        "wh_ratio": 1,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 3,
-        "grid_medium": 3,
-        "grid_mobile": 1.3,
-        "width": "wrapper",
-        "padding_top": 18,
-        "padding_bottom": 18
+        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
+        "remove_top_padding": true,
+        "image_position": "left"
       }
     },
-    "section_gallery_xbmpED": {
-      "type": "section-gallery",
+    "image_with_text_custom_QkCrnc": {
+      "type": "image-with-text-custom",
       "blocks": {
-        "image_QtgTCk": {
-          "type": "image",
+        "text_VciWgw": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-85.jpg",
-            "link": ""
-          }
-        },
-        "image_GA9zCg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-92.jpg",
-            "link": ""
-          }
-        },
-        "image_V9HzVK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Event-139.jpg",
-            "link": ""
+            "text": "As we reimagine these classic designs for today’s world, we are reminded that, like garments, history is stitched with resilience and growth. Our values are shaped by the lessons of the past and the legacies we choose to preserve. By honoring history, we gain wisdom and understanding. By building our legacy, we shape what’s to come.",
+            "text_align": "left"
           }
         }
       },
       "block_order": [
-        "image_QtgTCk",
-        "image_GA9zCg",
-        "image_V9HzVK"
+        "text_VciWgw"
       ],
       "settings": {
-        "scale_image": true,
-        "wh_ratio": 1,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": true,
-        "progress_bar": "mobile",
-        "grid_large": 3,
-        "grid_medium": 3,
-        "grid_mobile": 1.2,
-        "width": "wrapper",
-        "padding_top": 18,
-        "padding_bottom": 18
+        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
+        "remove_top_padding": true,
+        "image_position": "left"
+      }
+    },
+    "image_with_text_custom_BmDRyG": {
+      "type": "image-with-text-custom",
+      "blocks": {
+        "text_UN9RhY": {
+          "type": "text",
+          "settings": {
+            "text": "The stories and traditions we share connect us across generations, making our garments a reflection of our journey. True freedom comes from personal growth and positive impact. Thank you for being part of our journey toward a brighter future. Together, we’ll create a legacy of purpose and strength.",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "text_UN9RhY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
+        "remove_top_padding": true,
+        "image_position": "left"
       }
     }
   },
   "order": [
     "main",
     "section_map_xdJRJC",
-    "section_gallery_dRkdAR",
-    "section_richtext_kVWXat",
-    "section_gallery_mN8rRt",
-    "section_richtext_QmJ3ig",
-    "section_gallery_8aVn4U",
-    "section_richtext_ib8RJ7",
-    "section_gallery_WAy8RG",
-    "section_richtext_bMetD8",
-    "section_richtext_7y8KBp",
-    "section_gallery_EbnXHd",
-    "section_gallery_YijPUP",
-    "section_gallery_yN3UFF",
-    "section_gallery_xbmpED"
+    "about_us_header_MVVPBR",
+    "image_with_text_custom_NJXcdy",
+    "image_with_text_custom_JNzaej",
+    "section_image_4qDMtM",
+    "section_columns_7mrmNg",
+    "section_columns_ttBhdk",
+    "section_richtext_UfgiKk",
+    "image_with_text_custom_XnTjJM",
+    "image_with_text_custom_QkCrnc",
+    "image_with_text_custom_BmDRyG"
   ]
 }
