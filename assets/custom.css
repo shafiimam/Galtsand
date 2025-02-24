@@ -277,3 +277,11 @@ p.image-with-text-block-text {
     padding: 0 !important;
   }
 }
+
+.image-overlay--slider {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    #000 100%
+  ) !important;
+}

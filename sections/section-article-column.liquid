@@ -52,23 +52,17 @@
             {% assign image_id = 'article_image_' | append: index %}
             {% assign article = block.settings[article_id] %}
             <div
-              class="article-card aos-init"
-              data-aos="fade-up"
-              data-aos-anchor="{{ animation_anchor }}"
-              data-aos-order="{{ index }}"
-              data-aos-offset="5000"
+              class="article-card"
               onclick="location.href='{{ article.url }}'"
             >
               <div class="article-image-container">
                 {% assign article_image = block.settings[image_id] %}
-              
+
                 {% if article_image != blank %}
                   <picture>
                     <source srcset="{{ article_image | img_url: '300x' }}" media="(max-width: 600px)">
                     <img
                       src="{{ article_image | img_url: '300x' }}"
-                      width="={{ article_image.width }}"
-                      height="{{ article_image.height }}"
                     >
                   </picture>
                 {% else %}
@@ -76,9 +70,7 @@
                     <source srcset="{{ article.image | img_url: '300x' }}" media="(max-width: 600px)">
                     <img
                       src="{{ article.image | img_url: '600x' }}"
-                      alt="Employee Image"
-                      width="={{ article.image.width }}"
-                      height="{{ article.image.height }}"
+                      alt="{{ article.image.alt }}"
                     >
                   </picture>
                 {% endif %}
