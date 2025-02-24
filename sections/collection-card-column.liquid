@@ -1,0 +1,149 @@
+<div class="cards-section">
+  <div class="cards-section__inner">
+    {% if section.settings.title != blank %}
+      <div class="cards-section__title">
+        <h1 class="heading">
+          {{ section.settings.title }}
+        </h1>
+      </div>
+    {% endif %}
+    <div class="cards-section__cards">
+      {% for block in section.blocks %}
+        <div class="block-card" {{ block.shopify_attributes }}>
+          <div class="block-card__image">
+            {% if block.settings.image %}
+              <picture>
+                <source srcset="{{ block.settings.image | img_url: '300x' }}" media="(max-width: 600px)">
+                <img src="{{ block.settings.image | img_url: '600x' }}" alt="{{  block.settings.image.alt }}">
+              </picture>
+            {% endif %}
+          </div>
+          <div class="block-card__content">
+            <p class="block-card__title font-heading">
+              {{ block.settings.title }}
+            </p>
+            <p class="block-card__subtitle font-secondary">
+              {{ block.settings.subtitle }}
+            </p>
+            <a href="{{ block.settings.button_link }}" class="btn btn--white btn--large ">
+              {{- block.settings.button_label -}}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .cards-section {
+    background-color: {{ section.settings.background_color }};
+    color: #E6DBC4;
+  }
+
+  .cards-section__cards {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 120px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media only screen and (max-width: 768px) {
+      padding: 68px 20px;
+    }
+  }
+  .block-card {
+    width: calc(25% - 20px);
+    border: 2px solid #E6DBC4;
+    display: flex;
+    gap: 20px;
+    padding: 16px 16px 24px 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    @media only screen and (max-width: 1024px) {
+      flex-basis: calc(50% - 20px);
+    }
+    @media only screen and (max-width: 768px) {
+      flex-basis: 100%;
+    }
+  }
+  .block-card__image , .block-card__image img {
+    width: 100%;
+  }
+  .block-card__title {
+   color: #E6DBC4;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 100%; /* 40px */
+  }
+  .block-card__subtitle {
+   color: #E6DBC4;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 140%;
+  }
+  .block-card__content {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Card Column",
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#006A50"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Iamge"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Default Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Default Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Explore"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

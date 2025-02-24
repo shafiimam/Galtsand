@@ -33,6 +33,7 @@
   text-transform: none;
 }
 .font-secondary {
+.text-secondary {
   font-family: var(--font-family-secondary) !important;
   font-size: 14px !important;
   font-style: normal;
