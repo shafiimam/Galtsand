@@ -11,6 +11,8 @@
 .heading {
   font-family: var(--font-family-heading) !important;
   margin-bottom: 14px;
+  letter-spacing: normal;
+  text-transform: none;
 }
 .heading-base {
   font-size: var(--heading-size-md);

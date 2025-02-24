@@ -165,7 +165,7 @@
               endif
             -%}
             <div class="brick__block" data-prevent-transparent-header {{ block.shopify_attributes }}>
-              <div class="brick__block__text {{ transparent_spacing_class }} {{ block.settings.text_color }}" data-overflow-frame style="--bg: {{ bg_color }};">
+              <div class="brick__block__text {{ transparent_spacing_class }}" data-overflow-frame style="--bg: {{ bg_color }};">
                 <div class="brick__block__text__inner">
                   <div class="text__standard {{ block.settings.align_text }}" data-overflow-content>
                     {% assign text_size_class = block.settings.font_size | prepend: 'body-size-' %}
@@ -174,26 +174,26 @@
                       <p class="standard__kicker {{ kicker_line_class }}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
-                        data-aos-order="1">
+                        data-aos-order="1" style="color: {{ block.settings.text_color }};">
                         {{ block.settings.kicker }}
                       </p>
                     {% endif %}
 
                     {% if block.settings.title != blank %}
-                      <h2 class="standard__heading heading-size-9"
+                      <h2 class="heading heading-xl"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
-                        data-aos-order="2">
+                        data-aos-order="2" style="color: {{ block.settings.text_color }};">
                         {{ block.settings.title }}
                       </h2>
                     {% endif %}
 
                     {% if block.settings.text != blank %}
                       {% assign text_columns_class = block.settings.text_columns | prepend: 'columns--' %}
-                      <div class="rte {{ text_size_class }} {{ text_columns_class }} {{ justify_class }}"
+                      <div class="rte {{ text_size_class }} {{ text_columns_class }} {{ justify_class }} font-body"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
-                        data-aos-order="3">
+                        data-aos-order="3" style="color: {{ block.settings.text_color }};">
                         {{ block.settings.text }}
                       </div>
                     {% endif %}
@@ -859,6 +859,12 @@
         ]
       },
       {
+        "type": "color",
+        "id": "text_color", 
+        "label": "Text Color",
+        "default": "#006A50"
+      },
+      {
         "type": "header",
         "content": "Button"
       },
@@ -900,24 +906,6 @@
       {
         "type": "header",
         "content": "Style"
-      },
-      {
-        "type": "select",
-        "id": "text_color",
-        "label": "Text color",
-        "default": "text--neutral",
-        "options": [
-          { "value": "text--neutral", "label": "Normal text"},
-          { "value": "text--white", "label": "White"},
-          { "value": "text--primary", "label": "Primary accent"},
-          { "value": "text--secondary", "label": "Secondary accent"},
-          { "value": "text--black", "label": "Black"},
-          { "value": "text--invert--primary", "label": "Primary dark accent"},
-          { "value": "text--invert--secondary", "label": "Secondary dark accent"},
-          { "value": "text--invert", "label": "Inverted text color"},
-          { "value": "text--bright--primary", "label": "Primary bright accent"},
-          { "value": "text--bright--secondary", "label": "Secondary bright accent"}
-        ]
       },
       {
         "type": "color",

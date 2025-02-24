@@ -20870,6 +20870,7 @@ a.product__form__link:after {
   margin: 0;
   word-break: break-word;
   text-transform: none;
+  letter-spacing: 1px;
 }
 .product__price {
   line-height: 1em;
