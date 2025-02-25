@@ -19236,7 +19236,7 @@ body.focus-enabled .product-grid-item:focus-within {
 /* ================ Collection ================ */
 .product__grid__title {
   color: #102345;
-  font-family: "Engravers Gothic";
+  font-family: var(--font-family-body);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;

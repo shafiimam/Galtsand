@@ -33,6 +33,8 @@
   text-transform: none;
 }
 .font-secondary {
+  font-family: var(--font-family-secondary);
+}
 .text-secondary {
   font-family: var(--font-family-secondary) !important;
   font-size: 14px !important;
@@ -166,7 +168,7 @@ a.standard__cta.hero__btn.btn.btn--primary.btn--long {
 .section--image .hero__title p,
 .hero__cta__wrapper .standard__cta.btn--soft,
 .section--image .hero__description p {
-  color: #e6dbc4;
+  color: #e6dbc4 !important;
 }
 
 a.standard__cta.hero__btn.btn.btn--primary.btn--long:hover {
@@ -287,4 +289,9 @@ p.image-with-text-block-text {
     rgba(0, 0, 0, 0) 0%,
     #000 100%
   ) !important;
+}
+
+
+.quickview .icon-theme-stroke {
+  stroke: #660F28;
 }
