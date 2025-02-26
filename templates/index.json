@@ -296,21 +296,7 @@
         "slide_EzRiEK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Galtsand_Paris_-21.jpg",
-            "kicker": "30% Off Holiday Collection.",
-            "heading": "Limited Edition Vintage Re-releases",
-            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
-            "text_color": "text--invert--primary",
-            "link_text": "Shop the Deals",
-            "link": "shopify://collections/bottoms",
-            "button_color": "btn--primary",
-            "button_style": "btn"
-          }
-        },
-        "slide_88XhrA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
+            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
             "kicker": "30% Off Holiday Collection.",
             "heading": "Limited Edition Vintage Re-releases",
             "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
@@ -324,8 +310,7 @@
       },
       "block_order": [
         "slide_VcEiJa",
-        "slide_EzRiEK",
-        "slide_88XhrA"
+        "slide_EzRiEK"
       ],
       "settings": {
         "header_text": "Elevated Heights - our latest collection",
