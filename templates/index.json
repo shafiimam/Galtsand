@@ -832,6 +832,59 @@
         "padding_bottom": 36
       }
     },
+    "section_article_column_tHbWhz": {
+      "type": "section-article-column",
+      "blocks": {
+        "article_row_YHAKwJ": {
+          "type": "article-row",
+          "settings": {
+            "article_1": "",
+            "article_2": "",
+            "article_3": "",
+            "text": "The Heritage Collection",
+            "content": "featured shop -",
+            "button_link": "",
+            "button_label": "Explore Now",
+            "block_position": "last"
+          }
+        },
+        "article_row_bbL4qb": {
+          "type": "article-row",
+          "settings": {
+            "article_1": "",
+            "article_2": "",
+            "article_3": "",
+            "text": "The Equestrian Edit",
+            "content": "featured shop",
+            "button_link": "",
+            "button_label": "Explore Now",
+            "block_position": "first"
+          }
+        },
+        "article_row_fQDY3m": {
+          "type": "article-row",
+          "settings": {
+            "article_1": "news/tops-on-top-the-galtsand-top-edit",
+            "article_2": "news/stay-active",
+            "article_3": "blogs/thanksgiving",
+            "text": "The Activewear Series",
+            "content": "men's and women's activewear pieces (yoga and sport only)",
+            "button_link": "",
+            "button_label": "Explore Now",
+            "block_position": "last"
+          }
+        }
+      },
+      "block_order": [
+        "article_row_YHAKwJ",
+        "article_row_bbL4qb",
+        "article_row_fQDY3m"
+      ],
+      "settings": {
+        "title": "Featured Shops",
+        "content": "highlight featured shops designed with our weekly lookbooks, updates, and campaigns"
+      }
+    },
     "section_list_collections_czR7hE": {
       "type": "section-list-collections",
       "blocks": {
@@ -907,59 +960,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 34
-      }
-    },
-    "section_article_column_tHbWhz": {
-      "type": "section-article-column",
-      "blocks": {
-        "article_row_YHAKwJ": {
-          "type": "article-row",
-          "settings": {
-            "article_1": "",
-            "article_2": "",
-            "article_3": "",
-            "text": "The Heritage Collection",
-            "content": "featured shop -",
-            "button_link": "",
-            "button_label": "Explore Now",
-            "block_position": "last"
-          }
-        },
-        "article_row_bbL4qb": {
-          "type": "article-row",
-          "settings": {
-            "article_1": "",
-            "article_2": "",
-            "article_3": "",
-            "text": "The Equestrian Edit",
-            "content": "featured shop",
-            "button_link": "",
-            "button_label": "Explore Now",
-            "block_position": "first"
-          }
-        },
-        "article_row_fQDY3m": {
-          "type": "article-row",
-          "settings": {
-            "article_1": "news/tops-on-top-the-galtsand-top-edit",
-            "article_2": "news/stay-active",
-            "article_3": "blogs/thanksgiving",
-            "text": "The Activewear Series",
-            "content": "men's and women's activewear pieces (yoga and sport only)",
-            "button_link": "",
-            "button_label": "Explore Now",
-            "block_position": "last"
-          }
-        }
-      },
-      "block_order": [
-        "article_row_YHAKwJ",
-        "article_row_bbL4qb",
-        "article_row_fQDY3m"
-      ],
-      "settings": {
-        "title": "Featured Shops",
-        "content": "highlight featured shops designed with our weekly lookbooks, updates, and campaigns"
       }
     },
     "blue_brand_value_section_FNQX3i": {
@@ -1202,8 +1202,8 @@
     "icons",
     "slide_new_DmLEXL",
     "section_collection_slider_wryWc6",
-    "section_list_collections_czR7hE",
     "section_article_column_tHbWhz",
+    "section_list_collections_czR7hE",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
     "customer_review_section_xAPmhf",
