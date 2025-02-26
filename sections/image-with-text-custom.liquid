@@ -21,7 +21,7 @@
       </picture>
     </div>
 {% endcapture %}
-<div class="image-with-text-section" data-section-id="{{ section.id }}">
+<div class="image-with-text-section {{ section.settings.width }}" data-section-id="{{ section.id }}">
   <div class="image-with-text-section__main-{{ section.id }} {{ section.settings.image_position }}">
     {% if image_position == 'left' %}
       {{ image_markup }}
@@ -144,7 +144,18 @@
         }
       ],
       "default": "right"
-    }
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
+    },
   ],
   "blocks": [
     {

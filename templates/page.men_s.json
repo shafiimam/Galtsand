@@ -1,0 +1,193 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 5,
+        "show_title": true,
+        "title_size": 9,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 50,
+        "padding_bottom": 12
+      }
+    },
+    "section_richtext_z49gFw": {
+      "type": "section-richtext",
+      "blocks": {
+        "heading_4HAKnN": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "text_size": 8
+          }
+        },
+        "text_FHgeB6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.content }}</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "heading_4HAKnN",
+        "text_FHgeB6"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "content_width": 800,
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_ae83ar": {
+      "type": "section-double",
+      "blocks": {
+        "text_PM8CcR": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "Men’s Collections.",
+            "text": "<p>Galtsand has a legacy of quality and excellence.</p>",
+            "font_size": 5,
+            "text_columns": 2,
+            "align_text": "text-left",
+            "text_color": "#006a50",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_TBrf9y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/men_s_collection_banner.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_PM8CcR",
+        "image_TBrf9y"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_card_column_Ydrkex": {
+      "type": "collection-card-column",
+      "blocks": {
+        "card_iPa633": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Joggers",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_633Bba": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Joggers",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_CxRLyT": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Sweatshirts & Hoodies",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_zHDFNg": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Shorts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "card_iPa633",
+        "card_633Bba",
+        "card_CxRLyT",
+        "card_zHDFNg"
+      ],
+      "settings": {
+        "background_color": "#660f28",
+        "width": "wrapper--full"
+      }
+    },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "best-sellers",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "",
+        "width": "wrapper--full"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_richtext_z49gFw",
+    "section_double_ae83ar",
+    "collection_card_column_Ydrkex",
+    "column_product_collection_bp8UTm"
+  ]
+}

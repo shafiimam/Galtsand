@@ -1,0 +1,168 @@
+<div class="column-product-collection-section">
+  <div class="column-product-collection-section__inner {{ section.settings.width }}">
+    {% if section.settings.title != blank %}
+      <h1 class="column-product-collection-section__title heading heading-lg font-heading text-center">
+        {{ section.settings.title }}
+      </h1>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <p class="column-product-collection-section__subtitle subheading font-subheading text-center">
+        {{ section.settings.subtitle }}
+      </p>
+    {% endif %}
+    {% if section.settings.collection != blank %}
+      {% assign collection = collections[section.settings.collection] %}
+      {% if collection != blank %}
+        <div class="column-product-collection-section__collection swiper">
+          <div class="column-product-collection-section__collection__inner collection-grid-swiper">
+            <div class="swiper-wrapper">
+              {% for product in section.settings.collection.products limit: 4 %}
+                <div class="swiper-slide">
+                  {% render 'product-grid-item', product: product %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% if section.settings.show_more_button == true %}
+            <div class="column-product-collection-section__collection__show-more text-center">
+              <a href="{{ section.settings.button_link }}" class="btn btn--large show-more-button">
+                {{- section.settings.button_label -}}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const collectionSwiper = new Swiper('.collection-grid-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  });
+</script>
+<style>
+  .column-product-collection-section {
+    padding-block: 120px;
+    @media only screen and (max-width: 768px) {
+      padding-block: 68px 0;
+    }
+  }
+  .column-product-collection-section__collection__inner .swiper-wrapepr{
+    width: 100%; 
+    justify-content: space-between;
+  }
+  .column-product-collection-section__title {
+    color: #006a50;
+    letter-spacing: -2.28px;
+  }
+  .column-product-collection-section__subtitle {
+    color: #006a50;
+    font-weight: 700;
+  }
+  .column-product-collection-section__collection__inner {
+    padding-block: 52px;
+  }
+  .collection-grid-swiper .swiper-slide {
+    width: calc(25% - 20px);
+  }
+  .column-product-collection-section__collection__show-more {
+    width: 100%;
+    @media only screen and (max-width: 768px) {
+      padding-block: 20px;
+    }
+  }
+  .column-product-collection-section__collection__show-more .show-more-button {
+    border: 2px solid #006A50;
+    background-color: transparent;
+    color: #006A50;
+  }
+  .column-product-collection-section__collection__show-more .show-more-button:hover {
+    background-color: #006A50;
+    color: #E6DBC4;
+    border: 2px solid #006A50;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Column Product Collection",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Best sellers",
+      "info": "Overrides the default collection title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_more_button",
+      "label": "Display Show more button",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Show more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Column Product Collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "best-sellers",
+        "show_more_button": false
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -148,11 +148,11 @@
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
+            "text_color": "#006a50",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
             "button_style": "btn-text-thick-line",
-            "text_color": "text--neutral",
             "bg_color": ""
           }
         }
@@ -208,11 +208,11 @@
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
+            "text_color": "#006a50",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
             "button_style": "btn-text-thick-line",
-            "text_color": "text--neutral",
             "bg_color": ""
           }
         },
