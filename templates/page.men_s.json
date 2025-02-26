@@ -110,7 +110,7 @@
         "borders": false,
         "bg_color": "",
         "preload_image": false,
-        "width": "wrapper",
+        "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -166,7 +166,20 @@
         "card_zHDFNg"
       ],
       "settings": {
-        "background_color": "#660f28"
+        "background_color": "#660f28",
+        "width": "wrapper--full"
+      }
+    },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "best-sellers",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "",
+        "width": "wrapper--full"
       }
     }
   },
@@ -174,6 +187,7 @@
     "main",
     "section_richtext_z49gFw",
     "section_double_ae83ar",
-    "collection_card_column_Ydrkex"
+    "collection_card_column_Ydrkex",
+    "column_product_collection_bp8UTm"
   ]
 }

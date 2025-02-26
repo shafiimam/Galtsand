@@ -81,7 +81,7 @@
         "preload_image": true,
         "content_width": 2000,
         "text_align": "align--middle-center",
-        "text_color": "text--neutral",
+        "text_color": "text--primary",
         "color_bg": "hero__content--transparent",
         "width": "wrapper--none",
         "padding_top": 0,
@@ -262,11 +262,11 @@
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
+            "text_color": "#006A50",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
             "button_style": "btn-text-thick-line",
-            "text_color": "text--neutral",
             "bg_color": "#f7f7f7"
           }
         }

@@ -1,5 +1,5 @@
 <div class="cards-section">
-  <div class="cards-section__inner">
+  <div class="cards-section__inner {{ section.settings.width }}">
     {% if section.settings.title != blank %}
       <div class="cards-section__title">
         <h1 class="heading">
@@ -14,7 +14,12 @@
             {% if block.settings.image %}
               <picture>
                 <source srcset="{{ block.settings.image | img_url: '300x' }}" media="(max-width: 600px)">
-                <img src="{{ block.settings.image | img_url: '600x' }}" alt="{{  block.settings.image.alt }}">
+                <img
+                  src="{{ block.settings.image | img_url: '600X' }}"
+                  alt="{{  block.settings.image.alt }}"
+                  height="{{ block.settings.image.height }}"
+                  width="{{ block.settings.image.width }}"
+                >
               </picture>
             {% endif %}
           </div>
@@ -41,14 +46,12 @@
   }
 
   .cards-section__cards {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 120px 48px;
+    padding-block: 120px ;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     @media only screen and (max-width: 768px) {
-      padding: 68px 20px;
+      padding-block: 68px;
     }
   }
   .block-card {
@@ -107,6 +110,17 @@
       "id": "background_color",
       "label": "Background Color",
       "default": "#006A50"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
     }
   ],
   "blocks": [

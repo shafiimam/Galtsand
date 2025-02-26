@@ -12204,7 +12204,7 @@ label.error {
   font-weight: var(--FONT-WEIGHT-BODY);
   font-size: 18px;
   line-height: normal;
-  font-family: 'EngraversGothicBT-Heavy';
+  font-family: "EngraversGothicBT-Heavy";
 }
 .radio__legend span {
   overflow: hidden;
@@ -12227,7 +12227,7 @@ label.error {
   flex: 0 0 auto;
 }
 .radio__legend__label {
-  font-family: 'EngraversGothicBT-Heavy';
+  font-family: "EngraversGothicBT-Heavy";
   font-style: var(--FONT-STYLE-ACCENT);
   text-transform: none;
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
@@ -12285,15 +12285,15 @@ label.error {
   color: #102345;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.radio__fieldset .radio__button label:hover, 
-.radio__fieldset .radio__button label:active, 
+.radio__fieldset .radio__button label:hover,
+.radio__fieldset .radio__button label:active,
 .radio__fieldset .radio__button label:focus {
   color: #102345;
   background-color: var(--hairline);
   border: 2px solid #102345;
 }
 .radio__fieldset .radio__button input:checked ~ label {
-  color: #E6DBC4;
+  color: #e6dbc4;
   background-color: #102345;
   border: 1px solid rgba(255, 255, 255, 0);
 }
@@ -20605,7 +20605,7 @@ body.focus-enabled .subcollection__link:focus {
   #Breadcrumbs
 ============================================================================== */
 .breadcrumb {
-  font-family: 'EngraversGothicBT-Heavy';
+  font-family: "EngraversGothicBT-Heavy";
   font-style: var(--FONT-STYLE-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
@@ -20810,7 +20810,7 @@ a.product__form__link:after {
   align-items: center;
 }
 .product__price {
-  font-family: 'EngraversGothicBT-Heavy';
+  font-family: "EngraversGothicBT-Heavy";
   font-style: normal;
   font-weight: 700;
   text-transform: none;
@@ -21342,7 +21342,7 @@ a.product__form__link:after {
   max-width: 450px;
   width: 100%;
   background: #660f28;
-  color: #E6DBC4;
+  color: #e6dbc4;
   border-right: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 3px 12px rgba(0, 0, 0, 0.02);
   transform: translate3d(-100%, 0, 0);
@@ -23225,7 +23225,7 @@ countdown-timer {
 .quantity__button:hover,
 .quantity__button:focus,
 .quantity__button:active {
-  color: #660F28;
+  color: #660f28;
   outline: none;
 }
 .quantity__button:active {
@@ -25106,10 +25106,10 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
 .quickview__modal .product__title {
   font-size: calc(var(--font-7) * var(--FONT-ADJUST-HEADING));
   line-height: var(--leading-snug);
-  color: #E6DBC4;
+  color: #e6dbc4;
 }
 .quickview__modal .product__price {
-  color: #E6DBC4;
+  color: #e6dbc4;
 }
 .quickview__modal .product__price {
   font-size: calc(16px * var(--FONT-ADJUST-BODY));
