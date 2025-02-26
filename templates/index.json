@@ -296,7 +296,7 @@
         "slide_EzRiEK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
+            "image": "shopify://shop_images/Galtsand_Paris_-21.jpg",
             "kicker": "30% Off Holiday Collection.",
             "heading": "Limited Edition Vintage Re-releases",
             "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
@@ -309,7 +309,6 @@
         },
         "slide_88XhrA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
             "kicker": "30% Off Holiday Collection.",
@@ -331,7 +330,7 @@
       "settings": {
         "header_text": "The New Heights - our latest collection",
         "header_h3text": "Description about the new collection",
-        "collection": "outdoor-collection",
+        "collection": "bras",
         "product_list": [],
         "sticky_image_enable": true,
         "swap": false,
@@ -830,6 +829,24 @@
         "footer_text": "View Original"
       }
     },
+    "section_collection_slider_wryWc6": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "the-galtsand-holiday-shop",
+        "product_limit": 12,
+        "title": "top choices to elevate your wardrobe with versatile pieces for every adventure.",
+        "content": "Our Peak Picks",
+        "align_text": "title-center",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "section_list_collections_czR7hE": {
       "type": "section-list-collections",
       "blocks": {
@@ -905,24 +922,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 34
-      }
-    },
-    "section_collection_slider_wryWc6": {
-      "type": "section-collection-slider",
-      "settings": {
-        "collection": "the-galtsand-holiday-shop",
-        "product_limit": 12,
-        "title": "top choices to elevate your wardrobe with versatile pieces for every adventure.",
-        "content": "Our Peak Picks",
-        "align_text": "title-center",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--bright bg--bright",
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "blue_brand_value_section_FNQX3i": {
@@ -1189,8 +1188,8 @@
     "collection_split_ekgGeV",
     "icons",
     "slide_new_DmLEXL",
-    "section_list_collections_czR7hE",
     "section_collection_slider_wryWc6",
+    "section_list_collections_czR7hE",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
     "section_article_column_tHbWhz",
