@@ -7,8 +7,87 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
+    "section_video_player_QatipC": {
+      "type": "section-video-player",
+      "disabled": true,
+      "settings": {
+        "video": "shopify://files/videos/for-TV-Long-format.MP4",
+        "video_link": "",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_video_pMeAkR": {
+      "type": "section-video",
+      "blocks": {
+        "kicker_J7gwDp": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Vel sodales urna vitae",
+            "enable_line": false,
+            "text_size": 4
+          }
+        },
+        "heading_LyNC4T": {
+          "type": "heading",
+          "settings": {
+            "title": "Where Heritage Meets Innovation in Athleisure.",
+            "text_size": 10
+          }
+        },
+        "text_EXaa7j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Galtsand has a legacy of quality and excellence. We ensure every product meets high standards, showcasing our passion for craftsmanship and innovation.</p>",
+            "text_size": 6
+          }
+        },
+        "button_kqzzcW": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "DYSCOVER THE STORY",
+            "link_1": "",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "SHOP NOW",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn",
+            "button_color_2": "btn--primary",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_J7gwDp",
+        "heading_LyNC4T",
+        "text_EXaa7j",
+        "button_kqzzcW"
+      ],
+      "settings": {
+        "height": "use_screen_two_thirds",
+        "color_bg": "palette--light bg--neutral",
+        "video_bg": "shopify://files/videos/for-TV-Long-format.MP4",
+        "object_position": "center-center",
+        "preload_image": false,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "hero": {
       "type": "section-hero",
       "blocks": {
@@ -70,6 +149,7 @@
         "banner-text",
         "banner-button"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-WebVersion-Banner_v3.png",
@@ -81,7 +161,7 @@
         "preload_image": true,
         "content_width": 2000,
         "text_align": "align--middle-center",
-        "text_color": "text--primary",
+        "text_color": "text--neutral",
         "color_bg": "hero__content--transparent",
         "width": "wrapper--none",
         "padding_top": 0,
@@ -176,7 +256,7 @@
     "about_us_section_xikFig": {
       "type": "about_us_section",
       "settings": {
-        "image_1": "shopify://shop_images/Untitled_design_17_6ed70243-93be-414e-8350-071b3c1a4aed.png",
+        "image_1": "shopify://shop_images/hike.png",
         "image_1_alt": "heritage",
         "image_2": "shopify://shop_images/Heritage1-4Zip_AcademyGreen_M-6_bb51fe40-555c-4417-9f43-ae21fb73a653.jpg",
         "image_2_alt": "heritage",
@@ -194,97 +274,6 @@
         "description_4": "Etiam maecenas dignissim id fermentum in lacinia. Id massa commodo in faucibus. Aliquam id ut augue nulla ut. Massa semper mi et libero sagittis quisque velit molestie netus. Eget tortor lacus sit volutpat erat ornare turpis proin. Ac lobortis feugiat sed nisi gravida. Cursus turpis vulputate quis leo praesent venenatis posuere habitant. Urna sit sit nunc vulputate massa lacus porttitor quis est.",
         "btn_name": "Learn More",
         "btn_link": "shopify://pages/about-us1"
-      }
-    },
-    "tabs": {
-      "type": "section-collection-tabs",
-      "blocks": {
-        "tab-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-shop-all",
-            "title": "Gentleman's Collection"
-          }
-        },
-        "tab-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "women",
-            "title": "Ladies Collection"
-          }
-        }
-      },
-      "block_order": [
-        "tab-0",
-        "tab-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Shop Our Top Collections",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1.2,
-        "limit": 6,
-        "bg": "palette--dark bg--invert",
-        "width": "wrapper",
-        "padding_top": 64,
-        "padding_bottom": 36
-      }
-    },
-    "double": {
-      "type": "section-double",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October-27.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-center",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "",
-            "button_color": "btn--white",
-            "button_style": "btn"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "kicker": "Image with text",
-            "title": "",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "font_size": 5,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "text_color": "#006A50",
-            "button_text": "",
-            "button_url": "",
-            "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
-            "bg_color": "#f7f7f7"
-          }
-        }
-      },
-      "block_order": [
-        "image",
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "use_screen_two_thirds",
-        "brick_gutter": 0,
-        "borders": false,
-        "bg_color": "",
-        "preload_image": false,
-        "width": "wrapper--none",
-        "padding_top": 36,
-        "padding_bottom": 0
       }
     },
     "collection-split-section-1": {
@@ -1183,11 +1172,11 @@
     }
   },
   "order": [
+    "section_video_player_QatipC",
+    "section_video_pMeAkR",
     "hero",
     "section_logos_E3KxjC",
     "about_us_section_xikFig",
-    "tabs",
-    "double",
     "collection-split-section-1",
     "collection-split-section-2",
     "product-grid",
