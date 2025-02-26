@@ -283,9 +283,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/CF81441.jpg",
-            "kicker": "30% Off Holiday Collection.",
-            "heading": "Limited Edition Vintage Re-releases",
-            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
+            "kicker": "SS25",
+            "heading": "Get Ready for New Heights",
+            "sub_text": "Climb higher in style – our Spring collection takes your wardrobe to new elevations.",
             "text_color": "text--invert--primary",
             "link_text": "Shop the Deals",
             "link": "shopify://collections/bottoms",
@@ -296,7 +296,7 @@
         "slide_EzRiEK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
+            "image": "shopify://shop_images/Galtsand_Paris_-21.jpg",
             "kicker": "30% Off Holiday Collection.",
             "heading": "Limited Edition Vintage Re-releases",
             "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
@@ -309,7 +309,6 @@
         },
         "slide_88XhrA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
             "kicker": "30% Off Holiday Collection.",
@@ -329,9 +328,9 @@
         "slide_88XhrA"
       ],
       "settings": {
-        "header_text": "Outdoor Collection",
+        "header_text": "The New Heights - our latest collection",
         "header_h3text": "Description about the new collection",
-        "collection": "outdoor-collection",
+        "collection": "bras",
         "product_list": [],
         "sticky_image_enable": true,
         "swap": false,
@@ -891,8 +890,8 @@
         "collection_TJCfxp"
       ],
       "settings": {
-        "title": "Elevate your adventure",
-        "small_text": "from summit to street",
+        "title": "The Peaks of Chic",
+        "small_text": "From mountain peaks to city streets, elevate every step of your adventure.",
         "bg": "palette--light bg--neutral",
         "carousel_enabled_on": "mobile",
         "wh_ratio": 0.8,
@@ -912,8 +911,8 @@
       "settings": {
         "collection": "the-galtsand-holiday-shop",
         "product_limit": 12,
-        "title": "Highlight top-selling products or new arrivals",
-        "content": "",
+        "title": "top choices to elevate your wardrobe with versatile pieces for every adventure.",
+        "content": "Our Peak Picks",
         "align_text": "title-center",
         "progress_bar": "mobile",
         "grid_large": 4,
@@ -985,9 +984,9 @@
           "type": "review",
           "settings": {
             "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
-            "reviewer_image": "shopify://shop_images/Untitled_design_17_6ed70243-93be-414e-8350-071b3c1a4aed.png",
-            "reviewer_name": "Name Surname",
-            "reviewer_role": "Athlete"
+            "reviewer_image": "shopify://shop_images/GALTSANDEQUESTRIAN-199.jpg",
+            "reviewer_name": "Scarlett Siskind",
+            "reviewer_role": "Equestrian"
           }
         },
         "review_XNNyXm": {
@@ -1025,8 +1024,8 @@
         "review_Ka8GMA"
       ],
       "settings": {
-        "main_title": "Why Our Customers Love Galtsand",
-        "subtitle": "Handcrafted by our expert designers."
+        "main_title": "Why Ambassadors Love Galtsand",
+        "subtitle": "Reviews from galtsand ambassadors"
       }
     },
     "social_media_rWB4KY": {
