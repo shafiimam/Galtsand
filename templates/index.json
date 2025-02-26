@@ -296,7 +296,7 @@
         "slide_EzRiEK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Galtsand_Paris_-21.jpg",
+            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
             "kicker": "30% Off Holiday Collection.",
             "heading": "Limited Edition Vintage Re-releases",
             "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
@@ -309,6 +309,7 @@
         },
         "slide_88XhrA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
             "kicker": "30% Off Holiday Collection.",
@@ -330,7 +331,7 @@
       "settings": {
         "header_text": "The New Heights - our latest collection",
         "header_h3text": "Description about the new collection",
-        "collection": "bras",
+        "collection": "outdoor-collection",
         "product_list": [],
         "sticky_image_enable": true,
         "swap": false,
