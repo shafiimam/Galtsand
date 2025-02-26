@@ -909,32 +909,81 @@
         "padding_bottom": 34
       }
     },
-    "blue_brand_value_section_FNQX3i": {
-      "type": "blue_brand_value_section",
+    "section_list_collections_FQUEDF": {
+      "type": "section-list-collections",
+      "blocks": {
+        "collection_yw9MWg": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-men",
+            "image": "shopify://shop_images/020A8709-Edit.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Essential style, taken to the next level.",
+            "top_text_disabled": false,
+            "title": "EVERYDAY ELEVATED",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_8HePr6": {
+          "type": "collection",
+          "settings": {
+            "collection": "heritage",
+            "image": "shopify://shop_images/202308151018.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "From summit to street, always at your peak.",
+            "top_text_disabled": false,
+            "title": "PEAK PERFORMANCE",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_zLwpWf": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-130.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Effortlessly chic pieces for the active lifestyle.",
+            "top_text_disabled": false,
+            "title": "ACTIVE ELEGANCE",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "collection_yw9MWg",
+        "collection_8HePr6",
+        "collection_zLwpWf"
+      ],
       "settings": {
-        "left_image": "shopify://shop_images/WashedTee_WashedOpticWhite_M-5_a7275846-6718-4bec-a5e5-41cff6d91946.jpg",
-        "logo": "shopify://shop_images/Frame_3.png",
-        "title": "Brand Values Section",
-        "paragraph": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
-        "button_link": "",
-        "button_text": "See How We Do It",
-        "right_image_type": "image",
-        "right_image": "shopify://shop_images/WashedTee_WashedKhaki_M-1_14d5dfc7-f209-4b36-aa3a-5f2e9a5197c1.jpg",
-        "right_video": ""
-      }
-    },
-    "icons_values_section_h9PbHK": {
-      "type": "icons_values_section",
-      "settings": {
-        "icon_1": "shopify://shop_images/mdi_recycle.png",
-        "title_1": "Sustainably Made",
-        "text_1": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
-        "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
-        "title_2": "American Craftsmanship",
-        "text_2": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
-        "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
-        "title_3": "Athletic Heritage",
-        "text_3": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio."
+        "title": "Galtsand Originals",
+        "small_text": "Our orignal collections featured here like heritage, yoga",
+        "bg": "palette--light bg--neutral",
+        "carousel_enabled_on": "mobile",
+        "wh_ratio": 0.8,
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "font_family": "body",
+        "title_size": 8,
+        "accent_size": 3,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 34
       }
     },
     "section_article_column_tHbWhz": {
@@ -988,6 +1037,34 @@
       "settings": {
         "title": "Weekly Lookbook Updates and Campaigns",
         "content": "Handcrafted by our expert designers."
+      }
+    },
+    "blue_brand_value_section_FNQX3i": {
+      "type": "blue_brand_value_section",
+      "settings": {
+        "left_image": "shopify://shop_images/WashedTee_WashedOpticWhite_M-5_a7275846-6718-4bec-a5e5-41cff6d91946.jpg",
+        "logo": "shopify://shop_images/Frame_3.png",
+        "title": "Brand Values Section",
+        "paragraph": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "button_link": "",
+        "button_text": "See How We Do It",
+        "right_image_type": "image",
+        "right_image": "shopify://shop_images/WashedTee_WashedKhaki_M-1_14d5dfc7-f209-4b36-aa3a-5f2e9a5197c1.jpg",
+        "right_video": ""
+      }
+    },
+    "icons_values_section_h9PbHK": {
+      "type": "icons_values_section",
+      "settings": {
+        "icon_1": "shopify://shop_images/mdi_recycle.png",
+        "title_1": "Sustainably Made",
+        "text_1": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
+        "title_2": "American Craftsmanship",
+        "text_2": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
+        "title_3": "Athletic Heritage",
+        "text_3": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio."
       }
     },
     "customer_review_section_xAPmhf": {
@@ -1203,9 +1280,10 @@
     "slide_new_DmLEXL",
     "section_collection_slider_wryWc6",
     "section_list_collections_czR7hE",
+    "section_list_collections_FQUEDF",
+    "section_article_column_tHbWhz",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
-    "section_article_column_tHbWhz",
     "customer_review_section_xAPmhf",
     "social_media_rWB4KY",
     "our_boutiques_mhwpF4"
