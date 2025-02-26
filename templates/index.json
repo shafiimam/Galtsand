@@ -73,7 +73,7 @@
         "button_kqzzcW"
       ],
       "settings": {
-        "height": "use_screen_two_thirds",
+        "height": "use_screen_three_quarters",
         "color_bg": "palette--light bg--neutral",
         "video_bg": "shopify://files/videos/for-TV-Long-format.MP4",
         "object_position": "center-center",
