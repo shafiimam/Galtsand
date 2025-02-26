@@ -330,7 +330,7 @@
       "settings": {
         "header_text": "Outdoor Collection",
         "header_h3text": "Description about the new collection",
-        "collection": "bras",
+        "collection": "outdoor-collection",
         "product_list": [],
         "sticky_image_enable": true,
         "swap": false,
