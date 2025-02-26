@@ -268,7 +268,7 @@
         "description_1": "Gravida aliquam proin ullamcorper dolor scelerisque dignissim. Facilisis tortor lacus viverra tellus volutpat ullamcorper eu diam. Amet amet blandit vulputate vulputate leo aliquet neque id diam. Mauris vitae sed sed scelerisque.\nEget sagittis lectus felis quis velit purus cras malesuada. Purus neque nisi ut tellus tellus posuere. Ac sagittis massa suspendisse mi nisi duis. Sed pretium pretium augue amet vel.",
         "subtitle_2": "Pioneers of the Round-Neck Sweatshirt",
         "description_2": "Dignissim eleifend amet sit ultrices tempor sollicitudin in sed. Elit elementum ante sit consectetur. Sed nisl arcu turpis massa sit neque phasellus ac pellentesque. Cras nunc non fermentum mi pellentesque. Consectetur ut ipsum at faucibus nisl est vehicula at blandit.",
-        "subtitle_3": "In facilisis malesuada viverra massa augue urna.",
+        "subtitle_3": "Intro to outdoor collection",
         "description_3": "Congue ipsum sit cursus sapien eu integer. Accumsan eu risus non tristique sit. Adipiscing tincidunt morbi erat sapien ultrices amet gravida tincidunt. Amet sem integer purus euismod amet. Tortor cum ultrices sodales condimentum eget aliquam. Ut dui lorem libero viverra.",
         "subtitle_4": "Quis Donec",
         "description_4": "Etiam maecenas dignissim id fermentum in lacinia. Id massa commodo in faucibus. Aliquam id ut augue nulla ut. Massa semper mi et libero sagittis quisque velit molestie netus. Eget tortor lacus sit volutpat erat ornare turpis proin. Ac lobortis feugiat sed nisi gravida. Cursus turpis vulputate quis leo praesent venenatis posuere habitant. Urna sit sit nunc vulputate massa lacus porttitor quis est.",
@@ -328,8 +328,8 @@
         "slide_88XhrA"
       ],
       "settings": {
-        "header_text": "Curated Collections",
-        "header_h3text": "Handcarfted by our expert designers",
+        "header_text": "Outdoor Collection",
+        "header_h3text": "Description about the new collection",
         "collection": "bras",
         "product_list": [],
         "sticky_image_enable": true,
@@ -890,8 +890,8 @@
         "collection_TJCfxp"
       ],
       "settings": {
-        "title": "Featured Collections",
-        "small_text": "Handcrafted By Our Expert Designer",
+        "title": "Elevate your adventure",
+        "small_text": "from summit to street",
         "bg": "palette--light bg--neutral",
         "carousel_enabled_on": "mobile",
         "wh_ratio": 0.8,
