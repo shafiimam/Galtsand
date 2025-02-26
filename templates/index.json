@@ -309,6 +309,7 @@
         },
         "slide_88XhrA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Galtsand_Paris_-223.jpg",
             "kicker": "30% Off Holiday Collection.",
