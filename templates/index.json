@@ -81,7 +81,7 @@
         "text_align": "align--middle-center",
         "text_color": "text--white",
         "overlay_opacity": 15,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "enable_overlay_text": false,
         "width": "wrapper--none",
         "padding_top": 0,
@@ -256,7 +256,7 @@
     "about_us_section_xikFig": {
       "type": "about_us_section",
       "settings": {
-        "image_1": "shopify://shop_images/Untitled_design_17_6ed70243-93be-414e-8350-071b3c1a4aed.png",
+        "image_1": "shopify://shop_images/hike.png",
         "image_1_alt": "heritage",
         "image_2": "shopify://shop_images/Heritage1-4Zip_AcademyGreen_M-6_bb51fe40-555c-4417-9f43-ae21fb73a653.jpg",
         "image_2_alt": "heritage",
