@@ -1,15 +1,21 @@
 <!-- /sections/section-list-collections-products.liquid -->
 <style>
   .cl .kicker-flourished {
-    font-family: 'exmouth' !important;
-    font-size: 8rem;
-    /* color: #E6DBC4; */
+    color: #e6dbc4;
+    text-align: center;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
     text-transform: none;
-    font-weight: 100;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    text-align: left;
-    letter-spacing: 1px;
+    line-height: 70%;
+    margin-bottom: 0;
+  }
+  .collection-section-subtitle {
+    color: #e6dbc4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%; /* 16px */
   }
   .js-grid[data-grid-large='4'] {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -43,7 +49,7 @@
     font-family: 'EngraversGothicBT-Heavy' !important;
   }
 </style>
-{%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
+{%- assign product_limit = section.settings.grid -%}
 {%- assign has_custom_blocks = false -%}
 {%- assign excluded_collections_strict = settings.exclude_collections_strict | split: ',' -%}
 {%- assign excluded_collections = settings.exclude_collections_contain | split: ',' -%}
@@ -66,8 +72,13 @@
 >
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
-      <h2 class="kicker-flourished mb-r11">{{ section.settings.title }}</h2>
+      <h2 class="kicker-flourished font-body">{{ section.settings.title }}</h2>
     {%- endif -%}
+    {% if section.settings.subttitle %}
+      <p class="text-base font-body text-center collection-section-subtitle">
+        {{ section.settings.subttitle }}
+      </p>
+    {% endif %}
 
     {% unless has_custom_blocks %}
       {% for collection in collections %}
@@ -110,12 +121,7 @@
       {% for block in section.blocks %}
         {%- if block.type == 'collection' -%}
           {%- assign collection = collections[block.settings.collection] -%}
-          {% for block in section.blocks %}
-            {% capture block_card_position %}
-              {% cycle 'last', 'first' %}
-            {% endcapture %}
-          {% endfor %}
-          {% assign card_position = block_card_position | strip %}
+          {% assign block_card_position = block.settings.block_card_position %}
           {% render 'collection-row',
             collection: collection,
             product_limit: product_limit,
@@ -130,14 +136,140 @@
             item_link_size: block.settings.link_size,
             item_text_color: block.settings.text_color,
             block: block,
-            block_card_position: card_position
+            block_card_position: block_card_position
           %}
         {%- endif -%}
       {% endfor %}
     {% endunless %}
+    {% for block in section.blocks %}
+      {% if block.type == 'button' %}
+        <div class="section-button-container">
+          <a href="{{ block.settings.link }}" class="btn btn--primary btn--large">{{ block.settings.link_text }}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 
+<style>
+  .collection-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 52px;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .collection-list-item:nth-last-of-type(n+3) {
+    border-bottom: 2px solid #e6dbc4;
+  }
+  @media only screen and (max-width: 768px) {
+    .collection-list-item.first {
+      flex-direction: column-reverse;
+    }
+  }
+  .collection-list-item .js-grid {
+    width: calc(75% - var(--gutter));
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .collection-list-item .collection-list__block {
+    width: 25%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .collection-list-item p.grid__swatch__placeholder {
+    color: #e6dbc4;
+  }
+  .collection-block-card__content {
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+  }
+  .collection-block-card__content h1 {
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #006a50;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%
+  }
+  .collection-block-card__content p {
+    color: #006A50;
+    font-family: "Inter Tight";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+  }
+  .collection-list__product .quickview span {
+    color: #e6dbc4;
+  }
+  .collection-list__product .product__grid__title {
+    color: #e6dbc4;
+  }
+  .collection-list__product .product__grid__price {
+    color: #e6dbc4;
+  }
+  .collection-block-card__content .standard__cta {
+    color: #E6DBC4;
+    background: #006A50;
+    font-family: "Engravers Gothic";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    border: 2.5px solid #006A50;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .collection-block-card__content .standard__cta:hover {
+    background-color: #e6dbc4 !important;
+    color: #006a50 !important;
+    border: 2.5px solid #006a50;
+  }
+
+  .collection-block-card__content h1 {
+    font-size: 40px;
+  }
+  .collection-block-card__content p {
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    .wrapper--full .kicker-flourished {
+      font-size: 39px;
+    }
+  }
+  .collection-block-card{
+    height: 100%;
+  }
+  .collection-block-card-link {
+    height: 100%;
+    background-color: {{ item_background | default: '#fcfaf7' }};
+    position: relative;
+    display: block;
+  }
+
+  .collection-block-card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    padding: 20px;
+    background-color: #E6DBC4
+  }
+  .section-button-container{
+    display: flex;
+    justify-content: center;
+  }
+</style>
 {% schema %}
 {
   "name": "Collection product grid",
@@ -151,6 +283,12 @@
       "id": "title",
       "label": "Title",
       "default": "Catalog"
+    },
+    {
+      "type": "text",
+      "id": "subttitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
     },
     {
       "type": "select",
@@ -239,6 +377,23 @@
     }
   ],
   "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    },
     {
       "type": "all_collections",
       "name": "All collections",
@@ -380,6 +535,22 @@
           "max": 12,
           "step": 1,
           "default": 3
+        },
+        {
+          "type": "select",
+          "id": "block_card_position",
+          "label": "Block Card Position",
+          "options": [
+            {
+              "value": "first",
+              "label": "First"
+            },
+            {
+              "value": "last",
+              "label": "Last"
+            }
+          ],
+          "default": "first"
         }
       ]
     }

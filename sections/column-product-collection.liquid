@@ -22,6 +22,7 @@
                 </div>
               {% endfor %}
             </div>
+            <div class="swiper-scrollbar"></div>
           </div>
           {% if section.settings.show_more_button == true %}
             <div class="column-product-collection-section__collection__show-more text-center">
@@ -41,6 +42,10 @@
       loop: true,
       slidesPerView: 1,
       spaceBetween: 20,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
       breakpoints: {
         640: {
           slidesPerView: 1,

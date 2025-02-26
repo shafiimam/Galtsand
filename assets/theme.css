@@ -19812,11 +19812,9 @@ label.quatity-selector {
 .no-js .collection__nav {
   display: none;
 }
-.collection-list-item + .collection-list-item {
-  margin-top: 60px;
-}
+
 .collection-list-item:first-of-type {
-  padding-top: 20px;
+  padding-top: 52px;
 }
 .kicker-flourished + .collection-list-item {
   padding-top: 0;
