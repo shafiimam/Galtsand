@@ -182,6 +182,7 @@
         "accordion_block_3_1",
         "accordion_block_3_2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Warranty & Repair",
         "title_align": "text-left",
@@ -193,6 +194,33 @@
         "width": "wrapper--narrow",
         "padding_top": 64,
         "padding_bottom": 64
+      }
+    },
+    "section_faq_GkdRNA": {
+      "type": "section-faq",
+      "blocks": {
+        "text_9C9h6J": {
+          "type": "text",
+          "settings": {
+            "title": "I have a question that wasn't answered, would you please help?",
+            "content": "<p>Absolutely! We are here to help you! Please send us an email at hello@galtsand.us and we will be happy to assist you in any way we can. We do receive a large number of emails, If you wish to get a prompt response please attach your order number and address the problem clearly, Thanks</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9C9h6J"
+      ],
+      "settings": {
+        "title": "More",
+        "title_align": "text-left",
+        "title_size": 6,
+        "heading_size": 5,
+        "text_size": 4,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "accordion-section-4": {
@@ -318,6 +346,7 @@
     "accordion-section-1",
     "accordion-section-2",
     "accordion-section-3",
+    "section_faq_GkdRNA",
     "accordion-section-4",
     "icons"
   ]
