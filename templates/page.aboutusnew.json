@@ -65,7 +65,7 @@
         "text_NLfjhk": {
           "type": "text",
           "settings": {
-            "text": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand began with a mission to unite the world through sport. From the beginning, we’ve believed that sport is more than movement, it’s a universal language that bridges generations, backgrounds, and cultures, bringing people together in a shared experience.",
+            "text": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand was built on the belief that dressing is a universal language, one that unites generations, cultures, and communities. With over five decades of textile expertise, the brand has mastered the craft of creating timeless pieces, athleisure, and accessories that honor heritage while embracing modern movement.Designed with purpose and precision, each piece is a tribute to craftsmanship, resilience, and the stories carried by those who wear them. Classic silhouettes are reimagined, blending archival influences with contemporary design, ensuring that every garment is made not just to be worn, but to be lived in.Galtsand’s commitment to quality and innovation extends to its meticulous sourcing and expert craftsmanship. Every fabric is carefully selected, every stitch considered, ensuring garments that stand the test of time. From its origins in sportswear to its evolution into a brand that bridges heritage and modernity, Galtsand continues to create pieces that move with you, both in style and in spirit",
             "text_align": "left"
           }
         },
@@ -84,7 +84,8 @@
       "settings": {
         "image": "shopify://shop_images/StandardCalssicPolo_DarkestNavy_Medium-1_90c3649d-e0a9-4ba1-99da-068c239fe286.jpg",
         "remove_top_padding": false,
-        "image_position": "right"
+        "image_position": "right",
+        "width": "wrapper--none"
       }
     },
     "image_with_text_custom_JNzaej": {
@@ -107,7 +108,8 @@
       "settings": {
         "image": "shopify://shop_images/DSC59704.jpg",
         "remove_top_padding": true,
-        "image_position": "left"
+        "image_position": "left",
+        "width": "wrapper--none"
       }
     },
     "section_image_4qDMtM": {
@@ -297,7 +299,8 @@
       "settings": {
         "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
         "remove_top_padding": true,
-        "image_position": "left"
+        "image_position": "left",
+        "width": "wrapper--none"
       }
     },
     "image_with_text_custom_QkCrnc": {
@@ -317,7 +320,8 @@
       "settings": {
         "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
         "remove_top_padding": true,
-        "image_position": "left"
+        "image_position": "left",
+        "width": "wrapper--none"
       }
     },
     "image_with_text_custom_BmDRyG": {
@@ -337,7 +341,8 @@
       "settings": {
         "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
         "remove_top_padding": true,
-        "image_position": "left"
+        "image_position": "left",
+        "width": "wrapper--none"
       }
     }
   },
