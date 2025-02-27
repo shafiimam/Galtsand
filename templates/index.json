@@ -679,61 +679,6 @@
         "padding_bottom": 36
       }
     },
-    "icons": {
-      "type": "section-icons",
-      "blocks": {
-        "icons-0": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-basket-return",
-            "icon_color": "#aaaaaa",
-            "title": "Free returns",
-            "text": "<p>Returns within 30 days receive a full refund.</p>",
-            "link_text": "",
-            "link_url": ""
-          }
-        },
-        "icons-1": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-shipment-world",
-            "icon_color": "#aaaaaa",
-            "title": "Worldwide shipping",
-            "text": "<p>Ship anywhere, rates available at checkout.</p>",
-            "link_text": "",
-            "link_url": ""
-          }
-        },
-        "icons-2": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-phone",
-            "icon_color": "#aaaaaa",
-            "title": "24/7 support",
-            "text": "<p>Call us anytime at 1(800) 555-1234.</p>",
-            "link_text": "",
-            "link_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "icons-0",
-        "icons-1",
-        "icons-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "bg": "palette--light bg--neutral",
-        "icons_size": 30,
-        "icon_alignment": "icon--top",
-        "layout": "grid--stacked",
-        "align_text": "text-center",
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "section_collection_slider_wryWc6": {
       "type": "section-collection-slider",
       "settings": {
@@ -961,6 +906,103 @@
         "subtitle": "Reviews from galtsand ambassadors"
       }
     },
+    "section_richtext_LKLc9B": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_6jgV3c": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "Introducing",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "heading_P7PMnH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Follow Us On Instagram",
+            "text_size": 13
+          }
+        },
+        "text_CN3kfj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        },
+        "button_LwfWzR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "Shop all",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--medium",
+            "button_style_1": "btn-text-thick-line",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_6jgV3c",
+        "heading_P7PMnH",
+        "text_CN3kfj",
+        "button_LwfWzR"
+      ],
+      "custom_css": [
+        "p {font-family: \"Exmouth\"; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "section_richtext_eXqxyf": {
+      "type": "section-richtext",
+      "blocks": {
+        "text_RmEaLn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "text_RmEaLn"
+      ],
+      "custom_css": [
+        "p {font-family: \"EngraversGothicBT-Heavy\";}"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "17406720812673b98f": {
       "type": "apps",
       "blocks": {
@@ -1146,13 +1188,14 @@
     "section_before_after_fCxeWU",
     "section_product_zBPAN6",
     "collection_split_ekgGeV",
-    "icons",
     "section_collection_slider_wryWc6",
     "section_article_column_tHbWhz",
     "section_list_collections_czR7hE",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
     "customer_review_section_xAPmhf",
+    "section_richtext_LKLc9B",
+    "section_richtext_eXqxyf",
     "17406720812673b98f",
     "social_media_rWB4KY",
     "our_boutiques_mhwpF4"
