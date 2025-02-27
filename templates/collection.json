@@ -57,8 +57,15 @@
       "blocks": {
         "collections": {
           "type": "collections",
+          "disabled": true,
           "settings": {
             "title": "All collections"
+          }
+        },
+        "nav_links_YD8z3a": {
+          "type": "nav_links",
+          "settings": {
+            "collection_linklist": "product-type"
           }
         },
         "filters": {
@@ -68,6 +75,7 @@
       },
       "block_order": [
         "collections",
+        "nav_links_YD8z3a",
         "filters"
       ],
       "settings": {
