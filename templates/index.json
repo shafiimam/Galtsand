@@ -276,61 +276,6 @@
         "btn_link": "shopify://pages/about-us1"
       }
     },
-    "collection-split-section-1": {
-      "type": "collection-split",
-      "blocks": {
-        "slide_VcEiJa": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/CF81441.jpg",
-            "kicker": "SS25",
-            "heading": "Get Ready for New Heights",
-            "sub_text": "Climb higher in style – our Spring collection takes your wardrobe to new elevations.",
-            "text_color": "text--invert--primary",
-            "link_text": "Shop THE NEW SEASON",
-            "link": "shopify://collections/bottoms",
-            "button_color": "btn--primary",
-            "button_style": "btn"
-          }
-        },
-        "slide_EzRiEK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
-            "kicker": "30% Off Holiday Collection.",
-            "heading": "Limited Edition Vintage Re-releases",
-            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
-            "text_color": "text--invert--primary",
-            "link_text": "Shop the Deals",
-            "link": "shopify://collections/bottoms",
-            "button_color": "btn--primary",
-            "button_style": "btn"
-          }
-        }
-      },
-      "block_order": [
-        "slide_VcEiJa",
-        "slide_EzRiEK"
-      ],
-      "settings": {
-        "header_text": "Elevated Heights - our latest collection",
-        "header_h3text": "Description about the new collection",
-        "collection": "outdoor-collection",
-        "product_list": [],
-        "sticky_image_enable": true,
-        "swap": false,
-        "overlay_opacity": 15,
-        "overlay_color": "#000000",
-        "grid_large": 2,
-        "grid_small": 1.2,
-        "limit": 4,
-        "bg": "palette--bright bg--bright",
-        "object_position": "center-center",
-        "width": "wrapper--none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "collection-split-section-2": {
       "type": "collection-split",
       "disabled": true,
@@ -460,6 +405,83 @@
         "width": "wrapper--none",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "section_list_collections_czR7hE": {
+      "type": "section-list-collections",
+      "blocks": {
+        "collection_PXxHma": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-men",
+            "image": "shopify://shop_images/020A8709-Edit.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Essential style, taken to the next level.",
+            "top_text_disabled": false,
+            "title": "EVERYDAY ELEVATED",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_bVzrVP": {
+          "type": "collection",
+          "settings": {
+            "collection": "heritage",
+            "image": "shopify://shop_images/202308151018.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "From summit to street, always at your peak.",
+            "top_text_disabled": false,
+            "title": "PEAK PERFORMANCE",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_TJCfxp": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-130.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "Effortlessly chic pieces for the active lifestyle.",
+            "top_text_disabled": false,
+            "title": "ACTIVE ELEGANCE",
+            "title_disabled": false,
+            "bottom_text": "Explore Collection",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "collection_PXxHma",
+        "collection_bVzrVP",
+        "collection_TJCfxp"
+      ],
+      "settings": {
+        "title": "The Peaks of Chic",
+        "small_text": "From mountain peaks to city streets, elevate every step of your adventure.",
+        "bg": "palette--light bg--neutral",
+        "carousel_enabled_on": "mobile",
+        "wh_ratio": 0.8,
+        "grid_large": 3,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "font_family": "body",
+        "title_size": 8,
+        "accent_size": 3,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 34
       }
     },
     "logos": {
@@ -657,6 +679,61 @@
         "padding_bottom": 36
       }
     },
+    "collection-split-section-1": {
+      "type": "collection-split",
+      "blocks": {
+        "slide_VcEiJa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/CF81441.jpg",
+            "kicker": "SS25",
+            "heading": "Get Ready for New Heights",
+            "sub_text": "Climb higher in style – our Spring collection takes your wardrobe to new elevations.",
+            "text_color": "text--invert--primary",
+            "link_text": "Shop THE NEW SEASON",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        },
+        "slide_EzRiEK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
+            "kicker": "30% Off Holiday Collection.",
+            "heading": "Limited Edition Vintage Re-releases",
+            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
+            "text_color": "text--invert--primary",
+            "link_text": "Shop the Deals",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VcEiJa",
+        "slide_EzRiEK"
+      ],
+      "settings": {
+        "header_text": "Elevated Heights",
+        "header_h3text": "our latest drop",
+        "collection": "outdoor-collection",
+        "product_list": [],
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--bright bg--bright",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_split_ekgGeV": {
       "type": "collection-split",
       "disabled": true,
@@ -695,83 +772,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "section_list_collections_czR7hE": {
-      "type": "section-list-collections",
-      "blocks": {
-        "collection_PXxHma": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-men",
-            "image": "shopify://shop_images/020A8709-Edit.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "Essential style, taken to the next level.",
-            "top_text_disabled": false,
-            "title": "EVERYDAY ELEVATED",
-            "title_disabled": false,
-            "bottom_text": "Explore Collection",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        },
-        "collection_bVzrVP": {
-          "type": "collection",
-          "settings": {
-            "collection": "heritage",
-            "image": "shopify://shop_images/202308151018.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "From summit to street, always at your peak.",
-            "top_text_disabled": false,
-            "title": "PEAK PERFORMANCE",
-            "title_disabled": false,
-            "bottom_text": "Explore Collection",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        },
-        "collection_TJCfxp": {
-          "type": "collection",
-          "settings": {
-            "collection": "women",
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-130.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "Effortlessly chic pieces for the active lifestyle.",
-            "top_text_disabled": false,
-            "title": "ACTIVE ELEGANCE",
-            "title_disabled": false,
-            "bottom_text": "Explore Collection",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        }
-      },
-      "block_order": [
-        "collection_PXxHma",
-        "collection_bVzrVP",
-        "collection_TJCfxp"
-      ],
-      "settings": {
-        "title": "The Peaks of Chic",
-        "small_text": "From mountain peaks to city streets, elevate every step of your adventure.",
-        "bg": "palette--light bg--neutral",
-        "carousel_enabled_on": "mobile",
-        "wh_ratio": 0.8,
-        "grid_large": 3,
-        "grid_medium": 3,
-        "grid_mobile": 1.2,
-        "font_family": "body",
-        "title_size": 8,
-        "accent_size": 3,
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 34
       }
     },
     "section_article_column_tHbWhz": {
@@ -1137,17 +1137,17 @@
     "hero",
     "section_logos_E3KxjC",
     "about_us_section_xikFig",
-    "collection-split-section-1",
     "collection-split-section-2",
     "product-grid",
     "section_look_bmmDrc",
     "custom",
+    "section_list_collections_czR7hE",
     "logos",
     "section_before_after_fCxeWU",
     "section_product_zBPAN6",
+    "collection-split-section-1",
     "collection_split_ekgGeV",
     "section_collection_slider_wryWc6",
-    "section_list_collections_czR7hE",
     "section_article_column_tHbWhz",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
