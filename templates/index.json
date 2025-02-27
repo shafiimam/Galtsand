@@ -1047,7 +1047,7 @@
         "instafeed_app_block_gy8XAk": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "Move With Us On Insta",
+            "title": "",
             "title_color": "#660f28",
             "alignment": "center",
             "background_color": "",
