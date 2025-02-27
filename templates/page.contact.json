@@ -112,6 +112,7 @@
         "faq-3",
         "faq-4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "title_align": "text-left",
@@ -156,7 +157,7 @@
             "icon_name": "icon-phone",
             "icon_color": "#e6dbc4",
             "title": "24/7 support",
-            "text": "<p>Call us anytime at 1(800) 555-1234.</p>",
+            "text": "<p>Email us anytime at hello@galtsand.us</p>",
             "link_text": "",
             "link_url": ""
           }
