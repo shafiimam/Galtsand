@@ -909,58 +909,16 @@
     "section_richtext_LKLc9B": {
       "type": "section-richtext",
       "blocks": {
-        "kicker_6jgV3c": {
-          "type": "kicker",
-          "disabled": true,
-          "settings": {
-            "kicker": "Introducing",
-            "enable_line": true,
-            "text_size": 4
-          }
-        },
         "heading_P7PMnH": {
           "type": "heading",
           "settings": {
             "heading": "Follow Us On Instagram",
             "text_size": 13
           }
-        },
-        "text_CN3kfj": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_size": 4,
-            "text_columns": 1
-          }
-        },
-        "button_LwfWzR": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link_text_1": "Shop all",
-            "link_1": "shopify://collections/all",
-            "button_size_1": "btn--medium",
-            "button_style_1": "btn-text-thick-line",
-            "button_color_1": "btn--neutral",
-            "link_text_2": "",
-            "link_2": "",
-            "button_size_2": "btn--medium",
-            "button_style_2": "btn-text-thick-line",
-            "button_color_2": "btn--neutral",
-            "link_text_3": "",
-            "link_3": "",
-            "button_size_3": "btn--long",
-            "button_style_3": "btn-text-thick-line",
-            "button_color_3": "btn--white"
-          }
         }
       },
       "block_order": [
-        "kicker_6jgV3c",
-        "heading_P7PMnH",
-        "text_CN3kfj",
-        "button_LwfWzR"
+        "heading_P7PMnH"
       ],
       "custom_css": [
         "p {font-family: \"Exmouth\"; letter-spacing: 1px;}"
@@ -970,7 +928,7 @@
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
         "content_width": 2000,
-        "width": "wrapper",
+        "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 0
       }
