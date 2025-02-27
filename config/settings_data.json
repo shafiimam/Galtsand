@@ -85,6 +85,11 @@
         "type": "shopify://apps/restock-rooster/blocks/restock-rooster-button/2f682ae2-c8b5-4598-a3ae-4cf8e3ce00af",
         "disabled": false,
         "settings": {}
+      },
+      "1232542678405107163": {
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
