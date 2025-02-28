@@ -49,7 +49,7 @@
           "type": "button",
           "settings": {
             "link_text_1": "DYSCOVER THE STORY",
-            "link_1": "",
+            "link_1": "shopify://pages/about-us1",
             "button_size_1": "btn--long",
             "button_style_1": "btn",
             "button_color_1": "btn--white",
