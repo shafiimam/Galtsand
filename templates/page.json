@@ -54,8 +54,8 @@
         "align_text": "text-center",
         "text_color": "text--black",
         "bg": "palette--light bg--neutral",
-        "content_width": 800,
-        "width": "wrapper--narrow",
+        "content_width": 2000,
+        "width": "wrapper",
         "padding_top": 36,
         "padding_bottom": 0
       }
