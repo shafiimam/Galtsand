@@ -193,8 +193,8 @@
         "accordion_block_3_0": {
           "type": "text",
           "settings": {
-            "title": "Do you offer warranty for your products?",
-            "content": "<p>All our products are subject to quality control.<br/><br/>Our warranty provides a guarantee against manufacturer defects.<br/><br/>The guarantee covers any manufacturing, design, or material defect. Please notify us within 2 months of noticing any defects.<br/><br/>It does not cover blows, improper use, or other issues that are not attributable to a manufacturer defects.</p>"
+            "title": "What payment options do you accept?",
+            "content": "<p>We accept <strong>Visa, MasterCard, American Express, and Discover</strong>. Your card will only be charged once your order has been shipped.</p><p>You can also choose to pay securely via <strong>PayPal</strong> or <strong>Shop Pay</strong>, allowing you greater flexibility with your payments.</p>"
           }
         },
         "accordion_block_3_1": {
@@ -217,9 +217,8 @@
         "accordion_block_3_1",
         "accordion_block_3_2"
       ],
-      "disabled": true,
       "settings": {
-        "title": "Warranty & Repair",
+        "title": "Payment",
         "title_align": "text-left",
         "title_size": 6,
         "heading_size": 5,
