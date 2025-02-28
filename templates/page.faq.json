@@ -43,9 +43,9 @@
       "settings": {
         "title": "Account",
         "title_align": "text-left",
-        "title_size": 4,
+        "title_size": 6,
         "heading_size": 5,
-        "text_size": 5,
+        "text_size": 4,
         "text_color": "text--bright--secondary",
         "bg": "palette--bright bg--bright--accent",
         "width": "wrapper--narrow",
