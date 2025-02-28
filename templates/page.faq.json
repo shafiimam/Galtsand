@@ -26,6 +26,33 @@
         "padding_bottom": 50
       }
     },
+    "section_faq_DxFJBT": {
+      "type": "section-faq",
+      "blocks": {
+        "text_BqcQYF": {
+          "type": "text",
+          "settings": {
+            "title": "Can I create an account?",
+            "content": "<p>Sign up for an account today <a href=\"https://galtsand.com/account/login\" title=\"https://galtsand.com/account/login\">here </a>and  enjoy the following exclusive benefits</p><p>• Track your orders and review past purchases<br/>• Save your addresses for quicker check out<br/>• Manage your account details, address book and email preferences</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_BqcQYF"
+      ],
+      "settings": {
+        "title": "Account",
+        "title_align": "text-left",
+        "title_size": 4,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--bright--secondary",
+        "bg": "palette--bright bg--bright--accent",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "accordion-section-1": {
       "type": "section-faq",
       "blocks": {
@@ -60,8 +87,8 @@
         "text_nDRMMV": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "content": "<p>We take great care to ensure that all our products are of the highest quality. However, if you receive an item that is damaged or develops a manufacturing fault within <strong>three months</strong> of purchase, we will be happy to assist you.</p><p>If you believe your item is faulty, please contact our customer service team at <strong>help@galtsand.us</strong> with your order number, a brief description of the issue, and clear photos of the fault. We will review your request and arrange for a suitable resolution, which may include a replacement, repair, or refund.</p><p>Please note that after <strong>three months</strong> from the order date, items are no longer considered faulty and are regarded as general wear and tear from regular use.</p><p>We appreciate your understanding and are here to help if you need any assistance.</p><p>If your item is faulty upon receipt, you may return it for a refund following this link https://galtsand.returnscenter.com/</p>"
+            "title": "What if my item is faulty?",
+            "content": "<p>We take great care to ensure that all our products are of the highest quality. However, if you receive an item that is damaged or develops a manufacturing fault within <strong>three months</strong> of purchase, we will be happy to assist you.</p><p>If you believe your item is faulty, please contact our customer service team at <strong>help@galtsand.us</strong> with your order number, a brief description of the issue, and clear photos of the fault. We will review your request and arrange for a suitable resolution, which may include a replacement, repair, or refund.</p><p>Please note that after <strong>three months</strong> from the order date, items are no longer considered faulty and are regarded as general wear and tear from regular use.</p><p>We appreciate your understanding and are here to help if you need any assistance.</p><p>If your item is faulty upon receipt, you may return it for a refund following this link <a href=\"https://galtsand.returnscenter.com/\" title=\"https://galtsand.returnscenter.com/\">Return Center</a></p>"
           }
         }
       },
@@ -351,6 +378,7 @@
   },
   "order": [
     "main",
+    "section_faq_DxFJBT",
     "accordion-section-1",
     "accordion-section-2",
     "accordion-section-3",
