@@ -26,42 +26,69 @@
         "padding_bottom": 50
       }
     },
+    "section_faq_6x89FH": {
+      "type": "section-faq",
+      "blocks": {
+        "text_kWetUL": {
+          "type": "text",
+          "settings": {
+            "title": "How can I contact you?",
+            "content": "<p>If you need any assistance, please don’t hesitate to contact our customer service team via email at <a href=\"mailto:hello@galtsand.us\">hello@galtsand.us</a>. We aim to respond to all inquiries within 24 hours and are happy to assist with any questions or issues.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_kWetUL"
+      ],
+      "settings": {
+        "title": "Customer Service",
+        "title_align": "text-left",
+        "title_size": 6,
+        "heading_size": 5,
+        "text_size": 4,
+        "text_color": "text--bright--secondary",
+        "bg": "palette--bright bg--bright--accent",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "accordion-section-1": {
       "type": "section-faq",
       "blocks": {
         "accordion_block_1_1": {
           "type": "text",
           "settings": {
-            "title": "I'm not in love with my order, can it be returned? What if there is an issue",
-            "content": "<p>We offer a full refund within 30 days of your return request. Once we receive the returned product, we will process a full refund to your original payment method. Please ensure the parcel includes the original invoice or packing slip.</p><p><strong>Note:</strong> If your package is still in transit, you must wait for it to arrive before initiating the return process and receiving a refund.</p>"
+            "title": "I’m not completely satisfied with my order—may I return it? And what should I do if there is an issue?",
+            "content": "<p>We are pleased to offer a full refund within 30 days of your return request. Please visit our Returns Center for further instructions. Once we have received the returned item and approved it, we will process the refund to your original payment method within 5 business days. Please note, if your package is still in transit, we kindly ask that you wait for it to arrive before initiating the return process and receiving a refund.<br/></p>"
           }
         },
         "accordion_block_1_2": {
           "type": "text",
           "settings": {
-            "title": "Where is my return?",
-            "content": "<p>Once your return package is en route to our warehouse, the return process initiates. Upon receiving and inspecting the return, we will inform you of its acceptance or decline. This procedure may take up to 5 business days from the Delivered status in your return tracking information. Kindly allow up to 7 business days for the refund to be processed to your original payment method.</p>"
+            "title": "May you provide an update on the status of my return?",
+            "content": "<p>Once you have completed the returns process through our Returns Centre and sent your package back to our warehouse, your return will be officially underway. After we receive and inspect your return, we will notify you whether it has been accepted or declined. This process may take up to 5 business days from the date your return tracking status shows as Delivered. If approved, please allow up to 5 business days for the refund to be processed back to your original payment method.<br/></p>"
           }
         },
         "accordion_block_1_3": {
           "type": "text",
           "settings": {
-            "title": "May I exchange my item?",
-            "content": "<p>At this time we are not able to offer exchanges. We recommend requesting a return and placing a new order for the new item. Once your return is received at our warehouse and processed, you will receive a refund back to your original payment method.</p>"
+            "title": "May I exchange an item for a different one?",
+            "content": "<p>At present, we are unable to offer exchanges. We kindly recommend that you request a return and place a new order for the desired item. Once your return has been received and processed at our warehouse, a refund will be issued to your original payment method.<br/></p>"
           }
         },
         "accordion_block_1_4": {
           "type": "text",
           "settings": {
-            "title": "May you help with a damage item?",
-            "content": "<p>We apologize that you received a damaged item. Kindly send a photo of the damaged product, along with your information, to hello@galtsand.us and we will gladly assist you in finding a resolution. Please be aware that any damaged items reported beyond the 30-day return window are ineligible for return or refund.</p>"
+            "title": "May you help with a damaged item?",
+            "content": "<p>We sincerely apologize that you have received a damaged item. Kindly send a photo of the damaged product, along with your details, to <a href=\"mailto:hello@galtsand.us\">hello@galtsand.us</a> and we will be more than happy to assist you in resolving the issue. Please note that items reported as damaged beyond the 30-day return window are unfortunately ineligible for return or refund.<br/></p>"
           }
         },
         "text_nDRMMV": {
           "type": "text",
           "settings": {
             "title": "What if my item is faulty?",
-            "content": "<p>We take great care to ensure that all our products are of the highest quality. However, if you receive an item that is damaged or develops a manufacturing fault within <strong>three months</strong> of purchase, we will be happy to assist you.</p><p>If you believe your item is faulty, please contact our customer service team at <strong>help@galtsand.us</strong> with your order number, a brief description of the issue, and clear photos of the fault. We will review your request and arrange for a suitable resolution, which may include a replacement, repair, or refund.</p><p>Please note that after <strong>three months</strong> from the order date, items are no longer considered faulty and are regarded as general wear and tear from regular use.</p><p>We appreciate your understanding and are here to help if you need any assistance.</p><p>If your item is faulty upon receipt, you may return it for a refund following this link <a href=\"https://galtsand.returnscenter.com/\" title=\"https://galtsand.returnscenter.com/\">Return Center</a></p>"
+            "content": "<p>Items are considered faulty if they are received damaged or if a manufacturing fault occurs within 3 months of purchase. After this period, items are not regarded as faulty and may be deemed as showing signs of normal wear and tear.<br/></p>"
           }
         }
       },
@@ -85,19 +112,129 @@
         "padding_bottom": 64
       }
     },
+    "section_faq_idJMGV": {
+      "type": "section-faq",
+      "blocks": {
+        "text_VJKEUP": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer free shipping?",
+            "content": "<p>We offer free shipping on orders over $300. Please refer to our shipping policy for the specific amount and details. For orders under this threshold, standard shipping rates apply.<br/></p>"
+          }
+        },
+        "text_mEDbDC": {
+          "type": "text",
+          "settings": {
+            "title": "How long will it take to receive my order?",
+            "content": "<p>Once your order is placed, please allow 3-5 business days for processing. Domestic orders typically arrive within 5-7 business days from shipment, while international orders can take up to 25 days, depending on the destination. Shipping times may vary during busy periods, so we encourage you to sign up for our email list with real-time announcements on shipping information.<br/></p>"
+          }
+        },
+        "text_fWVABi": {
+          "type": "text",
+          "settings": {
+            "title": "May I change the shipping method for my order?",
+            "content": "<p>Once an order is placed and processing has begun, the shipping method cannot be changed. If you need to expedite your shipping, we recommend contacting us at <a href=\"mailto:hello@galtsand.us\">hello@galtsand.us</a> as soon as possible, and we will do our best to assist.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_VJKEUP",
+        "text_mEDbDC",
+        "text_fWVABi"
+      ],
+      "settings": {
+        "title": "Shipping & Delivery",
+        "title_align": "text-left",
+        "title_size": 6,
+        "heading_size": 5,
+        "text_size": 4,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_pEgLpg": {
+      "type": "section-faq",
+      "blocks": {
+        "text_xr3bUH": {
+          "type": "text",
+          "settings": {
+            "title": "What if my size is out of stock?",
+            "content": "<p>If your size is currently out of stock, please feel free to reach out to us at <a href=\"mailto:hello@galtsand.com\">hello@galtsand.com</a>, and we will be happy to check when your desired size will be available. Additionally, you can join our waitlist to receive notifications as soon as it's back in stock. We restock items regularly and are committed to offering the sizes you need.<br/></p>"
+          }
+        },
+        "text_aVzARX": {
+          "type": "text",
+          "settings": {
+            "title": "How do I know if an item is in stock?",
+            "content": "<p>All available items on our website are in stock, unless marked as \"Out of Stock\" or \"On Backorder.\" If an item is out of stock, you can contact us or sign up for notifications to be alerted when it’s back in stock.<br/></p>"
+          }
+        },
+        "text_fzRH8a": {
+          "type": "text",
+          "settings": {
+            "title": "How often do you restock items?",
+            "content": "<p>We restock our items based on a variety of factors, including the popularity of each product and the availability of materials. While we aim to restock regularly, the timing can vary depending on these factors. To make sure you're the first to know when your desired items are back in stock, we recommend joining our waitlist. You’ll receive notifications as soon as they're available again.<br/></p>"
+          }
+        },
+        "text_wxEHjy": {
+          "type": "text",
+          "settings": {
+            "title": "Will styles be restocked in the same color or style?",
+            "content": "<p>While we do restock our most popular items, there may be instances where certain colors or styles are no longer available. We occasionally introduce new colours or limited-edition styles, so if you're interested in a specific look, it's a good idea to join the waitlist to be notified when similar items become available.<br/></p>"
+          }
+        },
+        "text_feXrbL": {
+          "type": "text",
+          "settings": {
+            "title": "Do you restock items from past collections?",
+            "content": "<p>Due to the exclusive nature of our collections, past styles may not always be restocked. However, we occasionally re-release fan favorites, and reproduce key items from our core collections, or launch new collections inspired by past designs. Be sure to sign up for our email list to stay up-to-date on the latest releases and restocks.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_xr3bUH",
+        "text_aVzARX",
+        "text_fzRH8a",
+        "text_wxEHjy",
+        "text_feXrbL"
+      ],
+      "settings": {
+        "title": "Restocks",
+        "title_align": "text-left",
+        "title_size": 6,
+        "heading_size": 5,
+        "text_size": 4,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "section_faq_DxFJBT": {
       "type": "section-faq",
       "blocks": {
         "text_BqcQYF": {
           "type": "text",
           "settings": {
-            "title": "Can I create an account?",
-            "content": "<p>Sign up for an account today <a href=\"https://galtsand.com/account/login\" title=\"https://galtsand.com/account/login\">here </a>and  enjoy the following exclusive benefits</p><p>• Track your orders and review past purchases<br/>• Save your addresses for quicker check out<br/>• Manage your account details, address book and email preferences</p>"
+            "title": "May I create an account?",
+            "content": "<p>Certainly! You can register for an account here: www.galtsand.com and enjoy the following benefits:<br/></p><ul><li>Track your orders and review past purchases</li><li>Save your addresses for quicker checkout</li><li>Manage your account details, address book, and email preferences</li></ul>"
+          }
+        },
+        "text_LMUgNA": {
+          "type": "text",
+          "settings": {
+            "title": "What if I need help on my account?",
+            "content": "<p>If you need assistance with your account, please feel free to reach out to our customer support team. You can contact us via email at <a href=\"mailto:help@galtsand.us\">hel</a><a href=\"mailto:lo@galtsand.us\">lo@galtsand.us</a> and we will be more than happy to assist you with any account-related queries.<br/></p>"
           }
         }
       },
       "block_order": [
-        "text_BqcQYF"
+        "text_BqcQYF",
+        "text_LMUgNA"
       ],
       "settings": {
         "title": "Account",
@@ -118,50 +255,43 @@
         "accordion_block_2_0": {
           "type": "text",
           "settings": {
-            "title": "I just placed an order, when will it ship?",
-            "content": "<p>We try our best to ship items as fast as we can usually within 24 to 48 hours.</p>"
+            "title": "When do you restock sold out items?",
+            "content": "<p>We are working diligently to restock our items as soon as possible. In the meantime, please visit the product page and click on <strong>Join The Waitlist</strong> for the item you desire, and you’ll be among the first to be notified when it is back in stock.<br/></p>"
           }
         },
         "accordion_block_2_1": {
           "type": "text",
           "settings": {
-            "title": "I have entered an incorrect address, what do i do now?",
-            "content": "<p>If you notice a misspelled or incorrect address in your order confirmation, simply reply to the email and confirm the correct details. Please double-check the address before notifying us. If the address provided is incorrect, you can email us within 24 hours to request a correction. Unfortunately, no changes or refunds can be made after this 24-hour window.</p>"
+            "title": "Where is my order?",
+            "content": "<p>Once your order is placed, kindly allow three to five business days for it to be packed and shipped from our warehouse. As soon as your order is dispatched, you will receive an email containing your tracking information, so you can monitor your package’s progress online. Please allow up to 7 business days for delivery for orders within the United States, and up to 25 days for international orders from the date your order is shipped.<br/></p>"
           }
         },
         "accordion_block_2_2": {
           "type": "text",
           "settings": {
-            "title": "How long does shipping take?",
-            "content": "<p>Shipping times vary as we do ship worldwide from different fulfillment centers based on your location. The average shipping time is 5-25 business days.</p>"
+            "title": "My package is missing, can you help?",
+            "content": "<p>We’re truly sorry to hear that your package is missing. Please reach out to us at <a href=\"mailto:help@galtsand.us\">hello@galtsand.us</a> with your order details, and we’ll investigate the issue as quickly as possible. We’ll work with you to resolve it and ensure your order gets to you.<br/></p>"
           }
         },
         "accordion_block_2_3": {
           "type": "text",
           "settings": {
-            "title": "When will you restock items?",
-            "content": "<p>Due to high demand, you may find that some of our items are currently unavailable. We are working hard to do restocks as efficiently as possible. We appreciate your patience.</p>"
+            "title": "Do you ship internationally?",
+            "content": "<p>Yes, we are pleased to offer both standard and express shipping options to most countries. For further details on international shipping, including any applicable fees or restrictions, please refer to our shipping policy or contact our customer service team for assistance. We are committed to ensuring a smooth and efficient delivery experience for our international customers.<br/></p>"
           }
         },
         "accordion_block_2_4": {
           "type": "text",
           "settings": {
-            "title": "Where is my order?",
-            "content": "<p>After placing an order, please allow a processing time of two to four business days for packing and shipping from our warehouse. Once shipped, an email containing your tracking information will be sent for online package tracking. The delivery time from the shipping date to your location may take up to 25 business days, depending on your location.</p>"
+            "title": "May I change address information on my current order?",
+            "content": "<p>Once an order is placed, it begins processing immediately and, regrettably, cannot typically be altered or stopped. However, if your order has already shipped and you need to amend any address details, we recommend contacting the relevant shipping carrier directly. Please bear in mind that making changes to addresses or shipping methods may impact delivery processing times and could incur additional fees, which would be payable directly to the carrier.<br/></p>"
           }
         },
         "text_xXQMaa": {
           "type": "text",
           "settings": {
-            "title": "My parcel is missing, would you please help?",
-            "content": "<p>Please contact us at help@galtsand.us if you have not received your order and we would be happy to assist.</p>"
-          }
-        },
-        "text_WKpUa8": {
-          "type": "text",
-          "settings": {
-            "title": "Do you ship globally?",
-            "content": "<p>Yes, we offer standard and express shipping options to most countries.</p>"
+            "title": "Will I have to pay import duties on my international order?",
+            "content": "<p>Any international order may be subject to import duties and taxes upon arrival, depending on the destination country’s regulations. These charges are the responsibility of the customer and are not included in the price of the order. We recommend checking with your local customs office for further details.<br/></p>"
           }
         }
       },
@@ -171,8 +301,7 @@
         "accordion_block_2_2",
         "accordion_block_2_3",
         "accordion_block_2_4",
-        "text_xXQMaa",
-        "text_WKpUa8"
+        "text_xXQMaa"
       ],
       "settings": {
         "title": "Orders & Tracking",
@@ -194,32 +323,39 @@
           "type": "text",
           "settings": {
             "title": "What payment options do you accept?",
-            "content": "<p>We accept <strong>Visa, MasterCard, American Express, and Discover</strong>. Your card will only be charged once your order has been shipped.</p><p>You can also choose to pay securely via <strong>PayPal</strong> or <strong>Shop Pay</strong>, allowing you greater flexibility with your payments.</p>"
+            "content": "<p>We accept <strong>Visa, MasterCard, American Express, and Discover</strong>. Your card will only be charged once your order has been shipped. You can also choose to pay securely via <strong>PayPal</strong> or <strong>Shop Pay</strong>, allowing you greater flexibility with your payments.<br/></p>"
           }
         },
         "accordion_block_3_1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "title": "Do you offer extended warranty?",
-            "content": "<p>An extended warranty can be added to your products for an additional cost.<br/><br/>Please get in touch for more information about extended warranties.</p>"
+            "title": "How may I get a Galtsand discount?",
+            "content": "<p>The best way to stay informed about our exclusive discounts and limited-time offers, such as our exclusive mystery box deals, is by signing up for our email list or creating an account with us. By joining, you’ll be the first to receive notifications about special promotions and super deals. Please note that only discounts provided directly by Galtsand are valid, and third-party discount codes will not be accepted. Sign up today to ensure you never miss out on our best offers.<br/></p>"
           }
         },
         "accordion_block_3_2": {
           "type": "text",
           "settings": {
-            "title": "How can i get a Galtsand discount?",
-            "content": "<p>The extended warranty could come at a different cost depending on the type of product and extended period.<br/><br/>Please get in touch for more information.</p>"
+            "title": "Why Isn’t My Discount Code Working?",
+            "content": "<p>If your discount code isn't working, please feel free to reach out to us at <a href=\"mailto:hello@galtsand.com\">hello@galtsand.com</a>, and we'll be happy to assist you. Please note that our discount codes are single-use only, and cannot be reused if an order is cancelled or returned. If the code is eligible but not applying, we recommend double-checking that it has been entered correctly, ensuring there are no extra spaces. We’re here to help if you need further assistance.<br/></p>"
+          }
+        },
+        "text_9Fe4B9": {
+          "type": "text",
+          "settings": {
+            "title": "May I pay using gift cards?",
+            "content": "<p>Yes, we accept original Galtsand gift cards as a valid payment method during checkout. Please ensure you have the card details and codes ready when completing your purchase.<br/></p>"
           }
         }
       },
       "block_order": [
         "accordion_block_3_0",
         "accordion_block_3_1",
-        "accordion_block_3_2"
+        "accordion_block_3_2",
+        "text_9Fe4B9"
       ],
       "settings": {
-        "title": "Payment",
+        "title": "Payment & Discounts",
         "title_align": "text-left",
         "title_size": 6,
         "heading_size": 5,
@@ -237,16 +373,32 @@
         "text_9C9h6J": {
           "type": "text",
           "settings": {
-            "title": "I have a question that wasn't answered, would you please help?",
-            "content": "<p>Absolutely! We are here to help you! Please send us an email at hello@galtsand.us and we will be happy to assist you in any way we can. We do receive a large number of emails, If you wish to get a prompt response please attach your order number and address the problem clearly, Thanks</p>"
+            "title": "How is Galtsand practicing environmental responsibility?",
+            "content": "<p>At Galtsand, we are dedicated to making a positive impact on the environment. We aim to use recycled materials wherever possible, ensuring our products are crafted with sustainability in mind. Our manufacturers operate with solar panels to reduce energy consumption, and we continue to explore eco-friendly production methods. We are committed to creating fashion that respects the natural environment, from the materials we use to the way we create each piece, with the goal of reducing our carbon footprint and promoting a more sustainable future.<br/></p>"
+          }
+        },
+        "text_6KK4R9": {
+          "type": "text",
+          "settings": {
+            "title": "Are your factory workers paid a fair wage?",
+            "content": "<p>At Galtsand, we take pride in our roots in manufacturing and the strong relationships we have built with our partners. Our executive team, with extensive experience in the manufacturing industry, ensures that all warehouse and factory workers are paid fair wages, work in safe environments, and have access to healthy working conditions. We strictly oversee every aspect of our manufacturing operations to guarantee ethical practices, prioritising the well-being of those who help create our products. This commitment to fairness and responsibility is integral to how we do business.<br/></p>"
+          }
+        },
+        "text_tHxT3w": {
+          "type": "text",
+          "settings": {
+            "title": "Do you have an affiliate program?",
+            "content": "<p>Our influencer program is currently invite-only. If you’d like to apply, please feel free to reach out to us at <a href=\"mailto:hello@galtsand.us\">hello@galtsand.us</a>, and we’ll be happy to review your application.<br/></p>"
           }
         }
       },
       "block_order": [
-        "text_9C9h6J"
+        "text_9C9h6J",
+        "text_6KK4R9",
+        "text_tHxT3w"
       ],
       "settings": {
-        "title": "More",
+        "title": "ABOUT US",
         "title_align": "text-left",
         "title_size": 6,
         "heading_size": 5,
@@ -378,7 +530,10 @@
   },
   "order": [
     "main",
+    "section_faq_6x89FH",
     "accordion-section-1",
+    "section_faq_idJMGV",
+    "section_faq_pEgLpg",
     "section_faq_DxFJBT",
     "accordion-section-2",
     "accordion-section-3",
