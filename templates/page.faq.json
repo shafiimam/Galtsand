@@ -199,6 +199,7 @@
         },
         "accordion_block_3_1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Do you offer extended warranty?",
             "content": "<p>An extended warranty can be added to your products for an additional cost.<br/><br/>Please get in touch for more information about extended warranties.</p>"
@@ -207,7 +208,7 @@
         "accordion_block_3_2": {
           "type": "text",
           "settings": {
-            "title": "How much does extended warranty cost?",
+            "title": "How can i get a Galtsand discount?",
             "content": "<p>The extended warranty could come at a different cost depending on the type of product and extended period.<br/><br/>Please get in touch for more information.</p>"
           }
         }
