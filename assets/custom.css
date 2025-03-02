@@ -55,7 +55,7 @@
 }
 .font-body,
 .font-subheading {
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-body) !important;
 }
 .footer__column p {
   color: var(--text-dark);

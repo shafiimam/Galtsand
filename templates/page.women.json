@@ -14,223 +14,238 @@
       "disabled": true,
       "settings": {
         "kicker": "",
-        "kicker_size": 3,
+        "kicker_size": 5,
         "show_title": true,
-        "title_size": 8,
+        "title_size": 9,
         "show_content": true,
         "content_size": 5,
-        "align_text": "text-left",
-        "text_color": "text--neutral",
+        "align_text": "text-center",
+        "text_color": "text--black",
         "bg": "palette--light bg--neutral",
         "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 50,
+        "padding_bottom": 12
       }
     },
-    "section_hero_rMUqDq": {
-      "type": "section-hero",
+    "section_richtext_z49gFw": {
+      "type": "section-richtext",
       "blocks": {
-        "kicker_fThBiV": {
-          "type": "kicker",
-          "settings": {
-            "kicker": "Introducing",
-            "enable_line": false,
-            "text_size": 4
-          }
-        },
-        "heading_netpW8": {
+        "heading_4HAKnN": {
           "type": "heading",
           "settings": {
-            "title": "From Yoga To Beyond",
-            "text_size": 10
+            "heading": "{{ page.title }}",
+            "text_size": 8
           }
         },
-        "text_mNhtYM": {
+        "text_FHgeB6": {
           "type": "text",
           "settings": {
-            "richtext": "<p>We've got you covered.</p>",
-            "text_size": 6
-          }
-        },
-        "button_WqwhFp": {
-          "type": "button",
-          "settings": {
-            "link_text_1": "View All",
-            "link_1": "shopify://collections/women",
-            "button_size_1": "btn--long",
-            "button_style_1": "btn",
-            "button_color_1": "btn--white",
-            "link_text_2": "",
-            "link_2": "",
-            "button_size_2": "btn--long",
-            "button_style_2": "btn-text-thick-line",
-            "button_color_2": "btn--white",
-            "link_text_3": "",
-            "link_3": "",
-            "button_size_3": "btn--long",
-            "button_style_3": "btn-text-thick-line",
-            "button_color_3": "btn--white"
+            "text": "<p>{{ page.content }}</p>",
+            "text_size": 4,
+            "text_columns": 1
           }
         }
       },
       "block_order": [
-        "kicker_fThBiV",
-        "heading_netpW8",
-        "text_mNhtYM",
-        "button_WqwhFp"
+        "heading_4HAKnN",
+        "text_FHgeB6"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/collage_women_08f8da0a-dfa1-4b97-b2da-6098c78ba088.jpg",
-        "height": "use_screen_two_thirds",
-        "overlay_opacity": 15,
-        "overlay_color": "#000",
-        "enable_overlay_text": false,
-        "preload_image": false,
-        "content_width": 2000,
-        "text_align": "align--middle-center",
-        "text_color": "text--white",
-        "color_bg": "hero__content--transparent",
-        "width": "wrapper--none",
-        "padding_top": 0,
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "content_width": 800,
+        "width": "wrapper--narrow",
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
-    "section_mosaic_wRGkaT": {
-      "type": "section-mosaic",
+    "section_double_ae83ar": {
+      "type": "section-double",
       "blocks": {
-        "collection_f99Qe3": {
-          "type": "collection",
+        "text_PM8CcR": {
+          "type": "text",
           "settings": {
-            "collection": "new-in",
             "kicker": "",
-            "kicker_size": 3,
-            "show_title": true,
-            "text_align": "text-center",
+            "title": "Women’s Collections",
+            "text": "<p>Galtsand has a legacy of quality and excellence.</p>",
+            "font_size": 5,
+            "text_columns": 2,
+            "align_text": "text-left",
+            "text_color": "#006a50",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_TBrf9y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_1.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
             "title": "",
-            "title_size": 8,
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
             "link_text": "",
-            "link_size": 3,
-            "image": "shopify://shop_images/015A4919.jpg",
-            "overlay_opacity": 0,
-            "overlay_color": "#000000"
-          }
-        },
-        "image_tYaGqV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/015A4451.jpg",
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title_text": "Image",
-            "title_size": 8,
-            "text_align": "text-left tile--bottom",
-            "kicker_text": "",
-            "kicker_size": 3,
-            "link_text": "",
-            "link_url": "",
-            "link_size": 3
-          }
-        },
-        "image_FViURP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/015A5400.jpg",
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "title_text": "Matching Sets",
-            "title_size": 8,
-            "text_align": "text-center",
-            "kicker_text": "",
-            "kicker_size": 3,
-            "link_text": "",
-            "link_url": "",
-            "link_size": 3
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
           }
         }
       },
       "block_order": [
-        "collection_f99Qe3",
-        "image_tYaGqV",
-        "image_FViURP"
+        "text_PM8CcR",
+        "image_TBrf9y"
       ],
       "settings": {
-        "first_block_height": "short",
-        "wh_ratio": 1.4,
-        "split": "center",
-        "color_bg": "palette--light bg--neutral",
-        "width": "wrapper",
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "section_gallery_rJyt7p": {
-      "type": "section-gallery",
+    "collection_card_column_Ydrkex": {
+      "type": "collection-card-column",
       "blocks": {
-        "image_9RqJwG": {
-          "type": "image",
+        "card_iPa633": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/020A5548-Edit-Edit.jpg",
-            "link": ""
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Leggings",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
           }
         },
-        "image_zzYVPd": {
-          "type": "image",
+        "card_633Bba": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/020A4540-Edit-Edit-2.jpg",
-            "link": ""
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Bras",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
           }
         },
-        "image_9WqyTR": {
-          "type": "image",
+        "card_CxRLyT": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/020A5993-Edit.jpg",
-            "link": ""
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Shorts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_zHDFNg": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Bags",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
           }
         }
       },
       "block_order": [
-        "image_9RqJwG",
-        "image_zzYVPd",
-        "image_9WqyTR"
+        "card_iPa633",
+        "card_633Bba",
+        "card_CxRLyT",
+        "card_zHDFNg"
       ],
       "settings": {
-        "scale_image": true,
-        "wh_ratio": 0.7,
-        "bg": "palette--light bg--neutral",
-        "add_gutters": false,
-        "progress_bar": "mobile",
-        "grid_large": 3,
-        "grid_medium": 3,
-        "grid_mobile": 1.2,
-        "width": "wrapper--none",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "background_color": "#660f28",
+        "width": "wrapper--full"
       }
     },
-    "section_list_collections_products_wncVKz": {
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "shorts-1",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/best-sellers",
+        "width": "wrapper--full"
+      }
+    },
+    "section_list_collections_products_wg4cKG": {
       "type": "section-list-collections-products",
       "blocks": {
-        "collection_er4rrU": {
+        "collection_iBkUYd": {
           "type": "collection",
           "settings": {
-            "collection": "yoga",
-            "title": "",
-            "link_text": "",
-            "enable_item": false,
+            "collection": "bags",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
             "text": "",
-            "background_color": "#f7f5f4",
+            "background_color": "#fcfaf7",
             "text_color": "text--neutral",
-            "link_size": 7
+            "link_size": 3,
+            "block_card_position": "last"
+          }
+        },
+        "collection_V9bRRL": {
+          "type": "collection",
+          "settings": {
+            "collection": "bras",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
+        },
+        "collection_9jBt6c": {
+          "type": "collection",
+          "settings": {
+            "collection": "leggings",
+            "title": "Long Title description goes here",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last"
+          }
+        },
+        "button_RB9wME": {
+          "type": "button",
+          "settings": {
+            "link_text": "Browse all collections",
+            "link": "shopify://collections"
           }
         }
       },
       "block_order": [
-        "collection_er4rrU"
+        "collection_iBkUYd",
+        "collection_V9bRRL",
+        "collection_9jBt6c",
+        "button_RB9wME"
       ],
       "settings": {
-        "title": "Yoga Styles",
+        "title": "Shop by activity section",
+        "subttitle": "Handcrafted by our expert designers.",
         "bg": "palette--light bg--neutral",
-        "grid": 4,
+        "grid": 3,
         "rows": 1,
         "enable_scroll_mobile": true,
         "grid_small": 1.2,
@@ -238,13 +253,120 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "column_product_collection_HDP6Rw": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "New this week",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "new-in",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/new-in",
+        "width": "wrapper--full"
+      }
+    },
+    "section_product_masonry_Wia8FW": {
+      "type": "section-product-masonry",
+      "settings": {
+        "title": "Yoga collection",
+        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
+        "image": "shopify://shop_images/Frame_176.png",
+        "product1": "airflow-leggings",
+        "product2": "classic-tote-bag",
+        "product3": "empower-bra",
+        "product4": "freedom-leggings",
+        "width": "wrapper--full"
+      }
+    },
+    "section_shop_by_color_yWCBP4": {
+      "type": "section-shop-by-color",
+      "blocks": {
+        "color_cart_UynqXz": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_xaFQbh": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#bdbdbd",
+            "card_title": "Silver melange",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_CYqACD": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#000000",
+            "card_title": "Black",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_RLpbCq": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#004000",
+            "card_title": "Dark Navy",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_CqNMQU": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#b0e7ff",
+            "card_title": "Snow Heather",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_hLGeUr": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#ffffff",
+            "card_title": "White",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "color_cart_UynqXz",
+        "color_cart_xaFQbh",
+        "color_cart_CYqACD",
+        "color_cart_RLpbCq",
+        "color_cart_CqNMQU",
+        "color_cart_hLGeUr"
+      ],
+      "settings": {
+        "title": "Shop by colors",
+        "subtitle": "Handcrafted by our expert designers.",
+        "width": "wrapper--full"
+      }
     }
   },
   "order": [
     "main",
-    "section_hero_rMUqDq",
-    "section_mosaic_wRGkaT",
-    "section_gallery_rJyt7p",
-    "section_list_collections_products_wncVKz"
+    "section_richtext_z49gFw",
+    "section_double_ae83ar",
+    "collection_card_column_Ydrkex",
+    "column_product_collection_bp8UTm",
+    "section_list_collections_products_wg4cKG",
+    "column_product_collection_HDP6Rw",
+    "section_product_masonry_Wia8FW",
+    "section_shop_by_color_yWCBP4"
   ]
 }
