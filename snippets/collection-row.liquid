@@ -42,7 +42,7 @@
     {%- endif -%}
 
     {%- if enable_scroll_mobile -%}
-      <div class="collection-list__product">
+      <div class="collection-list__block">
     {%- endif -%}
 
       <div class="collection-block-card {{ item_text_color }}">
@@ -52,7 +52,7 @@
             aria-label="{{ collection_title | escape }}">
             {% assign link_size_class = item_link_size | prepend: 'accent-size-' %}
             <div>
-              <h1>{{ collection_title_override }}</h1>
+              <h1 class="font-heading">{{ collection_title_override }}</h1>
               <p>{{ link_text }}</p>
             </div>
             <div class="standard__cta hero__btn btn btn--primary btn--long aos-init aos-animate {{ link_size_class }}">
@@ -73,20 +73,18 @@
 {%- endif -%}
 
 {%- if collection != blank -%}
-  <div class="collection-list-item">
+  <div class="collection-list-item {{ block_card_position }}" {{ block.shopify_attributes }}>
+    {%- if enable_item == true and block_card_position == 'first' -%}
+      {{- item_html -}}
+    {%- endif -%}
     {%- unless is_empty_collection -%}
       <div
         class="js-grid{% if enable_scroll_mobile %} collection-list__products{% endif %}"
         data-grid-large="{{ grid }}"
         data-grid-small="2"
         style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);"
-        {{ block.shopify_attributes }}
       >
-        {%- if enable_item == true and block_card_position == 'first' -%}
-          {{- item_html -}}
-        {%- endif -%}
-
-        {% for product in collection.products limit: product_limit %}
+        {% for product in collection.products limit: 3 %}
           {%- capture placeholder -%}
             product-{%- cycle '1', '2', '3', '4', '5', '6' -%}
           {%- endcapture -%}
@@ -102,14 +100,13 @@
             <!-- /.collection-list__product -->
           {%- endif -%}
         {% endfor %}
-
-        {%- if enable_item == true and block_card_position == 'last' -%}
-          {{- item_html -}}
-        {%- endif -%}
       </div>
     {%- else -%}
       <p>{{ 'collections.general.no_matches' | t }}</p>
     {%- endunless -%}
+    {%- if enable_item == true and block_card_position == 'last' -%}
+      {{- item_html -}}
+    {%- endif -%}
   </div>
 {%- else -%}
   <div class="collection-list-item">
@@ -134,84 +131,3 @@
   </div>
 {%- endif -%}
 
-<style>
-  /* .product-grid-item .space{
-    height: 58vh !important;
-  } */
-  .collection-block-card__content {
-    align-items: flex-start;
-    /* justify-content: center; */
-    text-align: left;
-    flex-direction: column;
-  }
-  .collection-block-card__content h1 {
-    font-family: 'Gambarino-Regular';
-    text-transform: none;
-    font-size: 3rem;
-    letter-spacing: 1px;
-    color: #006a50;
-  }
-  .collection-block-card__content p {
-    font-family: 'Inter Tight' !important;
-    color: #006a50;
-    font-size: 1.2rem;
-  }
-  .collection-list__product .quickview span {
-    color: #e6dbc4;
-  }
-  .collection-list__product .product__grid__title {
-    color: #e6dbc4;
-  }
-  .collection-list__product .product__grid__price {
-    color: #e6dbc4;
-  }
-  .collection-block-card__content .standard__cta {
-    color: #E6DBC4;
-    background: #006A50;
-    font-family: "Engravers Gothic";
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 130%;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    border: 2.5px solid #006A50;
-    @media screen and (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  .collection-block-card__content .standard__cta:hover {
-    background-color: #e6dbc4 !important;
-    color: #006a50 !important;
-    border: 2.5px solid #006a50;
-  }
-
-  .collection-block-card__content h1 {
-    font-size: 40px;
-  }
-  .collection-block-card__content p {
-    font-size: 14px;
-  }
-  @media (max-width: 768px) {
-    .wrapper--full .kicker-flourished {
-      font-size: 39px;
-    }
-  }
-  .collection-block-card{
-    height: 100%;
-  }
-  .collection-block-card-link {
-    height: 100%;
-    background-color: {{ item_background | default: '#fcfaf7' }};
-    position: relative;
-    display: block;
-  }
-
-  .collection-block-card__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    height: 100%;
-    padding: 20px;
-  }
-</style>
