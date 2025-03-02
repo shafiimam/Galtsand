@@ -1,54 +1,5 @@
 <!-- /sections/section-list-collections-products.liquid -->
-<style>
-  .cl .kicker-flourished {
-    color: #e6dbc4;
-    text-align: center;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 500;
-    text-transform: none;
-    line-height: 70%;
-    margin-bottom: 0;
-  }
-  .collection-section-subtitle {
-    color: #e6dbc4;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 80%; /* 16px */
-  }
-  .js-grid[data-grid-large='4'] {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-bottom: 44px;
-    padding-bottom: 40px;
-    border-bottom: 3px solid;
-  }
-  .collection-list-item .collection-list__heading__text {
-    display: none !important;
-  }
-  .kicker-flourished:after {
-    display: none;
-  }
-  .cl {
-    background-color: #006a50 !important;
-  }
-  .cl .stain-button-canvas {
-    background-color: #006a50 !important;
-  }
-  .wrapper--full .kicker-flourished {
-    /* font-family: "EngraversGothicBT-Heavy" !important; */
-    text-align: center !important;
-    /* font-size: 100px; */
-  }
-  .collection-list-item .collection-list__heading__text {
-    display: block;
-    text-align: center;
-    color: #e6dbc4 !important;
-  }
-  .collection-list-item .collection-list__heading__text a {
-    font-family: 'EngraversGothicBT-Heavy' !important;
-  }
-</style>
+<style></style>
 {%- assign product_limit = section.settings.grid -%}
 {%- assign has_custom_blocks = false -%}
 {%- assign excluded_collections_strict = settings.exclude_collections_strict | split: ',' -%}
@@ -65,6 +16,7 @@
 {%- endfor -%}
 
 <div
+  id="shopify-section-{{ section.id }}"
   class="cl section-list-collections-products section-padding list__collections {{ section.settings.bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="collection-row"
@@ -152,6 +104,57 @@
 </div>
 
 <style>
+  .cl .kicker-flourished {
+    color: #e6dbc4;
+    text-align: center;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    line-height: 70%;
+    margin-bottom: 0;
+  }
+  .collection-section-subtitle {
+    color: #e6dbc4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%; /* 16px */
+  }
+  .js-grid[data-grid-large='4'] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 44px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid;
+  }
+  .collection-list-item .collection-list__heading__text {
+    display: none !important;
+  }
+  .kicker-flourished:after {
+    display: none;
+  }
+  .cl {
+    background-color: #006a50 !important;
+  }
+  .cl .stain-button-canvas {
+    background-color: #006a50 !important;
+  }
+  .wrapper--full .kicker-flourished {
+    /* font-family: "EngraversGothicBT-Heavy" !important; */
+    text-align: center !important;
+    /* font-size: 100px; */
+  }
+  .collection-list-item .collection-list__heading__text {
+    display: block;
+    text-align: center;
+    color: #e6dbc4 !important;
+  }
+  .collection-list-item .collection-list__heading__text a {
+    font-family: 'EngraversGothicBT-Heavy' !important;
+  }
+  #shopify-section-{{ section.id  }} .quickview .icon-theme-stroke{
+    stroke: #e6db64;
+  }
   .collection-list-item {
     display: flex;
     justify-content: space-between;
@@ -161,7 +164,7 @@
       gap: 20px;
     }
   }
-  .collection-list-item:nth-last-of-type(n+3) {
+  .collection-list-item:nth-last-of-type(n + 3) {
     border-bottom: 2px solid #e6dbc4;
   }
   @media only screen and (max-width: 768px) {
@@ -196,11 +199,11 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 90%
+    line-height: 90%;
   }
   .collection-block-card__content p {
-    color: #006A50;
-    font-family: "Inter Tight";
+    color: #006a50;
+    font-family: 'Inter Tight';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -216,15 +219,15 @@
     color: #e6dbc4;
   }
   .collection-block-card__content .standard__cta {
-    color: #E6DBC4;
-    background: #006A50;
-    font-family: "Engravers Gothic";
+    color: #e6dbc4;
+    background: #006a50;
+    font-family: 'Engravers Gothic';
     font-size: 18px;
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    border: 2.5px solid #006A50;
+    border: 2.5px solid #006a50;
     @media screen and (max-width: 768px) {
       width: 100%;
     }
@@ -246,26 +249,26 @@
       font-size: 39px;
     }
   }
-  .collection-block-card{
+  .collection-block-card {
     height: 100%;
   }
   .collection-block-card-link {
     height: 100%;
-    background-color: {{ item_background | default: '#fcfaf7' }};
+    background-color: #fcfaf7;
     position: relative;
     display: block;
   }
 
-  .collection-block-card__content{
+  .collection-block-card__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
     height: 100%;
     padding: 20px;
-    background-color: #E6DBC4
+    background-color: #e6dbc4;
   }
-  .section-button-container{
+  .section-button-container {
     display: flex;
     justify-content: center;
   }

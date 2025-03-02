@@ -1,0 +1,121 @@
+<section class="shop-by-color-section">
+  <div class="shop-by-color-section__inner">
+    <div class="shop-by-color-header">
+      <h1 class="heading">
+        {{ section.settings.title }}
+      </h1>
+      <p class="font-body text-base">
+        {{ section.settings.subtitle }}
+      </p>
+    </div>
+    <div class="shop-by-color-cards-container">
+      {% for block in section.blocks %}
+        <div class="shop-by-color-card" {{ block.shopify_attributes }}>
+          <picture>
+            <source srcset="{{ block.settings.card_image | image_url: width: 1000 }}" media="(min-width: 768px)">
+            <source srcset="{{ block.settings.card_image | image_url: width: 500 }}" media="(min-width: 320px)">
+            <img
+              src="{{ block.settings.card_image | image_url: width: 500 }}"
+              alt="Card Image"
+              class="color-card-image"
+            >
+          </picture>
+          <div class="color-card-color-swatch">
+            {% if block.settings.swatch_color_image.src != blank %}
+              <img
+                src="{{ block.settings.swatch_color_image | image_url: width: 100 }}"
+                alt="{{ block.settings.card_title }}"
+                class="color-card-color-swatch__image"
+              >
+            {% else %}
+              <div
+                class="color-card-color-swatch__color"
+                style="background-color: {{ block.settings.swatch_color }};"
+              ></div>
+            {% endif %}
+          </div>
+          <h2 class="color-card-title">
+            {{ block.settings.card_title }}
+          </h2>
+          <a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_label }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop by color",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop by colors"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Color Card",
+      "type": "color_cart",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        },
+        {
+          "type": "header",
+          "content": "Swatch Settings"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch_color_image",
+          "label": "Swatch Color Image",
+          "info": "Priority 1"
+        },
+        {
+          "type": "color",
+          "id": "swatch_color",
+          "label": "Swatch Color",
+          "default": "#006A50",
+          "info": "Priority 2"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title",
+          "default": "Academy green"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Explore"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by color",
+      "settings": {
+        "title": "Shop by colors",
+        "subtitle": "Handcrafted by our expert designers."
+      }
+    }
+  ]
+}
+{% endschema %}

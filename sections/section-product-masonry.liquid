@@ -1,0 +1,139 @@
+<div class="product-masonry-section">
+  <div class="product-masonry__inner {{ section.settings.width }}">
+    <div class="product-masonry-content_container">
+      <div class="product-masonry-content">
+        <h2 class="product-masonry-title heading heading-xl">{{ section.settings.title }}</h2>
+        <p class="product-masonry-subtitle">{{ section.settings.subtitle }}</p>
+
+        <picture>
+          <source srcset="{{ section.settings.image | image_url: width: 1000 }}" media="(min-width: 768px)">
+          <source srcset="{{ section.settings.image | image_url: width: 500 }}" media="(min-width: 320px)">
+          <img
+            src="{{ section.settings.image | image_url: width: 1000 }}"
+            alt="{{ section.settings.title }}"
+            class="product-masonry-image"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+          >
+        </picture>
+      </div>
+      <div class="product-masonry-products-container">
+        <div class="product-masonry-products-grid">
+          {% for i in (1..4) %}
+            {% assign product_key = 'product' | append: i %}
+            {% assign product = section.settings[product_key] %}
+
+            {% if product != blank %}
+              <div class="product-masonry-product-container">
+                {% render 'product-grid-item', product: product %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .product-masonry-section {
+    background: #102345;
+    color: #e6dbc4 !important;
+    padding-block: 120px;
+    @media screen and (max-width: 768px) {
+      padding-block: 68px;
+    }
+  }
+  .product-masonry-section .product__grid__info p,
+  .product-masonry-section .product__grid__price span {
+   color: #e6dbc4 !important;
+  }
+  .product-masonry-content_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    @media screen and (max-width: 1000px){
+      grid-template-columns: 1fr;
+    }
+  }
+  .product-masonry-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-masonry-subtitle {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .product-masonry-image {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .product-masonry-products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    @media screen and (max-width: 678px){
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Product Masonry",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Our Products"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Discover our wide range of products"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "product",
+      "id": "product1",
+      "label": "Product 1"
+    },
+    {
+      "type": "product",
+      "id": "product2",
+      "label": "Product 2"
+    },
+    {
+      "type": "product",
+      "id": "product3",
+      "label": "Product 3"
+    },
+    {
+      "type": "product",
+      "id": "product4",
+      "label": "Product 4"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Masonry"
+    }
+  ]
+}
+{% endschema %}
