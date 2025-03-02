@@ -265,6 +265,83 @@
         "button_link": "shopify://collections/new-in",
         "width": "wrapper--full"
       }
+    },
+    "section_shop_by_color_yWCBP4": {
+      "type": "section-shop-by-color",
+      "blocks": {
+        "color_cart_UynqXz": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_xaFQbh": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_CYqACD": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_RLpbCq": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_CqNMQU": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_hLGeUr": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "color_cart_UynqXz",
+        "color_cart_xaFQbh",
+        "color_cart_CYqACD",
+        "color_cart_RLpbCq",
+        "color_cart_CqNMQU",
+        "color_cart_hLGeUr"
+      ],
+      "settings": {
+        "title": "Shop by colors",
+        "subtitle": "Handcrafted by our expert designers."
+      }
     }
   },
   "order": [
@@ -274,6 +351,7 @@
     "collection_card_column_Ydrkex",
     "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
-    "column_product_collection_HDP6Rw"
+    "column_product_collection_HDP6Rw",
+    "section_shop_by_color_yWCBP4"
   ]
 }
