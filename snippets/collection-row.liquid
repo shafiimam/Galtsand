@@ -73,7 +73,7 @@
 {%- endif -%}
 
 {%- if collection != blank -%}
-  <div class="collection-list-item {{ block_card_position }}" {{ block.shopify_attributes }}>
+  <div class="collection-list-item {{ block_card_position }}  {% if isLastItem %}last-item{% endif %}" {{ block.shopify_attributes }}>
     {%- if enable_item == true and block_card_position == 'first' -%}
       {{- item_html -}}
     {%- endif -%}

@@ -24,7 +24,7 @@
 >
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
-      <h2 class="kicker-flourished font-body">{{ section.settings.title }}</h2>
+      <h2 class="section-title font-body">{{ section.settings.title }}</h2>
     {%- endif -%}
     {% if section.settings.subttitle %}
       <p class="text-base font-body text-center collection-section-subtitle">
@@ -88,31 +88,33 @@
             item_link_size: block.settings.link_size,
             item_text_color: block.settings.text_color,
             block: block,
-            block_card_position: block_card_position
+            block_card_position: block_card_position,
+            isLastItem: forloop.last
           %}
         {%- endif -%}
       {% endfor %}
     {% endunless %}
-    {% for block in section.blocks %}
-      {% if block.type == 'button' %}
-        <div class="section-button-container">
-          <a href="{{ block.settings.link }}" class="btn btn--primary btn--large">{{ block.settings.link_text }}</a>
-        </div>
-      {% endif %}
-    {% endfor %}
   </div>
+  {% for block in section.blocks %}
+    {% if block.type == 'button' %}
+      <div class="section-button-container">
+        <a href="{{ block.settings.link }}" class="btn btn--primary btn--large">{{ block.settings.link_text }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <style>
-  .cl .kicker-flourished {
-    color: #e6dbc4;
+  .section-title{
+    color: #E6DBC4;
     text-align: center;
-    font-size: 100px;
+    font-size: clamp(60px, 10vw, 100px);
     font-style: normal;
-    font-weight: 500;
-    text-transform: none;
-    line-height: 70%;
-    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 100%; /* 70px */
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
   }
   .collection-section-subtitle {
     color: #e6dbc4;
@@ -164,9 +166,14 @@
       gap: 20px;
     }
   }
-  .collection-list-item:nth-last-of-type(n + 3) {
+  .collection-list-item {
     border-bottom: 2px solid #e6dbc4;
   }
+  .collection-list-item.last-item,
+  .collection-list-item:last-child {
+    border-bottom: 0;
+  }
+
   @media only screen and (max-width: 768px) {
     .collection-list-item.first {
       flex-direction: column-reverse;
@@ -318,7 +325,7 @@
       "max": 6,
       "step": 1,
       "label": "Products per row",
-      "default": 4
+      "default": 3
     },
     {
       "type": "range",
