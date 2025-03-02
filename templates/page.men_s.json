@@ -266,6 +266,19 @@
         "width": "wrapper--full"
       }
     },
+    "section_product_masonry_Wia8FW": {
+      "type": "section-product-masonry",
+      "settings": {
+        "title": "Explore Our Premium Sweatshirts Collection",
+        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
+        "image": "shopify://shop_images/Frame_176.png",
+        "product1": "classic-short-with-cargo-pocket",
+        "product2": "pique-short",
+        "product3": "garment-washed-pullover-hoodie",
+        "product4": "heritage-jogger-with-cargo-pocket",
+        "width": "wrapper--full"
+      }
+    },
     "section_shop_by_color_yWCBP4": {
       "type": "section-shop-by-color",
       "blocks": {
@@ -283,8 +296,8 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
-            "card_title": "Academy green",
+            "swatch_color": "#bdbdbd",
+            "card_title": "Silver melange",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -293,8 +306,8 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
-            "card_title": "Academy green",
+            "swatch_color": "#000000",
+            "card_title": "Black",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -303,8 +316,8 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
-            "card_title": "Academy green",
+            "swatch_color": "#004000",
+            "card_title": "Dark Navy",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -313,8 +326,8 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
-            "card_title": "Academy green",
+            "swatch_color": "#b0e7ff",
+            "card_title": "Snow Heather",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -323,8 +336,8 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
-            "card_title": "Academy green",
+            "swatch_color": "#ffffff",
+            "card_title": "White",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -340,7 +353,8 @@
       ],
       "settings": {
         "title": "Shop by colors",
-        "subtitle": "Handcrafted by our expert designers."
+        "subtitle": "Handcrafted by our expert designers.",
+        "width": "wrapper--full"
       }
     }
   },
@@ -352,6 +366,7 @@
     "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
+    "section_product_masonry_Wia8FW",
     "section_shop_by_color_yWCBP4"
   ]
 }
