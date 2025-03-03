@@ -309,7 +309,7 @@ span[data-header-cart-count] {
 [data-header-cart-count="0"] {
   display: none;
 }
-.drawer__content form {
+.drawer__content #cart-form {
   padding-inline: var(--gutter);
   padding-block-end: var(--gutter);
 }

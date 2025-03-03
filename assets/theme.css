@@ -17484,7 +17484,8 @@ Collection grid item
   padding-right: var(--gutter);
   padding-left: var(--gutter);
 }
-.collection-grid-item .text-btn-arrow-right:after {
+.collection-grid-item .text-btn-arrow-right:after,
+.article-read.text-btn-arrow-right:after {
   animation: move-right 2s infinite ease-in-out;
 }
 .collection-grid-item .image__hero__frame {
@@ -23275,6 +23276,7 @@ html.no-js .quantity__button {
   text-align: center;
   background: var(--COLOR-ANNOUNCEMENT-BG);
   color: var(--COLOR-ANNOUNCEMENT-TEXT);
+  padding-top: 5px;
 }
 .product__popdown__outer {
   width: 100%;

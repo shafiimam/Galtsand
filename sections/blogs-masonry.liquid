@@ -30,7 +30,7 @@
           <h3 class="article-title truncated-text">{{ article.title }}</h3>
           <p class="article-excerpt">{{ article.excerpt | strip_html | truncate: 100 }}</p>
           {% if block.settings.hide_btn != true %}
-            <a href="{{ article.url }}" class="article-read">Read</a>
+            <a href="{{ article.url }}" class="article-read font-body text-btn-arrow-right">Read</a>
           {% endif %}
         </div>
       </div>
@@ -143,7 +143,7 @@
   }
 
   .blog-articles-grid .article-read {
-    font-size: clamp(16px, 2.5vw, 18px);
+    font-size: clamp(24px, 2.5vw, 26px);
   }
 
   .blog-articles-grid :is(.article-4, .article-5, .article-6) .card-title {
@@ -184,8 +184,7 @@
   }
 
   /* Shared styles */
-  .card-title,
-  .article-read {
+  .card-title {
     background: #e6dbc4;
     font-family: 'EngraversGothicBT-Heavy';
     font-weight: 700;
@@ -217,12 +216,19 @@
   }
 
   .article-read {
-    padding: 20px 24px;
-    color: #102345;
-    font-size: 18px;
-    line-height: 130%;
+    color: #e6dbc4;
+    font-size: 36px;
+    line-height: 100%;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    border-bottom: 2px solid #e6dbc4;
+  }
+  .article-read:hover{
+    color: #e6dbc4;
+    border-bottom: 2px solid #e6dbc4;
+  }
+  .article-read.text-btn-arrow-right:after {
+    top: 50% !important;
   }
 </style>
 
@@ -258,7 +264,7 @@
           "id": "hide_btn",
           "label": "Hide Read More Button",
           "default": false
-        },
+        }
       ]
     }
   ],
