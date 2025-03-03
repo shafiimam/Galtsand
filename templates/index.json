@@ -744,28 +744,6 @@
         "padding_bottom": 36
       }
     },
-    "collection_split_ekgGeV": {
-      "type": "collection-split",
-      "disabled": true,
-      "settings": {
-        "header_text": "Curated Collections",
-        "header_h3text": "Handcarfted by our expert designers",
-        "collection": "mens-best-sellers",
-        "product_list": [],
-        "sticky_image_enable": true,
-        "swap": false,
-        "overlay_opacity": 15,
-        "overlay_color": "#000000",
-        "grid_large": 2,
-        "grid_small": 1.2,
-        "limit": 10,
-        "bg": "palette--light bg--neutral",
-        "object_position": "center-center",
-        "width": "wrapper--none",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
     "section_collection_slider_wryWc6": {
       "type": "section-collection-slider",
       "settings": {
@@ -779,6 +757,55 @@
         "grid_medium": 3,
         "grid_mobile": 1,
         "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_list_collections_products_N6gfAm": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_kzEHiJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "aqua-blue",
+            "title": "Long Title description goes here",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
+        },
+        "collection_tWUbnf": {
+          "type": "collection",
+          "settings": {
+            "collection": "court-ready",
+            "title": "Long Title description goes here",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kzEHiJ",
+        "collection_tWUbnf"
+      ],
+      "settings": {
+        "title": "Catalog",
+        "subttitle": "Handcrafted by our expert designers.",
+        "bg": "palette--light bg--neutral",
+        "grid": 3,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
@@ -832,6 +859,7 @@
         "article_row_bbL4qb",
         "article_row_fQDY3m"
       ],
+      "disabled": true,
       "settings": {
         "title": "Featured Shops",
         "content": "highlight featured shops designed with our weekly lookbooks, updates, and campaigns"
@@ -1156,8 +1184,8 @@
     "section_before_after_fCxeWU",
     "section_product_zBPAN6",
     "collection-split-section-1",
-    "collection_split_ekgGeV",
     "section_collection_slider_wryWc6",
+    "section_list_collections_products_N6gfAm",
     "section_article_column_tHbWhz",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
