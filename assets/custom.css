@@ -295,3 +295,21 @@ p.image-with-text-block-text {
   stroke: #660f28;
 }
 
+span.header__cart__status {
+  position: relative;
+}
+a.navlink.navlink--cart {
+  overflow: visible;
+}
+span[data-header-cart-count] {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+}
+[data-header-cart-count="0"] {
+  display: none;
+}
+.drawer__content #cart-form {
+  padding-inline: var(--gutter);
+  padding-block-end: var(--gutter);
+}
