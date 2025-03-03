@@ -15343,7 +15343,6 @@ body:not(.theme-animate-hover)
   cursor: default;
 }
 /* ================ Header cart status ================ */
-[data-header-cart-count],
 [data-header-cart-price] {
   display: none;
 }
