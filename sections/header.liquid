@@ -93,6 +93,10 @@
     endif
   endcapture
 
+  capture wishlist_icon
+    render 'icon-set-classic-heart'
+  endcapture
+
   capture hamburger_icon
     if section.settings.icons_type == 'modern'
       render 'icon-set-mod-hamburger'
@@ -465,7 +469,11 @@
         {% endif %}
       </a>
     </div>
-
+    <div class="header__desktop__button {{ text_hover }}">
+      <a href="/pages/swym-wishlist" class="navlink" data-popdown-toggle="search-popdown">
+        {{ wishlist_icon }}
+      </a>
+    </div>
   </div>
 {% endcapture %}
 
