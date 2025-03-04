@@ -313,3 +313,19 @@ span[data-header-cart-count] {
   padding-inline: var(--gutter);
   padding-block-end: var(--gutter);
 }
+
+.swym-ui-component.swym-wishlist-page {
+  max-width: 2000px;
+  margin: auto;
+  padding: 40px;
+}
+.swym-ui-component .swym-wishlist-grid{
+  max-width: 100%;
+}
+.swym-ui-component .swym-wishlist-grid li {
+  margin: 0 20px 20px 0;
+}
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn {
+  padding: 20px;
+  font-family: var(--font-family-body);
+}
