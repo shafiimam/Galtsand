@@ -330,6 +330,10 @@ span[data-header-cart-count] {
   font-family: var(--font-family-body) !important;
 }
 
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
+    height: 400px !important;
+}
+
 @media only screen and (max-width: 900px) {
   .swym-wishlist-detail-separator {
     display: none !important;
