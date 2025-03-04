@@ -350,4 +350,7 @@ span[data-header-cart-count] {
   .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
         max-height: 400px !important;
   }
+  .swym-wishlist-detail-header {
+    background: #e6dbc4 !important;
+  }
 }
