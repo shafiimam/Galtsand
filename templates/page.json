@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "page",
-      "disabled": true,
       "settings": {
         "kicker": "",
         "kicker_size": 5,
@@ -38,7 +37,6 @@
       "block_order": [
         "wishlist_plus_wishlist_page_section_tk3Cq6"
       ],
-      "disabled": true,
       "settings": {
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
