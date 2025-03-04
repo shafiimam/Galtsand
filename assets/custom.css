@@ -345,4 +345,7 @@ span[data-header-cart-count] {
     width: 100% !important;
     margin: 0 4% 4% 0;
   }
+  .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
+        max-height: 400px !important;
+  }
 }
