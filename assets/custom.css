@@ -329,3 +329,16 @@ span[data-header-cart-count] {
   padding: 20px !important;
   font-family: var(--font-family-body) !important;
 }
+
+@media only screen and (max-width: 900px) {
+  .swym-wishlist-detail-separator {
+    display: none !important;
+  }
+  .swym-ui-component .swym-wishlist-grid{
+    padding: 0 !important;
+  }
+  .swym-ui-component .swym-wishlist-grid li {
+    width: 100%;
+    margin: 0 4% 4% 0;
+  }
+}
