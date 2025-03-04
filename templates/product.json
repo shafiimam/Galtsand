@@ -52,6 +52,14 @@
             "padding_bottom": 20
           }
         },
+        "buttons": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 20
+          }
+        },
         "wishlist_plus_wishlist_pdp_button_dFngJc": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
@@ -75,14 +83,6 @@
             "swym_hover_atw_border_thickness": 0,
             "swym_hover_atw_button_border_radius": 0,
             "swym_custom_css": ""
-          }
-        },
-        "buttons": {
-          "type": "add-buttons",
-          "settings": {
-            "enable_payment_button": true,
-            "enable_gift_card_recipient": true,
-            "padding_bottom": 20
           }
         },
         "description": {
@@ -118,8 +118,8 @@
         "variants",
         "subscriptions",
         "quantity",
-        "wishlist_plus_wishlist_pdp_button_dFngJc",
         "buttons",
+        "wishlist_plus_wishlist_pdp_button_dFngJc",
         "description"
       ],
       "custom_css": [
