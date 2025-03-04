@@ -342,6 +342,9 @@ span[data-header-cart-count] {
     padding: 0 !important;
   }
   .swym-ui-component .swym-wishlist-grid li {
+    margin: 0 0 20px 0 !important;
+  }
+  .swym-ui-component .swym-wishlist-grid li {
     width: 100% !important;
   }
   .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
