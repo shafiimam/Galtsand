@@ -40,7 +40,7 @@
         "text_FHgeB6": {
           "type": "text",
           "settings": {
-            "text": "{{ page.content }}",
+            "text": "<p>{{ page.content }}</p>",
             "text_size": 4,
             "text_columns": 1
           }
@@ -50,6 +50,7 @@
         "heading_4HAKnN",
         "text_FHgeB6"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "text-center",
         "text_color": "text--black",
