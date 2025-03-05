@@ -211,15 +211,6 @@
             "spacing": 50
           }
         },
-        "logo_image_VwmT8r": {
-          "type": "logo_image",
-          "settings": {
-            "link": "",
-            "new_tab": true,
-            "width": 140,
-            "spacing": 50
-          }
-        },
         "logo_image_dDCAph": {
           "type": "logo_image",
           "settings": {
@@ -246,7 +237,6 @@
         "logo_image_HgbFJ3",
         "logo_image_m8GpmR",
         "logo_image_BEdAk7",
-        "logo_image_VwmT8r",
         "logo_image_dDCAph",
         "logo_image_xHWzH8"
       ],
