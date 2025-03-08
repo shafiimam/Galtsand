@@ -720,7 +720,7 @@
         "header_h3text": "our latest drop",
         "collection": "outdoor-collection",
         "product_list": [],
-        "sticky_image_enable": true,
+        "sticky_image_enable": false,
         "swap": false,
         "overlay_opacity": 15,
         "overlay_color": "#000000",
@@ -953,12 +953,12 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--neutral",
+        "text_color": "text--invert--primary",
         "bg": "palette--light bg--neutral",
         "content_width": 2000,
         "width": "wrapper--full",
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 20
       }
     },
     "section_richtext_eXqxyf": {
@@ -968,7 +968,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Real people. Real moments. See Galtsand IRL, and shop looks reimagined by our community.</p>",
-            "text_size": 4,
+            "text_size": 5,
             "text_columns": 1
           }
         }
@@ -981,7 +981,7 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "text_color": "text--neutral",
+        "text_color": "text--invert--primary",
         "bg": "palette--light bg--neutral",
         "content_width": 2000,
         "width": "wrapper",
@@ -1008,7 +1008,7 @@
         "instafeed_app_block_gy8XAk"
       ],
       "settings": {
-        "text_color": "text--neutral",
+        "text_color": "text--invert--primary",
         "bg": "palette--light bg--neutral",
         "width": "wrapper",
         "padding_top": 36,
