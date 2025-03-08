@@ -315,6 +315,8 @@
           </span>
         {% endif %}
       </div>
+      {% render 'wishlist-icon' %}
+
       {% if product.selected_or_first_available_variant.unit_price %}
         {% capture unit_price_separator %}
             <span aria-hidden="true">/</span><span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
