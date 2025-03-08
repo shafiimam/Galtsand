@@ -357,17 +357,6 @@ span[data-header-cart-count] {
     background: #e6dbc4 !important;
   }
 }
-button.swym-button.swym-add-to-wishlist-view-product.product_.swym-text.swym-heart.swym-loaded {
-  position: absolute;
-  top: -44px;
-  right: 10px;
-  background: #e6dbc4;
-  padding: 10px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 more-payment-options-link {
   display: none;
@@ -388,8 +377,19 @@ shopify-payment-terms {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-button#swym-atw-pdp-button {
-  font-family: var(--font-family-secondary) !important;
-  font-weight: 500 !important;
-  font-size: 14px !important;
+.swym-button.swym-add-to-wishlist-view-product {
+  position: absolute;
+  bottom: 92%;
+  left: 10px;
+  background: #e6dbc4 !important;
+  padding: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-video .hero__content__wrapper * {
+    flex: 1;
+  }
+  .collection-split__block{
+    aspect-ratio: 2/3;
+  }
 }

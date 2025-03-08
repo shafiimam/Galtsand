@@ -19225,7 +19225,6 @@ body.focus-enabled .product-grid-item:focus-within {
   margin-left: 0;
 }
 .product__grid__info {
-  position: relative;
   padding: 8px 0 0 0;
 }
 .product__grid__info a {
@@ -20380,11 +20379,13 @@ input[type="number"].filter__price__input {
   -moz-column-gap: var(--gutter);
   column-gap: var(--gutter);
   row-gap: 24px;
+  
 }
 @media only screen and (min-width: 768px) {
   .collection-split__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: var(--gutter);
+    padding-left: var(--gutter);
   }
 }
 @media only screen and (max-width: 767px) {
@@ -20441,8 +20442,8 @@ input[type="number"].filter__price__input {
   }
   .wrapper--none .collection-split__products {
     margin: 0;
-    padding-left: var(--outer);
-    padding-right: var(--outer);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -25661,7 +25662,6 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: var(--gutter);
   --offset: 50px;
 }
 @media only screen and (min-width: 480px) {

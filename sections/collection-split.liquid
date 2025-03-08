@@ -54,11 +54,11 @@
     justify-content: center;
     align-items: flex-end;
     padding: calc(var(--outer) * 2);
+    
   }
   .box {
     padding: 16px;
     border: 6px solid #E6DBC4;
-    background: rgba(0, 0, 0, 0.30);
   }
   .box > p, h2 {
     color: #E6DBC4;
@@ -68,11 +68,16 @@
     text-align: left;
   }
 
-  .hero__content__wrapper {
+  .collection-split__grid .hero__content__wrapper {
     flex-direction: column;
     justify-content: end;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
   }
-
+  .collection-split__product-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:var(--gutter);
+  }
   .arrows {
     position: absolute;
     width: 100%;
@@ -109,8 +114,11 @@
 
   .swiper {
     height: 100%;
-    width: calc(100% - var(--gutter) * 2);
+    width: 100%;
     min-height: 550px;
+    @media only screen and (max-width: 768px) {
+      width: calc(100% - var(--gutter) * 2);
+    }
   }
   @media screen and (max-width: 768px) {
     .swiper {
@@ -182,7 +190,7 @@
                       aria-label="{{ block.settings.heading | default: block.settings.kicker }}"
                     >
                   {%- endif -%}
-                  <div class="hero__content__wrapper align--bottom-center">
+                  <div class="hero__content__wrapper">
                     <div class="hero__content__wrapepr__container">
                       <div class="box">
                         {%- if block.settings.kicker != blank -%}
@@ -295,20 +303,9 @@
 
       <div class="collection-split__products">
         <div
-          class="float-grid grid--{{ section.settings.grid_large }}"
-          data-grid
-          data-grid-flex
-          data-grid-large
-          data-grid-medium
-          data-grid-small
-          data-custom-scrollbar-items
-          style="
-            --grid-large-items: {{ section.settings.grid_large }};
-            --grid-medium-items: {{ section.settings.grid_large | at_most: 2 }};
-            --grid-small-items: {{ section.settings.grid_small }};
-          "
+          class="collection-split__product-grid"
         >
-          {%- assign wrap_class = 'collection-split__product grid__item' -%}
+          {%- assign wrap_class = 'collection-split__product' -%}
           {%- if products != blank -%}
             {%- for _product in products limit: section.settings.limit -%}
               <div class="{{ wrap_class }}" data-item>
