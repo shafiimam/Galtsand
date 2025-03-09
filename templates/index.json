@@ -758,8 +758,8 @@
         "collection_kzEHiJ": {
           "type": "collection",
           "settings": {
-            "collection": "aqua-blue",
-            "title": "Long Title description goes here",
+            "collection": "all-women",
+            "title": "Shop Womens",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -772,8 +772,8 @@
         "collection_tWUbnf": {
           "type": "collection",
           "settings": {
-            "collection": "court-ready",
-            "title": "Long Title description goes here",
+            "collection": "all-men",
+            "title": "Shop Mens",
             "link_text": "",
             "enable_item": true,
             "text": "",
