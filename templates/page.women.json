@@ -341,7 +341,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
+            "swatch_color": "#fadaff",
             "card_title": "Academy green",
             "button_label": "Explore",
             "button_link": ""
