@@ -860,7 +860,7 @@
       "settings": {
         "left_image": "shopify://shop_images/WashedTee_WashedOpticWhite_M-5_a7275846-6718-4bec-a5e5-41cff6d91946.jpg",
         "logo": "shopify://shop_images/Frame_3.png",
-        "title": "Brand Values Section",
+        "title": "Core Values",
         "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
         "button_link": "",
         "button_text": "See How We Do It",
@@ -873,14 +873,14 @@
       "type": "icons_values_section",
       "settings": {
         "icon_1": "shopify://shop_images/mdi_recycle.png",
-        "title_1": "Sustainably Made",
-        "text_1": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "title_1": "HERITAGE",
+        "text_1": "Rooted in tradition, our pieces blend timeless design with modern innovation. Each piece is a tribute to our rich history in sportswear, crafted to honor the past while embracing the future.",
         "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
-        "title_2": "American Craftsmanship",
-        "text_2": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio.",
+        "title_2": "CRAFTSMANSHIP",
+        "text_2": "Every stitch, fabric, and finish is chosen with care. We prioritize durability, precision, and innovation, ensuring each garment stands the test of time, both in quality and style.",
         "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
-        "title_3": "Athletic Heritage",
-        "text_3": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc. Gravida facilisis sit ultricies neque nisi. Ultricies pretium viverra donec pulvinar. Id consequat porttitor ut congue odio."
+        "title_3": "CONNECTION",
+        "text_3": "We believe in real-world movement, human connection, and a sense of belonging. We champion presence, outdoor exploration, and the power of shared experiences."
       }
     },
     "customer_review_section_xAPmhf": {
