@@ -139,15 +139,15 @@
     "fabric_choice_Th3iVf": {
       "type": "fabric_choice",
       "settings": {
-        "title": "Fabric Choices for Comfort and Durability",
-        "subtitle": "We believe fabric quality makes all the difference. That's why our t-shirts are crafted from the finest materials:",
-        "background_image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
-        "fabric_title_1": "Superior Fabric Quality",
-        "fabric_description_1": "Ideal for its breathability and natural softness, perfect for daily wear.",
-        "fabric_title_2": "Polyester",
-        "fabric_description_2": "A wrinkle-resistant and durable choice that maintains its shape over time.",
-        "fabric_title_3": "Blended Fabrics",
-        "fabric_description_3": "Combining the best of both worlds, offering stretch and durability for all-day comfort."
+        "title": "OUR MATERIALS",
+        "subtitle": "Trademarked fabrics within our collection.",
+        "background_image": "shopify://shop_images/untitled7_eea71b1a-1271-4217-a016-30d66991c23d.jpg",
+        "fabric_title_1": "Cashmere Blend",
+        "fabric_description_1": "Timeless elegance and unmatched softness of cashmere, combined with enhanced durability for everyday wear.",
+        "fabric_title_2": "Natural Wool",
+        "fabric_description_2": "High-performance fiber celebrated for its breathability, insulation, and moisture-wicking properties.",
+        "fabric_title_3": "LYCRA®",
+        "fabric_description_3": "Premium elastane fiber known for its exceptional stretch, shape retention, and durability."
       }
     },
     "why_use_our_pieces_GM7rgH": {
