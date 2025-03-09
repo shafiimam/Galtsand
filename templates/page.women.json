@@ -258,7 +258,7 @@
           "type": "collection",
           "settings": {
             "collection": "bras",
-            "title": "Long Title description goes here",
+            "title": "Outdoor",
             "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
@@ -272,7 +272,7 @@
           "type": "collection",
           "settings": {
             "collection": "leggings",
-            "title": "Long Title description goes here",
+            "title": "Equestrian",
             "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
