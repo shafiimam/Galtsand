@@ -319,26 +319,29 @@ span[data-header-cart-count] {
   margin: auto;
   padding: 40px !important;
 }
-.swym-ui-component .swym-wishlist-grid{
+.swym-ui-component .swym-wishlist-grid {
   max-width: 100% !important;
 }
 .swym-ui-component .swym-wishlist-grid li {
   margin: 0 20px 20px 0 !important;
 }
-.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn {
+.swym-ui-component
+  .swym-wishlist-grid
+  .swym-wishlist-item
+  .swym-add-to-cart-btn {
   padding: 20px !important;
   font-family: var(--font-family-body) !important;
 }
 
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
-    height: 400px !important;
+  height: 400px !important;
 }
 
 @media only screen and (max-width: 900px) {
   .swym-wishlist-detail-separator {
     display: none !important;
   }
-  .swym-ui-component .swym-wishlist-grid{
+  .swym-ui-component .swym-wishlist-grid {
     padding: 0 !important;
   }
   .swym-ui-component .swym-wishlist-grid li {
@@ -348,9 +351,88 @@ span[data-header-cart-count] {
     width: 100% !important;
   }
   .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
-        max-height: 400px !important;
+    max-height: 400px !important;
   }
   .swym-wishlist-detail-header {
     background: #e6dbc4 !important;
+  }
+}
+
+more-payment-options-link {
+  display: none;
+}
+shopify-payment-terms {
+  display: none;
+}
+.swym-atw-button-container.default-position {
+  max-width: 450px;
+}
+span.swym-wish-counter.swym-wishlist-header-counter {
+  position: absolute;
+  top: 15px;
+  right: 6px;
+  font-family: var(--FONT-STACK-BODY);
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
+}
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item {
+  background: transparent !important;
+}
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-title {
+  margin-left: 0 !important;
+  color: #102345 !important;
+  font-family: var(--font-family-body) !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 32px */
+}
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item .swym-variant-title {
+  font-family: var(--font-family-body);
+  font-size: 16px !important;
+}
+.swym-variant-title.swym-text.swym-title-2 {
+  margin-left: 0 !important;
+}
+.swym-product-price.swym-has-sale.swym-text.swym-text-1 {
+  padding-left: 0 !important;
+  overflow: hidden;
+  margin: 3px 0;
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
+  line-height: var(--leading-normal);
+  font-family: EngraversGothicBT-Heavy;
+  color: #44505f !important;
+}
+.swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
+.swym-wishlist-product-detail-content .swym-wishlist-add-to-cart-btn {
+  margin: 0 !important;
+}
+.swym-ui-component .swym-product-price.swym-has-sale .swym-product-final-price,
+.swym-ui-component .swym-product-price .swym-product-original-price {
+  color: #44505f !important;
+}
+.btn--add-to-cart {
+  font-family: var(--font-family-body) !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.swym-button.swym-add-to-wishlist-view-product {
+  position: absolute;
+  bottom: 100%;
+  margin: -45px 0px !important;
+  left: 10px;
+  background: #e6dbc4 !important;
+  padding: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-video .hero__content__wrapper * {
+    flex: 1;
+  }
+  .collection-split__block {
+    aspect-ratio: 2/3;
   }
 }
