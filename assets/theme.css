@@ -19236,7 +19236,7 @@ body.focus-enabled .product-grid-item:focus-within {
 .product__grid__title {
   color: #102345;
   font-family: var(--font-family-body);
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 32px */
@@ -19244,7 +19244,7 @@ body.focus-enabled .product-grid-item:focus-within {
 .product__grid__price {
   overflow: hidden;
   margin: 3px 0;
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
+  font-size: 16px;
   line-height: var(--leading-normal);
   font-family: "EngraversGothicBT-Heavy";
   color: #44505f;
