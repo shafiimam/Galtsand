@@ -305,8 +305,8 @@
     "two_images_and_text_YiRxFY": {
       "type": "two_images_and_text",
       "settings": {
-        "heading": "Why we made this",
-        "paragraph": "What bra? We designed our classic racerback so you won’t feel anything but your practice.",
+        "heading": "Designed with Purpose",
+        "paragraph": "We made this to inspire bold movement and adventure. Inspired by heritage craftsmanship and reimagined with technical innovation, this piece blends refinement with comfort, elegance with performance. Step outside, explore new landscapes, and embrace the freedom of nature.",
         "image_1": "shopify://shop_images/GALTSANDEQUESTRIAN-130.jpg",
         "image_2": "shopify://shop_images/GALTSANDEQUESTRIAN-95.jpg"
       }
@@ -375,7 +375,7 @@
       ],
       "settings": {
         "title": "Outfit Inspiration",
-        "subtitle": "Handcrafted by our expert designers."
+        "subtitle": "Effortless looks for every adventure."
       }
     },
     "related": {
