@@ -122,7 +122,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Leggings",
+            "title": "Outerwear",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
             "button_label": "Explore"
@@ -132,7 +132,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Bras",
+            "title": "Midlayers",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
             "button_label": "Explore"
@@ -142,7 +142,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Shorts",
+            "title": "Baselayers",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
             "button_label": "Explore"
@@ -152,7 +152,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Bags",
+            "title": "Accessories",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
             "button_label": "Explore"
@@ -164,6 +164,61 @@
         "card_633Bba",
         "card_CxRLyT",
         "card_zHDFNg"
+      ],
+      "settings": {
+        "background_color": "#660f28",
+        "width": "wrapper--full"
+      }
+    },
+    "collection_card_column_8D4rTM": {
+      "type": "collection-card-column",
+      "blocks": {
+        "card_8WRkRM": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Sweaters",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_Lt637C": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Tops",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_ecCzK9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Bottoms",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_ecy4BF": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "title": "Bras & Shorts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "card_8WRkRM",
+        "card_Lt637C",
+        "card_ecCzK9",
+        "card_ecy4BF"
       ],
       "settings": {
         "background_color": "#660f28",
@@ -363,6 +418,7 @@
     "section_richtext_z49gFw",
     "section_double_ae83ar",
     "collection_card_column_Ydrkex",
+    "collection_card_column_8D4rTM",
     "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
