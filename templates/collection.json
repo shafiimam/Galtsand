@@ -95,6 +95,47 @@
         "padding_bottom": 64
       }
     },
+    "every_ocasion_KaRhBj": {
+      "type": "every_ocasion",
+      "blocks": {
+        "casual_wear_rNitdD": {
+          "type": "casual_wear",
+          "settings": {
+            "image": "shopify://shop_images/DSC_5361.jpg",
+            "heading": "NATURE ENTHUSIAST",
+            "description": "Earth tones, breathable fabrics, and adventure-ready fits, made for those who thrive outdoors.",
+            "link": ""
+          }
+        },
+        "workout_wear_CTncfz": {
+          "type": "workout_wear",
+          "settings": {
+            "image": "shopify://shop_images/DSC_54971.jpg",
+            "heading": "SPORTY & CHILL",
+            "description": "From the stables to the studio, the courts to the trails, explore versatile styles that move with you.",
+            "link": ""
+          }
+        },
+        "smart_casual_YpNxpx": {
+          "type": "smart_casual",
+          "settings": {
+            "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
+            "heading": "Smart Casual",
+            "description": "Refined, versatile, and always polished, elevated essentials for a seamless day-to-night look.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "casual_wear_rNitdD",
+        "workout_wear_CTncfz",
+        "smart_casual_YpNxpx"
+      ],
+      "settings": {
+        "title": "PICK YOUR VIBE",
+        "subtitle": "Stay classic, keep it bold, or take it outside—your move."
+      }
+    },
     "fabric_choice_Th3iVf": {
       "type": "fabric_choice",
       "settings": {
@@ -156,47 +197,6 @@
         "subtitle": "Stay ahead of the curve with the latest trends"
       }
     },
-    "every_ocasion_KaRhBj": {
-      "type": "every_ocasion",
-      "blocks": {
-        "casual_wear_rNitdD": {
-          "type": "casual_wear",
-          "settings": {
-            "image": "shopify://shop_images/DSC_5361.jpg",
-            "heading": "Casual Everyday Wear",
-            "description": "Soft and breathable t-shirts perfect for lounging or running errands",
-            "link": ""
-          }
-        },
-        "workout_wear_CTncfz": {
-          "type": "workout_wear",
-          "settings": {
-            "image": "shopify://shop_images/DSC_54971.jpg",
-            "heading": "Workout and Athleisure",
-            "description": "Moisture-wicking fabrics that keep you cool during intense activities",
-            "link": ""
-          }
-        },
-        "smart_casual_YpNxpx": {
-          "type": "smart_casual",
-          "settings": {
-            "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
-            "heading": "Smart-Casual Events",
-            "description": "Pair with blazers for a polished yet relaxed look",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "casual_wear_rNitdD",
-        "workout_wear_CTncfz",
-        "smart_casual_YpNxpx"
-      ],
-      "settings": {
-        "title": "Styles for Every Occasion",
-        "subtitle": "Our collection is versatile enough to cater to every aspect of your lifestyle"
-      }
-    },
     "how_to_style_p7gryg": {
       "type": "how_to_style",
       "blocks": {
@@ -246,10 +246,10 @@
     "hero",
     "subcollections",
     "main",
+    "every_ocasion_KaRhBj",
     "fabric_choice_Th3iVf",
     "why_use_our_pieces_GM7rgH",
     "seasonal_trends_3AGAmP",
-    "every_ocasion_KaRhBj",
     "how_to_style_p7gryg"
   ]
 }
