@@ -4,7 +4,7 @@
       <img src="{{ section.settings.image | img_url: 'master' }}" alt="Boutique Image">
     </div>
     <div class="boutique-info">
-      <h2 class="boutique-title">{{ section.settings.main_title }}</h2>
+      <h2 class="boutique-title heading">{{ section.settings.main_title }}</h2>
       <div class="boutique-list">
         {% for block in section.blocks %}
         <div class="boutique-item">
@@ -52,14 +52,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 28px;
   }
 
   .boutique-title {
     font-family: "Gambarino-Regular";
-    font-size: 60px;
     font-weight: bold;
     color: #006A50;
-    margin-bottom: 55px;
   }
 
   .boutique-list {
@@ -73,13 +72,13 @@
   }
 
   .boutique-address-name {
- font-family: "EngraversGothicBT-Heavy" !important;
-    font-size: 32px;
+    font-family: 'Gambarino-Regular';
+    font-size: 20px;
     font-weight: bold;
     color: #102345;
     text-transform: none;
     letter-spacing: 1px;
-    margin: 0px;
+    margin: 8px;
   }
 
   .boutique-address,
@@ -103,10 +102,14 @@
       height: auto;
     }
     .boutique-title{
-      font-size: 44px;
+      font-size: 48px;
     }
-    .boutique-section{
-      padding: 10px;
+    .boutique-title {
+      font-size: 76px;
+      max-width: 311px;
+      font-weight: 400;
+      margin: 0 auto;
+      line-height: 100%;
     }
   }
 </style>
