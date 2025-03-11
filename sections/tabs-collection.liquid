@@ -1,0 +1,258 @@
+<section class="tabs-collection {{ section.settings.width }}">
+  <div class="tabs-collection__inner">
+    <div class="tabs-collection__header text-center">
+      <h2 class="tabs-collection__title heading">{{ section.settings.title }}</h2>
+      <p class="tabs-collection__subtitle font-body">{{ section.settings.subtitle }}</p>
+    </div>
+    <div class="tabs-collection__tabs">
+      {% for block in section.blocks %}
+        <div
+          class="tabs-collection__tab {% if forloop.first %}tabs-collection__tab--active{% endif %}"
+          data-tab-control-id="{{ block.id }}"
+        >
+          <P class="tabs-collection__tab-title">{{ block.settings.title }}</P>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="tabs-collection__content">
+      {% for block in section.blocks %}
+        <div
+          class="tabs-collection__content-swiper-wrapper {% unless forloop.first %} hidden {% endunless %}"
+          data-tab-content-id="{{ block.id }}"
+        >
+          <div
+            class="tabs-collection__content-item tabs-collection__content-swiper-{{ forloop.index }}"
+          >
+            <div class="swiper-wrapper">
+              {% for product in block.settings.collection.products limit: block.settings.product_limit %}
+                <div
+                  class="swiper-slide"
+                >
+                  {% render 'product-grid-item', product: product %}
+                </div>
+              {% else %}
+                {% render 'onboarding-product-grid-item', limit: block.settings.product_limit, wrap: 'slide-item' %}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-button-next-{{ block.id }}"></div>
+          <div class="swiper-button-prev swiper-button-prev-{{ block.id }}"></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  :root {
+   --swiper-navigation-size: 76px;
+  }
+   .tabs-collection {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+   }
+   h2.tabs-collection__title {
+     color: #102345;
+     text-align: center;
+     font-size: 100px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 100%;
+     margin-bottom: 28px;
+     text-transform: capitalize;
+   }
+   p.tabs-collection__subtitle {
+     color: #44505F;
+     font-size: 20px;
+     font-style: normal;
+   }
+   .tabs-collection__content-swiper-wrapper {
+      position: relative;
+      z-index: 1;
+   }
+   .tabs-collection__tabs {
+      display: flex;
+      gap: 12px;
+      margin: 28px 0;
+   }
+   .tabs-collection__tab{
+      border: 2px solid #102345;
+      padding: 16px 24px;
+      color: #102345;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%; /* 23.4px */
+      letter-spacing: 0.54px;
+      text-transform: uppercase;
+      cursor: pointer;
+   }
+   .tabs-collection__content-item{
+      overflow: hidden;
+   }
+   .tabs-collection__tab.tabs-collection__tab--active {
+      background: #102345;
+      color: #E6DBC4;
+   }
+   .swiper-button-prev {
+       background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_10.png') !important;
+       background-repeat: no-repeat;
+       background-size: 100% auto;
+       z-index: 10;
+       left: -25px !important;
+       transition: transform 0.3s ease-in-out;
+    }
+    .swiper-button-prev:hover {
+       transform: scale(1.1);
+    }
+
+    .swiper-button-next {
+       background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_39.png') !important;
+       background-repeat: no-repeat;
+       background-size: 100% auto;
+       z-index: 10;
+       right: -25px !important;
+       transition: transform 0.3s ease-in-out;
+    }
+    .swiper-button-next:hover {
+       transform: scale(1.1);
+    }
+
+    .swiper-button-next::after {
+       display: none;
+    }
+
+    .swiper-button-prev::after {
+      display: none;
+    }
+</style>
+<script>
+   const tabControls = document.querySelectorAll('.tabs-collection__tab');
+   const tabContents = document.querySelectorAll('.tabs-collection__content-swiper-wrapper');
+   tabControls.forEach((control) => {
+    control.addEventListener('click', () => {
+      const tabId = control.dataset.tabControlId;
+      tabContents.forEach((content) => {
+        content.dataset.tabContentId === tabId ? content.classList.remove('hidden') : content.classList.add('hidden');
+      });
+      tabControls.forEach((control) => {
+        control.classList.remove('tabs-collection__tab--active');
+      });
+      control.classList.add('tabs-collection__tab--active');
+    });
+   });
+   document.addEventListener('DOMContentLoaded', () => {
+   {% for block in section.blocks %}
+    const swiper{{ forloop.index }} = new Swiper(".tabs-collection__content-swiper-{{ forloop.index }}", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination-{{ block.id }}",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-{{ block.id }}",
+        prevEl: ".swiper-button-prev-{{ block.id }}"
+      },
+    });
+   {% endfor %}
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Tabs Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop by function"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    },
+    {
+      "type": "range",
+      "id": "grid_large",
+      "min": 3,
+      "max": 6,
+      "step": 1,
+      "label": "Desktop",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "grid_medium",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Tablet",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "grid_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 0.1,
+      "label": "Mobile",
+      "default": 1.2
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "number",
+          "id": "product_limit",
+          "label": "Product Limit",
+          "default": 4
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabs Collection"
+    }
+  ]
+}
+{% endschema %}
