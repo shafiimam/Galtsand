@@ -789,8 +789,8 @@
         "collection_tWUbnf"
       ],
       "settings": {
-        "title": "Catalog",
-        "subttitle": "",
+        "title": "Categories",
+        "subttitle": "BASED ON WHAT CUSTOMERS ARE SHOPPING",
         "bg": "palette--light bg--neutral",
         "grid": 3,
         "rows": 1,
