@@ -4,7 +4,7 @@
   </div>
 
   <div class="brand-values-content">
-    <img src="{{ section.settings.logo | img_url  }}" alt="Logo" class="brand-logo">
+    <img src="{{ section.settings.logo | img_url: 'master'  }}" alt="Logo" class="brand-logo">
     <p class="firstP">{{ section.settings.title }}</p>
     <p class="secondP">{{ section.settings.paragraph }}</p>
     <a
@@ -39,7 +39,7 @@
     max-width: 350px;
     margin: 0 auto;
     @media only screen and (min-width: 1000px) {
-      max-width: 422px;
+      max-width: 586px;
     }
   }
   .firstP {

@@ -17,7 +17,7 @@
         "text_CaQFEG": {
           "type": "text",
           "settings": {
-            "title": "Description goes here",
+            "title": "OUR PROMISE",
             "text": "<p>At Galtsand, our promise is to create good for the earth and its people. From responsibly-sourced materials to eco-friendly manufacturing processes, we are committed to making the world better through sustainable practices. Through thoughtful design, we aim to redefine fashion's impact on our planet, as we forge a path forward, towards a brighter future.</p>",
             "text_size": 4,
             "accordion_default": "accordion-is-open"
@@ -55,8 +55,8 @@
             "newsletter_enable": true,
             "recaptcha_enabled": false,
             "kicker": "",
-            "heading": "Be the first to know",
-            "richtext": "<p>Be the first to know about our biggest and best sales</p>",
+            "heading": "BE THE FIRST TO KNOW",
+            "richtext": "<p>BE THE FIRST TO KNOW ABOUT OUR BIGGEST AND BEST SALES</p>",
             "text_size": 5,
             "background_color": "#4f4f4f",
             "text_color_value": "#e6dbc4"
@@ -70,7 +70,9 @@
         "social",
         "newsletter"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (min-width: 1024px) {.rte p:last-child {padding-right: 30%; }}"
+      ],
       "settings": {
         "menu_position": "left",
         "footer_image": "shopify://shop_images/logo-yellow.png",

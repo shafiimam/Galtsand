@@ -10649,6 +10649,12 @@ ol.alpha {
 .rte p:last-child {
   margin-bottom: 0;
 }
+/* @media (min-width: 1024px) {
+  .rte p:last-child {
+    padding-right: 30%;
+  }
+} */
+
 .rte--lock-font h1,
 .rte--lock-font h2,
 .rte--lock-font h3,
@@ -18616,6 +18622,7 @@ Collection grid item
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
   font-size: 2em;
   line-height: var(--leading-normal);
+  text-transform: uppercase;
 }
 p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   font-size: 1.3em !important;
@@ -20379,7 +20386,6 @@ input[type="number"].filter__price__input {
   -moz-column-gap: var(--gutter);
   column-gap: var(--gutter);
   row-gap: 24px;
-  
 }
 @media only screen and (min-width: 768px) {
   .collection-split__grid {

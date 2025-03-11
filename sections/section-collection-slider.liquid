@@ -1,5 +1,21 @@
 <!-- /sections/section-collection-slider.liquid -->
 <style>
+  .sub_heading_text {
+    font-family: 'EngraversGothicBT-Heavy';
+    font-size: 20px;
+    color: #e6dbc4;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+  }
+.sub_heading_text.sub-heading-left {
+  text-align: left !important;
+}
+
+.sub_heading_text.sub-heading-center {
+  text-align: center !important;
+}
+
+
   .section-carousel .quickview .icon-theme-stroke {
     stroke: #102345;
   }
@@ -75,7 +91,7 @@
       {% endif %}
       {% if section.settings.content != blank %}
         <div class="section-carousel__header-content">
-          <p class="small_text" style="color:#006A50">{{ section.settings.title | escape }}</p>
+          <p class="sub_heading_text {% if section.settings.sub_align_text == 'title-left' %}sub-heading-left{% elsif section.settings.sub_align_text == 'title-center' %}sub-heading-center{% endif %}" style="color:#006A50">{{ section.settings.title | escape }}</p>
         </div>
       {% endif %}
       <div
@@ -158,6 +174,22 @@
       "type": "select",
       "id": "align_text",
       "label": "Heading alignment",
+      "default": "title-center",
+      "options": [
+        {
+          "value": "title-left",
+          "label": "Left"
+        },
+        {
+          "value": "title-center",
+          "label": "Centered"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "sub_align_text",
+      "label": "Subheading alignment",
       "default": "title-center",
       "options": [
         {

@@ -1,6 +1,6 @@
 :root {
   --font-family-heading: "Gambarino-Regular";
-  --font-family-cursive: "exmouth";
+  --font-family-cursive: "Gambarino-Regular";
   --font-family-body: "EngraversGothicBT-Heavy";
   --font-family-secondary: "Inter Tight";
   --heading-size-xl: clamp(48px, 4vw, 120px);
