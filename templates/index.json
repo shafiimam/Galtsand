@@ -73,7 +73,7 @@
         "button_kqzzcW"
       ],
       "custom_css": [
-        ".hero__kicker p {font-family: EngraversGothicBT-Heavy !important; font-size: 57px !important; text-transform: uppercase;}"
+        ".hero__kicker p {font-family: EngraversGothicBT-Heavy !important; font-size: 50px !important; text-transform: uppercase;}"
       ],
       "settings": {
         "height": "use_screen_full",
