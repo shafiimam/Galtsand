@@ -74,7 +74,7 @@
         </div>
       {% endif %}
       {% if section.settings.content != blank %}
-        <div class="section-carousel__header-content {{ section.settings.align_text }}">
+        <div class="section-carousel__header-content {{ section.settings.sub_align_text }}">
           <p class="small_text" style="color:#006A50">{{ section.settings.title | escape }}</p>
         </div>
       {% endif %}
@@ -158,6 +158,22 @@
       "type": "select",
       "id": "align_text",
       "label": "Heading alignment",
+      "default": "title-center",
+      "options": [
+        {
+          "value": "title-left",
+          "label": "Left"
+        },
+        {
+          "value": "title-center",
+          "label": "Centered"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "sub_align_text",
+      "label": "Subheading alignment",
       "default": "title-center",
       "options": [
         {
