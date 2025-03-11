@@ -968,7 +968,7 @@
         "heading_P7PMnH"
       ],
       "custom_css": [
-        "p {font-family: 'Gambarino-Regular' !important; letter-spacing: 0.5px;}"
+        "p {font-family: \"Gambarino-Regular\" !important; letter-spacing: 0.5px;}"
       ],
       "settings": {
         "align_text": "text-center",
@@ -996,7 +996,7 @@
         "text_RmEaLn"
       ],
       "custom_css": [
-        "p {font-family: \"EngraversGothicBT-Heavy\";}"
+        "p {font-family: \"EngraversGothicBT-Heavy\"; text-transform: uppercase;}"
       ],
       "settings": {
         "align_text": "text-center",
