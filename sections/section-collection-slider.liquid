@@ -8,6 +8,14 @@
     padding-bottom: 30px;
     letter-spacing: 2px;
   }
+  .title-left {
+  text-align: left;
+}
+
+.title-center {
+  text-align: center;
+}
+
   .section-carousel .quickview .icon-theme-stroke {
     stroke: #102345;
   }
@@ -82,8 +90,8 @@
         </div>
       {% endif %}
       {% if section.settings.content != blank %}
-        <div class="section-carousel__header-content ">
-          <p class="sub_heading_text {{ section.settings.sub_align_text }}" style="color:#006A50">{{ section.settings.title | escape }}</p>
+        <div class="section-carousel__header-content {{ section.settings.sub_align_text }} ">
+          <p class="sub_heading_text" style="color:#006A50">{{ section.settings.title | escape }}</p>
         </div>
       {% endif %}
       <div
