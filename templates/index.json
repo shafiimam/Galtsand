@@ -781,7 +781,7 @@
         "collection_HkAMHU"
       ],
       "settings": {
-        "title": "Trending Categories",
+        "title": "Trending Now",
         "subttitle": "BASED ON WHAT CUSTOMERS ARE SHOPPING",
         "bg": "palette--light bg--neutral",
         "grid": 3,
@@ -868,6 +868,34 @@
         "description_4": "Our dedication to quality and innovation is reflected in our meticulous sourcing and expert craftsmanship. Every fabric is thoughtfully chosen, every stitch carefully placed, to create garments that endure. From our sportswear roots to our modern evolution, we create pieces that move with you, in style and spirit.",
         "btn_name": "Learn More",
         "btn_link": "shopify://pages/about-us1"
+      }
+    },
+    "blue_brand_value_section_FNQX3i": {
+      "type": "blue_brand_value_section",
+      "settings": {
+        "left_image": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
+        "logo": "shopify://shop_images/Frame_3.png",
+        "title": "Core Values",
+        "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
+        "button_link": "",
+        "button_text": "See How We Do It",
+        "right_image_type": "image",
+        "right_image": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
+        "right_video": ""
+      }
+    },
+    "icons_values_section_h9PbHK": {
+      "type": "icons_values_section",
+      "settings": {
+        "icon_1": "shopify://shop_images/mdi_recycle.png",
+        "title_1": "HERITAGE",
+        "text_1": "Rooted in tradition, our pieces blend timeless design with modern innovation. Each piece is a tribute to our rich history in sportswear, crafted to honor the past while embracing the future.",
+        "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
+        "title_2": "CRAFTSMANSHIP",
+        "text_2": "Every stitch, fabric, and finish is chosen with care. We prioritize durability, precision, and innovation, ensuring each garment stands the test of time, both in quality and style.",
+        "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
+        "title_3": "CONNECTION",
+        "text_3": "We believe in real-world movement, human connection, and a sense of belonging. We champion presence, outdoor exploration, and the power of shared experiences."
       }
     },
     "customer_review_section_xAPmhf": {
@@ -1113,34 +1141,6 @@
       "settings": {
         "main_title": "Our Boutique",
         "image": "shopify://shop_images/DSC6176.jpg"
-      }
-    },
-    "blue_brand_value_section_FNQX3i": {
-      "type": "blue_brand_value_section",
-      "settings": {
-        "left_image": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
-        "logo": "shopify://shop_images/Frame_3.png",
-        "title": "Core Values",
-        "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
-        "button_link": "",
-        "button_text": "See How We Do It",
-        "right_image_type": "image",
-        "right_image": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
-        "right_video": ""
-      }
-    },
-    "icons_values_section_h9PbHK": {
-      "type": "icons_values_section",
-      "settings": {
-        "icon_1": "shopify://shop_images/mdi_recycle.png",
-        "title_1": "HERITAGE",
-        "text_1": "Rooted in tradition, our pieces blend timeless design with modern innovation. Each piece is a tribute to our rich history in sportswear, crafted to honor the past while embracing the future.",
-        "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
-        "title_2": "CRAFTSMANSHIP",
-        "text_2": "Every stitch, fabric, and finish is chosen with care. We prioritize durability, precision, and innovation, ensuring each garment stands the test of time, both in quality and style.",
-        "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
-        "title_3": "CONNECTION",
-        "text_3": "We believe in real-world movement, human connection, and a sense of belonging. We champion presence, outdoor exploration, and the power of shared experiences."
       }
     }
   },
