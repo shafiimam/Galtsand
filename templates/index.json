@@ -684,8 +684,8 @@
       "settings": {
         "collection": "mens-best-sellers",
         "product_limit": 12,
-        "title": "",
-        "content": "Men's New Arrivals",
+        "title": "MEN'S NEW ARRIVALS",
+        "content": "",
         "align_text": "title-left",
         "progress_bar": "mobile",
         "grid_large": 4,
