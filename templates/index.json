@@ -750,20 +750,6 @@
             "block_card_position": "first"
           }
         },
-        "collection_HkAMHU": {
-          "type": "collection",
-          "settings": {
-            "collection": "sweaters-joggers",
-            "title": "Sweaters & Joggers",
-            "link_text": "",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first"
-          }
-        },
         "collection_tWUbnf": {
           "type": "collection",
           "settings": {
@@ -777,12 +763,26 @@
             "link_size": 3,
             "block_card_position": "last"
           }
+        },
+        "collection_HkAMHU": {
+          "type": "collection",
+          "settings": {
+            "collection": "sweaters-joggers",
+            "title": "Sweaters & Joggers",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
         }
       },
       "block_order": [
         "collection_kzEHiJ",
-        "collection_HkAMHU",
-        "collection_tWUbnf"
+        "collection_tWUbnf",
+        "collection_HkAMHU"
       ],
       "settings": {
         "title": "Trending Now",
