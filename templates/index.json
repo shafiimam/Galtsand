@@ -751,25 +751,25 @@
             "block_card_position": "first"
           }
         },
-        "collection_tWUbnf": {
+        "collection_GaPRP3": {
           "type": "collection",
           "settings": {
-            "collection": "pique",
-            "title": "Pique",
+            "collection": "all-women",
+            "title": "Shorts",
             "link_text": "",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "last"
+            "block_card_position": "first"
           }
         },
-        "collection_HkAMHU": {
+        "collection_xgYtnf": {
           "type": "collection",
           "settings": {
-            "collection": "sweaters-joggers",
-            "title": "Sweaters & Joggers",
+            "collection": "all-women",
+            "title": "Shorts",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -782,8 +782,8 @@
       },
       "block_order": [
         "collection_kzEHiJ",
-        "collection_tWUbnf",
-        "collection_HkAMHU"
+        "collection_GaPRP3",
+        "collection_xgYtnf"
       ],
       "settings": {
         "title": "Trending Now",
