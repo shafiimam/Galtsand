@@ -402,9 +402,9 @@
     "section_product_masonry_Wia8FW": {
       "type": "section-product-masonry",
       "settings": {
-        "title": "Yoga collection",
-        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
-        "image": "shopify://shop_images/Frame_176.png",
+        "title": "Monthly Featured Lookbook/Edit",
+        "subtitle": "Women's outdoor collection - replace images here with new in items from new drop.",
+        "image": "shopify://shop_images/galtsand-model.png",
         "product1": "airflow-leggings",
         "product2": "classic-tote-bag",
         "product3": "empower-bra",
