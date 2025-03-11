@@ -225,115 +225,6 @@
         "width": "wrapper--full"
       }
     },
-    "column_product_collection_bp8UTm": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "shorts-1",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
-        "width": "wrapper--full"
-      }
-    },
-    "section_list_collections_products_wg4cKG": {
-      "type": "section-list-collections-products",
-      "blocks": {
-        "collection_iBkUYd": {
-          "type": "collection",
-          "settings": {
-            "collection": "womens-street",
-            "title": "Tennis",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "last"
-          }
-        },
-        "collection_V9bRRL": {
-          "type": "collection",
-          "settings": {
-            "collection": "bras",
-            "title": "Outdoor",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first"
-          }
-        },
-        "collection_9jBt6c": {
-          "type": "collection",
-          "settings": {
-            "collection": "leggings",
-            "title": "Equestrian",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "last"
-          }
-        },
-        "button_RB9wME": {
-          "type": "button",
-          "settings": {
-            "link_text": "Browse all collections",
-            "link": "shopify://collections"
-          }
-        }
-      },
-      "block_order": [
-        "collection_iBkUYd",
-        "collection_V9bRRL",
-        "collection_9jBt6c",
-        "button_RB9wME"
-      ],
-      "settings": {
-        "title": "Shop by activity section",
-        "subttitle": "Handcrafted by our expert designers.",
-        "bg": "palette--light bg--neutral",
-        "grid": 3,
-        "rows": 1,
-        "enable_scroll_mobile": true,
-        "grid_small": 1.2,
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "column_product_collection_HDP6Rw": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "new-in",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full"
-      }
-    },
-    "section_product_masonry_Wia8FW": {
-      "type": "section-product-masonry",
-      "settings": {
-        "title": "Yoga collection",
-        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
-        "image": "shopify://shop_images/Frame_176.png",
-        "product1": "airflow-leggings",
-        "product2": "classic-tote-bag",
-        "product3": "empower-bra",
-        "product4": "freedom-leggings",
-        "width": "wrapper--full"
-      }
-    },
     "section_shop_by_color_yWCBP4": {
       "type": "section-shop-by-color",
       "blocks": {
@@ -411,6 +302,115 @@
         "subtitle": "Handcrafted by our expert designers.",
         "width": "wrapper--full"
       }
+    },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "shorts-1",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/best-sellers",
+        "width": "wrapper--full"
+      }
+    },
+    "section_list_collections_products_wg4cKG": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_9jBt6c": {
+          "type": "collection",
+          "settings": {
+            "collection": "leggings",
+            "title": "Equestrian",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last"
+          }
+        },
+        "collection_iBkUYd": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-street",
+            "title": "Tennis",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last"
+          }
+        },
+        "collection_V9bRRL": {
+          "type": "collection",
+          "settings": {
+            "collection": "bras",
+            "title": "Outdoor",
+            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
+        },
+        "button_RB9wME": {
+          "type": "button",
+          "settings": {
+            "link_text": "Browse all collections",
+            "link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "collection_9jBt6c",
+        "collection_iBkUYd",
+        "collection_V9bRRL",
+        "button_RB9wME"
+      ],
+      "settings": {
+        "title": "Shop by activity section",
+        "subttitle": "Handcrafted by our expert designers.",
+        "bg": "palette--light bg--neutral",
+        "grid": 3,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "column_product_collection_HDP6Rw": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "New this week",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "bottle-blue",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/new-in",
+        "width": "wrapper--full"
+      }
+    },
+    "section_product_masonry_Wia8FW": {
+      "type": "section-product-masonry",
+      "settings": {
+        "title": "Yoga collection",
+        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
+        "image": "shopify://shop_images/Frame_176.png",
+        "product1": "airflow-leggings",
+        "product2": "classic-tote-bag",
+        "product3": "empower-bra",
+        "product4": "freedom-leggings",
+        "width": "wrapper--full"
+      }
     }
   },
   "order": [
@@ -419,10 +419,10 @@
     "section_double_ae83ar",
     "collection_card_column_Ydrkex",
     "collection_card_column_8D4rTM",
+    "section_shop_by_color_yWCBP4",
     "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
-    "section_product_masonry_Wia8FW",
-    "section_shop_by_color_yWCBP4"
+    "section_product_masonry_Wia8FW"
   ]
 }
