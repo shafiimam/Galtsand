@@ -715,12 +715,12 @@
         "padding_bottom": 36
       }
     },
-    "section_collection_slider_wryWc6": {
+    "section_collection_slider_XiBHU9": {
       "type": "section-collection-slider",
       "settings": {
         "collection": "mens-best-sellers",
         "product_limit": 12,
-        "title": "MEN'S NEW ARRIVALS",
+        "title": "NEW ARRIVALS",
         "content": "A modern approach to everyday classics.",
         "align_text": "title-center",
         "sub_align_text": "title-center",
@@ -796,60 +796,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "section_article_column_tHbWhz": {
-      "type": "section-article-column",
-      "blocks": {
-        "article_row_YHAKwJ": {
-          "type": "article-row",
-          "settings": {
-            "article_1": "",
-            "article_2": "",
-            "article_3": "",
-            "text": "The Heritage Collection",
-            "content": "featured shop -",
-            "button_link": "",
-            "button_label": "Explore Now",
-            "block_position": "last"
-          }
-        },
-        "article_row_bbL4qb": {
-          "type": "article-row",
-          "settings": {
-            "article_1": "",
-            "article_2": "",
-            "article_3": "",
-            "text": "The Equestrian Edit",
-            "content": "featured shop",
-            "button_link": "",
-            "button_label": "Explore Now",
-            "block_position": "first"
-          }
-        },
-        "article_row_fQDY3m": {
-          "type": "article-row",
-          "settings": {
-            "article_1": "news/tops-on-top-the-galtsand-top-edit",
-            "article_2": "news/stay-active",
-            "article_3": "blogs/thanksgiving",
-            "text": "The Activewear Series",
-            "content": "men's and women's activewear pieces (yoga and sport only)",
-            "button_link": "",
-            "button_label": "Explore Now",
-            "block_position": "last"
-          }
-        }
-      },
-      "block_order": [
-        "article_row_YHAKwJ",
-        "article_row_bbL4qb",
-        "article_row_fQDY3m"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Featured Shops",
-        "content": "highlight featured shops designed with our weekly lookbooks, updates, and campaigns"
       }
     },
     "about_us_section_xikFig": {
@@ -1168,9 +1114,8 @@
     "section_before_after_fCxeWU",
     "section_product_zBPAN6",
     "collection-split-section-1",
-    "section_collection_slider_wryWc6",
+    "section_collection_slider_XiBHU9",
     "section_list_collections_products_N6gfAm",
-    "section_article_column_tHbWhz",
     "about_us_section_xikFig",
     "blue_brand_value_section_FNQX3i",
     "icons_values_section_h9PbHK",
