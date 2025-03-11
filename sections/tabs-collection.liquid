@@ -37,6 +37,13 @@
           </div>
           <div class="swiper-button-next swiper-button-next-{{ block.id }}"></div>
           <div class="swiper-button-prev swiper-button-prev-{{ block.id }}"></div>
+          {% if block.settings.button_text != blank %}
+            <div class="tabs-collection__button-wrapper">
+              <a href="{{ block.settings.button_link }}" class="tabs-collection__button btn btn--outline">
+                {{- block.settings.button_text -}}
+              </a>
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
@@ -125,6 +132,21 @@
     .swiper-button-prev::after {
       display: none;
     }
+    .tabs-collection__button-wrapper {
+       display: flex;
+       justify-content: center;
+       margin-top: 52px;
+   }
+   .tabs-collection__button{
+      border: 2px solid #102345;
+      color: #102345;
+      transition: all 0.1s ease-in-out;
+   }
+   .tabs-collection__button:hover {
+      background: #102345;
+      color: #E6DBC4;
+      border: 2px solid #E6DBC4;
+   }
 </style>
 <script>
    const tabControls = document.querySelectorAll('.tabs-collection__tab');
@@ -134,6 +156,11 @@
       const tabId = control.dataset.tabControlId;
       tabContents.forEach((content) => {
         content.dataset.tabContentId === tabId ? content.classList.remove('hidden') : content.classList.add('hidden');
+        content.style.opacity = '0';
+        content.style.transition = 'opacity 0.3s ease-in';
+        setTimeout(() => {
+          content.style.opacity = '1';
+        }, 300);
       });
       tabControls.forEach((control) => {
         control.classList.remove('tabs-collection__tab--active');
@@ -245,6 +272,17 @@
           "id": "product_limit",
           "label": "Product Limit",
           "default": 4
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
         }
       ]
     }
