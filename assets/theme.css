@@ -10649,11 +10649,11 @@ ol.alpha {
 .rte p:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .rte p:last-child {
     padding-right: 30%;
   }
-}
+} */
 
 .rte--lock-font h1,
 .rte--lock-font h2,
