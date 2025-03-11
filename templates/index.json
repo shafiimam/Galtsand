@@ -253,29 +253,6 @@
         "padding_bottom": 0
       }
     },
-    "about_us_section_xikFig": {
-      "type": "about_us_section",
-      "settings": {
-        "image_1": "shopify://shop_images/hike.png",
-        "image_1_alt": "heritage",
-        "image_2": "shopify://shop_images/0079_3_1.jpg",
-        "image_2_alt": "heritage",
-        "image_3": "shopify://shop_images/hike1.jpg",
-        "image_3_alt": "bra",
-        "image_4": "shopify://shop_images/hike2.jpg",
-        "image_4_alt": "t-shirt",
-        "subtitle_1": "Founded in 1986",
-        "description_1": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand was built on the belief that dressing is a universal language, one that unites generations, cultures, and communities. With over five decades of textile expertise, the brand has mastered the craft of creating timeless pieces, athleisure, and accessories that honor heritage while embracing modern movement.",
-        "subtitle_2": "Pioneers of the printed crewneck sweatshirt",
-        "description_2": "Our journey began with the iconic round-neck sweatshirt, renowned for its heritage, comfort, and timeless appeal. Partnering with the NCAA, NFL, and wildlife organizations, we've crafted a legacy of storytelling through garments, capturing historic moments and connecting generations through shared experiences.",
-        "subtitle_3": "heritage, reimagined",
-        "description_3": "Designed with purpose and precision, each piece is a tribute to craftsmanship, resilience, and the stories carried by those who wear them. Classic silhouettes are reimagined, blending archival influences with contemporary design, ensuring that every garment is made not just to be worn, but to be lived in.",
-        "subtitle_4": "TIMELESS QUALITY",
-        "description_4": "Our dedication to quality and innovation is reflected in our meticulous sourcing and expert craftsmanship. Every fabric is thoughtfully chosen, every stitch carefully placed, to create garments that endure. From our sportswear roots to our modern evolution, we create pieces that move with you, in style and spirit.",
-        "btn_name": "Learn More",
-        "btn_link": "shopify://pages/about-us1"
-      }
-    },
     "collection-split-section-2": {
       "type": "collection-split",
       "disabled": true,
@@ -855,6 +832,29 @@
         "content": "highlight featured shops designed with our weekly lookbooks, updates, and campaigns"
       }
     },
+    "about_us_section_xikFig": {
+      "type": "about_us_section",
+      "settings": {
+        "image_1": "shopify://shop_images/hike.png",
+        "image_1_alt": "heritage",
+        "image_2": "shopify://shop_images/0079_3_1.jpg",
+        "image_2_alt": "heritage",
+        "image_3": "shopify://shop_images/hike1.jpg",
+        "image_3_alt": "bra",
+        "image_4": "shopify://shop_images/hike2.jpg",
+        "image_4_alt": "t-shirt",
+        "subtitle_1": "Founded in 1986",
+        "description_1": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand was built on the belief that dressing is a universal language, one that unites generations, cultures, and communities. With over five decades of textile expertise, the brand has mastered the craft of creating timeless pieces, athleisure, and accessories that honor heritage while embracing modern movement.",
+        "subtitle_2": "Pioneers of the printed crewneck sweatshirt",
+        "description_2": "Our journey began with the iconic round-neck sweatshirt, renowned for its heritage, comfort, and timeless appeal. Partnering with the NCAA, NFL, and wildlife organizations, we've crafted a legacy of storytelling through garments, capturing historic moments and connecting generations through shared experiences.",
+        "subtitle_3": "heritage, reimagined",
+        "description_3": "Designed with purpose and precision, each piece is a tribute to craftsmanship, resilience, and the stories carried by those who wear them. Classic silhouettes are reimagined, blending archival influences with contemporary design, ensuring that every garment is made not just to be worn, but to be lived in.",
+        "subtitle_4": "TIMELESS QUALITY",
+        "description_4": "Our dedication to quality and innovation is reflected in our meticulous sourcing and expert craftsmanship. Every fabric is thoughtfully chosen, every stitch carefully placed, to create garments that endure. From our sportswear roots to our modern evolution, we create pieces that move with you, in style and spirit.",
+        "btn_name": "Learn More",
+        "btn_link": "shopify://pages/about-us1"
+      }
+    },
     "customer_review_section_xAPmhf": {
       "type": "customer_review_section",
       "blocks": {
@@ -1167,7 +1167,6 @@
     "section_video_pMeAkR",
     "hero",
     "section_logos_E3KxjC",
-    "about_us_section_xikFig",
     "collection-split-section-2",
     "product-grid",
     "section_look_bmmDrc",
@@ -1180,6 +1179,7 @@
     "collection-split-section-1",
     "section_list_collections_products_N6gfAm",
     "section_article_column_tHbWhz",
+    "about_us_section_xikFig",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",
