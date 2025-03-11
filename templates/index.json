@@ -74,7 +74,7 @@
       ],
       "custom_css": [
         ".hero__kicker p {font-family: EngraversGothicBT-Heavy !important; font-size: 50px !important; text-transform: uppercase;}",
-        "@media screen and (max-width: 767px) {.hero__kicker p{font-size: 20px }}"
+        "@media screen and (max-width: 767px) {.hero__kicker p {font-size: 20px !important; }}"
       ],
       "settings": {
         "height": "use_screen_full",
