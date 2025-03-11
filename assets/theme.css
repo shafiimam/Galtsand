@@ -10648,6 +10648,7 @@ ol.alpha {
 }
 .rte p:last-child {
   margin-bottom: 0;
+  padding-right: 30%;
 }
 .rte--lock-font h1,
 .rte--lock-font h2,
@@ -20379,7 +20380,6 @@ input[type="number"].filter__price__input {
   -moz-column-gap: var(--gutter);
   column-gap: var(--gutter);
   row-gap: 24px;
-  
 }
 @media only screen and (min-width: 768px) {
   .collection-split__grid {
