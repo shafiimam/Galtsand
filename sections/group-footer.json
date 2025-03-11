@@ -71,7 +71,7 @@
         "newsletter"
       ],
       "custom_css": [
-        ".rte p:last-child {padding-right: 30%;}"
+        "@media (min-width: 1024px) {.rte p:last-child {padding-right: 30%;}}"
       ],
       "settings": {
         "menu_position": "left",
