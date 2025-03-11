@@ -17,7 +17,7 @@
         "text_CaQFEG": {
           "type": "text",
           "settings": {
-            "title": "Description goes here",
+            "title": "OUR PROMISE",
             "text": "<p>At Galtsand, our promise is to create good for the earth and its people. From responsibly-sourced materials to eco-friendly manufacturing processes, we are committed to making the world better through sustainable practices. Through thoughtful design, we aim to redefine fashion's impact on our planet, as we forge a path forward, towards a brighter future.</p>",
             "text_size": 4,
             "accordion_default": "accordion-is-open"
@@ -71,7 +71,7 @@
         "newsletter"
       ],
       "custom_css": [
-        "@media (min-width: 1024px) {.rte p:last-child {padding-right: 30%;}}"
+        "@media (min-width: 1024px) {.rte p:last-child {padding-right: 30%; }}"
       ],
       "settings": {
         "menu_position": "left",
