@@ -679,6 +679,24 @@
         "padding_bottom": 36
       }
     },
+    "section_collection_slider_wryWc6": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "mens-best-sellers",
+        "product_limit": 12,
+        "title": "",
+        "content": "Men's New Arrivals",
+        "align_text": "title-left",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection-split-section-1": {
       "type": "collection-split",
       "blocks": {
@@ -688,9 +706,9 @@
             "image": "shopify://shop_images/CF81441.jpg",
             "kicker": "SS25",
             "heading": "Get Ready for New Heights",
-            "sub_text": "Climb higher in style – our Spring collection takes your wardrobe to new elevations.",
+            "sub_text": "Climb higher in style – The first drop of our Spring collection is here.",
             "text_color": "text--invert--primary",
-            "link_text": "Shop THE NEW SEASON",
+            "link_text": "SHOP NEW IN",
             "link": "shopify://collections/bottoms",
             "button_color": "btn--primary",
             "button_style": "btn"
@@ -716,8 +734,8 @@
         "slide_EzRiEK"
       ],
       "settings": {
-        "header_text": "Elevated Heights",
-        "header_h3text": "our latest drop",
+        "header_text": "",
+        "header_h3text": "DROP ONE",
         "collection": "outdoor-collection",
         "product_list": [],
         "sticky_image_enable": false,
@@ -730,24 +748,6 @@
         "bg": "palette--bright bg--bright",
         "object_position": "center-center",
         "width": "wrapper--none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_collection_slider_wryWc6": {
-      "type": "section-collection-slider",
-      "settings": {
-        "collection": "mens-best-sellers",
-        "product_limit": 12,
-        "title": "top choices to elevate your wardrobe with versatile pieces for every adventure.",
-        "content": "Best Sellers",
-        "align_text": "title-center",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--bright bg--bright",
-        "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1173,8 +1173,8 @@
     "logos",
     "section_before_after_fCxeWU",
     "section_product_zBPAN6",
-    "collection-split-section-1",
     "section_collection_slider_wryWc6",
+    "collection-split-section-1",
     "section_list_collections_products_N6gfAm",
     "section_article_column_tHbWhz",
     "blue_brand_value_section_FNQX3i",
