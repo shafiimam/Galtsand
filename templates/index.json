@@ -948,6 +948,9 @@
         "review_XKAr9a",
         "review_Ka8GMA"
       ],
+      "custom_css": [
+        ".font-subheading {text-transform: uppercase;}"
+      ],
       "settings": {
         "main_title": "#GaltCrew",
         "subtitle": "Reviews from galtsand ambassadors"
