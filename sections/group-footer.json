@@ -55,8 +55,8 @@
             "newsletter_enable": true,
             "recaptcha_enabled": false,
             "kicker": "",
-            "heading": "Be the first to know",
-            "richtext": "<p>Be the first to know about our biggest and best sales</p>",
+            "heading": "BE THE FIRST TO KNOW",
+            "richtext": "<p>BE THE FIRST TO KNOW ABOUT OUR BIGGEST AND BEST SALES</p>",
             "text_size": 5,
             "background_color": "#4f4f4f",
             "text_color_value": "#e6dbc4"
