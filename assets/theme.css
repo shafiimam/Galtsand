@@ -6474,8 +6474,6 @@ input[type="search"]::-webkit-search-decoration {
   }
   .medium-up--hide {
     display: none !important;
-    color: #660f28 !important;
-    font-family: "EngraversGothicBT-Heavy" !important;
   }
 }
 @media only screen and (max-width: 1099px) {
