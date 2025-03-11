@@ -54,9 +54,9 @@
       "settings": {
         "paragraph": "ABOUT US",
         "heading": "Honoring History through Heritage and Sport",
-        "image_2": "shopify://shop_images/shortnew10_f24a4c6e-c439-44a7-af41-fff1ddbe22a7.jpg",
-        "image_1": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
-        "image_3": "shopify://shop_images/shortnew10_f24a4c6e-c439-44a7-af41-fff1ddbe22a7.jpg"
+        "image_2": "shopify://shop_images/Frame_240.png",
+        "image_1": "shopify://shop_images/Frame_241.png",
+        "image_3": "shopify://shop_images/Frame_242.png"
       }
     },
     "image_with_text_custom_NJXcdy": {
@@ -72,8 +72,8 @@
         "image_pair_YKxNzX": {
           "type": "image_pair",
           "settings": {
-            "image_1": "shopify://shop_images/GALTSANDEQUESTRIAN-851.jpg",
-            "image_2": "shopify://shop_images/DSC_541822_ef278a81-c905-4676-a599-2a4c46705f93.jpg"
+            "image_1": "shopify://shop_images/IMG_6720.jpg",
+            "image_2": "shopify://shop_images/IMG_6721.jpg"
           }
         }
       },
@@ -82,7 +82,7 @@
         "image_pair_YKxNzX"
       ],
       "settings": {
-        "image": "shopify://shop_images/StandardCalssicPolo_DarkestNavy_Medium-1_90c3649d-e0a9-4ba1-99da-068c239fe286.jpg",
+        "image": "shopify://shop_images/IMG_6713_1_2.jpg",
         "remove_top_padding": false,
         "image_position": "right",
         "width": "wrapper--none"
@@ -106,7 +106,7 @@
         ".image-with-text-section__blocks {justify-content: center;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/DSC59704.jpg",
+        "image": "shopify://shop_images/82d3f1aaec77a1c56c31ce14e21cc7b7.jpg",
         "remove_top_padding": true,
         "image_position": "left",
         "width": "wrapper--none"
@@ -115,7 +115,7 @@
     "section_image_4qDMtM": {
       "type": "section-image",
       "settings": {
-        "image": "shopify://shop_images/Pullover_Hoodie_White_Medium-12.jpg",
+        "image": "shopify://shop_images/IMG_6729.jpg",
         "max_width": 100,
         "x_align": "center",
         "color_bg": "palette--light bg--neutral",
@@ -131,6 +131,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/IMG_6728.jpg",
             "shape_class": "",
             "title": "",
             "text": "<p>We owe our continued success to the thousands who have persevered to keep our legacy alive — those who care for our pieces as heirlooms because they recognize something enduring in them. </p>",
@@ -147,6 +148,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/IMG_6730.jpg",
             "shape_class": "",
             "title": "",
             "text": "<p>We are grateful to everyone who shares our vision of creating timeless pieces that stand as symbols of what is possible when individuals pursue their best.<br/></p>",
@@ -189,6 +191,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/IMG_6734.jpg",
             "shape_class": "",
             "title": "",
             "text": "",
@@ -205,6 +208,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/IMG_6666.jpg",
             "shape_class": "",
             "title": "",
             "text": "",
@@ -221,6 +225,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/IMG_6668.jpg",
             "shape_class": "",
             "title": "",
             "text": "",
@@ -297,7 +302,7 @@
         "text_7ghW8z"
       ],
       "settings": {
-        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
+        "image": "shopify://shop_images/IMG_6734_1.jpg",
         "remove_top_padding": true,
         "image_position": "left",
         "width": "wrapper--none"
@@ -318,7 +323,7 @@
         "text_VciWgw"
       ],
       "settings": {
-        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851_f0d6d26e-8a26-4f88-a267-75495c1452a0.png",
+        "image": "shopify://shop_images/IMG_6666_1.jpg",
         "remove_top_padding": true,
         "image_position": "left",
         "width": "wrapper--none"
