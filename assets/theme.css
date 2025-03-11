@@ -18622,6 +18622,7 @@ Collection grid item
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
   font-size: 2em;
   line-height: var(--leading-normal);
+  text-transform: uppercase;
 }
 p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   font-size: 1.3em !important;
