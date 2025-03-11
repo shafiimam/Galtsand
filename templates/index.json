@@ -746,20 +746,6 @@
             "block_card_position": "first"
           }
         },
-        "collection_tWUbnf": {
-          "type": "collection",
-          "settings": {
-            "collection": "pique",
-            "title": "Pique",
-            "link_text": "",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "last"
-          }
-        },
         "collection_HkAMHU": {
           "type": "collection",
           "settings": {
@@ -773,12 +759,26 @@
             "link_size": 3,
             "block_card_position": "first"
           }
+        },
+        "collection_tWUbnf": {
+          "type": "collection",
+          "settings": {
+            "collection": "pique",
+            "title": "Pique",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last"
+          }
         }
       },
       "block_order": [
         "collection_kzEHiJ",
-        "collection_tWUbnf",
-        "collection_HkAMHU"
+        "collection_HkAMHU",
+        "collection_tWUbnf"
       ],
       "settings": {
         "title": "Trending Now",
