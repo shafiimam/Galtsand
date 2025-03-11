@@ -659,25 +659,6 @@
         "padding_bottom": 36
       }
     },
-    "section_collection_slider_wryWc6": {
-      "type": "section-collection-slider",
-      "settings": {
-        "collection": "mens-best-sellers",
-        "product_limit": 12,
-        "title": "MEN'S NEW ARRIVALS",
-        "content": "Men's New Arrivals",
-        "align_text": "title-left",
-        "sub_align_text": "title-left",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--bright bg--bright",
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "collection-split-section-1": {
       "type": "collection-split",
       "blocks": {
@@ -729,6 +710,25 @@
         "bg": "palette--bright bg--bright",
         "object_position": "center-center",
         "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_collection_slider_wryWc6": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "mens-best-sellers",
+        "product_limit": 12,
+        "title": "MEN'S NEW ARRIVALS",
+        "content": "Men's New Arrivals",
+        "align_text": "title-left",
+        "sub_align_text": "title-left",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -968,7 +968,7 @@
         "heading_P7PMnH"
       ],
       "custom_css": [
-        "p {font-family: \"Exmouth\"; letter-spacing: 1px;}"
+        "p {font-family: 'Gambarino-Regular' !important; letter-spacing: 0.5px;}"
       ],
       "settings": {
         "align_text": "text-center",
