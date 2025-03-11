@@ -877,6 +877,7 @@
     },
     "blue_brand_value_section_FNQX3i": {
       "type": "blue_brand_value_section",
+      "disabled": true,
       "settings": {
         "left_image": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
         "logo": "shopify://shop_images/Frame_7_54d7efbd-25d8-415c-9db9-52afb02f7365.png",
@@ -891,6 +892,7 @@
     },
     "icons_values_section_h9PbHK": {
       "type": "icons_values_section",
+      "disabled": true,
       "settings": {
         "icon_1": "shopify://shop_images/mdi_recycle.png",
         "title_1": "HERITAGE",
