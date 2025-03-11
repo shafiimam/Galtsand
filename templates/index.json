@@ -736,7 +736,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-women",
-            "title": "Shop Womens",
+            "title": "Shorts",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -749,8 +749,8 @@
         "collection_tWUbnf": {
           "type": "collection",
           "settings": {
-            "collection": "all-men",
-            "title": "Shop Mens",
+            "collection": "pique",
+            "title": "Pique",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -764,7 +764,7 @@
           "type": "collection",
           "settings": {
             "collection": "sweaters-joggers",
-            "title": "Shop Sweaters & Joggers",
+            "title": "Sweaters & Joggers",
             "link_text": "",
             "enable_item": true,
             "text": "",
