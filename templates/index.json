@@ -1105,40 +1105,10 @@
             "address": "10300 Forest Hill Blvd, Wellington, FL 33414",
             "phone": "877.756.7353"
           }
-        },
-        "boutique_hmr6af": {
-          "type": "boutique",
-          "disabled": true,
-          "settings": {
-            "address_name": "Address Name",
-            "address": "6391 Elgin St. Celina, Delaware 10299",
-            "phone": "877.756.7353"
-          }
-        },
-        "boutique_44qdXc": {
-          "type": "boutique",
-          "disabled": true,
-          "settings": {
-            "address_name": "Address Name",
-            "address": "6391 Elgin St. Celina, Delaware 10299",
-            "phone": "877.756.7353"
-          }
-        },
-        "boutique_KQFeeM": {
-          "type": "boutique",
-          "disabled": true,
-          "settings": {
-            "address_name": "Address Name",
-            "address": "6391 Elgin St. Celina, Delaware 10299",
-            "phone": "877.756.7353"
-          }
         }
       },
       "block_order": [
-        "boutique_XFTMAk",
-        "boutique_hmr6af",
-        "boutique_44qdXc",
-        "boutique_KQFeeM"
+        "boutique_XFTMAk"
       ],
       "settings": {
         "main_title": "Our Boutique",
@@ -1192,13 +1162,13 @@
     "section_list_collections_products_N6gfAm",
     "section_article_column_tHbWhz",
     "about_us_section_xikFig",
+    "blue_brand_value_section_FNQX3i",
+    "icons_values_section_h9PbHK",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",
     "17406720812673b98f",
     "social_media_rWB4KY",
-    "our_boutiques_mhwpF4",
-    "blue_brand_value_section_FNQX3i",
-    "icons_values_section_h9PbHK"
+    "our_boutiques_mhwpF4"
   ]
 }
