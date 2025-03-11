@@ -70,7 +70,9 @@
         "social",
         "newsletter"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".rte p:last-child {padding-right: 30%;}"
+      ],
       "settings": {
         "menu_position": "left",
         "footer_image": "shopify://shop_images/logo-yellow.png",
