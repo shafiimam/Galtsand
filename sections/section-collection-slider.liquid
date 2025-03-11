@@ -91,7 +91,7 @@
       {% endif %}
       {% if section.settings.content != blank %}
         <div class="section-carousel__header-content">
-          <p class="sub_heading_text sub-heading-{{ section.settings.sub_align_text }}" style="color:#006A50">{{ section.settings.title | escape }}</p>
+          <p class="sub_heading_text {% if section.settings.sub_align_text == 'title-left' %}sub-heading-left{% elsif section.settings.sub_align_text == 'title-center' %}sub-heading-center{% endif %}" style="color:#006A50">{{ section.settings.title | escape }}</p>
         </div>
       {% endif %}
       <div
