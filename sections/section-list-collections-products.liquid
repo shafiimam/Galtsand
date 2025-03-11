@@ -1,5 +1,5 @@
 <!-- /sections/section-list-collections-products.liquid -->
-<style></style>
+
 {%- assign product_limit = section.settings.grid -%}
 {%- assign has_custom_blocks = false -%}
 {%- assign excluded_collections_strict = settings.exclude_collections_strict | split: ',' -%}
@@ -118,10 +118,11 @@
   }
   .collection-section-subtitle {
     color: #e6dbc4;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: 80%; /* 16px */
+    letter-spacing: 2px;
   }
   .js-grid[data-grid-large='4'] {
     grid-template-columns: repeat(4, minmax(0, 1fr));
