@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 5,
+        "show_title": true,
+        "title_size": 9,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 50,
+        "padding_bottom": 12
+      }
+    },
+    "banner_with_text_overlay_AVAc37": {
+      "type": "banner-with-text-overlay",
+      "settings": {
+        "image_desktop": "shopify://shop_images/Hero.png",
+        "image_mobile": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
+        "title": "Elevate Your Adventure",
+        "subtitle": "Galtsand has a legacy of quality and excellence. We ensure every product meets high standards, showcasing our passion for craftsmanship and innovation.",
+        "button_text": "Explore",
+        "button_link": ""
+      }
+    },
+    "product_features_image_text_YiKHgK": {
+      "type": "product-features-image-text",
+      "blocks": {
+        "title_mJqHNi": {
+          "type": "title",
+          "settings": {
+            "title": "Fabric Choices for Comfort and Durability"
+          }
+        },
+        "text_h3VUAc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe fabric quality makes all the difference. That’s why our t-shirts are crafted from the finest materials:</p>"
+          }
+        },
+        "feature_card_3phAkD": {
+          "type": "feature_card",
+          "settings": {
+            "title": "Superior Fabric Quality",
+            "text": "<p>Ideal for its breathability and natural softness, perfect for daily wear.</p>"
+          }
+        },
+        "feature_card_JLUwtH": {
+          "type": "feature_card",
+          "settings": {
+            "title": "Polyester",
+            "text": "<p>A wrinkle-resistant and durable choice that maintains its shape over time</p>"
+          }
+        },
+        "feature_card_LmJ8Pe": {
+          "type": "feature_card",
+          "settings": {
+            "title": "Blended Fabrics",
+            "text": "<p>Combining the best of both worlds, offering stretch and durability for all-day comfort</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_mJqHNi",
+        "text_h3VUAc",
+        "feature_card_3phAkD",
+        "feature_card_JLUwtH",
+        "feature_card_LmJ8Pe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/galtsand-model.png",
+        "width": "wrapper--full"
+      }
+    },
+    "tabs_collection_me9afj": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_gah43F": {
+          "type": "tab",
+          "settings": {
+            "title": "All",
+            "collection": "bottoms",
+            "product_limit": 8,
+            "button_text": "Shop Now",
+            "button_link": "{{ block.settings.collection.url }}"
+          }
+        },
+        "tab_LNQqqG": {
+          "type": "tab",
+          "settings": {
+            "title": "Best sellers",
+            "collection": "best-sellers",
+            "product_limit": 8,
+            "button_text": "Shop Now",
+            "button_link": "{{ block.settings.collection.url }}"
+          }
+        },
+        "tab_EQrzGj": {
+          "type": "tab",
+          "settings": {
+            "title": "moving fast",
+            "collection": "bottoms",
+            "product_limit": 8,
+            "button_text": "Shop Now",
+            "button_link": "{{ block.settings.collection.url }}"
+          }
+        },
+        "tab_G8NB98": {
+          "type": "tab",
+          "settings": {
+            "title": "new in",
+            "collection": "new-in",
+            "product_limit": 8,
+            "button_text": "Shop Now",
+            "button_link": "{{ block.settings.collection.url }}"
+          }
+        }
+      },
+      "block_order": [
+        "tab_gah43F",
+        "tab_LNQqqG",
+        "tab_EQrzGj",
+        "tab_G8NB98"
+      ],
+      "settings": {
+        "title": "Shop by function",
+        "subtitle": "Handcrafted by our expert designers.",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "width": "wrapper--full"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner_with_text_overlay_AVAc37",
+    "product_features_image_text_YiKHgK",
+    "tabs_collection_me9afj"
+  ]
+}

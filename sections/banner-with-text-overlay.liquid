@@ -1,0 +1,129 @@
+<section class="banner-with-text-overlay">
+  <div class="banner-with-text-overlay__inner">
+    <picture>
+      <source srcset="{{ section.settings.image_desktop | image_url: width: 1600 }}" media="(min-width: 1000px)">
+      <source srcset="{{ section.settings.image_mobile | image_url: width: 800 }}" media="(min-width: 320px)">
+      <img
+        src="{{ section.settings.image_desktop | image_url: width: 1600 }}"
+        alt="{{ section.settings.title }}"
+        class="banner-with-text-overlay__image"
+        width="{{ section.settings.image_desktop.width }}"
+        height="{{ section.settings.image_desktop.height }}"
+      >
+    </picture>
+    <div class="banner-with-text-overlay__content">
+      <h2 class="banner-with-text-overlay__title heading heading--xl">{{ section.settings.title }}</h2>
+      <p class="banner-with-text-overlay__subtitle font-body">{{ section.settings.subtitle }}</p>
+      <a
+        href="{{ section.settings.button_link }}"
+        class="standard__cta hero__btn btn btn--primary btn--long aos-init aos-animate banner-with-text-overlay__button"
+      >
+        {{- section.settings.button_text -}}
+      </a>
+    </div>
+  </div>
+</section>
+<style>
+  .banner-with-text-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-with-text-overlay__image {
+    width: 100%;
+    height: var(--full-screen);
+    object-fit: cover;
+  }
+  .banner-with-text-overlay__content {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #e6dbc4;
+    margin:0 auto;
+    width: calc(100vw - 550px);
+    padding: 32px;
+    @media screen and (max-width: 768px) {
+      width: calc(100vw - 60px);
+    }
+  }
+  .banner-with-text-overlay__title {
+    color: #e6dbc4;
+    text-align: center;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 76px */
+    letter-spacing: -2.28px;
+    @media screen and (max-width: 768px) {
+      font-size: 44px;
+    }
+  }
+  .banner-with-text-overlay__subtitle {
+    color: #e6dbc4;
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    line-height: 80%; /* 19.2px */
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 48px;
+    @media screen and (max-width: 768px) {
+      max-width: 400px;
+      font-size: 20px;
+      padding: 0 20px;
+    }
+  }
+  .banner-with-text-overlay__button {
+    width: max-content;
+  }
+</style>
+{% schema %}
+{
+  "name": "Banner with Text Overlay",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner with Text Overlay"
+    }
+  ]
+}
+{% endschema %}
