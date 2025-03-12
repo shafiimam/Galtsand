@@ -571,7 +571,7 @@
       ],
       "settings": {
         "title": "Trending Now",
-        "subttitle": "BASED ON WHAT CUSTOMERS ARE SHOPPING",
+        "subttitle": "BASED ON WHAT YOU ARE SHOPPING",
         "bg": "palette--light bg--neutral",
         "grid": 3,
         "rows": 1,
