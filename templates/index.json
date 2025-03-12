@@ -388,6 +388,61 @@
         "padding_bottom": 0
       }
     },
+    "collection-split-section-1": {
+      "type": "collection-split",
+      "blocks": {
+        "slide_VcEiJa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/CF81441.jpg",
+            "kicker": "SS25",
+            "heading": "Get Ready for New Heights",
+            "sub_text": "Climb higher in style – The first drop of our Spring collection is here.",
+            "text_color": "text--invert--primary",
+            "link_text": "SHOP NEW IN",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        },
+        "slide_EzRiEK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
+            "kicker": "30% Off Holiday Collection.",
+            "heading": "Limited Edition Vintage Re-releases",
+            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
+            "text_color": "text--invert--primary",
+            "link_text": "Shop the Deals",
+            "link": "shopify://collections/bottoms",
+            "button_color": "btn--primary",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VcEiJa",
+        "slide_EzRiEK"
+      ],
+      "settings": {
+        "header_text": "New in.",
+        "header_h3text": "Fresh drops just landed—don’t sleep on the latest arrivals.",
+        "collection": "outdoor-collection",
+        "product_list": [],
+        "sticky_image_enable": false,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--bright bg--bright",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "section_list_collections_czR7hE": {
       "type": "section-list-collections",
       "blocks": {
@@ -724,61 +779,6 @@
         "padding_bottom": 36
       }
     },
-    "collection-split-section-1": {
-      "type": "collection-split",
-      "blocks": {
-        "slide_VcEiJa": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/CF81441.jpg",
-            "kicker": "SS25",
-            "heading": "Get Ready for New Heights",
-            "sub_text": "Climb higher in style – The first drop of our Spring collection is here.",
-            "text_color": "text--invert--primary",
-            "link_text": "SHOP NEW IN",
-            "link": "shopify://collections/bottoms",
-            "button_color": "btn--primary",
-            "button_style": "btn"
-          }
-        },
-        "slide_EzRiEK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/0563-1_458b5d3b-ed14-4e07-9386-8c7a9a7afecc.jpg",
-            "kicker": "30% Off Holiday Collection.",
-            "heading": "Limited Edition Vintage Re-releases",
-            "sub_text": "Cursus pellentesque turpis odio vel sodales urna vitae",
-            "text_color": "text--invert--primary",
-            "link_text": "Shop the Deals",
-            "link": "shopify://collections/bottoms",
-            "button_color": "btn--primary",
-            "button_style": "btn"
-          }
-        }
-      },
-      "block_order": [
-        "slide_VcEiJa",
-        "slide_EzRiEK"
-      ],
-      "settings": {
-        "header_text": "New in.",
-        "header_h3text": "Fresh drops just landed—don’t sleep on the latest arrivals.",
-        "collection": "outdoor-collection",
-        "product_list": [],
-        "sticky_image_enable": false,
-        "swap": false,
-        "overlay_opacity": 15,
-        "overlay_color": "#000000",
-        "grid_large": 2,
-        "grid_small": 1.2,
-        "limit": 4,
-        "bg": "palette--bright bg--bright",
-        "object_position": "center-center",
-        "width": "wrapper--none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "section_collection_slider_XiBHU9": {
       "type": "section-collection-slider",
       "settings": {
@@ -911,7 +911,7 @@
         "heading_P7PMnH": {
           "type": "heading",
           "settings": {
-            "heading": "Galtsand in real life.",
+            "heading": "#GoSomewhereInGaltsand",
             "text_size": 13
           }
         }
