@@ -906,7 +906,8 @@
         "heading_P7PMnH"
       ],
       "custom_css": [
-        "p {font-family: \"Gambarino-Regular\" !important; letter-spacing: 0.5px;}"
+        "p {font-family: \"Gambarino-Regular\" !important; letter-spacing: 0.5px;}",
+        "@media screen and (max-width: 768px) {p{font-size: 16px; }}"
       ],
       "settings": {
         "align_text": "text-center",
