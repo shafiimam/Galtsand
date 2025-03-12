@@ -82,7 +82,7 @@
         "image_pair_YKxNzX"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_6713_1_2.jpg",
+        "image": "shopify://shop_images/IMG_6713.jpg",
         "remove_top_padding": false,
         "image_position": "right",
         "width": "wrapper--none"
@@ -106,7 +106,7 @@
         ".image-with-text-section__blocks {justify-content: center;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/82d3f1aaec77a1c56c31ce14e21cc7b7.jpg",
+        "image": "shopify://shop_images/IMG_6697.jpg",
         "remove_top_padding": true,
         "image_position": "left",
         "width": "wrapper--none"
