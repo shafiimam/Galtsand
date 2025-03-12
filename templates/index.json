@@ -525,7 +525,7 @@
           "type": "collection",
           "settings": {
             "collection": "sweaters-joggers",
-            "title": "Sweaters",
+            "title": "Sweaters & Joggers.",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -538,8 +538,8 @@
         "collection_GaPRP3": {
           "type": "collection",
           "settings": {
-            "collection": "all-women",
-            "title": "Shorts",
+            "collection": "comfy-classics",
+            "title": "Comfy Classics.",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -552,8 +552,8 @@
         "collection_xgYtnf": {
           "type": "collection",
           "settings": {
-            "collection": "all-women",
-            "title": "Shorts",
+            "collection": "bags",
+            "title": "Bags",
             "link_text": "",
             "enable_item": true,
             "text": "",
@@ -570,8 +570,8 @@
         "collection_xgYtnf"
       ],
       "settings": {
-        "title": "Trending Now",
-        "subttitle": "BASED ON WHAT YOU ARE SHOPPING",
+        "title": "Trending Now.",
+        "subttitle": "BASED ON WHAT YOU ARE SHOPPING.",
         "bg": "palette--light bg--neutral",
         "grid": 3,
         "rows": 1,
