@@ -19849,7 +19849,7 @@ label.quatity-selector {
     display: flex;
     flex-flow: row nowrap;
     padding-right: var(--outer);
-    margin: 0 calc(var(--outer) * -1);
+    margin: 1 calc(var(--outer) * -1);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
