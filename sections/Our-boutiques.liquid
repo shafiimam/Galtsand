@@ -4,7 +4,7 @@
       <img src="{{ section.settings.image | img_url: 'master' }}" alt="Boutique Image">
     </div>
     <div class="boutique-info">
-      <h2 class="boutique-title heading">{{ section.settings.main_title }}</h2>
+      <h2 class="boutique-title heading-lg">{{ section.settings.main_title }}</h2>
       <div class="boutique-list">
         {% for block in section.blocks %}
         <div class="boutique-item">
@@ -73,13 +73,13 @@
 
   .boutique-address-name {
     font-family: 'Gambarino-Regular';
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     color: #102345;
     text-transform: none;
     letter-spacing: 1px;
     margin: 0px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
   .boutique-address,
