@@ -242,7 +242,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#bdbdbd",
+            "swatch_color": "#fff59c",
             "card_title": "Silver melange",
             "button_label": "Explore",
             "button_link": ""
