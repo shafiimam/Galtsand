@@ -935,7 +935,8 @@
         "text_RmEaLn"
       ],
       "custom_css": [
-        "p {font-family: \"EngraversGothicBT-Heavy\"; text-transform: uppercase;}"
+        "p {font-family: \"EngraversGothicBT-Heavy\"; text-transform: uppercase;}",
+        "@media screen and (max-width: 768px) {p {font-size: 12px; }}"
       ],
       "settings": {
         "align_text": "text-center",
