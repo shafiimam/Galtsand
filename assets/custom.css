@@ -44,7 +44,7 @@
 }
 .heading-cursive {
   font-family: var(--font-family-cursive) !important;
-  font-size: clamp(40px, 10vw, 100px);
+  /* font-size: clamp(40px, 10vw, 100px); */
   font-weight: 100;
   letter-spacing: 1px;
   text-transform: none;
@@ -438,9 +438,8 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   }
 }
 
-
 .collection-sort span.medium-up--hide {
   font-weight: 600 !important;
-  color: #660F28 !important;
+  color: #660f28 !important;
   font-family: var(--font-family-body) !important;
 }
