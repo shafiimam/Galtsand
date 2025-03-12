@@ -446,8 +446,9 @@
         "article_row_mj9Dxe",
         "article_row_WMmERV"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Weekly Lookbook Updates and Campaigns",
+        "title": "Style guides and more.",
         "content": "Handcrafted by our expert designers."
       }
     },
@@ -497,6 +498,7 @@
         "review_dt67Ti",
         "review_PkNFDp"
       ],
+      "disabled": true,
       "settings": {
         "main_title": "Why Our Customers Love Galtsand",
         "subtitle": "Handcrafted by our expert designers."
