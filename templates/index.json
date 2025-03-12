@@ -504,20 +504,6 @@
         "padding_bottom": 36
       }
     },
-    "section_before_after_fCxeWU": {
-      "type": "section-before-after",
-      "disabled": true,
-      "settings": {
-        "before_image": "shopify://shop_images/Galtsand_Studio_Gray_Background_October-335.jpg",
-        "after_image": "shopify://shop_images/Galtsand_Studio66_Gray_Background_October-40.jpg",
-        "orientation": "horizontal",
-        "handle_color": "#ffffff",
-        "start_position": 50,
-        "width": "wrapper--none",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_list_collections_products_N6gfAm": {
       "type": "section-list-collections-products",
       "blocks": {
@@ -570,7 +556,7 @@
         "collection_xgYtnf"
       ],
       "settings": {
-        "title": "Trending Now.",
+        "title": "Trending now.",
         "subttitle": "BASED ON WHAT YOU ARE SHOPPING.",
         "bg": "palette--light bg--neutral",
         "grid": 3,
@@ -1111,7 +1097,6 @@
     "custom",
     "collection-split-section-1",
     "logos",
-    "section_before_after_fCxeWU",
     "section_list_collections_products_N6gfAm",
     "section_collection_slider_XiBHU9",
     "section_list_collections_czR7hE",
