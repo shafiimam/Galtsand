@@ -184,6 +184,20 @@
         "padding_bottom": 36
       }
     },
+    "blue_brand_value_section_7MNj98": {
+      "type": "blue_brand_value_section",
+      "settings": {
+        "left_image": "shopify://shop_images/IMG_6735.jpg",
+        "logo": "shopify://shop_images/Frame_7_54d7efbd-25d8-415c-9db9-52afb02f7365.png",
+        "title": "Core Values",
+        "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
+        "button_link": "",
+        "button_text": "See How We Do It",
+        "right_image_type": "image",
+        "right_image": "shopify://shop_images/galtsand-old-school.png",
+        "right_video": ""
+      }
+    },
     "section_columns_ttBhdk": {
       "type": "section-columns",
       "blocks": {
@@ -350,20 +364,6 @@
         "width": "wrapper--none"
       }
     },
-    "blue_brand_value_section_7MNj98": {
-      "type": "blue_brand_value_section",
-      "settings": {
-        "left_image": "shopify://shop_images/IMG_6735.jpg",
-        "logo": "shopify://shop_images/Frame_7_54d7efbd-25d8-415c-9db9-52afb02f7365.png",
-        "title": "Core Values",
-        "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
-        "button_link": "",
-        "button_text": "See How We Do It",
-        "right_image_type": "image",
-        "right_image": "shopify://shop_images/galtsand-old-school.png",
-        "right_video": ""
-      }
-    },
     "icons_values_section_f8QRJJ": {
       "type": "icons_values_section",
       "settings": {
@@ -386,13 +386,13 @@
     "image_with_text_custom_NJXcdy",
     "image_with_text_custom_JNzaej",
     "section_image_4qDMtM",
+    "blue_brand_value_section_7MNj98",
+    "icons_values_section_f8QRJJ",
     "section_columns_7mrmNg",
     "section_columns_ttBhdk",
     "section_richtext_UfgiKk",
     "image_with_text_custom_XnTjJM",
     "image_with_text_custom_QkCrnc",
-    "image_with_text_custom_BmDRyG",
-    "blue_brand_value_section_7MNj98",
-    "icons_values_section_f8QRJJ"
+    "image_with_text_custom_BmDRyG"
   ]
 }
