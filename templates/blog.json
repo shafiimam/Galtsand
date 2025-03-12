@@ -15,37 +15,49 @@
         "article_rEKjkh": {
           "type": "article",
           "settings": {
-            "article": "blogs/layers-layers-layerssss-the-art-of-festive-layering-by-galtsand"
+            "article": "blogs/layers-layers-layerssss-the-art-of-festive-layering-by-galtsand",
+            "card_title": "Article",
+            "hide_btn": false
           }
         },
         "article_wTaC9j": {
           "type": "article",
           "settings": {
-            "article": "blogs/one-of-each-color"
+            "article": "blogs/one-of-each-color",
+            "card_title": "Article",
+            "hide_btn": false
           }
         },
         "article_G6PBCH": {
           "type": "article",
           "settings": {
-            "article": "blogs/holiday-gift-guide-by-galtsand"
+            "article": "blogs/holiday-gift-guide-by-galtsand",
+            "card_title": "Article",
+            "hide_btn": false
           }
         },
         "article_McFHdq": {
           "type": "article",
           "settings": {
-            "article": "blogs/thanksgiving"
+            "article": "blogs/thanksgiving",
+            "card_title": "Article",
+            "hide_btn": false
           }
         },
         "article_eeMNrK": {
           "type": "article",
           "settings": {
-            "article": "blogs/one-of-each-color"
+            "article": "blogs/one-of-each-color",
+            "card_title": "Article",
+            "hide_btn": false
           }
         },
         "article_TTRgpV": {
           "type": "article",
           "settings": {
-            "article": "blogs/8-perfect-outfits-for-postcard-worthy-destinations"
+            "article": "blogs/8-perfect-outfits-for-postcard-worthy-destinations",
+            "card_title": "Article",
+            "hide_btn": false
           }
         }
       },
@@ -64,7 +76,7 @@
     "main-blog": {
       "type": "blog",
       "settings": {
-        "heading": "Explore all Blog",
+        "heading": "STYLE GUIDES, NEWS, & MORE.",
         "show_heading": true,
         "tag_label": "",
         "tags": true,
