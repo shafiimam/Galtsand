@@ -375,7 +375,7 @@
         "button_RB9wME"
       ],
       "custom_css": [
-        "h2{color: #e6dbc4;}"
+        "h2 {color: #e6dbc4;}"
       ],
       "settings": {
         "title": "Shop by activity section",
@@ -395,7 +395,7 @@
       "settings": {
         "title": "New this week",
         "subtitle": "Handcrafted by our expert designers.",
-        "collection": "bottle-blue",
+        "collection": "equestrian",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/new-in",
