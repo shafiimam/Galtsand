@@ -349,6 +349,31 @@
         "image_position": "left",
         "width": "wrapper--none"
       }
+    },
+    "blue_brand_value_section_7MNj98": {
+      "type": "blue_brand_value_section",
+      "settings": {
+        "left_image": "shopify://shop_images/IMG_6735.jpg",
+        "logo": "shopify://shop_images/Frame_7_54d7efbd-25d8-415c-9db9-52afb02f7365.png",
+        "title": "Brand Values Section",
+        "paragraph": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+        "button_link": "",
+        "button_text": "See How We Do It",
+        "right_image_type": "image",
+        "right_image": "shopify://shop_images/galtsand-old-school.png",
+        "right_video": ""
+      }
+    },
+    "icons_values_section_f8QRJJ": {
+      "type": "icons_values_section",
+      "settings": {
+        "title_1": "Sustainably Made",
+        "text_1": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+        "title_2": "American Craftsmanship",
+        "text_2": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+        "title_3": "Athletic Heritage",
+        "text_3": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+      }
     }
   },
   "order": [
@@ -363,6 +388,8 @@
     "section_richtext_UfgiKk",
     "image_with_text_custom_XnTjJM",
     "image_with_text_custom_QkCrnc",
-    "image_with_text_custom_BmDRyG"
+    "image_with_text_custom_BmDRyG",
+    "blue_brand_value_section_7MNj98",
+    "icons_values_section_f8QRJJ"
   ]
 }
