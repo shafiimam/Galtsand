@@ -19216,7 +19216,7 @@ body.focus-enabled .product-grid-item:focus-within {
   outline-width: 5px !important;
 }
 .on-sale {
-  color: var(--primary);
+  color: var(--text);
 }
 .compare-at {
   margin-top: calc(var(--gutter) / 2);
