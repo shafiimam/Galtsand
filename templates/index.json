@@ -43,7 +43,7 @@
             "button_style_1": "btn",
             "button_color_1": "btn--white",
             "link_text_2": "AVAILABLE NOW",
-            "link_2": "shopify://pages/featured-products",
+            "link_2": "",
             "button_size_2": "btn--long",
             "button_style_2": "btn",
             "button_color_2": "btn--primary",
@@ -308,7 +308,7 @@
           "type": "collection",
           "settings": {
             "collection": "all-men",
-            "image": "shopify://shop_images/202308150467ok_6fd1b7ef-2afb-4c72-8f56-8b5e6e3d0c92.jpg",
+            "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "Essential style, taken to the next level.",
