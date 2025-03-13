@@ -283,7 +283,7 @@
         "slide_EzRiEK"
       ],
       "settings": {
-        "header_text": "Big news.",
+        "header_text": "For the road ahead.",
         "header_h3text": "YOUR NEXT ADVENTURE AWAITS.",
         "collection": "outdoor-collection",
         "product_list": [],
@@ -297,70 +297,6 @@
         "bg": "palette--bright bg--bright",
         "object_position": "center-center",
         "width": "wrapper--none",
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "section_list_collections_products_N6gfAm": {
-      "type": "section-list-collections-products",
-      "blocks": {
-        "collection_kzEHiJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "sweaters-joggers",
-            "title": "Sweaters & Joggers.",
-            "link_text": "",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first"
-          }
-        },
-        "collection_GaPRP3": {
-          "type": "collection",
-          "settings": {
-            "collection": "comfy-classics",
-            "title": "Comfy Classics.",
-            "link_text": "",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first"
-          }
-        },
-        "collection_xgYtnf": {
-          "type": "collection",
-          "settings": {
-            "collection": "bags",
-            "title": "Bags.",
-            "link_text": "",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first"
-          }
-        }
-      },
-      "block_order": [
-        "collection_kzEHiJ",
-        "collection_GaPRP3",
-        "collection_xgYtnf"
-      ],
-      "settings": {
-        "title": "Trending now.",
-        "subttitle": "BASED ON WHAT YOU ARE SHOPPING.",
-        "bg": "palette--light bg--neutral",
-        "grid": 3,
-        "rows": 1,
-        "enable_scroll_mobile": true,
-        "grid_small": 1.2,
-        "width": "wrapper--full",
         "padding_top": 44,
         "padding_bottom": 36
       }
@@ -440,6 +376,70 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 34
+      }
+    },
+    "section_list_collections_products_N6gfAm": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_kzEHiJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "sweaters-joggers",
+            "title": "Sweaters & Joggers.",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
+        },
+        "collection_GaPRP3": {
+          "type": "collection",
+          "settings": {
+            "collection": "comfy-classics",
+            "title": "Comfy Classics.",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
+        },
+        "collection_xgYtnf": {
+          "type": "collection",
+          "settings": {
+            "collection": "bags",
+            "title": "Bags.",
+            "link_text": "",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kzEHiJ",
+        "collection_GaPRP3",
+        "collection_xgYtnf"
+      ],
+      "settings": {
+        "title": "Trending now.",
+        "subttitle": "BASED ON WHAT YOU ARE SHOPPING.",
+        "bg": "palette--light bg--neutral",
+        "grid": 3,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper--full",
+        "padding_top": 44,
+        "padding_bottom": 36
       }
     },
     "section_collection_slider_XiBHU9": {
