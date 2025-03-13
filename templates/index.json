@@ -486,6 +486,17 @@
         "btn_link": "shopify://pages/about-us1"
       }
     },
+    "video_with_modal_zPUEPT": {
+      "type": "video-with-modal",
+      "settings": {
+        "title": "Where Heritage Meets Innovation in Athleisure.",
+        "button_label": "Watch Video",
+        "button_url": "",
+        "video": "shopify://files/videos/for-TV-Long-format.MP4",
+        "image": "shopify://shop_images/Frame_276.png",
+        "width": "wrapper--none"
+      }
+    },
     "customer_review_section_xAPmhf": {
       "type": "customer_review_section",
       "blocks": {
@@ -653,6 +664,7 @@
     "section_list_collections_products_N6gfAm",
     "section_collection_slider_XiBHU9",
     "about_us_section_xikFig",
+    "video_with_modal_zPUEPT",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",
