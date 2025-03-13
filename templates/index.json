@@ -493,7 +493,8 @@
         "button_label": "Watch Video",
         "button_url": "",
         "video": "shopify://files/videos/for-TV-Long-format.MP4",
-        "image": "shopify://shop_images/Frame_276.png",
+        "image": "shopify://shop_images/Frame_277.png",
+        "image_background_color": "#102345",
         "width": "wrapper--none"
       }
     },
