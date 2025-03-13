@@ -175,9 +175,9 @@
         "background_image": "shopify://shop_images/untitled7_eea71b1a-1271-4217-a016-30d66991c23d.jpg",
         "fabric_title_1": "Cashmere Blend",
         "fabric_description_1": "Timeless elegance and unmatched softness of cashmere, combined with enhanced durability for everyday wear.",
-        "fabric_title_2": "Natural Wool",
+        "fabric_title_2": "Tencel®",
         "fabric_description_2": "High-performance fiber celebrated for its breathability, insulation, and moisture-wicking properties.",
-        "fabric_title_3": "LYCRA®",
+        "fabric_title_3": "Lycra®",
         "fabric_description_3": "Premium elastane fiber known for its exceptional stretch, shape retention, and durability."
       }
     },
@@ -236,6 +236,7 @@
         "style_row_7RzC9N",
         "style_row_xPRQ9Q"
       ],
+      "disabled": true,
       "settings": {
         "title": "Style Guides",
         "subtitle": "Unlock the full potential of your capsule collection"
