@@ -95,13 +95,43 @@
         "padding_bottom": 64
       }
     },
+    "why_use_our_pieces_GM7rgH": {
+      "type": "Why_Use_Our_Pieces",
+      "settings": {
+        "title": "MADE FOR EVERY JOURNEY",
+        "subtitle": "Versatile, durable, and heritage-inspired essentials designed for seamless transitions from outdoor adventures to everyday life.",
+        "icon_1": "shopify://shop_images/Medal_1.png",
+        "title_1": "Superior Fabric Quality",
+        "description_1": "We use high-grade materials like soft cotton, recycled polyester, and premium blends for unmatched comfort.",
+        "icon_2": "shopify://shop_images/HandHeart.png",
+        "title_2": "Wide Range of Styles",
+        "description_2": "From outerwear, to loungewear, to smart casual wear, we offer a variety of options to suit any style.",
+        "icon_3": "shopify://shop_images/Confetti.png",
+        "title_3": "Versatility for Any Occasion",
+        "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings."
+      }
+    },
+    "fabric_choice_Th3iVf": {
+      "type": "fabric_choice",
+      "settings": {
+        "title": "OUR MATERIALS",
+        "subtitle": "Trademarked fabrics within our collection.",
+        "background_image": "shopify://shop_images/untitled7_eea71b1a-1271-4217-a016-30d66991c23d.jpg",
+        "fabric_title_1": "Cashmere Blend",
+        "fabric_description_1": "Timeless elegance and unmatched softness of cashmere, combined with enhanced durability for everyday wear.",
+        "fabric_title_2": "Tencel®",
+        "fabric_description_2": "High-performance fiber celebrated for its breathability, insulation, and moisture-wicking properties.",
+        "fabric_title_3": "Lycra®",
+        "fabric_description_3": "Premium elastane fiber known for its exceptional stretch, shape retention, and durability."
+      }
+    },
     "every_ocasion_KaRhBj": {
       "type": "every_ocasion",
       "blocks": {
         "casual_wear_rNitdD": {
           "type": "casual_wear",
           "settings": {
-            "image": "shopify://shop_images/DSC_5361.jpg",
+            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
             "heading": "NATURE ENTHUSIAST",
             "description": "Earth tones, breathable fabrics, and adventure-ready fits, made for those who thrive outdoors.",
             "link": ""
@@ -110,7 +140,7 @@
         "workout_wear_CTncfz": {
           "type": "workout_wear",
           "settings": {
-            "image": "shopify://shop_images/DSC_54971.jpg",
+            "image": "shopify://shop_images/Untit56767led.jpg",
             "heading": "SPORTY & CHILL",
             "description": "From the stables to the studio, the courts to the trails, explore versatile styles that move with you.",
             "link": ""
@@ -119,7 +149,7 @@
         "smart_casual_YpNxpx": {
           "type": "smart_casual",
           "settings": {
-            "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
+            "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
             "heading": "Smart Casual",
             "description": "Refined, versatile, and always polished, elevated essentials for a seamless day-to-night look.",
             "link": ""
@@ -167,36 +197,6 @@
         "subtitle": "Elevate your look with effortless layering, smart pairings, and distinctive color combinations."
       }
     },
-    "fabric_choice_Th3iVf": {
-      "type": "fabric_choice",
-      "settings": {
-        "title": "OUR MATERIALS",
-        "subtitle": "Trademarked fabrics within our collection.",
-        "background_image": "shopify://shop_images/untitled7_eea71b1a-1271-4217-a016-30d66991c23d.jpg",
-        "fabric_title_1": "Cashmere Blend",
-        "fabric_description_1": "Timeless elegance and unmatched softness of cashmere, combined with enhanced durability for everyday wear.",
-        "fabric_title_2": "Natural Wool",
-        "fabric_description_2": "High-performance fiber celebrated for its breathability, insulation, and moisture-wicking properties.",
-        "fabric_title_3": "LYCRA®",
-        "fabric_description_3": "Premium elastane fiber known for its exceptional stretch, shape retention, and durability."
-      }
-    },
-    "why_use_our_pieces_GM7rgH": {
-      "type": "Why_Use_Our_Pieces",
-      "settings": {
-        "title": "MADE FOR EVERY JOURNEY",
-        "subtitle": "Versatile, durable, and heritage-inspired essentials designed for seamless transitions from outdoor adventures to everyday life.",
-        "icon_1": "shopify://shop_images/Medal_1.png",
-        "title_1": "Superior Fabric Quality",
-        "description_1": "We use high-grade materials like soft cotton, recycled polyester, and premium blends for unmatched comfort.",
-        "icon_2": "shopify://shop_images/HandHeart.png",
-        "title_2": "Wide Range of Styles",
-        "description_2": "From outerwear, to loungewear, to smart casual wear, we offer a variety of options to suit any style.",
-        "icon_3": "shopify://shop_images/Confetti.png",
-        "title_3": "Versatility for Any Occasion",
-        "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings."
-      }
-    },
     "how_to_style_p7gryg": {
       "type": "how_to_style",
       "blocks": {
@@ -236,6 +236,7 @@
         "style_row_7RzC9N",
         "style_row_xPRQ9Q"
       ],
+      "disabled": true,
       "settings": {
         "title": "Style Guides",
         "subtitle": "Unlock the full potential of your capsule collection"
@@ -246,10 +247,10 @@
     "hero",
     "subcollections",
     "main",
+    "why_use_our_pieces_GM7rgH",
+    "fabric_choice_Th3iVf",
     "every_ocasion_KaRhBj",
     "seasonal_trends_3AGAmP",
-    "fabric_choice_Th3iVf",
-    "why_use_our_pieces_GM7rgH",
     "how_to_style_p7gryg"
   ]
 }

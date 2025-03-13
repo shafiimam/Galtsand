@@ -172,10 +172,11 @@
     },
     "column_product_collection_bp8UTm": {
       "type": "column-product-collection",
+      "custom_css": [],
       "settings": {
         "title": "Best sellers",
         "subtitle": "Handcrafted by our expert designers.",
-        "collection": "best-sellers",
+        "collection": "mens-tops",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/best-sellers",
@@ -240,6 +241,9 @@
         "collection_V9bRRL",
         "collection_9jBt6c",
         "button_RB9wME"
+      ],
+      "custom_css": [
+        "h2{color: #e6dbc4;}"
       ],
       "settings": {
         "title": "Shop by activity section",
