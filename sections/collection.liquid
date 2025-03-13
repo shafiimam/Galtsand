@@ -1,104 +1,8 @@
 <!-- /sections/collection.liquid -->
-<style>
-  .quickview .icon-theme-stroke{
-    stroke: #102345;
-  }
-  .popout__toggle .icon-theme-stroke {
-     stroke: #660f28 !important;
-  }
-   {
-    display: none !important;
-  }
-  .sidebar__heading span {
-    font-family: "EngraversGothicBT-Heavy" !important;
-    color: #102345 !important;
-    font-size: 1.2rem;
-  }
-  .sidebar__item a {
-    font-family: "Inter Tight" !important;
-  }
-  .bg-col {
-    background-color: #E6DBC4;
-  }
-  .collection__filters__wrapper{
-    color: #102345;
-  }
-  .title_for_collection{
-    text-align: left;
-    text-transform: none;
-    font-size: 4rem;
-    color: #660F28;
-    font-family: "EngraversGothicBT-Heavy" !important;
-    margin: 0px;
-  }
-  .p_for_collection{
-       text-align: left;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    padding-right: 338px;
-    color: #660F28;
-    font-family: "EngraversGothicBT-Heavy" !important;
-  }
-  @media (max-width: 768px) {
-     .title_for_collection, .p_for_collection {
-       padding-left: 10px;
-       padding-right: 10px;
-     }
-    .title_for_collection{
-      font-size: 2rem;
-    }
-    .p_for_collection{
-      font-size: 0.9rem;
-    }
-  }
-  .hide-filters , .show-filters, .small-down--hide, .popout-list__item  {
-    color: #660F28 !important;
-    font-family: "EngraversGothicBT-Heavy" !important;
-  } 
-  .filters svg {
-    stroke: #660F28 !important;
-  }
-  .popout-list {
-    background-color: #E6DBC4;
-    border: 3px solid #660F28;
-  }
-  .sidebar__heading-chevron svg{
-    stroke: #660F28;
-  }
-.sidebar__filter__group {
-  border-bottom: 3px solid #660F28;
-}
-  .sidebar__filter__group button {
-    color: #102345 !important;
-    font-family: "EngraversGothicBT-Heavy" !important;
-  }
-  .filter__price__range span, .range__line span{
-    background-color: #660F28 !important;
-  }
-  .collection__filters__toggle svg{
-    stroke: #660F28 !important;
-  }
-  .filter__price__field input {
-  color: #102345 !important;
-}
-.icon-stateful .checkbox-border {
-  stroke: #102345 !important;
-}
-.sidebar__item--active > .icon-box .checkbox-core {
-  fill: #102345 !important;
-}
-  .quickview button {
-    background-color: #E6DBC4 !important;
-    color: #102345 !important;
-  }
-  .quickview span {
-    font-family: "EngraversGothicBT-Heavy";
-    color: #102345 !important;
-  }
-</style>
+
 {% capture default_show_filters %}{%- unless section.settings.hide_sidebar -%}filters--default-visible{%- endunless -%}{% endcapture %}
 {% liquid
-  if section.settings.grid_mobile == "2"
+  if section.settings.grid_mobile == '2'
     assign mobile_compact_class = 'collection--compact-mobile'
   endif
 
@@ -107,27 +11,29 @@
 %}
 
 {% style %}
-{%- case section.settings.width -%}
-  {%- when 'wrapper--full' -%}
-    {%- assign hero_content_max_width = 'none' -%}
-  {%- when 'wrapper' -%}
-    {%- assign hero_content_max_width = 'var(--LAYOUT-WIDTH)' -%}
-  {%- endcase -%}
+  {%- case section.settings.width -%}
+    {%- when 'wrapper--full' -%}
+      {%- assign hero_content_max_width = 'none' -%}
+    {%- when 'wrapper' -%}
+      {%- assign hero_content_max_width = 'var(--LAYOUT-WIDTH)' -%}
+    {%- endcase -%}
 
-  :root {
-    --HERO-CONTENT-MAX-WIDTH: {{ hero_content_max_width }};
-  }
+    :root {
+      --HERO-CONTENT-MAX-WIDTH: {{ hero_content_max_width }};
+    }
 {% endstyle %}
 
-<div class="bg-col {{ section.settings.color_bg }}"
+<div
+  class="bg-col {{ section.settings.color_bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="collection"
   data-sort="{{ section.settings.collection_sorting }}"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
-<div class="wrapper section-padding">
-  <h1 class="title_for_collection">{{ section.settings.title_collection }}</h1>
-  <p class="p_for_collection">{{ section.settings.p_collection }}</p>
-</div>
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="wrapper section-padding">
+    <h1 class="title_for_collection" style="color: {{ section.settings.content_color }};">{{ section.settings.title_collection }}</h1>
+    <p class="p_for_collection" style="color: {{ section.settings.content_color }};">{{ section.settings.p_collection }}</p>
+  </div>
   <div class="collection {{ mobile_compact_class }}" data-sidebar-toggle>
     <div class="{{ section.settings.width }} section-padding">
       {%- assign collection_sidebar = false -%}
@@ -163,43 +69,73 @@
           </div>
           {% if section.settings.enable_layout_toggle %}
             <div class="collection__layout">
-              <button data-focus-element aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 1 }}" data-toggle-grid="1">{% render 'icon-fill-grid-1' %}</button>
-              <button data-focus-element aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 2 }}" data-toggle-grid="2">{% render 'icon-fill-grid-2' %}</button>
-              <button data-focus-element aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 3 }}" data-toggle-grid="3">{% render 'icon-fill-grid-3' %}</button>
-              <button data-focus-element aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 4 }}" data-toggle-grid="4">{% render 'icon-fill-grid-4' %}</button>
+              <button
+                data-focus-element
+                aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 1 }}"
+                data-toggle-grid="1"
+              >
+                {% render 'icon-fill-grid-1' %}
+              </button>
+              <button
+                data-focus-element
+                aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 2 }}"
+                data-toggle-grid="2"
+              >
+                {% render 'icon-fill-grid-2' %}
+              </button>
+              <button
+                data-focus-element
+                aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 3 }}"
+                data-toggle-grid="3"
+              >
+                {% render 'icon-fill-grid-3' %}
+              </button>
+              <button
+                data-focus-element
+                aria-label="{{ 'general.accessibility.toggle_with_count' | t: count: 4 }}"
+                data-toggle-grid="4"
+              >
+                {% render 'icon-fill-grid-4' %}
+              </button>
             </div>
           {% endif %}
         </nav>
       {% endif %}
 
-      {% render 'filters-active' collection: collection, show_products_count: section.settings.show_products_count %}
+      {% render 'filters-active', collection: collection, show_products_count: section.settings.show_products_count %}
 
       <div class="collection__content">
         {% if collection_sidebar %}
-        <aside class="collection__filters__wrapper {{ default_show_filters }}" data-collection-sidebar data-filters="filters" data-default-hide="{{ section.settings.hide_sidebar }}">
-          <div class="collection__filters__outer">
-            <div class="drawer__top">
+          <aside
+            class="collection__filters__wrapper {{ default_show_filters }}"
+            data-collection-sidebar
+            data-filters="filters"
+            data-default-hide="{{ section.settings.hide_sidebar }}"
+          >
+            <div class="collection__filters__outer">
+              <div class="drawer__top">
+                <div class="drawer__top__left">
+                  <p class="cart__drawer__title">{{ 'collections.sidebar.filter' | t }}</p>
+                </div>
 
-              <div class="drawer__top__left">
-                <p class="cart__drawer__title">{{ 'collections.sidebar.filter' | t }}</p>
+                <button
+                  class="drawer__button drawer__close"
+                  data-first-focus
+                  data-filters-toggle="filters"
+                  aria-label="{{ 'general.accessibility.close' | t }}"
+                >
+                  {% render 'icon-core-x' %}
+                </button>
               </div>
-
-              <button class="drawer__button drawer__close"
-                data-first-focus
-                data-filters-toggle="filters"
-                aria-label="{{ 'general.accessibility.close' | t }}">
-                {% render 'icon-core-x' %}
-              </button>
+              <div class="collection__filters__inner">
+                {% render 'collection-filters-sidebar', section: section, collection: collection %}
+              </div>
             </div>
-            <div class="collection__filters__inner">
-              {% render 'collection-filters-sidebar', section: section, collection: collection %}
-            </div>
-          </div>
-          <span class="drawer__underlay" data-filters-underlay>
-            <span class="drawer__underlay__fill"></span>
-            <span class="drawer__underlay__blur"></span>
-          </span>
-        </aside>
+            <span class="drawer__underlay" data-filters-underlay>
+              <span class="drawer__underlay__fill"></span>
+              <span class="drawer__underlay__blur"></span>
+            </span>
+          </aside>
         {% endif %}
 
         {%- paginate collection.products by section.settings.product_limit -%}
@@ -210,7 +146,11 @@
                 <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
               </svg>
             </div>
-            <div class="js-grid" data-grid-large="{{ section.settings.grid_large }}" data-grid-small="{{ section.settings.grid_mobile }}">
+            <div
+              class="js-grid"
+              data-grid-large="{{ section.settings.grid_large }}"
+              data-grid-small="{{ section.settings.grid_mobile }}"
+            >
               <!-- /snippets/product-grid-item.liquid -->
 
               {% for product in collection.products %}
@@ -233,9 +173,9 @@
                 {% if collection.handle == 'all' and collection.current_tags == '' %}
                   {% render 'onboarding-empty-collection' %}
                 {% else %}
-                <div class="js-grid__full-row">
-                  <p>{{ 'collections.general.no_matches' | t }}</p>
-                </div>
+                  <div class="js-grid__full-row">
+                    <p>{{ 'collections.general.no_matches' | t }}</p>
+                  </div>
                 {% endif %}
               {% endfor %}
             </div>
@@ -250,7 +190,108 @@
     </div>
   </div>
 </div>
-
+<style>
+  .quickview .icon-theme-stroke {
+    stroke: #102345;
+  }
+  .popout__toggle .icon-theme-stroke {
+    stroke: #660f28 !important;
+  }
+   {
+    display: none !important;
+  }
+  .sidebar__heading span {
+    font-family: 'EngraversGothicBT-Heavy' !important;
+    color: #102345 !important;
+    font-size: 1.2rem;
+  }
+  .sidebar__item a {
+    font-family: 'Inter Tight' !important;
+  }
+  .bg-col {
+    background-color: #e6dbc4;
+  }
+  .collection__filters__wrapper {
+    color: #102345;
+  }
+  .title_for_collection {
+    text-align: left;
+    text-transform: none;
+    font-size: 4rem;
+    color: #660f28;
+    font-family: 'EngraversGothicBT-Heavy' !important;
+    margin: 0px;
+  }
+  .p_for_collection {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-right: 338px;
+    color: #660f28;
+    font-family: 'EngraversGothicBT-Heavy' !important;
+  }
+  @media (max-width: 768px) {
+    .title_for_collection,
+    .p_for_collection {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .title_for_collection {
+      font-size: 2rem;
+    }
+    .p_for_collection {
+      font-size: 0.9rem;
+    }
+  }
+  .hide-filters,
+  .show-filters,
+  .small-down--hide,
+  .popout-list__item {
+    color: #660f28 !important;
+    font-family: 'EngraversGothicBT-Heavy' !important;
+  }
+  .filters svg {
+    stroke: #660f28 !important;
+  }
+  .popout-list {
+    background-color: #e6dbc4;
+    border: 3px solid #660f28;
+  }
+  .sidebar__heading-chevron svg {
+    stroke: #660f28;
+  }
+  .sidebar__filter__group {
+    border-bottom: 3px solid #660f28;
+  }
+  .sidebar__filter__group button {
+    color: #102345 !important;
+    font-family: 'EngraversGothicBT-Heavy' !important;
+  }
+  .filter__price__range span,
+  .range__line span {
+    background-color: #660f28 !important;
+  }
+  .collection__filters__toggle svg {
+    stroke: #660f28 !important;
+  }
+  .filter__price__field input {
+    color: #102345 !important;
+  }
+  .icon-stateful .checkbox-border {
+    stroke: #102345 !important;
+  }
+  .sidebar__item--active > .icon-box .checkbox-core {
+    fill: #102345 !important;
+  }
+  .quickview button {
+    background-color: #e6dbc4 !important;
+    color: #102345 !important;
+  }
+  .quickview span {
+    font-family: 'EngraversGothicBT-Heavy';
+    color: #102345 !important;
+  }
+</style>
 {% schema %}
 {
   "name": "Collection product grid",
@@ -259,34 +300,34 @@
       "type": "text",
       "id": "title_collection",
       "label": "Title For Collection",
-      "default": "Explore Products",
+      "default": "Explore Products"
     },
     {
       "type": "text",
       "id": "p_collection",
       "label": "Subtitle For Collection",
-      "default": "Our t-shirts are more than just clothing—they're an expression of your personality. Here’s why they’re a must-have:",
+      "default": "Our t-shirts are more than just clothing—they're an expression of your personality. Here’s why they’re a must-have:"
     },
     {
       "type": "header",
       "content": "Layout"
     },
     {
-      "type":    "range",
-      "id":      "product_limit",
-      "min":     1,
-      "max":     50,
-      "step":    1,
-      "label":   "Products per page",
+      "type": "range",
+      "id": "product_limit",
+      "min": 1,
+      "max": 50,
+      "step": 1,
+      "label": "Products per page",
       "default": 36
     },
     {
-      "type":    "range",
-      "id":      "grid_large",
-      "min":     1,
-      "max":     4,
-      "step":    1,
-      "label":   "Desktop: products per row",
+      "type": "range",
+      "id": "grid_large",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Desktop: products per row",
       "default": 3
     },
     {
@@ -317,12 +358,12 @@
       "label": "Background color",
       "default": "palette--light bg--neutral",
       "options": [
-        { "value": "palette--light bg--neutral", "label": "Default"},
-        { "value": "palette--light bg--accent", "label": "Light"},
-        { "value": "palette--dark bg--invert", "label": "Dark"},
-        { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
-        { "value": "palette--bright bg--bright", "label": "Bright"},
-        { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
+        { "value": "palette--light bg--neutral", "label": "Default" },
+        { "value": "palette--light bg--accent", "label": "Light" },
+        { "value": "palette--dark bg--invert", "label": "Dark" },
+        { "value": "palette--dark bg--invert--accent", "label": "Dark accent" },
+        { "value": "palette--bright bg--bright", "label": "Bright" },
+        { "value": "palette--bright bg--bright--accent", "label": "Bright accent" }
       ]
     },
     {
@@ -393,8 +434,8 @@
       "label": "Padding bottom",
       "default": 64
     }
-    ],
-    "blocks": [
+  ],
+  "blocks": [
     {
       "type": "filters",
       "name": "Filters",
@@ -437,5 +478,4 @@
     }
   ]
 }
-
 {% endschema %}
