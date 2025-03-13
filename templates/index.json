@@ -362,7 +362,7 @@
         "collection_TJCfxp"
       ],
       "settings": {
-        "title": "Ready for Any Terrain.",
+        "title": "Ready for any terrain.",
         "small_text": "From mountain peaks to city streets, elevate every step of your adventure.",
         "bg": "palette--light bg--neutral",
         "carousel_enabled_on": "mobile",
@@ -371,7 +371,7 @@
         "grid_medium": 3,
         "grid_mobile": 1.2,
         "font_family": "body",
-        "title_size": 8,
+        "title_size": 6,
         "accent_size": 3,
         "width": "wrapper--full",
         "padding_top": 36,
