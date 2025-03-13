@@ -300,7 +300,10 @@
       "settings": {
         "title": "Shop by colors",
         "subtitle": "Handcrafted by our expert designers.",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "remove_top_padding": false,
+        "background_color": "#E6DBC4",
+        "text_color": "#102345"
       }
     },
     "column_product_collection_bp8UTm": {
@@ -381,6 +384,7 @@
         "title": "Shop by activity section",
         "subttitle": "Handcrafted by our expert designers.",
         "bg": "palette--light bg--neutral",
+        "content_color": "#e6dbc4",
         "grid": 3,
         "rows": 1,
         "enable_scroll_mobile": true,
@@ -412,7 +416,10 @@
         "product2": "classic-tote-bag",
         "product3": "empower-bra",
         "product4": "freedom-leggings",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "background_color": "#102345",
+        "text_color": "#e6dbc4",
+        "product_color": "#102345"
       }
     }
   },
