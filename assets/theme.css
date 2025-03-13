@@ -18625,7 +18625,7 @@ Collection grid item
   text-transform: uppercase;
 }
 p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
-  font-size: 1.3em !important;
+  /* font-size: 1.3em !important; */
   color: var(--text-dark);
 }
 /* .footer__title:first-child {
