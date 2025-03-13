@@ -14300,8 +14300,8 @@ body.default--accent--bright {
   float: left;
   padding: 10px 10px;
   line-height: 1.42;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  /* border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); */
 }
 .pagination-custom__num--dots > span {
   padding: 10px 5px;
