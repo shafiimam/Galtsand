@@ -429,10 +429,14 @@
         "collection_GaPRP3",
         "collection_xgYtnf"
       ],
+      "custom_css": [
+        ".heading, .text-base {color: #e6dbc4 !important;}"
+      ],
       "settings": {
         "title": "Trending now.",
         "subttitle": "BASED ON WHAT YOU ARE SHOPPING.",
         "bg": "palette--light bg--neutral",
+        "content_color": "#102345",
         "grid": 3,
         "rows": 1,
         "enable_scroll_mobile": true,
