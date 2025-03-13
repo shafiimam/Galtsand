@@ -330,5 +330,10 @@
       "cart_shipping_enable": true,
       "cart_notes_enable": true
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".swym-powered-by-text {display: none;}"
+    ]
   }
 }
