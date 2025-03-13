@@ -14265,13 +14265,14 @@ body.default--accent--bright {
 .pagination-custom__num > a,
 .pagination-custom__num > span {
   position: relative;
-  margin-left: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
   float: left;
   padding: 10px 20px;
   line-height: 1.42;
   text-decoration: none;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  /* border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); */
 }
 .pagination-custom__num.active span:after {
   display: none;
