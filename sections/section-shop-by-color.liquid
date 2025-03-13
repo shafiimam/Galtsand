@@ -46,10 +46,20 @@
   </div>
 </section>
 <style>
+  .shop-by-color-section {
+    background-color: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }};
+  }
   .shop-by-color-section__inner {
     padding: 120px 0;
+    {% if section.settings.remove_top_padding %}
+      padding-top: 0;
+    {% endif %}
     @media screen and (max-width: 767px) {
       padding: 68px 0;
+      {% if section.settings.remove_top_padding %}
+        padding-top: 0;
+      {% endif %}
     }
   }
   .shop-by-color-cards-container {
@@ -112,6 +122,24 @@
         { "value": "wrapper--full", "label": "Full width padded" },
         { "value": "wrapper", "label": "Page width" }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_top_padding",
+      "label": "Remove top padding",
+      "default": false
+    },
+    {
+      "type": "color_background",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#102345"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#102345"
     }
   ],
   "blocks": [

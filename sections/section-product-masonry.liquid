@@ -36,8 +36,8 @@
 </div>
 <style>
   .product-masonry-section {
-    background: #102345;
-    color: #e6dbc4 !important;
+    background: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }} !important;
     padding-block: 120px;
     @media screen and (max-width: 768px) {
       padding-block: 68px;
@@ -45,7 +45,7 @@
   }
   .product-masonry-section .product__grid__info p,
   .product-masonry-section .product__grid__price span {
-   color: #e6dbc4 !important;
+   color: {{ section.settings.product_color }};
   }
   .product-masonry-content_container {
     display: grid;
@@ -128,6 +128,24 @@
         { "value": "wrapper--full", "label": "Full width padded" },
         { "value": "wrapper", "label": "Page width" }
       ]
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#102345"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#e6dbc4"
+    },
+    {
+      "type": "color",
+      "id": "product_color",
+      "label": "Product color",
+      "default": "#102345"
     }
   ],
   "presets": [

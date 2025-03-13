@@ -186,6 +186,13 @@ p.grid__swatch__placeholder {
 .btn--add-to-cart {
   border: 2px solid #102345;
   color: #102345;
+  font-family: var(--font-family-body) !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
 
 .btn--add-to-cart:hover {
@@ -345,9 +352,7 @@ span[data-header-cart-count] {
     padding: 0 !important;
   }
   .swym-ui-component .swym-wishlist-grid li {
-    margin: 0 0 20px 0 !important;
-  }
-  .swym-ui-component .swym-wishlist-grid li {
+    margin: 0 0 20px 0 !important; 
     width: 100% !important;
   }
   .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
@@ -399,7 +404,7 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   margin: 3px 0;
   font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
-  font-family: EngraversGothicBT-Heavy;
+  font-family: 'EngraversGothicBT-Heavy';
   color: #44505f !important;
 }
 .swym-wishlist-grid .swym-wishlist-item .swym-add-to-cart-btn,
@@ -411,13 +416,7 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   color: #44505f !important;
 }
 .btn--add-to-cart {
-  font-family: var(--font-family-body) !important;
-  font-size: 18px !important;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%; /* 23.4px */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+
 }
 .swym-button.swym-add-to-wishlist-view-product {
   position: absolute;

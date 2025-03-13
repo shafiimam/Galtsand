@@ -52,104 +52,118 @@
 
 <style>
   :root {
-   --swiper-navigation-size: 76px;
+    --swiper-navigation-size: 76px;
   }
-   .tabs-collection {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-   }
-   h2.tabs-collection__title {
-     color: #102345;
-     text-align: center;
-     font-size: 100px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: 100%;
-     margin-bottom: 28px;
-     text-transform: capitalize;
-   }
-   p.tabs-collection__subtitle {
-     color: #44505F;
-     font-size: 20px;
-     font-style: normal;
-   }
-   .tabs-collection__content-swiper-wrapper {
-      position: relative;
-      z-index: 1;
-   }
-   .tabs-collection__tabs {
-      display: flex;
-      gap: 12px;
-      margin: 28px 0;
-   }
-   .tabs-collection__tab{
-      border: 2px solid #102345;
-      padding: 16px 24px;
-      color: #102345;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 130%; /* 23.4px */
-      letter-spacing: 0.54px;
-      text-transform: uppercase;
-      cursor: pointer;
-   }
-   .tabs-collection__content-item{
-      overflow: hidden;
-   }
-   .tabs-collection__tab.tabs-collection__tab--active {
-      background: #102345;
-      color: #E6DBC4;
-   }
-   .swiper-button-next, .swiper-button-prev {
-      top: var(--swiper-navigation-top-offset,37%) !important;
-   }
-   .swiper-button-prev {
-      background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_10.png') !important;
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      z-index: 10;
-      left: -25px !important;
-      transition: transform 0.3s ease-in-out;
+  .tabs-collection__inner {
+    padding: 100px 0;
+    @media (max-width: 768px) {
+      padding: 40px 0;
     }
-    .swiper-button-prev:hover {
-       transform: scale(1.1);
+  }
+  h2.tabs-collection__title {
+    color: #102345;
+    text-align: center;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 28px;
+    text-transform: capitalize;
+    @media (max-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 16px;
     }
+  }
+  p.tabs-collection__subtitle {
+    color: #44505f;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .tabs-collection__content-swiper-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  .tabs-collection__tabs {
+    display: flex;
+    gap: 12px;
+    margin: 28px 0;
+    flex-wrap: wrap;
+  }
+  .tabs-collection__tab {
+    border: 2px solid #102345;
+    padding: 16px 24px;
+    color: #102345;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .tabs-collection__content-item {
+    overflow: hidden;
+  }
+  .tabs-collection__tab.tabs-collection__tab--active {
+    background: #102345;
+    color: #e6dbc4;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 37%) !important;
+  }
+  .swiper-button-prev {
+    background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_10.png') !important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 10;
+    left: -25px !important;
+    transition: transform 0.3s ease-in-out;
+    @media (max-width: 768px) {
+      left: -10px !important;
+    }
+  }
+  .swiper-button-prev:hover {
+    transform: scale(1.1);
+  }
 
-    .swiper-button-next {
-       background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_39.png') !important;
-       background-repeat: no-repeat;
-       background-size: 100% auto;
-       z-index: 10;
-       right: -25px !important;
-       transition: transform 0.3s ease-in-out;
+  .swiper-button-next {
+    background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_39.png') !important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 10;
+    right: -25px !important;
+    transition: transform 0.3s ease-in-out;
+    @media (max-width: 768px) {
+      right: -10px !important;
     }
-    .swiper-button-next:hover {
-       transform: scale(1.1);
-    }
+  }
+  .swiper-button-next:hover {
+    transform: scale(1.1);
+  }
 
-    .swiper-button-next::after {
-       display: none;
-    }
+  .swiper-button-next::after {
+    display: none;
+  }
 
-    .swiper-button-prev::after {
-      display: none;
-    }
-    .tabs-collection__button-wrapper {
-       display: flex;
-       justify-content: center;
-       margin-top: 52px;
-   }
-   .tabs-collection__button{
-      border: 2px solid #102345;
-      color: #102345;
-      transition: all 0.1s ease-in-out;
-   }
-   .tabs-collection__button:hover {
-      background: #102345;
-      color: #E6DBC4;
-      border: 2px solid #E6DBC4;
-   }
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .tabs-collection__button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+  }
+  .tabs-collection__button {
+    border: 2px solid #102345;
+    color: #102345;
+    transition: all 0.1s ease-in-out;
+  }
+  .tabs-collection__button:hover {
+    background: #102345;
+    color: #e6dbc4;
+    border: 2px solid #e6dbc4;
+  }
 </style>
 <script>
    const tabControls = document.querySelectorAll('.tabs-collection__tab');

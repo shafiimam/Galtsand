@@ -24,10 +24,10 @@
 >
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
-      <h2 class="heading heading-lg text-center">{{ section.settings.title }}</h2>
+      <h2 class="heading heading-lg text-center" style="color: {{ section.settings.content_color }};">{{ section.settings.title }}</h2>
     {%- endif -%}
     {% if section.settings.subttitle %}
-      <p class="text-base font-body text-center collection-section-subtitle">
+      <p class="text-base font-body text-center collection-section-subtitle" style="color: {{ section.settings.content_color }};">
         {{ section.settings.subttitle }}
       </p>
     {% endif %}
@@ -320,6 +320,12 @@
         { "value": "palette--bright bg--bright", "label": "Bright" },
         { "value": "palette--bright bg--bright--accent", "label": "Bright accent" }
       ]
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "Section Title and Content color",
+      "default": "#102345"
     },
     {
       "type": "header",
