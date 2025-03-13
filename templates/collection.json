@@ -95,45 +95,20 @@
         "padding_bottom": 64
       }
     },
-    "every_ocasion_KaRhBj": {
-      "type": "every_ocasion",
-      "blocks": {
-        "casual_wear_rNitdD": {
-          "type": "casual_wear",
-          "settings": {
-            "image": "shopify://shop_images/DSC_5361.jpg",
-            "heading": "NATURE ENTHUSIAST",
-            "description": "Earth tones, breathable fabrics, and adventure-ready fits, made for those who thrive outdoors.",
-            "link": ""
-          }
-        },
-        "workout_wear_CTncfz": {
-          "type": "workout_wear",
-          "settings": {
-            "image": "shopify://shop_images/DSC_54971.jpg",
-            "heading": "SPORTY & CHILL",
-            "description": "From the stables to the studio, the courts to the trails, explore versatile styles that move with you.",
-            "link": ""
-          }
-        },
-        "smart_casual_YpNxpx": {
-          "type": "smart_casual",
-          "settings": {
-            "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
-            "heading": "Smart Casual",
-            "description": "Refined, versatile, and always polished, elevated essentials for a seamless day-to-night look.",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "casual_wear_rNitdD",
-        "workout_wear_CTncfz",
-        "smart_casual_YpNxpx"
-      ],
+    "why_use_our_pieces_GM7rgH": {
+      "type": "Why_Use_Our_Pieces",
       "settings": {
-        "title": "PICK YOUR VIBE",
-        "subtitle": "Stay classic, keep it bold, or take it outside—your move."
+        "title": "MADE FOR EVERY JOURNEY",
+        "subtitle": "Versatile, durable, and heritage-inspired essentials designed for seamless transitions from outdoor adventures to everyday life.",
+        "icon_1": "shopify://shop_images/Medal_1.png",
+        "title_1": "Superior Fabric Quality",
+        "description_1": "We use high-grade materials like soft cotton, recycled polyester, and premium blends for unmatched comfort.",
+        "icon_2": "shopify://shop_images/HandHeart.png",
+        "title_2": "Wide Range of Styles",
+        "description_2": "From outerwear, to loungewear, to smart casual wear, we offer a variety of options to suit any style.",
+        "icon_3": "shopify://shop_images/Confetti.png",
+        "title_3": "Versatility for Any Occasion",
+        "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings."
       }
     },
     "fabric_choice_Th3iVf": {
@@ -150,20 +125,45 @@
         "fabric_description_3": "Premium elastane fiber known for its exceptional stretch, shape retention, and durability."
       }
     },
-    "why_use_our_pieces_GM7rgH": {
-      "type": "Why_Use_Our_Pieces",
+    "every_ocasion_KaRhBj": {
+      "type": "every_ocasion",
+      "blocks": {
+        "casual_wear_rNitdD": {
+          "type": "casual_wear",
+          "settings": {
+            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+            "heading": "NATURE ENTHUSIAST",
+            "description": "Earth tones, breathable fabrics, and adventure-ready fits, made for those who thrive outdoors.",
+            "link": ""
+          }
+        },
+        "workout_wear_CTncfz": {
+          "type": "workout_wear",
+          "settings": {
+            "image": "shopify://shop_images/Untit56767led.jpg",
+            "heading": "SPORTY & CHILL",
+            "description": "From the stables to the studio, the courts to the trails, explore versatile styles that move with you.",
+            "link": ""
+          }
+        },
+        "smart_casual_YpNxpx": {
+          "type": "smart_casual",
+          "settings": {
+            "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
+            "heading": "Smart Casual",
+            "description": "Refined, versatile, and always polished, elevated essentials for a seamless day-to-night look.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "casual_wear_rNitdD",
+        "workout_wear_CTncfz",
+        "smart_casual_YpNxpx"
+      ],
       "settings": {
-        "title": "MADE FOR EVERY JOURNEY",
-        "subtitle": "Versatile, durable, and heritage-inspired essentials designed for seamless transitions from outdoor adventures to everyday life.",
-        "icon_1": "shopify://shop_images/Medal_1.png",
-        "title_1": "Superior Fabric Quality",
-        "description_1": "We use high-grade materials like soft cotton, recycled polyester, and premium blends for unmatched comfort.",
-        "icon_2": "shopify://shop_images/HandHeart.png",
-        "title_2": "Wide Range of Styles",
-        "description_2": "From outerwear, to loungewear, to smart casual wear, we offer a variety of options to suit any style.",
-        "icon_3": "shopify://shop_images/Confetti.png",
-        "title_3": "Versatility for Any Occasion",
-        "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings."
+        "title": "PICK YOUR VIBE",
+        "subtitle": "Stay classic, keep it bold, or take it outside—your move."
       }
     },
     "seasonal_trends_3AGAmP": {
