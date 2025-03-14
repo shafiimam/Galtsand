@@ -38,7 +38,7 @@
           "type": "button",
           "settings": {
             "link_text_1": "DISCOVER THE STORY",
-            "link_1": "shopify://pages/about-us",
+            "link_1": "shopify://pages/featured-products",
             "button_size_1": "btn--long",
             "button_style_1": "btn",
             "button_color_1": "btn--white",
