@@ -232,7 +232,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#fadaff",
+            "swatch_color": "#252c25",
             "card_title": "Academy green",
             "button_label": "Explore",
             "button_link": ""
@@ -242,7 +242,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#fff59c",
+            "swatch_color": "#9b9b9b",
             "card_title": "Silver melange",
             "button_label": "Explore",
             "button_link": ""
@@ -262,7 +262,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#004000",
+            "swatch_color": "#22253b",
             "card_title": "Dark Navy",
             "button_label": "Explore",
             "button_link": ""
@@ -272,7 +272,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#b0e7ff",
+            "swatch_color": "#e3e2e9",
             "card_title": "Snow Heather",
             "button_label": "Explore",
             "button_link": ""
