@@ -301,6 +301,18 @@
         "padding_bottom": 36
       }
     },
+    "video_with_modal_zPUEPT": {
+      "type": "video-with-modal",
+      "settings": {
+        "title": "Where Heritage Meets Innovation in Athleisure.",
+        "button_label": "Watch Video",
+        "button_url": "",
+        "video": "shopify://files/videos/for-TV-Long-format.MP4",
+        "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+        "image_background_color": "#102345",
+        "width": "wrapper--none"
+      }
+    },
     "section_list_collections_czR7hE": {
       "type": "section-list-collections",
       "blocks": {
@@ -450,7 +462,7 @@
         "collection": "mens-best-sellers",
         "product_limit": 12,
         "title": "NEW ARRIVALS",
-        "content": "A modern approach to everyday classics.",
+        "content": "Back in stock.",
         "align_text": "title-center",
         "sub_align_text": "title-center",
         "progress_bar": "mobile",
@@ -484,18 +496,6 @@
         "description_4": "Our dedication to quality and innovation is reflected in our meticulous sourcing and expert craftsmanship. Every fabric is thoughtfully chosen, every stitch carefully placed, to create garments that endure. From our sportswear roots to our modern evolution, we create pieces that move with you, in style and spirit.",
         "btn_name": "Learn More",
         "btn_link": "shopify://pages/about-us1"
-      }
-    },
-    "video_with_modal_zPUEPT": {
-      "type": "video-with-modal",
-      "settings": {
-        "title": "Where Heritage Meets Innovation in Athleisure.",
-        "button_label": "Watch Video",
-        "button_url": "",
-        "video": "shopify://files/videos/for-TV-Long-format.MP4",
-        "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
-        "image_background_color": "#102345",
-        "width": "wrapper--none"
       }
     },
     "customer_review_section_xAPmhf": {
@@ -661,11 +661,11 @@
     "hero",
     "section_logos_E3KxjC",
     "collection-split-section-1",
+    "video_with_modal_zPUEPT",
     "section_list_collections_czR7hE",
     "section_list_collections_products_N6gfAm",
     "section_collection_slider_XiBHU9",
     "about_us_section_xikFig",
-    "video_with_modal_zPUEPT",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",
