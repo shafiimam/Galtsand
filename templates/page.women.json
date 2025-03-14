@@ -261,8 +261,9 @@
         "color_cart_RLpbCq": {
           "type": "color_cart",
           "settings": {
-            "swatch_color": "#22253b",
-            "card_title": "Dark Navy",
+            "card_image": "shopify://shop_images/015A4731_ce6f7db2-458a-46c9-9059-6b8ad563ec51.jpg",
+            "swatch_color": "#014862",
+            "card_title": "Bottle Blue",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -270,8 +271,9 @@
         "color_cart_CqNMQU": {
           "type": "color_cart",
           "settings": {
-            "swatch_color": "#e3e2e9",
-            "card_title": "Snow Heather",
+            "card_image": "shopify://shop_images/015A4220_5acb433e0f-710f-424442-8afc-004bc7fd537f.jpg",
+            "swatch_color": "#c9c4cb",
+            "card_title": "Lavender",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -279,8 +281,9 @@
         "color_cart_hLGeUr": {
           "type": "color_cart",
           "settings": {
-            "swatch_color": "#ffffff",
-            "card_title": "White",
+            "card_image": "shopify://shop_images/015A5379_b883f626-64c8-4a72-8709-73491bf73adf.jpg",
+            "swatch_color": "#d5e2bd",
+            "card_title": "Palm Lime",
             "button_label": "Explore",
             "button_link": ""
           }
