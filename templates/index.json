@@ -38,7 +38,7 @@
           "type": "button",
           "settings": {
             "link_text_1": "DISCOVER THE STORY",
-            "link_1": "shopify://pages/about-us",
+            "link_1": "shopify://pages/featured-products",
             "button_size_1": "btn--long",
             "button_style_1": "btn",
             "button_color_1": "btn--white",
@@ -246,6 +246,37 @@
         "padding_bottom": 0
       }
     },
+    "section_collection_slider_XiBHU9": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "mens-best-sellers",
+        "product_limit": 12,
+        "title": "JUST DROPPED",
+        "content": "Spring Summer 2025.",
+        "align_text": "title-center",
+        "sub_align_text": "title-center",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    },
+    "video_with_modal_zPUEPT": {
+      "type": "video-with-modal",
+      "settings": {
+        "title": "From 9-to-5 to Off the Grid.",
+        "button_label": "Watch Video",
+        "button_url": "",
+        "video": "shopify://files/videos/for-TV-Long-format.MP4",
+        "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+        "image_background_color": "#102345",
+        "width": "wrapper--none"
+      }
+    },
     "collection-split-section-1": {
       "type": "collection-split",
       "blocks": {
@@ -413,7 +444,7 @@
         "collection_TJCfxp"
       ],
       "settings": {
-        "title": "Ready for any terrain.",
+        "title": "What to Wear & Where.",
         "small_text": "From mountain peaks to city streets, elevate every step of your adventure.",
         "bg": "palette--light bg--neutral",
         "carousel_enabled_on": "mobile",
@@ -435,9 +466,9 @@
         "collection_kzEHiJ": {
           "type": "collection",
           "settings": {
-            "collection": "sweaters-joggers",
-            "title": "Sweaters & Joggers.",
-            "link_text": "",
+            "collection": "best-sellers",
+            "title": "Best Sellers",
+            "link_text": "Tried, tested, and loved. Shop the pieces everyone is wearing on repeat.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -449,9 +480,9 @@
         "collection_GaPRP3": {
           "type": "collection",
           "settings": {
-            "collection": "comfy-classics",
-            "title": "Comfy Classics.",
-            "link_text": "",
+            "collection": "heritage-sweaters",
+            "title": "Sweaters",
+            "link_text": "Since 1986, our sweaters have been crafted for comfort, durability, and effortless style.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -464,8 +495,8 @@
           "type": "collection",
           "settings": {
             "collection": "bags",
-            "title": "Bags.",
-            "link_text": "",
+            "title": "Bags",
+            "link_text": "Thoughtfully constructed with premium materials.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -495,27 +526,9 @@
         "padding_bottom": 36
       }
     },
-    "section_collection_slider_XiBHU9": {
-      "type": "section-collection-slider",
-      "settings": {
-        "collection": "mens-best-sellers",
-        "product_limit": 12,
-        "title": "NEW ARRIVALS",
-        "content": "A modern approach to everyday classics.",
-        "align_text": "title-center",
-        "sub_align_text": "title-center",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--bright bg--bright",
-        "width": "wrapper--full",
-        "padding_top": 50,
-        "padding_bottom": 36
-      }
-    },
     "about_us_section_xikFig": {
       "type": "about_us_section",
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/hike.png",
         "image_1_alt": "heritage",
@@ -536,19 +549,7 @@
         "btn_name": "Learn More",
         "btn_link": "shopify://pages/about-us1"
       }
-    },
-    "video_with_modal_zPUEPT": {
-      "type": "video-with-modal",
-      "settings": {
-        "title": "Where Heritage Meets Innovation in Athleisure.",
-        "button_label": "Watch Video",
-        "button_url": "",
-        "video": "shopify://files/videos/for-TV-Long-format.MP4",
-        "image": "shopify://shop_images/Frame_277.png",
-        "image_background_color": "#102345",
-        "width": "wrapper--none"
-      }
-    },
+    }, 
     "customer_review_section_xAPmhf": {
       "type": "customer_review_section",
       "blocks": {
@@ -711,13 +712,13 @@
     "section_video_pMeAkR",
     "hero",
     "section_logos_E3KxjC",
+    "section_collection_slider_XiBHU9",
+    "video_with_modal_zPUEPT",
     "collection-split-section-1",
     "card_cascade_F4z48g",
     "section_list_collections_czR7hE",
     "section_list_collections_products_N6gfAm",
-    "section_collection_slider_XiBHU9",
     "about_us_section_xikFig",
-    "video_with_modal_zPUEPT",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",

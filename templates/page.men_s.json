@@ -67,7 +67,7 @@
         "text_PM8CcR": {
           "type": "text",
           "settings": {
-            "kicker": "",
+            "kicker": "WELCOME, GENTLEMEN",
             "title": "Men’s Collections.",
             "text": "<p>Galtsand has a legacy of quality and excellence.</p>",
             "font_size": 5,
@@ -115,14 +115,27 @@
         "padding_bottom": 36
       }
     },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "custom_css": [],
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "mens-tops",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/best-sellers",
+        "width": "wrapper--full"
+      }
+    },
     "collection_card_column_Ydrkex": {
       "type": "collection-card-column",
       "blocks": {
         "card_iPa633": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Joggers",
+            "image": "shopify://shop_images/Untitled_b84fa27f-015f-4b28-873a-c48dea058bf4.png",
+            "title": "Outerwear",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
             "button_label": "Explore"
@@ -131,7 +144,7 @@
         "card_633Bba": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "image": "shopify://shop_images/untitled_525c87b3-15e7-41af-928e-09d0600ffbd7.jpg",
             "title": "Joggers",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
@@ -141,8 +154,8 @@
         "card_CxRLyT": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Sweatshirts & Hoodies",
+            "image": "shopify://shop_images/untitled_33b50855-ff27-4329-aa1d-8c5558dbbd36.jpg",
+            "title": "Crewnecks & Hoodies",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
             "button_label": "Explore"
@@ -151,7 +164,7 @@
         "card_zHDFNg": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "image": "shopify://shop_images/untitled_885ecd70-6d8c-48e0-8637-efd76768f306.jpg",
             "title": "Shorts",
             "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
             "button_link": "",
@@ -170,16 +183,70 @@
         "width": "wrapper--full"
       }
     },
-    "column_product_collection_bp8UTm": {
-      "type": "column-product-collection",
-      "custom_css": [],
+    "collection_card_column_JK3ptk": {
+      "type": "collection-card-column",
+      "blocks": {
+        "card_YMpfcV": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_b84fa27f-015f-4b28-873a-c48dea058bf4.png",
+            "title": "Pants",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_g6QEdE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_525c87b3-15e7-41af-928e-09d0600ffbd7.jpg",
+            "title": "Shirts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_LAi4a7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_33b50855-ff27-4329-aa1d-8c5558dbbd36.jpg",
+            "title": "Sweaters",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_Mz9BNm": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_885ecd70-6d8c-48e0-8637-efd76768f306.jpg",
+            "title": "Polos & T-shirts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "card_YMpfcV",
+        "card_g6QEdE",
+        "card_LAi4a7",
+        "card_Mz9BNm"
+      ],
       "settings": {
-        "title": "Best sellers",
+        "background_color": "#660f28",
+        "width": "wrapper--full"
+      }
+    },
+    "column_product_collection_HDP6Rw": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "New this week",
         "subtitle": "Handcrafted by our expert designers.",
-        "collection": "mens-tops",
+        "collection": "new-in",
         "show_more_button": true,
         "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
+        "button_link": "shopify://collections/new-in",
         "width": "wrapper--full"
       }
     },
@@ -189,9 +256,9 @@
         "collection_iBkUYd": {
           "type": "collection",
           "settings": {
-            "collection": "bags",
-            "title": "Long Title description goes here",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "collection": "pique",
+            "title": "The Piqué Collection",
+            "link_text": "A refined take on heritage sportswear, The Piqué Collection blends timeless texture with modern functionality.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -204,8 +271,8 @@
           "type": "collection",
           "settings": {
             "collection": "bottoms",
-            "title": "Long Title description goes here",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "title": "Pants & Bottoms",
+            "link_text": "Versatile, performance-driven bottoms designed for comfort, movement, and effortless style.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -217,9 +284,9 @@
         "collection_9jBt6c": {
           "type": "collection",
           "settings": {
-            "collection": "bottoms",
-            "title": "Long Title description goes here",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "collection": "co-ords",
+            "title": "Co-Ords",
+            "link_text": "Elevated men's co-ords and day-to-night sets crafted for comfort style and effortless transitions from work to weekend.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -259,95 +326,67 @@
         "padding_bottom": 36
       }
     },
-    "column_product_collection_HDP6Rw": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "new-in",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full"
-      }
-    },
-    "section_product_masonry_Wia8FW": {
-      "type": "section-product-masonry",
-      "settings": {
-        "title": "Explore Our Premium Sweatshirts Collection",
-        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
-        "image": "shopify://shop_images/Frame_176.png",
-        "product1": "classic-short-with-cargo-pocket",
-        "product2": "pique-short",
-        "product3": "garment-washed-pullover-hoodie",
-        "product4": "heritage-jogger-with-cargo-pocket",
-        "width": "wrapper--full",
-        "background_color": "#102345",
-        "text_color": "#e6dbc4",
-        "product_color": "#102345"
-      }
-    },
     "section_shop_by_color_yWCBP4": {
       "type": "section-shop-by-color",
       "blocks": {
         "color_cart_UynqXz": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
+            "card_image": "shopify://shop_images/Heritage_1-4_Zip_Academy_Green_M-5.jpg",
+            "swatch_color": "#06362b",
             "card_title": "Academy green",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/academy-green"
           }
         },
         "color_cart_xaFQbh": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/PiqueQuarterZip-Silver_Melange-PiquePintuckJogger-Black_1-converted_JPG.jpg",
             "swatch_color": "#bdbdbd",
             "card_title": "Silver melange",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/silver-melange-men"
           }
         },
         "color_cart_CYqACD": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/PiqueShotSleeve-Black-PiquePintuckJogger-Black_1-converted.jpg",
             "swatch_color": "#000000",
             "card_title": "Black",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/mens-black"
           }
         },
         "color_cart_RLpbCq": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#004000",
+            "card_image": "shopify://shop_images/Pique_Pintuck_Jogger_Darkest_Navy_M_Heritagw_1-4_Zip_Navy-1.jpg",
+            "swatch_color": "#102345",
             "card_title": "Dark Navy",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/dark-navy-mens"
           }
         },
         "color_cart_CqNMQU": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#b0e7ff",
-            "card_title": "Snow Heather",
+            "card_image": "shopify://shop_images/WashedPulloverHoodie-Burgundy-PiqueShhgortPintuck-White.jpg",
+            "swatch_color": "#520b19",
+            "card_title": "Burgundy",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/burgundy"
           }
         },
         "color_cart_hLGeUr": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/PiqueShotSleeve-White-PiqueShortPintuck.jpg",
             "swatch_color": "#ffffff",
             "card_title": "White",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/white-men"
           }
         }
       },
@@ -367,17 +406,34 @@
         "background_color": "#E6DBC4",
         "text_color": "#102345"
       }
+    },
+    "section_product_masonry_Wia8FW": {
+      "type": "section-product-masonry",
+      "settings": {
+        "title": "Spring Summer 2025",
+        "subtitle": "This season, Galtsand redefines performance with a collection designed for the modern explorer. The SS25 Menswear Collection blends technical innovation, heritage craftsmanship, and effortless versatility, creating pieces that transition seamlessly from outdoor adventure to everyday wear. Breathable fabrics, precision tailoring, and elevated silhouettes come together to offer refined comfort and unrestricted movement—no matter where the day takes you.",
+        "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+        "product1": "classic-short-with-cargo-pocket",
+        "product2": "pique-short",
+        "product3": "garment-washed-pullover-hoodie",
+        "product4": "heritage-jogger-with-cargo-pocket",
+        "width": "wrapper--full",
+        "background_color": "#102345",
+        "text_color": "#e6dbc4",
+        "product_color": "#102345"
+      }
     }
   },
   "order": [
     "main",
     "section_richtext_z49gFw",
     "section_double_ae83ar",
-    "collection_card_column_Ydrkex",
     "column_product_collection_bp8UTm",
-    "section_list_collections_products_wg4cKG",
+    "collection_card_column_Ydrkex",
+    "collection_card_column_JK3ptk",
     "column_product_collection_HDP6Rw",
-    "section_product_masonry_Wia8FW",
-    "section_shop_by_color_yWCBP4"
+    "section_list_collections_products_wg4cKG",
+    "section_shop_by_color_yWCBP4",
+    "section_product_masonry_Wia8FW"
   ]
 }
