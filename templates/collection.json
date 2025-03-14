@@ -101,7 +101,7 @@
         "collection_rXLwkR": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "best-sellers",
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "",
@@ -117,7 +117,7 @@
         "collection_kQYakP": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "yoga",
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "",
