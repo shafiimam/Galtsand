@@ -228,6 +228,16 @@
     "section_shop_by_color_yWCBP4": {
       "type": "section-shop-by-color",
       "blocks": {
+        "color_cart_jbBDia": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/Heritage_1-4_Zip_Academy_Green_M-6.jpg",
+            "swatch_color": "#003f2f",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
         "color_cart_UynqXz": {
           "type": "color_cart",
           "settings": {
@@ -281,7 +291,6 @@
         "color_cart_hLGeUr": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
             "swatch_color": "#ffffff",
             "card_title": "White",
             "button_label": "Explore",
@@ -290,6 +299,7 @@
         }
       },
       "block_order": [
+        "color_cart_jbBDia",
         "color_cart_UynqXz",
         "color_cart_xaFQbh",
         "color_cart_CYqACD",
