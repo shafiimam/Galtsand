@@ -12108,7 +12108,7 @@
         AOS.init({
             once: true,
             startEvent: 'load'
-        })
+        });
     }
     document.addEventListener('DOMContentLoaded', function() {
         // Detect menu height early to prevent CLS
