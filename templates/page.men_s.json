@@ -170,6 +170,19 @@
         "width": "wrapper--full"
       }
     },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "custom_css": [],
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "mens-tops",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/best-sellers",
+        "width": "wrapper--full"
+      }
+    },
     "collection_card_column_JK3ptk": {
       "type": "collection-card-column",
       "blocks": {
@@ -222,19 +235,6 @@
       ],
       "settings": {
         "background_color": "#660f28",
-        "width": "wrapper--full"
-      }
-    },
-    "column_product_collection_bp8UTm": {
-      "type": "column-product-collection",
-      "custom_css": [],
-      "settings": {
-        "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "mens-tops",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
         "width": "wrapper--full"
       }
     },
@@ -429,8 +429,8 @@
     "section_richtext_z49gFw",
     "section_double_ae83ar",
     "collection_card_column_Ydrkex",
-    "collection_card_column_JK3ptk",
     "column_product_collection_bp8UTm",
+    "collection_card_column_JK3ptk",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
     "section_product_masonry_Wia8FW",
