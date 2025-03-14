@@ -231,18 +231,8 @@
         "color_cart_jbBDia": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Heritage_1-4_Zip_Academy_Green_M-6.jpg",
+            "card_image": "shopify://shop_images/Heritage_1-4_Zip_Academy_Green_M-5.jpg",
             "swatch_color": "#003f2f",
-            "card_title": "Academy green",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "color_cart_UynqXz": {
-          "type": "color_cart",
-          "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#252c25",
             "card_title": "Academy green",
             "button_label": "Explore",
             "button_link": ""
@@ -251,7 +241,7 @@
         "color_cart_xaFQbh": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/PiqueQuarterZip-Silver_Melange-PiquePintuckJogger-Black_1-converted_JPG.jpg",
             "swatch_color": "#9b9b9b",
             "card_title": "Silver melange",
             "button_label": "Explore",
@@ -261,7 +251,7 @@
         "color_cart_CYqACD": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/PiqueShotSleeve-Black-PiquePintuckJogger-Black_1-converted.jpg",
             "swatch_color": "#000000",
             "card_title": "Black",
             "button_label": "Explore",
@@ -271,7 +261,7 @@
         "color_cart_RLpbCq": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/Pique_Pintuck_Jogger_Darkest_Navy_M_Heritagw_1-4_Zip_Navy-1.jpg",
             "swatch_color": "#22253b",
             "card_title": "Dark Navy",
             "button_label": "Explore",
@@ -281,7 +271,7 @@
         "color_cart_CqNMQU": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Rectangle_26.png",
+            "card_image": "shopify://shop_images/Heritage_1-4_Zip_Snow_Heather_M-5.jpg",
             "swatch_color": "#e3e2e9",
             "card_title": "Snow Heather",
             "button_label": "Explore",
@@ -291,6 +281,7 @@
         "color_cart_hLGeUr": {
           "type": "color_cart",
           "settings": {
+            "card_image": "shopify://shop_images/PiqueShotSleeve-White-PiqueShortPintuck.jpg",
             "swatch_color": "#ffffff",
             "card_title": "White",
             "button_label": "Explore",
@@ -300,7 +291,6 @@
       },
       "block_order": [
         "color_cart_jbBDia",
-        "color_cart_UynqXz",
         "color_cart_xaFQbh",
         "color_cart_CYqACD",
         "color_cart_RLpbCq",
