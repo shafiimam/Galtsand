@@ -244,8 +244,8 @@
         "collection_iBkUYd": {
           "type": "collection",
           "settings": {
-            "collection": "bags",
-            "title": "Long Title description goes here",
+            "collection": "pique",
+            "title": "The Pique Collection",
             "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
@@ -259,7 +259,7 @@
           "type": "collection",
           "settings": {
             "collection": "bottoms",
-            "title": "Long Title description goes here",
+            "title": "Pants & Bottoms",
             "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
@@ -272,8 +272,8 @@
         "collection_9jBt6c": {
           "type": "collection",
           "settings": {
-            "collection": "bottoms",
-            "title": "Long Title description goes here",
+            "collection": "co-ords",
+            "title": "Co-Ords",
             "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
             "enable_item": true,
             "text": "",
