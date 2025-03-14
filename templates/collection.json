@@ -137,7 +137,7 @@
       ],
       "settings": {
         "title": "",
-        "small_text": "shop by season",
+        "small_text": "shop by category",
         "bg": "palette--light bg--neutral",
         "carousel_enabled_on": "mobile",
         "wh_ratio": 1.5,
