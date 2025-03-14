@@ -3,6 +3,7 @@
   --font-family-cursive: "Gambarino-Regular";
   --font-family-body: "EngraversGothicBT-Heavy";
   --font-family-secondary: "Inter Tight";
+  --font-family-exmouth: "exmouth";
   --heading-size-xl: clamp(48px, 4vw, 120px);
   --heading-size-lg: clamp(40px, 4vw, 71px);
   --heading-size-md: clamp(26px, 4vw, 32px);
@@ -79,6 +80,21 @@
   text-overflow: ellipsis;
   width: 100%;
 }
+.mobile-view {
+  display: none;
+}
+.desktop-view {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .mobile-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+} 
+
 h4.blog__heading.text-left {
   color: #660f28;
   font-family: "EngraversGothicBT-Heavy";
@@ -133,6 +149,12 @@ a.blog__tag.blog__tag--active:hover {
 }
 .article__item-author {
   display: none;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
 h3.article__item-title {

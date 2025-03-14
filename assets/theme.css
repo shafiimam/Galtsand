@@ -40,6 +40,8 @@
 @font-face {
   font-family: "exmouth";
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/exmouth.woff?v=1736211739");
+  letter-spacing: normal;
+  text-transform: capitalize;
 }
 
 /* Apply fonts to specific elements */
@@ -106,7 +108,7 @@
     letter-spacing: -1px !important;
   }
   .hero__description p {
-    font-size: 11px !important;
+    font-size: 14px !important;
     max-width: 100%;
   }
   /* .btn--primary {
@@ -18621,7 +18623,7 @@ Collection grid item
   font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
   text-transform: none;
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: 2em;
+  font-size: 20px;
   line-height: var(--leading-normal);
   text-transform: uppercase;
 }

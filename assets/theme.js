@@ -12105,10 +12105,11 @@
 
     // Animate on scroll
     if (window.theme.settings.animate_scroll) {
-        AOS.init({
+       var themeAOS = AOS.init({
             once: true,
             startEvent: 'load'
-        });
+        })
+        console.log(themeAOS);
     }
     document.addEventListener('DOMContentLoaded', function() {
         // Detect menu height early to prevent CLS
