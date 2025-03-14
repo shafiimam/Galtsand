@@ -95,6 +95,63 @@
         "padding_bottom": 64
       }
     },
+    "section_list_collections_PBKazm": {
+      "type": "section-list-collections",
+      "blocks": {
+        "collection_rXLwkR": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "",
+            "top_text_disabled": false,
+            "title": "",
+            "title_disabled": false,
+            "bottom_text": "",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_kQYakP": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "",
+            "top_text_disabled": false,
+            "title": "",
+            "title_disabled": false,
+            "bottom_text": "",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rXLwkR",
+        "collection_kQYakP"
+      ],
+      "settings": {
+        "title": "",
+        "small_text": "shop by season",
+        "bg": "palette--light bg--neutral",
+        "carousel_enabled_on": "mobile",
+        "wh_ratio": 1.5,
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "font_family": "body",
+        "title_size": 8,
+        "accent_size": 3,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "why_use_our_pieces_GM7rgH": {
       "type": "Why_Use_Our_Pieces",
       "settings": {
@@ -247,6 +304,7 @@
     "hero",
     "subcollections",
     "main",
+    "section_list_collections_PBKazm",
     "why_use_our_pieces_GM7rgH",
     "fabric_choice_Th3iVf",
     "every_ocasion_KaRhBj",
