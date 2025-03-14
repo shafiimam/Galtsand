@@ -415,9 +415,9 @@
         "collection_kzEHiJ": {
           "type": "collection",
           "settings": {
-            "collection": "sweaters-joggers",
-            "title": "Sweaters & Joggers.",
-            "link_text": "",
+            "collection": "best-sellers",
+            "title": "Best Sellers",
+            "link_text": "Tried, tested, and loved. Shop the pieces everyone is wearing on repeat.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
