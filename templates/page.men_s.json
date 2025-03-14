@@ -170,6 +170,61 @@
         "width": "wrapper--full"
       }
     },
+    "collection_card_column_JK3ptk": {
+      "type": "collection-card-column",
+      "blocks": {
+        "card_YMpfcV": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_b84fa27f-015f-4b28-873a-c48dea058bf4.png",
+            "title": "Pants",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_g6QEdE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_525c87b3-15e7-41af-928e-09d0600ffbd7.jpg",
+            "title": "Shirts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_LAi4a7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_33b50855-ff27-4329-aa1d-8c5558dbbd36.jpg",
+            "title": "Sweaters",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_Mz9BNm": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_885ecd70-6d8c-48e0-8637-efd76768f306.jpg",
+            "title": "Polos",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "card_YMpfcV",
+        "card_g6QEdE",
+        "card_LAi4a7",
+        "card_Mz9BNm"
+      ],
+      "settings": {
+        "background_color": "#660f28",
+        "width": "wrapper--full"
+      }
+    },
     "column_product_collection_bp8UTm": {
       "type": "column-product-collection",
       "custom_css": [],
@@ -374,6 +429,7 @@
     "section_richtext_z49gFw",
     "section_double_ae83ar",
     "collection_card_column_Ydrkex",
+    "collection_card_column_JK3ptk",
     "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
