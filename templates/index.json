@@ -430,8 +430,8 @@
           "type": "collection",
           "settings": {
             "collection": "comfy-classics",
-            "title": "Comfy Classics.",
-            "link_text": "",
+            "title": "Sweaters",
+            "link_text": "Since 1986, our sweaters have been crafted for comfort, durability, and effortless style.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
