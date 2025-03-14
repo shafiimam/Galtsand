@@ -372,11 +372,11 @@
         "color_cart_CqNMQU": {
           "type": "color_cart",
           "settings": {
-            "card_image": "shopify://shop_images/Heritage_1-4_Zip_Snow_Heather_M-5.jpg",
-            "swatch_color": "#e2eaef",
-            "card_title": "Snow Heather",
+            "card_image": "shopify://shop_images/WashedPulloverHoodie-Burgundy-PiqueShhgortPintuck-White.jpg",
+            "swatch_color": "#520b19",
+            "card_title": "Burgundy",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "https://galtsand.com/collections/burgundy"
           }
         },
         "color_cart_hLGeUr": {
