@@ -245,7 +245,7 @@
             "swatch_color": "#93cdd5",
             "card_title": "Aqua Blue",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "shopify://collections/aqua-blue"
           }
         },
         "color_cart_CYqACD": {
@@ -255,7 +255,7 @@
             "swatch_color": "#000000",
             "card_title": "Pitch Black",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "shopify://collections/pitch-black"
           }
         },
         "color_cart_RLpbCq": {
