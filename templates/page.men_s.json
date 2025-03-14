@@ -238,6 +238,18 @@
         "width": "wrapper--full"
       }
     },
+    "column_product_collection_HDP6Rw": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "New this week",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "new-in",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/new-in",
+        "width": "wrapper--full"
+      }
+    },
     "section_list_collections_products_wg4cKG": {
       "type": "section-list-collections-products",
       "blocks": {
@@ -312,34 +324,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "column_product_collection_HDP6Rw": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "new-in",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full"
-      }
-    },
-    "section_product_masonry_Wia8FW": {
-      "type": "section-product-masonry",
-      "settings": {
-        "title": "Explore Our Premium Sweatshirts Collection",
-        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
-        "image": "shopify://shop_images/Frame_176.png",
-        "product1": "classic-short-with-cargo-pocket",
-        "product2": "pique-short",
-        "product3": "garment-washed-pullover-hoodie",
-        "product4": "heritage-jogger-with-cargo-pocket",
-        "width": "wrapper--full",
-        "background_color": "#102345",
-        "text_color": "#e6dbc4",
-        "product_color": "#102345"
       }
     },
     "section_shop_by_color_yWCBP4": {
@@ -422,6 +406,22 @@
         "background_color": "#E6DBC4",
         "text_color": "#102345"
       }
+    },
+    "section_product_masonry_Wia8FW": {
+      "type": "section-product-masonry",
+      "settings": {
+        "title": "Spring Summer 2025",
+        "subtitle": "This season, Galtsand redefines performance with a collection designed for the modern explorer. The SS25 Menswear Collection blends technical innovation, heritage craftsmanship, and effortless versatility, creating pieces that transition seamlessly from outdoor adventure to everyday wear. Breathable fabrics, precision tailoring, and elevated silhouettes come together to offer refined comfort and unrestricted movement—no matter where the day takes you.",
+        "image": "shopify://shop_images/Frame_176.png",
+        "product1": "classic-short-with-cargo-pocket",
+        "product2": "pique-short",
+        "product3": "garment-washed-pullover-hoodie",
+        "product4": "heritage-jogger-with-cargo-pocket",
+        "width": "wrapper--full",
+        "background_color": "#102345",
+        "text_color": "#e6dbc4",
+        "product_color": "#102345"
+      }
     }
   },
   "order": [
@@ -431,9 +431,9 @@
     "collection_card_column_Ydrkex",
     "column_product_collection_bp8UTm",
     "collection_card_column_JK3ptk",
-    "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
-    "section_product_masonry_Wia8FW",
-    "section_shop_by_color_yWCBP4"
+    "section_list_collections_products_wg4cKG",
+    "section_shop_by_color_yWCBP4",
+    "section_product_masonry_Wia8FW"
   ]
 }
