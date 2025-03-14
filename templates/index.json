@@ -429,7 +429,7 @@
         "collection_GaPRP3": {
           "type": "collection",
           "settings": {
-            "collection": "comfy-classics",
+            "collection": "heritage-sweaters",
             "title": "Sweaters",
             "link_text": "Since 1986, our sweaters have been crafted for comfort, durability, and effortless style.",
             "enable_item": true,
@@ -444,8 +444,8 @@
           "type": "collection",
           "settings": {
             "collection": "bags",
-            "title": "Bags.",
-            "link_text": "",
+            "title": "Bags",
+            "link_text": "Thoughtfully constructed with premium materials.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
