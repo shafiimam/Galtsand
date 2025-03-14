@@ -24,10 +24,15 @@
 >
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
-      <h2 class="heading heading-lg text-center" style="color: {{ section.settings.content_color }};">{{ section.settings.title }}</h2>
+      <h2 class="heading heading-lg text-center" style="color: {{ section.settings.content_color }};">
+        {{ section.settings.title }}
+      </h2>
     {%- endif -%}
     {% if section.settings.subttitle %}
-      <p class="text-base font-body text-center collection-section-subtitle" style="color: {{ section.settings.content_color }};">
+      <p
+        class="text-base font-body text-center collection-section-subtitle"
+        style="color: {{ section.settings.content_color }};"
+      >
         {{ section.settings.subttitle }}
       </p>
     {% endif %}
@@ -285,6 +290,13 @@
   .section-button-container {
     display: flex;
     justify-content: center;
+  }
+  .section-list-collections-products .on-sale {
+      color: {{ section.settings.content_color }} !important;
+  }
+  .section-list-collections-products .compare-at {
+    color: {{ section.settings.content_color }} !important;
+    opacity: 0.8;
   }
 </style>
 {% schema %}

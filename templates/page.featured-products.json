@@ -145,12 +145,224 @@
         "grid_mobile": 1.2,
         "width": "wrapper--full"
       }
+    },
+    "gallery_slider_LpVnYr": {
+      "type": "gallery-slider",
+      "blocks": {
+        "image_slide_m4eVXE": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+            "link": ""
+          }
+        },
+        "image_slide_hc7HGT": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_243.png",
+            "link": ""
+          }
+        },
+        "image_slide_JfPNYm": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_241_2d252e66-5550-4af1-b7ca-1fbfd15dc47e.png",
+            "link": ""
+          }
+        },
+        "image_slide_D7diAV": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_242_afc8fac8-cac0-48d5-ac75-2c79ec6a6310.png",
+            "link": ""
+          }
+        },
+        "image_slide_HhCjyq": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/12.4_0053.jpg",
+            "link": ""
+          }
+        },
+        "image_slide_3UKNEX": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/12.4_0051.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_m4eVXE",
+        "image_slide_hc7HGT",
+        "image_slide_JfPNYm",
+        "image_slide_D7diAV",
+        "image_slide_HhCjyq",
+        "image_slide_3UKNEX"
+      ],
+      "settings": {
+        "title": "Adventure-Inspired Lookbook",
+        "subtitle": "Quis auctor massa aliquet amet id massa lacus. Nisi tincidunt elementum convallis est in nisl. Hendrerit vestibulum sit nec enim et lorem enim urna velit. Cras nunc sit amet vel tempus scelerisque scelerisque.",
+        "width": "wrapper--none"
+      }
+    },
+    "section_product_masonry_hirDMy": {
+      "type": "section-product-masonry",
+      "settings": {
+        "title": "",
+        "subtitle": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand began with a mission to unite the world through sport. From the beginning, we’ve believed that sport is more than movement, it’s a universal language that bridges generations, backgrounds, and cultures, bringing people together in a shared experience.",
+        "image": "shopify://shop_images/Frame_240_5167c221-24d9-4c03-b1b9-dc9ca7a00597.png",
+        "product1": "airlite-leggings",
+        "product2": "freedom-leggings",
+        "product3": "classic-tote-bag",
+        "product4": "classic-messenger-bag",
+        "width": "wrapper--full",
+        "background_color": "#e6dbc4",
+        "text_color": "#660f28",
+        "product_color": "#102345"
+      }
+    },
+    "section_shop_by_color_hPtVFQ": {
+      "type": "section-shop-by-color",
+      "blocks": {
+        "color_cart_y7YdNn": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_hCJAX3": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_LHJJUW": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_ATNPTj": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_QeyHKr": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "color_cart_T4aVNG": {
+          "type": "color_cart",
+          "settings": {
+            "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
+            "swatch_color": "#006a50",
+            "card_title": "Academy green",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "color_cart_y7YdNn",
+        "color_cart_hCJAX3",
+        "color_cart_LHJJUW",
+        "color_cart_ATNPTj",
+        "color_cart_QeyHKr",
+        "color_cart_T4aVNG"
+      ],
+      "settings": {
+        "title": "Shop by colors",
+        "subtitle": "Handcrafted by our expert designers.",
+        "width": "wrapper--full",
+        "remove_top_padding": true,
+        "background_color": "#E6DBC4",
+        "text_color": "#102345"
+      }
+    },
+    "customer_review_section_BfdTNg": {
+      "type": "customer_review_section",
+      "blocks": {
+        "review_dme7Uk": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/0248.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_tKJCzn": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/0248.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_gb79Bk": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/0248.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        },
+        "review_3QCLLz": {
+          "type": "review",
+          "settings": {
+            "review_text": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc.",
+            "reviewer_image": "shopify://shop_images/0248.jpg",
+            "reviewer_name": "Name Surname",
+            "reviewer_role": "Athlete"
+          }
+        }
+      },
+      "block_order": [
+        "review_dme7Uk",
+        "review_tKJCzn",
+        "review_gb79Bk",
+        "review_3QCLLz"
+      ],
+      "settings": {
+        "main_title": "Why Our Customers Love Galtsand",
+        "subtitle": "Handcrafted by our expert designers."
+      }
     }
   },
   "order": [
     "main",
     "banner_with_text_overlay_AVAc37",
     "product_features_image_text_YiKHgK",
-    "tabs_collection_me9afj"
+    "tabs_collection_me9afj",
+    "gallery_slider_LpVnYr",
+    "section_product_masonry_hirDMy",
+    "section_shop_by_color_hPtVFQ",
+    "customer_review_section_BfdTNg"
   ]
 }

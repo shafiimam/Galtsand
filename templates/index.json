@@ -301,6 +301,57 @@
         "padding_bottom": 36
       }
     },
+    "card_cascade_F4z48g": {
+      "type": "card-cascade",
+      "blocks": {
+        "collection_card_LzPcgF": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/Frame_72.png",
+            "title": "Heritage Collection",
+            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_99gVRN": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/Frame_71.png",
+            "title": "Menswear",
+            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_nKDEHr": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/Frame_73.png",
+            "title": "Menswear",
+            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_LzPcgF",
+        "collection_card_99gVRN",
+        "collection_card_nKDEHr"
+      ],
+      "settings": {
+        "title": "Featured Collections",
+        "content": "Handcrafted by our expert designers.",
+        "background_color": "#006a50",
+        "text_color": "#e6dbc4",
+        "text_alignment": "text-left",
+        "width": "wrapper--full"
+      }
+    },
     "section_list_collections_czR7hE": {
       "type": "section-list-collections",
       "blocks": {
@@ -493,7 +544,8 @@
         "button_label": "Watch Video",
         "button_url": "",
         "video": "shopify://files/videos/for-TV-Long-format.MP4",
-        "image": "shopify://shop_images/Frame_276.png",
+        "image": "shopify://shop_images/Frame_277.png",
+        "image_background_color": "#102345",
         "width": "wrapper--none"
       }
     },
@@ -660,6 +712,7 @@
     "hero",
     "section_logos_E3KxjC",
     "collection-split-section-1",
+    "card_cascade_F4z48g",
     "section_list_collections_czR7hE",
     "section_list_collections_products_N6gfAm",
     "section_collection_slider_XiBHU9",

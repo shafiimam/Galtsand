@@ -74,6 +74,9 @@
   font-family: "EngraversGothicBT-Heavy" !important;
   font-size: 18px !important;
   letter-spacing: 3%;
+  @media screen and (max-width: 768px){
+    font-size: 12px !important;
+  }
 }
 .footer__newsletter h3 {
   font-family: "EngraversGothicBT-Heavy" !important;
@@ -13478,7 +13481,6 @@ html:not(.no-js) body:not(.focus-enabled) *:focus {
 }
 .hero__cta__wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   overflow: visible;
   margin: 0 calc(-1 * var(--cta-column-gap));
@@ -18623,7 +18625,7 @@ Collection grid item
   font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
   text-transform: none;
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: 20px;
+  font-size: 16px;
   line-height: var(--leading-normal);
   text-transform: uppercase;
 }
@@ -19254,7 +19256,7 @@ body.focus-enabled .product-grid-item:focus-within {
 .product__grid__price {
   overflow: hidden;
   margin: 3px 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: var(--leading-normal);
   font-family: "EngraversGothicBT-Heavy";
   color: #44505f;

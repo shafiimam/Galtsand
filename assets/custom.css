@@ -4,7 +4,7 @@
   --font-family-body: "EngraversGothicBT-Heavy";
   --font-family-secondary: "Inter Tight";
   --font-family-exmouth: "exmouth";
-  --heading-size-xl: clamp(48px, 4vw, 120px);
+  --heading-size-xl: clamp(40px, 4vw, 120px);
   --heading-size-lg: clamp(40px, 4vw, 71px);
   --heading-size-md: clamp(26px, 4vw, 32px);
   --heading-size-cursive: clamp(72px, 4vw, 132px);
@@ -54,6 +54,9 @@
 .subheading {
   font-size: 20px;
   letter-spacing: 1px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 .font-body,
 .font-subheading {
