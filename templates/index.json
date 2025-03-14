@@ -262,7 +262,7 @@
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 48
       }
     },
     "video_with_modal_zPUEPT": {
