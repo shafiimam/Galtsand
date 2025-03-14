@@ -1,0 +1,274 @@
+{% assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" %}
+<section
+  class="card-cascade-section {{ section.settings.width }} {{ section.settings.text_alignment }} shopify-section"
+  id="card-cascade-section-{{ section.id }}"
+>
+  <div class="card-cascade__container">
+    <div class="card-cascade__content">
+      <h1 class="card-cascade__title">{{ section.settings.title }}</h1>
+      <p class="card-cascade__content-text font-body">
+        {{ section.settings.content }}
+      </p>
+    </div>
+    <div class="card-cascade__cards-swiper-{{ section.id }} mobile-view">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="card-cascade__card swiper-slide">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
+            <div class="card-cascade__card-content">
+              <h3 class="card-cascade__card-title font-body">{{ block.settings.title }}</h3>
+              <div class="card-cascade__card-text">
+                {{ block.settings.content }}
+              </div>
+              <a href="{{ block.settings.button_link }}" class="card-cascade__card-button">
+                {{ block.settings.button_text }}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="card-cascade__cards-container desktop-view">
+      {% for block in section.blocks %}
+        <div
+          class="card-cascade__card"
+          data-aos="card_cascade"
+          data-aos-anchor="{{ animation_anchor }}"
+          data-aos-order="{{ forloop.index }}"
+        >
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
+          <div class="card-cascade__card-content">
+            <p class="card-cascade__card-title font-body">{{ block.settings.title }}</p>
+            <div class="card-cascade__card-text">
+              {{ block.settings.content }}
+            </div>
+            <a href="{{ block.settings.button_link }}" class="card-cascade__card-button font-body">
+              {{ block.settings.button_text }}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<style>
+    #card-cascade-section-{{ section.id }} {
+      background-color: {{ section.settings.background_color }};
+      color: {{ section.settings.text_color }};
+    }
+    .card-cascade__container {
+      overflow: hidden;
+      padding: 100px 0;
+    }
+    .card-cascade__content {
+      margin-bottom: 28px;
+    }
+    h1.card-cascade__title {
+      color: #E6DBC4;
+      font-size: 132px;
+      font-weight: 400;
+      line-height: 70%;
+      font-family: var(--font-family-exmouth) !important;
+      letter-spacing: normal;
+      text-transform: capitalize;
+      margin-bottom: 28px;
+      @media screen and (max-width: 768px) {
+        font-size: 72px;
+      }
+     }
+     p.card-cascade__content-text {
+       color: #E6DBC4;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+     }
+     @media only screen and (min-width: 1100px) {
+        .card-cascade__cards-container {
+          display: grid;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+       }
+     }
+     .card-cascade__cards-container .card-cascade__card:nth-child(2) {
+        margin-top: 28px;
+     }
+     .card-cascade__cards-container .card-cascade__card:nth-child(3) {
+        margin-top: 56px;
+     }
+   .card-cascade__card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .card-cascade__card-content {
+     border: 6px solid #E6DBC4;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     @media screen and (max-width: 768px) {
+         font-size: 14px;
+     }
+   }
+  .card-cascade__card-title {
+      color: {{ section.settings.text_color }};
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-bottom: 0;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+  }
+  .card-cascade__card-text {
+      color: {{ section.settings.text_color }};
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+  }
+  a.card-cascade__card-button {
+    border-bottom: 2px solid #FFDD09;
+    width: max-content;
+    color: #FFDD09;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cardsSwiper = new Swiper('.card-cascade__cards-swiper-{{ section.id }}', {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Cards Cascade",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        },
+        {
+          "value": "text-center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_card",
+      "name": "Collection Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text Alignment",
+          "options": [
+            {
+              "value": "text-left",
+              "label": "Left"
+            },
+            {
+              "value": "text-right",
+              "label": "Right"
+            },
+            {
+              "value": "text-center",
+              "label": "Center"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cards Cascade"
+    }
+  ]
+}
+{% endschema %}

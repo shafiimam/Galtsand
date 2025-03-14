@@ -7,11 +7,11 @@
       <h2 class="boutique-title heading-lg">{{ section.settings.main_title }}</h2>
       <div class="boutique-list">
         {% for block in section.blocks %}
-        <div class="boutique-item">
-          <h3 class="boutique-address-name">{{ block.settings.address_name }}</h3>
-          <p class="boutique-address">{{ block.settings.address }}</p>
-          <p class="boutique-phone">{{ block.settings.phone }}</p>
-        </div>
+          <div class="boutique-item">
+            <h3 class="boutique-address-name">{{ block.settings.address_name }}</h3>
+            <p class="boutique-address">{{ block.settings.address }}</p>
+            <p class="boutique-phone">{{ block.settings.phone }}</p>
+          </div>
         {% endfor %}
       </div>
     </div>
@@ -20,7 +20,7 @@
 
 <style>
   .boutique-section {
-    background-color: #E6DBC4;
+    background-color: #e6dbc4;
     padding: 50px;
   }
 
@@ -46,7 +46,7 @@
 
   .boutique-info {
     flex: 1;
-    border: 4px solid #006A50;
+    border: 4px solid #006a50;
     padding: 30px;
     text-align: center;
     display: flex;
@@ -56,9 +56,9 @@
   }
 
   .boutique-title {
-    font-family: "Gambarino-Regular";
+    font-family: 'Gambarino-Regular';
     font-weight: bold;
-    color: #006A50;
+    color: #006a50;
   }
 
   .boutique-list {
@@ -68,7 +68,7 @@
   }
 
   .boutique-item {
-    font-family: "Inter Tight";
+    font-family: 'Inter Tight';
   }
 
   .boutique-address-name {
@@ -79,14 +79,17 @@
     text-transform: none;
     letter-spacing: 1px;
     margin: 0px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
     /* text-transform: uppercase; */
   }
 
   .boutique-address,
   .boutique-phone {
-    font-family: "EngraversGothicBT-Heavy" !important;
+    font-family: 'EngraversGothicBT-Heavy' !important;
     font-size: 16px;
-    color: #44505F;
+    color: #44505f;
     text-transform: uppercase;
   }
 
@@ -102,10 +105,10 @@
       width: 100%;
       height: auto;
     }
-    .boutique-title{
-      font-size: 48px;
+    .boutique-title {
+      font-size: 40px;
     }
-    .boutique-section{
+    .boutique-section {
       padding: 10px;
     }
     .boutique-address-name {
@@ -160,12 +163,7 @@
     {
       "name": "Our Boutiques",
       "category": "Custom",
-      "blocks": [
-        { "type": "boutique" },
-        { "type": "boutique" },
-        { "type": "boutique" },
-        { "type": "boutique" }
-      ]
+      "blocks": [{ "type": "boutique" }, { "type": "boutique" }, { "type": "boutique" }, { "type": "boutique" }]
     }
   ]
 }
