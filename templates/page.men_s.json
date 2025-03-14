@@ -294,7 +294,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#006a50",
+            "swatch_color": "#06362b",
             "card_title": "Academy green",
             "button_label": "Explore",
             "button_link": ""
@@ -324,7 +324,7 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/Rectangle_26.png",
-            "swatch_color": "#004000",
+            "swatch_color": "#102345",
             "card_title": "Dark Navy",
             "button_label": "Explore",
             "button_link": ""
