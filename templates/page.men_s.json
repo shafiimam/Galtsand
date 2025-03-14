@@ -115,6 +115,19 @@
         "padding_bottom": 36
       }
     },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "custom_css": [],
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "mens-tops",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/best-sellers",
+        "width": "wrapper--full"
+      }
+    },
     "collection_card_column_Ydrkex": {
       "type": "collection-card-column",
       "blocks": {
@@ -167,19 +180,6 @@
       ],
       "settings": {
         "background_color": "#660f28",
-        "width": "wrapper--full"
-      }
-    },
-    "column_product_collection_bp8UTm": {
-      "type": "column-product-collection",
-      "custom_css": [],
-      "settings": {
-        "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "mens-tops",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
         "width": "wrapper--full"
       }
     },
@@ -412,7 +412,7 @@
       "settings": {
         "title": "Spring Summer 2025",
         "subtitle": "This season, Galtsand redefines performance with a collection designed for the modern explorer. The SS25 Menswear Collection blends technical innovation, heritage craftsmanship, and effortless versatility, creating pieces that transition seamlessly from outdoor adventure to everyday wear. Breathable fabrics, precision tailoring, and elevated silhouettes come together to offer refined comfort and unrestricted movement—no matter where the day takes you.",
-        "image": "shopify://shop_images/Frame_176.png",
+        "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
         "product1": "classic-short-with-cargo-pocket",
         "product2": "pique-short",
         "product3": "garment-washed-pullover-hoodie",
@@ -428,8 +428,8 @@
     "main",
     "section_richtext_z49gFw",
     "section_double_ae83ar",
-    "collection_card_column_Ydrkex",
     "column_product_collection_bp8UTm",
+    "collection_card_column_Ydrkex",
     "collection_card_column_JK3ptk",
     "column_product_collection_HDP6Rw",
     "section_list_collections_products_wg4cKG",
