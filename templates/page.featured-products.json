@@ -82,6 +82,7 @@
         "feature_card_JLUwtH",
         "feature_card_LmJ8Pe"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/galtsand-model.png",
         "width": "wrapper--full"
@@ -138,8 +139,8 @@
         "tab_G8NB98"
       ],
       "settings": {
-        "title": "Shop by function",
-        "subtitle": "Handcrafted by our expert designers.",
+        "title": "elevate your adventure.",
+        "subtitle": "From 9-to-5 to Off the Grid.",
         "grid_large": 4,
         "grid_medium": 3,
         "grid_mobile": 1.2,
