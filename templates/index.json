@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "title": "Out of the office, into the wild.",
-            "text_size": 10
+            "text_size": 12
           }
         },
         "text_EXaa7j": {
@@ -619,7 +619,7 @@
         "heading_P7PMnH"
       ],
       "custom_css": [
-        "p {font-family: \"Gambarino-Regular\" !important; letter-spacing: 0.5px;}",
+        "p {font-family: \"Gambarino\" !important; letter-spacing: 0.5px;}",
         "@media screen and (max-width: 768px) {p {font-size: 28px; }}"
       ],
       "settings": {
