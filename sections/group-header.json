@@ -78,7 +78,25 @@
             "image": "shopify://shop_images/Frame_242_afc8fac8-cac0-48d5-ac75-2c79ec6a6310.png",
             "wide_element": false,
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
+            "title": "",
+            "title_color": "text--white",
+            "button_style": "is-below-image",
+            "link_text": "Shop All",
+            "link": "shopify://collections/all",
+            "button_color": "btn--neutral",
+            "display": "all"
+          }
+        },
+        "image_Wj9m8A": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "wh_ratio": 1.2,
+            "image": "shopify://shop_images/Frame_242_afc8fac8-cac0-48d5-ac75-2c79ec6a6310.png",
+            "wide_element": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
             "title": "",
             "title_color": "text--white",
             "button_style": "is-below-image",
@@ -128,6 +146,7 @@
       "block_order": [
         "header-block-toolbar",
         "image_DbQARN",
+        "image_Wj9m8A",
         "header-block-image-1",
         "image_3pfU8X"
       ],
