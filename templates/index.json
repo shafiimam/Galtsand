@@ -383,6 +383,7 @@
         "collection_GaPRP3",
         "collection_xgYtnf"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "Trending now.",
@@ -396,6 +397,57 @@
         "width": "wrapper--full",
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "card_cascade_F4z48g": {
+      "type": "card-cascade",
+      "blocks": {
+        "collection_card_LzPcgF": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/Frame_72.png",
+            "title": "Heritage Collection",
+            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_99gVRN": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/Frame_71.png",
+            "title": "Menswear",
+            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_nKDEHr": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/Frame_73.png",
+            "title": "Menswear",
+            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_LzPcgF",
+        "collection_card_99gVRN",
+        "collection_card_nKDEHr"
+      ],
+      "settings": {
+        "title": "Featured Collections",
+        "content": "Climb higher in style – The first drop of our Spring collection is here.",
+        "background_color": "#006a50",
+        "text_color": "#e6dbc4",
+        "text_alignment": "text-left",
+        "width": "wrapper--full"
       }
     },
     "section_list_collections_czR7hE": {
@@ -473,57 +525,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 34
-      }
-    },
-    "card_cascade_F4z48g": {
-      "type": "card-cascade",
-      "blocks": {
-        "collection_card_LzPcgF": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/Frame_72.png",
-            "title": "Heritage Collection",
-            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/heritage",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_99gVRN": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/Frame_71.png",
-            "title": "Menswear",
-            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/heritage",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_nKDEHr": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/Frame_73.png",
-            "title": "Menswear",
-            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/heritage",
-            "text_alignment": "text-left"
-          }
-        }
-      },
-      "block_order": [
-        "collection_card_LzPcgF",
-        "collection_card_99gVRN",
-        "collection_card_nKDEHr"
-      ],
-      "settings": {
-        "title": "Featured Collections",
-        "content": "HELLO",
-        "background_color": "#006a50",
-        "text_color": "#e6dbc4",
-        "text_alignment": "text-left",
-        "width": "wrapper--full"
       }
     },
     "about_us_section_xikFig": {
@@ -716,8 +717,8 @@
     "video_with_modal_zPUEPT",
     "collection-split-section-1",
     "section_list_collections_products_N6gfAm",
-    "section_list_collections_czR7hE",
     "card_cascade_F4z48g",
+    "section_list_collections_czR7hE",
     "about_us_section_xikFig",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
