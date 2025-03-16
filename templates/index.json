@@ -338,9 +338,9 @@
         "collection_card_LzPcgF": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/Frame_72.png",
+            "image": "shopify://shop_images/polo.jpg",
             "title": "Heritage Collection",
-            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "content": "Heritage-inspired comfort with a refined fit blending classic tailoring and modern ease.",
             "button_text": "Explore Collection",
             "button_link": "shopify://collections/heritage",
             "text_alignment": "text-left"
