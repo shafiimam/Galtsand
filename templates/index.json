@@ -360,11 +360,11 @@
         "collection_card_nKDEHr": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/Frame_73.png",
-            "title": "Menswear",
-            "content": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "image": "shopify://shop_images/untitled_50c73c7c-732e-4c6d-b534-5ca5ec85237b.png",
+            "title": "Outdoor Essentials",
+            "content": "Gear up for every adventure with durable, weather-ready apparel.",
             "button_text": "Explore Collection",
-            "button_link": "shopify://collections/heritage",
+            "button_link": "shopify://collections/outdoor-essentials",
             "text_alignment": "text-left"
           }
         }
