@@ -273,7 +273,7 @@
         "button_label": "Watch Video",
         "button_url": "shopify://collections",
         "button_size": "btn--long",
-        "button_style": "btn",
+        "button_style": "btn-text-thick-line",
         "button_color": "btn--white",
         "video": "shopify://files/videos/for-TV-Long-format.MP4",
         "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
@@ -322,7 +322,7 @@
         "title_text_size": 10,
         "title_text_color": "#000000",
         "header_h3text": "YOUR NEXT ADVENTURE AWAITS.",
-        "sub_text_size": 10,
+        "sub_text_size": 5,
         "sub_text_color": "#000000",
         "button_label": "Explore",
         "button_url": "",
@@ -342,7 +342,8 @@
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
         "padding_top": 50,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "arrow_color": "#ffffff"
       }
     },
     "card_cascade_F4z48g": {
@@ -380,18 +381,112 @@
             "button_link": "shopify://collections/outdoor-essentials",
             "text_alignment": "text-left"
           }
+        },
+        "collection_card_GW3fht": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_fdf5bef5-6d83-4c1d-a9fa-8ba74d7d35f3.png",
+            "title": "Signature Studio",
+            "content": "Blending high-performance fabrics with elevated aesthetics.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/signature-studio",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_ztpkkw": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_fdf5bef5-6d83-4c1d-a9fa-8ba74d7d35f3.png",
+            "title": "Signature Studio",
+            "content": "Blending high-performance fabrics with elevated aesthetics.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/signature-studio",
+            "text_alignment": "text-left"
+          }
         }
       },
       "block_order": [
         "collection_card_LzPcgF",
         "collection_card_99gVRN",
-        "collection_card_nKDEHr"
+        "collection_card_nKDEHr",
+        "collection_card_GW3fht",
+        "collection_card_ztpkkw"
       ],
+      "custom_css": [],
       "settings": {
         "title": "Trending Now",
-        "content": "Based on what you are shopping.",
-        "text_alignment": "text-left",
-        "width": "wrapper--full"
+        "title_text_size": 10,
+        "title_color": "#000000",
+        "content": "BASED ON WHAT YOU ARE SHOPPING",
+        "content_color": "#000000",
+        "content_text_size": 5,
+        "text_alignment": "text-center",
+        "text_color": "#000000",
+        "width": "wrapper--full",
+        "show_border": false,
+        "overlap_over_image": false,
+        "button_size": "btn--small",
+        "button_style": "btn-text-thick-line",
+        "button_color": "btn--secondary"
+      }
+    },
+    "card_cascade_TyENQQ": {
+      "type": "card-cascade",
+      "blocks": {
+        "collection_card_i77kG9": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
+            "title": "Heritage Collection",
+            "content": "Globally loved for its classic tailoring with active versatility, and all-day comfort.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_C3RPC4": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
+            "title": "Signature Studio",
+            "content": "Blending high-performance fabrics with elevated aesthetics.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/signature-studio",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_pC7mWi": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
+            "title": "Signature Studio",
+            "content": "Blending high-performance fabrics with elevated aesthetics.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/signature-studio",
+            "text_alignment": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_i77kG9",
+        "collection_card_C3RPC4",
+        "collection_card_pC7mWi"
+      ],
+      "settings": {
+        "title": "Featured Collections",
+        "title_text_size": 10,
+        "title_color": "#000000",
+        "content": "Handcrafted by our expert designers.",
+        "content_color": "#000000",
+        "content_text_size": 5,
+        "text_alignment": "text-center",
+        "text_color": "#ffffff",
+        "width": "wrapper--full",
+        "show_border": true,
+        "overlap_over_image": true,
+        "button_size": "btn--small",
+        "button_style": "btn-text-thick-line",
+        "button_color": "btn--white"
       }
     },
     "section_list_collections_czR7hE": {
@@ -463,12 +558,12 @@
         "grid_large": 3,
         "grid_medium": 3,
         "grid_mobile": 1.2,
-        "font_family": "body",
-        "title_size": 6,
-        "accent_size": 3,
+        "font_family": "heading",
+        "title_size": 8,
+        "accent_size": 5,
         "width": "wrapper--full",
-        "padding_top": 0,
-        "padding_bottom": 34
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
     "section_list_collections_products_N6gfAm": {
@@ -533,8 +628,8 @@
         "enable_scroll_mobile": true,
         "grid_small": 1.2,
         "width": "wrapper--full",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
     "about_us_section_xikFig": {
@@ -724,6 +819,7 @@
     "video_with_modal_zPUEPT",
     "collection-split-section-1",
     "card_cascade_F4z48g",
+    "card_cascade_TyENQQ",
     "section_list_collections_czR7hE",
     "section_list_collections_products_N6gfAm",
     "about_us_section_xikFig",

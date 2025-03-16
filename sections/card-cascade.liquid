@@ -1,24 +1,23 @@
 {% assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" %}
 {%- assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-' -%}
 {%- assign content_font_size_class = section.settings.content_text_size | prepend: 'body-size-' -%}
-{% assign btn_size = 'button_size' %}
-{% assign btn_size = section.settings[btn_size] %}
-
-{% assign btn_style = 'button_style' %}
-{% assign btn_style = section.settings[btn_style] %}
-
-{% assign btn_color = 'button_color' %}
-{% assign btn_color = section.settings[btn_color] %}
+{% assign btn_size = section.settings.button_size %}
+{% assign btn_style = section.settings.button_style %}
+{% assign btn_color = section.settings.button_color %}
 <section
   class="card-cascade-section {{ section.settings.width }} {{ section.settings.text_alignment }} shopify-section section-padding"
   id="card-cascade-section-{{ section.id }}"
 >
   <div class="card-cascade__container">
     <div class="mb-r6 {{ section.settings.text_alignment }}" style="color: {{ section.settings.text_color }};">
-      <h1 class="heading mb-r6 {{ title_font_size_class }}">{{ section.settings.title }}</h1>
-      <p class="{{ content_font_size_class }}">
-        {{ section.settings.content }}
-      </p>
+      {% if section.settings.title %}
+        <h1 class="heading mb-r6 {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">{{ section.settings.title }}</h1>
+      {% endif %}
+      {% if section.settings.content %}
+        <p class="{{ content_font_size_class }} mb-r6" style="color: {{ section.settings.content_color }};">
+          {{ section.settings.content }}
+        </p>
+      {% endif %}
     </div>
     <div class="card-cascade__cards-swiper-{{ section.id }}">
       <div class="swiper-wrapper">
@@ -30,18 +29,28 @@
             data-aos-order="{{ forloop.index }}"
             {{ block.shopify_attributes }}
           >
-            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}">
-            <div class="card-cascade__card-content {{ block.settings.text_alignment }}">
-              <h5 class="card-cascade__card-title font-body mb-r4">{{ block.settings.title }}</h5>
-              <div class="card-cascade__card-text mb-r6">
-                {{ block.settings.content }}
-              </div>
-              <a
-                href="{{ block.settings.button_link }}"
-                class="standard__cta hero__btn {{ btn_style }} {{ btn_color }} {{ btn_size }}"
+            <div class="card-carscade__card-inner">
+              <img
+                class="card-cascade__card-image"
+                src="{{ block.settings.image | img_url: 'master' }}"
+                alt="{{ block.settings.title }}"
+                width="400"
+                height="400"
               >
-                {{ block.settings.button_text }}
-              </a>
+              <div class="card-cascade__card-content card-cascade__card-content-{{ section.id }} {{ block.settings.text_alignment }}">
+                <h5 class="card-cascade__card-title font-body mb-r4" style="color: {{ section.settings.text_color }};">
+                  {{ block.settings.title }}
+                </h5>
+                <div class="card-cascade__card-text mb-r6" style="color: {{ section.settings.text_color }};">
+                  {{ block.settings.content }}
+                </div>
+                <a
+                  href="{{ block.settings.button_link }}"
+                  class="standard__cta hero__btn {{ btn_style }} {{ btn_color }} {{ btn_size }}"
+                >
+                  {{ block.settings.button_text }}
+                </a>
+              </div>
             </div>
           </div>
         {% endfor %}
@@ -51,15 +60,13 @@
   </div>
 </section>
 <style>
-  #card-cascade-section-{{ section.id }} {
-    position: relative;
-  }
   .card-cascade__container {
     overflow: hidden;
-    padding: 50px 0;
+    padding: 30px 0;
   }
   .card-cascade__content {
     margin-bottom: 28px;
+
   }
   h1.card-cascade__title {
     color: #e6dbc4;
@@ -74,23 +81,32 @@
       font-size: 72px;
     }
   }
-  .card-cascade__card.aos-init.aos-animate img {
-  }
-
-  .card-cascade__card {
+  .card-carscade__card-inner {
     display: flex;
     flex-direction: column;
     gap: 20px;
     height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
   }
-  .card-cascade__card img {
+  .card-cascade__card-image {
     aspect-ratio: 0.8;
-    }
-  .card-cascade__card-content {
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-cascade__card-content-{{ section.id }} {
     {% if section.settings.show_border %}
       border: 3px solid {{ section.settings.text_color }};
     {% endif %}
     padding: 20px;
+    {% if section.settings.overlap_over_image %}
+      z-index: 1;
+      position: absolute;
+      width: calc(100% - var(--gutter));
+      margin-bottom: var(--gutter);
+      background: rgba(0, 0, 0, 0.30);
+    {% endif %}
   }
 </style>
 <script>
@@ -111,7 +127,7 @@
         },
       },
       scrollbar: {
-        el: ".swiper-scrollbar",
+        el: '.swiper-scrollbar',
         hide: true,
       },
     });
@@ -137,9 +153,21 @@
       "default": 10
     },
     {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
       "type": "textarea",
       "id": "content",
       "label": "Content"
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "Content Color",
+      "default": "#000000"
     },
     {
       "type": "range",
@@ -192,6 +220,12 @@
       "type": "checkbox",
       "id": "show_border",
       "label": "Show Border",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "overlap_over_image",
+      "label": "Overlap over image",
       "default": true
     },
     {
