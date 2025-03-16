@@ -233,6 +233,7 @@
         "logo_image_dDCAph",
         "logo_image_xHWzH8"
       ],
+      "disabled": true,
       "custom_css": [
         ".wrapper--none {border-bottom: 1px solid #e6dbc4; border-top: 1px solid #e6dbc4;}"
       ],
