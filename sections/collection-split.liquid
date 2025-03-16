@@ -10,7 +10,7 @@
   }
   .box {
     padding: 16px;
-    border: 6px solid #e6dbc4;
+    border: 2px solid #ffffff;
     width: 100%;
   }
 
@@ -103,7 +103,7 @@
   %}
 {%- endcapture -%}
 {%- assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-' -%}
-{%- assign content_font_size_class = section.settings.content_text_size | prepend: 'body-size-' -%}
+{%- assign sub_text_size = section.settings.sub_text_size | prepend: 'body-size-' -%}
 {% assign btn_size = 'button_size' %}
 {% assign btn_size = section.settings[btn_size] %}
 
@@ -127,7 +127,7 @@
         {{ section.settings.header_text }}
       </h1>
       <p
-        class="subheading{{ content_font_size_class }}"
+        class="subheading {{ sub_text_size }}"
         style="color: {{ section.settings.sub_text_color }};"
       >
         {{ section.settings.header_h3text }}
@@ -162,7 +162,7 @@
                       <div class="box">
                         {%- if block.settings.kicker != blank -%}
                           <p
-                            class="hero__kicker"
+                            class="mb-r6 hero__kicker"
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
                             data-aos-order="1"
@@ -173,7 +173,7 @@
 
                         {%- if block.settings.heading != blank -%}
                           <h2
-                            class="hero__title heading-base font-body"
+                            class="font-heading mb-r2"
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
                             data-aos-order="2"
@@ -185,14 +185,14 @@
                           <p
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
-                            class="sub_text text-base font-base"
+                            class="mb-r6"
                           >
                             {{ block.settings.sub_text }}
                           </p>
                         {% endif %}
                         {%- if block.settings.link_text != blank and block.settings.link != blank -%}
                           <a
-                            class="hero__btn {{ block.settings.button_style }} {{ block.settings.button_color }}"
+                            class="hero__btn btn--block {{ block.settings.button_style }} {{ block.settings.button_color }}"
                             href="{{ block.settings.link }}"
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
@@ -227,22 +227,16 @@
         </div>
         <div class="arrows">
           <div class="prev-slide">
-            <img
-              class="prev"
-              onClick="prevSlide"
-              src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9.png?v=1736800174"
-              width="100"
-              height="100"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="56" viewBox="0 0 106 56" fill="none">
+              <path d="M105.438 27.9209L5.43848 27.9209" stroke="{{ section.settings.arrow_color }}" stroke-width="3"/>
+              <path d="M30.3594 2.28076L4.99976 27.6404L30.3594 53" stroke="{{ section.settings.arrow_color }}" stroke-width="3"/>
+            </svg>
           </div>
           <div class="next-slide">
-            <img
-              class="next"
-              onClick="nextSlide"
-              src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_8.png?v=1736800174"
-              width="100"
-              height="100"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="56" viewBox="0 0 106 56" fill="none">
+              <path d="M0.561523 27.9209L100.562 27.9209" stroke="{{ section.settings.arrow_color }}" stroke-width="3"/>
+              <path d="M75.6406 2.28076L101 27.6404L75.6406 53" stroke="{{ section.settings.arrow_color }}" stroke-width="3"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -513,6 +507,16 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Arrows"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "#ffffff"
     }
   ],
   "blocks": [
