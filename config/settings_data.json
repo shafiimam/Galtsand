@@ -62,7 +62,7 @@
     "show_cutline": false,
     "badge_sale_discount": true,
     "badge_custom": true,
-    "color_badge": "#e6dbc4",
+    "color_badge": "#ffffff",
     "color_badge_text": "#102345",
     "product_grid_show_rating": false,
     "product_grid_show_rating_count": false,

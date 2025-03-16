@@ -455,3 +455,7 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   z-index: 5 !important;
   border:1px solid #e5e5e5;
 }
+
+.swiper-wrapper {
+  gap: var(--gutter);
+}

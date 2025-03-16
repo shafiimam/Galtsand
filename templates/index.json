@@ -294,7 +294,7 @@
             "text_color": "#ffffff",
             "link_text": "see what's next",
             "link": "shopify://collections/ss25-collection",
-            "button_color": "btn--primary",
+            "button_color": "btn--white",
             "button_style": "btn"
           }
         },
@@ -308,7 +308,7 @@
             "text_color": "#ffffff",
             "link_text": "EXPLORE MORE",
             "link": "shopify://collections/bottoms",
-            "button_color": "btn--primary",
+            "button_color": "btn--white",
             "button_style": "btn"
           }
         }
@@ -330,7 +330,7 @@
         "button_style": "btn",
         "button_color": "btn--black",
         "text_allignment": "text-center",
-        "collection": "outdoor-collection",
+        "collection": "all-men",
         "product_list": [],
         "sticky_image_enable": false,
         "swap": false,
