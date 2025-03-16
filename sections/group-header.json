@@ -75,7 +75,7 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1.2,
-            "image": "shopify://shop_images/Frame_242_afc8fac8-cac0-48d5-ac75-2c79ec6a6310.png",
+            "image": "shopify://shop_images/untitled_50c73c7c-732e-4c6d-b534-5ca5ec85237b.png",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -93,14 +93,14 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1.2,
-            "image": "shopify://shop_images/Frame_242_afc8fac8-cac0-48d5-ac75-2c79ec6a6310.png",
+            "image": "shopify://shop_images/2025_2_26_Spring-Spring_Edit-02.png",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "title_color": "text--white",
             "button_style": "is-below-image",
-            "link_text": "Shop All",
+            "link_text": "Shop Spring Styles",
             "link": "shopify://collections/all",
             "button_color": "btn--neutral",
             "display": "all"
