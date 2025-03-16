@@ -339,8 +339,8 @@
           "type": "collection",
           "settings": {
             "collection": "best-sellers",
-            "title": "Best Sellers",
-            "link_text": "Tried, tested, and loved. Shop the pieces everyone is wearing on repeat.",
+            "title": "Men",
+            "link_text": "Cutting edge sportswear for day to night.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -353,8 +353,8 @@
           "type": "collection",
           "settings": {
             "collection": "heritage-sweaters",
-            "title": "Sweaters",
-            "link_text": "Since 1986, our sweaters have been crafted for comfort, durability, and effortless style.",
+            "title": "Women",
+            "link_text": "For comfort, durability, and effortless style.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -367,7 +367,7 @@
           "type": "collection",
           "settings": {
             "collection": "bags",
-            "title": "Bags",
+            "title": "Universal",
             "link_text": "Thoughtfully constructed with premium materials.",
             "enable_item": true,
             "text": "",
@@ -383,7 +383,6 @@
         "collection_GaPRP3",
         "collection_xgYtnf"
       ],
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "Trending now.",
