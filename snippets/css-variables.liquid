@@ -464,16 +464,16 @@
   --FONT-NAV-LETTER-SPACING: normal;
 {% endif %}
 
---TYPE-STACK-BUTTON: {{ button_font_drop.family }}, {{ button_font_drop.fallback_families }};
+--TYPE-STACK-BUTTON: 'EngraversGothicBT-Heavy', {{ button_font_drop.fallback_families }};
 --TYPE-STYLE-BUTTON: {{ button_font_drop.style }};
 --TYPE-ADJUST-BUTTON: {{ type_button_size | divided_by: 100.0 }};
 --TYPE-WEIGHT-BUTTON: {{ button_font_drop.weight | default: 400 }};
 {% if settings.type_button_uppercase %}
   --FONT-BUTTON-TRANSFORM: uppercase;
-  --FONT-BUTTON-LETTER-SPACING: {{ settings.font_uppercase_spacing | divided_by: 1000.0 | append: 'em' }};
+  --FONT-BUTTON-LETTER-SPACING: 0.15em;
 {%- else %}
   --FONT-BUTTON-TRANSFORM: none;
-  --FONT-BUTTON-LETTER-SPACING: normal;
+  --FONT-BUTTON-LETTER-SPACING: 0.15em;
 {% endif %}
 
 --TYPE-STACK-KICKER: {{ kicker_font_drop.family }}, {{ kicker_font_drop.fallback_families }};

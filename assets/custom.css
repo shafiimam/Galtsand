@@ -1,7 +1,7 @@
 :root {
   --font-family-heading: "Gambarino";
   --font-family-cursive: "Gambarino";
-  --font-family-body: "EngraversGothicBT-Heavy";
+  --font-family-accent: "EngraversGothicBT-Heavy";
   --font-family-secondary: "Inter Tight";
   --font-family-exmouth: "exmouth";
   --heading-size-xl: clamp(40px, 4vw, 120px);

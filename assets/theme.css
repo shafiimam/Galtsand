@@ -17336,6 +17336,7 @@ Collection grid item
 .collection-grid-item__title {
   margin-bottom: 0;
   margin-top: 0;
+  font-family: var(--font-family-accent);
 }
 /* ============================================================================
  Icon-columns
