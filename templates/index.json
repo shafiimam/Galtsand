@@ -352,7 +352,7 @@
         "collection_GaPRP3": {
           "type": "collection",
           "settings": {
-            "collection": "heritage-sweaters",
+            "collection": "all-women",
             "title": "Women",
             "link_text": "For comfort, durability, and effortless style.",
             "enable_item": true,
