@@ -101,7 +101,7 @@
             "title_color": "text--white",
             "button_style": "is-below-image",
             "link_text": "Shop Spring Styles",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/all-women",
             "button_color": "btn--neutral",
             "display": "all"
           }
