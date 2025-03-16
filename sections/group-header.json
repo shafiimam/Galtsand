@@ -83,7 +83,7 @@
             "title_color": "text--white",
             "button_style": "is-below-image",
             "link_text": "Shop Outdoor Gear",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/all-men",
             "button_color": "btn--neutral",
             "display": "all"
           }
