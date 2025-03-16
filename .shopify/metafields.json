@@ -259,6 +259,36 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "best-uses",
+      "namespace": "shopify",
+      "name": "Best uses",
+      "description": "Highlights optimal activities for product use, like traveling, hiking, or diving",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skirt-dress-length-type",
+      "namespace": "shopify",
+      "name": "Skirt/Dress length type",
+      "description": "Defines the length of skirts or dresses, such as mini or maxi",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fit",
+      "namespace": "shopify",
+      "name": "Fit",
+      "description": "Describes the fit of a garment, typically pant shape; e.g. skinny leg, wide",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [

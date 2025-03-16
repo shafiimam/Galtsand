@@ -45,8 +45,8 @@
             "link_text_2": "SHOP SS25",
             "link_2": "shopify://collections/ss25-collection",
             "button_size_2": "btn--long",
-            "button_style_2": "btn",
-            "button_color_2": "btn--primary",
+            "button_style_2": "btn--outline",
+            "button_color_2": "btn--white",
             "link_text_3": "",
             "link_3": "",
             "button_size_3": "btn--long",
@@ -61,10 +61,7 @@
         "text_EXaa7j",
         "button_kqzzcW"
       ],
-      "custom_css": [
-        ".hero__kicker p {font-family: EngraversGothicBT-Heavy !important; font-size: 50px !important; text-transform: uppercase;}",
-        "@media screen and (max-width: 767px) {.hero__kicker p {font-size: 20px !important; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "height": "use_screen_full",
         "color_bg": "palette--light bg--neutral",
@@ -253,9 +250,10 @@
         "collection": "mens-best-sellers",
         "product_limit": 12,
         "title": "JUST DROPPED",
+        "title_text_size": 8,
         "content": "Spring Summer 2025.",
-        "align_text": "title-center",
-        "sub_align_text": "title-center",
+        "content_text_size": 5,
+        "text_align": "align--middle-center",
         "progress_bar": "mobile",
         "grid_large": 4,
         "grid_medium": 3,
@@ -270,11 +268,16 @@
       "type": "video-with-modal",
       "settings": {
         "title": "From 9-to-5 to Off the Grid.",
+        "title_text_size": 10,
+        "title_text_color": "#ffffff",
         "button_label": "Watch Video",
-        "button_url": "",
+        "button_url": "shopify://collections",
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white",
         "video": "shopify://files/videos/for-TV-Long-format.MP4",
         "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
-        "image_background_color": "#102345",
+        "image_background_color": "#ffffff",
         "width": "wrapper--none"
       }
     },
@@ -288,7 +291,7 @@
             "kicker": "SS25",
             "heading": "Get Ready for New Heights",
             "sub_text": "Climb higher in style – The second series of our Spring Summer 2025 collection is dropping on April 1st.",
-            "text_color": "text--invert--primary",
+            "text_color": "#ffffff",
             "link_text": "see what's next",
             "link": "shopify://collections/ss25-collection",
             "button_color": "btn--primary",
@@ -302,7 +305,7 @@
             "kicker": "",
             "heading": "CORE COLLECTION",
             "sub_text": "Discover signature pieces crafted for movement, purpose, and lasting style.",
-            "text_color": "text--invert--primary",
+            "text_color": "#ffffff",
             "link_text": "EXPLORE MORE",
             "link": "shopify://collections/bottoms",
             "button_color": "btn--primary",
@@ -316,7 +319,17 @@
       ],
       "settings": {
         "header_text": "For the road ahead.",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
         "header_h3text": "YOUR NEXT ADVENTURE AWAITS.",
+        "sub_text_size": 10,
+        "sub_text_color": "#000000",
+        "button_label": "Explore",
+        "button_url": "",
+        "button_size": "btn--medium",
+        "button_style": "btn",
+        "button_color": "btn--black",
+        "text_allignment": "text-center",
         "collection": "outdoor-collection",
         "product_list": [],
         "sticky_image_enable": false,
@@ -327,8 +340,7 @@
         "grid_small": 1.2,
         "limit": 4,
         "bg": "palette--bright bg--bright",
-        "object_position": "center-center",
-        "width": "wrapper--none",
+        "width": "wrapper--full",
         "padding_top": 50,
         "padding_bottom": 36
       }
@@ -378,8 +390,6 @@
       "settings": {
         "title": "Trending Now",
         "content": "Based on what you are shopping.",
-        "background_color": "#006a50",
-        "text_color": "#e6dbc4",
         "text_alignment": "text-left",
         "width": "wrapper--full"
       }
@@ -648,10 +658,7 @@
       "block_order": [
         "text_RmEaLn"
       ],
-      "custom_css": [
-        "p {font-family: \"EngraversGothicBT-Heavy\"; text-transform: uppercase;}",
-        "@media screen and (max-width: 768px) {p {font-size: 12px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "align_text": "text-center",
         "text_color": "text--invert--primary",

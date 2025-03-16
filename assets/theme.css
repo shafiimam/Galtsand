@@ -19056,23 +19056,24 @@ body.focus-enabled .product-grid-item:focus-within {
 }
 /* ================ Collection ================ */
 .product__grid__title {
-  color: #102345;
-  font-family: var(--font-family-body);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-  } /* 32px */
+  font-family: var(--FONT-STACK-BODY);
+  font-style: var(--FONT-STYLE-BODY);
+  font-weight: var(--FONT-WEIGHT-BODY);
+  font-weight: var(--FONT-WEIGHT-BODY-BOLD);
+  letter-spacing: var(--FONT-BODY-LETTER-SPACING);
+  text-transform: var(--FONT-BODY-TRANSFORM);
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
+  line-height: var(--leading-normal);
+  margin: 8px 0 2px 0;
+  word-break: break-word;
+  text-transform: none;
+  letter-spacing: 0;
 }
 .product__grid__price {
   overflow: hidden;
   margin: 3px 0;
-  font-size: 14px;
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
-  font-family: "EngraversGothicBT-Heavy";
-  color: #44505f;
 }
 .text-left .product__grid__price {
   justify-content: flex-start;
@@ -20209,7 +20210,6 @@ input[type="number"].filter__price__input {
   .collection-split__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: var(--gutter);
-    padding-left: var(--gutter);
   }
 }
 @media only screen and (max-width: 767px) {
@@ -20237,7 +20237,7 @@ input[type="number"].filter__price__input {
 }
 .collection-split__block {
   position: relative;
-  color: var(--text);
+  color: var(--block-text-color);
   height: 100%;
 }
 @media only screen and (min-width: 768px) {

@@ -1,16 +1,43 @@
 <script src="{{ 'fslightbox.js' | asset_url }}" defer></script>
+{%- assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-' -%}
+{% assign btn_size = 'button_size' %}
+{% assign btn_size = section.settings[btn_size] %}
+
+{% assign btn_style = 'button_style' %}
+{% assign btn_style = section.settings[btn_style] %}
+
+{% assign btn_color = 'button_color' %}
+{% assign btn_color = section.settings[btn_color] %}
+{%- assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" -%}
 <section class="video-with-modal {{ section.settings.width }}">
   <div class="video-modal-inner">
     <div class="video-modal-overlay">
       <div class="video-modal-content">
-        <h1 class="video-modal-title font-heading">{{ section.settings.title }}</h1>
-        <a
-          href="{{ section.settings.video.sources[1].url }}"
-          class="standard__cta herp__btn btn btn--white btn--long aos-init aos-animate video-modal-btn"
-          data-fslightbox="gallery"
+        <h1
+          class=" font-heading {{ title_font_size_class }}"
+          style="color: {{ section.settings.title_text_color }};"
         >
-          {{- section.settings.button_label -}}
-        </a>
+          {{ section.settings.title }}
+        </h1>
+        {% if section.settings.button_url != blank %}
+          <a
+            class="standard__cta hero__btn {{ btn_style }} {{ btn_color }} {{ btn_size }}"
+            href="{{ section.settings.button_url }}"
+            data-aos="hero"
+            data-aos-anchor="{{ animation_anchor }}"
+            data-aos-order="1"
+          >
+            {{ section.settings.button_label | escape }}
+          </a>
+        {% else %}
+          <a
+            class="standard__cta hero__btn {{ btn_style }} {{ btn_color }} {{ btn_size }}"
+            href="{{ section.settings.video.sources[1].url }}"
+            data-fslightbox="gallery"
+          >
+            {{ section.settings.button_label | escape }}
+          </a>
+        {% endif %}
       </div>
     </div>
     <div class="video-modal-grid">
@@ -44,73 +71,57 @@
   </div>
 </section>
 <style>
-    .video-modal-inner {
-      position: relative;
-      height: 100%;
+  .video-modal-inner {
+    position: relative;
+    height: 100%;
+  }
+  .video-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 10;
+  }
+  .video-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .video-modal-btn {
+    border: 2px solid #e6dbc4;
+    color: #eadbc4;
+  }
+  .video-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
     }
-    .video-modal-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-      z-index: 10;
+  }
+  .video-modal-section-image {
+    display: none;
+    background-color: {{ section.settings.image_background_color }};
+    @media (min-width: 768px) {
+       display: flex !important;
+       justify-content: center;
+       align-items: center;
     }
-    .video-modal-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    h1.video-modal-title {
-      color: #e6dbc4;
-      text-align: center;
-      font-size: 76px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 100%; /* 76px */
-      letter-spacing: normal;
-      max-width: 660px;
-      margin: 0 auto;
-      margin-bottom: 32px;
-      text-transform: capitalize;
-      @media screen and (max-width: 768px) {
-        font-size: 40px;
-      }
-    }
-    .video-modal-btn {
-      border: 2px solid #e6dbc4;
-      color: #eadbc4;
-    }
-    .video-modal-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-      }
-    }
-    .video-modal-section-image {
-      display: none;
-      background-color: {{ section.settings.image_background_color }};
-      @media (min-width: 768px) {
-         display: flex !important;
-         justify-content: center;
-         align-items: center;
-      }
-    }
-    .video-modal-section-image-img{
-     max-width: 40%;
-    }
-    .video-modal-video {
-      width: 100%;
-      object-fit: cover;
-    }
-    .video-modal-btn:hover {
-      background: #e6dbc4;
-      color: #000;
-    }
+  }
+  .video-modal-section-image-img{
+   max-width: 40%;
+  }
+  .video-modal-video {
+    width: 100%;
+    object-fit: cover;
+  }
+  .video-modal-btn:hover {
+    background: #e6dbc4;
+    color: #000;
+  }
 </style>
 {% schema %}
 {
@@ -127,6 +138,21 @@
       "default": "Where Heritage Meets Innovation in Athleisure."
     },
     {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#e6dbc4"
+    },
+    {
       "type": "text",
       "id": "button_label",
       "label": "Button Label",
@@ -135,7 +161,45 @@
     {
       "type": "url",
       "id": "button_url",
-      "label": "Button URL"
+      "label": "Button URL",
+      "info": "setting this will override the video button"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
     },
     {
       "type": "header",
