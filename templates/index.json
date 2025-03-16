@@ -385,8 +385,8 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Trending now.",
-        "subttitle": "BASED ON WHAT YOU ARE SHOPPING.",
+        "title": "",
+        "subttitle": "",
         "bg": "palette--light bg--neutral",
         "content_color": "#e6dbc4",
         "grid": 3,
