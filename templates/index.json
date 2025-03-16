@@ -366,7 +366,7 @@
         "collection_xgYtnf": {
           "type": "collection",
           "settings": {
-            "collection": "bags",
+            "collection": "universal",
             "title": "Universal",
             "link_text": "Thoughtfully constructed with premium materials.",
             "enable_item": true,
