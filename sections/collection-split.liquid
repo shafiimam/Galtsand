@@ -1,17 +1,7 @@
 <!-- /sections/collection-split.liquid -->
 <style>
-  h1 {
-    font-family: 'Gambarino-Regular' !important;
-    color: #8b1a3a;
-  }
-
-  h2 {
-    font-family: 'EngraversGothicBT-Heavy' !important;
-    font-size: 3.4rem;
-  }
-
   .box a {
-    font-family: 'EngraversGothicBT-Heavy' !important;
+    font-family: 'EngraversGothic' !important;
     font-size: 1rem;
   }
 
@@ -27,7 +17,7 @@
   }
 
   .collection-split .hero__kicker {
-    font-family: 'Gambarino-Regular';
+    font-family: 'Gambarino';
     font-weight: 100;
     font-size: 28px;
     letter-spacing: 0px;
@@ -36,10 +26,9 @@
     }
   }
 
-  span,
   .grid__swatch__container,
   .product__grid__title {
-    font-family: 'EngraversGothicBT-Heavy' !important;
+    font-family: 'EngraversGothic' !important;
   }
   {% comment %} padding: calc(var(--outer) * 2); {% endcomment %}
   .text-orgp {
@@ -54,19 +43,12 @@
     justify-content: center;
     align-items: flex-end;
     padding: calc(var(--outer) * 2);
-    
+
   }
   .box {
     padding: 16px;
     border: 6px solid #E6DBC4;
     width: 100%;
-  }
-  .box > p, h2 {
-    color: #E6DBC4;
-  }
-
-  .align--bottom-center {
-    text-align: left;
   }
 
   .collection-split__grid .hero__content__wrapper {
@@ -125,12 +107,6 @@
     .swiper {
       margin-right: var(--gutter);
       margin-left: var(--gutter);
-    }
-    .hero__title {
-      color: #e6dbc4;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 100%; /* 22.4px */
     }
     .collection-split .hero__content__wrapper {
       padding-inline: 12px;
@@ -247,33 +223,12 @@
                     class="image-overlay image-overlay--slider"
                     style="--bg: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | times: 0.01 }};"
                   ></div>
-
-                  {%- if section.settings.video_bg != null -%}
-                    <div class="video-autoplay-wrapper">
-                      {%- assign video_styles = section.settings.object_position
-                        | replace: '-', ' '
-                        | prepend: 'object-position: '
-                      -%}
-                      {{
-                        section.settings.video_bg
-                        | video_tag:
-                          autoplay: true,
-                          loop: true,
-                          muted: true,
-                          controls: false,
-                          playsinline: true,
-                          style: video_styles,
-                          data-video-autoplay: ''
-                      }}
-                    </div>
-                  {%- else -%}
-                    {% assign alt = block.settings.image.alt | default: 'Collection Image' %}
-                    {% render 'image-parallax',
-                      img_object: block.settings.image,
-                      img_object_mobile: block.settings.mobile_image,
-                      frame_height_class: 'none'
-                    %}
-                  {% endif %}
+                  {% assign alt = block.settings.image.alt | default: 'Collection Image' %}
+                  {% render 'image-parallax',
+                    img_object: block.settings.image,
+                    img_object_mobile: block.settings.mobile_image,
+                    frame_height_class: 'none'
+                  %}
                 </div>
               </div>
             {% endif %}
@@ -446,28 +401,6 @@
         { "value": "palette--dark bg--invert--accent", "label": "Dark accent" },
         { "value": "palette--bright bg--bright", "label": "Bright" },
         { "value": "palette--bright bg--bright--accent", "label": "Bright accent" }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Background video (optional)"
-    },
-    {
-      "type": "video",
-      "id": "video_bg",
-      "label": "Video background"
-    },
-    {
-      "type": "select",
-      "id": "object_position",
-      "label": "Background video position",
-      "default": "center-center",
-      "options": [
-        { "label": "Top", "value": "center-top" },
-        { "label": "Right", "value": "right-center" },
-        { "label": "Center", "value": "center-center" },
-        { "label": "Left", "value": "left-center" },
-        { "label": "Bottom", "value": "center-bottom" }
       ]
     },
     {
