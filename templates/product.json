@@ -307,8 +307,8 @@
       "settings": {
         "heading": "Designed with Purpose",
         "paragraph": "We made this to inspire bold movement and adventure. Inspired by heritage craftsmanship and reimagined with technical innovation, this piece blends refinement with comfort, elegance with performance. Step outside, explore new landscapes, and embrace the freedom of nature.",
-        "image_1": "shopify://shop_images/12.4_0051.jpg",
-        "image_2": "shopify://shop_images/galtsand-model.png"
+        "image_1": "shopify://shop_images/untitled3_e37da0bb-4261-4ab6-ad10-234e1cab8e33.png",
+        "image_2": "shopify://shop_images/untitled7_26c8c5da-5489-4ff0-9631-6ec0433f62b1.png"
       }
     },
     "outfit_inspiration_4KLhhU": {
@@ -373,6 +373,7 @@
         "product_KFb9Pj",
         "product_9pqEgi"
       ],
+      "disabled": true,
       "settings": {
         "title": "Outfit Inspiration",
         "subtitle": "Effortless looks for every adventure."
