@@ -456,7 +456,7 @@
         "title_size": 6,
         "accent_size": 3,
         "width": "wrapper--full",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 34
       }
     },
