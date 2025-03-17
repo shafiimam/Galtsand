@@ -57,9 +57,9 @@
             "kicker": "",
             "heading": "BE THE FIRST TO KNOW",
             "richtext": "<p>BE THE FIRST TO KNOW ABOUT OUR BIGGEST AND BEST SALES</p>",
-            "text_size": 5,
+            "text_size": 4,
             "background_color": "#4f4f4f",
-            "text_color_value": "#e6dbc4"
+            "text_color_value": "#000000"
           }
         }
       },
@@ -70,13 +70,11 @@
         "social",
         "newsletter"
       ],
-      "custom_css": [
-        "@media (min-width: 1024px) {.rte p:last-child {padding-right: 30%; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "menu_position": "left",
-        "footer_image": "shopify://shop_images/logo-yellow.png",
-        "logo_max_limit": 250,
+        "footer_image": "shopify://shop_images/New_logo_3_afcc69a1-3952-461e-a6dd-5791e8b2e3f3.jpg",
+        "logo_max_limit": 140,
         "width": "wrapper--full",
         "padding_top": 40,
         "padding_bottom": 36

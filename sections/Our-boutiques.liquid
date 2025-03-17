@@ -1,16 +1,19 @@
-<div class="boutique-section">
-  <div class="boutique-container">
+{%- assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-' -%}
+<div class="{{ section.settings.width }}">
+  <div class="boutique-container {{ section.settings.height }}">
     <div class="boutique-image">
       <img src="{{ section.settings.image | img_url: 'master' }}" alt="Boutique Image">
     </div>
     <div class="boutique-info">
-      <h2 class="boutique-title heading-lg">{{ section.settings.main_title }}</h2>
+      <h2 class="heading mb-r6 {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">
+        {{ section.settings.title }}
+      </h2>
       <div class="boutique-list">
         {% for block in section.blocks %}
           <div class="boutique-item">
-            <h3 class="boutique-address-name">{{ block.settings.address_name }}</h3>
-            <p class="boutique-address">{{ block.settings.address }}</p>
-            <p class="boutique-phone">{{ block.settings.phone }}</p>
+            <h3 class="font-accent heading-size-5 mb-r2">{{ block.settings.title }}</h3>
+            <p class="body-size-4">{{ block.settings.content }}</p>
+            <p class="body-size-4">{{ block.settings.phone }}</p>
           </div>
         {% endfor %}
       </div>
@@ -19,18 +22,14 @@
 </div>
 
 <style>
-  .boutique-section {
-    background-color: #e6dbc4;
-    padding: 50px;
-  }
-
   .boutique-container {
+    padding-block: var(--outer);
     display: flex;
     /* max-width: 1200px; */
     margin: auto;
     align-items: stretch;
     justify-content: center;
-    gap: 50px;
+    gap: var(--gutter);
   }
 
   .boutique-image {
@@ -46,7 +45,7 @@
 
   .boutique-info {
     flex: 1;
-    border: 4px solid #006a50;
+    border: 2px solid #000000;
     padding: 30px;
     text-align: center;
     display: flex;
@@ -70,29 +69,6 @@
   .boutique-item {
     font-family: 'Inter Tight';
   }
-
-  .boutique-address-name {
-    font-family: 'Gambarino';
-    font-size: 40px;
-    font-weight: bold;
-    color: #102345;
-    text-transform: none;
-    letter-spacing: 1px;
-    margin: 0px;
-    @media (max-width: 768px) {
-      font-size: 24px;
-    }
-    /* text-transform: uppercase; */
-  }
-
-  .boutique-address,
-  .boutique-phone {
-    font-family: 'EngraversGothic' !important;
-    font-size: 16px;
-    color: #44505f;
-    text-transform: uppercase;
-  }
-
   @media (max-width: 768px) {
     .boutique-container {
       flex-direction: column;
@@ -123,14 +99,60 @@
   "settings": [
     {
       "type": "text",
-      "id": "main_title",
-      "label": "Main Title",
+      "id": "title",
+      "label": "Title",
       "default": "Our Boutiques"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
     },
     {
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Section height",
+      "default": "use_screen_two_thirds",
+      "options": [
+        { "value": "use_screen_full", "label": "Full screen height" },
+        { "value": "use_screen_three_quarters", "label": "Three quarters of screen height" },
+        { "value": "use_screen_two_thirds", "label": "Two thirds of screen height" },
+        { "value": "use_screen_one_half", "label": "One half of screen height" },
+        { "value": "use_screen_one_third", "label": "One third of screen height" },
+        { "value": "use_screen_one_fifth", "label": "One fifth of screen height" },
+        { "value": "use_pixels_800", "label": "800px" },
+        { "value": "use_pixels_650", "label": "650px" },
+        { "value": "use_pixels_500", "label": "500px" },
+        { "value": "use_image", "label": "Image height" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
     }
   ],
   "blocks": [
@@ -140,15 +162,15 @@
       "settings": [
         {
           "type": "text",
-          "id": "address_name",
-          "label": "Address Name",
-          "default": "Address Name"
+          "id": "title",
+          "label": "Title",
+          "default": "The Mall At Wellington Green"
         },
         {
           "type": "text",
-          "id": "address",
-          "label": "Address",
-          "default": "6391 Elgin St. Celina, Delaware 10299"
+          "id": "content",
+          "label": "Content",
+          "default": "10300 Forest Hill Blvd, Wellington, FL 33414"
         },
         {
           "type": "text",
@@ -163,7 +185,7 @@
     {
       "name": "Our Boutiques",
       "category": "Custom",
-      "blocks": [{ "type": "boutique" }, { "type": "boutique" }, { "type": "boutique" }, { "type": "boutique" }]
+      "blocks": [{ "type": "boutique" }]
     }
   ]
 }
