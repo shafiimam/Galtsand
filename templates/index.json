@@ -249,11 +249,11 @@
       "settings": {
         "collection": "mens-best-sellers",
         "product_limit": 12,
-        "title": "JUST DROPPED",
+        "title": "Spring Summer 2025",
         "title_text_size": 8,
-        "content": "Spring Summer 2025.",
+        "content": "Our SS25 collection blends smart casual style with outdoor versatility, built for life on the move. Gear up for the city, the trails, and everything in between.",
         "content_text_size": 5,
-        "text_align": "align--middle-center",
+        "text_align": "align--middle-left",
         "progress_bar": "mobile",
         "grid_large": 4,
         "grid_medium": 3,
@@ -504,9 +504,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_GaPRP3": {
@@ -521,9 +521,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "last",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_xgYtnf": {
@@ -538,9 +538,9 @@
             "text_color": "text--white",
             "link_size": 5,
             "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         }
       },
@@ -642,9 +642,9 @@
         "title_text_size": 10,
         "title_color": "#000000",
         "subtitle": "Reviews from galtsand ambassadors",
-        "subtitle_text_size": 5,
+        "subtitle_text_size": 10,
         "text_alignment": "text-left",
-        "width": "wrapper--full"
+        "width": "wrapper"
       }
     },
     "section_richtext_LKLc9B": {
@@ -744,11 +744,11 @@
       ],
       "settings": {
         "title": "Our Boutiques",
-        "title_text_size": 8,
+        "title_text_size": 10,
         "title_color": "#000000",
         "image": "shopify://shop_images/Galtsand_Event-125.jpg",
-        "height": "use_screen_three_quarters",
-        "width": "wrapper--full"
+        "height": "use_screen_two_thirds",
+        "width": "wrapper"
       }
     }
   },
