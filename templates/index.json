@@ -634,6 +634,7 @@
         "review_XKAr9a",
         "review_Ka8GMA"
       ],
+      "disabled": true,
       "custom_css": [
         ".font-subheading {text-transform: uppercase;}"
       ],
@@ -642,7 +643,7 @@
         "title_text_size": 10,
         "title_color": "#000000",
         "subtitle": "Hear more from our Brand Ambassadors",
-        "subtitle_text_size": 10,
+        "subtitle_text_size": 6,
         "text_alignment": "text-left",
         "width": "wrapper"
       }
