@@ -318,7 +318,7 @@
         "slide_EzRiEK"
       ],
       "settings": {
-        "header_text": "For the road ahead.",
+        "header_text": "For The Road Ahead",
         "title_text_size": 10,
         "title_text_color": "#000000",
         "header_h3text": "Your next adventure awaits.",
@@ -329,7 +329,7 @@
         "button_size": "btn--medium",
         "button_style": "btn",
         "button_color": "btn--black",
-        "text_allignment": "text-left",
+        "text_allignment": "text-center",
         "collection": "all-men",
         "product_list": [],
         "sticky_image_enable": false,
