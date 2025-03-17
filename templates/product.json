@@ -15,7 +15,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "text_size": 11,
+            "text_size": 7,
             "product_show_cutline": true,
             "show_rating": true,
             "show_rating_count": false,
@@ -25,7 +25,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "price_size": 7,
+            "price_size": 5,
             "padding_bottom": 10
           }
         },
@@ -34,7 +34,7 @@
           "settings": {
             "option_size_swatch": 30,
             "option_size_radio": 30,
-            "option_space": 10,
+            "option_space": 14,
             "padding_bottom": 20
           }
         },
@@ -68,15 +68,15 @@
             "swym_button_position": "default",
             "swym_atw_button_vertical_offset": 0,
             "swym_atw_full_width": false,
-            "swym_atw_button_alignment": "center",
-            "swym_add_to_wishlist_color": "rgba(0,0,0,0)",
-            "swym_added_to_wishlist_color": "rgba(0,0,0,0)",
-            "swym_button_text_color": "#000000",
+            "swym_atw_button_alignment": "left",
+            "swym_add_to_wishlist_color": "#ffffff",
+            "swym_added_to_wishlist_color": "#ffffff",
+            "swym_button_text_color": "#4f4f4f",
             "swym_atw_border_color": "#000000",
             "swym_atw_border_thickness": 0,
             "swym_atw_button_border_radius": 0,
             "swym_enable_hover_customization": false,
-            "swym_hover_add_to_wishlist_color": "rgba(0,0,0,0)",
+            "swym_hover_add_to_wishlist_color": "#000000",
             "swym_hover_added_to_wishlist_color": "rgba(0,0,0,0)",
             "swym_hover_button_text_color": "#000000",
             "swym_hover_atw_border_color": "#000000",
@@ -131,7 +131,7 @@
         "image_spacing": 4,
         "align": "left",
         "bg": "palette--light bg--neutral",
-        "mobile_layout": "slideshow",
+        "mobile_layout": "carousel",
         "enable_video_looping": true,
         "zoom_enable": true,
         "alt_text_enable": true,
@@ -145,81 +145,56 @@
         "padding_bottom": 36
       }
     },
-    "image-with-text": {
-      "type": "section-double",
+    "icons_rRVyrm": {
+      "type": "icons",
       "blocks": {
-        "image": {
-          "type": "image",
+        "feature_Pjifny": {
+          "type": "feature",
           "settings": {
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-center",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "",
-            "button_color": "btn--white",
-            "button_style": "btn"
+            "icon": "shopify://shop_images/mdi_recycle_c0cc2f38-9c1b-412a-b953-f19eb75ef553.png",
+            "title": "Recycled Materials",
+            "description": "Recycled materials drive our sustainability commitment by reducing carbon emissions, diverting waste from landfills and oceans, and advancing a circular economy while supporting innovation in eco-friendly materials.",
+            "link": ""
           }
         },
-        "text": {
-          "type": "text",
+        "feature_pXiaxn": {
+          "type": "feature",
           "settings": {
-            "kicker": "Image with text",
-            "title": "",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "font_size": 5,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "text_color": "#006a50",
-            "button_text": "",
-            "button_url": "",
-            "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
-            "bg_color": ""
+            "icon": "shopify://shop_images/mingcute_cube-3d-line_42bc7e1b-3859-432c-8671-e3a57c694552.png",
+            "title": "3D Tailoring",
+            "description": "By employing precise digital measurements and strategic seam placement, 3D tailoring enhances your body’s natural contours, delivering a perfect fit and optimizing performance with every movement.",
+            "link": ""
+          }
+        },
+        "feature_RMXgCX": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/mdi_stretch-to-page_e11dea00-1c7a-4ff1-8dfb-ac8239f9acdc.png",
+            "title": "4-Way Stretch",
+            "description": "Enjoy complete freedom of movement with our 4-way stretch fabric, designed to flex in all directions for seamless comfort and flexibility, enhancing your performance with every move.",
+            "link": ""
+          }
+        },
+        "feature_hET8JT": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/material-symbols_water-drop_a62d64ad-c0f6-43b2-a6ef-d7f59f6c1608.png",
+            "title": "Moisture-Wicking",
+            "description": "Crafted from high-performance materials that efficiently manage sweat and odor, ensuring you stay dry and fresh during even the most intense activities.",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "image",
-        "text"
+        "feature_Pjifny",
+        "feature_pXiaxn",
+        "feature_RMXgCX",
+        "feature_hET8JT"
       ],
-      "disabled": true,
-      "settings": {
-        "height": "use_screen_one_half",
-        "brick_gutter": 0,
-        "borders": false,
-        "bg_color": "",
-        "preload_image": false,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "icons_rRVyrm": {
-      "type": "icons",
       "settings": {
         "heading": "",
         "subheading": "",
-        "icon_1": "shopify://shop_images/mdi_recycle_a4988a3f-6e1a-4e18-b042-1adf7c604290.png",
-        "title_1": "Recycled Materials",
-        "description_1": "Recycled materials drive our sustainability commitment by reducing carbon emissions, diverting waste from landfills and oceans, and advancing a circular economy while supporting innovation in eco-friendly materials.",
-        "link_1": "/",
-        "icon_2": "shopify://shop_images/mingcute_cube-3d-line.png",
-        "title_2": "3D Tailoring",
-        "description_2": "By employing precise digital measurements and strategic seam placement, 3D tailoring enhances your body’s natural contours, delivering a perfect fit and optimizing performance with every movement.",
-        "link_2": "/",
-        "icon_3": "shopify://shop_images/Vector.png",
-        "title_3": "4-Way Stretch",
-        "description_3": "Enjoy complete freedom of movement with our 4-way stretch fabric, designed to flex in all directions for seamless comfort and flexibility, enhancing your performance with every move.",
-        "link_3": "/",
-        "icon_4": "shopify://shop_images/material-symbols_water-drop.png",
-        "title_4": "Moisture-Wicking",
-        "description_4": "Crafted from high-performance materials that efficiently manage sweat and odor, ensuring you stay dry and fresh during even the most intense activities.",
-        "link_4": "/"
+        "width": "wrapper--full"
       }
     },
     "image-with-text-2": {
@@ -279,7 +254,8 @@
     "product_features_NXUAkA": {
       "type": "Product_features",
       "settings": {
-        "bg": "palette--light bg--neutral",
+        "bg": "palette--light bg--accent",
+        "width": "wrapper--full",
         "icon_1": "shopify://shop_images/FlowerLotus.png",
         "title_1": "Made For Adventure",
         "description_11": "Timeless designs reimagined with technical innovation for seamless movement in any environment.",
@@ -300,15 +276,6 @@
         "description_41": "Engineered with cutting-edge materials that enhance breathability, durability, and weather resistance for all-day performance.",
         "description_42": "Made with recycled and eco-conscious textiles, reducing environmental impact without compromising on function or quality.",
         "description_43": "Designed to seamlessly transition from outdoor adventures to everyday wear, offering comfort, mobility, and timeless style."
-      }
-    },
-    "two_images_and_text_YiRxFY": {
-      "type": "two_images_and_text",
-      "settings": {
-        "heading": "Designed with Purpose",
-        "paragraph": "We made this to inspire bold movement and adventure. Inspired by heritage craftsmanship and reimagined with technical innovation, this piece blends refinement with comfort, elegance with performance. Step outside, explore new landscapes, and embrace the freedom of nature.",
-        "image_1": "shopify://shop_images/untitled3_e37da0bb-4261-4ab6-ad10-234e1cab8e33.png",
-        "image_2": "shopify://shop_images/untitled7_26c8c5da-5489-4ff0-9631-6ec0433f62b1.png"
       }
     },
     "outfit_inspiration_4KLhhU": {
@@ -502,17 +469,20 @@
       "disabled": true,
       "settings": {
         "main_title": "Why Our Customers Love Galtsand",
-        "subtitle": "Handcrafted by our expert designers."
+        "title_text_size": 10,
+        "title_color": "#000000",
+        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle_text_size": 10,
+        "text_alignment": "text-left",
+        "width": "wrapper"
       }
     }
   },
   "order": [
     "main",
-    "image-with-text",
     "icons_rRVyrm",
     "image-with-text-2",
     "product_features_NXUAkA",
-    "two_images_and_text_YiRxFY",
     "outfit_inspiration_4KLhhU",
     "related",
     "section_article_column_aUtNVF",
