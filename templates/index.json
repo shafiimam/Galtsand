@@ -318,7 +318,7 @@
         "slide_EzRiEK"
       ],
       "settings": {
-        "header_text": "For The Road Ahead",
+        "header_text": "For the Road Ahead",
         "title_text_size": 10,
         "title_text_color": "#000000",
         "header_h3text": "Your next adventure awaits.",
@@ -438,7 +438,7 @@
           "settings": {
             "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
             "title": "EVERYDAY ELEVATED",
-            "content": "Essential style, taken to the next level.",
+            "content": "Essential styles that keep you comfortable, taken to the next level",
             "button_text": "Explore Collection",
             "button_link": "shopify://collections/heritage",
             "text_alignment": "text-left"
