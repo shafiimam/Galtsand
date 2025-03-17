@@ -439,7 +439,7 @@
             "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
             "title": "EVERYDAY ELEVATED",
             "content": "Essential styles that keep you comfortable, taken to the next level",
-            "button_text": "Explore Collection",
+            "button_text": "EXPLORE MORE",
             "button_link": "shopify://collections/heritage",
             "text_alignment": "text-left"
           }
@@ -450,7 +450,7 @@
             "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
             "title": "PEAK PERFORMANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "PEAK PERFORMANCE",
+            "button_text": "explore more",
             "button_link": "shopify://collections/signature-studio",
             "text_alignment": "text-left"
           }
@@ -461,7 +461,7 @@
             "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
             "title": "ACTIVE ELEGANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Effortlessly chic pieces for the active lifestyle.",
+            "button_text": "Explore more",
             "button_link": "shopify://collections/signature-studio",
             "text_alignment": "text-left"
           }
