@@ -1,13 +1,8 @@
 <style>
   .eco-conscious-section {
-    background-color: #e6dbc4;
-    padding: 93px 18px;
     text-align: center;
     display: flex; /* Ensure section is visible */
     flex-direction: column;
-    @media only screen and (max-width: 767px) {
-      padding-top: 20px;
-    }
   }
 
   .icon {
@@ -15,10 +10,6 @@
     vertical-align: middle;
     width: auto;
     height: 90px;
-  }
-
-  .container {
-    max-width: 2018px !important;
   }
 
   .eco-conscious-section .container {
@@ -43,6 +34,8 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
+    padding-block-end: var(--gutter);
   }
 
   /* Responsive Styling */
@@ -58,27 +51,17 @@
   }
 
   .eco-feature {
-    background: #e6dbc4;
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    border: 3px solid #006a50;
+    border: 2px solid #000000;
   }
 
   .eco-feature img {
     max-width: 69px;
-  }
-
-  .eco-feature h3 {
-    font-family: 'Gambarino';
-    color: #102345;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    text-align: left;
   }
 
   .eco-feature p {
@@ -97,7 +80,7 @@
 </style>
 
 <section class="eco-conscious-section">
-  <div class="container">
+  <div class="{{ section.settings.width }}">
     {% if section.settings.heading != blank %}
       <h2>{{ section.settings.heading }}</h2>
     {% endif %}
@@ -107,162 +90,100 @@
 
     <!-- Desktop View (Grid of Features) -->
     <div class="eco-features">
-      <div class="eco-feature">
-        {% if section.settings.icon_1 != blank %}
-          <div class="icon">
-            <img src="{{ section.settings.icon_1 | img_url: '120x' }}" alt="Icon 1">
-          </div>
-        {% endif %}
-        <h3>{{ section.settings.title_1 }}</h3>
-        <p>{{ section.settings.description_1 }}</p>
-        <!-- <a href="{{ section.settings.link_1 }}" class="learn-more">Learn More</a> -->
-      </div>
-      <div class="eco-feature">
-        {% if section.settings.icon_2 != blank %}
-          <div class="icon">
-            <img src="{{ section.settings.icon_2 | img_url: '120x' }}" alt="Icon 2">
-          </div>
-        {% endif %}
-        <h3>{{ section.settings.title_2 }}</h3>
-        <p>{{ section.settings.description_2 }}</p>
-        <!-- <a href="{{ section.settings.link_2 }}" class="learn-more">Learn More</a> -->
-      </div>
-      <div class="eco-feature">
-        {% if section.settings.icon_3 != blank %}
-          <div class="icon">
-            <img src="{{ section.settings.icon_3 | img_url: '120x' }}" alt="Icon 3">
-          </div>
-        {% endif %}
-        <h3>{{ section.settings.title_3 }}</h3>
-        <p>{{ section.settings.description_3 }}</p>
-        <!-- <a href="{{ section.settings.link_3 }}" class="learn-more">Learn More</a> -->
-      </div>
-      <div class="eco-feature">
-        {% if section.settings.icon_4 != blank %}
-          <div class="icon">
-            <img src="{{ section.settings.icon_4 | img_url: '120x' }}" alt="Icon 4">
-          </div>
-        {% endif %}
-        <h3>{{ section.settings.title_4 }}</h3>
-        <p>{{ section.settings.description_4 }}</p>
-        <!-- <a href="{{ section.settings.link_4 }}" class="learn-more">Learn More</a> -->
-      </div>
+      {% for block in section.blocks %}
+        <div class="eco-feature" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != blank %}
+            <div class="icon">
+              <img src="{{ block.settings.icon | img_url: '120x' }}" 
+                   alt="{{ block.settings.title }}"
+                   width="360"
+                   height="360">
+            </div>
+          {% endif %}
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}" class="learn-more">Learn More</a>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
-
 {% schema %}
 {
   "name": "Eco-Conscious Section",
   "settings": [
     {
-      "type": "text",
+      "type": "text", 
       "id": "heading",
       "label": "Heading",
       "default": "Designed With An Eco-Conscious Mindset"
     },
     {
       "type": "text",
-      "id": "subheading",
+      "id": "subheading", 
       "label": "Subheading",
       "default": "At Fabletics, our unwavering commitment to the environment drives us to innovate continuously..."
     },
     {
-      "type": "image_picker",
-      "id": "icon_1",
-      "label": "First Feature Icon"
-    },
-    {
-      "type": "text",
-      "id": "title_1",
-      "label": "First Feature Title",
-      "default": "Ethical & Inclusive Practices"
-    },
-    {
-      "type": "textarea",
-      "id": "description_1",
-      "label": "First Feature Description",
-      "default": "We invest in independent audits to ensure that every Fabletics factory follows the highest standards of care."
-    },
-    {
-      "type": "url",
-      "id": "link_1",
-      "label": "First Feature Learn More Link",
-      "default": "/"
-    },
-    {
-      "type": "image_picker",
-      "id": "icon_2",
-      "label": "Second Feature Icon"
-    },
-    {
-      "type": "text",
-      "id": "title_2",
-      "label": "Second Feature Title",
-      "default": "100% Carbon Neutral"
-    },
-    {
-      "type": "textarea",
-      "id": "description_2",
-      "label": "Second Feature Description",
-      "default": "Since 2021, we have been a certified CarbonNeutral® company..."
-    },
-    {
-      "type": "url",
-      "id": "link_2",
-      "label": "Second Feature Learn More Link",
-      "default": "/"
-    },
-    {
-      "type": "image_picker",
-      "id": "icon_3",
-      "label": "Third Feature Icon"
-    },
-    {
-      "type": "text",
-      "id": "title_3",
-      "label": "Third Feature Title",
-      "default": "Recycled Materials"
-    },
-    {
-      "type": "textarea",
-      "id": "description_3",
-      "label": "Third Feature Description",
-      "default": "All of our polybags, mailers, cartons and tissue packaging are made from recycled materials."
-    },
-    {
-      "type": "url",
-      "id": "link_3",
-      "label": "Third Feature Learn More Link",
-      "default": "/"
-    },
-    {
-      "type": "image_picker",
-      "id": "icon_4",
-      "label": "Fourth Feature Icon"
-    },
-    {
-      "type": "text",
-      "id": "title_4",
-      "label": "Fourth Feature Title",
-      "default": "Sustainable Packaging"
-    },
-    {
-      "type": "textarea",
-      "id": "description_4",
-      "label": "Fourth Feature Description",
-      "default": "Our packaging materials are sourced from sustainable and recyclable materials."
-    },
-    {
-      "type": "url",
-      "id": "link_4",
-      "label": "Fourth Feature Learn More Link",
-      "default": "/"
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
     }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Feature description text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Learn More Link"
+        }
+      ]
+    },
   ],
   "presets": [
     {
-      "name": "Icons"
+      "name": "Eco-Conscious Section",
+      "blocks": [
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature" 
+        }
+      ]
     }
   ]
 }

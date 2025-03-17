@@ -173,7 +173,7 @@
 
                         {%- if block.settings.heading != blank -%}
                           <h2
-                            class="font-heading mb-r2"
+                            class="font-heading heading-size-7 mb-r2"
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
                             data-aos-order="2"
@@ -185,7 +185,8 @@
                           <p
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
-                            class="mb-r6"
+                            data-aos-order="3"
+                            class="mb-r6 body-size-4"
                           >
                             {{ block.settings.sub_text }}
                           </p>
@@ -196,7 +197,7 @@
                             href="{{ block.settings.link }}"
                             data-aos="hero"
                             data-aos-anchor="{{ animation_anchor }}"
-                            data-aos-order="3"
+                            data-aos-order="4"
                           >
                             {{ block.settings.link_text | escape }}
                           </a>
