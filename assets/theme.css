@@ -12135,20 +12135,21 @@ label.error {
   line-height: 1;
 }
 .radio__fieldset .radio__button label {
-  font-family: "EngraversGothicBT-Heavy";
+  font-family: var(--FONT-STACK-ACCENT);
   font-style: var(--FONT-STYLE-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT);
-  font-weight: 700;
+  font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: 18px;
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-normal);
   position: relative;
-  padding: 8px 10px;
+  padding: calc(var(--OPTION-SIZE-RADIO) / 2 - 1em);
+  min-width: 60px;
   display: flex;
   justify-content: center;
-  border: 2px solid #102345;
-  color: #102345;
+  border: 1px solid var(--border);
+  color: var(--text-light);
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .radio__fieldset .radio__button label:hover,
@@ -16683,7 +16684,7 @@ html.js
   color: var(--text-light);
   display: inline-block;
   padding: 10px 0;
-  margin: 0 40px 0 0;
+  margin: 0 20px 0 0;
   font-weight: var(--FONT-WEIGHT-BODY);
   cursor: pointer;
   vertical-align: bottom;
@@ -16804,25 +16805,24 @@ html.js
   height: 0;
 }
 .product-tabs .tab-link {
-  font-family: "EngraversGothicBT-Heavy";
-  font-size: 18px !important;
-  font-style: var(--FONT-STYLE-ACCENT);
-  font-weight: var(--FONT-WEIGHT-ACCENT);
-  font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
-  text-transform: var(--FONT-ACCENT-TRANSFORM);
-  letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT));
+  font-family: var(--FONT-STACK-BODY);
+  font-size: 16px !important;
+  font-style: var(--FONT-STYLE-BODY);
+  font-weight: var(--FONT-WEIGHT---FONT-STYLE-BODY);
+  font-weight: var(--FONT-WEIGHT---FONT-STYLE-BODY-BOLD);
+  text-transform: var(--FONT---FONT-STYLE-BODY-TRANSFORM);
+  letter-spacing: var(--FONT---FONT-STYLE-BODY-LETTER-SPACING);
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST---FONT-STYLE-BODY));
   line-height: var(--leading-normal);
   padding-bottom: 0;
   border-bottom-width: 2px;
   white-space: normal;
-  color: #102345;
 }
 .product-tabs .tab-link:last-child {
   margin-right: 0;
 }
 .product-tabs .tab-link.current {
-  border-bottom-color: #660f28;
+  border-bottom-color: currentColor;
 }
 .product-tabs .tabs__arrow {
   overflow: hidden;
