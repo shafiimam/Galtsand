@@ -23,7 +23,7 @@
         "heading_LyNC4T": {
           "type": "heading",
           "settings": {
-            "title": "Out of the office, into the wild.",
+            "title": "Out of the office, and into the wild.",
             "text_size": 12
           }
         },
@@ -249,11 +249,11 @@
       "settings": {
         "collection": "mens-best-sellers",
         "product_limit": 12,
-        "title": "JUST DROPPED",
-        "title_text_size": 8,
-        "content": "Spring Summer 2025.",
-        "content_text_size": 5,
-        "text_align": "align--middle-center",
+        "title": "Spring Summer 2025",
+        "title_text_size": 7,
+        "content": "Our SS25 collection blends smart casual style with outdoor versatility, built for life on the move. Gear up for the city, the trails, and everything in between.",
+        "content_text_size": 4,
+        "text_align": "align--middle-left",
         "progress_bar": "mobile",
         "grid_large": 4,
         "grid_medium": 3,
@@ -318,14 +318,14 @@
         "slide_EzRiEK"
       ],
       "settings": {
-        "header_text": "For the road ahead.",
+        "header_text": "For the Road Ahead",
         "title_text_size": 10,
         "title_text_color": "#000000",
-        "header_h3text": "YOUR NEXT ADVENTURE AWAITS.",
+        "header_h3text": "Your next adventure awaits.",
         "sub_text_size": 5,
         "sub_text_color": "#000000",
-        "button_label": "Explore",
-        "button_url": "",
+        "button_label": "SHOP ALL",
+        "button_url": "shopify://collections/all",
         "button_size": "btn--medium",
         "button_style": "btn",
         "button_color": "btn--black",
@@ -417,7 +417,7 @@
         "title": "Trending Now",
         "title_text_size": 10,
         "title_color": "#000000",
-        "content": "BASED ON WHAT YOU ARE SHOPPING",
+        "content": "Based on what you are shopping.",
         "content_color": "#000000",
         "content_text_size": 5,
         "text_alignment": "text-center",
@@ -438,8 +438,8 @@
           "settings": {
             "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
             "title": "EVERYDAY ELEVATED",
-            "content": "Essential style, taken to the next level.",
-            "button_text": "Explore Collection",
+            "content": "Essential styles that keep you comfortable, taken to the next level",
+            "button_text": "EXPLORE MORE",
             "button_link": "shopify://collections/heritage",
             "text_alignment": "text-left"
           }
@@ -450,7 +450,7 @@
             "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
             "title": "PEAK PERFORMANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "PEAK PERFORMANCE",
+            "button_text": "explore more",
             "button_link": "shopify://collections/signature-studio",
             "text_alignment": "text-left"
           }
@@ -461,7 +461,7 @@
             "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
             "title": "ACTIVE ELEGANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Effortlessly chic pieces for the active lifestyle.",
+            "button_text": "Explore more",
             "button_link": "shopify://collections/signature-studio",
             "text_alignment": "text-left"
           }
@@ -473,10 +473,10 @@
         "collection_card_pC7mWi"
       ],
       "settings": {
-        "title": "Featured Collections",
+        "title": "Pack Light, Move Fast",
         "title_text_size": 10,
         "title_color": "#000000",
-        "content": "Handcrafted by our expert designers.",
+        "content": "Travel-ready, performance-inspired looks are coming to your closet just in time for the new season.",
         "content_color": "#000000",
         "content_text_size": 5,
         "text_alignment": "text-center",
@@ -504,9 +504,9 @@
             "text_color": "text--neutral",
             "link_size": 2,
             "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_GaPRP3": {
@@ -520,10 +520,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "last",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
+            "block_card_position": "first",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_xgYtnf": {
@@ -538,9 +538,9 @@
             "text_color": "text--white",
             "link_size": 5,
             "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         }
       },
@@ -634,6 +634,7 @@
         "review_XKAr9a",
         "review_Ka8GMA"
       ],
+      "disabled": true,
       "custom_css": [
         ".font-subheading {text-transform: uppercase;}"
       ],
@@ -641,10 +642,10 @@
         "main_title": "#GaltCrew",
         "title_text_size": 10,
         "title_color": "#000000",
-        "subtitle": "Reviews from galtsand ambassadors",
-        "subtitle_text_size": 5,
+        "subtitle": "Hear more from our Brand Ambassadors",
+        "subtitle_text_size": 6,
         "text_alignment": "text-left",
-        "width": "wrapper--full"
+        "width": "wrapper"
       }
     },
     "section_richtext_LKLc9B": {
@@ -744,11 +745,11 @@
       ],
       "settings": {
         "title": "Our Boutiques",
-        "title_text_size": 8,
+        "title_text_size": 10,
         "title_color": "#000000",
         "image": "shopify://shop_images/Galtsand_Event-125.jpg",
-        "height": "use_screen_three_quarters",
-        "width": "wrapper--full"
+        "height": "use_screen_two_thirds",
+        "width": "wrapper"
       }
     }
   },
