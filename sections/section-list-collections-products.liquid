@@ -24,13 +24,13 @@
 >
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
-      <h2 class="heading heading-lg text-center" style="color: {{ section.settings.content_color }};">
+      <h4 class="heading mb-r6" style="color: {{ section.settings.content_color }};">
         {{ section.settings.title }}
-      </h2>
+      </h4>
     {%- endif -%}
     {% if section.settings.subttitle %}
       <p
-        class="text-base font-body text-center collection-section-subtitle"
+        class="body body-size-5"
         style="color: {{ section.settings.content_color }};"
       >
         {{ section.settings.subttitle }}
@@ -147,12 +147,6 @@
   .kicker-flourished:after {
     display: none;
   }
-  .cl {
-    background-color: #006a50 !important;
-  }
-  .cl .stain-button-canvas {
-    background-color: #006a50 !important;
-  }
   .wrapper--full .kicker-flourished {
     /* font-family: "EngraversGothicBT-Heavy" !important; */
     text-align: center !important;
@@ -176,7 +170,7 @@
     }
   }
   .collection-list-item {
-    border-bottom: 2px solid #e6dbc4;
+    border-bottom: 2px solid #000000;
   }
   .collection-list-item.last-item,
   .collection-list-item:last-child {
@@ -200,66 +194,6 @@
       width: 100%;
     }
   }
-  .collection-list-item p.grid__swatch__placeholder {
-    color: #e6dbc4;
-  }
-  .collection-block-card__content {
-    align-items: flex-start;
-    text-align: left;
-    flex-direction: column;
-  }
-  .collection-block-card__content h1 {
-    text-transform: none;
-    letter-spacing: 1px;
-    color: #006a50;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90%;
-  }
-  .collection-block-card__content p {
-    color: #006a50;
-    font-family: 'Inter Tight';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 16.8px */
-  }
-  .collection-list__product .quickview span {
-    color: #e6dbc4;
-  }
-  .collection-list__product .product__grid__title {
-    color: #e6dbc4;
-  }
-  .collection-list__product .product__grid__price {
-    color: #e6dbc4;
-  }
-  .collection-block-card__content .standard__cta {
-    color: #e6dbc4;
-    background: #006a50;
-    font-family: 'Engravers Gothic';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 130%;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    border: 2.5px solid #006a50;
-    @media screen and (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  .collection-block-card__content .standard__cta:hover {
-    background-color: #e6dbc4 !important;
-    color: #006a50 !important;
-    border: 2.5px solid #006a50;
-  }
-
-  .collection-block-card__content h1 {
-    font-size: 40px;
-  }
-  .collection-block-card__content p {
-    font-size: 14px;
-  }
   @media (max-width: 768px) {
     .wrapper--full .kicker-flourished {
       font-size: 39px;
@@ -270,7 +204,6 @@
   }
   .collection-block-card-link {
     height: 100%;
-    background-color: #fcfaf7;
     position: relative;
     display: block;
   }
@@ -282,7 +215,8 @@
     align-items: start;
     height: 100%;
     padding: 20px;
-    background-color: #e6dbc4;
+    border: 2px solid #000000;
+    background: #ffffff;
   }
   .section-button-container {
     display: flex;
@@ -482,16 +416,8 @@
             { "value": "text--invert--secondary", "label": "Secondary dark accent" },
             { "value": "text--invert", "label": "Inverted text color" }
           ]
-        },
-        {
-          "type": "range",
-          "id": "link_size",
-          "label": "Link text size",
-          "min": 1,
-          "max": 12,
-          "step": 1,
-          "default": 3
         }
+       
       ]
     },
     {
@@ -583,6 +509,47 @@
             }
           ],
           "default": "first"
+        },
+        {
+          "type": "header",
+          "content": "Button Settings"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Size",
+          "default": "btn--long",
+          "options": [
+            { "value": "btn--small", "label": "Small button" },
+            { "value": "btn--medium", "label": "Medium button" },
+            { "value": "btn--large", "label": "Large button" },
+            { "value": "btn--long", "label": "Long button" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn",
+          "options": [
+            { "value": "btn-text-thick-line", "label": "Capitalized text" },
+            { "value": "btn", "label": "Solid button" },
+            { "value": "btn--soft", "label": "Soft button" },
+            { "value": "btn--outline", "label": "Outlined button" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_color",
+          "label": "Color",
+          "default": "btn--white",
+          "options": [
+            { "value": "btn--primary", "label": "Bright accent" },
+            { "value": "btn--secondary", "label": "Secondary accent" },
+            { "value": "btn--neutral", "label": "Text color" },
+            { "value": "btn--black", "label": "Black" },
+            { "value": "btn--white", "label": "White" }
+          ]
         }
       ]
     }

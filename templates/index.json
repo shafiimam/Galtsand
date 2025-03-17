@@ -437,8 +437,8 @@
           "type": "collection_card",
           "settings": {
             "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
-            "title": "Heritage Collection",
-            "content": "Globally loved for its classic tailoring with active versatility, and all-day comfort.",
+            "title": "EVERYDAY ELEVATED",
+            "content": "Essential style, taken to the next level.",
             "button_text": "Explore Collection",
             "button_link": "shopify://collections/heritage",
             "text_alignment": "text-left"
@@ -448,9 +448,9 @@
           "type": "collection_card",
           "settings": {
             "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
-            "title": "Signature Studio",
+            "title": "PEAK PERFORMANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore Collection",
+            "button_text": "PEAK PERFORMANCE",
             "button_link": "shopify://collections/signature-studio",
             "text_alignment": "text-left"
           }
@@ -459,9 +459,9 @@
           "type": "collection_card",
           "settings": {
             "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
-            "title": "Signature Studio",
+            "title": "ACTIVE ELEGANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore Collection",
+            "button_text": "Effortlessly chic pieces for the active lifestyle.",
             "button_link": "shopify://collections/signature-studio",
             "text_alignment": "text-left"
           }
@@ -489,83 +489,6 @@
         "button_color": "btn--white"
       }
     },
-    "section_list_collections_czR7hE": {
-      "type": "section-list-collections",
-      "blocks": {
-        "collection_PXxHma": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-men",
-            "image": "shopify://shop_images/202308150467ok_2a23666b-1fb2-47c3-9769-4f59c8041af5.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "Essential style, taken to the next level.",
-            "top_text_disabled": false,
-            "title": "EVERYDAY ELEVATED",
-            "title_disabled": false,
-            "bottom_text": "Explore Collection",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        },
-        "collection_bVzrVP": {
-          "type": "collection",
-          "settings": {
-            "collection": "heritage",
-            "image": "shopify://shop_images/202308150647.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "From summit to street, always at your peak.",
-            "top_text_disabled": false,
-            "title": "PEAK PERFORMANCE",
-            "title_disabled": false,
-            "bottom_text": "Explore Collection",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        },
-        "collection_TJCfxp": {
-          "type": "collection",
-          "settings": {
-            "collection": "women",
-            "image": "shopify://shop_images/202308161763ok.jpg",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "Effortlessly chic pieces for the active lifestyle.",
-            "top_text_disabled": false,
-            "title": "ACTIVE ELEGANCE",
-            "title_disabled": false,
-            "bottom_text": "Explore Collection",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        }
-      },
-      "block_order": [
-        "collection_PXxHma",
-        "collection_bVzrVP",
-        "collection_TJCfxp"
-      ],
-      "settings": {
-        "title": "Something for every occasion.",
-        "small_text": "From mountain peaks to city streets, elevate every step of your adventure.",
-        "bg": "palette--light bg--neutral",
-        "carousel_enabled_on": "mobile",
-        "wh_ratio": 0.8,
-        "grid_large": 3,
-        "grid_medium": 3,
-        "grid_mobile": 1.2,
-        "font_family": "heading",
-        "title_size": 8,
-        "accent_size": 5,
-        "width": "wrapper--full",
-        "padding_top": 30,
-        "padding_bottom": 30
-      }
-    },
     "section_list_collections_products_N6gfAm": {
       "type": "section-list-collections-products",
       "blocks": {
@@ -580,7 +503,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "first"
+            "block_card_position": "first",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_GaPRP3": {
@@ -594,7 +520,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "first"
+            "block_card_position": "last",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_xgYtnf": {
@@ -605,10 +534,13 @@
             "link_text": "Thoughtfully constructed with premium materials.",
             "enable_item": true,
             "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first"
+            "background_color": "#000000",
+            "text_color": "text--white",
+            "link_size": 5,
+            "block_card_position": "first",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         }
       },
@@ -707,7 +639,12 @@
       ],
       "settings": {
         "main_title": "#GaltCrew",
-        "subtitle": "Reviews from galtsand ambassadors"
+        "title_text_size": 10,
+        "title_color": "#000000",
+        "subtitle": "Reviews from galtsand ambassadors",
+        "subtitle_text_size": 5,
+        "text_alignment": "text-left",
+        "width": "wrapper--full"
       }
     },
     "section_richtext_LKLc9B": {
@@ -717,7 +654,7 @@
           "type": "heading",
           "settings": {
             "heading": "#GoSomewhereInGaltsand",
-            "text_size": 13
+            "text_size": 10
           }
         }
       },
@@ -785,29 +722,33 @@
       "settings": {
         "text_color": "text--invert--primary",
         "bg": "palette--light bg--neutral",
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "width": "wrapper--full",
+        "padding_top": 30,
+        "padding_bottom": 0
       }
     },
     "our_boutiques_mhwpF4": {
       "type": "Our-boutiques",
       "blocks": {
-        "boutique_XFTMAk": {
+        "boutique_fWJLNH": {
           "type": "boutique",
           "settings": {
-            "address_name": "The Mall At Wellington Green",
-            "address": "10300 Forest Hill Blvd, Wellington, FL 33414",
+            "title": "The Mall At Wellington Green",
+            "content": "10300 Forest Hill Blvd, Wellington, FL 33414",
             "phone": "877.756.7353"
           }
         }
       },
       "block_order": [
-        "boutique_XFTMAk"
+        "boutique_fWJLNH"
       ],
       "settings": {
-        "main_title": "Our Boutique",
-        "image": "shopify://shop_images/Galtsand_Event-125.jpg"
+        "title": "Our Boutiques",
+        "title_text_size": 8,
+        "title_color": "#000000",
+        "image": "shopify://shop_images/Galtsand_Event-125.jpg",
+        "height": "use_screen_three_quarters",
+        "width": "wrapper--full"
       }
     }
   },
@@ -820,7 +761,6 @@
     "collection-split-section-1",
     "card_cascade_F4z48g",
     "card_cascade_TyENQQ",
-    "section_list_collections_czR7hE",
     "section_list_collections_products_N6gfAm",
     "about_us_section_xikFig",
     "customer_review_section_xAPmhf",

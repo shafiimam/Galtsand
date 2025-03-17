@@ -1,89 +1,66 @@
-<div class="customer-reviews-section">
-  <h2 class="reviews-title heading heading-lg">{{ section.settings.main_title }}</h2>
-  <p class="reviews-subtitle subheading font-subheading mb-r11">{{ section.settings.subtitle }}</p>
-
+{%- assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-' -%}
+{%- assign subtitle_font_size_class = section.settings.subtitle_text_size | prepend: 'body-size-' -%}
+<div class="customer-reviews-section {{ section.settings.width }}">
+  <h2 class="heading {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">
+    {{ section.settings.main_title }}
+  </h2>
+  <p class="mb-r6 {{ subtitle_font_size_class }}" style="color: {{ section.settings.subtitle_color }};">
+    {{ section.settings.subtitle }}
+  </p>
   <div class="reviews-slider">
-    <button id="leftArrow" class="slider-arrow left-arrow" onclick="prevSlide()">
-      <img src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_3.png?v=1737052415" alt="Left Arrow">
-    </button>
-    <div class="reviews-container">
-      <div class="reviews-wrapper">
+    <div class="reviews-container-{{ section.id }} reviews-container">
+      <div class="swiper-wrapper">
         {% for block in section.blocks %}
-          <div class="review-card" {{ block.shopify_attributes }}>
-            <p class="review-text">{{ block.settings.review_text }}</p>
+          <div class="swiper-slide review-card" {{ block.shopify_attributes }}>
+            <p class="body-size-6">{{ block.settings.review_text }}</p>
             <div class="reviewer-info">
               <img src="{{ block.settings.reviewer_image | img_url }}" alt="Reviewer Image" class="reviewer-image">
               <div>
-                <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
-                <p class="reviewer-role">{{ block.settings.reviewer_role }}</p>
+                <p class="body-size-6 font-body mb-r2">{{ block.settings.reviewer_name }}</p>
+                <p class="body-size-4">{{ block.settings.reviewer_role }}</p>
               </div>
             </div>
           </div>
         {% endfor %}
       </div>
+      <button id="leftArrow" class="slider-arrow left-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 45 46" fill="none">
+          <path d="M44.6353 23.2212L5.38997 23.2212" stroke="black" stroke-width="6"/>
+          <path d="M25 3L5 23L25 43" stroke="black" stroke-width="6"/>
+        </svg>
+      </button>
+      <button id="rightArrow" class="slider-arrow right-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 45 46" fill="none">
+          <path d="M0.36499 22.7788L39.6103 22.7788" stroke="black" stroke-width="6"/>
+          <path d="M20 43L40 23L20 3" stroke="black" stroke-width="6"/>
+        </svg>
+      </button>
     </div>
-    <button id="rightArrow" class="slider-arrow right-arrow" onclick="nextSlide()">
-      <img
-        width="50"
-        height="50"
-        src="https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Group_9_4.png?v=1737052383"
-        alt="Right Arrow"
-      >
-    </button>
   </div>
 </div>
 
 <style>
   .customer-reviews-section {
-    background-color: #e6dbc4;
-    padding: 70px 20px;
     text-align: center;
   }
-
+  .reviews-container {
+    position: relative;
+  }
   .reviews-title {
     font-weight: 100;
     color: #12224f;
-
   }
 
   .reviews-subtitle {
     color: #12224f;
   }
 
-  .reviews-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .reviews-container {
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .reviews-wrapper {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease-in-out;
-    margin-right: -6px;
-  }
-
   .review-card {
-    min-width: 49%;
     padding: 31px;
-    background-color: #e6dbc4;
-    border: 3px solid #660000;
+    border: 2px solid #000000;
     text-align: left;
-  }
-
-  .review-text {
-    font-family: 'Inter Tight' !important;
-    font-size: 25px;
-    font-weight: bold;
-    color: #660000;
+    max-width: 50%;
+    margin-right: 24px;
   }
 
   .reviewer-info {
@@ -93,17 +70,10 @@
   }
 
   .reviewer-image {
-    width: 50px;
-    /* height: 50px; */
-    /* border-radius: 50%; */
+    width: 60px;
     margin-right: 10px;
-  }
-
-  .reviewer-name {
-    font-family: 'Gambarino';
-    font-size: 27px;
-    font-weight: bold;
-    color: #660000;
+    aspect-ratio: 0.8;
+    object-fit: cover;
   }
 
   .reviewer-role {
@@ -113,124 +83,59 @@
   }
 
   .slider-arrow {
-    background: #e6dbc4;
-    border: 3px solid #660000;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
     border-radius: 50%;
     z-index: 1;
     cursor: pointer;
-    height: 65px;
-    width: 65px;
-  }
-  .slider-arrow img {
-    width: 56px;
-    height: 56px;
-    padding: 10px;
+    height: 36px;
+    width: 36px;
   }
   .left-arrow {
-    position: relative;
+    position: absolute;
     left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .right-arrow {
-    position: relative;
+    position: absolute;
     right: 30px;
-  }
-  .slider-arrow.disabled {
-    opacity: 1;
-    pointer-events: none;
-  }
-  @media (max-width: 768px) {
-    .review-text {
-      font-size: 18px;
-    }
-    .reviews-title {
-      font-size: 40px;
-    }
-    .review-card {
-      min-width: 95%;
-    }
-    .slider-arrow {
-      width: 65px;
-      height: auto;
-      display: none;
-    }
-    .slide-arrow img {
-      width: 56px !important;
-      height: 48px !important;
-    }
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
 <script>
-  let currentIndex = 0;
-  const reviewWrapper = document.querySelector('.reviews-wrapper');
-  const reviewCards = document.querySelectorAll('.review-card');
-  const leftArrow = document.getElementById('leftArrow');
-  const rightArrow = document.getElementById('rightArrow');
-  let startX = 0;
-  let isDragging = false;
+  document.addEventListener('DOMContentLoaded', function () {
+    const reviewsContainer = document.querySelector('.reviews-container-{{ section.id }}');
+    const swiper = new Swiper(reviewsContainer, {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      freeMode: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
 
-  function getSlidesPerView() {
-    return window.innerWidth < 768 ? 1 : 2;
-  }
-
-  function updateSlider() {
-    const slidesPerView = getSlidesPerView();
-    const totalSlides = Math.ceil(reviewCards.length / slidesPerView);
-    reviewWrapper.style.transition = 'transform 0.5s ease-in-out';
-    const slideWidth = slidesPerView === 1 ? 100 : 50;
-    reviewWrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
-    if (window.innerWidth < 768) {
-      leftArrow.style.display = 'none';
-      rightArrow.style.display = 'none';
-    } else {
-      leftArrow.style.display = 'block';
-      rightArrow.style.display = 'block';
-    }
-  }
-
-  function nextSlide() {
-    const slidesPerView = getSlidesPerView();
-    const totalSlides = reviewCards.length - slidesPerView + 1;
-    if (currentIndex < totalSlides - 1) {
-      currentIndex++;
-      updateSlider();
-    }
-  }
-
-  function prevSlide() {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  }
-
-  function handleTouchStart(event) {
-    startX = event.touches[0].clientX;
-    isDragging = true;
-  }
-
-  function handleTouchMove(event) {
-    if (!isDragging) return;
-    const moveX = event.touches[0].clientX - startX;
-    if (moveX > 50) {
-      prevSlide();
-      isDragging = false;
-    } else if (moveX < -50) {
-      nextSlide();
-      isDragging = false;
-    }
-  }
-
-  function handleTouchEnd() {
-    isDragging = false;
-  }
-
-  reviewWrapper.addEventListener('touchstart', handleTouchStart);
-  reviewWrapper.addEventListener('touchmove', handleTouchMove);
-  reviewWrapper.addEventListener('touchend', handleTouchEnd);
-
-  window.addEventListener('resize', updateSlider);
-  updateSlider();
+      navigation: {
+        nextEl: '.right-arrow',
+        prevEl: '.left-arrow',
+      },
+    });
+  });
 </script>
 
 {% schema %}
@@ -244,10 +149,66 @@
       "default": "Why Our Customers Love Galtsand"
     },
     {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
       "default": "Handcrafted by our expert designers."
+    },
+    {
+      "type": "range",
+      "id": "subtitle_text_size",
+      "label": "Subtitle text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        },
+        {
+          "value": "text-center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
     }
   ],
   "blocks": [

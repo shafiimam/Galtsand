@@ -24,7 +24,9 @@
 {%- assign grid = grid | default: 3 -%}
 {%- assign is_empty_collection = false -%}
 {%- assign collection_onboarding_title = 'collections.general.collection_grid_title' | t -%}
-
+{% assign btn_size = block.settings.button_size %}
+{% assign btn_style = block.settings.button_style %}
+{% assign btn_color = block.settings.button_color %}
 {%- if collection_title == blank -%}
   {%- assign collection_title = collection.title | default: collection_onboarding_title -%}
 {%- endif -%}
@@ -50,12 +52,11 @@
           <div
             class="collection-block-card__content"
             aria-label="{{ collection_title | escape }}">
-            {% assign link_size_class = item_link_size | prepend: 'accent-size-' %}
             <div>
-              <h1 class="font-heading">{{ collection_title_override }}</h1>
+              <h2 class="heading mb-r6">{{ collection_title_override }}</h2>
               <p>{{ link_text }}</p>
             </div>
-            <div class="standard__cta hero__btn btn btn--primary btn--long aos-init aos-animate {{ link_size_class }}">
+            <div class="standard__cta hero__btn {{ btn_style }} {{ btn_color }} {{ btn_size }} aos-init aos-animate">
               {{ item_text }}
             </div>     
           </div>

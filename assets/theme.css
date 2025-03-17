@@ -18344,19 +18344,15 @@ Collection grid item
   #Footer
 ============================================================================== */
 .footer {
-  --bg: #660f28;
+  --bg: var(--COLOR-FOOTER-BG);
   --hairline: var(--COLOR-FOOTER-A5);
-  /* --text: var(--COLOR-FOOTER-A90); */
-  color: #e6dbc4;
-  /* --border: 16px solid #E6DBC4; */
-  border: 16px solid #e6dbc4;
+  --text: var(--COLOR-FOOTER-A90);
+  --border: var(--COLOR-FOOTER-A15);
   --text-dark: var(--COLOR-FOOTER-TEXT);
-  --margin-offset: min(
-    calc((((100vw - var(--scrollbar-width)) - var(--LAYOUT-WIDTH)) / 2) * -1),
-    0px
-  );
+  --margin-offset: min(calc((((100vw - var(--scrollbar-width)) - var(--LAYOUT-WIDTH)) / 2) * -1), 0px);
   position: relative;
   background-color: var(--bg);
+  color: var(--text);
   text-align: left;
   margin-top: auto;
 }
@@ -19053,7 +19049,7 @@ body.focus-enabled .product-grid-item:focus-within {
 .product__grid__info a {
   display: block;
   text-decoration: none;
-  color: #102345;
+  color: currentColor;
 }
 /* ================ Collection ================ */
 .product__grid__title {

@@ -83,7 +83,7 @@
             "title_color": "text--white",
             "button_style": "is-below-image",
             "link_text": "Shop Outdoor Gear",
-            "link": "shopify://collections/all-men",
+            "link": "shopify://collections/all",
             "button_color": "btn--neutral",
             "display": "all"
           }
@@ -101,7 +101,7 @@
             "title_color": "text--white",
             "button_style": "is-below-image",
             "link_text": "Shop Spring Styles",
-            "link": "shopify://collections/all-women",
+            "link": "shopify://collections/all",
             "button_color": "btn--neutral",
             "display": "all"
           }
@@ -152,7 +152,7 @@
       ],
       "settings": {
         "header_style": "logo_center",
-        "logo": "shopify://shop_images/logo-yellow.png",
+        "logo": "shopify://shop_images/New_logo_3_afcc69a1-3952-461e-a6dd-5791e8b2e3f3.jpg",
         "logo_v2": "shopify://shop_images/galtsand-blue-logo.png",
         "logo_max_limit": 135,
         "logo_padding": 26,
