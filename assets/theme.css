@@ -19559,7 +19559,7 @@ label.quatity-selector {
 /* Collection nav bar */
 .collection__nav {
   display: flex;
-  border: 3px solid #660f28;
+  border: 1px solid var(--border);
   justify-content: space-between;
   height: 3.3em;
   margin-bottom: var(--gutter);
