@@ -425,7 +425,8 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   display: flex;
   margin-bottom: var(--padding-bottom);
   background: hsla(0, 0%, 100%, 0.8);
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .section-collection-slider-carousel button.flickity-button {
   bottom: 50% !important;
