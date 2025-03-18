@@ -22,7 +22,7 @@
         "cart_custom_message_enable": false,
         "cart_custom_message_text": "<p>Use code <strong>TENOFF</strong> at checkout for 10% off</p>",
         "cart_color_bg": "palette--light bg--accent",
-        "cart_show_additional_buttons": false
+        "cart_show_additional_buttons": true
       }
     },
     "popups": {
