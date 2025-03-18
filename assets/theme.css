@@ -19007,11 +19007,12 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   right: -70px;
 }
 .collection-tabs .flickity-button {
-  background: #e6dbc4;
+  background: var(--BRIGHT-BG);
   color: var(--text);
+  border: 1px solid #e5e5e5;
 }
 .collection-tabs .flickity-button:hover {
-  background: #e6dbc4;
+  background: var(--hairline-hover);
 }
 .collection-tabs .tab-content {
   margin-top: var(--space-11);
@@ -19659,7 +19660,7 @@ label.quatity-selector {
 /* Collection nav bar */
 .collection__nav {
   display: flex;
-  border: 3px solid #660f28;
+  border: 1px solid var(--border);
   justify-content: space-between;
   height: 3.3em;
   margin-bottom: var(--gutter);

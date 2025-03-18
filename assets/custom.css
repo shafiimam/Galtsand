@@ -193,28 +193,6 @@ h3.article__item-title {
   color: var(--text);
 }
 
-/* cart drawer */
-.cart__drawer .cart__items__title,
-.cart__drawer .cart__items__meta,
-.cart__drawer .line__price {
-  color: #000000 !important;
-}
-.cart__drawer .quantity__input {
-  color: #000000 !important;
-  border-color: #000000;
-}
-.cart__drawer .quantity__button:hover,
-.cart__drawer .quantity__button:focus,
-.cart__drawer .quantity__button:active {
-  color: #000000 !important;
-}
-.cart__drawer p.cart__drawer__title {
-  color: #000000;
-}
-
-.cart__drawer svg.icon-core-x {
-  stroke: #000000;
-}
 
 /* image with text section custom */
 
