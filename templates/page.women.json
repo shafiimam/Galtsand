@@ -313,7 +313,7 @@
       "settings": {
         "title": "Best sellers",
         "subtitle": "Handcrafted by our expert designers.",
-        "collection": "shorts-womens",
+        "collection": "bestsellers",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/best-sellers",
