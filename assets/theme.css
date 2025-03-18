@@ -21175,8 +21175,8 @@ a.product__form__link:after {
   transform: rotate(0);
 }
 .popout-list {
-  background-color: #000000;
-  border: 1px solid var(--border);
+  background-color: #ffffff;
+  border: 1px solid #000000;
   bottom: 100%;
   position: absolute;
   opacity: 0;
