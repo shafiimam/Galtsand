@@ -230,8 +230,8 @@
           "type": "color_cart",
           "settings": {
             "card_image": "shopify://shop_images/untitled7_5730f37b-846d-4e88-a465-1d6265ea1b53.png",
-            "swatch_color": "#006a50",
-            "card_title": "Academy green",
+            "swatch_color": "#000000",
+            "card_title": "Black",
             "button_label": "Explore",
             "button_link": ""
           }
@@ -295,6 +295,7 @@
         "color_cart_QeyHKr",
         "color_cart_T4aVNG"
       ],
+      "disabled": true,
       "settings": {
         "title": "Shop by colors",
         "subtitle": "Handcrafted by our expert designers.",
