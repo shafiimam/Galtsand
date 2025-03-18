@@ -193,7 +193,6 @@ h3.article__item-title {
   color: var(--text);
 }
 
-
 /* cart drawer */
 .cart__drawer .cart__items__title,
 .cart__drawer .cart__items__meta,
@@ -418,19 +417,20 @@ span.swym-wish-counter.swym-wishlist-header-counter {
     width: var(--mobile-width);
     margin-left: 0;
   }
-  .section-carousel__header-content{
+  .section-carousel__header-content {
     position: relative;
   }
 }
 .section-carousel__header-content {
   display: flex;
   margin-bottom: var(--padding-bottom);
-  background: hsla(0,0%,100%,.8);
+  background: hsla(0, 0%, 100%, 0.8);
+  padding-left: 10%;
 }
 .section-collection-slider-carousel button.flickity-button {
   bottom: 50% !important;
   z-index: 5 !important;
-  border:1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 .collection-block-card__content .standard__cta {
