@@ -146,8 +146,8 @@
           "settings": {
             "image": "shopify://shop_images/untitled_525c87b3-15e7-41af-928e-09d0600ffbd7.jpg",
             "title": "Joggers",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "subtitle": "Designed for athletes and trendsetters, our Galtsand Joggers combine functionality, comfort, and modern aesthetics. Crafted with lightweight, breathable, and flexible fabrics, they provide optimal mobility and a sleek fit, making them perfect for training sessions, outdoor activities, or casual wear.",
+            "button_link": "shopify://collections/joggers",
             "button_label": "Explore"
           }
         },
@@ -156,8 +156,8 @@
           "settings": {
             "image": "shopify://shop_images/untitled_33b50855-ff27-4329-aa1d-8c5558dbbd36.jpg",
             "title": "Crewnecks & Hoodies",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "subtitle": "Designed for those who embrace movement and style, our Crewnecks & Hoodies deliver the perfect blend of comfort, durability, and modern aesthetics. Made with premium, breathable fabrics, they offer a soft feel, optimal warmth, and flexibility for both active and casual wear.",
+            "button_link": "shopify://collections/sweatshirts",
             "button_label": "Explore"
           }
         },
@@ -166,8 +166,8 @@
           "settings": {
             "image": "shopify://shop_images/untitled_885ecd70-6d8c-48e0-8637-efd76768f306.jpg",
             "title": "Shorts",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "subtitle": "Designed for athletes and active individuals who demand both performance and style. Made with lightweight, breathable fabrics, they provide maximum comfort, flexibility, and durability for intense workouts, outdoor adventures, or casual wear.",
+            "button_link": "shopify://collections/mens-shorts",
             "button_label": "Explore"
           }
         }
