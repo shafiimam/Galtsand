@@ -264,7 +264,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "last"
+            "block_card_position": "last",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_V9bRRL": {
@@ -278,7 +281,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "first"
+            "block_card_position": "first",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_9jBt6c": {
@@ -292,7 +298,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "last"
+            "block_card_position": "last",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "button_RB9wME": {
@@ -316,7 +325,7 @@
         "title": "Shop by activity section",
         "subttitle": "Handcrafted by our expert designers.",
         "bg": "palette--light bg--neutral",
-        "content_color": "#e6dbc4",
+        "content_color": "#000000",
         "grid": 3,
         "rows": 1,
         "enable_scroll_mobile": true,
