@@ -95,7 +95,7 @@
           "type": "tab",
           "settings": {
             "title": "All",
-            "collection": "bottoms",
+            "collection": "all",
             "product_limit": 8,
             "button_text": "Shop Now",
             "button_link": "{{ block.settings.collection.url }}"
