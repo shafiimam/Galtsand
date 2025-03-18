@@ -73,7 +73,7 @@
             "font_size": 5,
             "text_columns": 2,
             "align_text": "text-left",
-            "text_color": "#006a50",
+            "text_color": "#000000",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
@@ -302,7 +302,7 @@
         "subtitle": "Handcrafted by our expert designers.",
         "width": "wrapper--full",
         "remove_top_padding": false,
-        "background_color": "#E6DBC4",
+        "background_color": "#ffffff",
         "text_color": "#102345"
       }
     },
@@ -332,7 +332,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "last"
+            "block_card_position": "last",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_iBkUYd": {
@@ -346,7 +349,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "last"
+            "block_card_position": "last",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "collection_V9bRRL": {
@@ -360,7 +366,10 @@
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
-            "block_card_position": "first"
+            "block_card_position": "first",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
           }
         },
         "button_RB9wME": {
@@ -384,7 +393,7 @@
         "title": "Shop by activity section",
         "subttitle": "Handcrafted by our expert designers.",
         "bg": "palette--light bg--neutral",
-        "content_color": "#e6dbc4",
+        "content_color": "#000000",
         "grid": 3,
         "rows": 1,
         "enable_scroll_mobile": true,
