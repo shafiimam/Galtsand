@@ -73,7 +73,7 @@
             "font_size": 5,
             "text_columns": 2,
             "align_text": "text-left",
-            "text_color": "#006a50",
+            "text_color": "#1d1d1d",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
@@ -427,9 +427,9 @@
         "product3": "garment-washed-pullover-hoodie",
         "product4": "heritage-jogger-with-cargo-pocket",
         "width": "wrapper--full",
-        "background_color": "#102345",
-        "text_color": "#e6dbc4",
-        "product_color": "#102345"
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "product_color": "#ffffff"
       }
     }
   },
