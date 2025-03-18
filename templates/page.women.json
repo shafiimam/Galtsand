@@ -426,9 +426,9 @@
         "product3": "empower-bra",
         "product4": "freedom-leggings",
         "width": "wrapper--full",
-        "background_color": "#102345",
-        "text_color": "#e6dbc4",
-        "product_color": "#102345"
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "product_color": "#ffffff"
       }
     }
   },
