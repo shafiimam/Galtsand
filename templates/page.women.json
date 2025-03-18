@@ -165,6 +165,7 @@
         "card_CxRLyT",
         "card_zHDFNg"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#660f28",
         "width": "wrapper--full"
@@ -220,6 +221,7 @@
         "card_ecCzK9",
         "card_ecy4BF"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#660f28",
         "width": "wrapper--full"
