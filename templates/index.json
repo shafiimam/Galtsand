@@ -271,7 +271,7 @@
         "title_text_size": 10,
         "title_text_color": "#ffffff",
         "button_label": "Watch Video",
-        "button_url": "shopify://collections",
+        "button_url": "",
         "button_size": "btn--long",
         "button_style": "btn--outline",
         "button_color": "btn--white",

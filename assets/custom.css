@@ -106,7 +106,7 @@
 
 h4.blog__heading.text-left {
   color: #660f28;
-  font-family: "EngraversGothicBT-Heavy";
+  /* font-family: "EngraversGothicBT-Heavy"; */
   font-size: clamp(36px, 4vw, 100px);
   font-style: normal;
   font-weight: 700;
@@ -167,7 +167,7 @@ a.blog__tag.blog__tag--active:hover {
 }
 
 h3.article__item-title {
-  color: #102345;
+  color: #000000;
   font-family: "Gambarino";
   font-size: clamp(36px, 4vw, 100px);
   font-style: normal;
@@ -177,8 +177,8 @@ h3.article__item-title {
   margin-bottom: 28px;
 }
 .article__item-content p {
-  color: #102345;
-  font-family: "EngraversGothicBT-Heavy";
+  color: #000000;
+  /* font-family: "EngraversGothicBT-Heavy"; */
   font-size: 20px;
   font-style: normal;
   line-height: 80%;
@@ -186,7 +186,7 @@ h3.article__item-title {
 }
 .read-more-btn {
   padding: 20px 24px;
-  border: 2px solid #102345;
+  border: 2px solid #000000;
 }
 
 .blog__article__content p {
