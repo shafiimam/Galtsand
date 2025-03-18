@@ -316,7 +316,7 @@
         "collection": "bestsellers",
         "show_more_button": true,
         "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
+        "button_link": "shopify://collections/bestsellers",
         "width": "wrapper--full"
       }
     },
