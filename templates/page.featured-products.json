@@ -125,7 +125,7 @@
           "type": "tab",
           "settings": {
             "title": "new in",
-            "collection": "new-in",
+            "collection": "ss25-collection",
             "product_limit": 8,
             "button_text": "Shop Now",
             "button_link": "{{ block.settings.collection.url }}"
