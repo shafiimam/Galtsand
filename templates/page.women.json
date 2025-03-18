@@ -388,9 +388,7 @@
         "collection_V9bRRL",
         "button_RB9wME"
       ],
-      "custom_css": [
-        "h2 {color: #000000;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Shop by activity section",
         "subttitle": "Handcrafted by our expert designers.",
