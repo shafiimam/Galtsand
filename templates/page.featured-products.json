@@ -218,9 +218,9 @@
         "product3": "classic-tote-bag",
         "product4": "classic-messenger-bag",
         "width": "wrapper--full",
-        "background_color": "#e6dbc4",
-        "text_color": "#660f28",
-        "product_color": "#102345"
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "product_color": "#1d1d1d"
       }
     },
     "section_shop_by_color_hPtVFQ": {
@@ -353,7 +353,12 @@
       "disabled": true,
       "settings": {
         "main_title": "Why Our Customers Love Galtsand",
-        "subtitle": "Handcrafted by our expert designers."
+        "title_text_size": 10,
+        "title_color": "#000000",
+        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle_text_size": 10,
+        "text_alignment": "text-left",
+        "width": "wrapper"
       }
     }
   },
