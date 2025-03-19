@@ -15261,9 +15261,12 @@ body:not(.theme-animate-hover)
   cursor: default;
 }
 /* ================ Header cart status ================ */
-[data-header-cart-count],
+
 [data-header-cart-price] {
   display: none;
+}
+[data-header-cart-count] {
+  display: block;
 }
 .cart__status__parens
   [data-header-cart-count]:not([data-header-cart-count="0"]) {
