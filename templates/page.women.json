@@ -115,6 +115,18 @@
         "padding_bottom": 36
       }
     },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Our Most Loved & Top-Rated Styles.",
+        "collection": "bestsellers",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/bestsellers",
+        "width": "wrapper--full"
+      }
+    },
     "collection_card_column_Ydrkex": {
       "type": "collection-card-column",
       "blocks": {
@@ -307,18 +319,6 @@
         "text_color": "#000000"
       }
     },
-    "column_product_collection_bp8UTm": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "Best sellers",
-        "subtitle": "Our Most Loved & Top-Rated Styles.",
-        "collection": "bestsellers",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/bestsellers",
-        "width": "wrapper--full"
-      }
-    },
     "section_list_collections_products_wg4cKG": {
       "type": "section-list-collections-products",
       "blocks": {
@@ -435,10 +435,10 @@
     "main",
     "section_richtext_z49gFw",
     "section_double_ae83ar",
+    "column_product_collection_bp8UTm",
     "collection_card_column_Ydrkex",
     "collection_card_column_8D4rTM",
     "section_shop_by_color_yWCBP4",
-    "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
     "section_product_masonry_Wia8FW"
