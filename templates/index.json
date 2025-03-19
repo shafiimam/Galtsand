@@ -277,7 +277,7 @@
         "button_color": "btn--white",
         "video": "shopify://files/videos/for-TV-Long-format.MP4",
         "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
-        "image_background_color": "#ffffff",
+        "image_background_color": "#fdd5a9",
         "width": "wrapper--none"
       }
     },
