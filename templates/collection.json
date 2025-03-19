@@ -103,9 +103,9 @@
           "settings": {
             "collection": "best-sellers",
             "overlay_color": "#000000",
-            "overlay_opacity": 15,
+            "overlay_opacity": 30,
             "top_text": "",
-            "top_text_disabled": false,
+            "top_text_disabled": true,
             "title": "",
             "title_disabled": false,
             "bottom_text": "",
@@ -121,7 +121,7 @@
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "",
-            "top_text_disabled": false,
+            "top_text_disabled": true,
             "title": "",
             "title_disabled": false,
             "bottom_text": "",
@@ -137,14 +137,13 @@
       ],
       "settings": {
         "title": "",
-        "small_text": "shop by category",
         "bg": "palette--light bg--neutral",
         "carousel_enabled_on": "mobile",
         "wh_ratio": 1.5,
         "grid_large": 2,
         "grid_medium": 2,
         "grid_mobile": 1.2,
-        "font_family": "body",
+        "font_family": "heading",
         "title_size": 8,
         "accent_size": 3,
         "width": "wrapper--full",
@@ -165,7 +164,8 @@
         "description_2": "From outerwear, to loungewear, to smart casual wear, we offer a variety of options to suit any style.",
         "icon_3": "shopify://shop_images/Vector_fd8d4886-3774-4d6a-a123-788010438f61.png",
         "title_3": "Versatility for Any Occasion",
-        "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings."
+        "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings.",
+        "width": "wrapper"
       }
     },
     "fabric_choice_Th3iVf": {
@@ -220,7 +220,8 @@
       ],
       "settings": {
         "title": "PICK YOUR VIBE",
-        "subtitle": "Stay classic, keep it bold, or take it outside—your move."
+        "subtitle": "Stay classic, keep it bold, or take it outside—your move.",
+        "width": "wrapper--full"
       }
     },
     "seasonal_trends_3AGAmP": {
