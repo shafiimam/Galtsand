@@ -168,6 +168,7 @@
         "icons-1",
         "icons-2"
       ],
+      "disabled": true,
       "custom_css": [
         "p {color: #e6dbc4;}"
       ],
