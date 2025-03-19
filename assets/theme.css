@@ -25289,7 +25289,7 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
 input:not(.sold-out):not(.unavailable):not(:disabled)
   ~ label
   [data-shopify-xr-hidden]:not(.value) {
-  display: block;
+  display: none;
 }
 /*================ Siblings - PDP ================*/
 :root {
