@@ -416,6 +416,7 @@
     },
     "section_product_masonry_Wia8FW": {
       "type": "section-product-masonry",
+      "disabled": true,
       "settings": {
         "title": "Monthly Featured Lookbook/Edit",
         "subtitle": "Designed for explorers, athletes, and outdoor enthusiasts, the Galtsand Women's Outdoor Collection blends functionality, comfort, and modern style. Whether you're hiking trails, running through nature, or embracing the elements, our apparel is crafted with lightweight, moisture-wicking, and weather-resistant fabrics to keep you moving with confidence and ease.",
