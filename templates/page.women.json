@@ -319,6 +319,18 @@
         "text_color": "#000000"
       }
     },
+    "column_product_collection_HDP6Rw": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "New this week",
+        "subtitle": "The Latest Styles, Just In.",
+        "collection": "ss25-collection",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/new-in",
+        "width": "wrapper--full"
+      }
+    },
     "section_list_collections_products_wg4cKG": {
       "type": "section-list-collections-products",
       "blocks": {
@@ -402,18 +414,6 @@
         "padding_bottom": 36
       }
     },
-    "column_product_collection_HDP6Rw": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "New this week",
-        "subtitle": "The Latest Styles, Just In.",
-        "collection": "ss25-collection",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full"
-      }
-    },
     "section_product_masonry_Wia8FW": {
       "type": "section-product-masonry",
       "disabled": true,
@@ -440,8 +440,8 @@
     "collection_card_column_Ydrkex",
     "collection_card_column_8D4rTM",
     "section_shop_by_color_yWCBP4",
-    "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
+    "section_list_collections_products_wg4cKG",
     "section_product_masonry_Wia8FW"
   ]
 }
