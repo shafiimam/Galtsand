@@ -25279,6 +25279,9 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
 .select-popout--small {
   max-width: 120px;
 }
+.swatch__button swatch__button--square span {
+  color: black;
+}
 .select-popout__option:not(.sold-out):not(.unavailable):not(:disabled)
   .visually-hidden,
 .select-popout__option:not(.sold-out):not(.unavailable):not(:disabled)
