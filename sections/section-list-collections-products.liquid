@@ -24,14 +24,14 @@
 >
   <div class="{{ section.settings.width }}">
     {%- if section.settings.title != blank -%}
-      <h1 class="heading heading-lg" style="color: {{ section.settings.content_color }};">
+      <h1 class="heading heading-lg" style="color: {{ section.settings.content_color }}; text-align: center;">
         {{ section.settings.title }}
       </h1>
     {%- endif -%}
     {% if section.settings.subttitle %}
       <p
         class="font-body text-base"
-        style="color: {{ section.settings.content_color }};"
+        style="color: {{ section.settings.content_color }}; text-align: center;"
       >
         {{ section.settings.subttitle }}
       </p>
