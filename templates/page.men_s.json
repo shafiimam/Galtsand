@@ -69,7 +69,7 @@
           "settings": {
             "kicker": "WELCOME, GENTLEMEN",
             "title": "Men’s Collections.",
-            "text": "<p>Galtsand has a legacy of quality and excellence.</p>",
+            "text": "<p> Engineered for Performance, Designed for Life</p>",
             "font_size": 5,
             "text_columns": 2,
             "align_text": "text-left",
@@ -120,11 +120,11 @@
       "custom_css": [],
       "settings": {
         "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Performance, Style & Versatility",
         "collection": "mens-tops",
         "show_more_button": true,
         "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
+        "button_link": "shopify://collections/mens-best-sellers",
         "width": "wrapper--full"
       }
     },
@@ -243,7 +243,7 @@
       "type": "column-product-collection",
       "settings": {
         "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Fresh Styles, Peak Performance",
         "collection": "new-in",
         "show_more_button": true,
         "button_label": "Show more",
@@ -319,12 +319,10 @@
         "collection_9jBt6c",
         "button_RB9wME"
       ],
-      "custom_css": [
-        "h2 {color: #e6dbc4;}"
-      ],
+      "custom_css": [],
       "settings": {
-        "title": "Shop by activity section",
-        "subttitle": "Handcrafted by our expert designers.",
+        "title": "Shop by activity",
+        "subttitle": "Gear Up for Every Challenge",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
         "grid": 3,
@@ -410,11 +408,11 @@
       ],
       "settings": {
         "title": "Shop by colors",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Find Your Perfect Shade",
         "width": "wrapper--full",
         "remove_top_padding": false,
         "background_color": "#ffffff",
-        "text_color": "#102345"
+        "text_color": "#000000"
       }
     },
     "section_product_masonry_Wia8FW": {
@@ -428,9 +426,9 @@
         "product3": "garment-washed-pullover-hoodie",
         "product4": "heritage-jogger-with-cargo-pocket",
         "width": "wrapper--full",
-        "background_color": "#000000",
-        "text_color": "#ffffff",
-        "product_color": "#ffffff"
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "product_color": "#000000"
       }
     }
   },

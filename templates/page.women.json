@@ -67,9 +67,9 @@
         "text_PM8CcR": {
           "type": "text",
           "settings": {
-            "kicker": "",
+            "kicker": "WELCOME, LADIES",
             "title": "Women’s Collections",
-            "text": "<p>Galtsand has a legacy of quality and excellence.</p>",
+            "text": "<p>Strength, Style & Performance in Every Move</p>",
             "font_size": 5,
             "text_columns": 2,
             "align_text": "text-left",
@@ -115,46 +115,58 @@
         "padding_bottom": 36
       }
     },
+    "column_product_collection_bp8UTm": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Our Most Loved & Top-Rated Styles.",
+        "collection": "bestsellers",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/bestsellers",
+        "width": "wrapper--full"
+      }
+    },
     "collection_card_column_Ydrkex": {
       "type": "collection-card-column",
       "blocks": {
         "card_iPa633": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Outerwear",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "image": "shopify://shop_images/untitled_1.png",
+            "title": "Streetwear",
+            "subtitle": "Blurring the lines between athletic performance and everyday fashion, Galtsand Streetwear is designed for those who move with confidence. Crafted with premium, breathable fabrics, our collection blends modern aesthetics, comfort, and versatility, making it perfect for the gym, the streets, and everywhere in between.",
+            "button_link": "shopify://collections/new-arrivals-women",
             "button_label": "Explore"
           }
         },
         "card_633Bba": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Midlayers",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "image": "shopify://shop_images/untitled_c3fb54fb-0b61-4c48-a097-5053b3df1d90.png",
+            "title": "Equestrian",
+            "subtitle": "Designed for riders who demand comfort, flexibility, and style, Galtsand Equestrian apparel blends technical innovation with timeless equestrian aesthetics. Engineered with breathable, moisture-wicking fabrics, our collection ensures optimal performance in and out of the saddle—whether training, competing, or enjoying a casual ride.",
+            "button_link": "shopify://collections/equestrian",
             "button_label": "Explore"
           }
         },
         "card_CxRLyT": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
-            "title": "Baselayers",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "image": "shopify://shop_images/untitled_7a0ef405-bc59-49ef-886f-35aac0863619.png",
+            "title": "Yoga & Running",
+            "subtitle": "Designed for athletes and wellness enthusiasts, Galtsand Yoga & Running apparel delivers the perfect blend of comfort, flexibility, and performance. Whether you're flowing through a yoga session or pushing your limits on a run, our pieces are made with breathable, moisture-wicking fabrics to keep you cool, dry, and unrestricted in every movement.",
+            "button_link": "shopify://collections/yoga",
             "button_label": "Explore"
           }
         },
         "card_zHDFNg": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-851.png",
+            "image": "shopify://shop_images/untitled_3.png",
             "title": "Accessories",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
+            "subtitle": "Complete your active lifestyle with Galtsand Accessories, designed for functionality, durability, and effortless style. Whether you need a versatile gym bag, a sleek crossbody, or an everyday carryall, our accessories are built to complement your performance and keep up with your day.",
+            "button_link": "shopify://collections/bags",
             "button_label": "Explore"
           }
         }
@@ -165,7 +177,6 @@
         "card_CxRLyT",
         "card_zHDFNg"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "#660f28",
         "width": "wrapper--full"
@@ -301,23 +312,11 @@
       ],
       "settings": {
         "title": "Shop by colors",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Style, Performance & Versatility in Every Color.",
         "width": "wrapper--full",
         "remove_top_padding": false,
         "background_color": "#ffffff",
         "text_color": "#000000"
-      }
-    },
-    "column_product_collection_bp8UTm": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
-        "collection": "shorts-womens",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/best-sellers",
-        "width": "wrapper--full"
       }
     },
     "section_list_collections_products_wg4cKG": {
@@ -328,24 +327,7 @@
           "settings": {
             "collection": "leggings",
             "title": "Equestrian",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "last",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
-          }
-        },
-        "collection_iBkUYd": {
-          "type": "collection",
-          "settings": {
-            "collection": "womens-street",
-            "title": "Tennis",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "link_text": "Designed for riders who demand comfort, flexibility, and style",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -362,13 +344,30 @@
           "settings": {
             "collection": "bras",
             "title": "Outdoor",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "link_text": "Durable, High-Performance Gear Designed for Outdoor Adventures. Stay Comfortable, Move Freely, and Conquer Every Terrain.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "first",
+            "button_size": "btn--long",
+            "button_style": "btn",
+            "button_color": "btn--white"
+          }
+        },
+        "collection_iBkUYd": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-street",
+            "title": "Tennis",
+            "link_text": "Whether you're training or competing, our gear keeps you cool, flexible, and ready for every match.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last",
             "button_size": "btn--long",
             "button_style": "btn",
             "button_color": "btn--white"
@@ -384,16 +383,14 @@
       },
       "block_order": [
         "collection_9jBt6c",
-        "collection_iBkUYd",
         "collection_V9bRRL",
+        "collection_iBkUYd",
         "button_RB9wME"
       ],
-      "custom_css": [
-        "h2 {color: #e6dbc4;}"
-      ],
+      "custom_css": [],
       "settings": {
-        "title": "Shop by activity section",
-        "subttitle": "Handcrafted by our expert designers.",
+        "title": "Shop by activity",
+        "subttitle": "Gear Up for Every Move",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
         "grid": 3,
@@ -409,7 +406,7 @@
       "type": "column-product-collection",
       "settings": {
         "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "The Latest Styles, Just In.",
         "collection": "equestrian",
         "show_more_button": true,
         "button_label": "Show more",
@@ -421,7 +418,7 @@
       "type": "section-product-masonry",
       "settings": {
         "title": "Monthly Featured Lookbook/Edit",
-        "subtitle": "Women's outdoor collection - replace images here with new in items from new drop.",
+        "subtitle": "Designed for explorers, athletes, and outdoor enthusiasts, the Galtsand Women's Outdoor Collection blends functionality, comfort, and modern style. Whether you're hiking trails, running through nature, or embracing the elements, our apparel is crafted with lightweight, moisture-wicking, and weather-resistant fabrics to keep you moving with confidence and ease.",
         "image": "shopify://shop_images/galtsand-model.png",
         "product1": "airflow-leggings",
         "product2": "classic-tote-bag",
@@ -438,10 +435,10 @@
     "main",
     "section_richtext_z49gFw",
     "section_double_ae83ar",
+    "column_product_collection_bp8UTm",
     "collection_card_column_Ydrkex",
     "collection_card_column_8D4rTM",
     "section_shop_by_color_yWCBP4",
-    "column_product_collection_bp8UTm",
     "section_list_collections_products_wg4cKG",
     "column_product_collection_HDP6Rw",
     "section_product_masonry_Wia8FW"

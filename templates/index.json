@@ -277,7 +277,7 @@
         "button_color": "btn--white",
         "video": "shopify://files/videos/for-TV-Long-format.MP4",
         "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
-        "image_background_color": "#ffffff",
+        "image_background_color": "#292623",
         "width": "wrapper--none"
       }
     },
@@ -440,18 +440,18 @@
             "title": "EVERYDAY ELEVATED",
             "content": "Essential styles that keep you comfortable, taken to the next level",
             "button_text": "EXPLORE MORE",
-            "button_link": "shopify://collections/heritage",
+            "button_link": "shopify://collections/ss25-collection",
             "text_alignment": "text-left"
           }
         },
         "collection_card_C3RPC4": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/202308150647_a0995fc3-6499-4014-a049-d4fb57d9c859.jpg",
+            "image": "shopify://shop_images/12.4_0164.jpg",
             "title": "PEAK PERFORMANCE",
             "content": "Designed for endurance, elevated performance wear for every challenge.",
             "button_text": "explore more",
-            "button_link": "shopify://collections/signature-studio",
+            "button_link": "shopify://collections/all",
             "text_alignment": "text-left"
           }
         },
@@ -462,7 +462,7 @@
             "title": "ACTIVE ELEGANCE",
             "content": "Blending high-performance fabrics with elevated aesthetics.",
             "button_text": "Explore more",
-            "button_link": "shopify://collections/signature-studio",
+            "button_link": "shopify://collections/active-ellegance",
             "text_alignment": "text-left"
           }
         }

@@ -147,7 +147,7 @@
         "font_family": "body",
         "title_size": 8,
         "accent_size": 3,
-        "width": "wrapper",
+        "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -157,13 +157,13 @@
       "settings": {
         "title": "MADE FOR EVERY JOURNEY",
         "subtitle": "Versatile, durable, and heritage-inspired essentials designed for seamless transitions from outdoor adventures to everyday life.",
-        "icon_1": "shopify://shop_images/Medal_1.png",
+        "icon_1": "shopify://shop_images/Medal_1_c34b1258-dd6a-487e-8127-96a2379b81d1.png",
         "title_1": "Superior Fabric Quality",
         "description_1": "We use high-grade materials like soft cotton, recycled polyester, and premium blends for unmatched comfort.",
-        "icon_2": "shopify://shop_images/HandHeart.png",
+        "icon_2": "shopify://shop_images/HandHeart_1.png",
         "title_2": "Wide Range of Styles",
         "description_2": "From outerwear, to loungewear, to smart casual wear, we offer a variety of options to suit any style.",
-        "icon_3": "shopify://shop_images/Confetti.png",
+        "icon_3": "shopify://shop_images/Vector_fd8d4886-3774-4d6a-a123-788010438f61.png",
         "title_3": "Versatility for Any Occasion",
         "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings."
       }
@@ -231,8 +231,8 @@
           "settings": {
             "image": "shopify://shop_images/untitled6_2aacc491-d037-4b09-b434-a1be8acd0a43.jpg",
             "heading": "Trending Colors",
-            "description": "Explore vibrant hues for summer or earthy tones for fall",
-            "link": "/collections/trending-colors"
+            "description": "Explore fresh pastels for spring, vibrant hues for summer, or earthy tones for fall.",
+            "link": "shopify://collections/trending-colors"
           }
         },
         "trend_block_Jjh9CK": {
@@ -241,7 +241,7 @@
             "image": "shopify://shop_images/GALTSANDEQUESTRIAN-145.jpg",
             "heading": "Seasonal Design Inspirations",
             "description": "Unique prints inspired by nature, art, and pop culture",
-            "link": "/collections/seasonal-designs"
+            "link": "shopify://collections/spring-essentials"
           }
         }
       },
