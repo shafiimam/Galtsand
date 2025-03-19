@@ -65,6 +65,7 @@
       "blocks": {
         "wishlist_plus_wishlist_page_section_tk3Cq6": {
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-page-section/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "disabled": true,
           "settings": {}
         }
       },
