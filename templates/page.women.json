@@ -406,7 +406,7 @@
       "type": "column-product-collection",
       "settings": {
         "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "The Latest Styles, Just In.",
         "collection": "equestrian",
         "show_more_button": true,
         "button_label": "Show more",
@@ -418,7 +418,7 @@
       "type": "section-product-masonry",
       "settings": {
         "title": "Monthly Featured Lookbook/Edit",
-        "subtitle": "Women's outdoor collection - replace images here with new in items from new drop.",
+        "subtitle": "Designed for explorers, athletes, and outdoor enthusiasts, the Galtsand Women's Outdoor Collection blends functionality, comfort, and modern style",
         "image": "shopify://shop_images/galtsand-model.png",
         "product1": "airflow-leggings",
         "product2": "classic-tote-bag",
