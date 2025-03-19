@@ -54,10 +54,13 @@
             {% endif %}
             {% if section.settings.content != blank %}
               <p
-                class="sub_heading_text {% if section.settings.sub_align_text == 'title-left' %}sub-heading-left{% elsif section.settings.sub_align_text == 'title-center' %}sub-heading-center{% endif %} {{ content_font_size_class }}"
+                class="sub_heading_text mb-r8 {% if section.settings.sub_align_text == 'title-left' %}sub-heading-left{% elsif section.settings.sub_align_text == 'title-center' %}sub-heading-center{% endif %} {{ content_font_size_class }}"
               >
                 {{ section.settings.content | escape }}
               </p>
+            {% endif %}
+            {% if section.settings.button_label != blank %}
+              <a href="{{ section.settings.button_url }}" class="btn {{ section.settings.button_style }} {{ section.settings.button_size }} {{ section.settings.button_color }}">{{ section.settings.button_label }}</a>
             {% endif %}
           </div>
         </div>
@@ -171,6 +174,54 @@
         { "value": "align--bottom-left", "label": "Bottom left" },
         { "value": "align--bottom-center", "label": "Bottom center" },
         { "value": "align--bottom-right", "label": "Bottom right" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
       ]
     },
     {

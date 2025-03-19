@@ -13,6 +13,19 @@
       "id": "subtitle",
       "label": "Section Subtitle",
       "default": "Stay ahead of the curve with the latest t-shirt trends"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper", "label": "Wrapper" },
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
     }
   ],
   "blocks": [
@@ -73,27 +86,8 @@
 {% endschema %}
 
 <style>
-  .seasonal-tshirt-section {
-    background-color: #ffffff;
-    padding: 40px;
-    text-align: left;
-  }
-  .seasonal-tshirt-section h2 {
-    font-family: 'Gambarino';
-    letter-spacing: 1px;
-    padding-left: 5%;
-    color: #000000;
-    font-size: 62px;
-    margin-bottom: 0px;
-
-    {% comment %} font-weight: bold; {% endcomment %}
-    text-transform: none;
-  }
-  .seasonal-tshirt-section p {
-    padding-left: 5%;
-    color: #000000;
-    font-size: 14px;
-    /* font-weight: bold; */
+  .seasonal-tshirt-section{
+    padding-block: 50px;
   }
   .trend-container {
     display: flex;
@@ -103,7 +97,6 @@
   }
   .trend-box {
     border: 2px solid #000000;
-    /* background-color: white; */
     width: 46%;
     padding: 0;
     text-align: left;
@@ -115,10 +108,11 @@
     width: 100%;
     height: 860px; /* Set a fixed height to maintain uniformity */
     object-fit: cover; /* Ensures the image covers the area properly */
-    padding: 20px;
+    padding: var(--gutter);
   }
   .trend-content {
-    padding: 20px;
+    padding-inline: var(--gutter);
+    padding-block-end: var(--gutter);
   }
   .trend-content h3 {
     font-family: 'Gambarino';
@@ -128,13 +122,6 @@
     letter-spacing: 1px;
     {% comment %} font-weight: bold; {% endcomment %}
     margin: 0;
-  }
-  .trend-content p {
-    font-family: "Inter Tight";
-    padding-left: 0%;
-    color: #000000;
-    font-size: 14px;
-    margin-top: 5px;
   }
   @media (max-width: 768px) {
     .trend-container {
@@ -152,35 +139,11 @@
         height: 350px;
     }
   }
-
-  {% comment %} .trend-box:hover {
-    transform: scale(0.05);
-  } {% endcomment %}
-  .trend-box a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    height: 100%;
-  }
-  .trend-content {
-    padding: 20px;
-  }
-  .trend-content h3 {
-    color: #1E2B50;
-    font-size: 20px;
-    /* font-weight: bold; */
-    margin: 0;
-  }
-  .trend-content p {
-    color: #1E2B50;
-    font-size: 14px;
-    margin-top: 5px;
-  }
 </style>
 
-<div class="seasonal-tshirt-section">
-  <h2>{{ section.settings.title }}</h2>
-  <p>{{ section.settings.subtitle }}</p>
+<div class="seasonal-tshirt-section {{ section.settings.width }}">
+  <h2 class="heading-size-10 mb-r2 text-center">{{ section.settings.title }}</h2>
+  <p class="body-size-5 mb-r8 text-center">{{ section.settings.subtitle }}</p>
   <div class="trend-container">
     {% for block in section.blocks %}
       <div class="trend-box">
@@ -191,8 +154,8 @@
           <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.heading }}">
         {% endif %}
         <div class="trend-content">
-          <h3>{{ block.settings.heading }}</h3>
-          <p>{{ block.settings.description }}</p>
+          <h3 class="heading-size-7 mb-r4">{{ block.settings.heading }}</h3>
+          <p class="body-size-5 mb-r2">{{ block.settings.description }}</p>
         </div>
         {% if block.settings.link != blank %}
           </a>
