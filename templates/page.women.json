@@ -143,9 +143,9 @@
         "card_633Bba": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/untitled_c3fb54fb-0b61-4c48-a097-5053b3df1d90.png",
-            "title": "Equestrian",
-            "subtitle": "Designed for riders who demand comfort, flexibility, and style, Galtsand Equestrian apparel blends technical innovation with timeless equestrian aesthetics. Engineered with breathable, moisture-wicking fabrics, our collection ensures optimal performance in and out of the saddle—whether training, competing, or enjoying a casual ride.",
+            "image": "shopify://shop_images/untitled_1_cb36ce9b-dca1-4af4-8f1d-bd4bb93dc533.png",
+            "title": "Athleisure",
+            "subtitle": "Designed for athletes and wellness enthusiasts, our athleisure apparel delivers the perfect blend of comfort, flexibility, and performance. Whether you're flowing through a yoga session or pushing your limits on a run, our pieces are made with breathable, moisture-wicking fabrics to keep you cool, dry, and unrestricted in every movement.",
             "button_link": "shopify://collections/equestrian",
             "button_label": "Explore"
           }
@@ -154,7 +154,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/untitled_7a0ef405-bc59-49ef-886f-35aac0863619.png",
-            "title": "Yoga & Running",
+            "title": "Running",
             "subtitle": "Designed for athletes and wellness enthusiasts, Galtsand Yoga & Running apparel delivers the perfect blend of comfort, flexibility, and performance. Whether you're flowing through a yoga session or pushing your limits on a run, our pieces are made with breathable, moisture-wicking fabrics to keep you cool, dry, and unrestricted in every movement.",
             "button_link": "shopify://collections/yoga",
             "button_label": "Explore"
@@ -326,8 +326,8 @@
           "type": "collection",
           "settings": {
             "collection": "leggings",
-            "title": "Equestrian",
-            "link_text": "Designed for riders who demand comfort, flexibility, and style",
+            "title": "Leggings",
+            "link_text": "Our most-loved category, crafted for ultimate comfort, performance, and a flawless fit that moves with you.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -343,7 +343,7 @@
           "type": "collection",
           "settings": {
             "collection": "bras",
-            "title": "Outdoor",
+            "title": "Bras",
             "link_text": "Durable, High-Performance Gear Designed for Outdoor Adventures. Stay Comfortable, Move Freely, and Conquer Every Terrain.",
             "enable_item": true,
             "text": "",
@@ -389,7 +389,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Shop by activity",
+        "title": "Trending Now",
         "subttitle": "Gear Up for Every Move",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
