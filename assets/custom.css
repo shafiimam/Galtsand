@@ -1,7 +1,7 @@
 :root {
   --font-family-heading: "Gambarino";
   --font-family-cursive: "Gambarino";
-  --font-family-accent: "fakt-Normal";
+  --font-family-accent: "Fakt";
   --font-family-secondary: "Inter Tight";
   --font-family-exmouth: "exmouth";
   --heading-size-xl: clamp(40px, 4vw, 120px);
@@ -105,8 +105,6 @@
 }
 
 h4.blog__heading.text-left {
-  color: #660f28;
-  /* font-family: "EngraversGothicBT-Heavy"; */
   font-size: clamp(36px, 4vw, 100px);
   font-style: normal;
   font-weight: 700;
@@ -178,7 +176,6 @@ h3.article__item-title {
 }
 .article__item-content p {
   color: #000000;
-  /* font-family: "EngraversGothicBT-Heavy"; */
   font-size: 20px;
   font-style: normal;
   line-height: 80%;

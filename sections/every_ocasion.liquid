@@ -13,7 +13,20 @@
       "id": "subtitle",
       "label": "Section Subtitle",
       "default": "Our collection is versatile enough to cater to every aspect of your lifestyle"
-    }
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper", "label": "Wrapper" },
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
   ],
   "blocks": [
     {
@@ -122,28 +135,7 @@
 {% endschema %}
 
 <style>
-  .occasion-section {
-    background-color: #ffffff;
-    padding: 50px;
-    text-align: center;
-  }
-  .occasion-section h2 {
-    /* font-family: 'EngraversGothic'; */
-    text-align: left;
-    color: #000000;
-    font-size: 7.5em;
-    /* font-weight: bold; */
-    text-transform: none;
-    margin-bottom: 0;
-  }
-  .occasion-section p {
-    /* font-family: 'EngraversGothic'; */
-    /* text-align: left; */
-    color: #000000;
-    font-size: 1.4em;
-    margin-bottom: 70px;
-  }
-  .occasion-section p:nth-child(2){
+  .occasion-section p:nth-child(2) {
     text-align: left;
   }
 
@@ -175,23 +167,8 @@
   /* .occasion-content:nth-child(1){
     text-align: right;
   } */
-  .occasion-content p:nth-child(1){
+  .occasion-content p:nth-child(1) {
     text-align: right !important;
-  }
-
-  .occasion-content h3 {
-    font-family: 'Gambarino';
-    color: #000000;
-    font-size: 76px;
-    {% comment %} font-weight: bold;
-      {% endcomment %}
-       margin-bottom: 0px;
-  }
-
-  .occasion-content p {
-    font-family: 'Inter Tight';
-    color: #000000;
-    font-size: 16px;
   }
 
   .occasion-box a {
@@ -204,22 +181,7 @@
   /* Mobile View: Stacks Content, Adjusts Font Size and Spacing */
   @media (max-width: 768px) {
     .occasion-section {
-
       padding: 20px;
-    }
-
-    .occasion-section h2 {
-      line-height: 0.8;
-      font-size: 48px;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-
-    .occasion-section p {
-      font-size: 18px;
-      text-align: left;
-      margin-bottom: 40px;
-      line-height: 1.2;
     }
 
     .occasion-box {
@@ -232,7 +194,6 @@
       width: 100%;
       height: auto;
     }
-
     .occasion-content {
       width: 100%;
       text-align: left;
@@ -254,7 +215,6 @@
       font-size: 16px;
     }
 
-    /* Adjust only the second block */
     .occasion-box:nth-child(2) {
       display: flex;
       flex-direction: column-reverse;
@@ -262,9 +222,9 @@
   }
 </style>
 
-<div class="occasion-section">
-  <h2>{{ section.settings.title }}</h2>
-  <p>{{ section.settings.subtitle }}</p>
+<div class="occasion-section {{ section.settings.width }}">
+  <h2 class="heading-size-10 mb-r2 text-left">{{ section.settings.title }}</h2>
+  <p class="body-size-5 mb-r8">{{ section.settings.subtitle }}</p>
   <div class="occasion-container">
     <!-- Casual Everyday Wear (Image Left, Text Right) -->
     <div class="occasion-box">
@@ -272,11 +232,13 @@
         <img
           src="{{ section.blocks[0].settings.image | img_url: 'master' }}"
           alt="{{ section.blocks[0].settings.heading }}"
+          width="100%"
+          height="100%"
         >
       {% endif %}
       <div class="occasion-content">
-        <h3>{{ section.blocks[0].settings.heading }}</h3>
-        <p>{{ section.blocks[0].settings.description }}</p>
+        <h3 class="heading-size-10 mb-r2">{{ section.blocks[0].settings.heading }}</h3>
+        <p class="body-size-5 mb-r8">{{ section.blocks[0].settings.description }}</p>
         {% if section.blocks[0].settings.link != blank %}
           <a href="{{ section.blocks[0].settings.link }}">Learn More</a>
         {% endif %}
@@ -286,8 +248,8 @@
     <!-- Workout and Athleisure (Text Left, Image Right) -->
     <div class="occasion-box">
       <div class="occasion-content">
-        <h3>{{ section.blocks[1].settings.heading }}</h3>
-        <p>{{ section.blocks[1].settings.description }}</p>
+        <h3 class="heading-size-10 mb-r2">{{ section.blocks[1].settings.heading }}</h3>
+        <p class="body-size-5 mb-r8">{{ section.blocks[1].settings.description }}</p>
         {% if section.blocks[1].settings.link != blank %}
           <a href="{{ section.blocks[1].settings.link }}">Learn More</a>
         {% endif %}
@@ -296,6 +258,8 @@
         <img
           src="{{ section.blocks[1].settings.image | img_url: 'master' }}"
           alt="{{ section.blocks[1].settings.heading }}"
+          width="100%"
+          height="100%"
         >
       {% endif %}
     </div>
@@ -306,11 +270,14 @@
         <img
           src="{{ section.blocks[2].settings.image | img_url: 'master' }}"
           alt="{{ section.blocks[2].settings.heading }}"
+          width="100%"
+          height="100%"
+          s
         >
       {% endif %}
       <div class="occasion-content">
-        <h3>{{ section.blocks[2].settings.heading }}</h3>
-        <p>{{ section.blocks[2].settings.description }}</p>
+        <h3 class="heading-size-10 mb-r2">{{ section.blocks[2].settings.heading }}</h3>
+        <p class="body-size-5 mb-r8">{{ section.blocks[2].settings.description }}</p>
         {% if section.blocks[2].settings.link != blank %}
           <a href="{{ section.blocks[2].settings.link }}">Learn More</a>
         {% endif %}

@@ -15078,7 +15078,7 @@ body:not(.theme-animate-hover)
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
   text-transform: none;
   letter-spacing: normal;
 }
@@ -15088,7 +15088,7 @@ body:not(.theme-animate-hover)
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
   text-transform: none;
   letter-spacing: normal;
 }
@@ -15098,7 +15098,7 @@ body:not(.theme-animate-hover)
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
   text-transform: none;
   letter-spacing: normal;
 }
@@ -15108,7 +15108,7 @@ body:not(.theme-animate-hover)
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
   text-transform: none;
   letter-spacing: normal;
 }
@@ -17405,8 +17405,7 @@ Collection grid item
   padding-right: var(--gutter);
   padding-left: var(--gutter);
 }
-.collection-grid-item .text-btn-arrow-right:after,
-.article-read.text-btn-arrow-right:after {
+.collection-grid-item .text-btn-arrow-right:after {
   animation: move-right 2s infinite ease-in-out;
 }
 .collection-grid-item .image__hero__frame {
@@ -17418,25 +17417,22 @@ Collection grid item
 }
 .collection-grid-item__subtitle,
 .collection-grid-item__btn {
-  /* transform: translateY(calc(100% + var(--image-bottom))); */
-  opacity: 1;
-  /* transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
-    opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; */
+  transform: translateY(calc(100% + var(--image-bottom)));
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
-/* .link-over-image:hover .collection-grid-item__subtitle,
+.link-over-image:hover .collection-grid-item__subtitle,
 .link-over-image:hover .collection-grid-item__btn {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
-    opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.09s;
-} */
-/* .collection-grid-item__subtitle {
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.09s;
+}
+.collection-grid-item__subtitle {
   transform: translateY(calc(-100% - var(--image-bottom)));
-} */
+}
 .collection-grid-item__title {
   margin-bottom: 0;
   margin-top: 0;
-  font-family: var(--font-family-accent);
 }
 /* ============================================================================
  Icon-columns
@@ -18529,15 +18525,14 @@ Collection grid item
 .footer__title {
   padding-bottom: 10px;
   margin-bottom: 0;
-  font-family: "EngraversGothicBT-Heavy";
+  font-family: var(--FONT-STACK-ACCENT);
   font-style: var(--FONT-STYLE-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
-  text-transform: none;
+  text-transform: var(--FONT-ACCENT-TRANSFORM);
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: 16px;
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-normal);
-  text-transform: uppercase;
 }
 p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   /* font-size: 1.3em !important; */
@@ -20340,6 +20335,7 @@ input[type="number"].filter__price__input {
   position: relative;
   color: var(--block-text-color);
   height: 100%;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .collection-split__block {
@@ -20529,7 +20525,7 @@ body.focus-enabled .subcollection__link:focus {
   #Breadcrumbs
 ============================================================================== */
 .breadcrumb {
-  font-family: "EngraversGothicBT-Heavy";
+  font-family: var(--FONT-STACK-ACCENT);
   font-style: var(--FONT-STYLE-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
@@ -25092,7 +25088,6 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
   padding-top: calc(var(--inner) / 2);
 }
 .quickview button {
-  font-family: "EngraversGothicBT-Heavy" !important;
   position: relative;
 }
 .quickview button.loading .btn-state-ready {
