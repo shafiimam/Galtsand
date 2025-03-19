@@ -360,8 +360,8 @@
           "type": "collection",
           "settings": {
             "collection": "womens-street",
-            "title": "Tennis",
-            "link_text": "Whether you're training or competing, our gear keeps you cool, flexible, and ready for every match.",
+            "title": "Streetwear",
+            "link_text": "Our signature streetwear, where timeless design meets modern edge for effortless everyday style.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
