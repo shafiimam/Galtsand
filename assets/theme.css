@@ -26350,7 +26350,7 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
   }
   @supports (aspect-ratio: auto) {
     .md\:aspect-\[--wh-ratio\] {
-      aspect-ratio: var(--wh-ratio);
+      aspect-ratio: 0.8 / 1.2;
     }
   }
   @supports not (aspect-ratio: auto) {
