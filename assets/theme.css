@@ -12880,7 +12880,7 @@ html.supports-no-cookies .supports-cookies {
   width: auto;
   height: auto;
   margin: 0;
-  color: var(--secondary);
+  color: black;
   background-color: var(--bg);
   padding: 20px;
   z-index: 50000;
