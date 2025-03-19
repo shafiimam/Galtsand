@@ -300,7 +300,7 @@
       ],
       "settings": {
         "title": "Shop by colors",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Style, Performance & Versatility in Every Color.",
         "width": "wrapper--full",
         "remove_top_padding": false,
         "background_color": "#ffffff",
@@ -311,7 +311,7 @@
       "type": "column-product-collection",
       "settings": {
         "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Our Most Loved & Top-Rated Styles.",
         "collection": "bestsellers",
         "show_more_button": true,
         "button_label": "Show more",
@@ -327,7 +327,7 @@
           "settings": {
             "collection": "leggings",
             "title": "Equestrian",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "link_text": "Designed for riders who demand comfort, flexibility, and style",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -344,7 +344,7 @@
           "settings": {
             "collection": "bras",
             "title": "Outdoor",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "link_text": "Durable, High-Performance Gear Designed for Outdoor Adventures. Stay Comfortable, Move Freely, and Conquer Every Terrain.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -361,7 +361,7 @@
           "settings": {
             "collection": "womens-street",
             "title": "Tennis",
-            "link_text": "Cursus pellentesque pellentesque turpis odio vel sodales urna vitae.",
+            "link_text": "Whether you're training or competing, our gear keeps you cool, flexible, and ready for every match.",
             "enable_item": true,
             "text": "",
             "background_color": "#fcfaf7",
@@ -389,8 +389,8 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Shop by activity section",
-        "subttitle": "Handcrafted by our expert designers.",
+        "title": "Shop by activity",
+        "subttitle": "Gear Up for Every Move",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
         "grid": 3,
