@@ -120,7 +120,7 @@
       "custom_css": [],
       "settings": {
         "title": "Best sellers",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Performance, Style & Versatility",
         "collection": "mens-tops",
         "show_more_button": true,
         "button_label": "Show more",
@@ -243,7 +243,7 @@
       "type": "column-product-collection",
       "settings": {
         "title": "New this week",
-        "subtitle": "Handcrafted by our expert designers.",
+        "subtitle": "Fresh Styles, Peak Performance",
         "collection": "new-in",
         "show_more_button": true,
         "button_label": "Show more",
@@ -321,7 +321,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Shop by activity section",
+        "title": "Shop by activity",
         "subttitle": "Handcrafted by our expert designers.",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
