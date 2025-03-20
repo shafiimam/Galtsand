@@ -145,13 +145,13 @@
     "icons_values_section_f8QRJJ": {
       "type": "icons_values_section",
       "settings": {
-        "icon_1": "shopify://shop_images/mdi_recycle.png",
+        "icon_1": "shopify://shop_images/Vector10.png",
         "title_1": "HERITAGE",
         "text_1": "Rooted in tradition, our pieces blend timeless design with modern innovation. Each piece is a tribute to our rich history in sportswear, crafted to honor the past while embracing the future.",
-        "icon_2": "shopify://shop_images/game-icons_eagle-head.png",
+        "icon_2": "shopify://shop_images/game-icons_eagle-head10.png",
         "title_2": "CRAFTSMANSHIP",
         "text_2": "Every stitch, fabric, and finish is chosen with care. We prioritize durability, precision, and innovation, ensuring each garment stands the test of time, both in quality and style.",
-        "icon_3": "shopify://shop_images/game-icons_shaking-hands.png",
+        "icon_3": "shopify://shop_images/game-icons_shaking-hands10.png",
         "title_3": "CONNECTION",
         "text_3": "We believe in real-world movement, human connection, and a sense of belonging. We champion presence, outdoor exploration, and the power of shared experiences."
       }
