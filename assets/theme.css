@@ -15088,7 +15088,7 @@ body:not(.theme-animate-hover)
   font-weight: var(--FONT-WEIGHT-BODY);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
   text-transform: none;
   letter-spacing: normal;
 }
