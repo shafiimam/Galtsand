@@ -20,6 +20,7 @@
         <img
           src="{{ section.settings.image_2 | img_url: 'master' }}"
           alt="Image 2"
+          id="Image-2"
           class="image-2"
           width="90%"
           data-aos="hero"
@@ -42,6 +43,11 @@
 </section>
 
 <style>
+  #Image-2 {
+     @media only screen and (max-width: 768px) {
+     width: auto;
+    }
+  }
   .about-us-header-section__main {
     max-width: 2000px;
     margin: 0 auto;
