@@ -9851,7 +9851,7 @@ input,
 textarea,
 select,
 .popout__toggle {
-  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
   color: var(--text);
 }
