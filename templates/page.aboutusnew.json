@@ -81,6 +81,9 @@
         "text_NLfjhk",
         "image_pair_YKxNzX"
       ],
+      "custom_css": [
+        "* {color: black;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/IMG_6713.jpg",
         "remove_top_padding": false,
@@ -103,7 +106,8 @@
         "text_wCmUiB"
       ],
       "custom_css": [
-        ".image-with-text-section__blocks {justify-content: center;}"
+        ".image-with-text-section__blocks {justify-content: center;}",
+        "*{color: black;}"
       ],
       "settings": {
         "image": "shopify://shop_images/IMG_6697.jpg",
