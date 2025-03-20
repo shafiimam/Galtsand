@@ -132,7 +132,7 @@
       "type": "blue_brand_value_section",
       "settings": {
         "left_image": "shopify://shop_images/IMG_6735.jpg",
-        "logo": "shopify://shop_images/Frame_7_54d7efbd-25d8-415c-9db9-52afb02f7365.png",
+        "logo": "shopify://shop_images/Frame3.png",
         "title": "Core Values",
         "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
         "button_link": "",
@@ -382,7 +382,7 @@
         "text_UN9RhY"
       ],
       "custom_css": [
-        "*{color: black;}"
+        "* {color: black;}"
       ],
       "settings": {
         "image": "shopify://shop_images/IMG_6668_1.jpg",
