@@ -345,7 +345,7 @@
             "kicker": "Great Smoky Mountains National Park, Tennessee/North Carolina",
             "title": "",
             "text": "<p><strong>Elevation:</strong> 876 ft – 6,643 ft<br/> <strong>Steps Approx.:</strong> Thousands, depending on the route—from flat boardwalks to rugged mountain trails.<br/> <strong>Difficulty:</strong> A mix of easy nature trails, moderate hikes, and strenuous backcountry treks.</p><h3><strong>Why Visit?</strong></h3><p>✅ One of the most biodiverse regions in the U.S.<br/> ✅ Rolling misty mountains, historic cabins, and cascading waterfalls<br/> ✅ A hiker’s paradise with endless trails for every skill level</p><p><strong>Pro Tip:</strong> Visit in the fall for fiery foliage, or arrive at sunrise to see the mountains wrapped in their signature morning mist.</p><p><strong>What to Wear:</strong><em>Invicta Lightweight Padded Running Jacket + Activa Short in Gray</em> Ideal for unpredictable mountain weather.</p>",
-            "font_size": 5,
+            "font_size": 6,
             "text_columns": 1,
             "align_text": "text-left",
             "text_color": "#000000",
@@ -371,6 +371,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "section_double_wKCF8n": {
+      "type": "section-double",
+      "blocks": {
+        "text_3Nd473": {
+          "type": "text",
+          "settings": {
+            "kicker": "Yellowstone National Park, Wyoming/Montana/Idaho",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 5,282 ft – 11,007 ft<br/> <strong>Steps Approx.:</strong> Ranges from easy boardwalk strolls to steep, rugged trails.<br/> <strong>Difficulty:</strong> Plenty of beginner-friendly areas, but backcountry hikes require serious experience.</p><h3><strong>Why Visit?</strong></h3><p>✅ Home to the famous Old Faithful geyser and bubbling hot springs<br/> ✅ Wildlife spotting—bison, wolves, and bears roam freely<br/> ✅ A landscape that shifts from geysers to mountains to waterfalls</p><p><strong>Pro Tip:</strong> Get up early—wildlife is most active at sunrise, and you’ll beat the crowds.</p><p><strong>What to Wear:</strong><em>Manjaro Utility Jacket + Jody Straight Leg Hiking Pant</em> Durable, weather-resistant, and perfect for long days of exploration.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_nFyFgD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Yellowstone_ational_Park_USA.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_3Nd473",
+        "image_nFyFgD"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -381,6 +435,7 @@
     "section_richtext_kAxbmD",
     "section_featured_article_TaNj9f",
     "section_double_kiVQxk",
-    "section_double_M8WMC3"
+    "section_double_M8WMC3",
+    "section_double_wKCF8n"
   ]
 }
