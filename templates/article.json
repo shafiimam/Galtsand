@@ -342,9 +342,9 @@
         "text_P3Tpgb": {
           "type": "text",
           "settings": {
-            "kicker": "Image with text",
+            "kicker": "Great Smoky Mountains National Park, Tennessee/North Carolina",
             "title": "",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p><strong>Elevation:</strong> 876 ft – 6,643 ft<br/> <strong>Steps Approx.:</strong> Thousands, depending on the route—from flat boardwalks to rugged mountain trails.<br/> <strong>Difficulty:</strong> A mix of easy nature trails, moderate hikes, and strenuous backcountry treks.</p><h3><strong>Why Visit?</strong></h3><p>✅ One of the most biodiverse regions in the U.S.<br/> ✅ Rolling misty mountains, historic cabins, and cascading waterfalls<br/> ✅ A hiker’s paradise with endless trails for every skill level</p><p><strong>Pro Tip:</strong> Visit in the fall for fiery foliage, or arrive at sunrise to see the mountains wrapped in their signature morning mist.</p><p><strong>What to Wear:</strong><em>Invicta Lightweight Padded Running Jacket + Activa Short in Gray</em> Ideal for unpredictable mountain weather.</p>",
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
