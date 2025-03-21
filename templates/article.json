@@ -450,10 +450,10 @@
         "text_qdjna8": {
           "type": "text",
           "settings": {
-            "kicker": "Image with text",
+            "kicker": "Yosemite National Park, California",
             "title": "",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "font_size": 5,
+            "text": "<p><strong>Elevation:</strong> 2,000 ft – 13,000 ft<br/> <strong>Steps Approx.:</strong> From gentle valley walks to thousands of granite steps leading to Half Dome.<br/> <strong>Difficulty:</strong> Beginner-friendly valley trails, moderate waterfall hikes, and extreme rock climbs.</p><h3><strong>Why Visit?</strong></h3><p>✅ Iconic granite cliffs like El Capitan and Half Dome<br/> ✅ Towering waterfalls, including Yosemite Falls—the highest in North America<br/> ✅ Giant sequoia groves and breathtaking alpine landscapes</p><p><strong>Pro Tip:</strong> Yosemite is one of the busiest national parks—arrive early or visit in the off-season for a more peaceful experience.</p><p><strong>What to Wear:</strong><em>Manjaro Utility Jacket + Jody Straight Leg Hiking Pant</em> Designed for rugged trails and unpredictable weather.</p>",
+            "font_size": 6,
             "text_columns": 1,
             "align_text": "text-left",
             "text_color": "#000000",
