@@ -304,7 +304,7 @@
         "progress_bar": "mobile",
         "grid_large": 4,
         "grid_medium": 3,
-        "grid_mobile": 1.2,
+        "grid_mobile": 1,
         "bg": "palette--light bg--neutral",
         "width": "wrapper--full",
         "padding_top": 36,
