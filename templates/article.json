@@ -426,80 +426,9 @@
         "padding_bottom": 36
       }
     },
-    "section_double_WptGpm": {
-      "type": "section-double",
-      "blocks": {
-        "image_tmQqPa": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Yosemite_National_Park.png",
-            "overlay_opacity": 15,
-            "overlay_color": "#ffffff",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-center",
-            "text_color": "text--white",
-            "link_text": "",
-            "link": "",
-            "button_color": "btn--white",
-            "button_style": "btn"
-          }
-        },
-        "text_qdjna8": {
-          "type": "text",
-          "settings": {
-            "kicker": "Yosemite National Park, California",
-            "title": "",
-            "text": "<p><strong>Elevation:</strong> 2,000 ft – 13,000 ft<br/> <strong>Steps Approx.:</strong> From gentle valley walks to thousands of granite steps leading to Half Dome.<br/> <strong>Difficulty:</strong> Beginner-friendly valley trails, moderate waterfall hikes, and extreme rock climbs.</p><h3><strong>Why Visit?</strong></h3><p>✅ Iconic granite cliffs like El Capitan and Half Dome<br/> ✅ Towering waterfalls, including Yosemite Falls—the highest in North America<br/> ✅ Giant sequoia groves and breathtaking alpine landscapes</p><p><strong>Pro Tip:</strong> Yosemite is one of the busiest national parks—arrive early or visit in the off-season for a more peaceful experience.</p><p><strong>What to Wear:</strong><em>Manjaro Utility Jacket + Jody Straight Leg Hiking Pant</em> Designed for rugged trails and unpredictable weather.</p>",
-            "font_size": 6,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "text_color": "#000000",
-            "button_text": "",
-            "button_url": "",
-            "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
-            "bg_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_tmQqPa",
-        "text_qdjna8"
-      ],
-      "settings": {
-        "height": "use_screen_one_half",
-        "brick_gutter": 0,
-        "borders": false,
-        "bg_color": "",
-        "preload_image": false,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "section_double_jPzzAW": {
       "type": "section-double",
       "blocks": {
-        "text_xY3JqC": {
-          "type": "text",
-          "settings": {
-            "kicker": "Zion National Park, Utah",
-            "title": "",
-            "text": "<p><strong>Elevation:</strong> 3,666 ft – 8,726 ft<br/> <strong>Steps Approx.:</strong> Thousands, especially on challenging trails like Angel’s Landing.<br/> <strong>Difficulty:</strong> Easy paved trails exist, but iconic hikes like The Narrows require wading through water, and Angel’s Landing is for thrill-seekers.</p><h3><strong>Why Visit?</strong></h3><p>✅ Towering red rock canyons unlike anywhere else on earth<br/> ✅ Epic hikes, from slot canyons to dizzying summits<br/> ✅ Some of the most scenic viewpoints in the Southwest</p><p><strong>Pro Tip:</strong> Planning to conquer Angel’s Landing? You’ll need a permit—secure yours early.</p><p><strong>What to Wear:</strong><em>Traverse Nylon Zip Shirt Jacket + Hiking Short</em> Breathable, lightweight, and perfect for climbing or river hiking.</p>",
-            "font_size": 6,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "text_color": "#000000",
-            "button_text": "",
-            "button_url": "",
-            "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
-            "bg_color": ""
-          }
-        },
         "image_j9HeQP": {
           "type": "image",
           "settings": {
@@ -517,11 +446,82 @@
             "button_color": "btn--white",
             "button_style": "btn"
           }
+        },
+        "text_xY3JqC": {
+          "type": "text",
+          "settings": {
+            "kicker": "Zion National Park, Utah",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 3,666 ft – 8,726 ft<br/> <strong>Steps Approx.:</strong> Thousands, especially on challenging trails like Angel’s Landing.<br/> <strong>Difficulty:</strong> Easy paved trails exist, but iconic hikes like The Narrows require wading through water, and Angel’s Landing is for thrill-seekers.</p><h3><strong>Why Visit?</strong></h3><p>✅ Towering red rock canyons unlike anywhere else on earth<br/> ✅ Epic hikes, from slot canyons to dizzying summits<br/> ✅ Some of the most scenic viewpoints in the Southwest</p><p><strong>Pro Tip:</strong> Planning to conquer Angel’s Landing? You’ll need a permit—secure yours early.</p><p><strong>What to Wear:</strong><em>Traverse Nylon Zip Shirt Jacket + Hiking Short</em> Breathable, lightweight, and perfect for climbing or river hiking.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
         }
       },
       "block_order": [
-        "text_xY3JqC",
-        "image_j9HeQP"
+        "image_j9HeQP",
+        "text_xY3JqC"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_WptGpm": {
+      "type": "section-double",
+      "blocks": {
+        "text_qdjna8": {
+          "type": "text",
+          "settings": {
+            "kicker": "Yosemite National Park, California",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 2,000 ft – 13,000 ft<br/> <strong>Steps Approx.:</strong> From gentle valley walks to thousands of granite steps leading to Half Dome.<br/> <strong>Difficulty:</strong> Beginner-friendly valley trails, moderate waterfall hikes, and extreme rock climbs.</p><h3><strong>Why Visit?</strong></h3><p>✅ Iconic granite cliffs like El Capitan and Half Dome<br/> ✅ Towering waterfalls, including Yosemite Falls—the highest in North America<br/> ✅ Giant sequoia groves and breathtaking alpine landscapes</p><p><strong>Pro Tip:</strong> Yosemite is one of the busiest national parks—arrive early or visit in the off-season for a more peaceful experience.</p><p><strong>What to Wear:</strong><em>Manjaro Utility Jacket + Jody Straight Leg Hiking Pant</em> Designed for rugged trails and unpredictable weather.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_tmQqPa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Yosemite_National_Park.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_qdjna8",
+        "image_tmQqPa"
       ],
       "settings": {
         "height": "use_screen_one_half",
@@ -545,7 +545,7 @@
     "section_double_kiVQxk",
     "section_double_M8WMC3",
     "section_double_wKCF8n",
-    "section_double_WptGpm",
-    "section_double_jPzzAW"
+    "section_double_jPzzAW",
+    "section_double_WptGpm"
   ]
 }
