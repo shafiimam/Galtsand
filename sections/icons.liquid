@@ -15,23 +15,9 @@
   .eco-conscious-section .container {
     margin: 0 auto;
   }
-
-  .eco-conscious-section h2 {
-    font-family: 'Gambarino';
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-
-  .eco-conscious-section p {
-    font-family: 'Inter Tight';
-    font-size: 1.2em;
-    color: #102345;
-    margin-bottom: 40px;
-  }
-
   .eco-features {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
@@ -51,7 +37,7 @@
   }
 
   .eco-feature {
-    padding: 20px;
+    padding: var(--gutter);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -62,13 +48,6 @@
 
   .eco-feature img {
     max-width: 69px;
-  }
-
-  .eco-feature p {
-    font-size: 1em;
-    /* color: #555; */
-    flex-grow: 1;
-    margin-bottom: 20px;
   }
 
   .learn-more {
@@ -82,7 +61,7 @@
 <section class="eco-conscious-section">
   <div class="{{ section.settings.width }}">
     {% if section.settings.heading != blank %}
-      <h2>{{ section.settings.heading }}</h2>
+      <h2 class="heading-size-6 mb-r6">{{ section.settings.heading }}</h2>
     {% endif %}
     {% if section.settings.subheading != blank %}
       <p class="subheading">{{ section.settings.subheading }}</p>
@@ -100,8 +79,8 @@
                    height="360">
             </div>
           {% endif %}
-          <h3>{{ block.settings.title }}</h3>
-          <p>{{ block.settings.description }}</p>
+          <h3 class="heading-size-6 mb-r2">{{ block.settings.title }}</h3>
+          <p class="body-size-5 mb-r6">{{ block.settings.description }}</p>
           {% if block.settings.link != blank %}
             <a href="{{ block.settings.link }}" class="learn-more">Learn More</a>
           {% endif %}

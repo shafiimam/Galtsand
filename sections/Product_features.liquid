@@ -34,15 +34,9 @@
   }
 
   .accordion-header h3 {
-    font-family: 'Gambarino';
     margin: 0;
     text-align: left;
-    /* Ensure alignment of text next to the icon */
-    font-size: 40px;
     flex-grow: 1;
-    line-height: 1.1;
-    text-transform: none;
-    letter-spacing: 1px;
   }
 
   .accordion-icon {
@@ -53,33 +47,22 @@
   .accordion-content {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-
+    gap: var(--gutter);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
 
   .div_p {
-    border: 3px solid #000000;
-    padding: 20px;
-  }
-  .accordion-content p {
-    margin: 15px 0;
-    font-size: 0.9em;
-    color: #000000;
-    font-family: 'Inter Tight';
+    border: 2px solid #000000;
+    padding: var(--gutter);
   }
 
   .accordion-item.active .accordion-content {
     max-height: 200px;
-    padding: 0 15px 35px;
+    padding-block-end: var(--gutter);
     font-size: 1.3rem;
     text-align: left;
-  }
-
-  .accordion-item.active .accordion-icon {
-    /* transform: scaleY(-1); */
   }
 
   /* Media Queries for Mobile View */
@@ -118,19 +101,6 @@
       /* Asegura que los div_p ocupen todo el ancho disponible */
     }
   }
-  .accordion-header h3 {
-    font-size: 1.7rem;
-    /* Reduce el tamaño para evitar desbordes */
-    max-width: 85%;
-    /* Ajusta para que no pase las flechas */
-    white-space: normal;
-    /* Permite que se divida en varias líneas */
-    overflow-wrap: break-word;
-    /* Asegura que se corte correctamente */
-    word-wrap: break-word;
-    /* Compatible con navegadores más antiguos */
-    line-height: 1.2;
-  }
 
   .accordion-header-content {
     display: flex;
@@ -159,7 +129,7 @@
             class="accordion-icon-img"
           >
         {% endif %}
-        <h3>{{ section.settings.title_1 }}</h3>
+        <h3 class="heading-size-6">{{ section.settings.title_1 }}</h3>
       </div>
       <span class="accordion-icon">
         <svg
@@ -186,13 +156,13 @@
       </span>
     </button>
     <div class="accordion-content">
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_11 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_12 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_13 }}</p>
       </div>
       <!-- <a href="{{ section.settings.link_1 }}" class="learn-more">Learn More</a> -->
@@ -209,7 +179,7 @@
             class="accordion-icon-img"
           >
         {% endif %}
-        <h3>{{ section.settings.title_2 }}</h3>
+        <h3 class="heading-size-6">{{ section.settings.title_2 }}</h3>
       </div>
       <span class="accordion-icon">
         <svg
@@ -236,13 +206,13 @@
       </span>
     </button>
     <div class="accordion-content">
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_21 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_22 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_23 }}</p>
       </div>
       <!-- <a href="{{ section.settings.link_2 }}" class="learn-more">Learn More</a> -->
@@ -259,7 +229,7 @@
             class="accordion-icon-img"
           >
         {% endif %}
-        <h3>{{ section.settings.title_3 }}</h3>
+        <h3 class="heading-size-6">{{ section.settings.title_3 }}</h3>
       </div>
       <span class="accordion-icon">
         <svg
@@ -286,13 +256,13 @@
       </span>
     </button>
     <div class="accordion-content">
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_31 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_32 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_33 }}</p>
       </div>
       <!-- <a href="{{ section.settings.link_3 }}" class="learn-more">Learn More</a> -->
@@ -309,7 +279,7 @@
             class="accordion-icon-img"
           >
         {% endif %}
-        <h3>{{ section.settings.title_4 }}</h3>
+        <h3 class="heading-size-6">{{ section.settings.title_4 }}</h3>
       </div>
       <span class="accordion-icon">
         <svg
@@ -336,13 +306,13 @@
       </span>
     </button>
     <div class="accordion-content">
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_41 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_42 }}</p>
       </div>
-      <div class="div_p">
+      <div class="div_p body-size-5">
         <p>{{ section.settings.description_43 }}</p>
       </div>
       <!-- <a href="{{ section.settings.link_4 }}" class="learn-more">Learn More</a> -->

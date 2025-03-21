@@ -412,3 +412,8 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   margin-block-end: 0;
   border: 2px solid;
 }
+
+.collection-split__grid .swiper {
+  margin: 0;
+  width: 100%;
+}
