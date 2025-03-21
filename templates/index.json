@@ -298,7 +298,7 @@
         "content_text_size": 5,
         "text_align": "align--middle-left",
         "button_label": "Shop Now",
-        "button_url": "",
+        "button_url": "shopify://collections/mens-tennis",
         "button_size": "btn--medium",
         "button_style": "btn--outline",
         "button_color": "btn--black",
