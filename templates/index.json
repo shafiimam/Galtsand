@@ -288,7 +288,6 @@
     },
     "section_collection_slider_yEBj8t": {
       "type": "section-collection-slider",
-      "disabled": true,
       "settings": {
         "collection": "mens-tennis",
         "product_limit": 4,
