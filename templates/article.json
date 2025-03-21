@@ -326,6 +326,7 @@
         "image_cpVrnW": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Great_Smoky_Mountains_National_Park_USA.png",
             "overlay_opacity": 15,
             "overlay_color": "#000",
             "enable_overlay_text": false,
