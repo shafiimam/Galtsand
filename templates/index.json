@@ -411,36 +411,12 @@
             "button_link": "shopify://collections/outdoor-essentials",
             "text_alignment": "text-left"
           }
-        },
-        "collection_card_GW3fht": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_fdf5bef5-6d83-4c1d-a9fa-8ba74d7d35f3.png",
-            "title": "Signature Studio",
-            "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/signature-studio",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_ztpkkw": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_fdf5bef5-6d83-4c1d-a9fa-8ba74d7d35f3.png",
-            "title": "Signature Studio",
-            "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/signature-studio",
-            "text_alignment": "text-left"
-          }
         }
       },
       "block_order": [
         "collection_card_LzPcgF",
         "collection_card_99gVRN",
-        "collection_card_nKDEHr",
-        "collection_card_GW3fht",
-        "collection_card_ztpkkw"
+        "collection_card_nKDEHr"
       ],
       "custom_css": [],
       "settings": {
