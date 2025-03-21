@@ -288,10 +288,9 @@
     },
     "section_collection_slider_yEBj8t": {
       "type": "section-collection-slider",
-      "disabled": true,
       "settings": {
         "collection": "mens-tennis",
-        "product_limit": 6,
+        "product_limit": 4,
         "title": "Men's Tennis",
         "title_text_size": 7,
         "content": "The New Tennis Collection combines modern performance with clean, everyday style. It is built to move with you from the court to the streets. Whether you're serving aces or catching up post-match, this drop brings comfort, edge, and versatility to every moment.",
