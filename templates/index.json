@@ -428,7 +428,7 @@
         "content_text_size": 5,
         "text_alignment": "text-center",
         "text_color": "#000000",
-        "width": "wrapper",
+        "width": "wrapper--narrow",
         "show_border": false,
         "overlap_over_image": false,
         "button_size": "btn--small",
