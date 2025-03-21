@@ -295,7 +295,7 @@
             "richtext": "",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "Shop Now",
+            "link_text": "",
             "link": "",
             "button_color": "btn--white",
             "button_style": "btn"
@@ -306,9 +306,7 @@
         "text_Vhzj8V",
         "image_43BMNd"
       ],
-      "custom_css": [
-        ".hero__btn {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "height": "use_screen_one_half",
         "brick_gutter": 0,
@@ -335,7 +333,7 @@
             "richtext": "",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "Shop Now",
+            "link_text": "",
             "link": "",
             "button_color": "btn--white",
             "button_style": "btn"
