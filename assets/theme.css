@@ -286,7 +286,7 @@
 .wrapper--full [data-carousel] .flickity-button,
 .wrapper--none [data-carousel] .flickity-button {
   top: auto;
-  bottom: 100%;
+  bottom: 50%;
   transform: none;
 }
 .flickity-force-arrows-top [data-carousel] .flickity-button,
@@ -16906,7 +16906,7 @@ html.js
 }
 .product-tabs .tab-link {
   font-family: var(--FONT-STACK-BODY);
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-style: var(--FONT-STYLE-BODY);
   font-weight: var(--FONT-WEIGHT---FONT-STYLE-BODY);
   font-weight: var(--FONT-WEIGHT---FONT-STYLE-BODY-BOLD);
@@ -19170,7 +19170,7 @@ body.focus-enabled .product-grid-item:focus-within {
 .product__grid__price {
   overflow: hidden;
   margin: 3px 0;
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
 }
 .text-left .product__grid__price {
@@ -19229,7 +19229,7 @@ body.focus-enabled .product-grid-item:focus-within {
 .grid__swatch__placeholder {
   margin: 0;
   padding: 0;
-  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-relaxed);
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -19776,7 +19776,7 @@ label.quatity-selector {
 }
 @media only screen and (max-width: 767px) {
   .collection-list__product {
-    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   }
   .collection-list__product:first-child {
     margin-left: max(var(--outer) - var(--gutter), 0px);

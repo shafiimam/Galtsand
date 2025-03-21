@@ -23,7 +23,7 @@
       <div class="tab-content tab-content-0">
         <div class="tab-content__holder {% if block.settings.read_more %}tab-content__holder--truncate{% endif %}" {% if block.settings.read_more %}data-truncated-holder{% endif %} >
           <div class="tab-content__inner">
-            <div class="tab-content__entry" {% if block.settings.read_more %}data-truncated-content="tab-content__entry--truncate"{% endif %}>
+            <div class="tab-content__entry body-size-5" {% if block.settings.read_more %}data-truncated-content="tab-content__entry--truncate"{% endif %}>
               {% if block.settings.read_more %}
                 {{ product_description_content }}
               {% else %}
@@ -66,7 +66,7 @@
       {%- capture tab_contents_html -%}
         {{ tab_contents_html }}
 
-        <div class="tab-content tab-content-{{ count }}">
+        <div class="tab-content tab-content-{{ count }} body-size-5">
           {{ _content }}
         </div>
       {%- endcapture -%}

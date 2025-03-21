@@ -14,7 +14,7 @@
         <h1 class="heading mb-r6 {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">{{ section.settings.title }}</h1>
       {% endif %}
       {% if section.settings.content %}
-        <p class="{{ content_font_size_class }} mb-r6" style="color: {{ section.settings.content_color }};">
+        <p class="{{ content_font_size_class }} mb-r8" style="color: {{ section.settings.content_color }};">
           {{ section.settings.content }}
         </p>
       {% endif %}
@@ -103,7 +103,7 @@
     {% if section.settings.overlap_over_image %}
       z-index: 1;
       position: absolute;
-      width: calc(100% - var(--gutter));
+      width: calc(100% - var(--gutter) * 2);
       margin-bottom: var(--gutter);
       background: rgba(0, 0, 0, 0.30);
     {% endif %}
