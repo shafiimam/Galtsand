@@ -307,7 +307,7 @@
         "image_43BMNd"
       ],
       "custom_css": [
-        "button {display: none;}"
+        ".hero__btn {display: none;}"
       ],
       "settings": {
         "height": "use_screen_one_half",
