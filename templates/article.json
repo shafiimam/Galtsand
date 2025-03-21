@@ -199,7 +199,7 @@
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
         "content_width": 2000,
-        "width": "wrapper--full",
+        "width": "wrapper",
         "padding_top": 36,
         "padding_bottom": 36
       }
