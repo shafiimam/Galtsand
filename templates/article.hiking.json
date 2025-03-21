@@ -1,0 +1,551 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blogs_masonry_FdPCCB": {
+      "type": "blogs-masonry",
+      "blocks": {
+        "article_KFmHK4": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "{{ article }}",
+            "card_title": "Article",
+            "hide_btn": true
+          }
+        }
+      },
+      "block_order": [
+        "article_KFmHK4"
+      ],
+      "settings": {
+        "blog": ""
+      }
+    },
+    "main": {
+      "type": "article",
+      "disabled": true,
+      "settings": {
+        "blog_show_meta": true,
+        "tags": false,
+        "color_bg": "palette--bright bg--bright",
+        "social": false,
+        "share_label": "Share",
+        "show_featured_image": false,
+        "image_height": "use_screen_one_third",
+        "bg_position": "center-center",
+        "sidebar_tags": false,
+        "recent": false,
+        "wh_ratio": 1.7,
+        "show_author": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_preview": true,
+        "show_link": true,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "column_product_collection_BJDDmd": {
+      "type": "column-product-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Best sellers",
+        "subtitle": "Handcrafted by our expert designers.",
+        "collection": "best-sellers",
+        "show_more_button": false,
+        "button_label": "Show more",
+        "button_link": "",
+        "width": "wrapper--full"
+      }
+    },
+    "section_hero_3f7AfU": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker_r9BLwA": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "Introducing",
+            "enable_line": false,
+            "text_size": 4
+          }
+        },
+        "heading_qHAHUU": {
+          "type": "heading",
+          "settings": {
+            "title": "Exploring America’s Most Iconic National Parks",
+            "text_size": 10
+          }
+        },
+        "text_hTWkLd": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p><strong>Your Guide to Unforgettable Trails, Epic Views, and What to Wear on Your Adventure</strong></p>",
+            "text_size": 6
+          }
+        },
+        "button_YgcADe": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "View products",
+            "link_1": "",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "Learn more",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_r9BLwA",
+        "heading_qHAHUU",
+        "text_hTWkLd",
+        "button_YgcADe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-WebVersion-Blog.png",
+        "mobile_image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-MobileVersion-Blog.png",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_richtext_kAxbmD": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_kzH3eB": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "Introducing",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "heading_cJ3AKj": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Rich text",
+            "text_size": 8
+          }
+        },
+        "text_FUYeaA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>America’s national parks are more than just scenic landscapes—they’re living, breathing wonders filled with towering cliffs, ancient forests, and trails that tell a story of time itself. Whether you’re standing at the edge of the Grand Canyon, navigating the misty peaks of the Great Smoky Mountains, or trekking through Zion’s red rock canyons, each park offers a unique and unforgettable adventure.</p><p>To help you plan your next outdoor escape, we’ve curated a guide to five of the most iconic national parks in the U.S.—along with expert tips on when to go, what to expect, and how to gear up for the journey ahead.</p>",
+            "text_size": 6,
+            "text_columns": 1
+          }
+        },
+        "button_QAMPHc": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "Shop all",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--medium",
+            "button_style_1": "btn-text-thick-line",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_kzH3eB",
+        "heading_cJ3AKj",
+        "text_FUYeaA",
+        "button_QAMPHc"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_featured_article_TaNj9f": {
+      "type": "section-featured-article",
+      "blocks": {
+        "kicker_GnQYP3": {
+          "type": "kicker",
+          "settings": {
+            "show_author": true,
+            "show_date": true
+          }
+        },
+        "heading_e4k4VR": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "text_size": 8
+          }
+        },
+        "text_FREGXf": {
+          "type": "text",
+          "settings": {
+            "richtext": "",
+            "text_size": 5
+          }
+        },
+        "button_rbNFh3": {
+          "type": "button",
+          "settings": {
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_GnQYP3",
+        "heading_e4k4VR",
+        "text_FREGXf",
+        "button_rbNFh3"
+      ],
+      "disabled": true,
+      "settings": {
+        "article": "",
+        "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Grand_Canyon_National_Park.png",
+        "image_full_width": true,
+        "height": "use_screen_one_half",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "color_bg": "",
+        "text_align": "align--bottom-center",
+        "text_alignment": "text-center",
+        "text_color": "text--neutral",
+        "text_color_bg": "palette--light bg--accent",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_kiVQxk": {
+      "type": "section-double",
+      "blocks": {
+        "text_Vhzj8V": {
+          "type": "text",
+          "settings": {
+            "kicker": "Grand Canyon National Park, Arizona",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> South Rim: 7,000 ft | North Rim: 8,000+ ft | Canyon Floor: 2,400 ft<br/> <strong>Steps Approx.:</strong> Thousands—steep switchbacks and rugged staircases make for an intense quad workout.<br/> <strong>Difficulty:</strong> Varies—rim trails are beginner-friendly, but hiking into the canyon is for experienced trekkers. A rim-to-rim hike? That’s extreme.</p><h3><strong>Why Visit?</strong></h3><p>✅ One of the Seven Natural Wonders of the World<br/> ✅ Jaw-dropping panoramic views and layered rock formations<br/> ✅ Unforgettable sunrise and sunset hikes</p><p></p><p><strong>Pro Tip:</strong> Not ready for the descent? Take in the views via the park’s scenic drive, or get a bird’s-eye perspective on a helicopter tour.</p><p><strong>What to Wear:</strong><em>Paris Spring Poplin Shirt + Soda Pop Pleated Drawstring Mini Skirt</em> Lightweight and breathable for warm desert hikes.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": "#ffffff"
+          }
+        },
+        "image_43BMNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Grand_Canyon_National_Park.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_Vhzj8V",
+        "image_43BMNd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_M8WMC3": {
+      "type": "section-double",
+      "blocks": {
+        "image_cpVrnW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Great_Smoky_Mountains_National_Park_USA.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_P3Tpgb": {
+          "type": "text",
+          "settings": {
+            "kicker": "Great Smoky Mountains National Park, Tennessee/North Carolina",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 876 ft – 6,643 ft<br/> <strong>Steps Approx.:</strong> Thousands, depending on the route—from flat boardwalks to rugged mountain trails.<br/> <strong>Difficulty:</strong> A mix of easy nature trails, moderate hikes, and strenuous backcountry treks.</p><h3><strong>Why Visit?</strong></h3><p>✅ One of the most biodiverse regions in the U.S.<br/> ✅ Rolling misty mountains, historic cabins, and cascading waterfalls<br/> ✅ A hiker’s paradise with endless trails for every skill level</p><p><strong>Pro Tip:</strong> Visit in the fall for fiery foliage, or arrive at sunrise to see the mountains wrapped in their signature morning mist.</p><p><strong>What to Wear:</strong><em>Invicta Lightweight Padded Running Jacket + Activa Short in Gray</em> Ideal for unpredictable mountain weather.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_cpVrnW",
+        "text_P3Tpgb"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_wKCF8n": {
+      "type": "section-double",
+      "blocks": {
+        "text_3Nd473": {
+          "type": "text",
+          "settings": {
+            "kicker": "Yellowstone National Park, Wyoming/Montana/Idaho",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 5,282 ft – 11,007 ft<br/> <strong>Steps Approx.:</strong> Ranges from easy boardwalk strolls to steep, rugged trails.<br/> <strong>Difficulty:</strong> Plenty of beginner-friendly areas, but backcountry hikes require serious experience.</p><h3><strong>Why Visit?</strong></h3><p>✅ Home to the famous Old Faithful geyser and bubbling hot springs<br/> ✅ Wildlife spotting—bison, wolves, and bears roam freely<br/> ✅ A landscape that shifts from geysers to mountains to waterfalls</p><p><strong>Pro Tip:</strong> Get up early—wildlife is most active at sunrise, and you’ll beat the crowds.</p><p><strong>What to Wear:</strong><em>Manjaro Utility Jacket + Jody Straight Leg Hiking Pant</em> Durable, weather-resistant, and perfect for long days of exploration.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_nFyFgD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Yellowstone_ational_Park_USA.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_3Nd473",
+        "image_nFyFgD"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_jPzzAW": {
+      "type": "section-double",
+      "blocks": {
+        "image_j9HeQP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Zion_National_Park_Utah.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_xY3JqC": {
+          "type": "text",
+          "settings": {
+            "kicker": "Zion National Park, Utah",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 3,666 ft – 8,726 ft<br/> <strong>Steps Approx.:</strong> Thousands, especially on challenging trails like Angel’s Landing.<br/> <strong>Difficulty:</strong> Easy paved trails exist, but iconic hikes like The Narrows require wading through water, and Angel’s Landing is for thrill-seekers.</p><h3><strong>Why Visit?</strong></h3><p>✅ Towering red rock canyons unlike anywhere else on earth<br/> ✅ Epic hikes, from slot canyons to dizzying summits<br/> ✅ Some of the most scenic viewpoints in the Southwest</p><p><strong>Pro Tip:</strong> Planning to conquer Angel’s Landing? You’ll need a permit—secure yours early.</p><p><strong>What to Wear:</strong><em>Traverse Nylon Zip Shirt Jacket + Hiking Short</em> Breathable, lightweight, and perfect for climbing or river hiking.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_j9HeQP",
+        "text_xY3JqC"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_WptGpm": {
+      "type": "section-double",
+      "blocks": {
+        "text_qdjna8": {
+          "type": "text",
+          "settings": {
+            "kicker": "Yosemite National Park, California",
+            "title": "",
+            "text": "<p><strong>Elevation:</strong> 2,000 ft – 13,000 ft<br/> <strong>Steps Approx.:</strong> From gentle valley walks to thousands of granite steps leading to Half Dome.<br/> <strong>Difficulty:</strong> Beginner-friendly valley trails, moderate waterfall hikes, and extreme rock climbs.</p><h3><strong>Why Visit?</strong></h3><p>✅ Iconic granite cliffs like El Capitan and Half Dome<br/> ✅ Towering waterfalls, including Yosemite Falls—the highest in North America<br/> ✅ Giant sequoia groves and breathtaking alpine landscapes</p><p><strong>Pro Tip:</strong> Yosemite is one of the busiest national parks—arrive early or visit in the off-season for a more peaceful experience.</p><p><strong>What to Wear:</strong><em>Manjaro Utility Jacket + Jody Straight Leg Hiking Pant</em> Designed for rugged trails and unpredictable weather.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_tmQqPa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Yosemite_National_Park.png",
+            "overlay_opacity": 15,
+            "overlay_color": "#ffffff",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_qdjna8",
+        "image_tmQqPa"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "blogs_masonry_FdPCCB",
+    "main",
+    "column_product_collection_BJDDmd",
+    "section_hero_3f7AfU",
+    "section_richtext_kAxbmD",
+    "section_featured_article_TaNj9f",
+    "section_double_kiVQxk",
+    "section_double_M8WMC3",
+    "section_double_wKCF8n",
+    "section_double_jPzzAW",
+    "section_double_WptGpm"
+  ]
+}
