@@ -271,7 +271,7 @@
           "settings": {
             "kicker": "Grand Canyon National Park, Arizona",
             "title": "",
-            "text": "<p><strong>Elevation:</strong> South Rim: 7,000 ft | North Rim: 8,000+ ft | Canyon Floor: 2,400 ft<br/> <strong>Steps Approx.:</strong> Thousands—steep switchbacks and rugged staircases make for an intense quad workout.<br/> <strong>Difficulty:</strong> Varies—rim trails are beginner-friendly, but hiking into the canyon is for experienced trekkers. A rim-to-rim hike? That’s extreme.</p><h3><strong>Why Visit?</strong></h3><p>✅ One of the Seven Natural Wonders of the World<br/> ✅ Jaw-dropping panoramic views and layered rock formations<br/> ✅ Unforgettable sunrise and sunset hikes</p>",
+            "text": "<p><strong>Elevation:</strong> South Rim: 7,000 ft | North Rim: 8,000+ ft | Canyon Floor: 2,400 ft<br/> <strong>Steps Approx.:</strong> Thousands—steep switchbacks and rugged staircases make for an intense quad workout.<br/> <strong>Difficulty:</strong> Varies—rim trails are beginner-friendly, but hiking into the canyon is for experienced trekkers. A rim-to-rim hike? That’s extreme.</p><h3><strong>Why Visit?</strong></h3><p>✅ One of the Seven Natural Wonders of the World<br/> ✅ Jaw-dropping panoramic views and layered rock formations<br/> ✅ Unforgettable sunrise and sunset hikes</p><p></p><p><strong>Pro Tip:</strong> Not ready for the descent? Take in the views via the park’s scenic drive, or get a bird’s-eye perspective on a helicopter tour.</p><p><strong>What to Wear:</strong><em>Paris Spring Poplin Shirt + Soda Pop Pleated Drawstring Mini Skirt</em> Lightweight and breathable for warm desert hikes.</p>",
             "font_size": 6,
             "text_columns": 1,
             "align_text": "text-left",
@@ -326,7 +326,7 @@
           "settings": {
             "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-Great_Smoky_Mountains_National_Park_USA.png",
             "overlay_opacity": 15,
-            "overlay_color": "#000",
+            "overlay_color": "#ffffff",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
@@ -348,7 +348,7 @@
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
-            "text_color": "#006A50",
+            "text_color": "#000000",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
