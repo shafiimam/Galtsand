@@ -125,7 +125,7 @@
       "settings": {
         "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-WebVersion-Blog.png",
         "mobile_image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-MobileVersion-Blog.png",
-        "height": "use_screen_two_thirds",
+        "height": "use_image",
         "overlay_opacity": 15,
         "overlay_color": "#000000",
         "enable_overlay_text": false,
