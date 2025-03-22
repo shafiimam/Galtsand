@@ -56,7 +56,8 @@
         "heading": "Honoring History through Heritage and Sport",
         "image_2": "shopify://shop_images/Frame_240.png",
         "image_1": "shopify://shop_images/Frame_241.png",
-        "image_3": "shopify://shop_images/Frame_242.png"
+        "image_3": "shopify://shop_images/Frame_242.png",
+        "width": "wrapper--full"
       }
     },
     "image_with_text_custom_NJXcdy": {
@@ -66,6 +67,7 @@
           "type": "text",
           "settings": {
             "text": "Since 1986, Galtsand has woven heritage into every stitch, creating garments that honor the past while embracing the present. Founded in Cedar Rapids, Iowa, we believe that, like sports, what we wear is a universal language connecting generations, cultures, and communities. Our commitment to excellence begins with materials, from thoughtfully sourced fabrics to eco-friendly innovation. Meticulous tailoring and expert craftsmanship define every piece. Innovation drives our in-house textile development, creating materials that support both performance and the planet.",
+            "text_size": 6,
             "text_align": "left"
           }
         },
@@ -91,29 +93,58 @@
         "width": "wrapper--none"
       }
     },
-    "image_with_text_custom_JNzaej": {
-      "type": "image-with-text-custom",
+    "section_double_PnXJkA": {
+      "type": "section-double",
       "blocks": {
-        "text_wCmUiB": {
+        "image_aQQDjQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6697.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_BnQ9gR": {
           "type": "text",
           "settings": {
-            "text": "Our journey began with the creation of a simple yet iconic garment—a loose-fitting, round-neck sweatshirt. Our designs quickly earned love across generations, symbolizing heritage and comfort. Partnerships with the NCAA, NFL, and Wildlife Organizations followed, driven by mutual respect for what each stood for.",
-            "text_align": "left"
+            "kicker": "",
+            "title": "",
+            "text": "<p>Our journey began with the creation of a simple yet iconic garment—a loose-fitting, round-neck sweatshirt. Our designs quickly earned love across generations, symbolizing heritage and comfort. Partnerships with the NCAA, NFL, and Wildlife Organizations followed, driven by mutual respect for what each stood for.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
           }
         }
       },
       "block_order": [
-        "text_wCmUiB"
-      ],
-      "custom_css": [
-        ".image-with-text-section__blocks {justify-content: center;}",
-        "* {color: black;}"
+        "image_aQQDjQ",
+        "text_BnQ9gR"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_6697.jpg",
-        "remove_top_padding": true,
-        "image_position": "left",
-        "width": "wrapper--none"
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "section_image_4qDMtM": {
@@ -137,6 +168,9 @@
         "paragraph": "At Galtsand, core values shape everything we create. Heritage grounds us in timeless craftsmanship, Craftsmanship ensures every detail is built to last, and Connection inspires movement, community, and real-world experiences. These principles guide us as we design for those who live fully—beyond trends, beyond screens, and into the world.",
         "button_link": "shopify://collections/all",
         "button_text": "See How We Do It",
+        "button_size": "btn--medium",
+        "button_style": "btn",
+        "button_color": "btn--black",
         "right_image_type": "image",
         "right_image": "shopify://shop_images/galtsand-old-school.png",
         "right_video": ""
@@ -145,15 +179,16 @@
     "icons_values_section_f8QRJJ": {
       "type": "icons_values_section",
       "settings": {
-        "icon_1": "shopify://shop_images/Vector10.png",
+        "icon_1": "shopify://shop_images/mdi_recycle_a36c9a32-4629-49ba-89f5-11f36478e7bf.png",
         "title_1": "HERITAGE",
         "text_1": "Rooted in tradition, our pieces blend timeless design with modern innovation. Each piece is a tribute to our rich history in sportswear, crafted to honor the past while embracing the future.",
-        "icon_2": "shopify://shop_images/game-icons_eagle-head10.png",
+        "icon_2": "shopify://shop_images/game-icons_eagle-head_8ee2dcdd-fd60-4efd-9dfd-22b5d3f0865f.png",
         "title_2": "CRAFTSMANSHIP",
         "text_2": "Every stitch, fabric, and finish is chosen with care. We prioritize durability, precision, and innovation, ensuring each garment stands the test of time, both in quality and style.",
-        "icon_3": "shopify://shop_images/game-icons_shaking-hands10.png",
+        "icon_3": "shopify://shop_images/game-icons_shaking-hands_9b1218fe-1ac9-418a-aef3-36387026903c.png",
         "title_3": "CONNECTION",
-        "text_3": "We believe in real-world movement, human connection, and a sense of belonging. We champion presence, outdoor exploration, and the power of shared experiences."
+        "text_3": "We believe in real-world movement, human connection, and a sense of belonging. We champion presence, outdoor exploration, and the power of shared experiences.",
+        "width": "wrapper--full"
       }
     },
     "section_columns_7mrmNg": {
@@ -167,6 +202,7 @@
             "shape_class": "",
             "title": "",
             "text": "<p>Galtsand’s legacy lives on through the collectors, resellers, and loyal fans who’ve made our pieces their own and passed them down as heirlooms from generation to generation.</p>",
+            "text_size": 6,
             "button_label": "",
             "button_link": "",
             "button_color": "btn--neutral",
@@ -184,6 +220,7 @@
             "shape_class": "",
             "title": "",
             "text": "<p>Thanks to the dedication of our vintage and resale community to keep our story alive, we've had the honor of being part of something that has stood the test of time.<br/></p>",
+            "text_size": 6,
             "button_label": "",
             "button_link": "",
             "button_color": "btn--neutral",
@@ -198,9 +235,7 @@
         "text_block_nYUmpF",
         "text_block_JxRjxJ"
       ],
-      "custom_css": [
-        "p {font-size: 32px; @media only screen and (max-width: 768px) {font-size: 20px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
         "bg": "palette--light bg--neutral",
@@ -227,6 +262,7 @@
             "shape_class": "",
             "title": "",
             "text": "",
+            "text_size": 8,
             "button_label": "",
             "button_link": "",
             "button_color": "btn--neutral",
@@ -244,6 +280,7 @@
             "shape_class": "",
             "title": "",
             "text": "",
+            "text_size": 8,
             "button_label": "",
             "button_link": "",
             "button_color": "btn--neutral",
@@ -261,6 +298,7 @@
             "shape_class": "",
             "title": "",
             "text": "",
+            "text_size": 8,
             "button_label": "",
             "button_link": "",
             "button_color": "btn--neutral",
@@ -288,7 +326,7 @@
         "progress_bar_mobile": false,
         "width": "wrapper--full",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 30
       }
     },
     "section_richtext_UfgiKk": {
@@ -298,7 +336,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Today, under new custodianship, our mission is to expand our reach across the globe, bringing Galtsand to more communities worldwide. With our products already loved by customers in America, United Kingdom, Europe and Asia, we continue to grow while staying true to our heritage, crafting apparel, activewear, and accessories that blend timeless design with modern movement.</p>",
-            "text_size": 8,
+            "text_size": 6,
             "text_columns": 1
           }
         }
@@ -306,9 +344,7 @@
       "block_order": [
         "text_HM3Vb7"
       ],
-      "custom_css": [
-        "p {font-size: 32px; @media only screen and (max-width: 768px) {font-size: 20px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "align_text": "text-left",
         "text_color": "text--neutral",
@@ -316,79 +352,169 @@
         "content_width": 2000,
         "width": "wrapper--full",
         "padding_top": 0,
-        "padding_bottom": 50
+        "padding_bottom": 30
       }
     },
-    "image_with_text_custom_XnTjJM": {
-      "type": "image-with-text-custom",
+    "section_double_8NVYMx": {
+      "type": "section-double",
       "blocks": {
-        "text_7ghW8z": {
+        "image_PkVipT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6734_1.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_mE8Axq": {
           "type": "text",
           "settings": {
-            "text": "With over five decades of textile mastery and technical expertise behind us, we remain steadfast in our commitment to creating apparel, activewear, and accessories that honor the legacy of craftsmanship, connection, and heritage carried by our founding community.",
-            "text_align": "left"
+            "kicker": "",
+            "title": "",
+            "text": "<p>With over five decades of textile mastery and technical expertise behind us, we remain steadfast in our commitment to creating apparel, activewear, and accessories that honor the legacy of craftsmanship, connection, and heritage carried by our founding community.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
           }
         }
       },
       "block_order": [
-        "text_7ghW8z"
-      ],
-      "custom_css": [
-        "* {color: black;}"
+        "image_PkVipT",
+        "text_mE8Axq"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_6734_1.jpg",
-        "remove_top_padding": true,
-        "image_position": "left",
-        "width": "wrapper--none"
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_with_text_custom_QkCrnc": {
-      "type": "image-with-text-custom",
+    "section_double_a8nVhr": {
+      "type": "section-double",
       "blocks": {
-        "text_VciWgw": {
+        "text_em7JWy": {
           "type": "text",
           "settings": {
-            "text": "As we reimagine these classic designs for today’s world, we are reminded that, like garments, history is stitched with resilience and growth.",
-            "text_align": "left"
+            "kicker": "",
+            "title": "",
+            "text": "<p>As we reimagine these classic designs for today’s world, we are reminded that, like garments, history is stitched with resilience and growth.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_GKXghn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6666_1.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
           }
         }
       },
       "block_order": [
-        "text_VciWgw"
-      ],
-      "custom_css": [
-        "* {color: black;}"
+        "text_em7JWy",
+        "image_GKXghn"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_6666_1.jpg",
-        "remove_top_padding": true,
-        "image_position": "left",
-        "width": "wrapper--none"
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_with_text_custom_BmDRyG": {
-      "type": "image-with-text-custom",
+    "section_double_aih3LP": {
+      "type": "section-double",
       "blocks": {
-        "text_UN9RhY": {
+        "image_Pqf7Rg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6668_1.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_YVcind": {
           "type": "text",
           "settings": {
-            "text": "The stories and traditions we share connect us across generations, and what we wear reflects that journey. At Galtsand, every piece carries more than style, it carries a legacy.",
-            "text_align": "left"
+            "kicker": "",
+            "title": "",
+            "text": "<p>The stories and traditions we share connect us across generations, and what we wear reflects that journey. At Galtsand, every piece carries more than style, it carries a legacy.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
           }
         }
       },
       "block_order": [
-        "text_UN9RhY"
-      ],
-      "custom_css": [
-        "* {color: black;}"
+        "image_Pqf7Rg",
+        "text_YVcind"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_6668_1.jpg",
-        "remove_top_padding": true,
-        "image_position": "left",
-        "width": "wrapper--none"
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -397,15 +523,15 @@
     "section_map_xdJRJC",
     "about_us_header_MVVPBR",
     "image_with_text_custom_NJXcdy",
-    "image_with_text_custom_JNzaej",
+    "section_double_PnXJkA",
     "section_image_4qDMtM",
     "blue_brand_value_section_7MNj98",
     "icons_values_section_f8QRJJ",
     "section_columns_7mrmNg",
     "section_columns_ttBhdk",
     "section_richtext_UfgiKk",
-    "image_with_text_custom_XnTjJM",
-    "image_with_text_custom_QkCrnc",
-    "image_with_text_custom_BmDRyG"
+    "section_double_8NVYMx",
+    "section_double_a8nVhr",
+    "section_double_aih3LP"
   ]
 }
