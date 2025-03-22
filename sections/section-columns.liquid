@@ -92,7 +92,7 @@
             <div class="accent-title-large strong mb-r4">{{ block.settings.title | escape }}</div>
           {% endif %}
           {% if block.settings.text != blank %}
-            <div class="rte body-size-4">{{ block.settings.text }}</div>
+            <div class="rte body-size-{{ block.settings.text_size }}">{{ block.settings.text }}</div>
           {% endif %}
           {% if block.settings.button_label != blank and block.settings.button_link != blank %}
             <a
@@ -306,6 +306,15 @@
           "id": "text",
           "label": "Text",
           "default": "<p>Add a video popup link to show a play button.  Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Text size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 8
         },
         {
           "type": "text",

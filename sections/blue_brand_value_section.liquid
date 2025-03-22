@@ -5,11 +5,11 @@
 
   <div class="brand-values-content">
     <img src="{{ section.settings.logo | img_url: 'master'  }}" alt="Logo" class="brand-logo">
-    <p class="firstP">{{ section.settings.title }}</p>
-    <p class="secondP">{{ section.settings.paragraph }}</p>
+    <p class="heading-size-10 mb-r6">{{ section.settings.title }}</p>
+    <p class="body-size-6">{{ section.settings.paragraph }}</p>
     <a
       href="{{ section.settings.button_link }}"
-      class="standard__cta herp__btn btn btn--white btn--long aos-init aos-animate"
+      class="standard__cta hero__btn aos-init aos-animate {{ section.settings.button_size }} {{ section.settings.button_style }} {{ section.settings.button_color }}"
     >
       {{- section.settings.button_text -}}
     </a>
@@ -29,9 +29,7 @@
 
 <style>
   .secondP {
-    color: #ffffff;
     text-align: center;
-    font-family: 'Inter Tight';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -43,9 +41,7 @@
     }
   }
   .firstP {
-    font-family: 'Gambarino' !important;
     font-size: 64px;
-    color: #ffffff;
   }
   .brand-values-section {
     display: grid;
@@ -53,8 +49,6 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
-    background-color: #1c1c1c;
-    color: white;
     gap: 20px;
   }
 
@@ -90,8 +84,6 @@
   .brand-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f4f4f4;
-    color: #1a2947;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
@@ -114,7 +106,6 @@
     .firstP {
       font-size: 3rem;
     }
-
     .brand-values-images,
     .brand-values-content {
       width: 100%;
@@ -159,6 +150,43 @@
       "id": "button_text",
       "label": "Button Text",
       "default": "See How We Do It"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        {"value": "btn--small", "label": "Small button"},
+        {"value": "btn--medium", "label": "Medium button"},
+        {"value": "btn--large", "label": "Large button"},
+        {"value": "btn--long", "label": "Long button"}
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
     },
     {
       "type": "radio",

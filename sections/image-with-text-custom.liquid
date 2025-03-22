@@ -12,7 +12,7 @@
           alt="Image"
           class="image-with-text-section__image"
           height="auto"
-          width="auto"
+          width="100%"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="1"
@@ -32,7 +32,7 @@
           {% case block.type %}
             {% when 'text' %}
               <p
-                class="image-with-text-block-text"
+                class="body-size-{{ block.settings.text_size }}"
                 {{ block.shopify_attributes }}
                 style="padding-{{ section.settings.image_position }}: 48px;"
               >
@@ -64,7 +64,7 @@
                     alt="Image"
                     class="image-with-text-block-image"
                     height="{{ block.settings.image_1.height }}"
-                    width="{{ block.settings.image_1.width }}"
+                    width="100%"
                     data-aos="hero"
                     data-aos-anchor="{{ animation_anchor }}"
                     data-aos-order="3"
@@ -80,7 +80,7 @@
                     alt="Image"
                     class="image-with-text-block-image"
                     height="{{ block.settings.image_2.height }}"
-                    width="{{ block.settings.image_2.width }}"
+                    width="100%"
                     data-aos="hero"
                     data-aos-anchor="{{ animation_anchor }}"
                     data-aos-order="4"
@@ -155,7 +155,7 @@
         { "value": "wrapper--full", "label": "Full width padded" },
         { "value": "wrapper", "label": "Page width" }
       ]
-    },
+    }
   ],
   "blocks": [
     {
@@ -167,6 +167,15 @@
           "id": "text",
           "label": "Text Content",
           "default": "Default Text Content"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Text size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 8
         },
         {
           "type": "select",
@@ -200,6 +209,7 @@
           "label": "Text Content",
           "default": "Default Text Content"
         },
+
         {
           "type": "select",
           "id": "text_align",
