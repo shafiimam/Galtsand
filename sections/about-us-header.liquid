@@ -1,9 +1,9 @@
 {% assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" %}
-<section class="about-us-header-section" data-section-id="{{ section.id }}">
+<section class="about-us-header-section {{ section.settings.width }}" data-section-id="{{ section.id }}">
   <div class="about-us-header-section__main aos-init aos-animate">
     <div class="about-us-header-section__text">
-      <p class="about-us-header-section__paragraph">{{ section.settings.paragraph }}</p>
-      <h2 class="about-us-header-section__heading">{{ section.settings.heading }}</h2>
+      <p class="about-us-header-section__paragraph heading-size-7 mb-r6 text-center">{{ section.settings.paragraph }}</p>
+      <h2 class="about-us-header-section__heading headinbg-size-10 mb-r8 text-center">{{ section.settings.heading }}</h2>
     </div>
     <div class="about-us-header-section__images">
       {% if section.settings.image_1 != blank %}
@@ -14,6 +14,8 @@
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="1"
+          width="100%"
+          height="100%"
         >
       {% endif %}
       {% if section.settings.image_2 != blank %}
@@ -22,10 +24,12 @@
           alt="Image 2"
           id="Image-2"
           class="image-2"
-      
+
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="2"
+          width="100%"
+          height="100%"
         >
       {% endif %}
       {% if section.settings.image_3 != blank %}
@@ -36,6 +40,8 @@
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="3"
+          width="100%"
+          height="100%"
         >
       {% endif %}
     </div>
@@ -43,42 +49,12 @@
 </section>
 
 <style>
- 
-  .about-us-header-section__main {
-    max-width: 2000px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px 100px;
-    @media only screen and (max-width: 768px) {
-      padding: 40px 20px 60px 20px;
-    }
-  }
-  h2.about-us-header-section__heading {
-    color: #000000;
-    text-align: center;
-    font-family: Gambarino;
-    font-size: 76px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2.28px;
-    @media only screen and (max-width: 768px) {
-      font-size: 40px;
-    }
-  }
   p.about-us-header-section__paragraph {
     background: #000000;
     padding: 10px 20px;
-    gap: 4px;
     width: max-content;
-    margin: 0 auto;
-    margin-bottom: 40px;
     color: #ffffff;
-    font-family: 'EngraversGothic';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
+    margin-inline: auto;
   }
   .about-us-header-section__images {
     display: grid;
@@ -123,6 +99,17 @@
       "type": "image_picker",
       "id": "image_3",
       "label": "Third Image"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
     }
   ],
   "presets": [

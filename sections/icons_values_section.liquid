@@ -1,20 +1,22 @@
-<div class="icon-values-section">
-  <div class="icon-value">
-    <img src="{{ section.settings.icon_1 | img_url: 'master' }}" alt="Icon 1" class="icon">
-    <h2>{{ section.settings.title_1 }}</h2>
-    <p>{{ section.settings.text_1 }}</p>
-  </div>
-  
-  <div class="icon-value">
-    <img src="{{ section.settings.icon_2 | img_url: 'master' }}" alt="Icon 2" class="icon">
-    <h2>{{ section.settings.title_2 }}</h2>
-    <p>{{ section.settings.text_2 }}</p>
-  </div>
+<div class="icon-values-section-container ">
+  <div class="icon-values-section {{ section.settings.width }}">
+    <div class="icon-value">
+      <img src="{{ section.settings.icon_1 | img_url: 'master' }}" alt="Icon 1" class="icon mb-r6">
+      <h2 class="heading-size-8 mb-r2">{{ section.settings.title_1 }}</h2>
+      <p class="body-size-6">{{ section.settings.text_1 }}</p>
+    </div>
 
-  <div class="icon-value">
-    <img src="{{ section.settings.icon_3 | img_url: 'master' }}" alt="Icon 3" class="icon">
-    <h2>{{ section.settings.title_3 }}</h2>
-    <p>{{ section.settings.text_3 }}</p>
+    <div class="icon-value">
+      <img src="{{ section.settings.icon_2 | img_url: 'master' }}" alt="Icon 2" class="icon mb-r6">
+      <h2 class="heading-size-8 mb-r2">{{ section.settings.title_2 }}</h2>
+      <p class="body-size-6">{{ section.settings.text_2 }}</p>
+    </div>
+
+    <div class="icon-value">
+      <img src="{{ section.settings.icon_3 | img_url: 'master' }}" alt="Icon 3" class="icon mb-r6">
+      <h2 class="heading-size-8 mb-r2">{{ section.settings.title_3 }}</h2>
+      <p class="body-size-6">{{ section.settings.text_3 }}</p>
+    </div>
   </div>
 </div>
 
@@ -22,12 +24,11 @@
   .icon-values-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--gutter);
     align-items: left;
     justify-content: center;
-    padding: 40px 25px 65px 25px;
-    background-color: #1c1c1c;
-    color: white;
     text-align: left;
+    padding-block: 30px;
   }
 
   .icon-value {
@@ -35,45 +36,22 @@
     flex-direction: column;
     align-items: left;
     text-align: left;
-    padding-inline-end: 40px;
-  }
-.icon-value h2{
-  font-family: 'Gambarino' !important;
-  text-transform: none;
-    font-size: 51px;
-    line-height: 48px;
-    letter-spacing: 3px;
-  color: #ffffff;
-  margin: 0px 0px 15px 0px;
-}
-  .icon-value p{
-    font-family: 'Inter Tight';
-    color: #ffffff;
   }
   .icon {
     width: 50px;
     height: 50px;
-    margin-bottom: 37px;
   }
-@media (min-width: 768px) and (max-width: 1100px) {
-  .icon-value h2{
-    font-size: 2.2rem;
-    margin: 0px;
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .icon-value h2 {
+      margin: 0px;
+    }
   }
-}
-  
+
   @media (max-width: 768px) {
     .icon-values-section {
       grid-template-columns: 1fr;
-      gap: 60px;
-      padding-top: 60px;
-      
+      gap: var(--gutter);
     }
-      .icon-value h2{
-    font-size: 2.5rem;
-     letter-spacing: 2px;   
-        margin: 0px;
-  }
   }
 </style>
 
@@ -131,6 +109,18 @@
       "id": "text_3",
       "label": "Third Text",
       "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
     }
   ],
   "presets": [
