@@ -92,7 +92,7 @@
         "show_products_count": true,
         "width": "wrapper",
         "padding_top": 20,
-        "padding_bottom": 64
+        "padding_bottom": 20
       }
     },
     "section_list_collections_PBKazm": {
@@ -165,7 +165,7 @@
         "icon_3": "shopify://shop_images/Vector_fd8d4886-3774-4d6a-a123-788010438f61.png",
         "title_3": "Versatility for Any Occasion",
         "description_3": "Dress up or down, effortlessly transition from outdoor adventures to city outings, gym sessions, or laid-back gatherings.",
-        "width": "wrapper"
+        "width": "wrapper--full"
       }
     },
     "fabric_choice_Th3iVf": {
@@ -182,46 +182,199 @@
         "fabric_description_3": "Premium elastane fiber known for its exceptional stretch, shape retention, and durability."
       }
     },
-    "every_ocasion_KaRhBj": {
-      "type": "every_ocasion",
+    "section_richtext_EPRhRT": {
+      "type": "section-richtext",
       "blocks": {
-        "casual_wear_rNitdD": {
-          "type": "casual_wear",
+        "heading_74EkqQ": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
-            "heading": "NATURE ENTHUSIAST",
-            "description": "Earth tones, breathable fabrics, and adventure-ready fits, made for those who thrive outdoors.",
-            "link": ""
+            "heading": "PICK YOUR VIBE",
+            "text_size": 10
           }
         },
-        "workout_wear_CTncfz": {
-          "type": "workout_wear",
+        "text_MFiYyJ": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Untit56767led.jpg",
-            "heading": "SPORTY & CHILL",
-            "description": "From the stables to the studio, the courts to the trails, explore versatile styles that move with you.",
-            "link": ""
-          }
-        },
-        "smart_casual_YpNxpx": {
-          "type": "smart_casual",
-          "settings": {
-            "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
-            "heading": "Smart Casual",
-            "description": "Refined, versatile, and always polished, elevated essentials for a seamless day-to-night look.",
-            "link": ""
+            "text": "<p>Stay classic, keep it bold, or take it outside—your move.</p>",
+            "text_size": 5,
+            "text_columns": 1
           }
         }
       },
       "block_order": [
-        "casual_wear_rNitdD",
-        "workout_wear_CTncfz",
-        "smart_casual_YpNxpx"
+        "heading_74EkqQ",
+        "text_MFiYyJ"
       ],
       "settings": {
-        "title": "PICK YOUR VIBE",
-        "subtitle": "Stay classic, keep it bold, or take it outside—your move.",
-        "width": "wrapper--full"
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_fbFmtT": {
+      "type": "section-double",
+      "blocks": {
+        "image_RRUCr6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_aWYYEJ": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "NATURE ENTHUSIAST",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RRUCr6",
+        "text_aWYYEJ"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "section_double_4cjRrN": {
+      "type": "section-double",
+      "blocks": {
+        "text_DMWCTd": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "SPORTY & CHILL",
+            "text": "<p>From the stables to the studio, the courts to the trails, explore versatile styles that move with you.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_x3Ct8G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untit56767led.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_DMWCTd",
+        "image_x3Ct8G"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_GKN8dL": {
+      "type": "section-double",
+      "blocks": {
+        "image_RJi33w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "text_bLxRMd": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "Smart Casual",
+            "text": "<p>Refined, versatile, and always polished, elevated essentials for a seamless day-to-night look.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RJi33w",
+        "text_bLxRMd"
+      ],
+      "settings": {
+        "height": "use_image",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
     "seasonal_trends_3AGAmP": {
@@ -252,7 +405,8 @@
       ],
       "settings": {
         "title": "Trending Topic",
-        "subtitle": "Elevate your look with effortless layering, smart pairings, and distinctive color combinations."
+        "subtitle": "Elevate your look with effortless layering, smart pairings, and distinctive color combinations.",
+        "width": "wrapper--full"
       }
     },
     "how_to_style_p7gryg": {
@@ -308,7 +462,10 @@
     "section_list_collections_PBKazm",
     "why_use_our_pieces_GM7rgH",
     "fabric_choice_Th3iVf",
-    "every_ocasion_KaRhBj",
+    "section_richtext_EPRhRT",
+    "section_double_fbFmtT",
+    "section_double_4cjRrN",
+    "section_double_GKN8dL",
     "seasonal_trends_3AGAmP",
     "how_to_style_p7gryg"
   ]

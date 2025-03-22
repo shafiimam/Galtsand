@@ -19160,7 +19160,7 @@ body.focus-enabled .product-grid-item:focus-within {
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   text-transform: var(--FONT-BODY-TRANSFORM);
-  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
   margin: 8px 0 2px 0;
   word-break: break-word;
