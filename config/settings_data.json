@@ -336,7 +336,7 @@
   "platform_customizations": {
     "custom_css": [
       ".swym-powered-by-text {display: none;}",
-      "@media only screen and (max-width: 768px) {.needsclick {stroke: black;}}"
+      "@media only screen and (max-width: 768px) {.needsclick path {stroke: black; }}"
     ]
   }
 }
