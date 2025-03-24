@@ -335,8 +335,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".swym-powered-by-text {display: none;}",
-      ".needsclick {display: none;}"
+      ".swym-powered-by-text {display: none;}"
     ]
   }
 }
