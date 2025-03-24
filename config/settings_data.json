@@ -336,7 +336,7 @@
   "platform_customizations": {
     "custom_css": [
       ".swym-powered-by-text {display: none;}",
-      ".kl-private-reset-css-Xuajs1{display: none;}"
+      ".kl-private-reset-css-Xuajs1 circle {display: none;}"
     ]
   }
 }
