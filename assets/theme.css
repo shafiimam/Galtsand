@@ -19736,9 +19736,6 @@ label.quatity-selector {
   display: none;
 }
 
-.collection-list-item:first-of-type {
-  padding-top: 52px;
-}
 .kicker-flourished + .collection-list-item {
   padding-top: 0;
 }

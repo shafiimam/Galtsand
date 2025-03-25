@@ -1,10 +1,10 @@
 <section class="shop-by-color-section {{ section.settings.width }}">
   <div class="shop-by-color-section__inner">
-    <div class="shop-by-color-heade text-center">
-      <h1 class="heading heading-lg">
+    <div class="shop-by-color-header text-center mb-r6">
+      <h1 class="heading heading-size-{{ section.settings.title_text_size }}">
         {{ section.settings.title }}
       </h1>
-      <p class="font-body text-base">
+      <p class="font-body body-size-{{ section.settings.subtitle_text_size }}">
         {{ section.settings.subtitle }}
       </p>
     </div>
@@ -34,10 +34,13 @@
               ></div>
             {% endif %}
           </div>
-          <h2 class="color-card-title heading">
+          <h2 class="heading-size-7 mb-r2">
             {{ block.settings.card_title }}
           </h2>
-          <a href="{{ block.settings.button_link }}" class="btn btn--primary color-card-button">
+          <a
+            href="{{ block.settings.button_link }}"
+            class="color-card-button {{ section.settings.button_style }} {{ section.settings.button_color }} {{ section.settings.button_size }}"
+          >
             {{- block.settings.button_label -}}
           </a>
         </div>
@@ -51,7 +54,6 @@
     color: {{ section.settings.text_color }};
   }
   .shop-by-color-section__inner {
-    padding: 120px 0;
     {% if section.settings.remove_top_padding %}
       padding-top: 0;
     {% endif %}
@@ -63,10 +65,9 @@
     }
   }
   .shop-by-color-cards-container {
-    margin-top: 52px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: var(--gutter);
     @media screen and (max-width: 1023px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -76,7 +77,7 @@
   }
   .shop-by-color-card {
     border: 2px solid #102345;
-    padding: 16px;
+    padding: var(--gutter);
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -89,12 +90,7 @@
     height: 40px;
     border-radius: 50%;
   }
-  h2.color-card-title {
-    color: #102345;
-    font-size: 24px;
-  }
   .color-card-button {
-    border: 2px solid #102345;
     width: max-content;
   }
 </style>
@@ -109,10 +105,28 @@
       "default": "Shop by colors"
     },
     {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
       "default": "Handcrafted by our expert designers."
+    },
+    {
+      "type": "range",
+      "id": "subtitle_text_size",
+      "label": "Subtitle text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
     },
     {
       "type": "select",
@@ -141,6 +155,43 @@
       "id": "text_color",
       "label": "Text color",
       "default": "#102345"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
     }
   ],
   "blocks": [

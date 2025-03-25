@@ -1,5 +1,8 @@
 <div class="cards-section">
-  <div class="cards-section__inner {{ section.settings.width }}">
+  <div
+    class="cards-section__inner {{ section.settings.width }}"
+    style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+  >
     {% if section.settings.title != blank %}
       <div class="cards-section__title">
         <h1 class="heading">
@@ -30,7 +33,10 @@
             <p class="block-card__subtitle">
               {{ block.settings.subtitle }}
             </p>
-            <a href="{{ block.settings.button_link }}" class="btn btn--white btn--large ">
+            <a
+              href="{{ block.settings.button_link }}"
+              class="btn {{ section.settings.button_style }} {{ section.settings.button_color }} {{ section.settings.button_size }}"
+            >
               {{- block.settings.button_label -}}
             </a>
           </div>
@@ -46,20 +52,16 @@
   }
 
   .cards-section__cards {
-    padding-block: 120px ;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    @media only screen and (max-width: 768px) {
-      padding-block: 68px;
-    }
+    gap: var(--gutter);
   }
   .block-card {
     width: calc(25% - 20px);
     border: 2px solid #000000;
     display: flex;
-    gap: 20px;
-    padding: 16px 16px 24px 16px;
+    gap: var(--gutter);
+    padding: var(--gutter);
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -72,22 +74,23 @@
       flex-basis: 100%;
     }
   }
-  .block-card__image , .block-card__image img {
+  .block-card__image,
+  .block-card__image img {
     width: 100%;
   }
   .block-card__title {
-   color: #000000;
-   font-size: 40px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 100%; /* 40px */
+    color: #000000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 40px */
   }
   .block-card__subtitle {
-   color: #000000;
-   font-size: 14px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 140%;
+    color: #000000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
   }
   .block-card__content {
     height: 100%;
@@ -120,6 +123,63 @@
         { "value": "wrapper--none", "label": "Full width" },
         { "value": "wrapper--full", "label": "Full width padded" },
         { "value": "wrapper", "label": "Page width" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
       ]
     }
   ],
