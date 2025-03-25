@@ -19,7 +19,7 @@
         "show_content": true,
         "content_size": 7,
         "align_text": "text-center",
-        "text_color": "text--bright--secondary",
+        "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
         "width": "wrapper--narrow",
         "padding_top": 50,
