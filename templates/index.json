@@ -451,9 +451,9 @@
             "text_color": "text--neutral",
             "link_size": 2,
             "block_card_position": "first",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_GaPRP3": {
@@ -468,9 +468,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "first",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_xgYtnf": {
@@ -485,9 +485,9 @@
             "text_color": "text--white",
             "link_size": 5,
             "block_card_position": "first",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         }
       },
