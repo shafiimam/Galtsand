@@ -383,7 +383,6 @@ span.swym-wish-counter.swym-wishlist-header-counter {
 .section-carousel__header-container {
   width: calc(var(--desktop-width) + var(--outer));
   position: relative;
-  margin-left: calc(var(--outer) * -1);
   z-index: 1;
 }
 @media (max-width: 1024px) {
@@ -399,18 +398,13 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   display: flex;
   margin-bottom: var(--padding-bottom);
   background: hsla(0, 0%, 100%, 0.8);
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: -5%;
+  padding-inline: 5%;
 }
 .section-collection-slider-carousel button.flickity-button {
   bottom: 50% !important;
   z-index: 5 !important;
   border: 1px solid #e5e5e5;
-}
-
-.collection-block-card__content .standard__cta {
-  margin-block-end: 0;
-  border: 2px solid;
 }
 
 .collection-split__grid .swiper {
