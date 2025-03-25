@@ -119,12 +119,16 @@
       "type": "column-product-collection",
       "settings": {
         "title": "Best sellers",
+        "title_text_size": 10,
         "subtitle": "Our Most Loved & Top-Rated Styles.",
+        "subtitle_text_size": 5,
         "collection": "bestsellers",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/bestsellers",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collection_card_column_Ydrkex": {
@@ -179,7 +183,12 @@
       ],
       "settings": {
         "background_color": "#660f28",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "button_size": "btn--medium",
+        "button_style": "btn--outline",
+        "button_color": "btn--black"
       }
     },
     "collection_card_column_8D4rTM": {
@@ -235,7 +244,12 @@
       "disabled": true,
       "settings": {
         "background_color": "#660f28",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white"
       }
     },
     "section_shop_by_color_yWCBP4": {
@@ -312,23 +326,32 @@
       ],
       "settings": {
         "title": "Shop by colors",
+        "title_text_size": 10,
         "subtitle": "Style, Performance & Versatility in Every Color.",
+        "subtitle_text_size": 5,
         "width": "wrapper--full",
         "remove_top_padding": false,
         "background_color": "#ffffff",
-        "text_color": "#000000"
+        "text_color": "#000000",
+        "button_size": "btn--medium",
+        "button_style": "btn--outline",
+        "button_color": "btn--black"
       }
     },
     "column_product_collection_HDP6Rw": {
       "type": "column-product-collection",
       "settings": {
         "title": "New this week",
+        "title_text_size": 10,
         "subtitle": "The Latest Styles, Just In.",
+        "subtitle_text_size": 5,
         "collection": "ss25-collection",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
     "section_list_collections_products_wg4cKG": {
@@ -411,7 +434,7 @@
         "grid_small": 1.2,
         "width": "wrapper--full",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 60
       }
     },
     "section_product_masonry_Wia8FW": {
