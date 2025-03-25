@@ -426,6 +426,25 @@
   {%- endcapture -%}
 
   <div class="header__desktop__buttons{% if section.settings.use_icons %} header__desktop__buttons--icons{% endif %}" {{ text_wrapper }}>
+    {% if section.settings.enable_search %}
+      <div class="header__desktop__button {% if request.path contains routes.search_url %} main-menu--active{% endif %}" {{ text_hover }}>
+        <a href="{{ routes.search_url }}" class="navlink" data-popdown-toggle="search-popdown">
+          {% if section.settings.use_icons %}
+            {{ search_icon }}
+            <span class="visually-hidden">{{ 'general.search.submit' | t }}</span>
+          {% else %}
+            <span class="navtext">{{ 'general.search.submit' | t }}</span>
+          {% endif %}
+        </a>
+      </div>
+    {% endif %}
+    
+    <div class="header__desktop__button {{ text_hover }}">
+      <a href="/pages/swym-wishlist" class="navlink swym-wishlist">
+        {{ wishlist_icon }}
+        <span class="swym-wish-counter swym-wishlist-header-counter"></span>
+      </a>
+    </div>
 
     {%- if shop.customer_accounts_enabled and section.settings.enable_account -%}
       <div class="header__desktop__button {% if request.path contains routes.account_url %} main-menu--active{% endif %}" {{ text_hover }}>
@@ -440,18 +459,6 @@
       </div>
     {% endif %}
 
-    {% if section.settings.enable_search %}
-      <div class="header__desktop__button {% if request.path contains routes.search_url %} main-menu--active{% endif %}" {{ text_hover }}>
-        <a href="{{ routes.search_url }}" class="navlink" data-popdown-toggle="search-popdown">
-          {% if section.settings.use_icons %}
-            {{ search_icon }}
-            <span class="visually-hidden">{{ 'general.search.submit' | t }}</span>
-          {% else %}
-            <span class="navtext">{{ 'general.search.submit' | t }}</span>
-          {% endif %}
-        </a>
-      </div>
-    {% endif %}
 
     <div class="header__desktop__button {% if request.path contains routes.cart_url %} main-menu--active{% endif %}" {{ text_hover }}>
       <a href="{{ routes.cart_url }}"
@@ -469,12 +476,7 @@
         {% endif %}
       </a>
     </div>
-    <div class="header__desktop__button {{ text_hover }}">
-      <a href="/pages/swym-wishlist" class="navlink swym-wishlist">
-        {{ wishlist_icon }}
-        <span class="swym-wish-counter swym-wishlist-header-counter"></span>
-      </a>
-    </div>
+    
   </div>
 {% endcapture %}
 
