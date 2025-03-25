@@ -117,12 +117,13 @@
         "collection_kQYakP": {
           "type": "collection",
           "settings": {
-            "collection": "most-loved-this-week-1",
+            "collection": "new-in",
+            "image": "shopify://shop_images/015A4220_5acb433e0f-710f-4242-8afc-004bc7fd537f.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "",
             "top_text_disabled": true,
-            "title": "",
+            "title": "New In",
             "title_disabled": false,
             "bottom_text": "",
             "bottom_text_disabled": false,
@@ -223,7 +224,7 @@
           "settings": {
             "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
@@ -240,8 +241,8 @@
           "type": "text",
           "settings": {
             "kicker": "",
-            "title": "NATURE ENTHUSIAST",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "title": "Nature Enthusiast",
+            "text": "<p>Apparel inspired by adventurers who love to roam and experience the captivating beauty of nature.</p>",
             "font_size": 5,
             "text_columns": 1,
             "align_text": "text-left",
@@ -294,7 +295,7 @@
           "settings": {
             "image": "shopify://shop_images/Untit56767led.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
@@ -331,7 +332,7 @@
           "settings": {
             "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
@@ -392,7 +393,7 @@
         "trend_block_Jjh9CK": {
           "type": "trend_block",
           "settings": {
-            "image": "shopify://shop_images/GALTSANDEQUESTRIAN-145.jpg",
+            "image": "shopify://shop_images/hike2.jpg",
             "heading": "Seasonal Design Inspirations",
             "description": "Unique prints inspired by nature, art, and pop culture",
             "link": "shopify://collections/spring-essentials"
