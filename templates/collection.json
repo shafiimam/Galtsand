@@ -117,12 +117,13 @@
         "collection_kQYakP": {
           "type": "collection",
           "settings": {
-            "collection": "most-loved-this-week-1",
+            "collection": "new-in",
+            "image": "shopify://shop_images/015A4220_5acb433e0f-710f-4242-8afc-004bc7fd537f.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "",
             "top_text_disabled": true,
-            "title": "",
+            "title": "New In",
             "title_disabled": false,
             "bottom_text": "",
             "bottom_text_disabled": false,
@@ -223,7 +224,7 @@
           "settings": {
             "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
@@ -294,7 +295,7 @@
           "settings": {
             "image": "shopify://shop_images/Untit56767led.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
@@ -331,7 +332,7 @@
           "settings": {
             "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
