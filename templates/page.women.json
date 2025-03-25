@@ -369,7 +369,7 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "last",
-            "button_size": "btn--medium",
+            "button_size": "btn--large",
             "button_style": "btn--outline",
             "button_color": "btn--black"
           }
@@ -386,7 +386,7 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "first",
-            "button_size": "btn--medium",
+            "button_size": "btn--large",
             "button_style": "btn--outline",
             "button_color": "btn--black"
           }
@@ -403,7 +403,7 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "last",
-            "button_size": "btn--medium",
+            "button_size": "btn--large",
             "button_style": "btn--outline",
             "button_color": "btn--black"
           }
