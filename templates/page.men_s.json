@@ -433,9 +433,9 @@
         "remove_top_padding": false,
         "background_color": "#ffffff",
         "text_color": "#000000",
-        "button_size": "btn--long",
-        "button_style": "btn",
-        "button_color": "btn--white"
+        "button_size": "btn--large",
+        "button_style": "btn--outline",
+        "button_color": "btn--black"
       }
     },
     "section_product_masonry_Wia8FW": {
