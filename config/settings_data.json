@@ -336,7 +336,8 @@
   "platform_customizations": {
     "custom_css": [
       ".swym-powered-by-text {display: none;}",
-      "@media only screen and (max-width: 768px) {.needsclick path {stroke: black; }}"
+      "@media only screen and (max-width: 768px) {.needsclick path {stroke: black; }}",
+      ".go811569893 p {font-weight: 100;}"
     ]
   }
 }
