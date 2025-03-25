@@ -477,7 +477,7 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-basket-return",
-            "icon_color": "#e6dbc4",
+            "icon_color": "#000000",
             "title": "Free returns",
             "text": "<p>Returns within 30 days receive a full refund.</p>",
             "link_text": "",
@@ -488,7 +488,7 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-shipment-world",
-            "icon_color": "#e6dbc4",
+            "icon_color": "#000000",
             "title": "Worldwide shipping",
             "text": "<p>Ship anywhere, rates available at checkout.</p>",
             "link_text": "",
@@ -499,7 +499,7 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-email",
-            "icon_color": "#e6dbc4",
+            "icon_color": "#000000",
             "title": "24/7 support",
             "text": "<p>Email us anytime at hello@galtsand.us</p>",
             "link_text": "",
@@ -512,12 +512,10 @@
         "icons-1",
         "icons-2"
       ],
-      "custom_css": [
-        "p {color: #e6dbc4;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
-        "bg": "palette--dark bg--invert",
+        "bg": "palette--light bg--accent",
         "icons_size": 30,
         "icon_alignment": "icon--top",
         "layout": "grid--stacked",
