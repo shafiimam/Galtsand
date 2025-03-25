@@ -369,9 +369,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "last",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--medium",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_V9bRRL": {
@@ -386,9 +386,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "first",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--medium",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_iBkUYd": {
@@ -403,9 +403,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "last",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--medium",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "button_RB9wME": {
