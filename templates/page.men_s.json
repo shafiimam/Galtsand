@@ -120,12 +120,16 @@
       "custom_css": [],
       "settings": {
         "title": "Best sellers",
+        "title_text_size": 10,
         "subtitle": "Performance, Style & Versatility",
+        "subtitle_text_size": 5,
         "collection": "mens-tops",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/mens-best-sellers",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collection_card_column_Ydrkex": {
@@ -180,7 +184,12 @@
       ],
       "settings": {
         "background_color": "#1d1d1d",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white"
       }
     },
     "collection_card_column_JK3ptk": {
@@ -236,19 +245,28 @@
       "disabled": true,
       "settings": {
         "background_color": "#660f28",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white"
       }
     },
     "column_product_collection_HDP6Rw": {
       "type": "column-product-collection",
       "settings": {
         "title": "New this week",
+        "title_text_size": 10,
         "subtitle": "Fresh Styles, Peak Performance",
+        "subtitle_text_size": 5,
         "collection": "new-in",
         "show_more_button": true,
         "button_label": "Show more",
         "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "section_list_collections_products_wg4cKG": {
@@ -283,9 +301,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "first",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "collection_9jBt6c": {
@@ -300,9 +318,9 @@
             "text_color": "text--neutral",
             "link_size": 3,
             "block_card_position": "last",
-            "button_size": "btn--long",
-            "button_style": "btn",
-            "button_color": "btn--white"
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "button_color": "btn--black"
           }
         },
         "button_RB9wME": {
@@ -408,11 +426,16 @@
       ],
       "settings": {
         "title": "Shop by colors",
+        "title_text_size": 10,
         "subtitle": "Find Your Perfect Shade",
+        "subtitle_text_size": 5,
         "width": "wrapper--full",
         "remove_top_padding": false,
         "background_color": "#ffffff",
-        "text_color": "#000000"
+        "text_color": "#000000",
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white"
       }
     },
     "section_product_masonry_Wia8FW": {
