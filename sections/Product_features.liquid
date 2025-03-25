@@ -56,6 +56,7 @@
   .div_p {
     border: 2px solid #000000;
     padding: var(--gutter);
+    flex: 1;
   }
 
   .accordion-item.active .accordion-content {
@@ -350,13 +351,6 @@
         chevronUp.style.display = 'none';
         chevronDown.style.display = 'block';
       } else {
-        // Close all other accordion items and reset icons
-        document.querySelectorAll('.accordion-item').forEach((item) => {
-          item.classList.remove('active');
-          item.querySelector('.chevron-up').style.display = 'none';
-          item.querySelector('.chevron-down').style.display = 'block';
-        });
-
         // Open the clicked accordion item
         accordionItem.classList.add('active');
         // Show Chevron Up (open state), hide Chevron Down

@@ -22091,7 +22091,7 @@ a.product__form__link:after {
 }
 @media only screen and (min-width: 480px) {
   .additional-checkout-buttons {
-    padding: 12px;
+    padding: var(--gutter);
   }
 }
 .vendor--hide .item__vendor {
