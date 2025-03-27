@@ -13530,11 +13530,11 @@ html:not(.no-js) body:not(.focus-enabled) *:focus {
   margin-top: 0;
 }
 .standard__kicker {
-  font-family: var(--TYPE-STACK-KICKER);
-  font-style: var(--TYPE-STYLE-KICKER);
+  font-family: var(--FONT-STACK-BODY);
+  font-style: var(--FONT-STYLE-BODY);
   font-weight: var(--TYPE-WEIGHT-KICKER);
-  text-transform: var(--FONT-KICKER-TRANSFORM);
-  letter-spacing: var(--FONT-KICKER-LETTER-SPACING);
+  text-transform: var(--FONT-BODY-TRANSFORM);
+  letter-spacing: var(--FONT-BODY-LETTER-SPACING);
   overflow: hidden;
   color: var(--text);
   margin: 0;

@@ -351,11 +351,18 @@
         chevronUp.style.display = 'none';
         chevronDown.style.display = 'block';
       } else {
+        document.querySelectorAll('.accordion-item').forEach((item) => {
+          item.classList.remove('active');
+          item.querySelector('.chevron-up').style.display = 'none';
+          item.querySelector('.chevron-down').style.display = 'block';
+        });
         // Open the clicked accordion item
-        accordionItem.classList.add('active');
-        // Show Chevron Up (open state), hide Chevron Down
-        chevronUp.style.display = 'block';
-        chevronDown.style.display = 'none';
+        setTimeout(() => {
+          accordionItem.classList.add('active');
+          // Show Chevron Up (open state), hide Chevron Down
+          chevronUp.style.display = 'block';
+          chevronDown.style.display = 'none';
+        }, 300);
       }
     });
   });
