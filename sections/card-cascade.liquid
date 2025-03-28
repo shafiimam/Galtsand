@@ -11,7 +11,9 @@
   <div class="card-cascade__container">
     <div class="mb-r6 {{ section.settings.text_alignment }}" style="color: {{ section.settings.text_color }};">
       {% if section.settings.title %}
-        <h1 class="heading mb-r6 {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">{{ section.settings.title }}</h1>
+        <h1 class="heading mb-r6 {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">
+          {{ section.settings.title }}
+        </h1>
       {% endif %}
       {% if section.settings.content %}
         <p class="{{ content_font_size_class }} mb-r8" style="color: {{ section.settings.content_color }};">
@@ -38,8 +40,11 @@
                 height="400"
               >
               <div class="card-cascade__card-content card-cascade__card-content-{{ section.id }} {{ block.settings.text_alignment }}">
-                <h5 class="card-cascade__card-title heading-size-6 mb-r4" style="color: {{ section.settings.text_color }};">
-                  {{ block.settings.title }}   
+                <h5
+                  class="card-cascade__card-title heading-size-6 mb-r4"
+                  style="color: {{ section.settings.text_color }};"
+                >
+                  {{ block.settings.title }}
                 </h5>
                 <div class="card-cascade__card-text mb-r6" style="color: {{ section.settings.text_color }};">
                   {{ block.settings.content }}
@@ -111,27 +116,39 @@
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const cardsSwiper = new Swiper('.card-cascade__cards-swiper-{{ section.id }}', {
-      slidesPerView: 1.2,
-      spaceBetween: 20,
-      freeMode: true,
-      breakpoints: {
-        1024: {
-          slidesPerView: 3,
+    if (Swiper) {
+      initSwiper();
+    } else {
+      console.log('Swiper not loaded');
+      const swiperInterval = setInterval(function () {
+        if (Swiper) {
+          clearInterval(swiperInterval);
+          initSwiper();
+        }
+      }, 100);
+    }
+    function initSwiper() {
+      const cardsSwiper = new Swiper('.card-cascade__cards-swiper-{{ section.id }}', {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        freeMode: true,
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 1.2,
+          },
         },
-        768: {
-          slidesPerView: 2,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: true,
         },
-        480: {
-          slidesPerView: 1.2,
-        },
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: true,
-      },
-    });
-    console.log(cardsSwiper);
+      });
+    }
   });
 </script>
 {% schema %}
