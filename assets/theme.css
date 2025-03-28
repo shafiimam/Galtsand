@@ -24163,6 +24163,9 @@ img.product-clip__image__inner,
 .collection__products .grid--full img {
   filter: brightness(var(--PHOTO-CORRECTION));
 }
+.product__media img {
+  aspect-ratio: 1/1.4;
+}
 /* Thumbnails */
 .media__thumb__wrapper {
   width: 100%;
