@@ -11787,7 +11787,7 @@ input[type="date"],
 textarea,
 select,
 .popout__toggle {
-  border: 2px solid #102345;
+  border: 1px solid #102345;
   width: 100%;
   max-width: 100%;
   display: block;
@@ -12258,7 +12258,7 @@ label.error {
 .radio__fieldset .radio__button label:focus {
   color: #102345;
   background-color: var(--hairline);
-  border: 2px solid #102345;
+  border: 1px solid #102345;
 }
 .radio__fieldset .radio__button input:checked ~ label {
   color: var(--bg);
@@ -14222,7 +14222,7 @@ body.default--accent--bright {
   padding: 10px 20px;
   line-height: 1.42;
   text-decoration: none;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
 .pagination-custom__num > a,
 .pagination-custom__num > span {
@@ -14255,7 +14255,7 @@ body.default--accent--bright {
 .pagination-custom > li > a:hover,
 .pagination-custom > li > a {
   color: #000000;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
 .pagination-custom__spacer > span {
   position: relative;
@@ -20313,7 +20313,7 @@ input[type="number"].filter__price__input {
   width: 100%;
   height: 100%;
   background: var(--text);
-  border: 2px solid var(--bg);
+  border: 1px solid var(--bg);
   border-radius: 50%;
   font-size: 0;
   cursor: pointer;
@@ -25362,7 +25362,7 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
   width: var(--OPTION-SIZE-SIBLING);
   height: var(--OPTION-SIZE-SIBLING);
   min-width: var(--OPTION-SIZE-SIBLING);
-  border: 2px solid var(--text);
+  border: 1px solid var(--text);
   z-index: 10;
 }
 .siblings__link[aria-selected="true"] .sibling__image {
@@ -25428,7 +25428,7 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
   width: 26px;
   height: 26px;
   min-width: 26px;
-  border: 2px solid var(--text);
+  border: 1px solid var(--text);
   z-index: 10;
 }
 .product__grid__sibs .siblings__link__holder {
