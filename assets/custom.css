@@ -411,3 +411,19 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   margin: 0;
   width: 100%;
 }
+
+.collection-split-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-collection-split-button-container{
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gutter);
+  align-items: center;
+}
+.section-collection-split-button-container a{
+  margin-bottom: 0 !important;
+}
