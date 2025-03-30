@@ -364,7 +364,7 @@
         "button_size_2": "btn--medium",
         "button_style_2": "btn--outline",
         "button_color_2": "btn--black",
-        "text_allignment": "text-center",
+        "text_allignment": "text-left",
         "collection": "all-men",
         "product_list": [],
         "sticky_image_enable": false,
