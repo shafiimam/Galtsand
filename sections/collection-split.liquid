@@ -115,6 +115,13 @@
 
 {% assign btn_color = 'button_color' %}
 {% assign btn_color = section.settings[btn_color] %}
+{% assign btn_size_2 = 'button_size_2' %}
+{% assign btn_size_2 = section.settings[btn_size_2] %}
+{% assign btn_style_2 = 'button_style_2' %}
+{% assign btn_style_2 = section.settings[btn_style_2] %}
+{% assign btn_color_2 = 'button_color_2' %}
+{% assign btn_color_2 = section.settings[btn_color_2] %}
+
 <div
   class="collection-split {{ section.settings.bg }}  {{ section.settings.width }} section-padding"
   data-section-id="{{ section.id }}"
@@ -123,24 +130,34 @@
 >
   <div class="slider">
     <div class="collection-split-header mb-r6 {{ section.settings.text_allignment }}">
-      <h1
-        class="heading mb-r6 {{ title_font_size_class }} "
-        style="color: {{ section.settings.title_text_color }};"
-      >
-        {{ section.settings.header_text }}
-      </h1>
-      <p
-        class=" {{ sub_text_size }}"
-        style="color: {{ section.settings.sub_text_color }};"
-      >
-        {{ section.settings.header_h3text }}
-      </p>
-      <a
-        href="{{ section.settings.button_url }}"
-        class="standard__cta hero__btn  {{ btn_style }} {{ btn_color }} {{ btn_size }}"
-      >
-        {{ section.settings.button_label }}
-      </a>
+      <div class="collection-split-header-content">
+        <h1
+          class="heading mb-r6 {{ title_font_size_class }} "
+          style="color: {{ section.settings.title_text_color }};"
+        >
+          {{ section.settings.header_text }}
+        </h1>
+        <p
+          class=" {{ sub_text_size }}"
+          style="color: {{ section.settings.sub_text_color }};"
+        >
+          {{ section.settings.header_h3text }}
+        </p>
+      </div>
+      <div class="section-collection-split-button-container">
+        <a
+          href="{{ section.settings.button_url }}"
+          class="standard__cta hero__btn  {{ btn_style }} {{ btn_color }} {{ btn_size }}"
+        >
+          {{ section.settings.button_label }}
+        </a>
+        <a
+          href="{{ section.settings.button_url_2 }}"
+          class="standard__cta hero__btn  {{ btn_style_2 }} {{ btn_color_2 }} {{ btn_size_2 }}"
+        >
+          {{ section.settings.button_label_2 }}
+        </a>
+      </div>
     </div>
     <div class="collection-split__grid">
       <div class="slides swiper">
@@ -369,6 +386,54 @@
       "id": "button_color",
       "label": "Color",
       "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Button Label 2",
+      "default": "Shop All"
+    },
+    {
+      "type": "url",
+      "id": "button_url_1",
+      "label": "Button URL 2"
+    },
+    {
+      "type": "select",
+      "id": "button_size_2",
+      "label": "Size",
+      "default": "btn--large",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style_2",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color_2",
+      "label": "Color",
+      "default": "btn--black",
       "options": [
         { "value": "btn--primary", "label": "Bright accent" },
         { "value": "btn--secondary", "label": "Secondary accent" },
