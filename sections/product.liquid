@@ -204,7 +204,7 @@
                   aria-label="{{ alt_text_parts | first | escape }}"
                   data-image-filter="{{ alt_text_option }}">
                   <img loading="lazy" class="loading-shimmer"
-                    src="{{ media.preview_image.src | img_url: '114x144', crop: 'center' }}"
+                    src="{{ media.preview_image.src | img_url: 'master', crop: 'center' }}"
                     alt="{{ alt_text_parts | first | escape }}">
                   {%- if media.media_type == 'model' -%}
                     {% render 'icon-media-model' %}
