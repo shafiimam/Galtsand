@@ -26524,6 +26524,6 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
 .\[\&\>svg\]\:inline-block > svg {
   display: inline-block;
 }
-.dropdown__family--grandchild a {
+.dropdown__family a {
   font-size: calc(var(--font-7) * var(--FONT-ADJUST-BODY)) !important;
 }
