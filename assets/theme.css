@@ -26526,7 +26526,7 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
 }
 .dropdown__family span,
 .kids-3,
-kids-4,
-kids-5 {
+.kids-4,
+.kids-5 {
   font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY)) !important;
 }
