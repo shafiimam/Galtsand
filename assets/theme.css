@@ -26525,5 +26525,5 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
   display: inline-block;
 }
 .dropdown__family--grandchild a {
-  font-size: calc(var(--font-7) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-7) * var(--FONT-ADJUST-BODY)) !important;
 }
