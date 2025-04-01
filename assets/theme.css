@@ -26525,8 +26525,8 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
   display: inline-block;
 }
 .dropdown__family span,
-.kids-3,
-.kids-4,
-.kids-5 {
+.kids-3 span,
+.kids-4 span,
+.kids-5 span {
   font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY)) !important;
 }
