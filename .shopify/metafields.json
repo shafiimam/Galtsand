@@ -1,217 +1,62 @@
 {
-  "article": [
-    {
-      "key": "product_reference",
-      "namespace": "custom",
-      "name": "product-reference",
-      "description": "",
-      "type": {
-        "name": "product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "add_product_reference",
-      "namespace": "custom",
-      "name": "add-product-reference",
-      "description": "Additional space for product reference if 2 are needed",
-      "type": {
-        "name": "product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "additional_product_references",
-      "namespace": "custom",
-      "name": "Additional Product References",
-      "description": "List of product references for blogs in addition to the 1",
-      "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "product_sidebar",
-      "namespace": "custom",
-      "name": "Product Sidebar",
-      "description": "Products for sticky side bar",
-      "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    }
-  ],
-  "blog": [
-    {
-      "key": "product_feature",
-      "namespace": "custom",
-      "name": "product-feature",
-      "description": "",
-      "type": {
-        "name": "product_reference",
-        "category": "REFERENCE"
-      }
-    }
-  ],
+  "article": [],
+  "blog": [],
   "brand": [],
-  "collection": [
-    {
-      "key": "mega_menu_title",
-      "namespace": "custom",
-      "name": "Mega Menu Title",
-      "description": "Custom mega menu title if you want to override the original collection title",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "mega_menu_icon",
-      "namespace": "custom",
-      "name": "Mega Menu Icon",
-      "description": "This image will be used inside the megamenu if this collection is linked to it.",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    }
-  ],
+  "collection": [],
   "company": [],
   "company_location": [],
   "location": [],
   "market": [],
-  "order": [
-    {
-      "key": "order_status",
-      "namespace": "ofg",
-      "name": "OFG Order Status",
-      "description": null,
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    }
-  ],
-  "page": [
-    {
-      "key": "page_template_image",
-      "namespace": "custom",
-      "name": "Page Template Image",
-      "description": "Image for Pages with Custom Templates",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "enable_schedule",
-      "namespace": "custom",
-      "name": "Enable Schedule",
-      "description": "",
-      "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
-      }
-    },
-    {
-      "key": "start_date_and_time",
-      "namespace": "custom",
-      "name": "Start Date and Time",
-      "description": "",
-      "type": {
-        "name": "date_time",
-        "category": "DATE_TIME"
-      }
-    },
-    {
-      "key": "end_date_and_time",
-      "namespace": "custom",
-      "name": "End date and time",
-      "description": "",
-      "type": {
-        "name": "date_time",
-        "category": "DATE_TIME"
-      }
-    }
-  ],
+  "order": [],
+  "page": [],
   "product": [
     {
-      "key": "pdp_shipping_field",
-      "namespace": "my_fields",
-      "name": "PDP Shipping Field",
-      "description": "What to display in the Shipping field below the ATC button",
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
       "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
+        "name": "rating",
+        "category": "RATING"
       }
     },
     {
-      "key": "pdp_atc_button",
-      "namespace": "my_fields",
-      "name": "PDP ATC Button",
-      "description": "Override the Add to Cart Button",
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
       "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
+        "name": "number_integer",
+        "category": "NUMBER"
       }
     },
     {
-      "key": "pdp_amazon_link",
-      "namespace": "my_fields",
-      "name": "PDP Amazon Link",
-      "description": "Link to Amazon PDP",
-      "type": {
-        "name": "url",
-        "category": "URL"
-      }
-    },
-    {
-      "key": "product_breakdown_video",
-      "namespace": "my_fields",
-      "name": "Product Breakdown Video",
-      "description": "Link to Youtube embed content",
-      "type": {
-        "name": "url",
-        "category": "URL"
-      }
-    },
-    {
-      "key": "product_tagline",
-      "namespace": "my_fields",
-      "name": "Product Tagline",
-      "description": "Short Description / Tagline for Product",
+      "key": "trade_item_description",
+      "namespace": "import_information",
+      "name": "Trade item description",
+      "description": "A precise product description that describes specific attributes of the product for customs and import.",
       "type": {
         "name": "multi_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "pdp_hero_banner",
-      "namespace": "my_fields",
-      "name": "PDP-Hero-Banner",
-      "description": "",
+      "key": "care_guide",
+      "namespace": "descriptors",
+      "name": "Care guide",
+      "description": "Instructions for taking care of a product or apparel",
       "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "pdp_bundle_1",
-      "namespace": "my_fields",
-      "name": "PDP Bundle 1",
-      "description": "First Bundle Option for PDP",
-      "type": {
-        "name": "single_line_text_field",
+        "name": "multi_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "pdp_bundle_2",
-      "namespace": "my_fields",
-      "name": "PDP Bundle 2",
-      "description": "Second Bundle Option for PDP",
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
       "type": {
-        "name": "single_line_text_field",
+        "name": "list.single_line_text_field",
         "category": "TEXT"
       }
     },
@@ -246,493 +91,13 @@
       }
     },
     {
-      "key": "queries",
-      "namespace": "shopify--discovery--product_search_boost",
-      "name": "Search product boosts",
-      "description": "List of search queries for which a product gets higher rank in search results",
-      "type": {
-        "name": "list.single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "product_tag",
+      "key": "color_filter_swatch",
       "namespace": "custom",
-      "name": "product Tag",
+      "name": "Color Filter Swatch",
       "description": "",
       "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "frequently_product",
-      "namespace": "custom",
-      "name": "Frequently Product",
-      "description": "",
-      "type": {
-        "name": "list.product_reference",
+        "name": "list.metaobject_reference",
         "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "custom_pdp_atc_message",
-      "namespace": "custom",
-      "name": "Custom PDP ATC Message",
-      "description": "Custom message to display above ATC button",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "mega_menu_icon",
-      "namespace": "custom",
-      "name": "Mega Menu Icon",
-      "description": "This image will be used inside the megamenu if this product is linked to it.",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "mega_menu_title",
-      "namespace": "custom",
-      "name": "Mega Menu Title",
-      "description": "Custom mega menu title if you want to override the original product title",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "ca_ny_compliant",
-      "namespace": "custom",
-      "name": "CA / NY Compliant",
-      "description": "Is the this kit CA / NY Compliant?",
-      "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
-      }
-    },
-    {
-      "key": "hidden",
-      "namespace": "seo",
-      "name": "Hide from Search",
-      "description": "Add a \"1\" here to hide",
-      "type": {
-        "name": "number_integer",
-        "category": "NUMBER"
-      }
-    },
-    {
-      "key": "spec_model_name",
-      "namespace": "custom",
-      "name": "Spec Model Name",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_caliber",
-      "namespace": "custom",
-      "name": "Spec Caliber",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_projectile_type",
-      "namespace": "custom",
-      "name": "Spec  Projectile Type",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_length",
-      "namespace": "custom",
-      "name": "Spec Length",
-      "description": "Along the barrel",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_height",
-      "namespace": "custom",
-      "name": "Spec Height",
-      "description": "Along the grip",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_width",
-      "namespace": "custom",
-      "name": "Spec Width",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_loaded_weight",
-      "namespace": "custom",
-      "name": "Spec Loaded Weight",
-      "description": "lbs. / grams",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_magazine_capacity",
-      "namespace": "custom",
-      "name": "Spec Magazine Capacity",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_receiver_materials",
-      "namespace": "custom",
-      "name": "Spec Receiver Materials",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_internal_materials",
-      "namespace": "custom",
-      "name": "Spec Internal Materials",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_propulsion",
-      "namespace": "custom",
-      "name": "Spec Propulsion",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_average_muzzle_velocity",
-      "namespace": "custom",
-      "name": "Spec Average Muzzle Velocity",
-      "description": "First 10 Shots",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_maximum_muzzle_velocity",
-      "namespace": "custom",
-      "name": "Spec Maximum Muzzle Velocity",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_average_kinetic_energy",
-      "namespace": "custom",
-      "name": "Spec Average Kinetic Energy",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_maximum_kinetic_energy",
-      "namespace": "custom",
-      "name": "Spec Maximum Kinetic Energy",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_effective_range",
-      "namespace": "custom",
-      "name": "Spec Effective Range",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_shot_capacity_on_single_c02",
-      "namespace": "custom",
-      "name": "Spec Shot Capacity on Single C02",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_operating_temperature_range",
-      "namespace": "custom",
-      "name": "Spec Operating Temperature Range",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_safety_mechanism",
-      "namespace": "custom",
-      "name": "Spec Safety Mechanism",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_size",
-      "namespace": "custom",
-      "name": "Spec Size",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_mag_size",
-      "namespace": "custom",
-      "name": "Spec Mag Size",
-      "description": "Magazine Size for Comp Chart",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "product_details",
-      "namespace": "custom",
-      "name": "Product Details",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "featured_collection_picture",
-      "namespace": "custom",
-      "name": "Featured Collection Picture",
-      "description": "",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "spec_price",
-      "namespace": "custom",
-      "name": "Spec Price",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_spray_time",
-      "namespace": "custom",
-      "name": "Spec Spray Time",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_expiration_time",
-      "namespace": "custom",
-      "name": "Spec Expiration Time",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "state_restrictions",
-      "namespace": "custom",
-      "name": "state restrictions",
-      "description": "",
-      "type": {
-        "name": "list.single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_state_restrictions",
-      "namespace": "custom",
-      "name": "spec state restrictions",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "product_benefits",
-      "namespace": "custom",
-      "name": "product benefits",
-      "description": "",
-      "type": {
-        "name": "list.single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "product_performance",
-      "namespace": "custom",
-      "name": "Product Performance",
-      "description": "",
-      "type": {
-        "name": "list.single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "product_benefits_disclaimer",
-      "namespace": "custom",
-      "name": "product benefits disclaimer",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "product_performance_disclaimer",
-      "namespace": "custom",
-      "name": "product performance disclaimer",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "spec_use_case",
-      "namespace": "custom",
-      "name": "Spec Use Case",
-      "description": "Use case for byrna product in comp chart",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "collection_name",
-      "namespace": "custom",
-      "name": "Collection Name",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "collection_url",
-      "namespace": "custom",
-      "name": "Collection Url",
-      "description": "",
-      "type": {
-        "name": "url",
-        "category": "URL"
-      }
-    },
-    {
-      "key": "kit_details",
-      "namespace": "custom",
-      "name": "Kit Details",
-      "description": "",
-      "type": {
-        "name": "list.single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "documents",
-      "namespace": "custom",
-      "name": "documents",
-      "description": "Product documents and guides",
-      "type": {
-        "name": "list.file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "city_restrictions",
-      "namespace": "custom",
-      "name": "city restrictions",
-      "description": "",
-      "type": {
-        "name": "list.single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "subtitle",
-      "namespace": "descriptors",
-      "name": "Product subtitle",
-      "description": "Used as a shorthand for a product name",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "add_on_variant",
-      "namespace": "custom",
-      "name": "Add on Variant",
-      "description": "",
-      "type": {
-        "name": "variant_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "add_on_product_title",
-      "namespace": "custom",
-      "name": "Add on Product Title",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
       }
     },
     {
@@ -746,63 +111,33 @@
       }
     },
     {
-      "key": "extra_product_images",
+      "key": "title",
       "namespace": "custom",
-      "name": "Extra Product Images",
-      "description": "New PDP product images under slider",
-      "type": {
-        "name": "list.file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "category",
-      "namespace": "custom",
-      "name": "Category",
-      "description": "Category for Search",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "sub_category",
-      "namespace": "custom",
-      "name": "Sub Category",
-      "description": "Sub Category for Search",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "compatibility",
-      "namespace": "custom",
-      "name": "Compatibility",
-      "description": "Compatibility for Search",
+      "name": "Description",
+      "description": "",
       "type": {
         "name": "multi_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "hide_shopify_recommendations",
-      "namespace": "custom",
-      "name": "Hide Shopify Recommendations",
-      "description": "True will hide the product from shopify recommendations",
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
       "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
       }
     },
     {
-      "key": "spec_unloaded_weight",
-      "namespace": "custom",
-      "name": "Spec Unloaded Weight",
-      "description": "",
+      "key": "fabric",
+      "namespace": "shopify",
+      "name": "Fabric",
+      "description": "Identifies the type of fabric used in a product, for example, cotton or denim",
       "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
       }
     },
     {
@@ -816,30 +151,220 @@
       }
     },
     {
-      "key": "accessory_compatibility",
-      "namespace": "custom",
-      "name": "Accessory Compatibility",
-      "description": "This controls badge to be displayed on accessory product pages. List of Launcher Products",
-      "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "banner_notice_image",
-      "namespace": "custom",
-      "name": "Banner Notice Image",
-      "description": "PDP Accessory Template - Image",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "color-pattern",
+      "key": "age-group",
       "namespace": "shopify",
-      "name": "Color",
-      "description": "Defines the primary color or pattern, such as blue or striped",
+      "name": "Age group",
+      "description": "Defines the target age range for a product, such as adults or kids",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "neckline",
+      "namespace": "shopify",
+      "name": "Neckline",
+      "description": "Used to describe the neck shape of a garment, such as V-neck or boat",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "target-gender",
+      "namespace": "shopify",
+      "name": "Target gender",
+      "description": "Identifies the intended gender for a product, such as female, male or unisex",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "pants-length-type",
+      "namespace": "shopify",
+      "name": "Pants length type",
+      "description": "Used to defines the length of pants, such as cropped or long",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "activewear-clothing-features",
+      "namespace": "shopify",
+      "name": "Activewear clothing features",
+      "description": "Identifies unique characteristics of activewear, such as four-way stretch or breathable design",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "activity",
+      "namespace": "shopify",
+      "name": "Activity",
+      "description": "Specifies the sport or activity the product is designed for, such as tennis or pilates",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "clothing-features",
+      "namespace": "shopify",
+      "name": "Clothing features",
+      "description": "Describes unique properties of apparel, such as water resistant or wrinkle resistant",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sleeve-length-type",
+      "namespace": "shopify",
+      "name": "Sleeve length type",
+      "description": "Specifies the style of sleeves on clothing items, such as short or sleeveless",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "top-length-type",
+      "namespace": "shopify",
+      "name": "Top length type",
+      "description": "Defines the length of tops or shirts, like crop top or long",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "accessory-size",
+      "namespace": "shopify",
+      "name": "Accessory size",
+      "description": "Defines the size of an accessory product, such as one size or compact",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "outerwear-clothing-features",
+      "namespace": "shopify",
+      "name": "Outerwear clothing features",
+      "description": "Identifies special characteristics of outerwear, like insulated or waterproof",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "best-uses",
+      "namespace": "shopify",
+      "name": "Best uses",
+      "description": "Highlights optimal activities for product use, like traveling, hiking, or diving",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skirt-dress-length-type",
+      "namespace": "shopify",
+      "name": "Skirt/Dress length type",
+      "description": "Defines the length of skirts or dresses, such as mini or maxi",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fit",
+      "namespace": "shopify",
+      "name": "Fit",
+      "description": "Describes the fit of a garment, typically pant shape; e.g. skinny leg, wide",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cup-size",
+      "namespace": "shopify",
+      "name": "Cup size",
+      "description": "Specifies bust size of bras, such as AA or L",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "care-instructions",
+      "namespace": "shopify",
+      "name": "Care instructions",
+      "description": "Provides guidance for product upkeep, such as hand wash or dry clean only",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "waist-rise",
+      "namespace": "shopify",
+      "name": "Waist rise",
+      "description": "Indicates where on the waist a garment sits, like low, medium or high",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skirt-style",
+      "namespace": "shopify",
+      "name": "Skirt style",
+      "description": "Describes the design or cut of a skirt, such as pencil or pleated",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dress-occasion",
+      "namespace": "shopify",
+      "name": "Dress occasion",
+      "description": "Specifies the intended occasion for a dress, e.g. holiday, everyday",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dress-style",
+      "namespace": "shopify",
+      "name": "Dress style",
+      "description": "Identifies the design of a dress, such as wrap or empire waist",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "carry-options",
+      "namespace": "shopify",
+      "name": "Carry options",
+      "description": "Specifies the carrying methods available for items, such as a handle or shoulder strap",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bag-case-material",
+      "namespace": "shopify",
+      "name": "Bag/Case material",
+      "description": "Identifies the main material used in a bag or case, such as leather or canvas",
       "type": {
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
@@ -848,20 +373,10 @@
   ],
   "variant": [
     {
-      "key": "add_to_cart_text",
-      "namespace": "custom",
-      "name": "Add to cart text",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
       "key": "custom_label_4",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 4",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -871,7 +386,7 @@
       "key": "custom_label_3",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 3",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -881,7 +396,7 @@
       "key": "custom_label_2",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 2",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -891,7 +406,7 @@
       "key": "custom_label_1",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 1",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -901,7 +416,7 @@
       "key": "custom_label_0",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 0",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -968,15 +483,26 @@
       }
     },
     {
-      "key": "hide_variant",
+      "key": "individual_description",
       "namespace": "custom",
-      "name": "Hide Variant",
-      "description": "The value true hides the variant from online store",
+      "name": "Individual Description",
+      "description": "Individual Description",
       "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
+        "name": "multi_line_text_field",
+        "category": "TEXT"
       }
     }
   ],
-  "shop": []
+  "shop": [
+    {
+      "key": "blocks_list_checkout_static_content",
+      "namespace": "checkoutblocks",
+      "name": "Checkout Blocks: Blocks List for: checkout_static_content",
+      "description": null,
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ]
 }

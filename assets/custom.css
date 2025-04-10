@@ -210,7 +210,7 @@ h3.article__item-title {
 }
 p.image-with-text-block-text {
   color: #660f28;
-  font-family: "Inter Tight";
+  font-family: var(--FONT-STACK-BODY);
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
