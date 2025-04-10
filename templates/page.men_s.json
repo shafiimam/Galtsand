@@ -339,8 +339,8 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Shop by activity",
-        "subttitle": "Gear Up for Every Challenge",
+        "title": "Trending Now",
+        "subttitle": "",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
         "grid": 3,
