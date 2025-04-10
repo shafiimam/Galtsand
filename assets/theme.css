@@ -14629,7 +14629,7 @@ body .shopify-email-marketing-confirmation__container {
 }
 .header__mobile__button {
   height: 100%;
-  min-width: 60px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -19829,7 +19829,7 @@ label.quatity-selector {
     padding-right: var(--gutter);
   }
   .collection-list__product:first-child {
-    margin-left: max(var(--outer) - var(--gutter), 0px);
+    /* margin-left: max(var(--outer) - var(--gutter), 0px); */
   }
   .collection__filters__outer {
     position: fixed;

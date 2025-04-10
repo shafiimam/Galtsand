@@ -1,7 +1,18 @@
+{% liquid
+  assign title_text_size = section.settings.title_text_size
+  assign title_text_color = section.settings.title_text_color
+  assign subtitle = section.settings.subtitle
+  assign sub_text_size = section.settings.sub_text_size
+  assign sub_text_color = section.settings.sub_text_color
+%}
 <section class="gallery-slider">
-  <div class="gallery-slider__container">
-    <h2 class="gallery-slider__title heading text-center">{{ section.settings.title }}</h2>
-    <p class="gallery-slider__subtitle font-body text-center">{{ section.settings.subtitle }}</p>
+  <div class="gallery-slider__container text-center">
+    <h2 class="heading heading-size-{{ title_text_size }}" style="color: {{ title_text_color }};">
+      {{ section.settings.title }}
+    </h2>
+    <p class="body body-size-{{ sub_text_size }}" style="color: {{ sub_text_color }};">
+      {{ section.settings.subtitle }}
+    </p>
     <div class="gallery-slider__pagination-wrapper">
       <div class="swiper-button-prev swiper-button-prev-{{ section.id }}"></div>
       <div class="swiper-button-next swiper-button-next-{{ section.id }}"></div>
@@ -24,9 +35,8 @@
 </section>
 <style>
    .gallery-slider {
-      background: #ffffff;
-      padding: 100px 0;
-      overflow: hidden; 
+      padding: 30px 0;
+      overflow: hidden;
    }
    .gallery-slider__title {
       color: #000000;
@@ -44,7 +54,7 @@
       color: #000000;
       text-align: center;
       font-size: 20px;
-      font-style: normal; 
+      font-style: normal;
       line-height: 80%;
       max-width: 400px;
       margin: 0 auto;
@@ -59,7 +69,7 @@
   .gallery-slider__pagination-wrapper {
      display: flex;
      justify-content: center;
-     gap: 12px;
+     gap: 40px;
      margin-top: 44px;
      margin-bottom: 48px;
   }
@@ -103,12 +113,44 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Title"
+      "label": "Title",
+      "default": "Shop by function"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
     },
     {
       "type": "text",
       "id": "subtitle",
-      "label": "Subtitle"
+      "label": "Subtitle",
+      "default": "Handcrafted by our expert designers."
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color",
+      "label": "Subtext color",
+      "default": "#000000"
     },
     {
       "type": "select",

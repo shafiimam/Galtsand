@@ -138,7 +138,6 @@
         "grid_small": 1.2,
         "limit": 2,
         "bg": "palette--light bg--neutral",
-        "object_position": "center-center",
         "width": "wrapper",
         "padding_top": 10,
         "padding_bottom": 10
@@ -191,7 +190,6 @@
         "collection": "",
         "product_limit": 12,
         "title": "",
-        "align_text": "title-center",
         "progress_bar": "mobile",
         "grid_large": 4,
         "grid_medium": 3,
@@ -359,7 +357,6 @@
         "grid_small": 1.2,
         "limit": 4,
         "bg": "palette--light bg--neutral",
-        "object_position": "center-center",
         "width": "wrapper",
         "padding_top": 36,
         "padding_bottom": 10
@@ -378,7 +375,6 @@
         "grid_small": 1.2,
         "limit": 4,
         "bg": "palette--light bg--neutral",
-        "object_position": "center-center",
         "width": "wrapper",
         "padding_top": 10,
         "padding_bottom": 10

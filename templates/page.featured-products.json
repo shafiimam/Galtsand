@@ -34,8 +34,11 @@
         "image_mobile": "shopify://shop_images/Hero_79e89888-a283-41bb-8ddb-56a4a3a24217.png",
         "title": "Spring Summer 2025",
         "subtitle": "Our SS25 collection blends smart casual style with outdoor versatility, built for life on the move. Gear up for the city, the trails, and everything in between.",
-        "button_text": "SHOP NEW ARRIVALS",
-        "button_link": "shopify://collections/ss25-collection"
+        "button_label": "Shop Now",
+        "button_url": "",
+        "button_size": "btn--large",
+        "button_style": "btn",
+        "button_color": "btn--white"
       }
     },
     "product_features_image_text_YiKHgK": {
@@ -104,7 +107,7 @@
         "tab_LNQqqG": {
           "type": "tab",
           "settings": {
-            "title": "Best sellers",
+            "title": "Best Sellers",
             "collection": "best-sellers",
             "product_limit": 8,
             "button_text": "Shop Now",
@@ -114,7 +117,7 @@
         "tab_EQrzGj": {
           "type": "tab",
           "settings": {
-            "title": "moving fast",
+            "title": "Moving Fast",
             "collection": "sports",
             "product_limit": 8,
             "button_text": "Shop Now",
@@ -124,7 +127,7 @@
         "tab_G8NB98": {
           "type": "tab",
           "settings": {
-            "title": "new in",
+            "title": "New In",
             "collection": "ss25-collection",
             "product_limit": 8,
             "button_text": "Shop Now",
@@ -139,7 +142,7 @@
         "tab_G8NB98"
       ],
       "settings": {
-        "title": "elevate your adventure.",
+        "title": "Elevate Your Adventure.",
         "subtitle": "From 9-to-5 to Off the Grid.",
         "grid_large": 4,
         "grid_medium": 3,
@@ -298,11 +301,16 @@
       "disabled": true,
       "settings": {
         "title": "Shop by colors",
+        "title_text_size": 10,
         "subtitle": "Handcrafted by our expert designers.",
+        "subtitle_text_size": 5,
         "width": "wrapper--full",
         "remove_top_padding": true,
         "background_color": "#ffffff",
-        "text_color": "#1d1d1d"
+        "text_color": "#1d1d1d",
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white"
       }
     },
     "customer_review_section_BfdTNg": {

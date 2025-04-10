@@ -31,7 +31,7 @@
                 </div>
               {% endfor %}
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-scrollbar column-product-collection-section__collection__scrollbar"></div>
           </div>
           {% if section.settings.show_more_button == true %}
             <div class="column-product-collection-section__collection__show-more text-center">
@@ -94,7 +94,10 @@
     padding-block-end: 52px;
   }
   .collection-grid-swiper .swiper-slide {
-    width: calc(25% - 20px);
+    width: calc(25% - 20px) !important;
+    @media only screen and (max-width: 550px) {
+      width: 100% !important;
+    }
   }
   .column-product-collection-section__collection__show-more {
     width: 100%;
@@ -111,6 +114,9 @@
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #000000;
+  }
+  .column-product-collection-section__collection__scrollbar{
+    position: relative;
   }
 </style>
 

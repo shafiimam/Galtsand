@@ -1,8 +1,19 @@
+{% liquid
+  assign title_text_size = section.settings.title_text_size
+  assign title_text_color = section.settings.title_text_color
+  assign subtitle = section.settings.subtitle
+  assign sub_text_size = section.settings.sub_text_size
+  assign sub_text_color = section.settings.sub_text_color
+%}
 <section class="tabs-collection {{ section.settings.width }}">
   <div class="tabs-collection__inner">
     <div class="tabs-collection__header text-center">
-      <h2 class="tabs-collection__title heading">{{ section.settings.title }}</h2>
-      <p class="tabs-collection__subtitle font-body">{{ section.settings.subtitle }}</p>
+      <h2 class="heading heading-size-{{ title_text_size }}" style="color: {{ title_text_color }};">
+        {{ section.settings.title }}
+      </h2>
+      <p class="body body-size-{{ sub_text_size }}" style="color: {{ sub_text_color }};">
+        {{ section.settings.subtitle }}
+      </p>
     </div>
     <div class="tabs-collection__tabs">
       {% for block in section.blocks %}
@@ -10,7 +21,7 @@
           class="tabs-collection__tab {% if forloop.first %}tabs-collection__tab--active{% endif %}"
           data-tab-control-id="{{ block.id }}"
         >
-          <P class="tabs-collection__tab-title">{{ block.settings.title }}</P>
+          <P class="tabs-collection__tab-title body body-size-6">{{ block.settings.title }}</P>
         </div>
       {% endfor %}
     </div>
@@ -52,10 +63,13 @@
 
 <style>
   :root {
-    --swiper-navigation-size: 76px;
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-top-offset: 35%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: #000000;
   }
   .tabs-collection__inner {
-    padding: 100px 0;
+    padding: 30px 0;
     @media (max-width: 768px) {
       padding: 40px 0;
     }
@@ -91,7 +105,7 @@
   }
   .tabs-collection__tab {
     border: 1px solid #000000;
-    padding: 16px 24px;
+    padding: var(--space-4) var(--space-6);
     color: #000000;
     font-size: 18px;
     font-style: normal;
@@ -113,7 +127,6 @@
     top: var(--swiper-navigation-top-offset, 37%) !important;
   }
   .swiper-button-prev {
-    background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_10.png') !important;
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 10;
@@ -128,7 +141,6 @@
   }
 
   .swiper-button-next {
-    background-image: url('https://cdn.shopify.com/s/files/1/0642/2210/1717/files/Frame_39.png') !important;
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 10;
@@ -140,14 +152,6 @@
   }
   .swiper-button-next:hover {
     transform: scale(1.1);
-  }
-
-  .swiper-button-next::after {
-    display: none;
-  }
-
-  .swiper-button-prev::after {
-    display: none;
   }
   .tabs-collection__button-wrapper {
     display: flex;
@@ -225,10 +229,40 @@
       "default": "Shop by function"
     },
     {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
       "default": "Handcrafted by our expert designers."
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color",
+      "label": "Subtext color",
+      "default": "#000000"
     },
     {
       "type": "range",

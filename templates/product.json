@@ -151,7 +151,7 @@
         "feature_Pjifny": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/mdi_recycle_c0cc2f38-9c1b-412a-b953-f19eb75ef553.png",
+            "icon": "shopify://shop_images/mdi_recycle_1.png",
             "title": "Recycled Materials",
             "description": "Recycled materials drive our sustainability commitment by reducing carbon emissions, diverting waste from landfills and oceans, and advancing a circular economy while supporting innovation in eco-friendly materials.",
             "link": ""
@@ -160,7 +160,7 @@
         "feature_pXiaxn": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/mingcute_cube-3d-line_42bc7e1b-3859-432c-8671-e3a57c694552.png",
+            "icon": "shopify://shop_images/mingcute_cube-3d-line_beb1be8d-c208-4196-ae37-7bd8df88ffc5.png",
             "title": "3D Tailoring",
             "description": "By employing precise digital measurements and strategic seam placement, 3D tailoring enhances your body’s natural contours, delivering a perfect fit and optimizing performance with every movement.",
             "link": ""
@@ -169,7 +169,7 @@
         "feature_RMXgCX": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/mdi_stretch-to-page_e11dea00-1c7a-4ff1-8dfb-ac8239f9acdc.png",
+            "icon": "shopify://shop_images/mdi_stretch-to-page_d7e9b976-df01-4597-848a-c727bfe46a4f.png",
             "title": "4-Way Stretch",
             "description": "Enjoy complete freedom of movement with our 4-way stretch fabric, designed to flex in all directions for seamless comfort and flexibility, enhancing your performance with every move.",
             "link": ""
@@ -178,7 +178,7 @@
         "feature_hET8JT": {
           "type": "feature",
           "settings": {
-            "icon": "shopify://shop_images/material-symbols_water-drop_a62d64ad-c0f6-43b2-a6ef-d7f59f6c1608.png",
+            "icon": "shopify://shop_images/material-symbols_water-drop_eafb8927-fd2b-4fde-a480-6161da4b0e06.png",
             "title": "Moisture-Wicking",
             "description": "Crafted from high-performance materials that efficiently manage sweat and odor, ensuring you stay dry and fresh during even the most intense activities.",
             "link": ""
@@ -256,22 +256,22 @@
       "settings": {
         "bg": "palette--light bg--accent",
         "width": "wrapper--full",
-        "icon_1": "shopify://shop_images/FlowerLotus.png",
+        "icon_1": "shopify://shop_images/FlowerLotus_f68f7995-51e6-4b56-bec7-23161b896147.png",
         "title_1": "Made For Adventure",
         "description_11": "Timeless designs reimagined with technical innovation for seamless movement in any environment.",
         "description_12": "Engineered for comfort & performance without compromise and built for the elements.",
         "description_13": "Effortlessly transition from outdoor exploration to everyday wear with pieces made for movement and style.",
-        "icon_2": "shopify://shop_images/FlowerLotus.png",
+        "icon_2": "shopify://shop_images/FlowerLotus_f68f7995-51e6-4b56-bec7-23161b896147.png",
         "title_2": "Materials & Fabrics",
         "description_21": "Innovative textiles that enhance comfort, regulate temperature, and support adventure.",
         "description_22": "Premium, weather-ready materials ensure durability and comfort for every adventure.",
         "description_23": "Advanced materials engineered for movement, durability, and all-weather performance.",
-        "icon_3": "shopify://shop_images/FlowerLotus.png",
+        "icon_3": "shopify://shop_images/FlowerLotus_f68f7995-51e6-4b56-bec7-23161b896147.png",
         "title_3": "Styling Tips",
         "description_31": "Layer with purpose. Pair classic silhouettes with modern edge, technical outerwear, and heritage-inspired base layers for a seamless city-to-adventure transition.",
         "description_32": "Blend heritage and performance. Combine weather-ready fabrics with timeless essentials for a refined, functional look.",
         "description_33": "Adapt with ease. Layer breathable, moisture-wicking pieces under structured outerwear for a polished, adventure-ready look.",
-        "icon_4": "shopify://shop_images/FlowerLotus.png",
+        "icon_4": "shopify://shop_images/FlowerLotus_f68f7995-51e6-4b56-bec7-23161b896147.png",
         "title_4": "Special Features",
         "description_41": "Engineered with cutting-edge materials that enhance breathability, durability, and weather resistance for all-day performance.",
         "description_42": "Made with recycled and eco-conscious textiles, reducing environmental impact without compromising on function or quality.",

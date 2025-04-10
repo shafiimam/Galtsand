@@ -21,6 +21,12 @@
         if (swat.renderWishlistCount) {
           swat.renderWishlistCount(counter_elem[i], function (count, element) {
             console.log('debug - renderWishlistCount', count, element);
+              if (count === 0) {
+            element.style.display = 'none';
+          } else {
+            element.style.display = 'block';
+            element.textContent = count;
+          }
           });
         }
       }

@@ -1,0 +1,328 @@
+{% liquid
+  assign section_title = section.settings.title
+  assign title_text_color = section.settings.title_text_color
+  assign section_subtitle = section.settings.subtitle
+  assign subtitle_text_color = section.settings.subtitle_text_color
+  assign text_alignment = section.settings.text_allignment
+  assign title_font_size_class = 'heading-size-' | append: section.settings.title_text_size
+  assign sub_text_size = 'body-size-' | append: section.settings.subtitle_text_size
+  assign collection_to_show = section.settings.collection_to_show
+  assign button_size = section.settings.button_size
+  assign button_style = section.settings.button_style
+  assign button_color = section.settings.button_color
+%}
+<section
+  class="section-small-collection-grid {{ section.settings.width }} section-padding"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-row"
+>
+  <div
+    class="section-small-collection-grid_header {{ text_alignment }}"
+  >
+    {% if section_title != blank %}
+      <h1
+        class=" heading {{ title_font_size_class }}"
+        style="color: {{ title_text_color }};"
+      >
+        {{ section_title }}
+      </h1>
+    {% endif %}
+    {% if section_subtitle != blank %}
+      <p
+        class="body {{ sub_text_size }} mb-r8"
+        style="color: {{ subtitle_text_color }};"
+      >
+        {{ section_subtitle }}
+      </p>
+    {% endif %}
+  </div>
+  <div class="section-small-collection-grid_content">
+    <div class="section-small-collection-grid_content-grid swiper-wrapper">
+      {% for block in section.blocks %}
+        {% liquid
+          assign block_button_url = block.settings.button_url
+          assign block_button_label = block.settings.button_label
+        %}
+        <div class="block-collection-card {{ text_alignment }} swiper-slide" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 1000 | image_tag: class: 'block-collection-card_image' }}
+          {% endif %}
+          <h3 class="body body-size-5" style="flex: 1;">{{ block.settings.text }}</h3>
+
+          <a
+            href="{{ block_button_url }}"
+            class="standard__cta hero__btn {{ button_style }} {{ button_size }} {{ button_color }}"
+          >
+            {{ block_button_label }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+<style>
+  :root {
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: #000000;
+  }
+  .section-small-collection-grid_content {
+    position: relative;
+    overflow: hidden;
+  }
+  @media (min-width: 1000px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    .section-small-collection-grid_content-grid {
+      display: grid;
+      grid-template-columns: repeat({{collection_to_show}}, 1fr);
+      justify-items: center;
+    }
+  }
+  .block-collection-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .block-collection-card .standard__cta {
+    margin-top: 5px;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function initSwiper() {
+      var smallCollectionGrid = new Swiper('.section-small-collection-grid_content', {
+      spaceBetween: 10,
+      freeMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: {{ collection_to_show }},
+        },
+        1280: {
+          slidesPerView: {{ collection_to_show }},
+        },
+      },
+    });
+    }
+    if (window.innerWidth < 1000) {
+      initSwiper();
+    }
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1000) {
+        smallCollectionGrid.destroy(true, true);
+      } else {
+        initSwiper();
+      }
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Small Collection Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Curated Collections"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcarfted by our expert designers"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "subtitle_text_color",
+      "label": "Subtext color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "text_allignment",
+      "label": "Text allignment",
+      "default": "text-center",
+      "options": [
+        { "value": "text-center", "label": "Center" },
+        { "value": "text-left", "label": "Left" },
+        { "value": "text-right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "collection_to_show",
+      "label": "Number of collections to show",
+      "min": 4,
+      "step": 1,
+      "max": 10,
+      "default": 7
+    },
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Watch Video"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL",
+      "info": "setting this will override the video button"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_card",
+      "name": "Collection Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Collection Item Title"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "SHOP NOW"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL",
+          "info": "setting this will override the video button"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Small Collection Grid",
+      "blocks": [{ "type": "collection_card" }]
+    }
+  ]
+}
+{% endschema %}

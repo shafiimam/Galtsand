@@ -416,14 +416,24 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.section-collection-split-button-container{
+.section-collection-split-button-container {
   display: flex;
   justify-content: flex-end;
   gap: var(--gutter);
   align-items: center;
 }
-.section-collection-split-button-container a{
+.section-collection-split-button-container a {
   margin-bottom: 0 !important;
+}
+a.header__mobile__button.swym-wishlist {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  span.swym-wish-counter.swym-wishlist-header-counter {
+    top: 20px;
+    right: -10px;
+  }
 }

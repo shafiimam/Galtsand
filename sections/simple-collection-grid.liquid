@@ -1,0 +1,186 @@
+<section class="simple-collection-grid-container">
+  <div class="simple-collection-grid-content">
+    <div class="simple-collection-grid-text">
+      <h2 class="simple-collection-grid-title">{{ section.settings.title }}</h2>
+      <p class="simple-collection-grid-subtitle">{{ section.settings.subtitle }}</p>
+    </div>
+    <div class="simple-collection-blocks-grid collection-grid-swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% liquid
+            assign block_collection = block.settings.collection
+            assign block_collection_title = block_collection.title
+            assign block_collection_image = block_collection.image
+            assign block_image = block.settings.image
+            assign block_text = block.settings.text
+            assign block_button_label = block.settings.button_label
+            assign block_button_url = block.settings.button_url
+            assign block_button_size = block.settings.button_size
+            assign block_button_style = block.settings.button_style
+            assign block_button_color = block.settings.button_color
+          %}
+          <div class="swiper-slide">
+            <div class="simple-collection-block">
+              <div class="simple-collection-block-image">
+                {% if block_collection_image != blank %}
+                  {{
+                    block_collection_image
+                    | image_url: width: 1000
+                    | image_tag: class: 'simple-collection-block-image-img'
+                  }}
+                {% elsif block_image != blank %}
+                  {{ block_image | image_url: width: 1000 | image_tag: class: 'simple-collection-block-image-img' }}
+                {% endif %}
+              </div>
+              <h3 class="simple-collection-block-title">{{ block.settings.title }}</h3>
+              <div class="simple-collection-block-text">
+                {% if block_text != blank %}
+                  {{ block_text }}
+                {% else %}
+                  {{ block_collection_title }}
+                {% endif %}
+              </div>
+              <div class="simple-collection-block-button">
+                <a
+                  href="{{ block_button_url }}"
+                  class="{{ block_button_style }} {{ block_button_size }} {{ block_button_color }}"
+                >
+                  {{ block_button_label }}
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.collection-grid-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
+  })
+</script>
+
+{% schema %}
+{
+  "name": "Simple Collection Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Section width",
+      "default": "wrapper--none",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_allignment",
+      "label": "Text allignment",
+      "default": "text-center",
+      "options": [
+        { "value": "text-center", "label": "Center" },
+        { "value": "text-left", "label": "Left" },
+        { "value": "text-right", "label": "Right" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Simple Collection Grid"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Collection",
+      "type": "collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Watch Video"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL",
+          "info": "setting this will override the video button"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Size",
+          "default": "btn--long",
+          "options": [
+            { "value": "btn--small", "label": "Small button" },
+            { "value": "btn--medium", "label": "Medium button" },
+            { "value": "btn--large", "label": "Large button" },
+            { "value": "btn--long", "label": "Long button" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn",
+          "options": [
+            { "value": "btn-text-thick-line", "label": "Capitalized text" },
+            { "value": "btn", "label": "Solid button" },
+            { "value": "btn--soft", "label": "Soft button" },
+            { "value": "btn--outline", "label": "Outlined button" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_color",
+          "label": "Color",
+          "default": "btn--white",
+          "options": [
+            { "value": "btn--primary", "label": "Bright accent" },
+            { "value": "btn--secondary", "label": "Secondary accent" },
+            { "value": "btn--neutral", "label": "Text color" },
+            { "value": "btn--black", "label": "Black" },
+            { "value": "btn--white", "label": "White" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

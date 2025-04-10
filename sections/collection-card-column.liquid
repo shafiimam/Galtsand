@@ -1,3 +1,7 @@
+{% liquid
+  assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-'
+  assign sub_text_size = section.settings.subtitle_text_size | prepend: 'body-size-'
+%}
 <div class="cards-section">
   <div
     class="cards-section__inner {{ section.settings.width }}"
@@ -5,14 +9,24 @@
   >
     {% if section.settings.title != blank %}
       <div class="cards-section__title">
-        <h1 class="heading">
+        <h1 class="heading {{ title_font_size_class }}">
           {{ section.settings.title }}
         </h1>
       </div>
     {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <div class="cards-section__subtitle">
+        <p class="body {{ sub_text_size }}">
+          {{ section.settings.subtitle }}
+        </p>
+      </div>
+    {% endif %}
     <div class="cards-section__cards">
       {% for block in section.blocks %}
-        <div class="block-card" {{ block.shopify_attributes }}>
+        <div
+          class="block-card {{ section.settings.text_alignment }}"
+          {{ block.shopify_attributes }}
+        >
           <div class="block-card__image">
             {% if block.settings.image %}
               <picture>
@@ -109,6 +123,34 @@
   "max_blocks": 4,
   "settings": [
     {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_text_size",
+      "label": "Subtitle text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
@@ -181,6 +223,23 @@
         { "value": "btn--black", "label": "Black" },
         { "value": "btn--white", "label": "White" }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_card_border",
+      "label": "Show Card Border",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Card Text Alignment",
+      "default": "text-left",
+      "options": [
+        { "value": "text-left", "label": "Left" },
+        { "value": "text-center", "label": "Center" },
+        { "value": "text-right", "label": "Right" }
+      ]
     }
   ],
   "blocks": [
@@ -217,6 +276,11 @@
           "default": "Explore"
         }
       ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Card Column"
     }
   ]
 }

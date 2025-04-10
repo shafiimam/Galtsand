@@ -1,3 +1,10 @@
+{% liquid
+  assign button_link = section.settings.button_url
+  assign button_text = section.settings.button_label
+  assign button_size = section.settings.button_size
+  assign button_style = section.settings.button_style
+  assign button_color = section.settings.button_color
+%}
 <section class="banner-with-text-overlay">
   <div class="banner-with-text-overlay__inner">
     <picture>
@@ -12,13 +19,13 @@
       >
     </picture>
     <div class="banner-with-text-overlay__content">
-      <h2 class="banner-with-text-overlay__title heading heading--xl">{{ section.settings.title }}</h2>
-      <p class="banner-with-text-overlay__subtitle font-body">{{ section.settings.subtitle }}</p>
+      <h2 class="banner-with-text-overlay__title heading heading-size-10">{{ section.settings.title }}</h2>
+      <p class="banner-with-text-overlay__subtitle body body-size-6 mb-r8">{{ section.settings.subtitle }}</p>
       <a
-        href="{{ section.settings.button_link }}"
-        class="standard__cta hero__btn btn btn--primary btn--long aos-init aos-animate banner-with-text-overlay__button"
+        href="{{ button_link }}"
+        class="{{ button_style }} {{ button_size }} {{ button_color }}"
       >
-        {{- section.settings.button_text -}}
+        {{- button_text -}}
       </a>
     </div>
   </div>
@@ -31,7 +38,7 @@
   }
   .banner-with-text-overlay__image {
     width: 100%;
-    height: var(--full-screen);
+    height: 100%;
     object-fit: cover;
   }
   .banner-with-text-overlay__content {
@@ -45,8 +52,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 6px solid #ffffff;
-    margin:0 auto;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
     width: calc(100vw - 550px);
     padding: 32px;
     @media screen and (max-width: 768px) {
@@ -56,28 +63,12 @@
   .banner-with-text-overlay__title {
     color: #ffffff;
     text-align: center;
-    font-size: 76px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 76px */
-    letter-spacing: -2.28px;
-    @media screen and (max-width: 768px) {
-      font-size: 44px;
-    }
   }
   .banner-with-text-overlay__subtitle {
     color: #ffffff;
-    text-align: center;
-    font-size: 23px;
-    font-style: normal;
-    line-height: 80%; /* 19.2px */
     max-width: 600px;
-    margin: 0 auto;
-    margin-top: 12px;
-    margin-bottom: 48px;
     @media screen and (max-width: 768px) {
       max-width: 400px;
-      font-size: 20px;
       padding: 0 20px;
     }
   }
@@ -110,15 +101,58 @@
       "label": "Subtitle"
     },
     {
+      "type": "header",
+      "content": "Button"
+    },
+    {
       "type": "text",
-      "id": "button_text",
-      "label": "Button Text"
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Now"
     },
     {
       "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
-    }
+      "id": "button_url",
+      "label": "Button URL",
+      "info": "setting this will override the video button"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
+    },
   ],
   "presets": [
     {
