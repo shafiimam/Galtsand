@@ -78,6 +78,172 @@
         "padding_bottom": 0
       }
     },
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "image_wKWh6B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/galtsand.png",
+            "image_max_limit": 60,
+            "image_link": ""
+          }
+        },
+        "banner-kicker": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Vel sodales urna vitae",
+            "enable_line": false,
+            "text_size": 12
+          }
+        },
+        "banner-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Where Heritage Meets Innovation in Athleisure.",
+            "text_size": 11
+          }
+        },
+        "banner-text": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Galtsand has a legacy of quality and excellence. We ensure every product meets high standards, showcasing our passion for craftsmanship and innovation.</p>",
+            "text_size": 6
+          }
+        },
+        "banner-button": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "Discover the story",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn--soft",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "shop  now",
+            "link_2": "shopify://pages/contact",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn",
+            "button_color_2": "btn--primary",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "image_wKWh6B",
+        "banner-kicker",
+        "banner-heading",
+        "banner-text",
+        "banner-button"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-WebVersion-Banner_v3.png",
+        "mobile_image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
+        "height": "use_image",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--neutral",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_logos_E3KxjC": {
+      "type": "section-logos",
+      "blocks": {
+        "logo_image_Fntw8M": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Up_to_60_off1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 170,
+            "spacing": 50
+          }
+        },
+        "logo_image_HgbFJ3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Group_324535029.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_m8GpmR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Up_to_60_off1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 170,
+            "spacing": 50
+          }
+        },
+        "logo_image_BEdAk7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Group_324535029.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_dDCAph": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Up_to_60_off1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 170,
+            "spacing": 50
+          }
+        },
+        "logo_image_xHWzH8": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Group_324535029.png",
+            "link": "",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_Fntw8M",
+        "logo_image_HgbFJ3",
+        "logo_image_m8GpmR",
+        "logo_image_BEdAk7",
+        "logo_image_dDCAph",
+        "logo_image_xHWzH8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".wrapper--none {border-bottom: 1px solid #e6dbc4; border-top: 1px solid #e6dbc4;}"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--dark bg--invert",
+        "enable_marquee": true,
+        "marquee_speed": 30,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_collection_slider_XiBHU9": {
       "type": "section-collection-slider",
       "settings": {
@@ -215,102 +381,6 @@
         "arrow_color": "#ffffff"
       }
     },
-    "small_collection_grid_xqdYiz": {
-      "type": "small-collection-grid",
-      "blocks": {
-        "collection_card_6GHYUF": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled.webp",
-            "text": "Serengheti Buckle Belt Hicking Short",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/buckle-belt-hiking-short"
-          }
-        },
-        "collection_card_mpM4M4": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_75a6ac22-582f-4c01-9f2b-15b2d6c41663.webp",
-            "text": "Geneva Quarter Zip Dress",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/geneva-dress"
-          }
-        },
-        "collection_card_Rh4z7k": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_35d55160-c069-437b-98d8-032f3bcbac0b.webp",
-            "text": "Mountain Hunter Vest",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/mountain-hunter-vest"
-          }
-        },
-        "collection_card_WUkqdw": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
-            "text": "Traverse Nylon S/S Zip Front Shirt",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/traverse-nylon-s-s-zip-front-shirt"
-          }
-        },
-        "collection_card_agz8Nr": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_eceb4e80-8242-4f67-8d69-81d346c18612.webp",
-            "text": "Pacific Shacket",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/pacific-shacket"
-          }
-        },
-        "collection_card_jR3DXB": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_0163e9fc-0e5f-4184-967a-2799ea83233c.webp",
-            "text": "Courtside Sweater",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/knit-varsity-v-neck-sweater"
-          }
-        },
-        "collection_card_nVyJF3": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
-            "text": "Athena Chino Khaki Asymmetric Skirt",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/athena-chino-khaki-asymmetric-skirt"
-          }
-        }
-      },
-      "block_order": [
-        "collection_card_6GHYUF",
-        "collection_card_mpM4M4",
-        "collection_card_Rh4z7k",
-        "collection_card_WUkqdw",
-        "collection_card_agz8Nr",
-        "collection_card_jR3DXB",
-        "collection_card_nVyJF3"
-      ],
-      "custom_css": [],
-      "settings": {
-        "title": "Most Viewed This Week",
-        "title_text_size": 10,
-        "title_text_color": "#000000",
-        "subtitle": "",
-        "subtitle_text_size": 5,
-        "subtitle_text_color": "#000000",
-        "text_allignment": "text-center",
-        "collection_to_show": 7,
-        "button_label": "Watch Video",
-        "button_url": "",
-        "button_size": "btn--small",
-        "button_style": "btn-text-thick-line",
-        "button_color": "btn--black",
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "card_cascade_F4z48g": {
       "type": "card-cascade",
       "blocks": {
@@ -353,9 +423,7 @@
         "collection_card_99gVRN",
         "collection_card_nKDEHr"
       ],
-      "custom_css": [
-        ".card-cascade__card-image {aspect-ratio: auto;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Trending Now",
         "title_text_size": 10,
@@ -494,7 +562,7 @@
         "title": "Pack Light, Move Fast",
         "title_text_size": 10,
         "title_color": "#000000",
-        "content": "Travel-ready, performance-inspired looks are coming to your closet just in time for the new season.",
+        "content": "TRAVEL-READY, PERFORMANCE-INSPIRED LOOKS ARE COMING TO YOU JUST IN TIME FOR THE NEW SEASON.",
         "content_color": "#000000",
         "content_text_size": 5,
         "text_alignment": "text-center",
@@ -698,18 +766,19 @@
         "title_text_size": 10,
         "title_color": "#000000",
         "image": "shopify://shop_images/Galtsand_Event-125.jpg",
-        "height": "use_image",
+        "height": "use_screen_full",
         "width": "wrapper--full"
       }
     }
   },
   "order": [
     "section_video_pMeAkR",
+    "hero",
+    "section_logos_E3KxjC",
     "section_collection_slider_XiBHU9",
     "video_with_modal_zPUEPT",
     "section_collection_slider_yEBj8t",
     "collection-split-section-1",
-    "small_collection_grid_xqdYiz",
     "card_cascade_F4z48g",
     "section_list_collections_products_N6gfAm",
     "card_cascade_TyENQQ",
