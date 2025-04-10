@@ -18616,7 +18616,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
 }
 .footer__quicklinks li {
   margin: 0 0 11px 0;
-  font-family: "Inter Tight";
+  font-family: var(--FONT-STACK-BODY);
 }
 .footer__quicklinks a {
   position: relative;
