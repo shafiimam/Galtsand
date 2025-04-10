@@ -73,7 +73,7 @@
             "font_size": 5,
             "text_columns": 2,
             "align_text": "text-left",
-            "text_color": "#000000",
+            "text_color": "#1d1d1d",
             "button_text": "",
             "button_url": "",
             "button_color": "btn--neutral",
@@ -84,7 +84,7 @@
         "image_TBrf9y": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/men_s_collection_banner.png",
+            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
             "overlay_opacity": 15,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -183,19 +183,13 @@
         "card_zHDFNg"
       ],
       "settings": {
-        "title": "",
-        "title_text_size": 10,
-        "subtitle": "",
-        "subtitle_text_size": 5,
         "background_color": "#1d1d1d",
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36,
         "button_size": "btn--large",
         "button_style": "btn--outline",
-        "button_color": "btn--black",
-        "show_card_border": true,
-        "text_alignment": "text-left"
+        "button_color": "btn--black"
       }
     },
     "collection_card_column_JK3ptk": {
@@ -250,19 +244,13 @@
       ],
       "disabled": true,
       "settings": {
-        "title": "",
-        "title_text_size": 10,
-        "subtitle": "",
-        "subtitle_text_size": 5,
         "background_color": "#660f28",
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36,
         "button_size": "btn--long",
         "button_style": "btn",
-        "button_color": "btn--white",
-        "show_card_border": true,
-        "text_alignment": "text-left"
+        "button_color": "btn--white"
       }
     },
     "column_product_collection_HDP6Rw": {
@@ -338,8 +326,8 @@
         "button_RB9wME": {
           "type": "button",
           "settings": {
-            "link_text": "Browse all products",
-            "link": "shopify://collections/all"
+            "link_text": "Browse all collections",
+            "link": "shopify://collections"
           }
         }
       },
@@ -351,8 +339,8 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Shop by activity",
-        "subttitle": "Gear Up for Every Challenge",
+        "title": "Trending Now",
+        "subttitle": "",
         "bg": "palette--light bg--neutral",
         "content_color": "#000000",
         "grid": 3,
