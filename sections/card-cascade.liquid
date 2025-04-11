@@ -7,6 +7,11 @@
 <section
   class="card-cascade-section {{ section.settings.width }} {{ section.settings.text_alignment }} shopify-section section-padding"
   id="card-cascade-section-{{ section.id }}"
+  style="
+    --PT: {{ section.settings.padding_top }}px;
+    --PB: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  "
 >
   <div class="card-cascade__container">
     <div class="mb-r6 {{ section.settings.text_alignment }}" style="color: {{ section.settings.text_color }};">
@@ -285,6 +290,36 @@
         { "value": "btn--black", "label": "Black" },
         { "value": "btn--white", "label": "White" }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": " Background Color",
+      "default": "#F0EDE6"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
     }
   ],
   "blocks": [

@@ -6,9 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding: calc(var(--outer) * 2);
+    padding-block: calc(var(--outer) * 2);
+    padding-inline: calc(var(--outer) / 2);
     @media only screen and (max-width: 500px) {
-      padding: var(--outer);
+      padding-block: var(--outer);
     }
   }
   .box {
@@ -25,7 +26,7 @@
   .collection-split__product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--gutter);
+    gap: calc(var(--gutter) / 2);
   }
   .arrows {
     position: absolute;
@@ -129,7 +130,7 @@
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
 >
   <div class="slider">
-    <div class="collection-split-header mb-r6 {{ section.settings.text_allignment }}">
+    <div class="collection-split-header mb-r11 {{ section.settings.text_allignment }}">
       <div class="collection-split-header-content">
         <h1
           class="heading mb-r6 {{ title_font_size_class }} "
