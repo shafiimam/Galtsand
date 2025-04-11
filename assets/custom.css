@@ -305,7 +305,7 @@ shopify-payment-terms {
 }
 span.swym-wish-counter.swym-wishlist-header-counter {
   position: absolute;
-  top: 30px;
+  top: -5px;
   right: 6px;
   font-family: var(--FONT-STACK-BODY);
   font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
@@ -431,12 +431,12 @@ span.swym-wish-counter.swym-wishlist-header-counter {
 a.header__mobile__button.swym-wishlist {
   position: relative;
 }
-@media screen and (max-width: 768px) {
-  span.swym-wish-counter.swym-wishlist-header-counter {
+
+ .header__mobile__button .swym-wish-counter.swym-wishlist-header-counter {
     top: 20px;
     right: -10px;
   }
-}
+
 .navlink.swym-wishlist {
   padding-left: 0;
 }
