@@ -437,3 +437,24 @@ a.header__mobile__button.swym-wishlist {
     right: -10px;
   }
 }
+.navlink.swym-wishlist {
+  padding-left: 0;
+}
+.navlink.navlink--button {
+  background-color: #000000;
+  padding-block: 8px;
+  padding-inline: 16px;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+.navlink.navlink--button:hover {
+  background-color: #313131;
+  border: 1px solid #313131;
+}
+@media screen and (min-width: 470px) {
+  .icon-theme-stroke.icon-set-mod-user,
+  .icon-theme-stroke.icon-set-mod-cart {
+    stroke: #ffffff;
+  }
+}

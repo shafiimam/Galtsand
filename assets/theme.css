@@ -14665,6 +14665,7 @@ body .shopify-email-marketing-confirmation__container {
 }
 .header__desktop__buttons {
   display: flex;
+  align-items: center;
 }
 .header__menu__inner {
   display: flex;
@@ -26528,5 +26529,5 @@ input:not(.sold-out):not(.unavailable):not(:disabled)
 .kids-3 span,
 .kids-4 span,
 .kids-5 span {
-  font-size: calc(var(--font-6) * var(--FONT-ADJUST-BODY)) !important;
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY)) !important;
 }

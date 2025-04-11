@@ -181,8 +181,8 @@
     style="
       --PT: {{ section.settings.padding_top }}px;
       --PB: {{ section.settings.padding_bottom }}px;
-      --bg: var(--COLOR-ANNOUNCEMENT-BG);
-      --text: var(--COLOR-ANNOUNCEMENT-TEXT);
+      --bg: {{ section.settings.background_color }};
+      --text: {{ section.settings.text_color }};
       --underline: calc(var(--font-{{ section.settings.text_size }}) * var(--FONT-ADJUST-ACCENT));"
     data-announcement-bar
     data-section-id="{{ section.id }}"
@@ -308,6 +308,22 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"  
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
     }
   ],
   "blocks" : [

@@ -452,7 +452,7 @@
 
     {%- if shop.customer_accounts_enabled and section.settings.enable_account -%}
       <div class="header__desktop__button {% if request.path contains routes.account_url %} main-menu--active{% endif %}" {{ text_hover }}>
-        <a href="{{ routes.account_url }}" class="navlink">
+        <a href="{{ routes.account_url }}" class="navlink navlink--button">
           {%- if section.settings.use_icons -%}
             {{ account_icon }}
             <span class="visually-hidden">{{ 'customer.account.title' | t }}</span>
@@ -466,7 +466,7 @@
 
     <div class="header__desktop__button {% if request.path contains routes.cart_url %} main-menu--active{% endif %}" {{ text_hover }}>
       <a href="{{ routes.cart_url }}"
-        class="navlink navlink--cart"
+        class="navlink navlink--cart navlink--button"
         data-drawer-toggle="drawer-cart">
         {% if section.settings.use_icons %}
           {{ cart_icon }}
