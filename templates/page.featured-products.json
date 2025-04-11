@@ -104,6 +104,16 @@
             "button_link": "{{ block.settings.collection.url }}"
           }
         },
+        "tab_kPVpyt": {
+          "type": "tab",
+          "settings": {
+            "title": "Drop 2",
+            "collection": "",
+            "product_limit": 4,
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        },
         "tab_LNQqqG": {
           "type": "tab",
           "settings": {
@@ -137,13 +147,18 @@
       },
       "block_order": [
         "tab_gah43F",
+        "tab_kPVpyt",
         "tab_LNQqqG",
         "tab_EQrzGj",
         "tab_G8NB98"
       ],
       "settings": {
         "title": "Elevate Your Adventure.",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
         "subtitle": "From 9-to-5 to Off the Grid.",
+        "sub_text_size": 5,
+        "sub_text_color": "#000000",
         "grid_large": 4,
         "grid_medium": 3,
         "grid_mobile": 1.2,
@@ -206,7 +221,11 @@
       ],
       "settings": {
         "title": "Adventure in Style.",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
         "subtitle": "Happiest under open skies, lost in quiet moments, found in the wild. Explore a collection made for life outside.",
+        "sub_text_size": 5,
+        "sub_text_color": "#000000",
         "width": "wrapper--none"
       }
     },
