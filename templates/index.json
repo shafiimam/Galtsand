@@ -265,8 +265,8 @@
         "grid_mobile": 1,
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 48
+        "padding_top": 120,
+        "padding_bottom": 120
       }
     },
     "video_with_modal_zPUEPT": {
@@ -721,7 +721,7 @@
           "settings": {
             "title": "",
             "title_color": "#660f28",
-            "title_size": 0,
+            "title_size_v2": 0,
             "alignment": "center",
             "margin_top": 0,
             "margin_bottom": 0,
