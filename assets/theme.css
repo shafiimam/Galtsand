@@ -19736,7 +19736,7 @@ label.quatity-selector {
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-relaxed);
   border-top: none;
-  border-right: 1px solid #660f28;
+  border-right: 1px solid var(--border);
   border-bottom: none;
   border-left: none;
   margin: 0;
