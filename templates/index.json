@@ -439,7 +439,7 @@
         "button_size": "btn--large",
         "button_style": "btn",
         "button_color": "btn--secondary",
-        "background_color": "#F0EDE6",
+        "background_color": "#f0ede6",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -460,7 +460,7 @@
             "link_size": 2,
             "block_card_position": "first",
             "button_size": "btn--large",
-            "button_style": "btn--outline",
+            "button_style": "btn",
             "button_color": "btn--black"
           }
         },
@@ -477,7 +477,7 @@
             "link_size": 3,
             "block_card_position": "first",
             "button_size": "btn--large",
-            "button_style": "btn--outline",
+            "button_style": "btn",
             "button_color": "btn--black"
           }
         },
@@ -494,7 +494,7 @@
             "link_size": 5,
             "block_card_position": "first",
             "button_size": "btn--large",
-            "button_style": "btn--outline",
+            "button_style": "btn",
             "button_color": "btn--black"
           }
         }
@@ -576,7 +576,7 @@
         "button_size": "btn--small",
         "button_style": "btn-text-thick-line",
         "button_color": "btn--white",
-        "background_color": "#F0EDE6",
+        "background_color": "#f0ede6",
         "padding_top": 36,
         "padding_bottom": 36
       }
