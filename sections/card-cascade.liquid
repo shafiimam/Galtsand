@@ -14,14 +14,14 @@
   "
 >
   <div class="card-cascade__container">
-    <div class="mb-r6 {{ section.settings.text_alignment }}" style="color: {{ section.settings.text_color }};">
+    <div class="mb-r11 {{ section.settings.text_alignment }}" style="color: {{ section.settings.text_color }};">
       {% if section.settings.title %}
         <h1 class="heading mb-r6 {{ title_font_size_class }}" style="color: {{ section.settings.title_color }};">
           {{ section.settings.title }}
         </h1>
       {% endif %}
       {% if section.settings.content %}
-        <p class="{{ content_font_size_class }} mb-r8" style="color: {{ section.settings.content_color }};">
+        <p class="{{ content_font_size_class }}" style="color: {{ section.settings.content_color }};">
           {{ section.settings.content }}
         </p>
       {% endif %}
@@ -76,9 +76,6 @@
   }
   .card-cascade__card.swiper-slide {
     height: initial !important;
-  }
-  :not(.swiper-initialized) .card-cascade__card {
-    max-width: calc(100% / {{ section.blocks | size }});
   }
   h1.card-cascade__title {
     color: #e6dbc4;

@@ -20359,7 +20359,7 @@ input[type="number"].filter__price__input {
 }
 @media only screen and (min-width: 768px) {
   .collection-split__grid {
-    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-columns: 1fr 2fr;
     row-gap: calc(var(--gutter) / 2);
   }
 }

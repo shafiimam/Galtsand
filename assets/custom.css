@@ -243,6 +243,7 @@ span[data-header-cart-count] {
   position: absolute;
   bottom: 0;
   left: 4px;
+  color: #fff;
 }
 [data-header-cart-count="0"] {
   display: none;

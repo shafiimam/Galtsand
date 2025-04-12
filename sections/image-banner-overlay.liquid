@@ -1,0 +1,319 @@
+{% liquid
+  assign section_image = section.settings.image
+  assign section_image_mobile = section.settings.image_mobile
+  assign header_text = section.settings.header_text
+  assign subtitle = section.settings.subtitle
+  assign title_text_size = section.settings.title_text_size | prepend: 'heading-size-'
+  assign title_text_color = section.settings.title_text_color
+  assign sub_text_size = section.settings.sub_text_size | prepend: 'body-size-'
+  assign sub_text_color = section.settings.sub_text_color
+  assign subtitle_2 = section.settings.subtitle_2
+  assign sub_text_size_2 = section.settings.sub_text_size_2 | prepend: 'body-size-'
+  assign sub_text_color_2 = section.settings.sub_text_color_2
+  assign text_allignment = section.settings.text_allignment
+  assign content_horizontal_position = section.settings.content_horizontal_position
+  assign content_vertical_position = section.settings.content_vertical_position
+  assign button_label = section.settings.button_label
+  assign button_url = section.settings.button_url
+  assign button_size = section.settings.button_size
+  assign button_style = section.settings.button_style
+  assign button_color = section.settings.button_color
+%}
+<div
+  id="shopify-section-{{ section.id }}"
+  class="section-padding  {{ section.settings.bg }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-content-overlay"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="image-banner-overlay-container {{ section.settings.width }}">
+    <div class="image-banner-overlay__image">
+      <div
+        class="image-banner-overlay"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="image-banner-overlay__image">
+          <picture>
+            <source srcset="{{ section_image_mobile | image_url : width: 768 }}" media="(max-width: 768px)">
+            <img
+              src="{{ section_image | image_url: width: 2000 }}"
+              alt="{{ section_image.alt }}"
+              width="100%"
+              height="100%"
+            >
+          </picture>
+
+          <div
+            class="image-banner-overlay_content {{ text_allignment }} image-banner-overlay_content-{{ section.id }}"
+          >
+            <h3 class="heading {{ title_text_size }} mb-r8" style="color: {{ title_text_color }}">
+              {{ header_text }}
+            </h3>
+            {% if subtitle != blank %}
+              <p
+                class="body {{ sub_text_size }} mb-r8"
+                style="color: {{ sub_text_color }}; text-transform: uppercase;"
+              >
+                {{ subtitle }}
+              </p>
+            {% endif %}
+            {% if subtitle_2 != blank %}
+              <p class="body {{ sub_text_size_2 }} mb-r8" style="color: {{ sub_text_color_2 }}">
+                {{ subtitle_2 }}
+              </p>
+            {% endif %}
+            {% if button_label != blank %}
+              <a
+                href="{{ button_url }}"
+                class="btn {{ button_size }} {{ button_style }} {{ button_color }}"
+              >
+                {{ button_label }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .image-banner-overlay__image {
+    position: relative;
+  }
+  @media screen and (min-width: 768px) {
+     .image-banner-overlay_content-{{ section.id }} {
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+     }
+   }
+  .image-banner-overlay_content {
+    border: 1px solid #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+    padding-inline: 64px;
+    padding-block-start: 64px;
+    padding-block-end: 80px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 760px;   
+    @media screen and (max-width: 768px) {
+      left: 0;
+      right: 0;
+      max-width: 100%;
+      padding: 24px;
+      width: calc(100% - var(--gutter)* 2);
+      margin: 0 auto;
+      bottom: var(--gutter);
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Image Content Overlay",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Title",
+      "default": "Curated Collections"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcarfted by our expert designers"
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color",
+      "label": "Subtext color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_2",
+      "label": "Subtitle 2",
+      "default": "Handcarfted by our expert designers"
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size_2",
+      "label": "Subtext size 2",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color_2",
+      "label": "Subtext color 2",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "text_allignment",
+      "label": "Text allignment",
+      "default": "text-center",
+      "options": [
+        { "value": "text-center", "label": "Center" },
+        { "value": "text-left", "label": "Left" },
+        { "value": "text-right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Overlay Position"
+    },
+    {
+      "type": "range",
+      "id": "content_horizontal_position",
+      "label": "Content Horizontal Position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "content_vertical_position",
+      "label": "Content Vertical Position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL",
+      "info": "setting this will override the video button"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "Size",
+      "default": "btn--long",
+      "options": [
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn",
+      "options": [
+        { "value": "btn-text-thick-line", "label": "Capitalized text" },
+        { "value": "btn", "label": "Solid button" },
+        { "value": "btn--soft", "label": "Soft button" },
+        { "value": "btn--outline", "label": "Outlined button" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Color",
+      "default": "btn--white",
+      "options": [
+        { "value": "btn--primary", "label": "Bright accent" },
+        { "value": "btn--secondary", "label": "Secondary accent" },
+        { "value": "btn--neutral", "label": "Text color" },
+        { "value": "btn--black", "label": "Black" },
+        { "value": "btn--white", "label": "White" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Banner Overlay"
+    }
+  ]
+}
+{% endschema %}

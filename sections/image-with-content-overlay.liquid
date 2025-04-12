@@ -1,0 +1,361 @@
+{% liquid
+  assign header_text = section.settings.header_text
+  assign subtitle = section.settings.subtitle
+  assign title_text_size = section.settings.title_text_size | prepend: 'heading-size-'
+  assign title_text_color = section.settings.title_text_color
+  assign sub_text_size = section.settings.sub_text_size | prepend: 'body-size-'
+  assign sub_text_color = section.settings.sub_text_color
+  assign text_allignment = section.settings.text_allignment
+%}
+<div
+  id="shopify-section-{{ section.id }}"
+  class="section-padding  {{ section.settings.bg }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-content-overlay"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="image-with-content-overlay-container {{ section.settings.width }}">
+    <div class="image with-content-overlay__header {{ text_allignment }} mb-r11">
+      <h2 class="heading {{ title_text_size }}" style="color: {{ title_text_color }};">{{ header_text }}</h2>
+      <p class="body {{ sub_text_size }}" style="color: {{ sub_text_color }}; text-transform: uppercase;">{{ subtitle }}</p>
+    </div>
+    <div class="image-with-overlay-blocks-container">
+      {% for block in section.blocks %}
+        {% liquid
+          assign block_image = block.settings.image
+          assign block_image_mobile = block.settings.image_mobile
+          assign block_header_text = block.settings.header_text
+          assign block_subtitle = block.settings.subtitle
+          assign block_title_text_size = block.settings.title_text_size | prepend: 'heading-size-'
+          assign block_title_text_color = block.settings.title_text_color
+          assign block_sub_text_size = block.settings.sub_text_size | prepend: 'body-size-'
+          assign block_sub_text_color = block.settings.sub_text_color
+          assign block_text_allignment = block.settings.text_allignment
+          assign block_content_horizontal_position = block.settings.content_horizontal_position
+          assign block_content_vertical_position = block.settings.content_vertical_position
+          assign block_button_label = block.settings.button_label
+          assign block_button_url = block.settings.button_url
+          assign block_button_size = block.settings.button_size
+          assign block_button_style = block.settings.button_style
+          assign block_button_color = block.settings.button_color
+        %}
+        <div
+          class="image-with-overlay-block"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="{{ forloop.index | times: 100 }}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="image-with-overlay-block__image">
+            <picture>
+              <source srcset="{{ block_image_mobile | image_url : width: 768 }}" media="(max-width: 768px)">
+              <img
+                src="{{ block_image | image_url: width: 2000 }}"
+                alt="{{ block_image.alt }}"
+                width="100%"
+                height="100%"
+              >
+            </picture>
+            <style>
+              @media screen and (min-width: 768px) {
+                .image-with-overlay-block__content-{{ block.id }} {
+                  left: {{ block_content_horizontal_position }}%;
+                  top: {{ block_content_vertical_position }}%;
+                }
+              }
+            </style>
+            <div
+              class="image-with-overlay-block__content {{ block_text_allignment }} image-with-overlay-block__content-{{ block.id }}"
+            >
+              <h3 class="heading {{ block_title_text_size }} mb-r8" style="color: {{ block_title_text_color }}">
+                {{ block_header_text }}
+              </h3>
+              <p class="body {{ block_sub_text_size }} mb-r8" style="color: {{ block_sub_text_color }}">
+                {{ block_subtitle }}
+              </p>
+              {% if block_button_label != blank %}
+                <a
+                  href="{{ block_button_url }}"
+                  class="btn {{ block_button_size }} {{ block_button_style }} {{ block_button_color }}"
+                >
+                  {{ block_button_label }}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .image-with-overlay-block__image {
+    position: relative;
+  }
+  .image-with-overlay-block {
+    margin-bottom: 16px;
+  }
+  .image-with-overlay-block__content {
+    border: 1px solid #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    @media screen and (max-width: 768px) {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Image Content Overlay",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Title",
+      "default": "Curated Collections"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcarfted by our expert designers"
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color",
+      "label": "Subtext color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "text_allignment",
+      "label": "Text allignment",
+      "default": "text-center",
+      "options": [
+        { "value": "text-center", "label": "Center" },
+        { "value": "text-left", "label": "Left" },
+        { "value": "text-right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_banner",
+      "name": "Image Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Image Mobile"
+        },
+        {
+          "type": "text",
+          "id": "header_text",
+          "label": "Title",
+          "default": "Curated Collections"
+        },
+        {
+          "type": "range",
+          "id": "title_text_size",
+          "label": "Title text size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 10
+        },
+        {
+          "type": "color",
+          "id": "title_text_color",
+          "label": "Title text color",
+          "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Handcarfted by our expert designers"
+        },
+        {
+          "type": "range",
+          "id": "sub_text_size",
+          "label": "Subtext size",
+          "min": 1,
+          "max": 15,
+          "step": 1,
+          "default": 10
+        },
+        {
+          "type": "color",
+          "id": "sub_text_color",
+          "label": "Subtext color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "text_allignment",
+          "label": "Text allignment",
+          "default": "text-center",
+          "options": [
+            { "value": "text-center", "label": "Center" },
+            { "value": "text-left", "label": "Left" },
+            { "value": "text-right", "label": "Right" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Overlay Position"
+        },
+        {
+          "type": "range",
+          "id": "content_horizontal_position",
+          "label": "Content Horizontal Position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "content_vertical_position",
+          "label": "Content Vertical Position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL",
+          "info": "setting this will override the video button"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Size",
+          "default": "btn--long",
+          "options": [
+            { "value": "btn--small", "label": "Small button" },
+            { "value": "btn--medium", "label": "Medium button" },
+            { "value": "btn--large", "label": "Large button" },
+            { "value": "btn--long", "label": "Long button" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn",
+          "options": [
+            { "value": "btn-text-thick-line", "label": "Capitalized text" },
+            { "value": "btn", "label": "Solid button" },
+            { "value": "btn--soft", "label": "Soft button" },
+            { "value": "btn--outline", "label": "Outlined button" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_color",
+          "label": "Color",
+          "default": "btn--white",
+          "options": [
+            { "value": "btn--primary", "label": "Bright accent" },
+            { "value": "btn--secondary", "label": "Secondary accent" },
+            { "value": "btn--neutral", "label": "Text color" },
+            { "value": "btn--black", "label": "Black" },
+            { "value": "btn--white", "label": "White" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image With Content Overlay"
+    }
+  ]
+}
+{% endschema %}
