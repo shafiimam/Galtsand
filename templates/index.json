@@ -427,9 +427,9 @@
       "settings": {
         "title": "Trending Now",
         "title_text_size": 10,
-        "title_color": "#000000",
+        "title_color": "#202020",
         "content": "BASED ON WHAT YOU ARE SHOPPING.",
-        "content_color": "#000000",
+        "content_color": "#202020",
         "content_text_size": 5,
         "text_alignment": "text-center",
         "text_color": "#000000",
@@ -439,7 +439,7 @@
         "button_size": "btn--large",
         "button_style": "btn",
         "button_color": "btn--secondary",
-        "background_color": "#F0EDE6",
+        "background_color": "#f0ede6",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -519,68 +519,6 @@
         "padding_bottom": 30
       }
     },
-    "card_cascade_TyENQQ": {
-      "type": "card-cascade",
-      "blocks": {
-        "collection_card_i77kG9": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/hike2.jpg",
-            "title": "EVERYDAY ELEVATED",
-            "content": "Essential styles that keep you comfortable, taken to the next level",
-            "button_text": "EXPLORE MORE",
-            "button_link": "shopify://collections/ss25-collection",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_C3RPC4": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/0329.jpg",
-            "title": "PEAK PERFORMANCE",
-            "content": "Designed for endurance, elevated performance wear for every challenge.",
-            "button_text": "explore more",
-            "button_link": "shopify://collections/all",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_pC7mWi": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/202308161763ok.jpg",
-            "title": "ACTIVE ELEGANCE",
-            "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore more",
-            "button_link": "shopify://collections/active-ellegance",
-            "text_alignment": "text-left"
-          }
-        }
-      },
-      "block_order": [
-        "collection_card_i77kG9",
-        "collection_card_C3RPC4",
-        "collection_card_pC7mWi"
-      ],
-      "settings": {
-        "title": "Pack Light, Move Fast",
-        "title_text_size": 10,
-        "title_color": "#000000",
-        "content": "TRAVEL-READY, PERFORMANCE-INSPIRED LOOKS ARE COMING TO YOU JUST IN TIME FOR THE NEW SEASON.",
-        "content_color": "#000000",
-        "content_text_size": 5,
-        "text_alignment": "text-center",
-        "text_color": "#ffffff",
-        "width": "wrapper--full",
-        "show_border": true,
-        "overlap_over_image": true,
-        "button_size": "btn--small",
-        "button_style": "btn-text-thick-line",
-        "button_color": "btn--white",
-        "background_color": "#F0EDE6",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "about_us_section_xikFig": {
       "type": "about_us_section",
       "disabled": true,
@@ -603,6 +541,185 @@
         "description_4": "Our dedication to quality and innovation is reflected in our meticulous sourcing and expert craftsmanship. Every fabric is thoughtfully chosen, every stitch carefully placed, to create garments that endure. From our sportswear roots to our modern evolution, we create pieces that move with you, in style and spirit.",
         "btn_name": "Learn More",
         "btn_link": "shopify://pages/about-us1"
+      }
+    },
+    "image_with_content_overlay_iz6wnn": {
+      "type": "image-with-content-overlay",
+      "blocks": {
+        "image_banner_KrV6eX": {
+          "type": "image_banner",
+          "settings": {
+            "image": "shopify://shop_images/image_22.png",
+            "image_mobile": "shopify://shop_images/image_22_f3ff752d-6a36-43a8-ba0b-97bd4ca8d769.png",
+            "header_text": "EVERYDAY ELEVATED",
+            "title_text_size": 8,
+            "title_text_color": "#ffffff",
+            "subtitle": "Essential styles that keep you comfortable, taken to the next level",
+            "sub_text_size": 5,
+            "sub_text_color": "#ffffff",
+            "text_allignment": "text-left",
+            "content_horizontal_position": 5,
+            "content_vertical_position": 10,
+            "button_label": "Shop Now",
+            "button_url": "shopify://collections/ss25-collection",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
+          }
+        },
+        "image_banner_FPdUKj": {
+          "type": "image_banner",
+          "settings": {
+            "image": "shopify://shop_images/image-222.png",
+            "image_mobile": "shopify://shop_images/image-222_96adcf6c-4ea2-4075-a1e4-83ffdf707aa6.png",
+            "header_text": "PEAK PERFORMANCE",
+            "title_text_size": 8,
+            "title_text_color": "#ffffff",
+            "subtitle": "Designed for endurance, elevated performance wear for every challenge",
+            "sub_text_size": 5,
+            "sub_text_color": "#ffffff",
+            "text_allignment": "text-left",
+            "content_horizontal_position": 5,
+            "content_vertical_position": 10,
+            "button_label": "Shop Now",
+            "button_url": "https://galtsand.com/collections/all",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
+          }
+        },
+        "image_banner_meCpWz": {
+          "type": "image_banner",
+          "settings": {
+            "image": "shopify://shop_images/image2222.png",
+            "image_mobile": "shopify://shop_images/image2222_8cf6ca89-69bf-4020-9334-6d46c186a6b3.png",
+            "header_text": "ACTIVE ELEGANCE",
+            "title_text_size": 8,
+            "title_text_color": "#ffffff",
+            "subtitle": "Blending high-performance fabrics with elevated aesthetics",
+            "sub_text_size": 5,
+            "sub_text_color": "#ffffff",
+            "text_allignment": "text-left",
+            "content_horizontal_position": 5,
+            "content_vertical_position": 10,
+            "button_label": "Shop Now",
+            "button_url": "shopify://collections/active-ellegance",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_KrV6eX",
+        "image_banner_FPdUKj",
+        "image_banner_meCpWz"
+      ],
+      "custom_css": [],
+      "settings": {
+        "header_text": "Pack Light, Move Fast",
+        "title_text_size": 10,
+        "title_text_color": "#4c4c44",
+        "subtitle": "Based on what you are shopping",
+        "sub_text_size": 5,
+        "sub_text_color": "#4c4c44",
+        "text_allignment": "text-center",
+        "width": "wrapper--full",
+        "padding_top": 60,
+        "padding_bottom": 120
+      }
+    },
+    "image_banner_overlay_PiGphR": {
+      "type": "image-banner-overlay",
+      "settings": {
+        "image": "shopify://shop_images/banner1.png",
+        "image_mobile": "shopify://shop_images/banner1_885e09c9-8a54-4041-9146-0ee471522d8c.png",
+        "header_text": "Spring&Summer 2025",
+        "title_text_size": 11,
+        "title_text_color": "#ffffff",
+        "subtitle": "Figma ipsum component variant main layer. Move style list figma text subtract scale component italic. Background duplicate bold stroke pen subtract polygon link font bullet",
+        "sub_text_size": 5,
+        "sub_text_color": "#ffffff",
+        "subtitle_2": "Figma ipsum component variant main layer. Move style list figma text subtract scale component italic. Background duplicate bold stroke pen subtract polygon link font bullet. Invite effect reesizing team pencil library vertical strikethrough team vector. Style shadow bold fill reesizing.",
+        "sub_text_size_2": 5,
+        "sub_text_color_2": "#ffffff",
+        "text_allignment": "text-center",
+        "content_horizontal_position": 27,
+        "content_vertical_position": 10,
+        "button_label": "Shop Now",
+        "button_url": "shopify://collections/ss25-collection",
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--black",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "gallery_slider_rGdqMm": {
+      "type": "gallery-slider",
+      "blocks": {
+        "image_slide_EQxUqm": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_71_46122481-c3b8-4cbc-a1a3-7de2929334d4.png",
+            "link": ""
+          }
+        },
+        "image_slide_U6wfC9": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/ocean.png",
+            "link": ""
+          }
+        },
+        "image_slide_tXUnCr": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_733.png",
+            "link": ""
+          }
+        },
+        "image_slide_KwALJE": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Frame_74.png",
+            "link": ""
+          }
+        },
+        "image_slide_AcqMeV": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/image-222_96adcf6c-4ea2-4075-a1e4-83ffdf707aa6.png",
+            "link": ""
+          }
+        },
+        "image_slide_Ea4gU8": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/image_22_f3ff752d-6a36-43a8-ba0b-97bd4ca8d769.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_EQxUqm",
+        "image_slide_U6wfC9",
+        "image_slide_tXUnCr",
+        "image_slide_KwALJE",
+        "image_slide_AcqMeV",
+        "image_slide_Ea4gU8"
+      ],
+      "settings": {
+        "title": "Adventure in Style",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "subtitle": "Real people. Real moments. See Galtsand IRL, and shop looks reimagined by our community",
+        "sub_text_size": 5,
+        "sub_text_color": "#000000",
+        "width": "wrapper--full",
+        "padding_top": 120,
+        "padding_bottom": 120
       }
     },
     "customer_review_section_xAPmhf": {
@@ -787,8 +904,10 @@
     "collection-split-section-1",
     "card_cascade_F4z48g",
     "section_list_collections_products_N6gfAm",
-    "card_cascade_TyENQQ",
     "about_us_section_xikFig",
+    "image_with_content_overlay_iz6wnn",
+    "image_banner_overlay_PiGphR",
+    "gallery_slider_rGdqMm",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",
