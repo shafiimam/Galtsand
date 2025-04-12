@@ -631,6 +631,7 @@
     },
     "image_banner_overlay_PiGphR": {
       "type": "image-banner-overlay",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/banner1.png",
         "image_mobile": "shopify://shop_images/banner1_885e09c9-8a54-4041-9146-0ee471522d8c.png",
