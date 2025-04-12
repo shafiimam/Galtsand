@@ -519,69 +519,6 @@
         "padding_bottom": 30
       }
     },
-    "card_cascade_TyENQQ": {
-      "type": "card-cascade",
-      "blocks": {
-        "collection_card_i77kG9": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/hike2.jpg",
-            "title": "EVERYDAY ELEVATED",
-            "content": "Essential styles that keep you comfortable, taken to the next level",
-            "button_text": "EXPLORE MORE",
-            "button_link": "shopify://collections/ss25-collection",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_C3RPC4": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/0329.jpg",
-            "title": "PEAK PERFORMANCE",
-            "content": "Designed for endurance, elevated performance wear for every challenge.",
-            "button_text": "explore more",
-            "button_link": "shopify://collections/all",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_pC7mWi": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/202308161763ok.jpg",
-            "title": "ACTIVE ELEGANCE",
-            "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore more",
-            "button_link": "shopify://collections/active-ellegance",
-            "text_alignment": "text-left"
-          }
-        }
-      },
-      "block_order": [
-        "collection_card_i77kG9",
-        "collection_card_C3RPC4",
-        "collection_card_pC7mWi"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Pack Light, Move Fast",
-        "title_text_size": 10,
-        "title_color": "#000000",
-        "content": "TRAVEL-READY, PERFORMANCE-INSPIRED LOOKS ARE COMING TO YOU JUST IN TIME FOR THE NEW SEASON.",
-        "content_color": "#000000",
-        "content_text_size": 5,
-        "text_alignment": "text-center",
-        "text_color": "#ffffff",
-        "width": "wrapper--full",
-        "show_border": true,
-        "overlap_over_image": true,
-        "button_size": "btn--small",
-        "button_style": "btn-text-thick-line",
-        "button_color": "btn--white",
-        "background_color": "#f0ede6",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "about_us_section_xikFig": {
       "type": "about_us_section",
       "disabled": true,
@@ -788,7 +725,6 @@
     "collection-split-section-1",
     "card_cascade_F4z48g",
     "section_list_collections_products_N6gfAm",
-    "card_cascade_TyENQQ",
     "about_us_section_xikFig",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
