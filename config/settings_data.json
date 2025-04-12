@@ -46,7 +46,7 @@
     "font_body_size": 75,
     "font_accent_size": 100,
     "layout_site_width": 1600,
-    "layout_gutter": 24,
+    "layout_gutter": 18,
     "layout_outer": 50,
     "button_radius": 2,
     "animations_scroll_enable": true,
