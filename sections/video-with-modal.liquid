@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="video-modal-grid">
-      <div class="video-modal-section-video use_screen_three_quarters">
+      <div class="video-modal-section-video ">
         {% if section.settings.video != blank %}
           {{
             section.settings.video
@@ -58,11 +58,11 @@
               controls: false,
               image_size: '600x',
               poster: section.settings.video.preview_image,
-              class: 'video-modal-video use_screen_three_quarters'
+              class: 'video-modal-video'
           }}
         {% endif %}
       </div>
-      <div class="video-modal-section-image use_screen_three_quarters">
+      <div class="video-modal-section-image ">
         {% if section.settings.image != blank %}
           <img
             src="{{ section.settings.image | image_url: width: 600 }}"
@@ -104,18 +104,17 @@
   .video-modal-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: var(--three-quarters);
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
   }
   .video-modal-section-image {
-    display: none;
     background-color: {{ section.settings.image_background_color }};
-    @media (min-width: 768px) {
-       display: flex !important;
-       justify-content: center;
-       align-items: center;
-    }
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   .video-modal-section-image-img{
    max-width: 40%;
@@ -123,6 +122,7 @@
   .video-modal-video {
     width: 100%;
     object-fit: cover;
+    height: 100%;
   }
   .video-modal-btn:hover {
     background: #e6dbc4;
