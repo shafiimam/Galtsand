@@ -459,3 +459,10 @@ a.header__mobile__button.swym-wishlist {
     stroke: #ffffff;
   }
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.max-w-400 {
+  max-width: 400px;
+}

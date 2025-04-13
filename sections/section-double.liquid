@@ -190,17 +190,18 @@
 
                     {% if block.settings.text != blank %}
                       {% assign text_columns_class = block.settings.text_columns | prepend: 'columns--' %}
-                      <div class="rte {{ text_size_class }} {{ text_columns_class }} {{ justify_class }} font-body"
+                      <p class="rte body {{ text_size_class }} {{ text_columns_class }} {{ justify_class }} text-uppercase"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
-                        data-aos-order="3" style="color: {{ block.settings.text_color }};">
-                        {{ block.settings.text }}
-                      </div>
+                        data-aos-order="3" style="color: {{ block.settings.text_color }};" 
+                        >
+                        {{ block.settings.text | strip_html }}
+                      </p>
                     {% endif %}
 
                     {% if block.settings.button_text != blank %}
                       <a href="{{ block.settings.button_url }}"
-                        class="standard__cta {{ block.settings.button_style }} {{ block.settings.button_color }}"
+                        class="btn {{ block.settings.button_style }} {{ block.settings.button_color }}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="4">

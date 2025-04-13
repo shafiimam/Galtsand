@@ -69,7 +69,7 @@
           "settings": {
             "kicker": "WELCOME, GENTLEMEN",
             "title": "Men’s Collections.",
-            "text": "<p> Engineered for Performance, Designed for Life</p>",
+            "text": "<p>Engineered for Performance, Designed for Life</p>",
             "font_size": 5,
             "text_columns": 2,
             "align_text": "text-left",
