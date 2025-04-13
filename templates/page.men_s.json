@@ -71,13 +71,13 @@
             "title": "Men’s Collections.",
             "text": "<p>Engineered for Performance, Designed for Life</p>",
             "font_size": 5,
-            "text_columns": 2,
+            "text_columns": 1,
             "align_text": "text-left",
             "text_color": "#1d1d1d",
-            "button_text": "",
-            "button_url": "",
+            "button_text": "shop now",
+            "button_url": "shopify://collections/all-men",
             "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
+            "button_style": "btn btn--long",
             "bg_color": ""
           }
         },
@@ -183,13 +183,19 @@
         "card_zHDFNg"
       ],
       "settings": {
+        "title": "",
+        "title_text_size": 10,
+        "subtitle": "",
+        "subtitle_text_size": 5,
         "background_color": "#1d1d1d",
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36,
         "button_size": "btn--large",
         "button_style": "btn--outline",
-        "button_color": "btn--black"
+        "button_color": "btn--black",
+        "show_card_border": true,
+        "text_alignment": "text-left"
       }
     },
     "collection_card_column_JK3ptk": {
@@ -244,13 +250,19 @@
       ],
       "disabled": true,
       "settings": {
+        "title": "",
+        "title_text_size": 10,
+        "subtitle": "",
+        "subtitle_text_size": 5,
         "background_color": "#660f28",
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36,
         "button_size": "btn--long",
         "button_style": "btn",
-        "button_color": "btn--white"
+        "button_color": "btn--white",
+        "show_card_border": true,
+        "text_alignment": "text-left"
       }
     },
     "column_product_collection_HDP6Rw": {

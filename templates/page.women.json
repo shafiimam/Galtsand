@@ -71,13 +71,13 @@
             "title": "Women’s Collections",
             "text": "<p>Strength, Style & Performance in Every Move</p>",
             "font_size": 5,
-            "text_columns": 2,
+            "text_columns": 1,
             "align_text": "text-left",
             "text_color": "#000000",
-            "button_text": "",
-            "button_url": "",
+            "button_text": "SHOP NOW",
+            "button_url": "shopify://collections/all-women",
             "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
+            "button_style": "btn btn--long",
             "bg_color": ""
           }
         },
