@@ -1,4 +1,7 @@
-<section class="shop-by-color-section {{ section.settings.width }}">
+<section
+  class="shop-by-color-section {{ section.settings.width }} "
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
   <div class="shop-by-color-section__inner">
     <div class="shop-by-color-header text-center mb-r6">
       <h1 class="heading heading-size-{{ section.settings.title_text_size }}">
@@ -20,29 +23,31 @@
               class="color-card-image"
             >
           </picture>
-          <div class="color-card-color-swatch">
-            {% if block.settings.swatch_color_image.src != blank %}
-              <img
-                src="{{ block.settings.swatch_color_image | image_url: width: 100 }}"
-                alt="{{ block.settings.card_title }}"
-                class="color-card-color-swatch__image"
-              >
-            {% else %}
-              <div
-                class="color-card-color-swatch__color"
-                style="background-color: {{ block.settings.swatch_color }};"
-              ></div>
-            {% endif %}
+          <div class="color-card-color-swatch-container">
+            <div class="color-card-color-swatch">
+              <h2 class="heading-size-7 mb-r6">
+                {{ block.settings.card_title }}
+              </h2>
+              {% if block.settings.swatch_color_image.src != blank %}
+                <img
+                  src="{{ block.settings.swatch_color_image | image_url: width: 100 }}"
+                  alt="{{ block.settings.card_title }}"
+                  class="color-card-color-swatch__image"
+                >
+              {% else %}
+                <div
+                  class="color-card-color-swatch__color"
+                  style="background-color: {{ block.settings.swatch_color }};"
+                ></div>
+              {% endif %}
+            </div>
+            <a
+              href="{{ block.settings.button_link }}"
+              class="color-card-button {{ section.settings.button_style }} {{ section.settings.button_color }} {{ section.settings.button_size }}"
+            >
+              {{- block.settings.button_label -}}
+            </a>
           </div>
-          <h2 class="heading-size-7 mb-r2">
-            {{ block.settings.card_title }}
-          </h2>
-          <a
-            href="{{ block.settings.button_link }}"
-            class="color-card-button {{ section.settings.button_style }} {{ section.settings.button_color }} {{ section.settings.button_size }}"
-          >
-            {{- block.settings.button_label -}}
-          </a>
         </div>
       {% endfor %}
     </div>
@@ -63,6 +68,12 @@
         padding-top: 0;
       {% endif %}
     }
+  }
+  .color-card-color-swatch-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
   }
   .shop-by-color-cards-container {
     display: grid;
@@ -88,7 +99,6 @@
   .color-card-color-swatch__color {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
   }
   .color-card-button {
     width: max-content;
@@ -192,6 +202,30 @@
         { "value": "btn--black", "label": "Black" },
         { "value": "btn--white", "label": "White" }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
     }
   ],
   "blocks": [

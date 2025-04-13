@@ -111,8 +111,8 @@
         "bg_color": "",
         "preload_image": false,
         "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 90,
+        "padding_bottom": 70
       }
     },
     "column_product_collection_bp8UTm": {
@@ -128,8 +128,8 @@
         "button_label": "Show more",
         "button_link": "shopify://collections/mens-best-sellers",
         "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "collection_card_column_Ydrkex": {
@@ -187,181 +187,15 @@
         "title_text_size": 10,
         "subtitle": "",
         "subtitle_text_size": 5,
-        "background_color": "#1d1d1d",
+        "background_color": "#f0ede6",
         "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 120,
+        "padding_bottom": 120,
         "button_size": "btn--large",
         "button_style": "btn--outline",
         "button_color": "btn--black",
         "show_card_border": true,
         "text_alignment": "text-left"
-      }
-    },
-    "collection_card_column_JK3ptk": {
-      "type": "collection-card-column",
-      "blocks": {
-        "card_YMpfcV": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_b84fa27f-015f-4b28-873a-c48dea058bf4.png",
-            "title": "Pants",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
-            "button_label": "Explore"
-          }
-        },
-        "card_g6QEdE": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_525c87b3-15e7-41af-928e-09d0600ffbd7.jpg",
-            "title": "Shirts",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
-            "button_label": "Explore"
-          }
-        },
-        "card_LAi4a7": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_33b50855-ff27-4329-aa1d-8c5558dbbd36.jpg",
-            "title": "Sweaters",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
-            "button_label": "Explore"
-          }
-        },
-        "card_Mz9BNm": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_885ecd70-6d8c-48e0-8637-efd76768f306.jpg",
-            "title": "Polos & T-shirts",
-            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
-            "button_link": "",
-            "button_label": "Explore"
-          }
-        }
-      },
-      "block_order": [
-        "card_YMpfcV",
-        "card_g6QEdE",
-        "card_LAi4a7",
-        "card_Mz9BNm"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "title_text_size": 10,
-        "subtitle": "",
-        "subtitle_text_size": 5,
-        "background_color": "#660f28",
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "button_size": "btn--long",
-        "button_style": "btn",
-        "button_color": "btn--white",
-        "show_card_border": true,
-        "text_alignment": "text-left"
-      }
-    },
-    "column_product_collection_HDP6Rw": {
-      "type": "column-product-collection",
-      "settings": {
-        "title": "New this week",
-        "title_text_size": 10,
-        "subtitle": "Fresh Styles, Peak Performance",
-        "subtitle_text_size": 5,
-        "collection": "new-in",
-        "show_more_button": true,
-        "button_label": "Show more",
-        "button_link": "shopify://collections/new-in",
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "section_list_collections_products_wg4cKG": {
-      "type": "section-list-collections-products",
-      "blocks": {
-        "collection_iBkUYd": {
-          "type": "collection",
-          "settings": {
-            "collection": "pique",
-            "title": "The Piqué Collection",
-            "link_text": "A refined take on heritage sportswear, The Piqué Collection blends timeless texture with modern functionality.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "last",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
-          }
-        },
-        "collection_V9bRRL": {
-          "type": "collection",
-          "settings": {
-            "collection": "bottoms",
-            "title": "Pants & Bottoms",
-            "link_text": "Versatile, performance-driven bottoms designed for comfort, movement, and effortless style.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
-          }
-        },
-        "collection_9jBt6c": {
-          "type": "collection",
-          "settings": {
-            "collection": "co-ords",
-            "title": "Co-Ords",
-            "link_text": "Elevated men's co-ords and day-to-night sets crafted for comfort style and effortless transitions from work to weekend.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "last",
-            "button_size": "btn--large",
-            "button_style": "btn--outline",
-            "button_color": "btn--black"
-          }
-        },
-        "button_RB9wME": {
-          "type": "button",
-          "settings": {
-            "link_text": "Browse all collections",
-            "link": "shopify://collections"
-          }
-        }
-      },
-      "block_order": [
-        "collection_iBkUYd",
-        "collection_V9bRRL",
-        "collection_9jBt6c",
-        "button_RB9wME"
-      ],
-      "custom_css": [],
-      "settings": {
-        "title": "Trending Now",
-        "subttitle": "",
-        "bg": "palette--light bg--neutral",
-        "content_color": "#000000",
-        "grid": 3,
-        "rows": 1,
-        "enable_scroll_mobile": true,
-        "grid_small": 1.2,
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "section_shop_by_color_yWCBP4": {
@@ -447,7 +281,175 @@
         "text_color": "#000000",
         "button_size": "btn--large",
         "button_style": "btn--outline",
-        "button_color": "btn--black"
+        "button_color": "btn--black",
+        "padding_top": 120,
+        "padding_bottom": 60
+      }
+    },
+    "collection_card_column_JK3ptk": {
+      "type": "collection-card-column",
+      "blocks": {
+        "card_YMpfcV": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_b84fa27f-015f-4b28-873a-c48dea058bf4.png",
+            "title": "Pants",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_g6QEdE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_525c87b3-15e7-41af-928e-09d0600ffbd7.jpg",
+            "title": "Shirts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_LAi4a7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_33b50855-ff27-4329-aa1d-8c5558dbbd36.jpg",
+            "title": "Sweaters",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        },
+        "card_Mz9BNm": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_885ecd70-6d8c-48e0-8637-efd76768f306.jpg",
+            "title": "Polos & T-shirts",
+            "subtitle": "In urna ligula lacinia mus velit fermentum eu massa. Dis fermentum sem enim nulla sit turpis vehicula.",
+            "button_link": "",
+            "button_label": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "card_YMpfcV",
+        "card_g6QEdE",
+        "card_LAi4a7",
+        "card_Mz9BNm"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "title_text_size": 10,
+        "subtitle": "",
+        "subtitle_text_size": 5,
+        "background_color": "#660f28",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "button_size": "btn--long",
+        "button_style": "btn",
+        "button_color": "btn--white",
+        "show_card_border": true,
+        "text_alignment": "text-left"
+      }
+    },
+    "column_product_collection_HDP6Rw": {
+      "type": "column-product-collection",
+      "settings": {
+        "title": "New this week",
+        "title_text_size": 10,
+        "subtitle": "Fresh Styles, Peak Performance",
+        "subtitle_text_size": 5,
+        "collection": "new-in",
+        "show_more_button": true,
+        "button_label": "Show more",
+        "button_link": "shopify://collections/new-in",
+        "width": "wrapper--full",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_list_collections_products_wg4cKG": {
+      "type": "section-list-collections-products",
+      "blocks": {
+        "collection_iBkUYd": {
+          "type": "collection",
+          "settings": {
+            "collection": "pique",
+            "title": "The Piqué Collection",
+            "link_text": "A refined take on heritage sportswear, The Piqué Collection blends timeless texture with modern functionality.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
+          }
+        },
+        "collection_V9bRRL": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottoms",
+            "title": "Pants & Bottoms",
+            "link_text": "Versatile, performance-driven bottoms designed for comfort, movement, and effortless style.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
+          }
+        },
+        "collection_9jBt6c": {
+          "type": "collection",
+          "settings": {
+            "collection": "co-ords",
+            "title": "Co-Ords",
+            "link_text": "Elevated men's co-ords and day-to-night sets crafted for comfort style and effortless transitions from work to weekend.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "last",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
+          }
+        },
+        "button_RB9wME": {
+          "type": "button",
+          "settings": {
+            "link_text": "Browse all collections",
+            "link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "collection_iBkUYd",
+        "collection_V9bRRL",
+        "collection_9jBt6c",
+        "button_RB9wME"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Trending Now",
+        "subttitle": "",
+        "bg": "palette--light bg--neutral",
+        "content_color": "#000000",
+        "grid": 3,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
+        "width": "wrapper--full",
+        "padding_top": 120,
+        "padding_bottom": 60
       }
     },
     "section_product_masonry_Wia8FW": {
@@ -473,10 +475,10 @@
     "section_double_ae83ar",
     "column_product_collection_bp8UTm",
     "collection_card_column_Ydrkex",
+    "section_shop_by_color_yWCBP4",
     "collection_card_column_JK3ptk",
     "column_product_collection_HDP6Rw",
     "section_list_collections_products_wg4cKG",
-    "section_shop_by_color_yWCBP4",
     "section_product_masonry_Wia8FW"
   ]
 }

@@ -2,7 +2,7 @@
   assign title_font_size_class = section.settings.title_text_size | prepend: 'heading-size-'
   assign sub_text_size = section.settings.subtitle_text_size | prepend: 'body-size-'
 %}
-<div class="cards-section">
+<div class="cards-section" style="background-color: {{ section.settings.background_color }};">
   <div
     class="cards-section__inner {{ section.settings.width }}"
     style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
@@ -81,6 +81,7 @@
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
+    background-color: #ffffff;
     @media only screen and (max-width: 1024px) {
       flex-basis: calc(50% - 20px);
     }
@@ -154,7 +155,7 @@
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
-      "default": "#006A50"
+      "default": "#ffffff"
     },
     {
       "type": "select",
