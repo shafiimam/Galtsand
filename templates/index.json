@@ -711,6 +711,7 @@
         "image_slide_AcqMeV",
         "image_slide_Ea4gU8"
       ],
+      "disabled": true,
       "settings": {
         "title": "Adventure in Style",
         "title_text_size": 10,
