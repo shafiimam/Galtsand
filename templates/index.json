@@ -23,14 +23,14 @@
         "heading_LyNC4T": {
           "type": "heading",
           "settings": {
-            "title": "Out of the office, and into the wild.",
+            "title": "Drop II: The Quiet Season",
             "text_size": 12
           }
         },
         "text_EXaa7j": {
           "type": "text",
           "settings": {
-            "text": "<p>Our SS25 collection blends smart casual style with outdoor versatility, built for life on the move. </p><p>Gear up for the city, the trails, and everything in between.</p>",
+            "text": "<p>The next chapter of our Spring Summer 2025 Collection offers refined staples designed to adapt to your rhythm, merging style and functionality for the modern journey.<br/></p>",
             "text_size": 6
           }
         },
@@ -247,11 +247,11 @@
     "section_collection_slider_XiBHU9": {
       "type": "section-collection-slider",
       "settings": {
-        "collection": "ss25-collection",
+        "collection": "new-in-this-week",
         "product_limit": 12,
-        "title": "Spring Summer 2025",
+        "title": "Spring Summer 2025: Drop II",
         "title_text_size": 7,
-        "content": "Our SS25 collection blends smart casual style with outdoor versatility, built for life on the move. Gear up for the city, the trails, and everything in between.",
+        "content": "A shift in tempo. Drawn from slower days and softer hours. Pieces made for ease, with textures that breathe and silhouettes that settle into your every day. A collection for the pause between moments.",
         "content_text_size": 4,
         "text_align": "align--middle-left",
         "button_label": "Shop Now",
@@ -387,9 +387,9 @@
       "settings": {
         "collection": "mens-tennis",
         "product_limit": 4,
-        "title": "Men's Tennis 2025",
+        "title": "Tennis Collection SS25",
         "title_text_size": 7,
-        "content": "Designed to move with you from the court & beyond",
+        "content": "Tracksuits, polos, and shorts to SERVE UP & STAY SHARP",
         "content_text_size": 4,
         "text_align": "align--middle-left",
         "button_label": "Shop Now",
@@ -413,10 +413,10 @@
         "slide_VcEiJa": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/CF81441.jpg",
+            "image": "shopify://shop_images/OVL4569f.png",
             "kicker": "SS25",
-            "heading": "Get Ready for New Heights",
-            "sub_text": "Climb higher in style – The second series of our Spring Summer 2025 collection is coming soon.",
+            "heading": "Sportif Days",
+            "sub_text": "The Tennis collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
             "text_color": "#ffffff",
             "link_text": "see what's next",
             "link": "shopify://collections/ss25-collection",
@@ -451,7 +451,7 @@
         "sub_text_size": 5,
         "sub_text_color": "#000000",
         "button_label": "Explore More",
-        "button_url": "shopify://collections/all",
+        "button_url": "shopify://collections/best-sellers",
         "button_size": "btn--medium",
         "button_style": "btn",
         "button_color": "btn--black",
@@ -713,16 +713,16 @@
       ],
       "custom_css": [],
       "settings": {
-        "header_text": "Browse by Lifestyle",
+        "header_text": "Pack Light, Move Fast",
         "title_text_size": 10,
         "title_text_color": "#4c4c44",
-        "subtitle": "Something for every occasion",
+        "subtitle": "Based on what you are shopping",
         "sub_text_size": 5,
         "sub_text_color": "#4c4c44",
-        "text_allignment": "text-left",
+        "text_allignment": "text-center",
         "width": "wrapper--full",
         "padding_top": 60,
-        "padding_bottom": 62
+        "padding_bottom": 60
       }
     },
     "image_banner_overlay_PiGphR": {
@@ -816,7 +816,7 @@
         "sub_text_size": 5,
         "sub_text_color": "#000000",
         "width": "wrapper--full",
-        "padding_top": 120,
+        "padding_top": 0,
         "padding_bottom": 120
       }
     },

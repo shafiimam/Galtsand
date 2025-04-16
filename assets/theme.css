@@ -19328,7 +19328,7 @@ body.focus-enabled .product-grid-item:focus-within {
   flex-flow: row nowrap;
   max-width: 100%;
   padding: 0 0 32px;
-  padding-top: 16px;
+  padding-top: 10px;
   margin: 0 0 -32px;
   opacity: 0;
   transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);

@@ -117,8 +117,8 @@
         "collection_kQYakP": {
           "type": "collection",
           "settings": {
-            "collection": "new-in",
-            "image": "shopify://shop_images/015A4220_5acb433e0f-710f-4242-8afc-004bc7fd537f.jpg",
+            "collection": "new-in-this-week",
+            "image": "shopify://shop_images/April_11_-_Post_1.png",
             "overlay_color": "#000000",
             "overlay_opacity": 15,
             "top_text": "",
