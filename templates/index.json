@@ -286,6 +286,102 @@
         "width": "wrapper--none"
       }
     },
+    "small_collection_grid_xqdYiz": {
+      "type": "small-collection-grid",
+      "blocks": {
+        "collection_card_6GHYUF": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled.webp",
+            "text": "Serengheti Buckle Belt Hicking Short",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/buckle-belt-hiking-short"
+          }
+        },
+        "collection_card_mpM4M4": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_75a6ac22-582f-4c01-9f2b-15b2d6c41663.webp",
+            "text": "Geneva Quarter Zip Dress",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/geneva-dress"
+          }
+        },
+        "collection_card_Rh4z7k": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_35d55160-c069-437b-98d8-032f3bcbac0b.webp",
+            "text": "Mountain Hunter Vest",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/mountain-hunter-vest"
+          }
+        },
+        "collection_card_WUkqdw": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
+            "text": "Traverse Nylon S/S Zip Front Shirt",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/traverse-nylon-s-s-zip-front-shirt"
+          }
+        },
+        "collection_card_agz8Nr": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_eceb4e80-8242-4f67-8d69-81d346c18612.webp",
+            "text": "Pacific Shacket",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/pacific-shacket"
+          }
+        },
+        "collection_card_jR3DXB": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_0163e9fc-0e5f-4184-967a-2799ea83233c.webp",
+            "text": "Courtside Sweater",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/knit-varsity-v-neck-sweater"
+          }
+        },
+        "collection_card_nVyJF3": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
+            "text": "Athena Chino Khaki Asymmetric Skirt",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/athena-chino-khaki-asymmetric-skirt"
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_6GHYUF",
+        "collection_card_mpM4M4",
+        "collection_card_Rh4z7k",
+        "collection_card_WUkqdw",
+        "collection_card_agz8Nr",
+        "collection_card_jR3DXB",
+        "collection_card_nVyJF3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Most Viewed This Week",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "subtitle": "",
+        "subtitle_text_size": 5,
+        "subtitle_text_color": "#000000",
+        "text_allignment": "text-center",
+        "collection_to_show": 7,
+        "button_label": "Watch Video",
+        "button_url": "",
+        "button_size": "btn--small",
+        "button_style": "btn-text-thick-line",
+        "button_color": "btn--black",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "section_collection_slider_yEBj8t": {
       "type": "section-collection-slider",
       "settings": {
@@ -902,6 +998,7 @@
     "section_logos_E3KxjC",
     "section_collection_slider_XiBHU9",
     "video_with_modal_zPUEPT",
+    "small_collection_grid_xqdYiz",
     "section_collection_slider_yEBj8t",
     "collection-split-section-1",
     "card_cascade_F4z48g",
