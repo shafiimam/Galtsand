@@ -19621,7 +19621,7 @@ label.quatity-selector {
   #Collections
 ============================================================================== */
 .collection .pagination-custom {
-  margin-top: var(--gutter);
+  margin-top: calc(var(--gutter) * 2);
 }
 .collection__hero .hero__content__wrapper {
   max-width: var(--HERO-CONTENT-MAX-WIDTH);
