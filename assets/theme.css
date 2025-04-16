@@ -18622,6 +18622,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
 .footer__quicklinks a {
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .footer__quicklinks a:after {
   content: "";
