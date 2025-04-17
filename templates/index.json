@@ -316,13 +316,13 @@
             "button_url": "shopify://products/mountain-hunter-vest"
           }
         },
-        "collection_card_WUkqdw": {
+        "collection_card_nVyJF3": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
-            "text": "Traverse Nylon S/S Zip Front Shirt",
+            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
+            "text": "Athena Chino Khaki Asymmetric Skirt",
             "button_label": "Shop now",
-            "button_url": "shopify://products/traverse-nylon-s-s-zip-front-shirt"
+            "button_url": "shopify://products/athena-chino-khaki-asymmetric-skirt"
           }
         },
         "collection_card_agz8Nr": {
@@ -343,13 +343,13 @@
             "button_url": "shopify://products/knit-varsity-v-neck-sweater"
           }
         },
-        "collection_card_nVyJF3": {
+        "collection_card_WUkqdw": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
-            "text": "Athena Chino Khaki Asymmetric Skirt",
+            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
+            "text": "Traverse Nylon S/S Zip Front Shirt",
             "button_label": "Shop now",
-            "button_url": "shopify://products/athena-chino-khaki-asymmetric-skirt"
+            "button_url": "shopify://products/traverse-nylon-s-s-zip-front-shirt"
           }
         }
       },
@@ -357,21 +357,21 @@
         "collection_card_6GHYUF",
         "collection_card_mpM4M4",
         "collection_card_Rh4z7k",
-        "collection_card_WUkqdw",
+        "collection_card_nVyJF3",
         "collection_card_agz8Nr",
         "collection_card_jR3DXB",
-        "collection_card_nVyJF3"
+        "collection_card_WUkqdw"
       ],
       "custom_css": [],
       "settings": {
         "title": "Most Viewed This Week",
         "title_text_size": 10,
         "title_text_color": "#000000",
-        "subtitle": "",
+        "subtitle": "DISCOVER OUR FAVORITES",
         "subtitle_text_size": 5,
         "subtitle_text_color": "#000000",
         "text_allignment": "text-center",
-        "collection_to_show": 7,
+        "collection_to_show": 6,
         "button_label": "Watch Video",
         "button_url": "",
         "button_size": "btn--small",
@@ -944,9 +944,9 @@
             "title_color": "#660f28",
             "title_size_v2": 0,
             "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_sides": 0,
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
             "link_color": "#000000",
