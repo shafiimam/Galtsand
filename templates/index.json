@@ -379,7 +379,7 @@
         "button_color": "btn--black",
         "width": "wrapper--full",
         "padding_top": 100,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "section_collection_slider_yEBj8t": {
