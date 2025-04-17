@@ -266,7 +266,7 @@
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
         "padding_top": 120,
-        "padding_bottom": 120
+        "padding_bottom": 70
       }
     },
     "video_with_modal_zPUEPT": {
