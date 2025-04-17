@@ -266,7 +266,7 @@
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
         "padding_top": 120,
-        "padding_bottom": 70
+        "padding_bottom": 0
       }
     },
     "section_collection_slider_yEBj8t": {
@@ -290,7 +290,7 @@
         "grid_mobile": 1,
         "bg": "palette--light bg--neutral",
         "width": "wrapper--full",
-        "padding_top": 120,
+        "padding_top": 18,
         "padding_bottom": 60
       }
     },
