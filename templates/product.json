@@ -38,6 +38,10 @@
             "padding_bottom": 20
           }
         },
+        "true_fit_widget_AU4UkV": {
+          "type": "shopify://apps/true-fit/blocks/widget/caa08c3b-c601-47cd-9c2a-32bb0567b191",
+          "settings": {}
+        },
         "subscriptions": {
           "type": "subscription",
           "settings": {
@@ -116,6 +120,7 @@
         "title",
         "price",
         "variants",
+        "true_fit_widget_AU4UkV",
         "subscriptions",
         "quantity",
         "buttons",
