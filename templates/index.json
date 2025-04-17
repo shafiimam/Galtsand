@@ -482,7 +482,7 @@
             "sub_text": "The Tennis collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
             "text_color": "#ffffff",
             "link_text": "see what's next",
-            "link": "shopify://collections/ss25-collection",
+            "link": "shopify://collections/mens-tennis",
             "button_color": "btn--white",
             "button_style": "btn"
           }
@@ -514,7 +514,7 @@
         "sub_text_size": 4,
         "sub_text_color": "#000000",
         "button_label": "Explore More",
-        "button_url": "shopify://collections/best-sellers",
+        "button_url": "shopify://collections/summer-collection",
         "button_size": "btn--medium",
         "button_style": "btn",
         "button_color": "btn--black",
