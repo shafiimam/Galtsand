@@ -658,7 +658,7 @@
             "content_vertical_position": 10,
             "button_label": "Shop Now",
             "button_url": "shopify://collections/ss25-collection",
-            "button_size": "btn--large",
+            "button_size": "btn--long",
             "button_style": "btn",
             "button_color": "btn--black"
           }
@@ -679,7 +679,7 @@
             "content_vertical_position": 10,
             "button_label": "Shop Now",
             "button_url": "https://galtsand.com/collections/all",
-            "button_size": "btn--large",
+            "button_size": "btn--long",
             "button_style": "btn",
             "button_color": "btn--black"
           }
@@ -700,7 +700,7 @@
             "content_vertical_position": 10,
             "button_label": "Shop Now",
             "button_url": "shopify://collections/active-ellegance",
-            "button_size": "btn--large",
+            "button_size": "btn--long",
             "button_style": "btn",
             "button_color": "btn--black"
           }
