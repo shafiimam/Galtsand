@@ -266,7 +266,32 @@
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
         "padding_top": 120,
-        "padding_bottom": 70
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_slider_yEBj8t": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "mens-tennis",
+        "product_limit": 4,
+        "title": "Tennis Collection SS25",
+        "title_text_size": 7,
+        "content": "Tracksuits, polos, and shorts to SERVE UP & STAY SHARP",
+        "content_text_size": 4,
+        "text_align": "align--middle-left",
+        "button_label": "Shop Now",
+        "button_url": "shopify://collections/mens-tennis",
+        "button_size": "btn--medium",
+        "button_style": "btn--outline",
+        "button_color": "btn--black",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--full",
+        "padding_top": 18,
+        "padding_bottom": 60
       }
     },
     "video_with_modal_zPUEPT": {
@@ -316,13 +341,13 @@
             "button_url": "shopify://products/mountain-hunter-vest"
           }
         },
-        "collection_card_WUkqdw": {
+        "collection_card_nVyJF3": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
-            "text": "Traverse Nylon S/S Zip Front Shirt",
+            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
+            "text": "Athena Chino Khaki Asymmetric Skirt",
             "button_label": "Shop now",
-            "button_url": "shopify://products/traverse-nylon-s-s-zip-front-shirt"
+            "button_url": "shopify://products/athena-chino-khaki-asymmetric-skirt"
           }
         },
         "collection_card_agz8Nr": {
@@ -343,13 +368,13 @@
             "button_url": "shopify://products/knit-varsity-v-neck-sweater"
           }
         },
-        "collection_card_nVyJF3": {
+        "collection_card_WUkqdw": {
           "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
-            "text": "Athena Chino Khaki Asymmetric Skirt",
+            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
+            "text": "Traverse Nylon S/S Zip Front Shirt",
             "button_label": "Shop now",
-            "button_url": "shopify://products/athena-chino-khaki-asymmetric-skirt"
+            "button_url": "shopify://products/traverse-nylon-s-s-zip-front-shirt"
           }
         }
       },
@@ -357,18 +382,18 @@
         "collection_card_6GHYUF",
         "collection_card_mpM4M4",
         "collection_card_Rh4z7k",
-        "collection_card_WUkqdw",
+        "collection_card_nVyJF3",
         "collection_card_agz8Nr",
         "collection_card_jR3DXB",
-        "collection_card_nVyJF3"
+        "collection_card_WUkqdw"
       ],
       "custom_css": [],
       "settings": {
         "title": "Most Viewed This Week",
         "title_text_size": 10,
         "title_text_color": "#000000",
-        "subtitle": "",
-        "subtitle_text_size": 5,
+        "subtitle": "DISCOVER OUR FAVORITES",
+        "subtitle_text_size": 4,
         "subtitle_text_color": "#000000",
         "text_allignment": "text-center",
         "collection_to_show": 7,
@@ -378,103 +403,8 @@
         "button_style": "btn-text-thick-line",
         "button_color": "btn--black",
         "width": "wrapper--full",
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
-    "section_collection_slider_yEBj8t": {
-      "type": "section-collection-slider",
-      "settings": {
-        "collection": "mens-tennis",
-        "product_limit": 4,
-        "title": "Tennis Collection SS25",
-        "title_text_size": 7,
-        "content": "Tracksuits, polos, and shorts to SERVE UP & STAY SHARP",
-        "content_text_size": 4,
-        "text_align": "align--middle-left",
-        "button_label": "Shop Now",
-        "button_url": "shopify://collections/mens-tennis",
-        "button_size": "btn--medium",
-        "button_style": "btn--outline",
-        "button_color": "btn--black",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--light bg--neutral",
-        "width": "wrapper--full",
-        "padding_top": 120,
-        "padding_bottom": 60
-      }
-    },
-    "collection-split-section-1": {
-      "type": "collection-split",
-      "blocks": {
-        "slide_VcEiJa": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/OVL4569f.png",
-            "kicker": "SS25",
-            "heading": "Sportif Days",
-            "sub_text": "The Tennis collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
-            "text_color": "#ffffff",
-            "link_text": "see what's next",
-            "link": "shopify://collections/ss25-collection",
-            "button_color": "btn--white",
-            "button_style": "btn"
-          }
-        },
-        "slide_EzRiEK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/untitled5_5945bcca-e4c6-4c70-a0de-fbfcfd0c411b.png",
-            "kicker": "",
-            "heading": "CORE COLLECTION",
-            "sub_text": "Discover signature pieces crafted for movement, purpose, and lasting style.",
-            "text_color": "#ffffff",
-            "link_text": "EXPLORE MORE",
-            "link": "shopify://collections/ss25-collection",
-            "button_color": "btn--white",
-            "button_style": "btn"
-          }
-        }
-      },
-      "block_order": [
-        "slide_VcEiJa",
-        "slide_EzRiEK"
-      ],
-      "settings": {
-        "header_text": "For the Road Ahead",
-        "title_text_size": 10,
-        "title_text_color": "#000000",
-        "header_h3text": "YOUR NEXT ADVENTURE AWAITS.",
-        "sub_text_size": 5,
-        "sub_text_color": "#000000",
-        "button_label": "Explore More",
-        "button_url": "shopify://collections/best-sellers",
-        "button_size": "btn--medium",
-        "button_style": "btn",
-        "button_color": "btn--black",
-        "button_label_2": "Shop Now",
-        "button_url_1": "shopify://collections/outdoor-collection",
-        "button_size_2": "btn--medium",
-        "button_style_2": "btn--outline",
-        "button_color_2": "btn--black",
-        "text_allignment": "text-left",
-        "collection": "all-men",
-        "product_list": [],
-        "sticky_image_enable": false,
-        "swap": false,
-        "overlay_opacity": 15,
-        "overlay_color": "#000000",
-        "grid_large": 2,
-        "grid_small": 1.2,
-        "limit": 4,
-        "bg": "palette--bright bg--bright",
-        "width": "wrapper--full",
-        "padding_top": 60,
-        "padding_bottom": 120,
-        "arrow_color": "#ffffff"
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "card_cascade_F4z48g": {
@@ -526,7 +456,7 @@
         "title_color": "#202020",
         "content": "BASED ON WHAT YOU ARE SHOPPING.",
         "content_color": "#202020",
-        "content_text_size": 5,
+        "content_text_size": 4,
         "text_alignment": "text-center",
         "text_color": "#000000",
         "width": "wrapper--full",
@@ -538,6 +468,76 @@
         "background_color": "#f0ede6",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "collection-split-section-1": {
+      "type": "collection-split",
+      "blocks": {
+        "slide_VcEiJa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/OVL4569f.png",
+            "kicker": "SS25",
+            "heading": "Sportif Days",
+            "sub_text": "The Tennis collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
+            "text_color": "#ffffff",
+            "link_text": "see what's next",
+            "link": "shopify://collections/mens-tennis",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        },
+        "slide_EzRiEK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/untitled5_5945bcca-e4c6-4c70-a0de-fbfcfd0c411b.png",
+            "kicker": "",
+            "heading": "CORE COLLECTION",
+            "sub_text": "Discover signature pieces crafted for movement, purpose, and lasting style.",
+            "text_color": "#ffffff",
+            "link_text": "EXPLORE MORE",
+            "link": "shopify://collections/ss25-collection",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "slide_VcEiJa",
+        "slide_EzRiEK"
+      ],
+      "settings": {
+        "header_text": "Summer Inspiration",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "header_h3text": "PREPARE FOR THE NEW SEASON WITH OUR TOP PICKS",
+        "sub_text_size": 4,
+        "sub_text_color": "#000000",
+        "button_label": "Explore More",
+        "button_url": "shopify://collections/summer-collection",
+        "button_size": "btn--medium",
+        "button_style": "btn",
+        "button_color": "btn--black",
+        "button_label_2": "Shop Now",
+        "button_url_1": "shopify://collections/summer-collection",
+        "button_size_2": "btn--medium",
+        "button_style_2": "btn--outline",
+        "button_color_2": "btn--black",
+        "text_allignment": "text-left",
+        "collection": "summer-collection",
+        "product_list": [],
+        "sticky_image_enable": false,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 4,
+        "bg": "palette--bright bg--bright",
+        "width": "wrapper--full",
+        "padding_top": 60,
+        "padding_bottom": 120,
+        "arrow_color": "#ffffff"
       }
     },
     "section_list_collections_products_N6gfAm": {
@@ -713,11 +713,11 @@
       ],
       "custom_css": [],
       "settings": {
-        "header_text": "Pack Light, Move Fast",
+        "header_text": "Discover More",
         "title_text_size": 10,
         "title_text_color": "#4c4c44",
-        "subtitle": "Based on what you are shopping",
-        "sub_text_size": 5,
+        "subtitle": "GET INSPIRED",
+        "sub_text_size": 4,
         "sub_text_color": "#4c4c44",
         "text_allignment": "text-center",
         "width": "wrapper--full",
@@ -944,9 +944,9 @@
             "title_color": "#660f28",
             "title_size_v2": 0,
             "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_sides": 0,
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
             "link_color": "#000000",
@@ -997,11 +997,11 @@
     "hero",
     "section_logos_E3KxjC",
     "section_collection_slider_XiBHU9",
+    "section_collection_slider_yEBj8t",
     "video_with_modal_zPUEPT",
     "small_collection_grid_xqdYiz",
-    "section_collection_slider_yEBj8t",
-    "collection-split-section-1",
     "card_cascade_F4z48g",
+    "collection-split-section-1",
     "section_list_collections_products_N6gfAm",
     "about_us_section_xikFig",
     "image_with_content_overlay_iz6wnn",
