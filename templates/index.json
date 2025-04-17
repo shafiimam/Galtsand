@@ -269,6 +269,31 @@
         "padding_bottom": 70
       }
     },
+    "section_collection_slider_yEBj8t": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "mens-tennis",
+        "product_limit": 4,
+        "title": "Tennis Collection SS25",
+        "title_text_size": 7,
+        "content": "Tracksuits, polos, and shorts to SERVE UP & STAY SHARP",
+        "content_text_size": 4,
+        "text_align": "align--middle-left",
+        "button_label": "Shop Now",
+        "button_url": "shopify://collections/mens-tennis",
+        "button_size": "btn--medium",
+        "button_style": "btn--outline",
+        "button_color": "btn--black",
+        "progress_bar": "mobile",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1,
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--full",
+        "padding_top": 120,
+        "padding_bottom": 60
+      }
+    },
     "video_with_modal_zPUEPT": {
       "type": "video-with-modal",
       "settings": {
@@ -378,33 +403,71 @@
         "button_style": "btn-text-thick-line",
         "button_color": "btn--black",
         "width": "wrapper--full",
-        "padding_top": 100,
-        "padding_bottom": 0
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
-    "section_collection_slider_yEBj8t": {
-      "type": "section-collection-slider",
+    "card_cascade_F4z48g": {
+      "type": "card-cascade",
+      "blocks": {
+        "collection_card_LzPcgF": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/polo.png",
+            "title": "Heritage Collection",
+            "content": "Globally loved for its classic tailoring with active versatility, and all-day comfort.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/heritage",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_99gVRN": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_fdf5bef5-6d83-4c1d-a9fa-8ba74d7d35f3.png",
+            "title": "Signature Studio",
+            "content": "Blending high-performance fabrics with elevated aesthetics.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/signature-studio",
+            "text_alignment": "text-left"
+          }
+        },
+        "collection_card_nKDEHr": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled_50c73c7c-732e-4c6d-b534-5ca5ec85237b.png",
+            "title": "Outdoor Essentials",
+            "content": "Gear up for every adventure with durable, weather-ready apparel.",
+            "button_text": "Explore Collection",
+            "button_link": "shopify://collections/outdoor-essentials",
+            "text_alignment": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "collection_card_LzPcgF",
+        "collection_card_99gVRN",
+        "collection_card_nKDEHr"
+      ],
+      "custom_css": [],
       "settings": {
-        "collection": "mens-tennis",
-        "product_limit": 4,
-        "title": "Tennis Collection SS25",
-        "title_text_size": 7,
-        "content": "Tracksuits, polos, and shorts to SERVE UP & STAY SHARP",
-        "content_text_size": 4,
-        "text_align": "align--middle-left",
-        "button_label": "Shop Now",
-        "button_url": "shopify://collections/mens-tennis",
-        "button_size": "btn--medium",
-        "button_style": "btn--outline",
-        "button_color": "btn--black",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--light bg--neutral",
+        "title": "Trending Now",
+        "title_text_size": 10,
+        "title_color": "#202020",
+        "content": "BASED ON WHAT YOU ARE SHOPPING.",
+        "content_color": "#202020",
+        "content_text_size": 5,
+        "text_alignment": "text-center",
+        "text_color": "#000000",
         "width": "wrapper--full",
-        "padding_top": 120,
-        "padding_bottom": 60
+        "show_border": false,
+        "overlap_over_image": false,
+        "button_size": "btn--large",
+        "button_style": "btn",
+        "button_color": "btn--secondary",
+        "background_color": "#f0ede6",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collection-split-section-1": {
@@ -475,69 +538,6 @@
         "padding_top": 60,
         "padding_bottom": 120,
         "arrow_color": "#ffffff"
-      }
-    },
-    "card_cascade_F4z48g": {
-      "type": "card-cascade",
-      "blocks": {
-        "collection_card_LzPcgF": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/polo.png",
-            "title": "Heritage Collection",
-            "content": "Globally loved for its classic tailoring with active versatility, and all-day comfort.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/heritage",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_99gVRN": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_fdf5bef5-6d83-4c1d-a9fa-8ba74d7d35f3.png",
-            "title": "Signature Studio",
-            "content": "Blending high-performance fabrics with elevated aesthetics.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/signature-studio",
-            "text_alignment": "text-left"
-          }
-        },
-        "collection_card_nKDEHr": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_50c73c7c-732e-4c6d-b534-5ca5ec85237b.png",
-            "title": "Outdoor Essentials",
-            "content": "Gear up for every adventure with durable, weather-ready apparel.",
-            "button_text": "Explore Collection",
-            "button_link": "shopify://collections/outdoor-essentials",
-            "text_alignment": "text-left"
-          }
-        }
-      },
-      "block_order": [
-        "collection_card_LzPcgF",
-        "collection_card_99gVRN",
-        "collection_card_nKDEHr"
-      ],
-      "custom_css": [],
-      "settings": {
-        "title": "Trending Now",
-        "title_text_size": 10,
-        "title_color": "#202020",
-        "content": "BASED ON WHAT YOU ARE SHOPPING.",
-        "content_color": "#202020",
-        "content_text_size": 5,
-        "text_alignment": "text-center",
-        "text_color": "#000000",
-        "width": "wrapper--full",
-        "show_border": false,
-        "overlap_over_image": false,
-        "button_size": "btn--large",
-        "button_style": "btn",
-        "button_color": "btn--secondary",
-        "background_color": "#f0ede6",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "section_list_collections_products_N6gfAm": {
@@ -1000,8 +1000,8 @@
     "section_collection_slider_yEBj8t",
     "video_with_modal_zPUEPT",
     "small_collection_grid_xqdYiz",
-    "collection-split-section-1",
     "card_cascade_F4z48g",
+    "collection-split-section-1",
     "section_list_collections_products_N6gfAm",
     "about_us_section_xikFig",
     "image_with_content_overlay_iz6wnn",
