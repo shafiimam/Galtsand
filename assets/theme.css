@@ -19297,7 +19297,7 @@ body.focus-enabled .product-grid-item:focus-within {
   cursor: pointer;
 }
 .grid__swatch__container {
-  min-height: 28px;
+  min-height: 65px;
   margin: 10px 0 0 0;
   position: relative;
   display: flex;
