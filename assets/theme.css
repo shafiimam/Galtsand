@@ -23,64 +23,7 @@
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/inter-tight-regular.woff?v=1736259895");
 }
 
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-Normal.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-Normal.woff' | asset_url }}") format("woff"),
-    url("{{ 'FaktTT-Normal.ttf' | asset_url }}") format("truetype"),
-    url("{{ 'Fakt-Normal.otf' | asset_url }}") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-Bold.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-Bold.woff' | asset_url }}") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-BoldItalic.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-BoldItalic.woff' | asset_url }}") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-Medium.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-Medium.woff' | asset_url }}") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-MediumItalic.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-MediumItalic.woff' | asset_url }}") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-SemiBold.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-SemiBold.woff' | asset_url }}") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "FaktTT";
-  src: url("{{ 'FaktTT-SemiBoldItalic.woff2' | asset_url }}") format("woff2"),
-    url("{{ 'FaktTT-SemiBoldItalic.woff' | asset_url }}") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
+
 @font-face {
   font-family: "exmouth";
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/exmouth.woff?v=1736211739");
