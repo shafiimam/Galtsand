@@ -45,16 +45,16 @@
             "padding_bottom": 20
           }
         },
-        "true_fit_widget_AU4UkV": {
-          "type": "shopify://apps/true-fit/blocks/widget/caa08c3b-c601-47cd-9c2a-32bb0567b191",
-          "settings": {}
-        },
         "quantity": {
           "type": "quantity",
           "settings": {
             "show_quantity": true,
             "padding_bottom": 20
           }
+        },
+        "true_fit_widget_AU4UkV": {
+          "type": "shopify://apps/true-fit/blocks/widget/caa08c3b-c601-47cd-9c2a-32bb0567b191",
+          "settings": {}
         },
         "buttons": {
           "type": "add-buttons",
@@ -121,8 +121,8 @@
         "price",
         "variants",
         "subscriptions",
-        "true_fit_widget_AU4UkV",
         "quantity",
+        "true_fit_widget_AU4UkV",
         "buttons",
         "wishlist_plus_wishlist_pdp_button_dFngJc",
         "description"
