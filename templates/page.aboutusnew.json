@@ -52,12 +52,15 @@
     "about_us_header_MVVPBR": {
       "type": "about-us-header",
       "settings": {
-        "paragraph": "ABOUT US",
-        "heading": "Honoring History through Heritage and Sport",
+        "header_text": "Curated Collections",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
         "image_2": "shopify://shop_images/Frame_240.png",
         "image_1": "shopify://shop_images/Frame_241.png",
         "image_3": "shopify://shop_images/Frame_242.png",
-        "width": "wrapper--full"
+        "width": "wrapper--full",
+        "padding_top": 80,
+        "padding_bottom": 120
       }
     },
     "image_with_text_custom_NJXcdy": {
@@ -83,9 +86,7 @@
         "text_NLfjhk",
         "image_pair_YKxNzX"
       ],
-      "custom_css": [
-        "* {color: black;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/IMG_6713.jpg",
         "remove_top_padding": false,
@@ -101,7 +102,7 @@
           "settings": {
             "image": "shopify://shop_images/IMG_6697.jpg",
             "overlay_opacity": 15,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
