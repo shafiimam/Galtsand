@@ -97,7 +97,7 @@
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    function initSwiper() {
+    function initSwiper( destroy = false) {
       var smallCollectionGrid = new Swiper('.section-small-collection-grid_content', {
       spaceBetween: 10,
       freeMode: true,
@@ -120,13 +120,16 @@
         },
       },
     });
+    if (destroy) {
+      smallCollectionGrid.destroy(true, true);
+    }
     }
     if (window.innerWidth < 1000) {
       initSwiper();
     }
     window.addEventListener('resize', function () {
       if (window.innerWidth > 1000) {
-        smallCollectionGrid.destroy(true, true);
+        initSwiper(true);
       } else {
         initSwiper();
       }
