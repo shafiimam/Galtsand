@@ -1,9 +1,9 @@
 {% assign animation_anchor = "[data-section-id='" | append: section.id | append: "']" %}
 <section class="about-us-header-section {{ section.settings.width }}" data-section-id="{{ section.id }}" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
   <div class="about-us-header-section__main aos-init aos-animate">
-    <div class="about-us-header-section__text">
+    <div class="about-us-header-section__text mb-r8">
       <h2
-        class="about-us-header-section__heading heading-size-{{ section.settings.title_text_size }} mb-r8 text-center"
+        class="about-us-header-section__heading heading-size-{{ section.settings.title_text_size }} text-center"
         style="color: {{ section.settings.title_text_color }};"
       >
         {{ section.settings.header_text }}
@@ -62,16 +62,20 @@
   }
   .about-us-header-section__images {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
-
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--gutter);
+  }
+  .about-us-header-section__heading {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .about-us-header-section__images img{
+    height: 100%;
+    object-fit: cover;
   }
   @media only screen and (max-width: 768px) {
     .about-us-header-section__images {
-      grid-template-columns: 1fr 1fr !important;
-    }
-    .about-us-header-section__main .image-3 {
-      grid-column-start: span 2;
+      grid-template-columns: 1fr;
     }
   }
 </style>

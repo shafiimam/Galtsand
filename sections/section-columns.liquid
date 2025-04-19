@@ -4,7 +4,7 @@
   class="section-columns {{ section.settings.bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="section-columns"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px; background-color: {{ section.settings.background_color }};"
 >
   <div class="{{ section.settings.width }} section-padding">
     {% if section.settings.title != blank %}
@@ -254,6 +254,12 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F0EDE6"
     }
   ],
   "blocks": [

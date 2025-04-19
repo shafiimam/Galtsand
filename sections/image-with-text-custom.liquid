@@ -21,7 +21,11 @@
       </picture>
     </div>
 {% endcapture %}
-<div class="image-with-text-section {{ section.settings.width }}" data-section-id="{{ section.id }}">
+<div
+  class="image-with-text-section {{ section.settings.width }}"
+  data-section-id="{{ section.id }}"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; background-color: {{ section.settings.background_color }};"
+>
   <div class="image-with-text-section__main-{{ section.id }} {{ section.settings.image_position }}">
     {% if image_position == 'left' %}
       {{ image_markup }}
@@ -101,10 +105,6 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    padding: 120px 48px;
-    {% if section.settings.remove_top_padding %}
-      padding-top: 0 !important;
-    {% endif %}
     @media only screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       padding: 48px 24px;
@@ -122,12 +122,6 @@
       "type": "image_picker",
       "id": "image",
       "label": "Section Image"
-    },
-    {
-      "type": "checkbox",
-      "id": "remove_top_padding",
-      "label": "Remove top padding",
-      "default": false
     },
     {
       "type": "select",
@@ -155,6 +149,32 @@
         { "value": "wrapper--full", "label": "Full width padded" },
         { "value": "wrapper", "label": "Page width" }
       ]
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#ffffff",
+      "label": "Background Color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
     }
   ],
   "blocks": [

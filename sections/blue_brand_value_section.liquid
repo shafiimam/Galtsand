@@ -1,12 +1,18 @@
-<div class="brand-values-section">
+<div
+  class="brand-values-section {{ section.settings.width }} section-padding"
+  data-section-id="{{ section.id }}"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
   <div class="brand-values-images">
-    <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="Left Image" class="brand-left-image">
+    <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="Left Image" class="brand-left-image ">
   </div>
 
   <div class="brand-values-content">
     <img src="{{ section.settings.logo | img_url: 'master'  }}" alt="Logo" class="brand-logo">
-    <p class="heading-size-10 mb-r6">{{ section.settings.title }}</p>
-    <p class="body-size-6">{{ section.settings.paragraph }}</p>
+    <h2 class="heading-size-10 mb-r6" style="color: {{ section.settings.text_color }};">
+      {{ section.settings.title }}
+    </h2>
+    <p class="body-size-6 brand-values-paragraph">{{ section.settings.paragraph }}</p>
     <a
       href="{{ section.settings.button_link }}"
       class="standard__cta hero__btn aos-init aos-animate {{ section.settings.button_size }} {{ section.settings.button_style }} {{ section.settings.button_color }}"
@@ -40,6 +46,13 @@
       max-width: 586px;
     }
   }
+  .brand-values-paragraph {
+    color: {{ section.settings.text_color }};
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+  }
   .firstP {
     font-size: 64px;
   }
@@ -48,7 +61,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    padding: 5px;
     gap: 20px;
   }
 
@@ -61,7 +73,6 @@
   .brand-left-image,
   .brand-right-image {
     width: 100%;
-
     height: auto;
   }
 
@@ -72,13 +83,18 @@
   }
 
   .brand-values-content {
-    text-align: center;
+    background: #F0EDE6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: var(--gutter);
   }
 
   .brand-logo {
-    width: 100px;
-    margin-bottom: 20px;
-    margin: auto;
+    width: 140px;
   }
 
   .brand-button {
@@ -141,6 +157,12 @@
       "default": "Orci ac egestas tellus sed sit. Metus eget nisi egestas sapien sit mattis nunc."
     },
     {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#4f555f"
+    },
+    {
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
@@ -157,10 +179,10 @@
       "label": "Size",
       "default": "btn--long",
       "options": [
-        {"value": "btn--small", "label": "Small button"},
-        {"value": "btn--medium", "label": "Medium button"},
-        {"value": "btn--large", "label": "Large button"},
-        {"value": "btn--long", "label": "Long button"}
+        { "value": "btn--small", "label": "Small button" },
+        { "value": "btn--medium", "label": "Medium button" },
+        { "value": "btn--large", "label": "Large button" },
+        { "value": "btn--long", "label": "Long button" }
       ]
     },
     {
@@ -207,6 +229,43 @@
       "type": "url",
       "id": "right_video",
       "label": "Right Video URL"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
     }
   ],
   "presets": [
