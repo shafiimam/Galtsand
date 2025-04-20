@@ -19688,6 +19688,7 @@ label.quatity-selector {
   margin: 0;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .collection__filters__toggle svg,
 .popout--navbar .popout__toggle svg {

@@ -11,6 +11,7 @@
   "sections": {
     "hero": {
       "type": "collection-hero",
+      "disabled": true,
       "settings": {
         "text_align": "align--middle-center",
         "show_title": false,
@@ -35,6 +36,7 @@
     },
     "subcollections": {
       "type": "collection-sub",
+      "disabled": true,
       "settings": {
         "subcollections": [],
         "limit": 6,
@@ -49,6 +51,59 @@
         "grid_mobile": 1.2,
         "width": "wrapper",
         "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "collection_title_cusom_nBTTfb": {
+      "type": "collection-title-cusom",
+      "settings": {
+        "header_text": "Explore products",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "sub_text": "Heritage-inspired sportswear designed for movement, versatility, and life outdoors",
+        "sub_text_size": 5,
+        "sub_text_color": "#000000",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_pills_rWnqE6": {
+      "type": "collection-pills",
+      "blocks": {
+        "collection_pill_bQwyPT": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "ss25-collection",
+            "pill_text": "SS 25",
+            "pill_link": ""
+          }
+        },
+        "collection_pill_zdHfdK": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "smart-casual",
+            "pill_text": "Smart Casual",
+            "pill_link": ""
+          }
+        },
+        "collection_pill_VDbFxD": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "comfy-classics",
+            "pill_text": "Comfy Classics",
+            "pill_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_pill_bQwyPT",
+        "collection_pill_zdHfdK",
+        "collection_pill_VDbFxD"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
@@ -145,7 +200,7 @@
         "font_family": "heading",
         "title_size": 8,
         "accent_size": 3,
-        "width": "wrapper--full",
+        "width": "wrapper--none",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -172,7 +227,7 @@
       "settings": {
         "title": "OUR MATERIALS",
         "subtitle": "Trademarked fabrics within our collection.",
-        "background_image": "shopify://shop_images/untitled7_eea71b1a-1271-4217-a016-30d66991c23d.jpg",
+        "background_image": "shopify://shop_images/untitled6_f49b0554-e412-4345-967b-1a9cafaad36b.png",
         "fabric_title_1": "Cashmere Blend",
         "fabric_description_1": "Timeless elegance and unmatched softness of cashmere, combined with enhanced durability for everyday wear.",
         "fabric_title_2": "Tencel®",
@@ -220,7 +275,7 @@
         "image_RRUCr6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-WebVersion-Blog.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -258,7 +313,7 @@
         "text_aWYYEJ"
       ],
       "settings": {
-        "height": "use_image",
+        "height": "use_screen_one_half",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
@@ -291,7 +346,7 @@
         "image_x3Ct8G": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Untit56767led.jpg",
+            "image": "shopify://shop_images/Daysi4.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -312,7 +367,7 @@
         "image_x3Ct8G"
       ],
       "settings": {
-        "height": "use_image",
+        "height": "use_screen_one_half",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
@@ -328,7 +383,7 @@
         "image_RJi33w": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
+            "image": "shopify://shop_images/Galtsand_Studio_West_Palm_Beach_banner-2.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -366,7 +421,7 @@
         "text_bLxRMd"
       ],
       "settings": {
-        "height": "use_image",
+        "height": "use_screen_one_half",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
@@ -376,87 +431,102 @@
         "padding_bottom": 0
       }
     },
-    "seasonal_trends_3AGAmP": {
-      "type": "seasonal_trends",
+    "section_richtext_t3gMnr": {
+      "type": "section-richtext",
       "blocks": {
-        "trend_block_MK8cfh": {
-          "type": "trend_block",
+        "heading_7Ngndx": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/untitled6_2aacc491-d037-4b09-b434-a1be8acd0a43.jpg",
-            "heading": "Trending Colors",
-            "description": "Explore fresh pastels for spring, vibrant hues for summer, or earthy tones for fall.",
-            "link": "shopify://collections/trending-colors"
+            "heading": "Explore More",
+            "text_size": 10
           }
         },
-        "trend_block_Jjh9CK": {
-          "type": "trend_block",
+        "text_DfimBj": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/hike2.jpg",
-            "heading": "Seasonal Design Inspirations",
-            "description": "Unique prints inspired by nature, art, and pop culture",
-            "link": "shopify://collections/spring-essentials"
+            "text": "<p>Stay classic, keep it bold, or take it outside—your move.</p>",
+            "text_size": 5,
+            "text_columns": 1
           }
         }
       },
       "block_order": [
-        "trend_block_MK8cfh",
-        "trend_block_Jjh9CK"
+        "heading_7Ngndx",
+        "text_DfimBj"
       ],
       "settings": {
-        "title": "Trending Topic",
-        "subtitle": "Elevate your look with effortless layering, smart pairings, and distinctive color combinations.",
-        "width": "wrapper--full"
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper--full",
+        "padding_top": 50,
+        "padding_bottom": 40
       }
     },
-    "how_to_style_p7gryg": {
-      "type": "how_to_style",
+    "section_list_collections_Bw7jrN": {
+      "type": "section-list-collections",
       "blocks": {
-        "style_row_GCd6Gb": {
-          "type": "style_row",
+        "collection_3AinVP": {
+          "type": "collection",
           "settings": {
-            "heading": "Pair with Jeans",
-            "description": "Achieve a timeless, effortless look",
-            "product_1": "airlite-leggings",
-            "product_2": "angelique-bra",
-            "product_3": "classic-messenger-bag"
+            "collection": "best-sellers",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "top_text": "",
+            "top_text_disabled": true,
+            "title": "",
+            "title_disabled": false,
+            "bottom_text": "",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
           }
         },
-        "style_row_7RzC9N": {
-          "type": "style_row",
+        "collection_9HWkfd": {
+          "type": "collection",
           "settings": {
-            "heading": "Pair with Jeans",
-            "description": "Achieve a timeless, effortless look",
-            "product_1": "daisy-short",
-            "product_2": "empower-bra",
-            "product_3": "freedom-leggings"
-          }
-        },
-        "style_row_xPRQ9Q": {
-          "type": "style_row",
-          "settings": {
-            "heading": "Pair with Jeans",
-            "description": "Achieve a timeless, effortless look",
-            "product_1": "pullover-hoodie-with-printed-logo",
-            "product_2": "giselle-bra",
-            "product_3": "garment-washed-pullover-hoodie"
+            "collection": "new-in-this-week",
+            "image": "shopify://shop_images/April_11_-_Post_1.png",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "",
+            "top_text_disabled": true,
+            "title": "New In",
+            "title_disabled": false,
+            "bottom_text": "",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
           }
         }
       },
       "block_order": [
-        "style_row_GCd6Gb",
-        "style_row_7RzC9N",
-        "style_row_xPRQ9Q"
+        "collection_3AinVP",
+        "collection_9HWkfd"
       ],
-      "disabled": true,
       "settings": {
-        "title": "Style Guides",
-        "subtitle": "Unlock the full potential of your capsule collection"
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "carousel_enabled_on": "mobile",
+        "wh_ratio": 1.5,
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "font_family": "heading",
+        "title_size": 8,
+        "accent_size": 3,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 120
       }
     }
   },
   "order": [
     "hero",
     "subcollections",
+    "collection_title_cusom_nBTTfb",
+    "collection_pills_rWnqE6",
     "main",
     "section_list_collections_PBKazm",
     "why_use_our_pieces_GM7rgH",
@@ -465,7 +535,7 @@
     "section_double_fbFmtT",
     "section_double_4cjRrN",
     "section_double_GKN8dL",
-    "seasonal_trends_3AGAmP",
-    "how_to_style_p7gryg"
+    "section_richtext_t3gMnr",
+    "section_list_collections_Bw7jrN"
   ]
 }
