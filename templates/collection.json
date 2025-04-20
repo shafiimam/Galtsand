@@ -79,8 +79,6 @@
         "filters"
       ],
       "settings": {
-        "title_collection": "THE ADVENTURE STARTS HERE.",
-        "p_collection": "Heritage-inspired sportswear designed for movement, versatility, and life outdoors.",
         "product_limit": 9,
         "grid_large": 4,
         "grid_mobile": "2",
