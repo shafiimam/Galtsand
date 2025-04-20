@@ -11,6 +11,7 @@
   "sections": {
     "hero": {
       "type": "collection-hero",
+      "disabled": true,
       "settings": {
         "text_align": "align--middle-center",
         "show_title": false,
@@ -35,6 +36,7 @@
     },
     "subcollections": {
       "type": "collection-sub",
+      "disabled": true,
       "settings": {
         "subcollections": [],
         "limit": 6,
@@ -50,6 +52,20 @@
         "width": "wrapper",
         "padding_top": 20,
         "padding_bottom": 0
+      }
+    },
+    "collection_title_cusom_nBTTfb": {
+      "type": "collection-title-cusom",
+      "settings": {
+        "header_text": "Explore products",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "sub_text": "Heritage-inspired sportswear designed for movement, versatility, and life outdoors",
+        "sub_text_size": 5,
+        "sub_text_color": "#000000",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -457,6 +473,7 @@
   "order": [
     "hero",
     "subcollections",
+    "collection_title_cusom_nBTTfb",
     "main",
     "section_list_collections_PBKazm",
     "why_use_our_pieces_GM7rgH",
