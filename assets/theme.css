@@ -19827,16 +19827,15 @@ label.quatity-selector {
 @media only screen and (min-width: 768px) {
   .collection__filters__wrapper {
     transition: width 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
-    min-width: 400px;
     max-width: 400px;
-    width: 250px;
-    margin-left: -250px;
+    margin-left: -218px;
     transition: width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.01s,
       margin 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.01s;
   }
   .drawer--visible.collection__filters__wrapper,
   .filters--default-visible.collection__filters__wrapper {
     margin-left: 0;
+    width: 400px;
   }
   .drawer--visible .collection__filters__inner,
   .filters--default-visible .collection__filters__inner {

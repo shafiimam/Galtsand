@@ -9,6 +9,8 @@
   assign preload_count = section.settings.grid_large | at_most: 4
   assign non_lazy_count = section.settings.grid_large | times: 3 | at_most: 12
 %}
+ 
+
 
 {% style %}
   {%- case section.settings.width -%}
