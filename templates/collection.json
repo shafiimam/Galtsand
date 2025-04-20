@@ -68,6 +68,45 @@
         "padding_bottom": 36
       }
     },
+    "collection_pills_rWnqE6": {
+      "type": "collection-pills",
+      "blocks": {
+        "collection_pill_bQwyPT": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "ss25-collection",
+            "pill_text": "SS 25",
+            "pill_link": ""
+          }
+        },
+        "collection_pill_zdHfdK": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "smart-casual",
+            "pill_text": "Smart Casual",
+            "pill_link": ""
+          }
+        },
+        "collection_pill_VDbFxD": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "comfy-classics",
+            "pill_text": "Comfy Classics",
+            "pill_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_pill_bQwyPT",
+        "collection_pill_zdHfdK",
+        "collection_pill_VDbFxD"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "collection",
       "blocks": {
@@ -474,6 +513,7 @@
     "hero",
     "subcollections",
     "collection_title_cusom_nBTTfb",
+    "collection_pills_rWnqE6",
     "main",
     "section_list_collections_PBKazm",
     "why_use_our_pieces_GM7rgH",
