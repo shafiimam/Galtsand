@@ -275,7 +275,7 @@
         "image_RRUCr6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+            "image": "shopify://shop_images/2025_03_19_Iconic_National_Parks-WebVersion-Blog.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -313,7 +313,7 @@
         "text_aWYYEJ"
       ],
       "settings": {
-        "height": "use_image",
+        "height": "use_screen_one_half",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
@@ -346,7 +346,7 @@
         "image_x3Ct8G": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Untit56767led.jpg",
+            "image": "shopify://shop_images/Daysi4.png",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -367,7 +367,7 @@
         "image_x3Ct8G"
       ],
       "settings": {
-        "height": "use_image",
+        "height": "use_screen_one_half",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
@@ -383,7 +383,7 @@
         "image_RJi33w": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Standard_Calssic_Polo_Darkest_Navy_Medium_-411.jpg",
+            "image": "shopify://shop_images/Galtsand_Studio_West_Palm_Beach_banner-2.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
@@ -421,7 +421,7 @@
         "text_bLxRMd"
       ],
       "settings": {
-        "height": "use_image",
+        "height": "use_screen_one_half",
         "brick_gutter": 0,
         "borders": false,
         "bg_color": "",
