@@ -54,14 +54,16 @@
   endif
 %}
 
-<div class="section-list-collections list__collections {{ section.settings.bg }} {{ additional_classes }}"
+<div
+  class="section-list-collections list__collections {{ section.settings.bg }} {{ additional_classes }}"
   data-section-id="{{ section.id }}"
   data-section-type="collection-row"
   style="
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
-    --aspect-ratio: {{ 1.0 | divided_by: section.settings.wh_ratio | times: 100 }}%;"
-  >
+    --aspect-ratio: {{ 1.0 | divided_by: section.settings.wh_ratio | times: 100 }}%;
+  "
+>
   {%- capture title_content -%}
     {%- if section.settings.title != blank -%}
       <h2 class="kicker-flourished mb-r11">{{ section.settings.title }}</h2>
@@ -74,23 +76,35 @@
         {{ title_content }}
 
         <div
-          {% if show_desktop_carousel %} data-carousel {% else %} data-grid-offset{% endif %}
+          {% if show_desktop_carousel %}
+            data-carousel
+          {% else %}
+            data-grid-offset
+          {% endif %}
           data-grid
           data-grid-large
           data-grid-medium
           data-grid-small
-          {% if show_desktop_bar %}data-carousel-progress{% endif %}
-          {% if show_mobile_bar %}data-custom-scrollbar-items{% endif %}
+          {% if show_desktop_bar %}
+            data-carousel-progress
+          {% endif %}
+          {% if show_mobile_bar %}
+            data-custom-scrollbar-items
+          {% endif %}
           style="
             --grid-large-items: {{ section.settings.grid_large }};
             --grid-medium-items: {{ section.settings.grid_medium }};
-            --grid-small-items: {{ section.settings.grid_mobile }};"
+            --grid-small-items: {{ section.settings.grid_mobile }};
+          "
           data-options='{"watchCSS": true }'
-          class="float-grid grid--uniform flickity-disabled-mobile">
+          class="float-grid grid--uniform flickity-disabled-mobile"
+        >
           {%- unless has_custom_blocks -%}
             {% for collection in collections %}
               {%- assign skip_collection = false -%}
-              {%- assign collection_grid_subtitle = 'collections.general.collection_grid_count' | t: count: collection.products_count -%}
+              {%- assign collection_grid_subtitle = 'collections.general.collection_grid_count'
+                | t: count: collection.products_count
+              -%}
 
               {%- for exclude in excluded_collections_strict -%}
                 {%- assign exclude_handle = exclude | handle -%}
@@ -109,7 +123,9 @@
               {%- endfor -%}
 
               {%- unless skip_collection -%}
-                {%- assign img_object = collection.image | default: collection.products.first.featured_media.preview_image -%}
+                {%- assign img_object = collection.image
+                  | default: collection.products.first.featured_media.preview_image
+                -%}
                 {%- capture sizes -%}
                   {%- render 'image-grid-sizes',
                     columns_desktop: section.settings.grid_large,
@@ -137,9 +153,16 @@
                 -%}
 
                 <div class="grid__item" {{ block.shopify_attributes }} data-carousel-slide data-item>
-                  <div class="collection-grid-item section--image {{ block_all.settings.text_color | default: 'text--white' }}" data-grid-slide>
-                    <a href="{{ collection.url }}" class="link-over-image" aria-label="{{ collection.title | strip_html | escape }}">
-                      <div class="hero__content__wrapper align-space-between-vertical">
+                  <div
+                    class="collection-grid-item section--image {{ block_all.settings.text_color | default: 'text--white' }}"
+                    data-grid-slide
+                  >
+                    <a
+                      href="{{ collection.url }}"
+                      class="link-over-image"
+                      aria-label="{{ collection.title | strip_html | escape }}"
+                    >
+                      <div class="hero__content__wrapper align--middle-center">
                         <p class="collection-grid-item__subtitle strong {{ accent_size_class }}{% unless collection_grid_subtitle != blank %} invisible{% endunless %}">
                           {%- if collection_grid_subtitle != blank -%}
                             {{ collection_grid_subtitle }}
@@ -152,7 +175,7 @@
                           {{ collection.title }}
                         </p>
 
-                        <div class="collection-grid-item__btn text-btn-arrow-right strong {{ accent_size_class }}{% unless collection_grid_cta != blank %} invisible{% endunless %}">
+                        <div class="btn--outline btn--full btn--primary  {{ accent_size_class }}{% unless collection_grid_cta != blank %} invisible{% endunless %}">
                           {%- if collection_grid_cta != blank -%}
                             {{ collection_grid_cta }}
                           {%- else -%}
@@ -162,7 +185,10 @@
                       </div>
                     </a>
 
-                    <div class="image-overlay" style="--overlay-opacity: {{ block_all.settings.overlay_opacity | times: 0.01 }}; --bg: {{ block_all.settings.overlay_color | default: '#000' }};"></div>
+                    <div
+                      class="image-overlay"
+                      style="--overlay-opacity: {{ block_all.settings.overlay_opacity | times: 0.01 }}; --bg: {{ block_all.settings.overlay_color | default: '#000' }};"
+                    ></div>
 
                     {{ images }}
                   </div>
@@ -176,10 +202,15 @@
               {%- endif -%}
 
               {%- assign collection = collections[block.settings.collection] -%}
-              {%- assign img_object = block.settings.image | default: collection.image | default: collection.products.first.featured_media.preview_image -%}
+              {%- assign img_object = block.settings.image
+                | default: collection.image
+                | default: collection.products.first.featured_media.preview_image
+              -%}
               {%- assign collection_grid_subtitle_default = collection_grid_subtitle -%}
               {%- if collection != blank -%}
-                {%- assign collection_grid_subtitle_default = 'collections.general.collection_grid_count' | t: count: collection.products_count -%}
+                {%- assign collection_grid_subtitle_default = 'collections.general.collection_grid_count'
+                  | t: count: collection.products_count
+                -%}
               {%- endif -%}
 
               {%- capture sizes -%}
@@ -203,9 +234,15 @@
 
               <div class="grid__item" {{ block.shopify_attributes }} data-carousel-slide data-item>
                 <div class="collection-grid-item section--image {{ block.settings.text_color }}" data-grid-slide>
-                  <a href="{{ block.settings.collection_url | default: collection.url }}" class="link-over-image" aria-label="{{ collection.title | default: block.settings.title | strip_html | escape }}">
-                    <div class="hero__content__wrapper align-space-between-vertical">
-                      {%- assign subtitle_collection = block.settings.top_text | default: collection_grid_subtitle_default -%}
+                  <a
+                    href="{{ block.settings.collection_url | default: collection.url }}"
+                    class="link-over-image"
+                    aria-label="{{ collection.title | default: block.settings.title | strip_html | escape }}"
+                  >
+                    <div class="hero__content__wrapper align--middle-center">
+                      {%- assign subtitle_collection = block.settings.top_text
+                        | default: collection_grid_subtitle_default
+                      -%}
                       <p class="collection-grid-item__subtitle strong {{ accent_size_class }}{% unless subtitle_collection != blank and block.settings.top_text_disabled == false %} invisible{% endunless %}">
                         {%- if subtitle_collection != blank and block.settings.top_text_disabled == false -%}
                           {{ subtitle_collection }}
@@ -218,13 +255,13 @@
                       {%- assign detault_title = collection.title | default: default_placecolder -%}
                       {%- assign title_collection = block.settings.title | default: detault_title -%}
                       {%- if title_collection != blank and block.settings.title_disabled == false -%}
-                        <p class="collection-grid-item__title {{ mixed_size_class }}">
+                        <p class="collection-grid-item__title {{ mixed_size_class }} mb-r6">
                           {{ title_collection }}
                         </p>
                       {%- endif -%}
 
                       {%- assign cta_collection = block.settings.bottom_text | default: collection_grid_cta -%}
-                      <div class="collection-grid-item__btn text-btn-arrow-right strong {{ accent_size_class }}{% unless cta_collection != blank and block.settings.bottom_text_disabled == false %} invisible{% endunless %}">
+                      <div class="btn--outline btn--large btn--white btn--add-to-cart {{ accent_size_class }}{% unless cta_collection != blank and block.settings.bottom_text_disabled == false %} invisible{% endunless %}">
                         {%- if cta_collection != blank and block.settings.bottom_text_disabled == false -%}
                           {{ cta_collection }}
                         {%- else -%}
@@ -234,9 +271,17 @@
                     </div>
                   </a>
 
-                  <div class="image-overlay" style="--overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }}; --bg: {{ block.settings.overlay_color }};"></div>
+                  <div
+                    class="image-overlay"
+                    style="--overlay-opacity: {{ block.settings.overlay_opacity | times: 0.01 }}; --bg: {{ block.settings.overlay_color }};"
+                  ></div>
                   {% assign alt = img_object.alt | default: 'Collection Image' %}
-                  {% render 'image-parallax', img_object: img_object, img_object_mobile: block.settings.mobile_image, frame_height_class: 'none', alt: alt %}
+                  {% render 'image-parallax',
+                    img_object: img_object,
+                    img_object_mobile: block.settings.mobile_image,
+                    frame_height_class: 'none',
+                    alt: alt
+                  %}
                 </div>
               </div>
             {% endfor %}
@@ -287,12 +332,12 @@
       "label": "Background color",
       "default": "palette--light bg--neutral",
       "options": [
-        { "value": "palette--light bg--neutral", "label": "Default"},
-        { "value": "palette--light bg--accent", "label": "Light"},
-        { "value": "palette--dark bg--invert", "label": "Dark"},
-        { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
-        { "value": "palette--bright bg--bright", "label": "Bright"},
-        { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
+        { "value": "palette--light bg--neutral", "label": "Default" },
+        { "value": "palette--light bg--accent", "label": "Light" },
+        { "value": "palette--dark bg--invert", "label": "Dark" },
+        { "value": "palette--dark bg--invert--accent", "label": "Dark accent" },
+        { "value": "palette--bright bg--bright", "label": "Bright" },
+        { "value": "palette--bright bg--bright--accent", "label": "Bright accent" }
       ]
     },
     {
@@ -335,30 +380,30 @@
       "default": 1.5
     },
     {
-      "type":    "range",
-      "id":      "grid_large",
-      "min":     1,
-      "max":     4,
-      "step":    1,
-      "label":   "Desktop",
+      "type": "range",
+      "id": "grid_large",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Desktop",
       "default": 2
     },
     {
-      "type":    "range",
-      "id":      "grid_medium",
-      "min":     1,
-      "max":     3,
-      "step":    1,
-      "label":   "Tablet",
+      "type": "range",
+      "id": "grid_medium",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Tablet",
       "default": 2
     },
     {
-      "type":    "range",
-      "id":      "grid_mobile",
-      "min":     1,
-      "max":     3,
-      "step":    0.1,
-      "label":   "Mobile",
+      "type": "range",
+      "id": "grid_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 0.1,
+      "label": "Mobile",
       "default": 1.2
     },
     {
@@ -371,9 +416,9 @@
       "label": "Title font",
       "default": "body",
       "options": [
-        { "value": "heading","label": "Heading" },
-        { "value": "body","label": "Body" },
-        { "value": "accent","label": "Accent " }
+        { "value": "heading", "label": "Heading" },
+        { "value": "body", "label": "Body" },
+        { "value": "accent", "label": "Accent " }
       ]
     },
     {
@@ -404,8 +449,11 @@
       "label": "Width",
       "default": "wrapper",
       "options": [
+        { "value": "wrapper--none", "label": "Full width" },
         { "value": "wrapper--full", "label": "Full width padded" },
-        { "value": "wrapper", "label": "Page width" }
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
       ]
     },
     {
@@ -442,13 +490,13 @@
           "default": "#000000"
         },
         {
-          "type":    "range",
-          "id":      "overlay_opacity",
-          "min":     0,
-          "max":     100,
-          "step":    5,
-          "label":   "Overlay opacity",
-          "info":    "Increase contrast for legible text",
+          "type": "range",
+          "id": "overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "label": "Overlay opacity",
+          "info": "Increase contrast for legible text",
           "default": 15
         },
         {
@@ -499,12 +547,12 @@
           "default": "#000000"
         },
         {
-          "type":    "range",
-          "id":      "overlay_opacity",
-          "min":     0,
-          "max":     100,
-          "step":    5,
-          "label":   "Overlay opacity",
+          "type": "range",
+          "id": "overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "label": "Overlay opacity",
           "default": 15
         },
         {
@@ -583,7 +631,7 @@
     }
   ],
   "disabled_on": {
-    "groups": ["header","footer","aside"]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}

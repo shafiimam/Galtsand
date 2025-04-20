@@ -1,0 +1,99 @@
+<div class="{{ section.settings.width }} section-padding">
+  <h1
+    class="heading heading-size-{{ section.settings.title_text_size }} mb-r2"
+    style="color: {{ section.settings.title_text_color }};"
+  >
+    {{ section.settings.header_text }}
+  </h1>
+  <p class="body body-size-{{ section.settings.sub_text_size }}" style="color: {{ section.settings.sub_text_color }};">
+    {{ section.settings.sub_text }}
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "Collection Title Custom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Title",
+      "default": "Curated Collections"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#e6dbc4"
+    },
+    {
+      "type": "text",
+      "id": "sub_text",
+      "label": "Subtext",
+      "default": "Handcarfted by our expert designers"
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color",
+      "label": "Subtext color",
+      "default": "#e6dbc4"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Title Custom"
+    }
+  ]
+}
+{% endschema %}

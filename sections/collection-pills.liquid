@@ -1,0 +1,114 @@
+<div
+  class="section-collections-pills {{ section.settings.width }} section-padding"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="section-collections-pills_content">
+    {% for block in section.blocks %}
+      {% assign block_collection = block.settings.collection %}
+      {% assign block_collection_url = block_collection.url %}
+      {% if collection.url == block_collection_url %}
+        {% assign is_current = true %}
+      {% else %}
+        {% assign is_current = false %}
+      {% endif %}
+      <div class="section-collections-pills_pill {% if is_current == true %}section-collections-pills_pill--current{% endif %}" {{ block.shopify_attributes }}>
+        <a href="{{ block_collection_url }}" class="section-collections-pills_pill_link">
+          {{- block.settings.pill_text -}}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<style>
+  .section-collections-pills_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    gap: 8px;
+    border-bottom: 1px solid #f0ede6;
+    padding-bottom: 24px;
+  }
+  .section-collections-pills_pill {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #f0ede6;
+  }
+  .section-collections-pills_pill.section-collections-pills_pill--current {
+    background: #000;
+    color: #fff;
+  }
+</style>
+{% schema %}
+{
+  "name": "Collection Pills",
+  "settings": [
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_pill",
+      "name": "Collection Pill",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "pill_text",
+          "label": "Pill Text"
+        },
+        {
+          "type": "url",
+          "id": "pill_link",
+          "label": "Pill Link",
+          "info": "Setting this will override the collection link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Pills"
+    }
+  ]
+}
+{% endschema %}

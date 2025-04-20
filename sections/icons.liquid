@@ -58,13 +58,29 @@
   }
 </style>
 
-<section class="eco-conscious-section">
-  <div class="{{ section.settings.width }}">
-    {% if section.settings.heading != blank %}
-      <h2 class="heading-size-6 mb-r6">{{ section.settings.heading }}</h2>
+<section
+  class="eco-conscious-section"
+  style="background-color: {{ section.settings.background_color }};"
+>
+  <div
+    class="section-padding {{ section.settings.width }}"
+    style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+  >
+    {% if section.settings.header_text != blank %}
+      <h2
+        class="heading heading-size-{{ section.settings.title_text_size }} mb-r6"
+        style="color: {{ section.settings.title_text_color }};"
+      >
+        {{ section.settings.header_text }}
+      </h2>
     {% endif %}
-    {% if section.settings.subheading != blank %}
-      <p class="subheading">{{ section.settings.subheading }}</p>
+    {% if section.settings.subtitle != blank %}
+      <p
+        class="body body-size-{{ section.settings.sub_text_size }} mb-r8"
+        style="color: {{ section.settings.sub_text_color }};"
+      >
+        {{ section.settings.subtitle }}
+      </p>
     {% endif %}
 
     <!-- Desktop View (Grid of Features) -->
@@ -73,10 +89,12 @@
         <div class="eco-feature" {{ block.shopify_attributes }}>
           {% if block.settings.icon != blank %}
             <div class="icon">
-              <img src="{{ block.settings.icon | img_url: 'master' }}" 
-                   alt="{{ block.settings.title }}"
-                   width="360"
-                   height="360">
+              <img
+                src="{{ block.settings.icon | img_url: 'master' }}"
+                alt="{{ block.settings.title }}"
+                width="360"
+                height="360"
+              >
             </div>
           {% endif %}
           <h3 class="heading-size-6 mb-r2">{{ block.settings.title }}</h3>
@@ -94,16 +112,46 @@
   "name": "Eco-Conscious Section",
   "settings": [
     {
-      "type": "text", 
-      "id": "heading",
-      "label": "Heading",
-      "default": "Designed With An Eco-Conscious Mindset"
+      "type": "text",
+      "id": "header_text",
+      "label": "Title",
+      "default": "Curated Collections"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
     },
     {
       "type": "text",
-      "id": "subheading", 
-      "label": "Subheading",
-      "default": "At Fabletics, our unwavering commitment to the environment drives us to innovate continuously..."
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Handcarfted by our expert designers"
+    },
+    {
+      "type": "range",
+      "id": "sub_text_size",
+      "label": "Subtext size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "sub_text_color",
+      "label": "Subtext color",
+      "default": "#000000"
     },
     {
       "type": "select",
@@ -117,6 +165,32 @@
         { "value": "wrapper--narrow", "label": "Page width narrow" },
         { "value": "wrapper--tiny", "label": "Page width extra narrow" }
       ]
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F0EDE6"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
     }
   ],
   "blocks": [
@@ -147,7 +221,7 @@
           "label": "Learn More Link"
         }
       ]
-    },
+    }
   ],
   "presets": [
     {
@@ -160,7 +234,7 @@
           "type": "feature"
         },
         {
-          "type": "feature" 
+          "type": "feature"
         }
       ]
     }
