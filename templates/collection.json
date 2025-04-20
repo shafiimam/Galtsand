@@ -430,83 +430,6 @@
         "padding_top": 36,
         "padding_bottom": 0
       }
-    },
-    "seasonal_trends_3AGAmP": {
-      "type": "seasonal_trends",
-      "blocks": {
-        "trend_block_MK8cfh": {
-          "type": "trend_block",
-          "settings": {
-            "image": "shopify://shop_images/untitled6_2aacc491-d037-4b09-b434-a1be8acd0a43.jpg",
-            "heading": "Trending Colors",
-            "description": "Explore fresh pastels for spring, vibrant hues for summer, or earthy tones for fall.",
-            "link": "shopify://collections/trending-colors"
-          }
-        },
-        "trend_block_Jjh9CK": {
-          "type": "trend_block",
-          "settings": {
-            "image": "shopify://shop_images/hike2.jpg",
-            "heading": "Seasonal Design Inspirations",
-            "description": "Unique prints inspired by nature, art, and pop culture",
-            "link": "shopify://collections/spring-essentials"
-          }
-        }
-      },
-      "block_order": [
-        "trend_block_MK8cfh",
-        "trend_block_Jjh9CK"
-      ],
-      "settings": {
-        "title": "Trending Topic",
-        "subtitle": "Elevate your look with effortless layering, smart pairings, and distinctive color combinations.",
-        "width": "wrapper--full"
-      }
-    },
-    "how_to_style_p7gryg": {
-      "type": "how_to_style",
-      "blocks": {
-        "style_row_GCd6Gb": {
-          "type": "style_row",
-          "settings": {
-            "heading": "Pair with Jeans",
-            "description": "Achieve a timeless, effortless look",
-            "product_1": "airlite-leggings",
-            "product_2": "angelique-bra",
-            "product_3": "classic-messenger-bag"
-          }
-        },
-        "style_row_7RzC9N": {
-          "type": "style_row",
-          "settings": {
-            "heading": "Pair with Jeans",
-            "description": "Achieve a timeless, effortless look",
-            "product_1": "daisy-short",
-            "product_2": "empower-bra",
-            "product_3": "freedom-leggings"
-          }
-        },
-        "style_row_xPRQ9Q": {
-          "type": "style_row",
-          "settings": {
-            "heading": "Pair with Jeans",
-            "description": "Achieve a timeless, effortless look",
-            "product_1": "pullover-hoodie-with-printed-logo",
-            "product_2": "giselle-bra",
-            "product_3": "garment-washed-pullover-hoodie"
-          }
-        }
-      },
-      "block_order": [
-        "style_row_GCd6Gb",
-        "style_row_7RzC9N",
-        "style_row_xPRQ9Q"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Style Guides",
-        "subtitle": "Unlock the full potential of your capsule collection"
-      }
     }
   },
   "order": [
@@ -521,8 +444,6 @@
     "section_richtext_EPRhRT",
     "section_double_fbFmtT",
     "section_double_4cjRrN",
-    "section_double_GKN8dL",
-    "seasonal_trends_3AGAmP",
-    "how_to_style_p7gryg"
+    "section_double_GKN8dL"
   ]
 }
