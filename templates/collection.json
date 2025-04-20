@@ -205,63 +205,6 @@
         "padding_bottom": 36
       }
     },
-    "section_list_collections_Bw7jrN": {
-      "type": "section-list-collections",
-      "blocks": {
-        "collection_3AinVP": {
-          "type": "collection",
-          "settings": {
-            "collection": "best-sellers",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "top_text": "",
-            "top_text_disabled": true,
-            "title": "",
-            "title_disabled": false,
-            "bottom_text": "",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        },
-        "collection_9HWkfd": {
-          "type": "collection",
-          "settings": {
-            "collection": "new-in-this-week",
-            "image": "shopify://shop_images/April_11_-_Post_1.png",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "top_text": "",
-            "top_text_disabled": true,
-            "title": "New In",
-            "title_disabled": false,
-            "bottom_text": "",
-            "bottom_text_disabled": false,
-            "collection_url": "",
-            "text_color": "text--white"
-          }
-        }
-      },
-      "block_order": [
-        "collection_3AinVP",
-        "collection_9HWkfd"
-      ],
-      "settings": {
-        "title": "",
-        "bg": "palette--light bg--neutral",
-        "carousel_enabled_on": "mobile",
-        "wh_ratio": 1.5,
-        "grid_large": 2,
-        "grid_medium": 2,
-        "grid_mobile": 1.2,
-        "font_family": "heading",
-        "title_size": 8,
-        "accent_size": 3,
-        "width": "wrapper--none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "why_use_our_pieces_GM7rgH": {
       "type": "Why_Use_Our_Pieces",
       "settings": {
@@ -487,6 +430,96 @@
         "padding_top": 36,
         "padding_bottom": 0
       }
+    },
+    "section_richtext_t3gMnr": {
+      "type": "section-richtext",
+      "blocks": {
+        "heading_7Ngndx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore More",
+            "text_size": 10
+          }
+        },
+        "text_DfimBj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stay classic, keep it bold, or take it outside—your move.</p>",
+            "text_size": 5,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "heading_7Ngndx",
+        "text_DfimBj"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper--full",
+        "padding_top": 50,
+        "padding_bottom": 40
+      }
+    },
+    "section_list_collections_Bw7jrN": {
+      "type": "section-list-collections",
+      "blocks": {
+        "collection_3AinVP": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "top_text": "",
+            "top_text_disabled": true,
+            "title": "",
+            "title_disabled": false,
+            "bottom_text": "",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        },
+        "collection_9HWkfd": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-in-this-week",
+            "image": "shopify://shop_images/April_11_-_Post_1.png",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "top_text": "",
+            "top_text_disabled": true,
+            "title": "New In",
+            "title_disabled": false,
+            "bottom_text": "",
+            "bottom_text_disabled": false,
+            "collection_url": "",
+            "text_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "collection_3AinVP",
+        "collection_9HWkfd"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "carousel_enabled_on": "mobile",
+        "wh_ratio": 1.5,
+        "grid_large": 2,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "font_family": "heading",
+        "title_size": 8,
+        "accent_size": 3,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 120
+      }
     }
   },
   "order": [
@@ -502,6 +535,7 @@
     "section_double_fbFmtT",
     "section_double_4cjRrN",
     "section_double_GKN8dL",
+    "section_richtext_t3gMnr",
     "section_list_collections_Bw7jrN"
   ]
 }
