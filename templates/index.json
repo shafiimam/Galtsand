@@ -987,7 +987,7 @@
         "title_text_size": 10,
         "title_color": "#000000",
         "image": "shopify://shop_images/Galtsand_Event-125.jpg",
-        "height": "use_screen_full",
+        "height": "use_screen_three_quarters",
         "width": "wrapper--full"
       }
     }
