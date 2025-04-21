@@ -20994,7 +20994,7 @@ a.product__form__link:after {
 }
 @media only screen and (min-width: 768px) {
   .product-single .product__inner {
-    max-width: 450px;
+    max-width: 600px;
   }
   .push-product-title .product-single .product__inner {
     padding-top: 60px;
