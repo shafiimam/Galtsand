@@ -190,7 +190,7 @@
 
                     {% if block.settings.text != blank %}
                       {% assign text_columns_class = block.settings.text_columns | prepend: 'columns--' %}
-                      <p class="rte body {{ text_size_class }} {{ text_columns_class }} {{ justify_class }} text-uppercase"
+                      <p class="rte body {{ text_size_class }} {{ text_columns_class }} {{ justify_class }}"
                         data-aos="hero"
                         data-aos-anchor="{{ animation_anchor }}"
                         data-aos-order="3" style="color: {{ block.settings.text_color }};" 
