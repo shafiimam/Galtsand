@@ -297,7 +297,7 @@
     "video_with_modal_zPUEPT": {
       "type": "video-with-modal",
       "settings": {
-        "title": "From 9-to-5 to Off the Grid.",
+        "title": "Modern Cargo: Two Styles. One Purpose. Made to Move.",
         "title_text_size": 10,
         "title_text_color": "#ffffff",
         "button_label": "Watch Video",
@@ -305,8 +305,8 @@
         "button_size": "btn--long",
         "button_style": "btn--outline",
         "button_color": "btn--white",
-        "video": "shopify://files/videos/for-TV-Long-format.MP4",
-        "image": "shopify://shop_images/Frame_240_4ffaad44-e7f8-46ca-bb10-98be49ca895a.png",
+        "video": "shopify://files/videos/khaki-vest.MP4",
+        "image": "shopify://shop_images/image_22_f3ff752d-6a36-43a8-ba0b-97bd4ca8d769.png",
         "image_background_color": "#292623",
         "width": "wrapper--none"
       }
