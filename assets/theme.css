@@ -20989,12 +20989,9 @@ a.product__form__link:after {
   animation: z-index-animation 0.3s;
   animation-fill-mode: forwards;
 }
-.product-single .product__inner {
-  margin: 0 auto;
-}
 @media only screen and (min-width: 768px) {
   .product-single .product__inner {
-    max-width: 600px;
+    /* max-width: 600px; */
   }
   .push-product-title .product-single .product__inner {
     padding-top: 60px;
