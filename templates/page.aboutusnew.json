@@ -90,7 +90,7 @@
       "settings": {
         "image": "shopify://shop_images/IMG_6713.jpg",
         "image_position": "right",
-        "width": "wrapper--none",
+        "width": "wrapper--full",
         "background_color": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
@@ -258,7 +258,7 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36,
-        "background_color": "#F0EDE6"
+        "background_color": "#f0ede6"
       }
     },
     "section_columns_ttBhdk": {
@@ -337,7 +337,7 @@
         "width": "wrapper--full",
         "padding_top": 60,
         "padding_bottom": 0,
-        "background_color": "#F0EDE6"
+        "background_color": "#f0ede6"
       }
     },
     "section_richtext_UfgiKk": {
