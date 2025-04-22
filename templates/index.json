@@ -269,6 +269,23 @@
         "padding_bottom": 90
       }
     },
+    "video_with_modal_zPUEPT": {
+      "type": "video-with-modal",
+      "settings": {
+        "title": "Modern Cargo: Two Styles. One Purpose. Made to Move.",
+        "title_text_size": 10,
+        "title_text_color": "#ffffff",
+        "button_label": "Watch Video",
+        "button_url": "",
+        "button_size": "btn--long",
+        "button_style": "btn--outline",
+        "button_color": "btn--white",
+        "video": "shopify://files/videos/khaki-vest.MP4",
+        "image": "shopify://shop_images/image_22_f3ff752d-6a36-43a8-ba0b-97bd4ca8d769.png",
+        "image_background_color": "#292623",
+        "width": "wrapper--none"
+      }
+    },
     "section_collection_slider_yEBj8t": {
       "type": "section-collection-slider",
       "settings": {
@@ -292,23 +309,6 @@
         "width": "wrapper--full",
         "padding_top": 0,
         "padding_bottom": 90
-      }
-    },
-    "video_with_modal_zPUEPT": {
-      "type": "video-with-modal",
-      "settings": {
-        "title": "Modern Cargo: Two Styles. One Purpose. Made to Move.",
-        "title_text_size": 10,
-        "title_text_color": "#ffffff",
-        "button_label": "Watch Video",
-        "button_url": "",
-        "button_size": "btn--long",
-        "button_style": "btn--outline",
-        "button_color": "btn--white",
-        "video": "shopify://files/videos/khaki-vest.MP4",
-        "image": "shopify://shop_images/image_22_f3ff752d-6a36-43a8-ba0b-97bd4ca8d769.png",
-        "image_background_color": "#292623",
-        "width": "wrapper--none"
       }
     },
     "small_collection_grid_xqdYiz": {
@@ -997,8 +997,8 @@
     "hero",
     "section_logos_E3KxjC",
     "section_collection_slider_XiBHU9",
-    "section_collection_slider_yEBj8t",
     "video_with_modal_zPUEPT",
+    "section_collection_slider_yEBj8t",
     "small_collection_grid_xqdYiz",
     "card_cascade_F4z48g",
     "collection-split-section-1",
