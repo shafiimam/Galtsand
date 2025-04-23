@@ -15,7 +15,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "text_size": 7,
+            "text_size": 10,
             "product_show_cutline": true,
             "show_rating": true,
             "show_rating_count": false,
@@ -27,6 +27,15 @@
           "settings": {
             "price_size": 5,
             "padding_bottom": 10
+          }
+        },
+        "spacer_zctfQR": {
+          "type": "spacer",
+          "settings": {
+            "show_line": true,
+            "target_device": "",
+            "padding_top": 32,
+            "padding_bottom": 32
           }
         },
         "variants": {
@@ -68,6 +77,7 @@
           "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
           "settings": {
             "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
             "swym_atw_display_btn_text": true,
             "swym_button_position": "default",
             "swym_atw_button_vertical_offset": 0,
@@ -119,6 +129,7 @@
       "block_order": [
         "title",
         "price",
+        "spacer_zctfQR",
         "variants",
         "subscriptions",
         "quantity",
