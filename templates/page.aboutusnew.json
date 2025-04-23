@@ -360,7 +360,7 @@
         ".rte p {color: #4f555f; letter-spacing: 0.32px; text-transform: uppercase;}"
       ],
       "settings": {
-        "align_text": "text-left",
+        "align_text": "text-center",
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
         "content_width": 850,
