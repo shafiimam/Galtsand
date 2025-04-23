@@ -248,7 +248,7 @@
       "settings": {
         "title": "",
         "bg": "palette--light bg--neutral",
-        "align_text": "text-left",
+        "align_text": "text-center",
         "scale_image": true,
         "wh_ratio": 1,
         "grid_large": 2,
