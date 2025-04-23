@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "section_breadcrumbs_7qbzqi": {
+      "type": "section-breadcrumbs",
+      "settings": {
+        "width": "wrapper--full",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "product",
       "blocks": {
@@ -41,10 +49,10 @@
         "variants": {
           "type": "variant-selectors",
           "settings": {
-            "option_size_swatch": 30,
-            "option_size_radio": 30,
-            "option_space": 14,
-            "padding_bottom": 20
+            "option_size_swatch": 40,
+            "option_size_radio": 60,
+            "option_space": 32,
+            "padding_bottom": 32
           }
         },
         "subscriptions": {
@@ -58,7 +66,7 @@
           "type": "quantity",
           "settings": {
             "show_quantity": true,
-            "padding_bottom": 20
+            "padding_bottom": 32
           }
         },
         "true_fit_widget_AU4UkV": {
@@ -150,7 +158,7 @@
         "zoom_enable": true,
         "alt_text_enable": true,
         "alt_text_icon": "icon-recycled",
-        "product_breadcrumbs_enable": true,
+        "product_breadcrumbs_enable": false,
         "product_breadcrumbs_list": [
           "all"
         ],
@@ -500,6 +508,7 @@
     }
   },
   "order": [
+    "section_breadcrumbs_7qbzqi",
     "main",
     "icons_rRVyrm",
     "image-with-text-2",

@@ -1,0 +1,120 @@
+<section
+  class="breadcrumbs breadcrumbs--{{ section.id }} {{ section.settings.width }}"
+  id="breadcrumbs--{{ section.id }}"
+>
+  <a href="{{ routes.root_url }}" class="text-xs link-faded" title="Home"> Home </a>
+  {% if template contains 'product' %}
+    {% if collection %}
+      {% if collection.handle %}
+        {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+        <a class="text-xs link-faded separator" href="{{ url }}" title="{{ collection.title }}">
+          {{ collection.title | strip }}
+        </a>
+      {% elsif collection.all_products_count > 0 and collection.products.first.type == collection.title %}
+        <a class="text-xs link-faded separator" href="{{ url }}" title="{{ collection.title | strip }}">
+          {{ collection.title | strip }}
+        </a>
+      {% elsif collection.all_products_count > 0 and collection.products.first.vendor == collection.title %}
+        <a class="text-xs link-faded" href="{{ url }}" title="{{ collection.title | strip }}">
+          {{ collection.title | strip }}
+        </a>
+      {% endif %}
+    {% else %}
+      <span class="text-xs separator">
+        {{ product.type | link_to_type }}
+      </span>
+    {% endif %}
+    <span class="text-xs separator">{{ page_title }}</span>
+  {% elsif template == 'article' %}
+    <a class="text-xs link-faded separator" href="{{ blog.url }}" title="{{ blog.title }}">{{ blog.title }}</a>
+    <span class="text-xs separator">{{ page_title }}</span>
+  {% elsif template == 'list-collections' %}
+    <span class="text-xs separator">Brands</span>
+  {% elsif template contains 'collection' %}
+    {% if current_tags.size > 0 %}
+      <a class="text-xs link-faded separator" href="{{ collection.url }}" title="{{ collection.title }}">
+        {{- collection.title -}}
+      </a>
+      <span class="text-xs separator">{{ current_tags.first }}</span>
+    {% else %}
+      <span class="text-xs separator">{{ collection.title }}</span>
+    {% endif %}
+
+  {% else %}
+    <span class="text-xs separator">{{ page_title }}</span>
+  {% endif %}
+</section>
+
+<style>
+  .breadcrumbs {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  @media only screen and (max-width: 768px) {
+    .breadcrumbs {
+      display:none !important;
+    }
+  }
+  .breadcrumbs a {
+    text-transform: capitalize;
+  }
+  .breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+  .separator:before {
+    content: '/';
+    color: rgb(var(--text-color) / 0.65);
+    margin-inline-end: 0.375rem;
+    font-size: 0.625rem;
+    display: inline-block;
+  }
+</style>
+{% schema %}
+{
+  "name": "Breadcrumbs",
+  "settings": [
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Breadcrumbs"
+    }
+  ]
+}
+{% endschema %}

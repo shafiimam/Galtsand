@@ -2,13 +2,14 @@
 
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 
-<div class="product__block__variants"
+<div
+  class="product__block__variants"
   style="
     --PB: {{ block.settings.padding_bottom }}px;
     --OPTION-SPACE: {{ block.settings.option_space | default: 30 }}px;
     --OPTION-SIZE-RADIO: {{ block.settings.option_size_radio | default: 50 }}px;
     --OPTION-SIZE-SWATCH: {{ block.settings.option_size_swatch | default: 34 }}px;
-    "
+  "
   {{ block.shopify_attributes }}
 >
   {%- unless product.has_only_default_variant -%}
@@ -28,10 +29,10 @@
             endif
           endfor
 
-          assign lock_width_class = ""
+          assign lock_width_class = ''
           assign chars_diff = longest_value | minus: shortest_value
           if chars_diff < 5 and longest_value < 6
-            assign lock_width_class = "radio__inputs--equal"
+            assign lock_width_class = 'radio__inputs--equal'
           endif
 
           assign variant_style = 'dropdown'
@@ -45,7 +46,7 @@
         {%- if settings.swatches_enable -%}
           {%- comment -%} Determine if current option matches swatch handle translations {%- endcomment -%}
           {%- capture swatch_translation -%}{{ 'general.swatches.color' | t }} {%- endcapture -%}
-          {%- assign translation_array = swatch_translation | append: ',' | split: "," | uniq -%}
+          {%- assign translation_array = swatch_translation | append: ',' | split: ',' | uniq -%}
           {%- assign is_swatch_option = false -%}
           {%- assign option_handle = option.name | downcase | lstrip | rstrip | escape_once -%}
           {%- for translation in translation_array -%}
@@ -56,7 +57,9 @@
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
-        <div data-swapper-wrapper data-split-select-wrapper
+        <div
+          data-swapper-wrapper
+          data-split-select-wrapper
           class="selector-wrapper {% if is_swatch_option %}selector-wrapper--color{% endif %}{% if is_swatch_option or variant_style == 'button' %} selector-wrapper--fullwidth{% endif %} js"
           data-select-label="{{ option.name }}"
           data-option-position="{{ option.position }}"
@@ -66,6 +69,9 @@
             <fieldset class="radio__fieldset">
               <legend class="radio__legend" aria-label="{{ option.name | escape_once }}">
                 <span class="radio__legend__label">{{ option.name | escape_once }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                  <circle cx="2" cy="2" r="2" fill="#4F555F"/>
+                </svg>
                 <span data-option-value data-swapper-target>{{ current_value }}</span>
               </legend>
               {%- if is_swatch_option -%}
@@ -78,15 +84,24 @@
                   {%- if is_swatch_option -%}
                     <radio-swatch class="swatch__button{% if settings.swatches_squares %} swatch__button--square{% endif %}">
                       <input type="radio"
-                          data-swatch-input
-                          name="options[{{ option.name | escape_once }}]"
-                          value="{{ value | escape_once }}"
-                          id="{{ input_id }}"
-                          form="{{ uniq_id }}"
-                          {% if value == current_value -%}checked{%- endif %}>
-                      <label for="{{ input_id }}" data-swatch="{{ value | escape_once }}" data-swapper-hover="{{ value | escape_once }}">
+                        data-swatch-input
+                        name="options[{{ option.name | escape_once }}]"
+                        value="{{ value | escape_once }}"
+                        id="{{ input_id }}"
+                        form="{{ uniq_id }}"
+                        {% if value == current_value -%}
+                          checked
+                        {%- endif %}
+                      >
+                      <label
+                        for="{{ input_id }}"
+                        data-swatch="{{ value | escape_once }}"
+                        data-swapper-hover="{{ value | escape_once }}"
+                      >
                         <span class="visually-hidden value">{{ value | escape_once }}</span>
-                        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+                        <span class="visually-hidden">
+                          {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
+                        </span>
                       </label>
                     </radio-swatch>
 
@@ -162,7 +177,7 @@
             {% if variant == current_variant %} selected="selected"{% endif %}
             {% unless variant.available %} disabled="disabled"{% endunless %}
             value="{{ variant.id }}">
-              {{ variant.title }}
+            {{ variant.title }}
           </option>
         {%- endfor -%}
       </select>

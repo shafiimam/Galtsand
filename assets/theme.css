@@ -12105,14 +12105,15 @@ label.error {
 .radio__legend {
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start;
+  align-items: center;
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 12px 0;
+  gap: 8px;
   width: 100%;
   opacity: 0.7;
   line-height: 1.4;
   font-weight: var(--FONT-WEIGHT-BODY);
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
 }
 .radio__legend span {
@@ -12120,11 +12121,6 @@ label.error {
   max-width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.radio__legend span:not(.radio__legend__label) {
-  padding-left: 5px;
-  border-left: 1px solid var(--border);
-  margin-left: 6px;
 }
 .radio__legend span:not(.radio__legend__label):empty {
   border-left-color: transparent;
@@ -12142,7 +12138,7 @@ label.error {
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
   text-transform: var(--FONT-BODY-TRANSFORM);
   letter-spacing: var(--FONT-BODY-LETTER-SPACING);
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-BODY));
+  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
   line-height: var(--leading-normal);
   opacity: 1;
 }
@@ -12162,7 +12158,7 @@ label.error {
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(max((var(--OPTION-SIZE-RADIO)), 50px + 4px), 1fr)
+    minmax(max((var(--OPTION-SIZE-RADIO)), 90px + 4px), 1fr)
   );
 }
 .product__align-center .radio__inputs--equal {
