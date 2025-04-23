@@ -2,46 +2,79 @@
   class="breadcrumbs breadcrumbs--{{ section.id }} {{ section.settings.width }}"
   id="breadcrumbs--{{ section.id }}"
 >
-  <a href="{{ routes.root_url }}" class="text-xs link-faded" title="Home"> Home </a>
+  <a
+    href="{{ routes.root_url }}"
+
+    class="body body-size-{{ section.settings.text_size }} breadcrumb_link"
+    title="Home"
+  >
+    Home
+  </a>
   {% if template contains 'product' %}
     {% if collection %}
       {% if collection.handle %}
         {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
-        <a class="text-xs link-faded separator" href="{{ url }}" title="{{ collection.title }}">
+        <a
+          class="body body-size-{{ section.settings.text_size }} breadcrumb_link separator"
+          href="{{ url }}"
+          title="{{ collection.title }}"
+        >
           {{ collection.title | strip }}
         </a>
       {% elsif collection.all_products_count > 0 and collection.products.first.type == collection.title %}
-        <a class="text-xs link-faded separator" href="{{ url }}" title="{{ collection.title | strip }}">
+        <a
+          class="body body-size-{{ section.settings.text_size }} breadcrumb_link separator"
+          href="{{ url }}"
+          title="{{ collection.title | strip }}"
+        >
           {{ collection.title | strip }}
         </a>
       {% elsif collection.all_products_count > 0 and collection.products.first.vendor == collection.title %}
-        <a class="text-xs link-faded" href="{{ url }}" title="{{ collection.title | strip }}">
+        <a
+          class="body body-size-{{ section.settings.text_size }} breadcrumb_link"
+          href="{{ url }}"
+          title="{{ collection.title | strip }}"
+        >
           {{ collection.title | strip }}
         </a>
       {% endif %}
     {% else %}
-      <span class="text-xs separator">
+      <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link">
         {{ product.type | link_to_type }}
       </span>
     {% endif %}
-    <span class="text-xs separator">{{ page_title }}</span>
+    <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link">{{ page_title }}</span>
   {% elsif template == 'article' %}
-    <a class="text-xs link-faded separator" href="{{ blog.url }}" title="{{ blog.title }}">{{ blog.title }}</a>
-    <span class="text-xs separator">{{ page_title }}</span>
+    <a
+      class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link"
+      href="{{ blog.url }}"
+      title="{{ blog.title }}"
+    >
+      {{- blog.title -}}
+    </a>
+    <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_linkq">{{ page_title }}</span>
   {% elsif template == 'list-collections' %}
-    <span class="text-xs separator">Brands</span>
+    <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link">Brands</span>
   {% elsif template contains 'collection' %}
     {% if current_tags.size > 0 %}
-      <a class="text-xs link-faded separator" href="{{ collection.url }}" title="{{ collection.title }}">
+      <a
+        class="body body-size-{{ section.settings.text_size }} breadcrumb_link separator"
+        href="{{ collection.url }}"
+        title="{{ collection.title }}"
+      >
         {{- collection.title -}}
       </a>
-      <span class="text-xs separator">{{ current_tags.first }}</span>
+      <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link">
+        {{- current_tags.first -}}
+      </span>
     {% else %}
-      <span class="text-xs separator">{{ collection.title }}</span>
+      <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link">
+        {{- collection.title -}}
+      </span>
     {% endif %}
 
   {% else %}
-    <span class="text-xs separator">{{ page_title }}</span>
+    <span class="body body-size-{{ section.settings.text_size }} separator breadcrumb_link">{{ page_title }}</span>
   {% endif %}
 </section>
 
@@ -55,8 +88,9 @@
       display:none !important;
     }
   }
-  .breadcrumbs a {
+  .breadcrumbs .breadcrumb_link {
     text-transform: capitalize;
+    color: {{ section.settings.text_color }};
   }
   .breadcrumbs {
     display: flex;
@@ -109,6 +143,21 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
     }
   ],
   "presets": [

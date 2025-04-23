@@ -20728,21 +20728,21 @@ a.product__form__link:after {
   align-items: center;
 }
 .product__price {
-  font-family: var(--FONT-STACK-BODY);
-  font-style: var(--FONT-STYLE-BODY);
-  font-weight: var(--FONT-WEIGHT-BODY);
-  text-transform: var(--FONT-BODY-TRANSFORM);
-  letter-spacing: var(--FONT-BODY-LETTER-SPACING);
+  font-family: var(--FONT-STACK-HEADING);
+  font-style: var(--FONT-STYLE-HEADING);
+  font-weight: var(--FONT-WEIGHT-HEADING);
+  text-transform: var(--FONT-HEADING-TRANSFORM);
+  letter-spacing: var(--FONT-HEADING-LETTER-SPACING);
   color: var(--text);
   display: inline-block;
   padding: 8px 0 6px 0;
 }
 .product__price--unit {
-  font-family: var(--FONT-STACK-ACCENT);
-  font-style: var(--FONT-STYLE-ACCENT);
-  font-weight: var(--FONT-WEIGHT-ACCENT);
-  text-transform: var(--FONT-ACCENT-TRANSFORM);
-  letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
+  font-family: var(--FONT-STACK-HEADING);
+  font-style: var(--FONT-STYLE-HEADING);
+  font-weight: var(--FONT-WEIGHT-HEADING);
+  text-transform: var(--FONT-HEADING-TRANSFORM);
+  letter-spacing: var(--FONT-HEADING-LETTER-SPACING);
   color: var(--text-light);
   padding: 0 0 0 0;
   margin-left: 8px;

@@ -14,7 +14,9 @@
       "settings": {
         "width": "wrapper--full",
         "padding_top": 24,
-        "padding_bottom": 0
+        "padding_bottom": 24,
+        "text_size": 5,
+        "text_color": "#4f555f"
       }
     },
     "main": {
@@ -162,7 +164,7 @@
         "product_breadcrumbs_list": [
           "all"
         ],
-        "width": "wrapper--none",
+        "width": "wrapper--full",
         "padding_top": 24,
         "padding_bottom": 60
       }
