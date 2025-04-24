@@ -12155,11 +12155,14 @@ label.error {
   row-gap: 15px;
 }
 .radio__inputs--equal {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(
     auto-fill,
     minmax(max((var(--OPTION-SIZE-RADIO)), 90px + 4px), 1fr)
-  );
+  ); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .product__align-center .radio__inputs--equal {
   display: flex;
@@ -12182,10 +12185,10 @@ label.error {
   font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT));
+  font-size: calc(var(--font-4) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-normal);
   position: relative;
-  padding: calc(var(--OPTION-SIZE-RADIO) / 2 - 1em);
+  padding: 16px 20px;
   min-width: 60px;
   display: flex;
   justify-content: center;
