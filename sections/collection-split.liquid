@@ -31,6 +31,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: calc(var(--gutter) / 2);
   }
+  @media (max-width: 768px) {
+    .collection-split__product-grid {
+      display: flex;
+      overflow-x: auto;
+    }
+  }
   .arrows {
     position: absolute;
     width: 100%;

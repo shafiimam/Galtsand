@@ -20389,6 +20389,8 @@ input[type="number"].filter__price__input {
 @media only screen and (max-width: 767px) {
   .collection-split__product {
     scroll-snap-align: initial !important;
+    min-width: 80vw;
+    flex: 1;
   }
 }
 /**
