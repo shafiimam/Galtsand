@@ -380,6 +380,7 @@ span.swym-wish-counter.swym-wishlist-header-counter {
 .swym-storefront-layout-grid-item-action-container {
   width: 100%;
   justify-content: center;
+  height: 100%;
 }
 .swym-storefront-layout-grid-item-add-to-cart-button{
   background: #000 !important;
