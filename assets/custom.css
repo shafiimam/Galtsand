@@ -8,6 +8,8 @@
   --heading-size-lg: clamp(40px, 4vw, 71px);
   --heading-size-md: clamp(26px, 4vw, 32px);
   --heading-size-cursive: clamp(72px, 4vw, 132px);
+  --swym-storefront-layout-button-color-bg-primary: #000;
+  --swym-storefront-layout-button-color-bg-secondary: #000;
 }
 .heading {
   font-family: var(--font-family-heading) !important;
@@ -363,6 +365,9 @@ span.swym-wish-counter.swym-wishlist-header-counter {
 }
 .swym-storefront-layout-grid-item{
   flex-direction: column;
+}
+.swym-storefront-layout-grid-item-content {
+  width: 100%;
 }
 @media only screen and (max-width: 1000px) {
   .collection-split__block {
