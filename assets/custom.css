@@ -376,6 +376,10 @@ span.swym-wish-counter.swym-wishlist-header-counter {
 .swym-storefront-layout-grid-item-content {
   width: 100% !important;
 }
+.swym-storefront-layout-grid-item-action-container {
+  width: 100%;
+  justify-content: center;
+}
 @media only screen and (max-width: 1000px) {
   .collection-split__block {
     aspect-ratio: 2/3;
