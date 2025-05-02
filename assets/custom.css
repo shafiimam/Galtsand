@@ -357,7 +357,13 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   padding: 10px !important;
   z-index: 10;
 }
-
+.swym-storefront-layout-grid-item-image-container{
+  width: 100%;
+  max-width: 250px;
+}
+.swym-storefront-layout-grid-item{
+  flex-direction: column;
+}
 @media only screen and (max-width: 1000px) {
   .collection-split__block {
     aspect-ratio: 2/3;

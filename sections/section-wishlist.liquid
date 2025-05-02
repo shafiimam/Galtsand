@@ -1,0 +1,42 @@
+<div class="wishlist-section">
+   <div class="wishlist-section__title">
+      <h2 class="heading heading-size-{{ section.settings.title_text_size }}">{{ section.settings.title }}</h2>
+   </div>
+</div>
+<script>
+
+</script>
+
+{% schema %}
+{
+  "name": "Wishlist Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Wishlist"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wishlist Section"
+    }
+  ]
+}
+{% endschema %}
