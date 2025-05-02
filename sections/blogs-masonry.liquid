@@ -28,7 +28,7 @@
             {{ block.settings.card_title }}
           </h2>
           <h3 class="article-title truncated-text">{{ article.title }}</h3>
-          <p class="article-excerpt">{{ article.excerpt | strip_html | truncate: 100 }}</p>
+          <p class="article-excerpt body body-size-6">{{ article.excerpt | strip_html | truncate: 100 }}</p>
           {% if block.settings.hide_btn != true %}
             <a href="{{ article.url }}" class="article-read font-body text-btn-arrow-right">Read</a>
           {% endif %}
@@ -54,7 +54,7 @@
   }
 
   .blog-article {
-    border: 8px solid #e6dbc4;
+    border: 8px solid #fff;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     overflow: hidden;
@@ -82,7 +82,7 @@
     max-width: calc(100% - 96px);
     padding: 32px;
     z-index: 10;
-    border: 6px solid #e6dbc4;
+    border: 6px solid #fff;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@
 
   /* Typography styles */
   .blog-articles-grid :is(.article-1, .article-2, .article-3) .card-title {
-    font-size: clamp(16px, 2.5vw, 32px);
+    font-size: 20px;
   }
 
   .blog-articles-grid .article-1 .article-title {
@@ -139,11 +139,12 @@
   }
 
   .blog-articles-grid :is(.article-1, .article-2, .article-3) .article-excerpt {
-    font-size: clamp(20px, 2.5vw, 24px);
+    font-size: 16px;
   }
 
+
   .blog-articles-grid .article-read {
-    font-size: clamp(24px, 2.5vw, 26px);
+    font-size: 16px;
   }
 
   .blog-articles-grid :is(.article-4, .article-5, .article-6) .card-title {
@@ -185,13 +186,13 @@
 
   /* Shared styles */
   .card-title {
-    background: #e6dbc4;
-    font-family: 'EngraversGothic';
+    }
+    
+    .card-title {
+    font-family: var(--FONT-STACK-HEADING);
+    background: #fff;
     font-weight: 700;
     text-transform: none;
-  }
-
-  .card-title {
     color: #102345;
     padding: 10px 20px;
     margin-bottom: 0;
@@ -199,8 +200,7 @@
   }
 
   .article-title {
-    color: #e6dbc4;
-    font-family: 'Gambarino';
+    color: #fff;
     font-weight: 400;
     letter-spacing: normal;
     margin-bottom: 4px;
@@ -208,7 +208,7 @@
   }
 
   .article-excerpt {
-    color: #e6dbc4;
+    color: #fff;
     font-family: var(--FONT-STACK-BODY);
     line-height: 80%;
     margin-block-end: 40px;

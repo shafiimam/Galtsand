@@ -117,15 +117,15 @@ h4.blog__heading.text-left {
   flex-wrap: wrap;
 }
 a.blog__tag {
-  border: 1px solid #660f28;
-  color: #660f28;
+  border: 1px solid #000;
+  color: #000;
 }
 a.blog__tag.blog__tag--active {
-  background-color: #660f28;
+  background-color: #000;
   color: #fff;
 }
 a.blog__tag.blog__tag--active:hover {
-  background-color: #660f28;
+  background-color: #000;
   color: #fff;
 }
 .article__item-content > *,
