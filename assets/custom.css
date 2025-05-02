@@ -358,7 +358,7 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   z-index: 10;
 }
 .swym-storefront-layout-grid-item-image-container{
-  width: 100%;
+  width: 100% !important;
   max-width: 250px;
 }
 .swym-storefront-layout-grid-item{
