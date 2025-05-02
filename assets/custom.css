@@ -13,10 +13,10 @@
   --swym-storefront-layout-ui-border-radius: 0px;
   --swym-storefront-layout-button-border-radius: 0px;
   --swym-storefront-layout-side-drawer-width: 400px;
-  --swym-storefront-layout-button-color-bg-primary: #000;
-  --swym-storefront-layout-button-color-text-primary: #fff;
-  --swym-storefront-layout-button-color-bg-secondary: #000;
-  --swym-storefront-layout-button-color-text-secondary: #fff;
+  --swym-storefront-layout-button-color-bg-primary: #000 !important;
+  --swym-storefront-layout-button-color-text-primary: #fff !important;
+  --swym-storefront-layout-button-color-bg-secondary: #000 !important;
+  --swym-storefront-layout-button-color-text-secondary: #fff !important;
 }
 .heading {
   font-family: var(--font-family-heading) !important;
