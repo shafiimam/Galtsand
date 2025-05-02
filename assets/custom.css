@@ -8,8 +8,15 @@
   --heading-size-lg: clamp(40px, 4vw, 71px);
   --heading-size-md: clamp(26px, 4vw, 32px);
   --heading-size-cursive: clamp(72px, 4vw, 132px);
+}
+.swym-storefront-layout-root-component, .swym-modal.swym-share-wishlist-modal {
+  --swym-storefront-layout-ui-border-radius: 0px;
+  --swym-storefront-layout-button-border-radius: 0px;
+  --swym-storefront-layout-side-drawer-width: 400px;
   --swym-storefront-layout-button-color-bg-primary: #000;
+  --swym-storefront-layout-button-color-text-primary: #fff;
   --swym-storefront-layout-button-color-bg-secondary: #000;
+  --swym-storefront-layout-button-color-text-secondary: #fff;
 }
 .heading {
   font-family: var(--font-family-heading) !important;
