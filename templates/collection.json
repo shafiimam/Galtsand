@@ -84,7 +84,7 @@
           "settings": {
             "collection": "smart-casual",
             "pill_text": "Smart Casual",
-            "pill_link": ""
+            "pill_link": "shopify://collections/smart-casual"
           }
         },
         "collection_pill_VDbFxD": {
@@ -92,7 +92,7 @@
           "settings": {
             "collection": "comfy-classics",
             "pill_text": "Comfy Classics",
-            "pill_link": ""
+            "pill_link": "shopify://collections/comfy-classics"
           }
         }
       },
