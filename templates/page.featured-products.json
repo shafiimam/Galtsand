@@ -97,8 +97,8 @@
         "tab_gah43F": {
           "type": "tab",
           "settings": {
-            "title": "All",
-            "collection": "all",
+            "title": "Drop 1",
+            "collection": "drop-1",
             "product_limit": 8,
             "button_text": "Shop Now",
             "button_link": "{{ block.settings.collection.url }}"
