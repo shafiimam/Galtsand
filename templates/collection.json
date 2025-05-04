@@ -285,7 +285,7 @@
             "text_align": "align--middle-center",
             "text_color": "text--white",
             "link_text": "",
-            "link": "",
+            "link": "shopify://collections/modern-cargo-unisex-collection",
             "button_color": "btn--white",
             "button_style": "btn"
           }
@@ -301,7 +301,7 @@
             "align_text": "text-left",
             "text_color": "#000000",
             "button_text": "",
-            "button_url": "",
+            "button_url": "shopify://collections/modern-cargo-unisex-collection",
             "button_color": "btn--neutral",
             "button_style": "btn-text-thick-line",
             "bg_color": ""
@@ -337,7 +337,7 @@
             "align_text": "text-left",
             "text_color": "#000000",
             "button_text": "",
-            "button_url": "",
+            "button_url": "shopify://collections/joggers",
             "button_color": "btn--neutral",
             "button_style": "btn-text-thick-line",
             "bg_color": ""
@@ -356,7 +356,7 @@
             "text_align": "align--middle-center",
             "text_color": "text--white",
             "link_text": "",
-            "link": "",
+            "link": "shopify://collections/joggers",
             "button_color": "btn--white",
             "button_style": "btn"
           }
@@ -393,7 +393,7 @@
             "text_align": "align--middle-center",
             "text_color": "text--white",
             "link_text": "",
-            "link": "",
+            "link": "shopify://collections/smart-casual",
             "button_color": "btn--white",
             "button_style": "btn"
           }
@@ -409,7 +409,7 @@
             "align_text": "text-left",
             "text_color": "#000000",
             "button_text": "",
-            "button_url": "",
+            "button_url": "shopify://collections/smart-casual",
             "button_color": "btn--neutral",
             "button_style": "btn-text-thick-line",
             "bg_color": ""
