@@ -94,12 +94,21 @@
             "pill_text": "Comfy Classics",
             "pill_link": "shopify://collections/comfy-classics"
           }
+        },
+        "collection_pill_hgipa4": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "comfy-classics",
+            "pill_text": "Modern Cargo",
+            "pill_link": "shopify://collections/comfy-classics"
+          }
         }
       },
       "block_order": [
         "collection_pill_bQwyPT",
         "collection_pill_zdHfdK",
-        "collection_pill_VDbFxD"
+        "collection_pill_VDbFxD",
+        "collection_pill_hgipa4"
       ],
       "settings": {
         "width": "wrapper--full",
