@@ -102,13 +102,22 @@
             "pill_text": "Modern Cargo",
             "pill_link": "shopify://collections/modern-cargo-unisex-collection"
           }
+        },
+        "collection_pill_AhNPbT": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "all-women",
+            "pill_text": "Women",
+            "pill_link": "shopify://collections/all-women"
+          }
         }
       },
       "block_order": [
         "collection_pill_bQwyPT",
         "collection_pill_zdHfdK",
         "collection_pill_VDbFxD",
-        "collection_pill_hgipa4"
+        "collection_pill_hgipa4",
+        "collection_pill_AhNPbT"
       ],
       "settings": {
         "width": "wrapper--full",
