@@ -75,7 +75,7 @@
           "type": "collection_pill",
           "settings": {
             "collection": "ss25-collection",
-            "pill_text": "SS 25",
+            "pill_text": "SS25",
             "pill_link": "shopify://collections/ss25-collection"
           }
         },
