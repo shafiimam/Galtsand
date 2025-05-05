@@ -490,13 +490,13 @@
         "slide_EzRiEK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/untitled5_5945bcca-e4c6-4c70-a0de-fbfcfd0c411b.png",
+            "image": "shopify://shop_images/April_10_-_Post_1.png",
             "kicker": "SS25",
-            "heading": "CORE COLLECTION",
-            "sub_text": "Discover signature pieces crafted for movement, purpose, and lasting style.",
+            "heading": "Drop II",
+            "sub_text": "Discover elevated essentials designed for movement, versatility, and modern style.",
             "text_color": "#ffffff",
             "link_text": "EXPLORE MORE",
-            "link": "shopify://collections/ss25-collection",
+            "link": "shopify://collections/new-in-this-week",
             "button_color": "btn--white",
             "button_style": "btn"
           }
