@@ -71,36 +71,12 @@
     "collection_pills_rWnqE6": {
       "type": "collection-pills",
       "blocks": {
-        "collection_pill_bQwyPT": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "ss25-collection",
-            "pill_text": "SS25",
-            "pill_link": "shopify://collections/ss25-collection"
-          }
-        },
-        "collection_pill_zdHfdK": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "smart-casual",
-            "pill_text": "Smart Casual",
-            "pill_link": "shopify://collections/smart-casual"
-          }
-        },
-        "collection_pill_VDbFxD": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "comfy-classics",
-            "pill_text": "Comfy Classics",
-            "pill_link": "shopify://collections/comfy-classics"
-          }
-        },
         "collection_pill_hgipa4": {
           "type": "collection_pill",
           "settings": {
-            "collection": "modern-cargo-unisex-collection",
-            "pill_text": "Modern Cargo",
-            "pill_link": "shopify://collections/modern-cargo-unisex-collection"
+            "collection": "all-men",
+            "pill_text": "Men",
+            "pill_link": "shopify://collections/all-men"
           }
         },
         "collection_pill_AhNPbT": {
@@ -110,14 +86,47 @@
             "pill_text": "Women",
             "pill_link": "shopify://collections/all-women"
           }
+        },
+        "collection_pill_enFHbN": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "best-sellers",
+            "pill_text": "Best Sellers",
+            "pill_link": "shopify://collections/best-sellers-1"
+          }
+        },
+        "collection_pill_VDbFxD": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "new-in",
+            "pill_text": "New In",
+            "pill_link": "shopify://collections/new-in"
+          }
+        },
+        "collection_pill_zdHfdK": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "heritage",
+            "pill_text": "Heritage",
+            "pill_link": "shopify://collections/heritage"
+          }
+        },
+        "collection_pill_bQwyPT": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "ss25-collection",
+            "pill_text": "SS25",
+            "pill_link": "shopify://collections/ss25-collection"
+          }
         }
       },
       "block_order": [
-        "collection_pill_bQwyPT",
-        "collection_pill_zdHfdK",
-        "collection_pill_VDbFxD",
         "collection_pill_hgipa4",
-        "collection_pill_AhNPbT"
+        "collection_pill_AhNPbT",
+        "collection_pill_enFHbN",
+        "collection_pill_VDbFxD",
+        "collection_pill_zdHfdK",
+        "collection_pill_bQwyPT"
       ],
       "settings": {
         "width": "wrapper--full",
