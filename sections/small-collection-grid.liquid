@@ -40,7 +40,7 @@
     {% endif %}
   </div>
   <div class="section-small-collection-grid_content">
-    <div class="section-small-collection-grid_content-grid swiper-wrapper">
+    <div class="section-small-collection-grid_content-grid ">
       {% for block in section.blocks %}
         {% liquid
           assign block_button_url = block.settings.button_url
@@ -67,7 +67,7 @@
 </section>
 <style>
   :root {
-    --swiper-navigation-size: 30px;
+    --swiper-navigation-size: 20px;
     --swiper-navigation-top-offset: 50%;
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-color: #000000;
@@ -82,7 +82,7 @@
       display: none;
     }
     .section-small-collection-grid_content-grid {
-      display: grid;
+      display: grid !important;
       grid-template-columns: repeat({{collection_to_show}}, 1fr);
       justify-items: center;
     }
