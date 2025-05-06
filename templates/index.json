@@ -459,7 +459,7 @@
         "content_text_size": 4,
         "text_alignment": "text-center",
         "text_color": "#000000",
-        "width": "wrapper",
+        "width": "wrapper--full",
         "show_border": false,
         "overlap_over_image": false,
         "button_size": "btn--large",
