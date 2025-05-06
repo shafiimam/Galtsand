@@ -30,10 +30,9 @@
 
     <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preload" href="{{ settings.font_body_family | font_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ settings.font_body_family | font_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ settings.font_heading_family | font_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ settings.font_accent_family | font_url }}" as="font" type="font/woff2" crossorigin>
+    {{ settings.font_body_family | font_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
+    {{ settings.font_heading_family | font_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
+    {{ settings.font_accent_family | font_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
     {{ 'FaktTT-Normal.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
     {{ 'FaktTT-Normal.woff' | asset_url | preload_tag: as: 'font', type: 'font/woff', crossorigin: 'anonymous' }}
     {{ 'FaktTT-Normal.ttf' | asset_url | preload_tag: as: 'font', type: 'font/ttf', crossorigin: 'anonymous' }}
@@ -95,10 +94,7 @@
     {% render 'css-variables' %}
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    >
+    
     <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
@@ -196,7 +192,6 @@
     <!-- Theme Javascript ============================================================== -->
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>
     <script>
       (function () {
         function onPageShowEvents() {
