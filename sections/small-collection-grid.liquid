@@ -126,7 +126,16 @@
     }
     }
     if (window.innerWidth < 1000) {
-      initSwiper();
+      if(window.Swiper){
+        initSwiper();
+      } else {
+        const swiperInterval = setInterval(() => {
+          if(window.Swiper){
+            initSwiper();
+            clearInterval(swiperInterval);
+          }
+        }, 100);
+      }
     }
     window.addEventListener('resize', function () {
       if (window.innerWidth > 1000) {
