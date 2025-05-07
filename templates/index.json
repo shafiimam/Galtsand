@@ -713,7 +713,6 @@
       "blocks": {
         "image_banner_KrV6eX": {
           "type": "image_banner",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Untitled-7.png",
             "image_mobile": "shopify://shop_images/Untitled-6.png",
