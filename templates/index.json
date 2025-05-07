@@ -139,7 +139,7 @@
         "preload_image": false,
         "text_align": "align--middle-center",
         "text_color": "text--white",
-        "overlay_opacity": 15,
+        "overlay_opacity": 0,
         "overlay_color": "#000000",
         "enable_overlay_text": false,
         "width": "wrapper--none",
