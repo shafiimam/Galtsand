@@ -9,6 +9,84 @@
  */
 {
   "sections": {
+    "collection_pills_rWnqE6": {
+      "type": "collection-pills",
+      "blocks": {
+        "collection_pill_hgipa4": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "all-men",
+            "pill_text": "Men",
+            "pill_link": "shopify://collections/all-men",
+            "pill_image": "shopify://shop_images/Galtsand-Trainer-Tee-Active-Men-Fashion--10.jpg"
+          }
+        },
+        "collection_pill_AhNPbT": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "all-women",
+            "pill_text": "Women",
+            "pill_link": "shopify://collections/all-women",
+            "pill_image": "shopify://shop_images/image2222_8cf6ca89-69bf-4020-9334-6d46c186a6b3.png"
+          }
+        },
+        "collection_pill_enFHbN": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "best-sellers",
+            "pill_text": "Best Sellers",
+            "pill_link": "shopify://collections/best-sellers-1",
+            "pill_image": "shopify://shop_images/image-222_96adcf6c-4ea2-4075-a1e4-83ffdf707aa6.png"
+          }
+        },
+        "collection_pill_VDbFxD": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "new-in",
+            "pill_text": "New In",
+            "pill_link": "shopify://collections/new-in",
+            "pill_image": "shopify://shop_images/April_10_-_Post_1.png"
+          }
+        },
+        "collection_pill_zdHfdK": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "heritage",
+            "pill_text": "Heritage",
+            "pill_link": "shopify://collections/heritage",
+            "pill_image": "shopify://shop_images/12.4_0164.jpg"
+          }
+        },
+        "collection_pill_bQwyPT": {
+          "type": "collection_pill",
+          "settings": {
+            "collection": "ss25-collection",
+            "pill_text": "SS25",
+            "pill_link": "shopify://collections/ss25-collection",
+            "pill_image": "shopify://shop_images/0563-1_f27877a1-d079-4f7e-b2f5-22fa82dc48b0.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_pill_hgipa4",
+        "collection_pill_AhNPbT",
+        "collection_pill_enFHbN",
+        "collection_pill_VDbFxD",
+        "collection_pill_zdHfdK",
+        "collection_pill_bQwyPT"
+      ],
+      "settings": {
+        "header_text": "Discover your style",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "subtitle": "Your one stop for adventure outfits.",
+        "sub_text_size": 5,
+        "sub_text_color": "#000000",
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "hero": {
       "type": "collection-hero",
       "disabled": true,
@@ -66,72 +144,6 @@
         "width": "wrapper--full",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "collection_pills_rWnqE6": {
-      "type": "collection-pills",
-      "blocks": {
-        "collection_pill_hgipa4": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "all-men",
-            "pill_text": "Men",
-            "pill_link": "shopify://collections/all-men"
-          }
-        },
-        "collection_pill_AhNPbT": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "all-women",
-            "pill_text": "Women",
-            "pill_link": "shopify://collections/all-women"
-          }
-        },
-        "collection_pill_enFHbN": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "best-sellers",
-            "pill_text": "Best Sellers",
-            "pill_link": "shopify://collections/best-sellers-1"
-          }
-        },
-        "collection_pill_VDbFxD": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "new-in",
-            "pill_text": "New In",
-            "pill_link": "shopify://collections/new-in"
-          }
-        },
-        "collection_pill_zdHfdK": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "heritage",
-            "pill_text": "Heritage",
-            "pill_link": "shopify://collections/heritage"
-          }
-        },
-        "collection_pill_bQwyPT": {
-          "type": "collection_pill",
-          "settings": {
-            "collection": "ss25-collection",
-            "pill_text": "SS25",
-            "pill_link": "shopify://collections/ss25-collection"
-          }
-        }
-      },
-      "block_order": [
-        "collection_pill_hgipa4",
-        "collection_pill_AhNPbT",
-        "collection_pill_enFHbN",
-        "collection_pill_VDbFxD",
-        "collection_pill_zdHfdK",
-        "collection_pill_bQwyPT"
-      ],
-      "settings": {
-        "width": "wrapper--full",
-        "padding_top": 36,
-        "padding_bottom": 0
       }
     },
     "main": {
@@ -550,10 +562,10 @@
     }
   },
   "order": [
+    "collection_pills_rWnqE6",
     "hero",
     "subcollections",
     "collection_title_cusom_nBTTfb",
-    "collection_pills_rWnqE6",
     "main",
     "section_list_collections_PBKazm",
     "why_use_our_pieces_GM7rgH",
