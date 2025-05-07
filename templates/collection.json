@@ -135,7 +135,7 @@
     "collection_title_cusom_nBTTfb": {
       "type": "collection-title-cusom",
       "settings": {
-        "header_text": "Mother's Day Edit",
+        "header_text": "{{ collection.title }}",
         "title_text_size": 10,
         "title_text_color": "#000000",
         "sub_text": "For every Mother Figure in your life: your mom, mentor, aunt, friend, or anyone who’s shown up for you. We’ve gathered our most-loved pieces that she’ll treasure.",
