@@ -61,12 +61,81 @@
         "text_EXaa7j",
         "button_kqzzcW"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "height": "use_screen_full",
         "color_bg": "palette--light bg--neutral",
         "video_bg": "shopify://files/videos/for-TV-Long-format.MP4",
         "object_position": "center-center",
+        "preload_image": false,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_video_aCmic9": {
+      "type": "section-video",
+      "blocks": {
+        "kicker_jGceGN": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "",
+            "enable_line": false,
+            "text_size": 1
+          }
+        },
+        "heading_Xtib3E": {
+          "type": "heading",
+          "settings": {
+            "title": "20% Off Our Mother's Day Edit",
+            "text_size": 12
+          }
+        },
+        "text_33FJPT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Thoughtfully selected styles for every kind of Mother figure.</p>",
+            "text_size": 6
+          }
+        },
+        "button_xWdzNP": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "",
+            "link_1": "shopify://pages/featured-products",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "SHOP NOW",
+            "link_2": "shopify://collections/mothers-day-edit",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn--outline",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_jGceGN",
+        "heading_Xtib3E",
+        "text_33FJPT",
+        "button_xWdzNP"
+      ],
+      "settings": {
+        "height": "use_screen_full",
+        "color_bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "image": "shopify://shop_images/1.2.png",
         "preload_image": false,
         "text_align": "align--middle-center",
         "text_color": "text--white",
@@ -994,6 +1063,7 @@
   },
   "order": [
     "section_video_pMeAkR",
+    "section_video_aCmic9",
     "hero",
     "section_logos_E3KxjC",
     "section_collection_slider_XiBHU9",
