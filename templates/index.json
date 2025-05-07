@@ -23,29 +23,29 @@
         "heading_LyNC4T": {
           "type": "heading",
           "settings": {
-            "title": "Drop II: The Quiet Season",
+            "title": "20% Off Our Mother’s Day Edit",
             "text_size": 12
           }
         },
         "text_EXaa7j": {
           "type": "text",
           "settings": {
-            "text": "<p>The next chapter of our Spring Summer 2025 Collection offers refined staples designed to adapt to your rhythm, merging style and functionality for the modern journey.<br/></p>",
+            "text": "<p>Thoughtfully selected styles for every kind of mother figure.</p>",
             "text_size": 6
           }
         },
         "button_kqzzcW": {
           "type": "button",
           "settings": {
-            "link_text_1": "DISCOVER THE STORY",
+            "link_text_1": "",
             "link_1": "shopify://pages/featured-products",
             "button_size_1": "btn--long",
             "button_style_1": "btn",
             "button_color_1": "btn--white",
-            "link_text_2": "SHOP SS25",
-            "link_2": "shopify://collections/ss25-collection",
+            "link_text_2": "SHOP NOW",
+            "link_2": "shopify://collections/mothers-day-edit",
             "button_size_2": "btn--long",
-            "button_style_2": "btn--outline",
+            "button_style_2": "btn",
             "button_color_2": "btn--white",
             "link_text_3": "",
             "link_3": "",
