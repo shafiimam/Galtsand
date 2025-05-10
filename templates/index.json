@@ -545,12 +545,12 @@
         "slide_VcEiJa": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/OVL4569f.png",
-            "kicker": "SS25",
+            "image": "shopify://shop_images/Long_Images-Tennis_1.png",
+            "kicker": "TENNIS COLLECTION",
             "heading": "Sportif Days",
-            "sub_text": "The Tennis collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
+            "sub_text": "The Tennis Collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
             "text_color": "#ffffff",
-            "link_text": "see what's next",
+            "link_text": "EXPLORE THE TENNIS COLLECTION",
             "link": "shopify://collections/mens-tennis",
             "button_color": "btn--white",
             "button_style": "btn"
