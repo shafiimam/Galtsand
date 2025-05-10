@@ -18,7 +18,7 @@
             "collection": "all-men",
             "pill_text": "Men",
             "pill_link": "shopify://collections/all-men",
-            "pill_image": "shopify://shop_images/Galtsand-Trainer-Tee-Active-Men-Fashion--10.jpg"
+            "pill_image": "shopify://shop_images/IMG_3725.png"
           }
         },
         "collection_pill_AhNPbT": {
@@ -27,7 +27,7 @@
             "collection": "all-women",
             "pill_text": "Women",
             "pill_link": "shopify://collections/all-women",
-            "pill_image": "shopify://shop_images/image2222_8cf6ca89-69bf-4020-9334-6d46c186a6b3.png"
+            "pill_image": "shopify://shop_images/Untitled_design_7c6e9975-01af-404a-a4cf-59de9c4d6bc7.png"
           }
         },
         "collection_pill_enFHbN": {
@@ -36,7 +36,7 @@
             "collection": "best-sellers",
             "pill_text": "Best Sellers",
             "pill_link": "shopify://collections/best-sellers-1",
-            "pill_image": "shopify://shop_images/image-222_96adcf6c-4ea2-4075-a1e4-83ffdf707aa6.png"
+            "pill_image": "shopify://shop_images/IMG_3724.png"
           }
         },
         "collection_pill_VDbFxD": {
@@ -54,14 +54,14 @@
             "collection": "heritage",
             "pill_text": "Heritage",
             "pill_link": "shopify://collections/heritage",
-            "pill_image": "shopify://shop_images/12.4_0164.jpg"
+            "pill_image": "shopify://shop_images/IMG_3723.png"
           }
         },
         "collection_pill_bQwyPT": {
           "type": "collection_pill",
           "settings": {
             "collection": "ss25-collection",
-            "pill_text": "SS25",
+            "pill_text": "Spring/Summer 25",
             "pill_link": "shopify://collections/ss25-collection",
             "pill_image": "shopify://shop_images/0563-1_f27877a1-d079-4f7e-b2f5-22fa82dc48b0.jpg"
           }
@@ -135,7 +135,7 @@
     "collection_title_cusom_nBTTfb": {
       "type": "collection-title-cusom",
       "settings": {
-        "header_text": "{{ collection.title }}",
+        "header_text": "Spring/Summer Collection",
         "title_text_size": 10,
         "title_text_color": "#000000",
         "sub_text": "",
