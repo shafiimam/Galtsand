@@ -559,13 +559,14 @@
         "slide_EzRiEK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/0563-1_f27877a1-d079-4f7e-b2f5-22fa82dc48b0.jpg",
-            "kicker": "SS25",
-            "heading": "Off-Duty Flow",
-            "sub_text": "Discover elevated essentials designed for movement, versatility, and modern style.",
+            "image": "shopify://shop_images/Long_Images_-_Mother_s_Day_1.png",
+            "mobile_image": "shopify://shop_images/Long_Images_-_Mother_s_Day_1.png",
+            "kicker": "MOTHER’S DAY EDIT",
+            "heading": "Celebrate Her",
+            "sub_text": " For every Mother Figure in your life: your mom, mentor, aunt, friend, or anyone who’s shown up for you. We’ve gathered our most-loved pieces that she’ll treasure.",
             "text_color": "#ffffff",
             "link_text": "EXPLORE MORE",
-            "link": "shopify://collections/new-in-this-week",
+            "link": "shopify://collections/mothers-day-edit",
             "button_color": "btn--white",
             "button_style": "btn"
           }
