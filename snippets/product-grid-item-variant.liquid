@@ -43,7 +43,7 @@
 
   assign custom_badge = false
   if settings.badge_custom
-    if product.metafields.theme.badge != blank and product.metafields.theme.badge.type == 'single_line_text_field'
+    if product.metafields.theme.badge != blank and product.metafields.theme.badge.type == 'list.single_line_text_field'
       assign custom_badge = true
       assign custom_badge_content = product.metafields.theme.badge.value
     endif
@@ -114,7 +114,11 @@
 {%- capture badge -%}
   {%- if tagged %}
     {%- if custom_badge -%}
-      <div class="product__badge product__badge--custom product__badge--{{ custom_badge_content | strip_html | handle }}">{{ custom_badge_content }}</div>
+      <div class="product__badge product__badge--custom product__badges-container">
+        {% for badge in product.metafields.theme.badge.value %}
+          <div class=" product__badge--{{ badge | strip_html | handle }}">{{ badge }}</div>
+        {% endfor %}
+      </div>
     {%- elsif sellout_badge -%}
       <div class="product__badge product__badge--sold">{{ 'products.product.sold_out' | t }}</div>
     {%- elsif sale_badge -%}

@@ -489,3 +489,16 @@ button.collection__filters__toggle.drawer--visible {
   color: #fff;
   transition: all 0.3s ease;
 }
+
+.product__badges-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: transparent;
+  align-items: flex-end;
+}
+
+.product__badges-container div {
+  background: var(--COLOR-BADGE);
+  padding: 2px 5px;
+}
