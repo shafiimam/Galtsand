@@ -61,7 +61,6 @@
         "text_EXaa7j",
         "button_kqzzcW"
       ],
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "height": "use_screen_full",
@@ -131,6 +130,7 @@
         "text_33FJPT",
         "button_xWdzNP"
       ],
+      "disabled": true,
       "settings": {
         "height": "use_screen_full",
         "color_bg": "palette--light bg--neutral",
@@ -558,6 +558,7 @@
         },
         "slide_EzRiEK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Long_Images_-_Mother_s_Day_1.png",
             "mobile_image": "shopify://shop_images/Long_Images_-_Mother_s_Day_1.png",
