@@ -39,7 +39,7 @@
     {% endif %}
   </div>
   <div class="section-small-collection-grid_content">
-    <div class="section-small-collection-grid_content-grid ">
+    <div class="section-small-collection-grid_content-grid swiper-wrapper">
       {% for block in section.blocks %}
         {% liquid
           assign block_button_url = block.settings.button_url
@@ -99,6 +99,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     function initSwiper( destroy = false) {
+      console.log('init small collection grid swiper')
       var smallCollectionGrid = new Swiper('.section-small-collection-grid_content', {
       spaceBetween: 10,
       freeMode: true,
@@ -122,6 +123,7 @@
       },
     });
     if (destroy) {
+      console.log('destroy small collection grid swiper')
       smallCollectionGrid.destroy(true, true);
     }
     }
