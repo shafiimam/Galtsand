@@ -82,13 +82,6 @@
                 </button>
               {% endif %}
 
-              {% if has_ruler %}
-                <button class="media__button media__button--info" data-size-button>
-                  {% render 'icon-setting', filename: section.settings.alt_text_icon %}
-                  {% render 'icon-core-x' %}
-                  <span class="visually-hidden">{{ 'general.accessibility.size' | t }}</span>
-                </button>
-              {% endif %}
             </div>
           {% endif %}
         </div>
