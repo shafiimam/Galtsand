@@ -72,12 +72,11 @@
     },
     "subfooter": {
       "type": "subfooter",
-      "disabled": true,
       "settings": {
         "footer_secondary_linklist": "footer",
         "footer_payment_enable": true,
-        "footer_social_enable": true,
-        "show_locale_selector": true,
+        "footer_social_enable": false,
+        "show_locale_selector": false,
         "show_currency_selector": true,
         "width": "wrapper--full",
         "padding_top": 36,
