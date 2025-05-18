@@ -9,7 +9,8 @@
   --heading-size-md: clamp(26px, 4vw, 32px);
   --heading-size-cursive: clamp(72px, 4vw, 132px);
 }
-.swym-storefront-layout-root-component, .swym-modal.swym-share-wishlist-modal {
+.swym-storefront-layout-root-component,
+.swym-modal.swym-share-wishlist-modal {
   --swym-storefront-layout-ui-border-radius: 0px;
   --swym-storefront-layout-button-border-radius: 0px;
   --swym-storefront-layout-side-drawer-width: 400px;
@@ -366,11 +367,11 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   padding: 10px !important;
   z-index: 10;
 }
-.swym-storefront-layout-grid-item-image-container{
+.swym-storefront-layout-grid-item-image-container {
   width: 100% !important;
   max-width: 250px;
 }
-.swym-storefront-layout-grid-item{
+.swym-storefront-layout-grid-item {
   flex-direction: column;
 }
 .swym-storefront-layout-grid-item-content {
@@ -382,12 +383,12 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   justify-content: center;
   height: 100%;
 }
-.swym-storefront-layout-grid-item-add-to-cart-button{
+.swym-storefront-layout-grid-item-add-to-cart-button {
   background: #000 !important;
   color: #fff !important;
   border: 1px solid #000 !important;
 }
-.swym-storefront-layout-grid-item-add-to-cart-button:hover{
+.swym-storefront-layout-grid-item-add-to-cart-button:hover {
   background: #000 !important;
   color: #fff !important;
 }
@@ -472,10 +473,10 @@ a.header__mobile__button.swym-wishlist {
   position: relative;
 }
 
- .header__mobile__button .swym-wish-counter.swym-wishlist-header-counter {
-    top: 20px;
-    right: -10px;
-  }
+.header__mobile__button .swym-wish-counter.swym-wishlist-header-counter {
+  top: 20px;
+  right: -10px;
+}
 
 .text-uppercase {
   text-transform: uppercase;
@@ -501,4 +502,35 @@ button.collection__filters__toggle.drawer--visible {
 .product__badges-container div {
   background: var(--COLOR-BADGE);
   padding: 2px 5px;
+}
+
+/* footer custom styles */
+.footer__newsletter__image {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.subfooter__item.subfooter__item--copyright {
+  justify-content: flex-end;
+}
+.footer-payment-copyrights-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-block: 20px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .subfooter__item.subfooter__item--selects {
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
 }
