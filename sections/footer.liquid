@@ -83,11 +83,11 @@
         {{ content_html }}
 
         {% assign linklist = linklists[block.settings.linklist] %}
-        <div class="grid__item @@@@footer-column-width-placeholder@@@@ footer__block" {{ block.shopify_attributes }}>
+        <div class="grid__item @@@@footer-column-width-placeholder@@@@ footer__block" {{ block.shopify_attributes }} style="text-align: {{ block.settings.text_alignment }};">
           <p class="footer__title footer__accordion__head js {{ block.settings.accordion_default }}"
             data-accordion-trigger="{{ accordion_index }}"
             aria-controls="{{ accordion_index }}"
-            role="button"
+            role="button" 
             aria-haspopup="true"
             aria-label="{{ linklist.title | default: "Toggle" }}"
             aria-expanded="{% if block.settings.accordion_default == 'accordion-is-open' %}true{% else %}false{% endif %}">
@@ -210,9 +210,9 @@
           </div>
         </div>
       {%- endcapture -%}
-      {% when 'image' %}
-        {%- assign content_counter = content_counter | plus: 1 -%}
-        {%- capture content_html -%}
+    {% when 'image' %}
+      {%- assign content_counter = content_counter | plus: 1 -%}
+      {%- capture content_html -%}
           {{ content_html }}
 
           <div class="grid__item @@@@footer-column-width-placeholder@@@@ footer__block" {{ block.shopify_attributes }}>
@@ -273,32 +273,29 @@
           </div>
         {%- endcapture -%}
     {% when 'newsletter' %}
-      {%- capture newsletter_html -%}
+      {%- assign content_counter = content_counter | plus: 1 -%}
+      {%- capture content_html -%}
+        {{ content_html }}
         {%- assign newsletter_logo_show = false -%}
         {%- if block.settings.show_image != true and section.settings.menu_position == 'right' -%}
           {%- assign newsletter_logo_show = true -%}
         {%- endif -%}
 
         {%- if block.settings.show_image or newsletter_logo_show or block.settings.kicker != blank or block.settings.heading != blank or block.settings.richtext != blank or block.settings.newsletter_enable -%}
-          <div class="footer__block footer__aside"
-            style="--text: {{ block.settings.text_color_value | color_modify: 'alpha', 0.90 }}; --text-dark: {{ block.settings.text_color_value }}; --bg: {{ block.settings.background_color }};"
+          <div class="grid__item @@@@footer-column-width-placeholder@@@@ footer__block"
             {{ block.shopify_attributes }}>
             <div class="footer__newsletter{% if section.settings.width == 'wrapper' %} footer__newsletter--offset{% endif %}">
               {%- if block.settings.show_image -%}
                 <div class="footer__newsletter__image">
-                  {%- render 'image',
-                    cover: true,
-                    img_object: block.settings.image,
-                    wh_ratio: block.settings.wh_ratio,
-                    sizes: sizes,
-                    sizes: "(min-width: 768px) 40vw, 100vw",
-                    loading: 'lazy'
-                  -%}
+                  <picture>
+                    <source srcset="{{ block.settings.image | image_url: width: 200 }}" media="(min-width: 768px)">
+                    <img src="{{ block.settings.image | image_url: width: 200 }}" alt="{{ block.settings.image.alt }}" width="200" height="100%">
+                  </picture>
                 </div>
               {%- endif -%}
 
               {%- if newsletter_logo_show or block.settings.kicker != blank or block.settings.heading != blank or block.settings.richtext != blank or block.settings.newsletter_enable -%}
-                <div class="footer__newsletter__body">
+                <div class="footer__newsletter__body" style="text-align: {{ block.settings.text_alignment }};">
                   {%- if newsletter_logo_show -%}
                     @@@@footer-logo-placeholder@@@@
                   {%- endif -%}
@@ -379,25 +376,15 @@
     {% assign footer_column_width = 'medium-up--one-sixth' %}
 {% endcase %}
 
-<footer class="footer"
+<footer
+  class="footer"
   data-section-id="{{ section.id }}"
   data-section-type="footer"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+>
   <div class="footer__holder">
     <div class="{{ section.settings.width }} section-padding-custom">
       <div class="footer__container{% if section.settings.menu_position == 'left' %} footer__container--reversed{% endif %}">
-        {%- if newsletter_html != '' -%}
-          {{ newsletter_html | replace: '@@@@footer-logo-placeholder@@@@', footer_logo_html }}
-
-          {%- unless newsletter_html contains '@@@@footer-logo-placeholder@@@@' -%}
-            {%- if footer_logo_html != '' -%}
-              {%- assign logo_in_content = true -%}
-            {%- endif -%}
-          {%- endunless -%}
-        {%- elsif footer_logo_html != '' -%}
-          {%- assign logo_in_content = true -%}
-        {%- endif -%}
-
         <div class="footer__content">
           {%- if logo_in_content or content_html != '' -%}
             <div class="footer__content__inner">
@@ -407,7 +394,11 @@
 
               {%- if content_html != '' -%}
                 <div class="float-grid grid--uniform" data-accordion-group>
-                  {{ content_html | replace: '@@@@footer-column-width-placeholder@@@@', footer_column_width }}
+                  {{
+                    content_html
+                    | replace: '@@@@footer-column-width-placeholder@@@@', footer_column_width
+                    | replace: '@@@@footer-logo-placeholder@@@@', footer_logo_html
+                  }}
                 </div>
               {%- endif -%}
             </div>
@@ -456,13 +447,13 @@
       "info": "400 x 200px .png"
     },
     {
-      "type":    "range",
-      "id":      "logo_max_limit",
-      "min":     5,
-      "max":     495,
-      "step":    5,
-      "unit":    "px",
-      "label":   "Logo width",
+      "type": "range",
+      "id": "logo_max_limit",
+      "min": 5,
+      "max": 495,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo width",
       "default": 120
     },
     {
@@ -500,17 +491,17 @@
       "default": 50
     }
   ],
-  "blocks" : [
+  "blocks": [
     {
       "type": "linklist",
       "name": "Link list",
       "settings": [
         {
-           "type": "link_list",
-           "id": "linklist",
-           "label": "Link list",
-           "default": "main-menu",
-           "info": "This menu won't show dropdown items"
+          "type": "link_list",
+          "id": "linklist",
+          "label": "Link list",
+          "default": "main-menu",
+          "info": "This menu won't show dropdown items"
         },
         {
           "type": "text",
@@ -523,9 +514,15 @@
           "label": "Mobile accordion",
           "default": "",
           "options": [
-            { "value": "accordion-is-open", "label": "Open by default"},
-            { "value": "", "label": "Closed by default"}
+            { "value": "accordion-is-open", "label": "Open by default" },
+            { "value": "", "label": "Closed by default" }
           ]
+        },
+        {
+          "type": "text_alignment",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "left"
         }
       ]
     },
@@ -564,7 +561,7 @@
           "type": "checkbox",
           "id": "newsletter_enable",
           "label": "Show newsletter",
-          "info":  "Subscribers are under 'Accepts Marketing' in your [customer admin](/admin/customers).",
+          "info": "Subscribers are under 'Accepts Marketing' in your [customer admin](/admin/customers).",
           "default": true
         },
         {
@@ -596,29 +593,19 @@
           "default": "<p>Join to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
         },
         {
-          "type":  "range",
-          "id":    "text_size",
+          "type": "range",
+          "id": "text_size",
           "label": "Text size",
-          "min":    1,
-          "max":    15,
-          "step":   1,
+          "min": 1,
+          "max": 15,
+          "step": 1,
           "default": 4
         },
         {
-          "type": "header",
-          "content": "Colors"
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background color",
-          "default": "#f7f7f7"
-        },
-        {
-          "type": "color",
-          "id": "text_color_value",
-          "label": "Text color",
-          "default": "#656565"
+          "type": "text_alignment",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "left"
         }
       ]
     },
@@ -639,12 +626,12 @@
           "default": "<p>Share store details, promotions, or brand content with your customers.</p>"
         },
         {
-          "type":  "range",
-          "id":    "text_size",
+          "type": "range",
+          "id": "text_size",
           "label": "Text size",
-          "min":    1,
-          "max":    15,
-          "step":   1,
+          "min": 1,
+          "max": 15,
+          "step": 1,
           "default": 4
         },
         {
@@ -653,8 +640,8 @@
           "label": "Mobile accordion",
           "default": "",
           "options": [
-            { "value": "accordion-is-open", "label": "Open by default"},
-            { "value": "", "label": "Closed by default"}
+            { "value": "accordion-is-open", "label": "Open by default" },
+            { "value": "", "label": "Closed by default" }
           ]
         }
       ]
@@ -675,19 +662,19 @@
           "label": "Image"
         },
         {
-          "type":    "range",
-          "id":      "image_max_limit",
-          "min":     10,
-          "max":     900,
-          "step":    10,
-          "unit":    "px",
-          "label":   "Max width",
+          "type": "range",
+          "id": "image_max_limit",
+          "min": 10,
+          "max": 900,
+          "step": 10,
+          "unit": "px",
+          "label": "Max width",
           "default": 300
         },
         {
-          "type":"url",
-          "id":"image_link",
-          "label":"Link"
+          "type": "url",
+          "id": "image_link",
+          "label": "Link"
         },
         {
           "type": "select",
@@ -695,8 +682,8 @@
           "label": "Mobile accordion",
           "default": "",
           "options": [
-            { "value": "accordion-is-open", "label": "Open by default"},
-            { "value": "", "label": "Closed by default"}
+            { "value": "accordion-is-open", "label": "Open by default" },
+            { "value": "", "label": "Closed by default" }
           ]
         }
       ]
@@ -716,8 +703,8 @@
           "label": "Mobile accordion",
           "default": "",
           "options": [
-            { "value": "accordion-is-open", "label": "Open by default"},
-            { "value": "", "label": "Closed by default"}
+            { "value": "accordion-is-open", "label": "Open by default" },
+            { "value": "", "label": "Closed by default" }
           ]
         }
       ]
@@ -734,12 +721,12 @@
           "default": "Stay in touch."
         },
         {
-          "type":  "range",
-          "id":    "text_size",
+          "type": "range",
+          "id": "text_size",
           "label": "Text size",
-          "min":    1,
-          "max":    15,
-          "step":   1,
+          "min": 1,
+          "max": 15,
+          "step": 1,
           "default": 8
         },
         {

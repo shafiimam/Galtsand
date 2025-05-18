@@ -19,14 +19,16 @@
           "settings": {
             "linklist": "information-2",
             "title": "Information",
-            "accordion_default": ""
+            "accordion_default": "accordion-is-open",
+            "text_alignment": "center"
           }
         },
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "show_image": false,
-            "wh_ratio": 0.7,
+            "show_image": true,
+            "image": "shopify://shop_images/New_logo_3_afcc69a1-3952-461e-a6dd-5791e8b2e3f3.png",
+            "wh_ratio": 5,
             "newsletter_enable": true,
             "recaptcha_enabled": false,
             "kicker": "",
@@ -34,7 +36,8 @@
             "richtext": "<p>BE THE FIRST TO KNOW ABOUT OUR BIGGEST AND BEST SALES</p>",
             "text_size": 4,
             "background_color": "#4f4f4f",
-            "text_color_value": "#000000"
+            "text_color_value": "#000000",
+            "text_alignment": "center"
           }
         },
         "linklist_wCfhFy": {
@@ -42,7 +45,8 @@
           "settings": {
             "linklist": "customer-service",
             "title": "Customer Service",
-            "accordion_default": ""
+            "accordion_default": "accordion-is-open",
+            "text_alignment": "center"
           }
         },
         "social": {
@@ -65,7 +69,7 @@
         "menu_position": "left",
         "footer_image": "shopify://shop_images/New_logo_3_afcc69a1-3952-461e-a6dd-5791e8b2e3f3.png",
         "logo_max_limit": 140,
-        "width": "wrapper--full",
+        "width": "wrapper",
         "padding_top": 80,
         "padding_bottom": 80
       }

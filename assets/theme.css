@@ -23,7 +23,6 @@
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/inter-tight-regular.woff?v=1736259895");
 }
 
-
 @font-face {
   font-family: "exmouth";
   src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/exmouth.woff?v=1736211739");
@@ -18549,7 +18548,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
     border-bottom: 1px solid var(--border);
   }
   .grid__item:first-child .footer__title {
-    border-top: 1px solid var(--border);
+    /* border-top: 1px solid var(--border); */
   }
   .footer__title .icon-theme {
     display: block;
@@ -18612,7 +18611,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   }
 }
 .footer__content__inner {
-  padding: var(--padding-top) 0 var(--padding-bottom) 0;
+  padding: var(--padding-top) 0 calc(var(--padding-bottom) / 2) 0;
 }
 @media only screen and (min-width: 768px) {
   .footer__content__inner {
@@ -18669,7 +18668,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   }
 }
 .footer__newsletter__body {
-  padding: var(--padding-top) var(--outer);
+  padding: calc(var(--padding-top) / 2) var(--outer);
 }
 .footer__newsletter__body p:first-child {
   margin-top: 0;
@@ -18748,7 +18747,6 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
 .footer__icon {
   display: inline-block;
   height: 18px;
-  margin: 5px 20px 5px 0;
   font-size: 0;
   line-height: 0;
   letter-spacing: 0;
@@ -18826,7 +18824,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   font-weight: var(--FONT-WEIGHT-ACCENT);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: calc(var(--font-3) * var(--FONT-ADJUST-ACCENT));
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-normal);
 }
 .subfooter__items a:not(.footer__icon) {
@@ -22046,10 +22044,10 @@ a.product__form__link:after {
   position: relative;
 }
 .newsletter-block .input-group-button button {
-  min-height: 32px;
-  margin: 0;
-  padding: 0 0 0 12px;
-  color: var(--text);
+  margin-block-end: 10px;
+  padding: 12px 15px;
+  color: #ffffff;
+  background: #000;
 }
 .newsletter-block .input-group-button button:hover {
   color: var(--primary);

@@ -51,7 +51,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="footer"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
-  <div class="section-padding {{ section.settings.width }}">
+  <div class="{{ section.settings.width }}">
     {% assign footer_count = 0 %}
     {% assign footer_locale = false %}
     {% assign footer_currency = false %}
@@ -123,43 +123,45 @@
         </div>
       {%- endif -%}
 
-      {% if section.settings.footer_payment_enable %}
-        {% unless shop.enabled_payment_types == empty %}
-          <div class="subfooter__item subfooter__item--payment">
-            {% for type in shop.enabled_payment_types %}
-              <span class="footer__icon footer__icon--payment">
-                {{ type | payment_type_svg_tag }}
-                <span class="visually-hidden">{{ type | capitalize | replace: '_', ' ' }}</span>
-              </span>
-            {% endfor %}
-          </div>
-        {% endunless %}
-      {% endif %}
-
-      <div class="subfooter__item subfooter__item--copyright">
-        <span class="subfooter__copyright"> &copy; {{ shop.name | link_to: routes.root_url }} {{ 'now' | date: "%Y" }} </span>
-
-        {% for link in linklists[section.settings.footer_secondary_linklist].links %}
-          <span class="subfooter__copyright"><a href="{{ link.url }}">{{ link.title }}</a></span>
-        {% endfor %}
-
-        <!-- The following lines fix Lighthouse security warnings on the Shopify link.-->
-        {%- assign powered_by_link_html = powered_by_link -%}
-        {%- if powered_by_link_html contains 'rel="' -%}
-          {%- assign powered_link_rel_text = powered_by_link_html | split: 'rel="' -%}
-          {%- assign powered_link_rel_text = powered_link_rel_text[1] | split: '"' | first -%}
-          {%- assign powered_link_rel = 'rel="' | append: powered_link_rel_text | append: '"' -%}
-          {%- assign powered_by_link_html = powered_by_link_html | replace_first: powered_link_rel, '' -%}
-        {%- endif -%}
-        {%- if powered_by_link_html contains '<a ' -%}
-          {%- assign powered_by_link_html = powered_by_link_html | replace: '<a ', '<a rel="noopener" ' -%}
-        {%- endif -%}
-        {%- assign powered_by_link = powered_by_link_html -%}
-
-        <!-- Remove the following line to delete Powered by Shopify from your footer -->
-        <span class="subfooter__copyright" data-powered-link>{{ powered_by_link }}</span>
-        <!-- Stop deleting here -->
-
+      <div class="footer-payment-copyrights-container">
+        {% if section.settings.footer_payment_enable %}
+          {% unless shop.enabled_payment_types == empty %}
+            <div class="subfooter__item subfooter__item--payment">
+              {% for type in shop.enabled_payment_types %}
+                <span class="footer__icon footer__icon--payment">
+                  {{ type | payment_type_svg_tag }}
+                  <span class="visually-hidden">{{ type | capitalize | replace: '_', ' ' }}</span>
+                </span>
+              {% endfor %}
+            </div>
+          {% endunless %}
+        {% endif %}
+  
+        <div class="subfooter__item subfooter__item--copyright">
+          <span class="subfooter__copyright"> &copy; {{ shop.name | link_to: routes.root_url }} {{ 'now' | date: "%Y" }} </span>
+  
+          {% for link in linklists[section.settings.footer_secondary_linklist].links %}
+            <span class="subfooter__copyright"><a href="{{ link.url }}">{{ link.title }}</a></span>
+          {% endfor %}
+  
+          <!-- The following lines fix Lighthouse security warnings on the Shopify link.-->
+          {%- assign powered_by_link_html = powered_by_link -%}
+          {%- if powered_by_link_html contains 'rel="' -%}
+            {%- assign powered_link_rel_text = powered_by_link_html | split: 'rel="' -%}
+            {%- assign powered_link_rel_text = powered_link_rel_text[1] | split: '"' | first -%}
+            {%- assign powered_link_rel = 'rel="' | append: powered_link_rel_text | append: '"' -%}
+            {%- assign powered_by_link_html = powered_by_link_html | replace_first: powered_link_rel, '' -%}
+          {%- endif -%}
+          {%- if powered_by_link_html contains '<a ' -%}
+            {%- assign powered_by_link_html = powered_by_link_html | replace: '<a ', '<a rel="noopener" ' -%}
+          {%- endif -%}
+          {%- assign powered_by_link = powered_by_link_html -%}
+  
+          <!-- Remove the following line to delete Powered by Shopify from your footer -->
+          <span class="subfooter__copyright" data-powered-link>{{ powered_by_link }}</span>
+          <!-- Stop deleting here -->
+  
+        </div>
       </div>
 
       {%- if socials_html != '' and section.settings.footer_social_enable -%}
