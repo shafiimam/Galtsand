@@ -18658,7 +18658,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
   }
   .footer__container--reversed .footer__newsletter--offset {
     margin-left: 0;
-    margin-right: var(--margin-offset);
+    /* margin-right: var(--margin-offset); */
   }
   .footer__newsletter__image {
     flex: 0 1 100%;
