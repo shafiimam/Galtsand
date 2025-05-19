@@ -158,7 +158,7 @@
         "logo_max_limit": 135,
         "logo_padding": 26,
         "logo_text_size": 5,
-        "main_menu_linklist": "new-header",
+        "main_menu_linklist": "header-navigation-v2",
         "mobile_menu_linklist": "",
         "full_width": true,
         "underline_current": true,
