@@ -14,30 +14,21 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_CaQFEG": {
+          "type": "text",
+          "settings": {
+            "title": "OUR PROMISE",
+            "text": "<p>At Galtsand, our promise is to create good for the earth and its people. From responsibly-sourced materials to eco-friendly manufacturing processes, we are committed to making the world better through sustainable practices. Through thoughtful design, we aim to redefine fashion's impact on our planet, as we forge a path forward, towards a brighter future.</p>",
+            "text_size": 5,
+            "accordion_default": "accordion-is-open"
+          }
+        },
         "linklist-2": {
           "type": "linklist",
           "settings": {
             "linklist": "information-2",
             "title": "Information",
-            "accordion_default": "accordion-is-open",
-            "text_alignment": "center"
-          }
-        },
-        "newsletter": {
-          "type": "newsletter",
-          "settings": {
-            "show_image": true,
-            "image": "shopify://shop_images/New_logo_3_afcc69a1-3952-461e-a6dd-5791e8b2e3f3.png",
-            "wh_ratio": 5,
-            "newsletter_enable": true,
-            "recaptcha_enabled": false,
-            "kicker": "",
-            "heading": "BE THE FIRST TO KNOW",
-            "richtext": "<p>BE THE FIRST TO KNOW ABOUT OUR BIGGEST AND BEST SALES</p>",
-            "text_size": 4,
-            "background_color": "#4f4f4f",
-            "text_color_value": "#000000",
-            "text_alignment": "center"
+            "accordion_default": ""
           }
         },
         "linklist_wCfhFy": {
@@ -45,8 +36,7 @@
           "settings": {
             "linklist": "customer-service",
             "title": "Customer Service",
-            "accordion_default": "accordion-is-open",
-            "text_alignment": "center"
+            "accordion_default": ""
           }
         },
         "social": {
@@ -56,31 +46,48 @@
             "text_size": 7,
             "enable_follow_on_shop": false
           }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "show_image": false,
+            "wh_ratio": 0.7,
+            "newsletter_enable": true,
+            "recaptcha_enabled": false,
+            "kicker": "",
+            "heading": "BE THE FIRST TO KNOW",
+            "richtext": "<p>BE THE FIRST TO KNOW ABOUT OUR BIGGEST AND BEST SALES</p>",
+            "text_size": 4,
+            "background_color": "#4f4f4f",
+            "text_color_value": "#000000"
+          }
         }
       },
       "block_order": [
+        "text_CaQFEG",
         "linklist-2",
-        "newsletter",
         "linklist_wCfhFy",
-        "social"
+        "social",
+        "newsletter"
       ],
       "custom_css": [],
       "settings": {
         "menu_position": "left",
         "footer_image": "shopify://shop_images/New_logo_3_afcc69a1-3952-461e-a6dd-5791e8b2e3f3.png",
         "logo_max_limit": 140,
-        "width": "wrapper",
+        "width": "wrapper--full",
         "padding_top": 80,
         "padding_bottom": 80
       }
     },
     "subfooter": {
       "type": "subfooter",
+      "disabled": true,
       "settings": {
         "footer_secondary_linklist": "footer",
         "footer_payment_enable": true,
-        "footer_social_enable": false,
-        "show_locale_selector": false,
+        "footer_social_enable": true,
+        "show_locale_selector": true,
         "show_currency_selector": true,
         "width": "wrapper--full",
         "padding_top": 36,

@@ -158,7 +158,7 @@
         "mobile_layout": "carousel",
         "enable_video_looping": true,
         "zoom_enable": true,
-        "alt_text_enable": false,
+        "alt_text_enable": true,
         "alt_text_icon": "icon-recycled",
         "product_breadcrumbs_enable": false,
         "product_breadcrumbs_list": [

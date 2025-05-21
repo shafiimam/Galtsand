@@ -1054,6 +1054,7 @@
       "block_order": [
         "boutique_fWJLNH"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Boutiques",
         "title_text_size": 10,
