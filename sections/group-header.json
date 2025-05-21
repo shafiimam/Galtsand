@@ -76,7 +76,7 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1,
-            "image": "shopify://shop_images/12.4_DSC0641.png",
+            "image": "shopify://shop_images/0829.jpg",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -112,7 +112,7 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1,
-            "image": "shopify://shop_images/IMG_3995.png",
+            "image": "shopify://shop_images/ESSENTIALLY_MEN_-_Website_Banner_-_Web_Version_5972aba5-dc1d-4f59-a0f8-63d3fdf5e3dd.jpg",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -130,7 +130,7 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1,
-            "image": "shopify://shop_images/model18_7dc0f48e-5dea-4147-b3a3-9e2534f049df.jpg",
+            "image": "shopify://shop_images/ESSENTIALLY_WOMEN_-_Website_Banner_-_Web_Version.jpg",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -158,7 +158,7 @@
         "logo_max_limit": 135,
         "logo_padding": 26,
         "logo_text_size": 5,
-        "main_menu_linklist": "new-header",
+        "main_menu_linklist": "header-navigation-v2",
         "mobile_menu_linklist": "",
         "full_width": true,
         "underline_current": true,
