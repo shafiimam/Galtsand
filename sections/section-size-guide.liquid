@@ -1,0 +1,259 @@
+{{ 'section-size-guide.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  #size-guide-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{% endstyle %}
+
+<div class="size-guide-section {{ section.settings.width }}" id="size-guide-section-{{ section.id }}">
+  <div class="size-guider-section__header">
+    <h2 class="size-guider-section__title heading-size-{{ section.settings.title_text_size }}" style="color: {{ section.settings.title_text_color }};">{{ section.settings.title }}</h2>
+    <p class="size-guider-section__description body-size-{{ section.settings.description_text_size }}" style="color: {{ section.settings.description_text_color }};">{{ section.settings.description }}</p>
+  </div>
+  <div class="size-guide-section__table">
+    <table>
+      <thead>
+        <tr>
+          {% for i in (1..9) %}
+            {% assign row_key = 'row_title_' | append: i %}
+            {% assign row_title = section.settings[row_key] %}
+            
+            {% if row_title != blank %}
+              <th>{{ row_title }}</th>
+            {% endif %}
+          {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+          {% for block in section.blocks %}
+            <tr>
+              {% for i in (1..9) %}
+                {% assign row_key = 'row_value_' | append: i %}
+                {% assign row_value = block.settings[row_key] %}
+
+                {% if row_value != blank %}
+                  <td>{{ row_value }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Size Guide",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Men's Size Guide Wide Fit"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "This style has been designed for a WIDE FIT aesthetic"
+    },
+    {
+      "type": "range",
+      "id": "description_text_size",
+      "label": "Description text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "description_text_color",
+      "label": "Description text color",
+      "default": "#000000"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        { "value": "wrapper--none", "label": "Full width" },
+        { "value": "wrapper--full", "label": "Full width padded" },
+        { "value": "wrapper", "label": "Page width" },
+        { "value": "wrapper--narrow", "label": "Page width narrow" },
+        { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Size Guide Table"
+    },
+    {
+      "type": "header",
+      "content": "Row Titles"
+    },
+    {
+      "type": "text",
+      "id": "row_title_1",
+      "label": "Row 1 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_2",
+      "label": "Row 2 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_3",
+      "label": "Row 3 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_4",
+      "label": "Row 4 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_5",
+      "label": "Row 5 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_6",
+      "label": "Row 6 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_7",
+      "label": "Row 7 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_8",
+      "label": "Row 8 Title"
+    },
+    {
+      "type": "text",
+      "id": "row_title_9",
+      "label": "Row 9 Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "size_row",
+      "name": "Size Row",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Size Row Settings"
+        },
+        {
+          "type": "text",
+          "id": "row_value_1",
+          "label": "Row Value 1"
+        },
+        {
+          "type": "text",
+          "id": "row_value_2",
+          "label": "Row Value 2"
+        },
+        {
+          "type": "text",
+          "id": "row_value_3",
+          "label": "Row Value 3"
+        },
+        {
+          "type": "text",
+          "id": "row_value_4",
+          "label": "Row Value 4"
+        },
+        {
+          "type": "text",
+          "id": "row_value_5",
+          "label": "Row Value 5"
+        },
+        {
+          "type": "text",
+          "id": "row_value_6",
+          "label": "Row Value 6"
+        },
+        {
+          "type": "text",
+          "id": "row_value_7",
+          "label": "Row Value 7"
+        },
+        {
+          "type": "text",
+          "id": "row_value_8",
+          "label": "Row Value 8"
+        },
+        {
+          "type": "text",
+          "id": "row_value_9",
+          "label": "Row Value 9"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Size Guide",
+      "blocks": [
+        
+      ]
+    }
+]
+}
+{% endschema %}
