@@ -10634,14 +10634,7 @@ td {
   text-align: left;
   padding: var(--inner);
 }
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
+
 table[border] td:first-child,
 table[border] th:first-child,
 table[border] td:last-child,
@@ -10664,13 +10657,13 @@ table[border] td:last-child {
   }
   .table--responsive tr {
     display: block;
-  }
+  } 
   .table--responsive tr,
   .table--responsive td {
     float: left;
     clear: both;
     width: 100%;
-    border-bottom: none;
+    border-bottom: none; 
   }
   .table--responsive th,
   .table--responsive td {

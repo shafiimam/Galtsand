@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 5,
+        "show_title": true,
+        "title_size": 9,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 50,
+        "padding_bottom": 12
+      }
+    },
+    "section_size_guide_VhfQdL": {
+      "type": "section-size-guide",
+      "blocks": {
+        "size_row_8KTFKm": {
+          "type": "size_row",
+          "settings": {
+            "row_value_1": "XXS",
+            "row_value_2": "32 - 34",
+            "row_value_3": "",
+            "row_value_4": "",
+            "row_value_5": "",
+            "row_value_6": "",
+            "row_value_7": "",
+            "row_value_8": "",
+            "row_value_9": ""
+          }
+        }
+      },
+      "block_order": [
+        "size_row_8KTFKm"
+      ],
+      "name": "Size Guide",
+      "settings": {
+        "title": "Men's Size Guide Wide Fit",
+        "title_text_size": 10,
+        "title_text_color": "#000000",
+        "description": "This style has been designed for a WIDE FIT aesthetic",
+        "description_text_size": 5,
+        "description_text_color": "#000000",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "row_title_1": "Galtsand Man",
+        "row_title_2": "UK / US (Chest Size)",
+        "row_title_3": "EU / IT (Chest Size)",
+        "row_title_4": "Trouser Size",
+        "row_title_5": "CN (Top)",
+        "row_title_6": "CN (Bottom)",
+        "row_title_7": "Chest",
+        "row_title_8": "Waist",
+        "row_title_9": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_size_guide_VhfQdL"
+  ]
+}

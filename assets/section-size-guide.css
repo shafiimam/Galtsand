@@ -1,0 +1,22 @@
+.size-guide-section__table table {
+  border-spacing: 8px;
+  border-collapse: separate;
+  margin-left: -8px;
+}
+
+.size-guide-section__table table th {
+  color: #000;
+  background-color: #f0ede6;
+  border: 1px solid #f0ede6;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px;
+  min-width: 115px;
+}
+.size-guide-section__table table td {
+  border: 1px solid #f0ede6;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px;
+  min-width: 115px;
+}
