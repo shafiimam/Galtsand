@@ -10627,12 +10627,15 @@ table.table-full-width {
 th {
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
   border-bottom: 1px solid var(--border);
+  background-color: #f0ede6;
 }
 th,
 td {
   border-bottom: 1px solid var(--border);
   text-align: left;
-  padding: var(--inner);
+  border: 1px solid #dddddd;
+  padding: 10px 20px;
+  text-align: center;
 }
 
 table[border] td:first-child,
@@ -20852,9 +20855,9 @@ a.product__form__link:after {
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-relaxed);
-  background-color: var(--hairline);
+  text-decoration: underline;
   color: var(--text);
-  padding: 6px 10px;
+  padding: 6px 0px;
   display: flex;
   align-items: center;
   margin: 15px 0 12px 0;

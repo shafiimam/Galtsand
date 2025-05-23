@@ -39,22 +39,13 @@
             "padding_bottom": 10
           }
         },
-        "spacer_zctfQR": {
-          "type": "spacer",
-          "settings": {
-            "show_line": true,
-            "target_device": "",
-            "padding_top": 32,
-            "padding_bottom": 32
-          }
-        },
         "variants": {
           "type": "variant-selectors",
           "settings": {
             "option_size_swatch": 40,
             "option_size_radio": 60,
             "option_space": 32,
-            "padding_bottom": 32
+            "padding_bottom": 20
           }
         },
         "subscriptions": {
@@ -68,12 +59,8 @@
           "type": "quantity",
           "settings": {
             "show_quantity": true,
-            "padding_bottom": 32
+            "padding_bottom": 20
           }
-        },
-        "true_fit_widget_AU4UkV": {
-          "type": "shopify://apps/true-fit/blocks/widget/caa08c3b-c601-47cd-9c2a-32bb0567b191",
-          "settings": {}
         },
         "buttons": {
           "type": "add-buttons",
@@ -134,19 +121,29 @@
             "raw_content_5": "",
             "padding_bottom": 20
           }
+        },
+        "size_remaining_w9MdGH": {
+          "type": "size-remaining",
+          "settings": {
+            "info_page": "size-guide",
+            "title": "What's My Size?",
+            "show_remaining": false,
+            "show_remaining_style": "low",
+            "countdown": 10,
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
         "title",
         "price",
-        "spacer_zctfQR",
         "variants",
         "subscriptions",
         "quantity",
-        "true_fit_widget_AU4UkV",
         "buttons",
         "wishlist_plus_wishlist_pdp_button_dFngJc",
-        "description"
+        "description",
+        "size_remaining_w9MdGH"
       ],
       "custom_css": [],
       "settings": {
