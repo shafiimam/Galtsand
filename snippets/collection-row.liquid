@@ -74,20 +74,22 @@
 {%- endif -%}
 
 {%- if collection != blank -%}
-  <div class="collection-list-item {{ block_card_position }}  {% if isLastItem %}last-item{% endif %}" {{ block.shopify_attributes }}>
+  <div
+    class="collection-list-item {{ block_card_position }}  {% if isLastItem %}last-item{% endif %}"
+    {{ block.shopify_attributes }}
+  >
     {%- if enable_item == true and block_card_position == 'first' -%}
       {{- item_html -}}
     {%- endif -%}
     {%- unless is_empty_collection -%}
       <div
-        class="js-grid{% if enable_scroll_mobile %} collection-list__products{% endif %}"
-        data-grid-large="{{ grid }}"
-        data-grid-small="2"
+        class="{% if enable_scroll_mobile %} collection-list__products{% endif %}"
         style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);"
+        data-flickity='{ "prevNextButtons": true, "pageDots": false, "cellAlign": "left"}'
       >
-        {% for product in collection.products limit: 3 %}
+        {% for product in collection.products limit: product_limit %}
           {%- capture placeholder -%}
-            product-{%- cycle '1', '2', '3', '4', '5', '6' -%}
+            product-{%- cycle '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' -%}
           {%- endcapture -%}
 
           {%- if enable_scroll_mobile -%}
@@ -131,4 +133,3 @@
     </div>
   </div>
 {%- endif -%}
-
