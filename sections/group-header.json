@@ -14,18 +14,6 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
-        "announce_text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>we cover all tariffs, taxes and fees</p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
         "announce_shipping": {
           "type": "message",
           "disabled": true,
@@ -38,11 +26,49 @@
             "target_device_enabled": false,
             "target_device": "mobile"
           }
+        },
+        "text_CxjGqi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Up to 40% Off Select Styles + 25% Off Sitewide | Use Code:<strong> TREATDAD25</strong></p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_kkeERc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Order by June 8 with Standard Shipping for Father’s Day Delivery</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "announce_text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>we cover all tariffs, taxes and fees</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
         }
       },
       "block_order": [
-        "announce_text",
-        "announce_shipping"
+        "announce_shipping",
+        "text_CxjGqi",
+        "text_kkeERc",
+        "announce_text"
       ],
       "settings": {
         "text_size": 3,
@@ -94,15 +120,15 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1,
-            "image": "shopify://shop_images/2025_2_26_Spring-Spring_Edit-02.png",
+            "image": "shopify://shop_images/12.4_0225.jpg",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "title": "",
             "title_color": "text--white",
             "button_style": "is-below-image",
-            "link_text": "Shop Spring Styles",
-            "link": "shopify://collections/all",
+            "link_text": "Shop Outdoor Summer",
+            "link": "shopify://collections/outdoor-weekend",
             "button_color": "btn--neutral",
             "display": "all"
           }
@@ -112,7 +138,7 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1,
-            "image": "shopify://shop_images/ESSENTIALLY_MEN_-_Website_Banner_-_Web_Version_5972aba5-dc1d-4f59-a0f8-63d3fdf5e3dd.jpg",
+            "image": "shopify://shop_images/IMG_3995.png",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -130,7 +156,7 @@
           "settings": {
             "position": "1",
             "wh_ratio": 1,
-            "image": "shopify://shop_images/ESSENTIALLY_WOMEN_-_Website_Banner_-_Web_Version.jpg",
+            "image": "shopify://shop_images/model18_7dc0f48e-5dea-4147-b3a3-9e2534f049df.jpg",
             "wide_element": false,
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -152,9 +178,9 @@
         "image_3pfU8X"
       ],
       "settings": {
-        "header_style": "logo_center",
-        "logo": "shopify://shop_images/GALTSAND_1986.png",
-        "logo_v2": "shopify://shop_images/GALTSAND_1986.png",
+        "header_style": "menu_center",
+        "logo": "shopify://shop_images/pnglogo.png",
+        "logo_v2": "shopify://shop_images/pnglogo.png",
         "logo_max_limit": 135,
         "logo_padding": 26,
         "logo_text_size": 5,

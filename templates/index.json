@@ -9,6 +9,98 @@
  */
 {
   "sections": {
+    "section_hero_fbxcq7": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_BCFXKi": {
+          "type": "heading",
+          "settings": {
+            "title": "Summer Sale",
+            "text_size": 14
+          }
+        },
+        "text_rFW7F4": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Up to 40% Off Select Styles.<br/>25% Off Everything Else with Code: GALTSUMMER.</p>",
+            "text_size": 8
+          }
+        },
+        "spacer_8mBnVb": {
+          "type": "spacer",
+          "settings": {
+            "spacer_padding": 40,
+            "show_line": false
+          }
+        },
+        "button_eETqRi": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "Shop the sale",
+            "link_1": "shopify://collections/summer-sale",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BCFXKi",
+        "text_rFW7F4",
+        "spacer_8mBnVb",
+        "button_eETqRi"
+      ],
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "image": "shopify://shop_images/1720x860_Summer_Salea.png",
+        "mobile_image": "shopify://shop_images/674x860_Summer_Salea.png",
+        "link": "",
+        "height": "use_screen_full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 1350,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "section_hero_dJnB9Q": {
+      "type": "section-hero",
+      "name": "Image banner",
+      "settings": {
+        "image": "shopify://shop_images/1720x860_Father_s_Day_1.png",
+        "mobile_image": "shopify://shop_images/674x860_Father_s_Day_1.png",
+        "link": "shopify://collections",
+        "height": "use_screen_full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 1350,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
     "section_video_pMeAkR": {
       "type": "section-video",
       "blocks": {
@@ -23,22 +115,22 @@
         "heading_LyNC4T": {
           "type": "heading",
           "settings": {
-            "title": "Drop II: The Quiet Season",
+            "title": "Drop III: Moving Light",
             "text_size": 12
           }
         },
         "text_EXaa7j": {
           "type": "text",
           "settings": {
-            "text": "<p>The next chapter of our Spring Summer 2025 Collection offers refined staples designed to adapt to your rhythm, merging style and functionality for the modern journey.<br/></p>",
+            "text": "<p>The Spring Summer 2025 Drop III arrives with a lighter way to move through landscapes, through light, through time.</p><p>Nine new essentials shaped for longer days, softened structure, and the feeling of forward. Made for the season that's just beginning to open.</p>",
             "text_size": 6
           }
         },
         "button_kqzzcW": {
           "type": "button",
           "settings": {
-            "link_text_1": "DISCOVER THE STORY",
-            "link_1": "shopify://pages/featured-products",
+            "link_text_1": "SHOP NEW IN",
+            "link_1": "shopify://collections/drop-3",
             "button_size_1": "btn--long",
             "button_style_1": "btn",
             "button_color_1": "btn--white",
@@ -61,6 +153,7 @@
         "text_EXaa7j",
         "button_kqzzcW"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "height": "use_screen_full",
@@ -213,6 +306,7 @@
       "settings": {
         "image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-WebVersion-Banner_v3.png",
         "mobile_image": "shopify://shop_images/Cashmere_Polo_Knit_Crop_Top-MobileVersion-Banner_v3.png",
+        "link": "",
         "height": "use_image",
         "overlay_opacity": 15,
         "overlay_color": "#000000",
@@ -316,11 +410,11 @@
     "section_collection_slider_XiBHU9": {
       "type": "section-collection-slider",
       "settings": {
-        "collection": "new-in-this-week",
+        "collection": "drop-3",
         "product_limit": 12,
-        "title": "Spring Summer 2025: Drop II",
+        "title": "Moving Light",
         "title_text_size": 7,
-        "content": "A shift in tempo. Drawn from slower days and softer hours. Pieces made for ease, with textures that breathe and silhouettes that settle into your every day. A collection for the pause between moments.",
+        "content": "A soft return to motion. You're stepping into the days that stay warmer longer. The air feels different. The pace shifts. You're in transit...not just across places, but across seasons, routines, and moods. This drop is made for that moment.",
         "content_text_size": 4,
         "text_align": "align--middle-left",
         "button_label": "Shop Now",
@@ -355,125 +449,79 @@
         "width": "wrapper--none"
       }
     },
-    "section_collection_slider_yEBj8t": {
-      "type": "section-collection-slider",
-      "settings": {
-        "collection": "mens-tennis",
-        "product_limit": 4,
-        "title": "Tennis Collection SS25",
-        "title_text_size": 7,
-        "content": "Tracksuits, polos, and shorts to SERVE UP & STAY SHARP",
-        "content_text_size": 4,
-        "text_align": "align--middle-left",
-        "button_label": "Shop Now",
-        "button_url": "shopify://collections/mens-tennis",
-        "button_size": "btn--medium",
-        "button_style": "btn--outline",
-        "button_color": "btn--black",
-        "progress_bar": "mobile",
-        "grid_large": 4,
-        "grid_medium": 3,
-        "grid_mobile": 1,
-        "bg": "palette--light bg--neutral",
-        "width": "wrapper--full",
-        "padding_top": 80,
-        "padding_bottom": 0
-      }
-    },
-    "small_collection_grid_xqdYiz": {
-      "type": "small-collection-grid",
+    "section_list_collections_products_N6gfAm": {
+      "type": "section-list-collections-products",
       "blocks": {
-        "collection_card_6GHYUF": {
-          "type": "collection_card",
+        "collection_kzEHiJ": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/untitled.webp",
-            "text": "Serengheti Buckle Belt Hicking Short",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/buckle-belt-hiking-short"
+            "collection": "pique",
+            "title": "Pique Collection",
+            "link_text": "Structured comfort with everyday versatility.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 2,
+            "block_card_position": "first",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
           }
         },
-        "collection_card_mpM4M4": {
-          "type": "collection_card",
+        "collection_GaPRP3": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/untitled_75a6ac22-582f-4c01-9f2b-15b2d6c41663.webp",
-            "text": "Geneva Quarter Zip Dress",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/geneva-dress"
+            "collection": "mens-tennis",
+            "title": "Tennis & Court Sports",
+            "link_text": "Classic sport style, redefined for today’s game.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#fcfaf7",
+            "text_color": "text--neutral",
+            "link_size": 3,
+            "block_card_position": "first",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
           }
         },
-        "collection_card_Rh4z7k": {
-          "type": "collection_card",
+        "collection_xgYtnf": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/untitled_35d55160-c069-437b-98d8-032f3bcbac0b.webp",
-            "text": "Mountain Hunter Vest",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/mountain-hunter-vest"
-          }
-        },
-        "collection_card_nVyJF3": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
-            "text": "Athena Chino Khaki Asymmetric Skirt",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/savannah-chino-khaki-asymmetric-skirt"
-          }
-        },
-        "collection_card_agz8Nr": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_eceb4e80-8242-4f67-8d69-81d346c18612.webp",
-            "text": "Pacific Shacket",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/pacific-shacket"
-          }
-        },
-        "collection_card_jR3DXB": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled_0163e9fc-0e5f-4184-967a-2799ea83233c.webp",
-            "text": "Courtside Sweater",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/knit-varsity-v-neck-sweater"
-          }
-        },
-        "collection_card_WUkqdw": {
-          "type": "collection_card",
-          "settings": {
-            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
-            "text": "Traverse Nylon S/S Zip Front Shirt",
-            "button_label": "Shop now",
-            "button_url": "shopify://products/traverse-nylon-zip-front-shirt"
+            "collection": "outdoor-weekend",
+            "title": "Outdoor Weekend",
+            "link_text": "For easy movement, changing weather, and off-grid moments.",
+            "enable_item": true,
+            "text": "",
+            "background_color": "#000000",
+            "text_color": "text--white",
+            "link_size": 5,
+            "block_card_position": "first",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
           }
         }
       },
       "block_order": [
-        "collection_card_6GHYUF",
-        "collection_card_mpM4M4",
-        "collection_card_Rh4z7k",
-        "collection_card_nVyJF3",
-        "collection_card_agz8Nr",
-        "collection_card_jR3DXB",
-        "collection_card_WUkqdw"
+        "collection_kzEHiJ",
+        "collection_GaPRP3",
+        "collection_xgYtnf"
       ],
       "custom_css": [],
       "settings": {
-        "title": "Most Viewed This Week",
-        "title_text_size": 10,
-        "title_text_color": "#000000",
-        "subtitle": "DISCOVER OUR FAVORITES",
-        "subtitle_text_size": 4,
-        "subtitle_text_color": "#000000",
-        "text_allignment": "text-center",
-        "collection_to_show": 7,
-        "button_label": "Watch Video",
-        "button_url": "",
-        "button_size": "btn--small",
-        "button_style": "btn-text-thick-line",
-        "button_color": "btn--black",
+        "title": "",
+        "subttitle": "",
+        "bg": "palette--light bg--neutral",
+        "content_color": "#e6dbc4",
+        "grid": 3,
+        "rows": 1,
+        "enable_scroll_mobile": true,
+        "grid_small": 1.2,
         "width": "wrapper--full",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
     "card_cascade_F4z48g": {
@@ -611,105 +659,6 @@
         "arrow_color": "#ffffff"
       }
     },
-    "section_list_collections_products_N6gfAm": {
-      "type": "section-list-collections-products",
-      "blocks": {
-        "collection_kzEHiJ": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-men",
-            "title": "Men",
-            "link_text": "Cutting edge sportswear for day to night.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 2,
-            "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn",
-            "button_color": "btn--black"
-          }
-        },
-        "collection_GaPRP3": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-women",
-            "title": "Women",
-            "link_text": "For comfort, durability, and effortless style.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#fcfaf7",
-            "text_color": "text--neutral",
-            "link_size": 3,
-            "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn",
-            "button_color": "btn--black"
-          }
-        },
-        "collection_xgYtnf": {
-          "type": "collection",
-          "settings": {
-            "collection": "universal",
-            "title": "Universal",
-            "link_text": "Thoughtfully constructed with premium materials.",
-            "enable_item": true,
-            "text": "",
-            "background_color": "#000000",
-            "text_color": "text--white",
-            "link_size": 5,
-            "block_card_position": "first",
-            "button_size": "btn--large",
-            "button_style": "btn",
-            "button_color": "btn--black"
-          }
-        }
-      },
-      "block_order": [
-        "collection_kzEHiJ",
-        "collection_GaPRP3",
-        "collection_xgYtnf"
-      ],
-      "custom_css": [],
-      "settings": {
-        "title": "",
-        "subttitle": "",
-        "bg": "palette--light bg--neutral",
-        "content_color": "#e6dbc4",
-        "grid": 3,
-        "rows": 1,
-        "enable_scroll_mobile": true,
-        "grid_small": 1.2,
-        "width": "wrapper--full",
-        "padding_top": 30,
-        "padding_bottom": 30
-      }
-    },
-    "about_us_section_xikFig": {
-      "type": "about_us_section",
-      "disabled": true,
-      "settings": {
-        "image_1": "shopify://shop_images/hike.png",
-        "image_1_alt": "heritage",
-        "image_2": "shopify://shop_images/0079_3_1.jpg",
-        "image_2_alt": "heritage",
-        "image_3": "shopify://shop_images/hike1.jpg",
-        "image_3_alt": "bra",
-        "image_4": "shopify://shop_images/hike2.jpg",
-        "image_4_alt": "t-shirt",
-        "subtitle_1": "Founded in 1986",
-        "description_1": "Founded in 1986 in Cedar Rapids, Iowa, Galtsand was built on the belief that dressing is a universal language, one that unites generations, cultures, and communities. With over five decades of textile expertise, the brand has mastered the craft of creating timeless pieces, athleisure, and accessories that honor heritage while embracing modern movement.",
-        "subtitle_2": "Pioneers of the printed crewneck sweatshirt",
-        "description_2": "Our journey began with the iconic round-neck sweatshirt, renowned for its heritage, comfort, and timeless appeal. Partnering with the NCAA, NFL, and wildlife organizations, we've crafted a legacy of storytelling through garments, capturing historic moments and connecting generations through shared experiences.",
-        "subtitle_3": "heritage, reimagined",
-        "description_3": "Designed with purpose and precision, each piece is a tribute to craftsmanship, resilience, and the stories carried by those who wear them. Classic silhouettes are reimagined, blending archival influences with contemporary design, ensuring that every garment is made not just to be worn, but to be lived in.",
-        "subtitle_4": "TIMELESS QUALITY",
-        "description_4": "Our dedication to quality and innovation is reflected in our meticulous sourcing and expert craftsmanship. Every fabric is thoughtfully chosen, every stitch carefully placed, to create garments that endure. From our sportswear roots to our modern evolution, we create pieces that move with you, in style and spirit.",
-        "btn_name": "Learn More",
-        "btn_link": "shopify://pages/about-us1"
-      }
-    },
     "image_with_content_overlay_iz6wnn": {
       "type": "image-with-content-overlay",
       "blocks": {
@@ -797,99 +746,100 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_overlay_PiGphR": {
-      "type": "image-banner-overlay",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/banner1.png",
-        "image_mobile": "shopify://shop_images/banner1_885e09c9-8a54-4041-9146-0ee471522d8c.png",
-        "header_text": "Spring&Summer 2025",
-        "title_text_size": 11,
-        "title_text_color": "#ffffff",
-        "subtitle": "Figma ipsum component variant main layer. Move style list figma text subtract scale component italic. Background duplicate bold stroke pen subtract polygon link font bullet",
-        "sub_text_size": 5,
-        "sub_text_color": "#ffffff",
-        "subtitle_2": "Figma ipsum component variant main layer. Move style list figma text subtract scale component italic. Background duplicate bold stroke pen subtract polygon link font bullet. Invite effect reesizing team pencil library vertical strikethrough team vector. Style shadow bold fill reesizing.",
-        "sub_text_size_2": 5,
-        "sub_text_color_2": "#ffffff",
-        "text_allignment": "text-center",
-        "content_horizontal_position": 27,
-        "content_vertical_position": 10,
-        "button_label": "Shop Now",
-        "button_url": "shopify://collections/ss25-collection",
-        "button_size": "btn--long",
-        "button_style": "btn",
-        "button_color": "btn--black",
-        "width": "wrapper--none",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "gallery_slider_rGdqMm": {
-      "type": "gallery-slider",
+    "small_collection_grid_xqdYiz": {
+      "type": "small-collection-grid",
       "blocks": {
-        "image_slide_EQxUqm": {
-          "type": "image_slide",
+        "collection_card_6GHYUF": {
+          "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/Frame_71_46122481-c3b8-4cbc-a1a3-7de2929334d4.png",
-            "link": ""
+            "image": "shopify://shop_images/untitled.webp",
+            "text": "Serengheti Buckle Belt Hicking Short",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/serengheti-buckle-belt-hiking-short"
           }
         },
-        "image_slide_U6wfC9": {
-          "type": "image_slide",
+        "collection_card_mpM4M4": {
+          "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/ocean.png",
-            "link": ""
+            "image": "shopify://shop_images/untitled_75a6ac22-582f-4c01-9f2b-15b2d6c41663.webp",
+            "text": "Geneva Quarter Zip Dress",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/geneva-dress"
           }
         },
-        "image_slide_tXUnCr": {
-          "type": "image_slide",
+        "collection_card_Rh4z7k": {
+          "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/Frame_733.png",
-            "link": ""
+            "image": "shopify://shop_images/untitled_35d55160-c069-437b-98d8-032f3bcbac0b.webp",
+            "text": "Mountain Hunter Vest",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/mountain-hunter-vest"
           }
         },
-        "image_slide_KwALJE": {
-          "type": "image_slide",
+        "collection_card_nVyJF3": {
+          "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/Frame_74.png",
-            "link": ""
+            "image": "shopify://shop_images/untitled_c855dca8-811f-4613-885b-5180e3ca2594.webp",
+            "text": "Athena Chino Khaki Asymmetric Skirt",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/savannah-chino-khaki-asymmetric-skirt"
           }
         },
-        "image_slide_AcqMeV": {
-          "type": "image_slide",
+        "collection_card_agz8Nr": {
+          "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/image-222_96adcf6c-4ea2-4075-a1e4-83ffdf707aa6.png",
-            "link": ""
+            "image": "shopify://shop_images/untitled_eceb4e80-8242-4f67-8d69-81d346c18612.webp",
+            "text": "Pacific Shacket",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/pacific-shacket"
           }
         },
-        "image_slide_Ea4gU8": {
-          "type": "image_slide",
+        "collection_card_jR3DXB": {
+          "type": "collection_card",
           "settings": {
-            "image": "shopify://shop_images/image_22_f3ff752d-6a36-43a8-ba0b-97bd4ca8d769.png",
-            "link": ""
+            "image": "shopify://shop_images/untitled_0163e9fc-0e5f-4184-967a-2799ea83233c.webp",
+            "text": "Courtside Sweater",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/knit-varsity-v-neck-sweater"
+          }
+        },
+        "collection_card_WUkqdw": {
+          "type": "collection_card",
+          "settings": {
+            "image": "shopify://shop_images/untitled5_0cf92875-386d-46e0-8ab3-eaa45b3ca1a3.webp",
+            "text": "Traverse Nylon S/S Zip Front Shirt",
+            "button_label": "Shop now",
+            "button_url": "shopify://products/traverse-nylon-zip-front-shirt"
           }
         }
       },
       "block_order": [
-        "image_slide_EQxUqm",
-        "image_slide_U6wfC9",
-        "image_slide_tXUnCr",
-        "image_slide_KwALJE",
-        "image_slide_AcqMeV",
-        "image_slide_Ea4gU8"
+        "collection_card_6GHYUF",
+        "collection_card_mpM4M4",
+        "collection_card_Rh4z7k",
+        "collection_card_nVyJF3",
+        "collection_card_agz8Nr",
+        "collection_card_jR3DXB",
+        "collection_card_WUkqdw"
       ],
-      "disabled": true,
+      "custom_css": [],
       "settings": {
-        "title": "Adventure in Style",
+        "title": "Most Viewed This Week",
         "title_text_size": 10,
         "title_text_color": "#000000",
-        "subtitle": "Real people. Real moments. See Galtsand IRL, and shop looks reimagined by our community",
-        "sub_text_size": 5,
-        "sub_text_color": "#000000",
+        "subtitle": "DISCOVER OUR FAVORITES",
+        "subtitle_text_size": 4,
+        "subtitle_text_color": "#000000",
+        "text_allignment": "text-center",
+        "collection_to_show": 7,
+        "button_label": "Watch Video",
+        "button_url": "",
+        "button_size": "btn--small",
+        "button_style": "btn-text-thick-line",
+        "button_color": "btn--black",
         "width": "wrapper--full",
-        "padding_top": 0,
-        "padding_bottom": 120
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "customer_review_section_xAPmhf": {
@@ -1054,9 +1004,8 @@
       "block_order": [
         "boutique_fWJLNH"
       ],
-      "disabled": true,
       "settings": {
-        "title": "Our Boutiques",
+        "title": "Visit Us",
         "title_text_size": 10,
         "title_color": "#000000",
         "image": "shopify://shop_images/Galtsand_Event-125.jpg",
@@ -1066,21 +1015,19 @@
     }
   },
   "order": [
+    "section_hero_fbxcq7",
+    "section_hero_dJnB9Q",
     "section_video_pMeAkR",
     "section_video_aCmic9",
     "hero",
     "section_logos_E3KxjC",
     "section_collection_slider_XiBHU9",
     "video_with_modal_zPUEPT",
-    "section_collection_slider_yEBj8t",
-    "small_collection_grid_xqdYiz",
+    "section_list_collections_products_N6gfAm",
     "card_cascade_F4z48g",
     "collection-split-section-1",
-    "section_list_collections_products_N6gfAm",
-    "about_us_section_xikFig",
     "image_with_content_overlay_iz6wnn",
-    "image_banner_overlay_PiGphR",
-    "gallery_slider_rGdqMm",
+    "small_collection_grid_xqdYiz",
     "customer_review_section_xAPmhf",
     "section_richtext_LKLc9B",
     "section_richtext_eXqxyf",

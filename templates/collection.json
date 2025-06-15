@@ -173,7 +173,7 @@
         "filters"
       ],
       "settings": {
-        "product_limit": 9,
+        "product_limit": 20,
         "grid_large": 4,
         "grid_mobile": "2",
         "enable_layout_toggle": true,

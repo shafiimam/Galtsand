@@ -63,7 +63,6 @@
         "size_row_8KTFKm",
         "size_row_tNArFm"
       ],
-      "name": "Size Guide",
       "settings": {
         "title": "Women's Tops",
         "title_text_size": 10,
@@ -166,7 +165,6 @@
         "size_row_GghU6A",
         "size_row_T8MtFi"
       ],
-      "name": "Size Guide",
       "settings": {
         "title": "Women's Bottom",
         "title_text_size": 10,
@@ -254,7 +252,6 @@
         "size_row_gNFw7C",
         "size_row_UqPTWq"
       ],
-      "name": "Size Guide",
       "settings": {
         "title": "Men's Tops",
         "title_text_size": 10,
@@ -320,14 +317,43 @@
             "row_value_8": "",
             "row_value_9": ""
           }
+        },
+        "size_row_cAwGcW": {
+          "type": "size_row",
+          "settings": {
+            "row_value_1": "XL",
+            "row_value_2": "46\" - 48\"",
+            "row_value_3": "40\" - 42\"",
+            "row_value_4": "45\" - 47\"",
+            "row_value_5": "",
+            "row_value_6": "",
+            "row_value_7": "",
+            "row_value_8": "",
+            "row_value_9": ""
+          }
+        },
+        "size_row_77BxX8": {
+          "type": "size_row",
+          "settings": {
+            "row_value_1": "",
+            "row_value_2": "",
+            "row_value_3": "",
+            "row_value_4": "",
+            "row_value_5": "",
+            "row_value_6": "",
+            "row_value_7": "",
+            "row_value_8": "",
+            "row_value_9": ""
+          }
         }
       },
       "block_order": [
         "size_row_AfneNG",
         "size_row_GmfKUz",
-        "size_row_PX3VUA"
+        "size_row_PX3VUA",
+        "size_row_cAwGcW",
+        "size_row_77BxX8"
       ],
-      "name": "Size Guide",
       "settings": {
         "title": "Men's Bottoms",
         "title_text_size": 10,
