@@ -134,13 +134,13 @@
           "storefront_layout_as_section_page": "wishlist"
         }
       },
-      "13897900069594145190": {
-        "type": "shopify://apps/accessibility-by-cartcoders/blocks/app-embed/e146c6fb-5384-4cc3-946f-03621d06f241",
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+      "1537173939754162885": {
+        "type": "shopify://apps/accesspro/blocks/accesspro-widget/d1a2aee8-6737-4a3e-a6aa-13d82b562c31",
         "disabled": false,
         "settings": {}
       }

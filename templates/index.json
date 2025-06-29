@@ -16,17 +16,17 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Friends_are_Family_Sale_-_1_6d0ce31d-469a-434d-997d-383486c4b1a2.png",
-            "mobile_image": "shopify://shop_images/Friends_are_Family_Sale_-_1-1.png",
+            "mobile_image": "shopify://shop_images/Friends_are_Family_Sale_-_12.png",
             "overlay_opacity": 15,
             "overlay_color": "#000000",
             "enable_overlay_text": false,
             "kicker": "",
             "title": "",
             "richtext": "",
-            "text_align": "align--bottom-right",
+            "text_align": "align--bottom-center",
             "text_color": "text--neutral",
             "link_text": "shop now",
-            "link": "",
+            "link": "shopify://collections/all",
             "button_color": "btn--white",
             "button_style": "btn--outline"
           }
