@@ -59,28 +59,28 @@
         "accordion_block_1_1": {
           "type": "text",
           "settings": {
-            "title": "I’m not completely satisfied with my order—may I return it? And what should I do if there is an issue?",
+            "title": "I’m not completely satisfied with my order—can I return it? And what should I do if there is an issue?",
             "content": "<p>We are pleased to offer a full refund within 30 days of your return request. Please visit our Returns Center for further instructions. Once we have received the returned item and approved it, we will process the refund to your original payment method within 5 business days. Please note, if your package is still in transit, we kindly ask that you wait for it to arrive before initiating the return process and receiving a refund.<br/></p>"
           }
         },
         "accordion_block_1_2": {
           "type": "text",
           "settings": {
-            "title": "May you provide an update on the status of my return?",
+            "title": "Can you provide an update on the status of my return?",
             "content": "<p>Once you have completed the returns process through our Returns Centre and sent your package back to our warehouse, your return will be officially underway. After we receive and inspect your return, we will notify you whether it has been accepted or declined. This process may take up to 5 business days from the date your return tracking status shows as Delivered. If approved, please allow up to 5 business days for the refund to be processed back to your original payment method.<br/></p>"
           }
         },
         "accordion_block_1_3": {
           "type": "text",
           "settings": {
-            "title": "May I exchange an item for a different one?",
+            "title": "Can I exchange an item for a different one?",
             "content": "<p>At present, we are unable to offer exchanges. We kindly recommend that you request a return and place a new order for the desired item. Once your return has been received and processed at our warehouse, a refund will be issued to your original payment method.<br/></p>"
           }
         },
         "accordion_block_1_4": {
           "type": "text",
           "settings": {
-            "title": "May you help with a damaged item?",
+            "title": "Can you help with a damaged item?",
             "content": "<p>We sincerely apologize that you have received a damaged item. Kindly send a photo of the damaged product, along with your details, to <a href=\"mailto:hello@galtsand.us\">hello@galtsand.us</a> and we will be more than happy to assist you in resolving the issue. Please note that items reported as damaged beyond the 30-day return window are unfortunately ineligible for return or refund.<br/></p>"
           }
         },
@@ -132,7 +132,7 @@
         "text_fWVABi": {
           "type": "text",
           "settings": {
-            "title": "May I change the shipping method for my order?",
+            "title": "Can I change the shipping method for my order?",
             "content": "<p>Once an order is placed and processing has begun, the shipping method cannot be changed. If you need to expedite your shipping, we recommend contacting us at <a href=\"mailto:hello@galtsand.us\">hello@galtsand.us</a> as soon as possible, and we will do our best to assist.<br/></p>"
           }
         }
@@ -220,8 +220,8 @@
         "text_BqcQYF": {
           "type": "text",
           "settings": {
-            "title": "May I create an account?",
-            "content": "<p>Certainly! You can register for an account here: www.galtsand.com and enjoy the following benefits:<br/></p><ul><li>Track your orders and review past purchases</li><li>Save your addresses for quicker checkout</li><li>Manage your account details, address book, and email preferences</li></ul>"
+            "title": "How do I create an account?",
+            "content": "<p>You can create an account here: www.galtsand.com and enjoy the following benefits:<br/></p><ul><li>Track your orders and review past purchases</li><li>Save your addresses for quicker checkout</li><li>Manage your account details, address book, and email preferences</li></ul>"
           }
         },
         "text_LMUgNA": {
@@ -329,21 +329,21 @@
         "accordion_block_3_1": {
           "type": "text",
           "settings": {
-            "title": "How may I get a Galtsand discount?",
+            "title": "How can I get a Galtsand discount?",
             "content": "<p>The best way to stay informed about our exclusive discounts and limited-time offers, such as our exclusive mystery box deals, is by signing up for our email list or creating an account with us. By joining, you’ll be the first to receive notifications about special promotions and super deals. Please note that only discounts provided directly by Galtsand are valid, and third-party discount codes will not be accepted. Sign up today to ensure you never miss out on our best offers.<br/></p>"
           }
         },
         "accordion_block_3_2": {
           "type": "text",
           "settings": {
-            "title": "Why Isn’t My Discount Code Working?",
+            "title": "Why isn’t my discount code working?",
             "content": "<p>If your discount code isn't working, please feel free to reach out to us at <a href=\"mailto:hello@galtsand.com\">hello@galtsand.com</a>, and we'll be happy to assist you. Please note that our discount codes are single-use only, and cannot be reused if an order is cancelled or returned. If the code is eligible but not applying, we recommend double-checking that it has been entered correctly, ensuring there are no extra spaces. We’re here to help if you need further assistance.<br/></p>"
           }
         },
         "text_9Fe4B9": {
           "type": "text",
           "settings": {
-            "title": "May I pay using gift cards?",
+            "title": "Can I pay using gift cards?",
             "content": "<p>Yes, we accept original Galtsand gift cards as a valid payment method during checkout. Please ensure you have the card details and codes ready when completing your purchase.<br/></p>"
           }
         }

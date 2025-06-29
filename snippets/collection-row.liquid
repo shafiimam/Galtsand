@@ -87,7 +87,7 @@
         style="--product-width: calc({{ 100 | divided_by: grid_small | append: 'vw' }} - var(--gutter)*2);"
         data-flickity='{ "prevNextButtons": true, "pageDots": false, "cellAlign": "left"}'
       >
-        {% for product in collection.products limit: product_limit %}
+        {% for product in collection.products %}
           {%- capture placeholder -%}
             product-{%- cycle '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' -%}
           {%- endcapture -%}

@@ -534,3 +534,11 @@ button.collection__filters__toggle.drawer--visible {
     margin-top: 20px;
   }
 }
+s.product__price--compare {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.section-slideshow[data-block-length="1"] .flickity-page-dots {
+  display: none;
+}

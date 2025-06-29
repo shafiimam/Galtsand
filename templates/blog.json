@@ -39,7 +39,7 @@
         "article_McFHdq": {
           "type": "article",
           "settings": {
-            "article": "blogs/thanksgiving",
+            "article": "news/tops-on-top-the-galtsand-top-edit",
             "card_title": "Article",
             "hide_btn": false
           }
@@ -82,7 +82,7 @@
         "tags": true,
         "text_align": "text-left",
         "post_grid": 1,
-        "rows": 2,
+        "rows": 7,
         "wh_ratio": 1.7,
         "show_author": true,
         "show_tags": true,

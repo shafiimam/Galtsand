@@ -13,6 +13,7 @@
 <div class="section-slideshow {{ section.settings.color_bg }}"
   data-section-id="{{ section.id }}"
   data-section-type="slideshow"
+  data-block-length="{{ section.blocks.size }}"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
   {% if section.blocks.size > 0 %}
     <div class="{{ section.settings.width }} section-padding">

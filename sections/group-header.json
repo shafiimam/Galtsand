@@ -27,22 +27,10 @@
             "target_device": "mobile"
           }
         },
-        "text_CxjGqi": {
+        "text_gnWmL9": {
           "type": "text",
           "settings": {
-            "text": "<p>Up to 40% Off Select Styles + 25% Off Sitewide | Use Code:<strong> TREATDAD25</strong></p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_kkeERc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Order by June 8 with Standard Shipping for Father’s Day Delivery</p>",
+            "text": "<p>30% SITEWIDE    |   USE CODE: GALTFAM</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -66,8 +54,7 @@
       },
       "block_order": [
         "announce_shipping",
-        "text_CxjGqi",
-        "text_kkeERc",
+        "text_gnWmL9",
         "announce_text"
       ],
       "settings": {
