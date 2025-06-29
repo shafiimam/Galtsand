@@ -542,3 +542,11 @@ s.product__price--compare {
 .section-slideshow[data-block-length="1"] .flickity-page-dots {
   display: none;
 }
+
+/* accessibility widhget custom styles */
+#acp-widget,
+.asw-menu,
+.acp-header,
+.acp-profile-button{
+  border-radius: 4px !important;
+}

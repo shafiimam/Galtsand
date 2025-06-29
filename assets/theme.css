@@ -17293,15 +17293,9 @@ html.js
 }
 .custom-prev-next-button.previous {
   left: 0;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='36' viewBox='0 0 44 44'><path d='M10.366 22.502l.412.392L33.268 44l.732-.742-22.488-21.106L34 .742 33.268 0 10 22.152z'/></svg>")
-      5 11,
-    auto;
 }
 .custom-prev-next-button.next {
   right: 0;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='36' viewBox='0 0 44 44'><path d='M33.634 22.502l-.412.392L10.732 44 10 43.258l22.488-21.106L10 .742 10.732 0 34 22.152z'/></svg>")
-      15 11,
-    auto;
 }
 .slideshow__slide[aria-hidden="true"] {
   touch-action: none;
