@@ -14586,7 +14586,7 @@ body .shopify-email-marketing-confirmation__container {
   align-self: stretch;
 }
 .header__desktop__bar__l {
-  flex: 1 0 0;
+  margin-right: 15px;
   justify-content: flex-start;
 }
 .header__desktop__bar__c {
@@ -14631,6 +14631,9 @@ body .shopify-email-marketing-confirmation__container {
   font-size: calc(var(--font-3) * var(--TYPE-ADJUST-NAV));
   white-space: nowrap;
   display: block;
+}
+.header__desktop__buttons .navlink {
+  padding: 5px 8px;
 }
 .navlink {
   padding: 5px 15px;

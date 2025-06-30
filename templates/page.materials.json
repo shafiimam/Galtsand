@@ -1,0 +1,157 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 5,
+        "show_title": true,
+        "title_size": 9,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 50,
+        "padding_bottom": 12
+      }
+    },
+    "materials_9VHcBQ": {
+      "type": "materials",
+      "blocks": {
+        "material_y6nQNt": {
+          "type": "material",
+          "settings": {
+            "material_title": "Lycra",
+            "description": "<ul><li>Superior Stretch & Recovery</li><li>Enhanced Durability</li><li>Moves With You</li><li>Lightweight & Breathable </li></ul>"
+          }
+        },
+        "material_tGGaKD": {
+          "type": "material",
+          "settings": {
+            "material_title": "Coolmax",
+            "description": "<ul><li>Cross-shaped fiber with four grooves & tubes</li><li>Rapidly channels sweat and moisture away</li><li>Maintains dry and comfortable skin</li></ul>"
+          }
+        },
+        "material_bjqTPa": {
+          "type": "material",
+          "settings": {
+            "material_title": "Teflon",
+            "description": "<ul><li>Water & Stain Resistant</li><li>Easy-Care Finish minimizes maintenance and extends wear</li><li>Invisible Protection</li></ul>"
+          }
+        },
+        "material_NTJPPA": {
+          "type": "material",
+          "settings": {
+            "material_title": "800+ Goose Down",
+            "description": "<ul><li>Exceptional Warmth-to-Weight Ratio</li><li>800+ Fill Power delivers  superior loft, softness, and thermal efficiency</li><li>Responsible Sourced</li></ul>"
+          }
+        },
+        "material_xtE6M4": {
+          "type": "material",
+          "settings": {
+            "material_title": "800+ Goose Down",
+            "description": "<ul><li>Exceptional Warmth-to-Weight Ratio</li><li>800+ Fill Power delivers  superior loft, softness, and thermal efficiency</li><li>Responsible Sourced</li></ul>"
+          }
+        },
+        "material_qefd8N": {
+          "type": "material",
+          "settings": {
+            "material_title": "Tencel",
+            "description": "<ul><li>Ultra-Soft Feel</li><li>Naturally Moisture-Wicking</li><li>Eco-Friendly Fiber derived from sustainably sourced wood pulp</li><li>Biodegradable & Low impact</li></ul>"
+          }
+        },
+        "material_8WmXMT": {
+          "type": "material",
+          "settings": {
+            "material_title": "UV Protection",
+            "description": "<ul><li>Anti-pilling</li><li>Hight elasticity, comfort, wear-resistance, easy care</li><li>Wrinkle-resistant</li><li>UPF50+ protection</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "material_y6nQNt",
+        "material_tGGaKD",
+        "material_bjqTPa",
+        "material_NTJPPA",
+        "material_xtE6M4",
+        "material_qefd8N",
+        "material_8WmXMT"
+      ],
+      "name": "Materials",
+      "settings": {
+        "materials_title": "Materials"
+      }
+    },
+    "section_richtext_z49gFw": {
+      "type": "section-richtext",
+      "blocks": {
+        "heading_4HAKnN": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "text_size": 8
+          }
+        },
+        "text_FHgeB6": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.content }}",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "heading_4HAKnN",
+        "text_FHgeB6"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "174110426101379aed": {
+      "type": "apps",
+      "blocks": {
+        "wishlist_plus_wishlist_page_section_tk3Cq6": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-page-section/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "wishlist_plus_wishlist_page_section_tk3Cq6"
+      ],
+      "settings": {
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "materials_9VHcBQ",
+    "section_richtext_z49gFw",
+    "174110426101379aed"
+  ]
+}
