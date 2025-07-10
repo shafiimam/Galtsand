@@ -119,7 +119,7 @@
           "type": "text",
           "settings": {
             "title": "Do you offer free shipping?",
-            "content": "<p>We offer free shipping on all orders from $180 and more. Please refer to our shipping policy for the specific amount and details. For orders under this threshold, standard shipping rates apply.<br/></p>"
+            "content": "<p>We offer free shipping on all orders from $175 and more. Please refer to our shipping policy for the specific amount and details. For orders under this threshold, standard shipping rates apply.<br/></p>"
           }
         },
         "text_mEDbDC": {

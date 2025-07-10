@@ -29,6 +29,7 @@
         },
         "text_gnWmL9": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>UP TO 60% OFF      |     USE CODE: <span style=\"text-decoration:underline\"><strong>LONGWEEKEND</strong></span></p>",
             "target_url_enabled": false,
@@ -42,9 +43,9 @@
         "announce_text": {
           "type": "text",
           "settings": {
-            "text": "<p>orders to UK will take an extra 5-8 days of shipping and process time</p>",
-            "target_url_enabled": true,
-            "target_url": "",
+            "text": "<p>Due to high order volume, please allow an extra 3-5 days to process your order. thank you!</p>",
+            "target_url_enabled": false,
+            "target_url": "shopify://collections",
             "target_referrer_enabled": false,
             "target_referrer": "",
             "target_device_enabled": false,
