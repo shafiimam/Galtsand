@@ -9,53 +9,15 @@
  */
 {
   "sections": {
-    "section_slideshow_GfUBiR": {
-      "type": "section-slideshow",
-      "blocks": {
-        "image_g7A7wR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Friends_are_Family_Sale_-_1_6d0ce31d-469a-434d-997d-383486c4b1a2.png",
-            "mobile_image": "shopify://shop_images/Friends_are_Family_Sale_-_12.png",
-            "overlay_opacity": 15,
-            "overlay_color": "#000000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--bottom-center",
-            "text_color": "text--neutral",
-            "link_text": "shop now",
-            "link": "shopify://collections/all",
-            "button_color": "btn--white",
-            "button_style": "btn--outline"
-          }
-        }
-      },
-      "block_order": [
-        "image_g7A7wR"
-      ],
-      "name": "Slideshow",
-      "settings": {
-        "autoplay": false,
-        "autoplay_speed": 1,
-        "preload_first_image": true,
-        "height": "use_image",
-        "color_bg": "palette--light bg--neutral",
-        "width": "wrapper--none",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_hero_fbxcq7": {
       "type": "section-hero",
       "disabled": true,
       "name": "Image banner",
       "settings": {
-        "image": "shopify://shop_images/Friends_are_Family_Sale_-_1_7b8b14fa-e031-4001-afbe-fddc7c6ec6d5.png",
-        "mobile_image": "shopify://shop_images/Friends_are_Family_Sale_-_1-1_47c4e14a-91cb-4e3a-8847-49472868a432.png",
+        "image": "shopify://shop_images/JULY4_Friends_are_Family_Sale_-_1.png",
+        "mobile_image": "shopify://shop_images/JULY4_Friends_are_Family_Sale_-_12.png",
         "link": "shopify://collections/all",
-        "height": "use_screen_full",
+        "height": "use_image",
         "overlay_opacity": 0,
         "overlay_color": "#000000",
         "enable_overlay_text": false,
@@ -234,6 +196,7 @@
       "blocks": {
         "kicker_jGceGN": {
           "type": "kicker",
+          "disabled": true,
           "settings": {
             "kicker": "",
             "enable_line": false,
@@ -242,6 +205,7 @@
         },
         "heading_Xtib3E": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "20% Off Our Mother's Day Edit",
             "text_size": 12
@@ -249,6 +213,7 @@
         },
         "text_33FJPT": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Thoughtfully selected styles for every kind of Mother figure.</p>",
             "text_size": 6
@@ -256,6 +221,7 @@
         },
         "button_xWdzNP": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link_text_1": "",
             "link_1": "shopify://pages/featured-products",
@@ -282,6 +248,7 @@
         "button_xWdzNP"
       ],
       "disabled": true,
+      "name": "Static Banner with Live Text",
       "settings": {
         "height": "use_screen_full",
         "color_bg": "palette--light bg--neutral",
@@ -290,7 +257,7 @@
         "preload_image": false,
         "text_align": "align--middle-center",
         "text_color": "text--white",
-        "overlay_opacity": 15,
+        "overlay_opacity": 0,
         "overlay_color": "#000000",
         "enable_overlay_text": false,
         "width": "wrapper--none",
@@ -1073,7 +1040,6 @@
     }
   },
   "order": [
-    "section_slideshow_GfUBiR",
     "section_hero_fbxcq7",
     "section_hero_dJnB9Q",
     "section_video_pMeAkR",

@@ -1,48 +1,36 @@
 .materials-section {
-  padding: 100px 50px;
+  padding: 60px;
 }
 
-.materials-section__title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #000;
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.materials-section-cards {
+.materials-section-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
 }
-
-.material-card {
+.materials-section-title{
+  margin-bottom: 60px;
+}
+.materials-section__material {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 10px;
 }
-
-.marterial-card-heading {
+.material-image-title {
   display: flex;
-  gap: 24px;
+  flex-wrap: nowrap;
   align-items: center;
-  color: #202020;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: -1.44px;
+  gap: 20px;
 }
-
-.material-card-description ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.material-card-description ul li {
-  font-size: 14px;
+.material-description {
+  margin-top: 20px;
+  font-family: var(--FONT-STACK-BODY);
   font-weight: 400;
   color: #4F555F;
+  font-style: Normal;
+  font-size: 20px;
   line-height: 140%;
-  letter-spacing: 0.48px;
+}
+.material-description ul li {
+  list-style: disc;
+  margin-left: 20px;
 }

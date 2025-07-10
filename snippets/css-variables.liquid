@@ -6,13 +6,12 @@
   CSS variables are used to remove liquid code from your CSS file, allowing CSS to load faster.
 {% endcomment %}
 
-{% style %}
+{% comment %} {% style %}
     @font-face {
     font-family: "FaktTT";
     src: url("{{ 'FaktTT-Normal.woff2' | asset_url }}") format("woff2"),
       url("{{ 'FaktTT-Normal.woff' | asset_url }}") format("woff"),
-      url("{{ 'FaktTT-Normal.ttf' | asset_url }}") format("truetype"),
-      url("{{ 'Fakt-Normal.otf' | asset_url }}") format("opentype");
+      url("{{ 'FaktTT-Normal.ttf' | asset_url }}") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -65,7 +64,7 @@
     font-style: italic;
     font-display: swap;
   }
-{% endstyle %}
+{% endstyle %} {% endcomment %}
 
 {%- liquid
   assign body_font = settings.font_body_family
@@ -512,7 +511,7 @@
   --TYPE-STACK-NAV: 'FaktTT', {{ nav_font_drop.fallback_families }};
   --TYPE-STYLE-NAV: {{ nav_font_drop.style }};
   --TYPE-ADJUST-NAV: {{ type_nav_size | divided_by: 100.0 }};
-  --TYPE-WEIGHT-NAV: 500;
+  --TYPE-WEIGHT-NAV: {{ nav_font_drop.weight | default: 400 }};
   {% if settings.type_nav_uppercase %}
     --FONT-NAV-TRANSFORM: uppercase;
     --FONT-NAV-LETTER-SPACING: {{ settings.font_uppercase_spacing | divided_by: 1000.0 | append: 'em' }};

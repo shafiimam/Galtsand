@@ -30,7 +30,7 @@
         "text_gnWmL9": {
           "type": "text",
           "settings": {
-            "text": "<p>30% SITEWIDE    |   USE CODE: GALTFAM</p>",
+            "text": "<p>UP TO 60% OFF      |     USE CODE: <span style=\"text-decoration:underline\"><strong>LONGWEEKEND</strong></span></p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -42,8 +42,8 @@
         "announce_text": {
           "type": "text",
           "settings": {
-            "text": "<p>we cover all tariffs, taxes and fees</p>",
-            "target_url_enabled": false,
+            "text": "<p>orders to UK will take an extra 5-8 days of shipping and process time</p>",
+            "target_url_enabled": true,
             "target_url": "",
             "target_referrer_enabled": false,
             "target_referrer": "",

@@ -30,7 +30,12 @@
 
     <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    {% render 'fonts' %}
+    {% comment %} <link rel="preload" href="{{ settings.font_body_family | font_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ settings.font_body_family | font_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ settings.font_heading_family | font_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ settings.font_accent_family | font_url }}" as="font" type="font/woff2" crossorigin> {% endcomment %}
+  
+    
 
     <!-- Title and description ================================================ -->
     {%- if settings.favicon != blank -%}
@@ -76,7 +81,7 @@
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'swiper.css' | asset_url | stylesheet_tag: preload: true }}
-
+    
     <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 

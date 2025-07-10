@@ -30,6 +30,64 @@
   text-transform: capitalize;
 }
 
+@font-face {
+  font-family: "FaktTT";
+  src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/FaktTT-Normal.woff2") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/FaktTT-Normal.woff") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/FaktTT-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FaktTT";
+  src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/FaktTT-Bold.woff2") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/FaktTT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FaktTT";
+  src: url("https://cdn.shopify.com/s/files/1/0642/2210/1717/files/FaktTT-BoldItalic.woff2") format("woff2"),
+    url("/cdn/shop/t/96/assets/FaktTT-BoldItalic.woff?v=175564079470325067231752136450") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FaktTT";
+  src: url("/cdn/shop/t/96/assets/FaktTT-Medium.woff2?v=90387810378632787771752136451") format("woff2"),
+    url("/cdn/shop/t/96/assets/FaktTT-Medium.woff?v=172405412827330751661752136451") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FaktTT";
+  src: url("/cdn/shop/t/96/assets/FaktTT-MediumItalic.woff2?v=176536281314278884021752136448") format("woff2"),
+    url("/cdn/shop/t/96/assets/FaktTT-MediumItalic.woff?v=98290404990611217011752136451") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FaktTT";
+  src: url("/cdn/shop/t/96/assets/FaktTT-SemiBold.woff2?v=158567393510648286631752136450") format("woff2"),
+    url("/cdn/shop/t/96/assets/FaktTT-SemiBold.woff?v=50494668740326242151752136450") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FaktTT";
+  src: url("/cdn/shop/t/96/assets/FaktTT-SemiBoldItalic.woff2?v=127944783907830379161752136449") format("woff2"),
+    url("/cdn/shop/t/96/assets/FaktTT-SemiBoldItalic.woff?v=79097345813719418941752136451") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
 /*-- Flickity v3.0.0 -- */
 .flickity-disabled-mobile:after {
   content: "flickity" !important;
@@ -14586,7 +14644,7 @@ body .shopify-email-marketing-confirmation__container {
   align-self: stretch;
 }
 .header__desktop__bar__l {
-  margin-right: 15px;
+  flex: 1 0 0;
   justify-content: flex-start;
 }
 .header__desktop__bar__c {
@@ -14631,9 +14689,6 @@ body .shopify-email-marketing-confirmation__container {
   font-size: calc(var(--font-3) * var(--TYPE-ADJUST-NAV));
   white-space: nowrap;
   display: block;
-}
-.header__desktop__buttons .navlink {
-  padding: 5px 8px;
 }
 .navlink {
   padding: 5px 15px;
