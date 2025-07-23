@@ -192,10 +192,54 @@
         "show_collection_images": false,
         "collection_wh_ratio": 2.5
       }
+    },
+    "blocks_DwK7mU": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c74f604_HW6Mee": {
+          "type": "ai_gen_block_c74f604",
+          "settings": {
+            "selected_menu": "product-type",
+            "mobile_only": true,
+            "menu_direction": "row",
+            "menu_direction_mobile": "row",
+            "menu_wrap": "nowrap",
+            "menu_alignment": "flex-start",
+            "menu_alignment_mobile": "flex-start",
+            "menu_spacing": 10,
+            "menu_spacing_mobile": 8,
+            "link_size": 16,
+            "link_weight": "400",
+            "link_padding": 7,
+            "link_border_radius": 0,
+            "link_color": "#000000",
+            "link_hover_color": "#000000",
+            "link_hover_bg": "#ffffff",
+            "link_active_color": "#ffffff",
+            "link_active_bg": "#000000",
+            "background_color": "#ffffff",
+            "padding": 16,
+            "border_radius": 0,
+            "margin_bottom": 0,
+            "empty_menu_message": "No menu items found. Please select a menu with links."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c74f604_HW6Mee"
+      ],
+      "custom_css": [
+        "li a {width: max-content;}",
+        "ul {overflow: scroll;}"
+      ],
+      "name": "Link Mobiles",
+      "settings": {}
     }
   },
   "order": [
     "announcement",
-    "header"
+    "header",
+    "blocks_DwK7mU"
   ]
 }

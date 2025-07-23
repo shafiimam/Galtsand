@@ -34,3 +34,17 @@
   list-style: disc;
   margin-left: 20px;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  .materials-section-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media only screen and (max-width: 768px){
+  .materials-section {
+    padding: var(--outer);
+  }
+  .materials-section-grid{
+    grid-template-columns: repeat(1, 1fr)
+  }
+}

@@ -176,7 +176,7 @@
         "product_limit": 20,
         "grid_large": 4,
         "grid_mobile": "2",
-        "enable_layout_toggle": true,
+        "enable_layout_toggle": false,
         "color_bg": "palette--light bg--neutral",
         "collection_sorting": true,
         "hide_sidebar": true,

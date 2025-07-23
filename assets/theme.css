@@ -193,7 +193,7 @@
   left: -31px !important;
 }
 .flickity-prev-next-button.next {
-  right: -31px !important;
+  right: 15px !important;
 }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {

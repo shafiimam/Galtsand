@@ -33,6 +33,7 @@
         "material_y6nQNt": {
           "type": "material",
           "settings": {
+            "material_image": "shopify://shop_images/lycra-material.png",
             "material_title": "Lycra",
             "description": "<ul><li>Superior Stretch & Recovery</li><li>Enhanced Durability</li><li>Moves With You</li><li>Lightweight & Breathable </li></ul>"
           }
@@ -40,6 +41,7 @@
         "material_tGGaKD": {
           "type": "material",
           "settings": {
+            "material_image": "shopify://shop_images/coolmax-material.png",
             "material_title": "Coolmax",
             "description": "<ul><li>Cross-shaped fiber with four grooves & tubes</li><li>Rapidly channels sweat and moisture away</li><li>Maintains dry and comfortable skin</li></ul>"
           }
@@ -47,6 +49,7 @@
         "material_bjqTPa": {
           "type": "material",
           "settings": {
+            "material_image": "shopify://shop_images/teflon-material.png",
             "material_title": "Teflon",
             "description": "<ul><li>Water & Stain Resistant</li><li>Easy-Care Finish minimizes maintenance and extends wear</li><li>Invisible Protection</li></ul>"
           }
@@ -54,13 +57,7 @@
         "material_NTJPPA": {
           "type": "material",
           "settings": {
-            "material_title": "800+ Goose Down",
-            "description": "<ul><li>Exceptional Warmth-to-Weight Ratio</li><li>800+ Fill Power delivers  superior loft, softness, and thermal efficiency</li><li>Responsible Sourced</li></ul>"
-          }
-        },
-        "material_xtE6M4": {
-          "type": "material",
-          "settings": {
+            "material_image": "shopify://shop_images/goose-down-material.png",
             "material_title": "800+ Goose Down",
             "description": "<ul><li>Exceptional Warmth-to-Weight Ratio</li><li>800+ Fill Power delivers  superior loft, softness, and thermal efficiency</li><li>Responsible Sourced</li></ul>"
           }
@@ -68,6 +65,7 @@
         "material_qefd8N": {
           "type": "material",
           "settings": {
+            "material_image": "shopify://shop_images/tencel-material.png",
             "material_title": "Tencel",
             "description": "<ul><li>Ultra-Soft Feel</li><li>Naturally Moisture-Wicking</li><li>Eco-Friendly Fiber derived from sustainably sourced wood pulp</li><li>Biodegradable & Low impact</li></ul>"
           }
@@ -75,6 +73,7 @@
         "material_8WmXMT": {
           "type": "material",
           "settings": {
+            "material_image": "shopify://shop_images/uv-protective-material.png",
             "material_title": "UV Protection",
             "description": "<ul><li>Anti-pilling</li><li>Hight elasticity, comfort, wear-resistance, easy care</li><li>Wrinkle-resistant</li><li>UPF50+ protection</li></ul>"
           }
@@ -85,46 +84,12 @@
         "material_tGGaKD",
         "material_bjqTPa",
         "material_NTJPPA",
-        "material_xtE6M4",
         "material_qefd8N",
         "material_8WmXMT"
       ],
       "name": "Materials",
       "settings": {
-        "materials_title": "Materials"
-      }
-    },
-    "section_richtext_z49gFw": {
-      "type": "section-richtext",
-      "blocks": {
-        "heading_4HAKnN": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ page.title }}",
-            "text_size": 8
-          }
-        },
-        "text_FHgeB6": {
-          "type": "text",
-          "settings": {
-            "text": "{{ page.content }}",
-            "text_size": 4,
-            "text_columns": 1
-          }
-        }
-      },
-      "block_order": [
-        "heading_4HAKnN",
-        "text_FHgeB6"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "text_color": "text--black",
-        "bg": "palette--light bg--neutral",
-        "content_width": 2000,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 0
+        "materials_title": "Our Materials"
       }
     },
     "174110426101379aed": {
@@ -151,7 +116,6 @@
   "order": [
     "main",
     "materials_9VHcBQ",
-    "section_richtext_z49gFw",
     "174110426101379aed"
   ]
 }
