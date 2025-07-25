@@ -12234,11 +12234,11 @@ label.error {
 .radio__fieldset .radio__button label {
   font-family: var(--FONT-STACK-ACCENT);
   font-style: var(--FONT-STYLE-ACCENT);
-  font-weight: var(--FONT-WEIGHT-ACCENT);
   font-weight: var(--FONT-WEIGHT-ACCENT-BOLD);
   text-transform: var(--FONT-ACCENT-TRANSFORM);
   letter-spacing: var(--FONT-ACCENT-LETTER-SPACING);
-  font-size: calc(var(--font-4) * var(--FONT-ADJUST-ACCENT));
+  /* font-size: calc(var(--font-4) * var(--FONT-ADJUST-ACCENT)); */
+  font-size: 16px;
   line-height: var(--leading-normal);
   position: relative;
   padding: 16px 20px;
@@ -20779,12 +20779,12 @@ a.product__form__link:after {
   align-items: center;
 }
 .product__price {
-  font-family: var(--FONT-STACK-HEADING);
-  font-style: var(--FONT-STYLE-HEADING);
-  font-weight: var(--FONT-WEIGHT-HEADING);
-  text-transform: var(--FONT-HEADING-TRANSFORM);
-  letter-spacing: var(--FONT-HEADING-LETTER-SPACING);
-  color: var(--text);
+  font-family: var(--FONT-STACK-BODY);
+  font-style: var(--FONT-STYLE-BODY);
+  font-weight: var(--FONT-WEIGHT-BODY);
+  text-transform: var(--FONT-BODY-TRANSFORM);
+  letter-spacing: var(--FONT-BODY-LETTER-SPACING);
+  color: #4C4C44;
   display: inline-block;
   padding: 8px 0 6px 0;
 }
@@ -20832,7 +20832,7 @@ a.product__form__link:after {
 .product__title__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .product__title {
   margin: 0;

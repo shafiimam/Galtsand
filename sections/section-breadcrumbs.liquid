@@ -1,5 +1,5 @@
 <section
-  class="breadcrumbs breadcrumbs--{{ section.id }} {{ section.settings.width }}"
+  class="breadcrumbs breadcrumbs--{{ section.id }} {{ section.settings.width }} {{ section.settings.bg }}"
   id="breadcrumbs--{{ section.id }}"
 >
   <a
@@ -122,6 +122,20 @@
         { "value": "wrapper", "label": "Page width" },
         { "value": "wrapper--narrow", "label": "Page width narrow" },
         { "value": "wrapper--tiny", "label": "Page width extra narrow" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "bg",
+      "label": "Background color",
+      "default": "palette--light bg--neutral",
+      "options": [
+        { "value": "palette--light bg--neutral", "label": "Default"},
+        { "value": "palette--light bg--accent", "label": "Light"},
+        { "value": "palette--dark bg--invert", "label": "Dark"},
+        { "value": "palette--dark bg--invert--accent", "label": "Dark accent"},
+        { "value": "palette--bright bg--bright", "label": "Bright"},
+        { "value": "palette--bright bg--bright--accent", "label": "Bright accent"}
       ]
     },
     {

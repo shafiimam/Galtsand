@@ -378,6 +378,16 @@
         "name": "list.single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "size_guide_text",
+      "namespace": "custom",
+      "name": "size guide text",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [

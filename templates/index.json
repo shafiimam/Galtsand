@@ -9,6 +9,78 @@
  */
 {
   "sections": {
+    "section_hero_eT93fW": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker_JQk4eh": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Introducing",
+            "enable_line": false,
+            "text_size": 4
+          }
+        },
+        "heading_gkHx9m": {
+          "type": "heading",
+          "settings": {
+            "title": "Image banner",
+            "text_size": 10
+          }
+        },
+        "text_n43kxM": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>This area is used to describe your store.</p>",
+            "text_size": 6
+          }
+        },
+        "button_xpQbiQ": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "View products",
+            "link_1": "",
+            "button_size_1": "btn--large",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "Learn more",
+            "link_2": "",
+            "button_size_2": "btn--large",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_JQk4eh",
+        "heading_gkHx9m",
+        "text_n43kxM",
+        "button_xpQbiQ"
+      ],
+      "disabled": true,
+      "name": "Image banner",
+      "settings": {
+        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-143.jpg",
+        "mobile_image": "shopify://shop_images/GALTSANDEQUESTRIAN-143.jpg",
+        "link": "",
+        "height": "use_screen_one_third",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-left",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section_hero_fbxcq7": {
       "type": "section-hero",
       "disabled": true,
@@ -454,7 +526,7 @@
         "bg": "palette--bright bg--bright",
         "width": "wrapper--full",
         "padding_top": 90,
-        "padding_bottom": 90
+        "padding_bottom": 40
       }
     },
     "video_with_modal_zPUEPT": {
@@ -1040,6 +1112,7 @@
     }
   },
   "order": [
+    "section_hero_eT93fW",
     "section_hero_fbxcq7",
     "section_hero_dJnB9Q",
     "section_video_pMeAkR",

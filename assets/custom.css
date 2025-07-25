@@ -357,7 +357,6 @@ span.swym-wish-counter.swym-wishlist-header-counter {
 .swym-ui-component .swym-product-price .swym-product-original-price {
   color: #44505f !important;
 }
-
 .swym-button.swym-add-to-wishlist-view-product {
   position: absolute;
   bottom: 100%;
@@ -367,9 +366,15 @@ span.swym-wish-counter.swym-wishlist-header-counter {
   padding: 10px !important;
   z-index: 10;
 }
+button.swym-button.swym-add-to-wishlist{
+  margin-top: 12px;
+}
 .swym-storefront-layout-grid-item-image-container {
   width: 100% !important;
   max-width: 250px;
+}
+button.swym-button.swym-add-to-wishlist.swym-added svg{
+  fill: #202020;
 }
 .swym-storefront-layout-grid-item {
   flex-direction: column;

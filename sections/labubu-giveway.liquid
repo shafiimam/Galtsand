@@ -1,0 +1,170 @@
+<div class="container">
+  <h1>Win a Labubu</h1>
+  <p class="subheader">
+    We’re giving away 3 Labubus to 3 lucky winners.<br>
+    It’s free to enter! Just follow the steps below.
+  </p>
+
+  <div class="entry-section">
+    <h2>Step 1: Enter Your Info</h2>
+    <form action="/api/submit-giveaway" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">ENTER GIVEAWAY</button>
+    </form>
+  </div>
+
+  <div class="instagram-follow">
+    <h2>Step 2: Follow Us on Instagram</h2>
+    <a href="https://instagram.com/galtsand" target="_blank" style="display: block; text-decoration: none;">
+      <button type="button">FOLLOW @GALTSAND</button>
+    </a>
+  </div>
+
+  <p class="fine-print">
+    Winner announcement: August 8, 2025<br>
+    T&Cs apply — see full details below.
+  </p>
+
+  <h2>What You’ll Win</h2>
+  <p>Each winner will receive one Labubu Blindbox figure.</p>
+  <div class="labubu-img">
+    <img src="{{ section.settings.image | image_url: width: 1000 }}" alt="Labubu Blindbox Prize" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
+  </div>
+
+  <h2>Terms & Conditions</h2>
+  <div style="display: block; text-align: left; margin-top: 1rem;">
+    <div style="margin-bottom: 1rem;">
+      <strong>PRIZE:</strong> 3 winners will each receive one Labubu Blindbox figure.
+    </div>
+    <div style="margin-bottom: 1rem;"><strong>ELIGIBILITY:</strong> Must be 18 years or older to join.</div>
+    <div style="margin-bottom: 1rem;">
+      <strong>WINNER ANNOUNCEMENT:</strong> Winners will be notified via email and announced on @galtsand Instagram
+      Stories on August 8.
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <strong>CLAIM WINDOW:</strong> Winners must respond within 5 days or a new winner will be selected.
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <strong>PRIVACY:</strong> Emails will be used for giveaway communication and added to our Galtsand newsletter
+      list. You may unsubscribe anytime.
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <strong>DISCLAIMER:</strong> This giveaway is not sponsored or affiliated with Instagram or POP MART.
+    </div>
+  </div>
+</div>
+<style>
+  .container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Gambarino', serif;
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+  }
+  .subheader {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
+  .entry-section,
+  .instagram-follow {
+    background-color: #f1ede7;
+    padding: 2rem;
+    border-radius: 0;
+    border: 2px solid #202020;
+    margin-bottom: 2rem;
+  }
+  .entry-section h2,
+  .instagram-follow h2 {
+    font-family: 'Fakt', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  label {
+    text-align: left;
+    font-weight: bold;
+  }
+  input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+  }
+  button {
+    width: 558px;
+    max-width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #333;
+  }
+  .labubu-img {
+    margin: 3rem 0 2rem;
+  }
+  .labubu-img img {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .fine-print {
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    color: #444;
+  }
+  ul {
+    text-align: left;
+    padding-left: 1.25rem;
+    margin-top: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.25rem;
+    }
+    .container {
+      padding: 3rem 1rem;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Labubu Giveaway",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Giveway Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Labubu Giveway",
+      "category": "Giveway"
+    }
+  ]
+}
+{% endschema %}
