@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 5,
+        "show_title": true,
+        "title_size": 9,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-center",
+        "text_color": "text--black",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 50,
+        "padding_bottom": 12
+      }
+    },
+    "section_hero_hCxfpF": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_VdMLqT": {
+          "type": "heading",
+          "settings": {
+            "title": "The Archive Unlocks First for You",
+            "text_size": 10
+          }
+        },
+        "text_gHGPXc": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Sign up for VIP access to shop the Galtsand Archive Sale before anyone else by receiving a private code for early markdowns at 50% off sitewide. </p>",
+            "text_size": 6
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_ctkBgy": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "TdwScM"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VdMLqT",
+        "text_gHGPXc",
+        "klaviyo_email_marketing_sms_form_embed_block_ctkBgy"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-143.jpg",
+        "link": "",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_richtext_x9ggWm": {
+      "type": "section-richtext",
+      "blocks": {
+        "text_4iMUwA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A private preview and your exclusive code will be sent before the Archive opens. Once you’re in, you will receive a message in your inbox — and be ready to shop before anyone else.</p>",
+            "text_size": 6,
+            "text_columns": 1
+          }
+        },
+        "heading_CxEpih": {
+          "type": "heading",
+          "settings": {
+            "heading": "How It Works",
+            "text_size": 10
+          }
+        },
+        "heading_TN6BDy": {
+          "type": "heading",
+          "settings": {
+            "heading": "[1]",
+            "text_size": 8
+          }
+        },
+        "text_zatkXQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p> Join the program. Sign up above to enroll.</p>",
+            "text_size": 7,
+            "text_columns": 1
+          }
+        },
+        "heading_kiRX7V": {
+          "type": "heading",
+          "settings": {
+            "heading": "[2]",
+            "text_size": 8
+          }
+        },
+        "text_fNYFFX": {
+          "type": "text",
+          "settings": {
+            "text": "<p> Get early access with a private code and first pick of the archive.</p>",
+            "text_size": 7,
+            "text_columns": 1
+          }
+        },
+        "heading_eU9rGX": {
+          "type": "heading",
+          "settings": {
+            "heading": "[3]",
+            "text_size": 8
+          }
+        },
+        "text_7x9KeD": {
+          "type": "text",
+          "settings": {
+            "text": "<p> Enjoy 50% off sitewide before the public sale begins.</p>",
+            "text_size": 7,
+            "text_columns": 1
+          }
+        },
+        "button_e4Erbw": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "SIGN ME UP FOR EARLY ACCESS",
+            "link_1": "#shopify-section-template--19583249285333__section_hero_hCxfpF",
+            "button_size_1": "btn--large",
+            "button_style_1": "btn",
+            "button_color_1": "btn--black",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_4iMUwA",
+        "heading_CxEpih",
+        "heading_TN6BDy",
+        "text_zatkXQ",
+        "heading_kiRX7V",
+        "text_fNYFFX",
+        "heading_eU9rGX",
+        "text_7x9KeD",
+        "button_e4Erbw"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_double_bbcpBr": {
+      "type": "section-double",
+      "blocks": {
+        "text_Y9LpCN": {
+          "type": "text",
+          "settings": {
+            "kicker": "",
+            "title": "What’s in the Archive?",
+            "text": "<p>A preview page will be sent to everyone who signs up for our emails.</p>",
+            "font_size": 6,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "#000000",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn-text-thick-line",
+            "bg_color": ""
+          }
+        },
+        "image_YRmXQM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/12.4_DSC0606_1.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "SIGN ME UP FOR EARLY ACCESS",
+            "link": "#shopify-section-template--19583249285333__section_hero_hCxfpF",
+            "button_color": "btn--white",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "text_Y9LpCN",
+        "image_YRmXQM"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_hCxfpF",
+    "section_richtext_x9ggWm",
+    "section_double_bbcpBr"
+  ]
+}

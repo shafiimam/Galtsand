@@ -21,6 +21,7 @@
 
 <div
   class="section--image fade-in-child js-overflow-container {{ scroll_class }}"
+  id="shopify-section-{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="hero"
   {% if section.settings.width == 'wrapper--none' and section.settings.padding_top == 0 %}
@@ -50,6 +51,10 @@
           >
             {% for block in section.blocks %}
               {% case block.type %}
+                {% when '@app' %}
+                  <div class="app-block-container">
+                    {% render block %}
+                  </div>
                 {% when 'kicker' %}
                   {% unless block.settings.kicker == '' %}
                     {%- assign elements_counter = elements_counter | plus: 1 -%}
@@ -185,6 +190,8 @@
                     style="--padding: {{ block.settings.spacer_padding | divided_by: 2 }}px;"
                     {{ block.shopify_attributes }}
                   ></div>
+                {% when 'form' %}
+                  {% render 'form-input', block: block %}
               {% endcase %}
             {% endfor %}
           </div>
@@ -1153,6 +1160,9 @@
           "default": false
         }
       ]
+    },
+    {
+      "type": "@app"
     }
   ],
   "presets": [

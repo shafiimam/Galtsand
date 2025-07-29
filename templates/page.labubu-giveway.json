@@ -26,9 +26,17 @@
         "padding_top": 50,
         "padding_bottom": 12
       }
+    },
+    "labubu_giveway_CXfnXT": {
+      "type": "labubu-giveway",
+      "name": "Labubu Giveway",
+      "settings": {
+        "image": "shopify://shop_images/Labubu_Giveaway.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "labubu_giveway_CXfnXT"
   ]
 }

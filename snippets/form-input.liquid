@@ -1,0 +1,161 @@
+    {% comment %} Klaviyo Signup Form - Name and Email {% endcomment %}
+    {% assign btn_size = 'button_size' %}
+    {% assign btn_size = block.settings[btn_size] %}
+
+    {% assign btn_style = 'button_style' %}
+    {% assign btn_style = block.settings[btn_style] %}
+
+    {% assign btn_color = 'button_color' %}
+    {% assign btn_color = block.settings[btn_color] %}
+
+<div id="klaviyo-form-wrapper-{{ block.id }}">
+  <form
+    id="klaviyo-signup-form-{{ block.id }}"
+    class="form-block"
+    autocomplete="off"
+    {{ block.shopify_attributes }}
+  >
+    <div class="form-group">
+      <label for="klaviyo_first_name_{{ block.id }}">Name</label>
+      <input
+        type="text"
+        id="klaviyo_first_name_{{ block.id }}"
+        name="first_name"
+        required
+        class="form-input"
+      >
+    </div>
+    <div class="form-group">
+      <label for="klaviyo_email_{{ block.id }}">Email</label>
+      <input
+        type="email"
+        id="klaviyo_email_{{ block.id }}"
+        name="email"
+        autocomplete="email"
+        required
+        class="form-input"
+      >
+    </div>
+    <button type="submit" class="standard__cta hero__btn {{ btn_style }} {{ btn_color }} {{ btn_size }}">{{ block.settings.button_label }}</button>
+    <div class="klaviyo-form-message" style="display:none; margin-top:10px;"></div>
+  </form>
+</div>
+<script>
+  (function() {
+    var form = document.getElementById('klaviyo-signup-form-{{ block.id }}');
+    var messageDiv = form.querySelector('.klaviyo-form-message');
+    var listId = "{{ block.settings.klaviyo_list_id }}";
+    
+    if (!window._klOnsite) {
+      // Load Klaviyo JS if not already loaded
+      var s = document.createElement('script');
+      s.src = 'https://www.klaviyo.com/media/js/onsite/onsite.js';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      messageDiv.style.display = 'none';
+      var firstName = form.querySelector('[name="first_name"]').value.trim();
+      var email = form.querySelector('[name="email"]').value.trim();
+
+      if (!email) {
+        messageDiv.textContent = "Please enter your email.";
+        messageDiv.style.display = 'block';
+        messageDiv.style.color = 'red';
+        return;
+      }
+
+      if (!window._klOnsite) {
+        messageDiv.textContent = "Klaviyo is not loaded. Please try again.";
+        messageDiv.style.display = 'block';
+        messageDiv.style.color = 'red';
+        return;
+      }
+
+      form.querySelector('button[type="submit"]').disabled = true;
+
+      // Use Klaviyo API v2 to add the email to the list
+      var apiKey = "{{ block.settings.klaviyo_api_key }}"; // TODO: Replace with your private API key
+      var listIdForApi = listId; // Should be the same as block.settings.klaviyo_list_id
+      var options = {
+        method: 'POST',
+        headers: {
+          accept: 'application/json',
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          profiles: [
+            {
+              email: email,
+              first_name: firstName
+            }
+          ]
+        })
+      };
+
+      fetch('https://a.klaviyo.com/api/v2/list/' + encodeURIComponent(listIdForApi) + '/members?api_key=' + encodeURIComponent(apiKey), options)
+        .then(function(res) { return res.json(); })
+        .then(function(res) {
+          if (res && (res.data || res.success)) {
+            // Success
+            messageDiv.textContent = "Thank you for subscribing!";
+            messageDiv.style.display = 'block';
+            messageDiv.style.color = 'green';
+            form.reset();
+            form.querySelector('button[type="submit"]').disabled = false;
+          } else {
+            // Error
+            var msg = "There was an error. Please try again.";
+            if (res && res.detail) {
+              msg = res.detail;
+            }
+            messageDiv.textContent = msg;
+            messageDiv.style.display = 'block';
+            messageDiv.style.color = 'red';
+            form.querySelector('button[type="submit"]').disabled = false;
+          }
+        })
+        .catch(function(err) {
+          var msg = "There was an error. Please try again.";
+          if (err && err.message) {
+            msg = err.message;
+          }
+          messageDiv.textContent = msg;
+          messageDiv.style.display = 'block';
+          messageDiv.style.color = 'red';
+          form.querySelector('button[type="submit"]').disabled = false;
+        });
+    });
+  })();
+</script>
+{% style %}
+    .form-block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+        justify-content: center;
+        max-width: 400px;
+        margin-inline: auto;
+    }
+    .form-block .form-group {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-group input{
+        border: 1px solid white;
+    }
+    .form-block button{
+        margin-top: 0 !important;
+        width: max-content;
+        align-self: center;
+    }
+    @media screen and (max-width: 768px){
+        .form-block{
+            flex-direction: column;
+        }
+    }
+{% endstyle %}
