@@ -255,7 +255,7 @@
               {% when 'size-remaining' %}
                 {% render 'product-size-and-remaining' product: product, block: block %}
               {% when 'description' %}
-                <div class="product__block__description rte body-size-4" style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}>
+                <div class="product__block__description rte body-size-5" style="--PB: {{ block.settings.padding_bottom }}px;" {{ block.shopify_attributes }}>
                   {%- assign product_description_content = product.description | strip -%}
                   {%- assign truncate_string = 'products.general.read_more' | t -%}
                   {%- assign truncate_html = '<button type="button" class="p button-with-underline" data-truncated-button>' | append: truncate_string | append: '</button>' -%}

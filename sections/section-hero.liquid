@@ -244,15 +244,31 @@
       {% endif %}
 
       {%- assign alt = section.settings.image.alt | default: 'Banner Image' -%}
-      {% render 'image-parallax',
-        img_object: section.settings.image,
-        img_object_mobile: section.settings.mobile_image,
-        frame_height_class: section.settings.height,
-        alt: alt,
-        preload: preload,
-        loading: loading,
-        fetchpriority: fetchpriority
-      %}
+      {% if section.settings.bg_color != blank %}
+        <div
+          class="image__hero__frame fade-in-child aspect-[--wh-ratio-mobile] md:aspect-[--wh-ratio] {{ height_class }} {{ frame_class }}"
+          data-overflow-background
+          {% if settings.parallax_enable %}
+            data-parallax-wrapper
+          {% endif %}
+
+          style="
+            --wh-ratio: 2;
+            --wh-ratio-mobile:  2/3;
+            background-color: {{ section.settings.bg_color }};
+          "
+        ></div>
+      {% else %}
+        {% render 'image-parallax',
+          img_object: section.settings.image,
+          img_object_mobile: section.settings.mobile_image,
+          frame_height_class: section.settings.height,
+          alt: alt,
+          preload: preload,
+          loading: loading,
+          fetchpriority: fetchpriority
+        %}
+      {% endif %}
 
       {% if section.settings.height == 'use_screen_full' %}
         <div class="scroll_icon_wrap">
@@ -285,6 +301,12 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Mobile image"
+    },
+    {
+      "type": "color_background",
+      "id": "bg_color",
+      "label": "Background Color",
+      "info": "If no image is selected the section will use the plain background"
     },
     {
       "type": "url",

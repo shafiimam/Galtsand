@@ -189,12 +189,6 @@
   /* vertically center */
   transform: translateY(-50%);
 }
-.flickity-prev-next-button.previous {
-  left: -31px !important;
-}
-.flickity-prev-next-button.next {
-  right: 15px !important;
-}
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -19045,12 +19039,7 @@ p[data-accordion-trigger="accordion-text_CaQFEG-1"] {
     display: none;
   }
 }
-.collection-tabs .flickity-prev-next-button.previous {
-  left: -70px;
-}
-.collection-tabs .flickity-prev-next-button.next {
-  right: -70px;
-}
+
 .collection-tabs .flickity-button {
   background: var(--BRIGHT-BG);
   color: var(--text);

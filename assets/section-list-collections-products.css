@@ -104,12 +104,6 @@
 .collection-list-item .flickity-prev-next-button {
   border: 1px solid #e5e5e5;
 }
-.collection-list-item .flickity-prev-next-button.previous {
-  left: -25px !important;
-}
-.collection-list-item .flickity-prev-next-button.next {
-  right: -40px !important; 
-}
 @media (max-width: 768px) {
   .collection-list__products {
     width: 100%;
@@ -124,11 +118,5 @@
   }
   .collection-list-item.first {
     flex-direction: column-reverse;
-  }
-  .collection-list-item .flickity-prev-next-button.previous {
-    left: 0 !important;
-  }
-  .collection-list-item .flickity-prev-next-button.next {
-    right: 0 !important;
   }
 }

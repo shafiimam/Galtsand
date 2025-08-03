@@ -206,8 +206,8 @@ h3.article__item-title {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
-  gap: 48px;
+  justify-content: center;
+  align-items: flex-start;
 }
 .block-image-pair {
   display: grid;
@@ -558,4 +558,11 @@ s.product__price--compare {
 }
 .app-block-container{
   margin-top: 30px;
+}
+.section-related .product__block__title {
+  left: 0 !important;
+}
+
+button.flickity-button.flickity-prev-next-button.next {
+  right: 0;
 }

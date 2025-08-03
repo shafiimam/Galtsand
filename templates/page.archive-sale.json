@@ -58,16 +58,16 @@
       ],
       "name": "Image banner",
       "settings": {
-        "image": "shopify://shop_images/GALTSANDEQUESTRIAN-143.jpg",
+        "bg_color": "rgb(241, 237, 231)",
         "link": "",
         "height": "use_screen_two_thirds",
-        "overlay_opacity": 15,
+        "overlay_opacity": 0,
         "overlay_color": "#000000",
         "enable_overlay_text": false,
         "preload_image": false,
         "content_width": 2000,
         "text_align": "align--middle-center",
-        "text_color": "text--white",
+        "text_color": "text--black",
         "color_bg": "hero__content--transparent",
         "width": "wrapper--none",
         "padding_top": 0,
@@ -180,57 +180,46 @@
         "padding_bottom": 60
       }
     },
-    "section_double_bbcpBr": {
-      "type": "section-double",
+    "image_with_text_custom_eFzaPe": {
+      "type": "image-with-text-custom",
       "blocks": {
-        "text_Y9LpCN": {
-          "type": "text",
+        "heading_dmQMzV": {
+          "type": "heading",
           "settings": {
-            "kicker": "",
-            "title": "What’s in the Archive?",
-            "text": "<p>A preview page will be sent to everyone who signs up for our emails.</p>",
-            "font_size": 6,
-            "text_columns": 1,
-            "align_text": "text-left",
-            "text_color": "#000000",
-            "button_text": "",
-            "button_url": "",
-            "button_color": "btn--neutral",
-            "button_style": "btn-text-thick-line",
-            "bg_color": ""
+            "text": "What’s in the Archive?",
+            "text_align": "left"
           }
         },
-        "image_YRmXQM": {
-          "type": "image",
+        "text_3kwL77": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/12.4_DSC0606_1.jpg",
-            "overlay_opacity": 15,
-            "overlay_color": "#000",
-            "enable_overlay_text": false,
-            "kicker": "",
-            "title": "",
-            "richtext": "",
-            "text_align": "align--middle-center",
-            "text_color": "text--white",
+            "text": "A preview page will be sent to everyone who signs up for our emails.",
+            "text_size": 6,
+            "text_align": "left"
+          }
+        },
+        "button_JVhTRf": {
+          "type": "button",
+          "settings": {
             "link_text": "SIGN ME UP FOR EARLY ACCESS",
-            "link": "#shopify-section-template--19583249285333__section_hero_hCxfpF",
-            "button_color": "btn--white",
-            "button_style": "btn"
+            "link": "",
+            "button_size": "btn--large",
+            "button_style": "btn",
+            "button_color": "btn--black"
           }
         }
       },
       "block_order": [
-        "text_Y9LpCN",
-        "image_YRmXQM"
+        "heading_dmQMzV",
+        "text_3kwL77",
+        "button_JVhTRf"
       ],
-      "name": "Image with text",
+      "name": "Image with text Custom",
       "settings": {
-        "height": "use_screen_one_half",
-        "brick_gutter": 0,
-        "borders": false,
-        "bg_color": "",
-        "preload_image": false,
+        "image": "shopify://shop_images/12.4_0227_1.jpg",
+        "image_position": "left",
         "width": "wrapper",
+        "background_color": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -240,6 +229,6 @@
     "main",
     "section_hero_hCxfpF",
     "section_richtext_x9ggWm",
-    "section_double_bbcpBr"
+    "image_with_text_custom_eFzaPe"
   ]
 }

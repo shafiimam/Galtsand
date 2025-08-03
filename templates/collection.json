@@ -9,6 +9,68 @@
  */
 {
   "sections": {
+    "section_hero_y46KHY": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_PeAkAW": {
+          "type": "heading",
+          "settings": {
+            "title": "archive sale hero banner",
+            "text_size": 10
+          }
+        },
+        "text_riQPe4": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>This area is used to describe your store.</p>",
+            "text_size": 6
+          }
+        },
+        "button_hkKGpj": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "View products",
+            "link_1": "",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PeAkAW",
+        "text_riQPe4",
+        "button_hkKGpj"
+      ],
+      "name": "Image banner",
+      "settings": {
+        "image": "shopify://shop_images/Frame_5234.png",
+        "bg_color": "",
+        "link": "",
+        "height": "use_screen_one_fifth",
+        "overlay_opacity": 15,
+        "overlay_color": "#000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "collection_pills_rWnqE6": {
       "type": "collection-pills",
       "blocks": {
@@ -562,6 +624,7 @@
     }
   },
   "order": [
+    "section_hero_y46KHY",
     "collection_pills_rWnqE6",
     "hero",
     "subcollections",
