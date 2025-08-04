@@ -52,6 +52,7 @@
         "text_riQPe4",
         "button_hkKGpj"
       ],
+      "disabled": true,
       "name": "Image banner",
       "settings": {
         "image": "shopify://shop_images/Frame_5234.png",
@@ -59,7 +60,7 @@
         "link": "",
         "height": "use_screen_one_fifth",
         "overlay_opacity": 15,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "enable_overlay_text": false,
         "preload_image": false,
         "content_width": 2000,

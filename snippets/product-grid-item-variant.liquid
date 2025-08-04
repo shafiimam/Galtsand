@@ -183,7 +183,7 @@
   aria-label="{{ variant.title }}"
 >
   <div class="product-grid-item__container" data-error-boundary>
-    {% render 'wishlist-icon', with product: product %}
+   
     
     <div data-error-display class="product-grid-item__error-display">&nbsp;</div>
     <a href="{{ product.url | within: collection }}" data-grid-link aria-label="{{ product.title | strip_html | escape }}">
@@ -316,8 +316,9 @@
           </div>
         {%- endif -%}
       </div>
-
+      {% render 'wishlist-icon', with product: product %}
       {{ badge }}
+      
     </a>
 
     {% capture quick_action_toolbar_classes %}

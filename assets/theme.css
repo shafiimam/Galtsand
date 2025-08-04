@@ -19474,7 +19474,7 @@ label.quatity-selector {
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-ACCENT));
   line-height: var(--leading-relaxed);
   position: absolute;
-  right: calc(var(--inner) / 2);
+  left : calc(var(--inner) / 2);
   top: calc(var(--inner) / 2);
   max-width: calc(100% - var(--inner));
   padding: 5px 10px;
@@ -20409,7 +20409,7 @@ input[type="number"].filter__price__input {
     padding-right: var(--gutter);
   }
   .collection-split__product {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .collection-split__product:last-child {
     margin-bottom: 0;
