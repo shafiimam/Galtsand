@@ -569,7 +569,7 @@
         "collection_GaPRP3": {
           "type": "collection",
           "settings": {
-            "collection": "mens-tennis",
+            "collection": "tennis-collection",
             "title": "Tennis & Court Sports",
             "link_text": "Classic sport style, redefined for today’s game.",
             "enable_item": true,
@@ -696,7 +696,7 @@
             "sub_text": "The Tennis Collection reimagines classic court-side style through a modern lens. Crisp collars, soft structure, and understated hues made for movement.",
             "text_color": "#ffffff",
             "link_text": "EXPLORE THE TENNIS COLLECTION",
-            "link": "shopify://collections/mens-tennis",
+            "link": "shopify://collections/tennis-collection",
             "button_color": "btn--white",
             "button_style": "btn"
           }
