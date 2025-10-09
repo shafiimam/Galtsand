@@ -36,7 +36,7 @@
         "speed": 5,
         "padding_top": 6,
         "padding_bottom": 6,
-        "background_color": "#4f4f4f",
+        "background_color": "#000000",
         "text_color": "#ffffff"
       }
     },
