@@ -14,32 +14,6 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
-        "announce_shipping": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "message": "",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_gnWmL9": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>UP TO 60% OFF      |     USE CODE: <span style=\"text-decoration:underline\"><strong>LONGWEEKEND</strong></span></p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
         "announce_text": {
           "type": "text",
           "settings": {
@@ -54,16 +28,14 @@
         }
       },
       "block_order": [
-        "announce_shipping",
-        "text_gnWmL9",
         "announce_text"
       ],
       "settings": {
         "text_size": 3,
         "layout": "slider",
         "speed": 5,
-        "padding_top": 16,
-        "padding_bottom": 16,
+        "padding_top": 6,
+        "padding_bottom": 6,
         "background_color": "#4f4f4f",
         "text_color": "#ffffff"
       }
@@ -76,7 +48,7 @@
           "disabled": true,
           "settings": {
             "announcement_text": "<p>Free Shipping On Orders $180 + | Unlock Black Friday Access To Get 30% OFF</p>",
-            "secondary_linklist": "location",
+            "secondary_linklist": "",
             "show_menu_desktop": true,
             "show_menu_mobile": true,
             "show_locale_desktop": true,
