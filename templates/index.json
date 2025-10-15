@@ -223,7 +223,7 @@
           "type": "button",
           "settings": {
             "link_text_1": "SHOP NEW IN",
-            "link_1": "shopify://collections/drop-3",
+            "link_1": "shopify://collections/new-arrivals-drop-3",
             "button_size_1": "btn--long",
             "button_style_1": "btn",
             "button_color_1": "btn--white",
